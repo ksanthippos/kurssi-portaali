@@ -3,7 +3,7 @@
   "title": "Sähkö ja magnetismi",
   "lessons": [
     {
-      "date": "2026-09-14",
+      "lesson": 1,
       "topic": "Sähkövaraus ja Coulombin laki",
       "goal": "Tutustutaan sähkövaraukseen ja Coulombin lakiin.",
       "tasks": "Kertaustehtävät 1–5",
