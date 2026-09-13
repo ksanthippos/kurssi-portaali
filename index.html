@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurssiportaali v2</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Pasilan PK / RAUH</p>
+      <h1>Kurssiportaali</h1>
+      <p class="lead">Kurssisuunnitelmat viikoittain ja oppituntien sisällöt tehtävineen.</p>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <aside class="sidebar" aria-label="Kurssivalinta">
+      <h2>Kurssit</h2>
+      <div id="course-list" class="course-list"></div>
+    </aside>
+
+    <section class="content" aria-live="polite">
+      <div class="toolbar">
+        <div>
+          <p class="eyebrow" id="course-code">Kurssi</p>
+          <h2 id="course-title">Valitse kurssi</h2>
+        </div>
+      </div>
+
+      <div id="lesson-list" class="lesson-list"></div>
+    </section>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Kurssiportaali (c) Mikael Rauhala Pasilan peruskoulu</div>
+  </footer>
+
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

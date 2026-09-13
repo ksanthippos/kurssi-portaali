@@ -1,0 +1,20 @@
+{
+  "code": "FY_71",
+  "title": "Lämpöoppi ja aaltoliike",
+  "lessons": [
+    {
+      "date": "2026-09-14",
+      "topic": "Lämpötila ja lämpölaajeneminen",
+      "goal": "Tutustutaan lämpölaajenemisen käsitteeseen ja käytännön sovelluksiin.",
+      "tasks": "Kertaustehtävät 1–5",
+      "substituteNote": "Käy aihe lyhyesti läpi ja anna oppilaiden tehdä tehtävät. Lopuksi voidaan tarkistaa tehtäviä yhdessä."
+    },
+    {
+      "date": "2026-09-15",
+      "topic": "Lämpöenergia",
+      "goal": "Erotetaan lämpötila ja lämpöenergia toisistaan.",
+      "tasks": "Kertaustehtävät 6–9",
+      "substituteNote": "Aloita lyhyellä kertauksella. Oppilaat tekevät tehtävät itsenäisesti tai pareittain."
+    }
+  ]
+}
