@@ -1,0 +1,107 @@
+{
+  "code": "MA_71",
+  "title": "Laskuoppi",
+  "lessons": [
+    {
+      "lesson": 1,
+      "topic": "KS aihe 1, kirjan kpl 1. Laskujärjestys osa 1",
+      "content": "Kerrataan laskujärjestys ja peruslaskutoimitukset sekä niiden soveltamisen erilaisissa laskutehtävissä.",
+      "tasks": "s. 9: T2 - 4, s. 9: T5 - 7, s. 188: T1 - 3, s. 9: T11, 12, 14, s. 188: T9 - 11",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "KS aihe 1, kirjan kpl 1. Laskujärjestys osa 2",
+      "content": "Pidemmät laskutoimitukset ja erilaiset sulkulausekkeet, kuten aalto- ja hakasulut.",
+      "tasks": "s. 11: T16, 17, s. 11: T18, 20, s. 188: T13, 14, 16, s. 11: T23 - 26, 28, 29, s. 188: T17",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "KS aihe 2, kirjan kpl 3. Murtoluvun käsite",
+      "content": "Murtoluvun osoittaja ja nimittäjä, laventaminen ja supistaminen, samannimisyys.",
+      "tasks": "s. 17: T1 - 6, s. 17: T8 - 13, s. 190 - 191: T46 - 52",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "KS aihe 3, kirjan kpl 3. Murtoluvut ja sekaluvut",
+      "content": "Murtolukujen muuntaminen sekaluvuksi ja toisin päin.",
+      "tasks": "s. 19: T16 - 19, s. 191: T53, 54, moniste: T1 - 7, s. 191: T59, 60",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "KS aihe 4, kirjan kpl 4. Murtolukujen yhteen- ja vähennyslasku, osa 1",
+      "content": "Murtolukujen yhteen- ja vähennyslasku, laventaminen tarvittaessa",
+      "tasks": "s. 19: T16 - 19, s. 191: T53, 54, moniste: T1 - 7, s. 191: T59, 60",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "KS aihe 4, kirjan kpl 4. Murtolukujen yhteen- ja vähennyslasku, osa 2",
+      "content": "Sekalukujen muuntaminen ennen laskemista. Haastavammat ja pidemmät murtolukujen yhteen- ja vähennyslaskut.",
+      "tasks": "s. 22: T32 - 41, s. 23: T42 - 53",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "KS aihe 5, kirjan kpl 5. Murtolukujen kertolasku",
+      "content": "Murtolukujen kertolasku, sekalukujen muuntaminen ennen laskemista.",
+      "tasks": "s. 25: T1 - 5, s. 193: T79 - 82, s. 25: T13, 14, s. 193: T86",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "KS aihe 6, kirjan kpl 6. Murtolukujen jakolasku",
+      "content": "Murtolukujen jakaminen niin kokonais-, murto- kuin sekaluvuilla. Jakolaskun konsepti käänteisluvun kertolaskun avulla.",
+      "tasks": "s. 27: T2 - 4, s. 28: T9 - 15, 17, 18, s. 29: T20 - 26, 30 - 33, s. 194: T99, 100",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "KS aihe 7, kirjan kpl 2. Desimaaliluvut",
+      "content": "Desimaalilukujen käsittely, pyöristäminen ja vertailu. Desimaaliluvuilla laskeminen, tarvittaessa muunnos murtoluvuksi ennen laskemista.",
+      "tasks": "s. 13: T3 - 6, s. 15: T16 - 19, s. 189: T29 - 31, s. 15: T22 - 25, s. 189: T40, 41",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "KS aihe 8, kirjan kpl 10. Lukusuora",
+      "content": "Lukujen vertailu lukusuoralla. Erisuuruusmerkit ja niiden käyttö.",
+      "tasks": "s. 43: T1 - 4, 6, s. 43: T8 - 10, s. 195: T112, s. 43: T11 - 13, s. 195: T113, 114",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "KS aihe 9, kirjan kpl 11 ja 12. Itseisarvo ja vastaluku",
+      "content": "Itseisarvon ja vastaluvun määritelmät. Lukujen sijoittaminen lukusuoralle. Vastaluvun laskeminen miinusmerkin avulla.",
+      "tasks": "s. 45: T1 - 4, s. 47: T2 - 5, s. 45: T10, 11, s. 47: T9, 11, 12, s. 45: T13, 14, s. 195: T121, s. 47: T12 - 14, s. 196: T126, 127",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 12,
+      "topic": "KS aihe 10, kirjan kpl 14 ja 15. Sulkumerkkien poistaminen laskuissa",
+      "content": "Kahden tai useamman etumerkin muuntaminen yhdeksi ennen laskutoimitusta",
+      "tasks": "s. 53: T1, 2, 4 - 7, s. 55: T1 - 4, 6, 7, s. 55: T11 - 14, s. 197: T165",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 13,
+      "topic": "KS aihe 11, kirjan kpl 16. Kertolasku negatiivisilla luvuilla",
+      "content": "Negatiivisten lukujen kertolaskun säännöt. Tuloksen etumerkin määrittäminen.",
+      "tasks": "s. 57: T1 - 5, s. 59: T1 - 4, s. 59: T6 - 11, s. 59: T12 - 17, s. 198: T180",
+      "substituteNote": ""
+    },
+      {
+      "lesson": 14,
+      "topic": "KS aihe 12, kirjan kpl 17. Jakolasku negatiivisilla luvuilla",
+      "content": "Negatiivisten lukujen jakolasku, perustelu kertolaskun avulla.",
+      "tasks": "s. 61: T1 - 3, 6, 7, s. 65: T2 - 7, 10, 11, s. 65: T12 - 16, s. 200: T201, 206, 200 ",
+      "substituteNote": ""
+    }
+
+
+
+  ]
+}

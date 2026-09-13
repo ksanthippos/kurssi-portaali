@@ -93,6 +93,16 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
   padding: 18px;
 }
 
+.lesson-card {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.lesson-card:last-child {
+  border-bottom: none;
+}
+
 .lesson header {
   display: flex;
   justify-content: space-between;

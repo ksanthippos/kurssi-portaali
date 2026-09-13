@@ -2,26 +2,104 @@
   "code": "FY_71",
   "title": "Lämpöoppi ja aaltoliike",
   "lessons": [
-    {
+        {
       "lesson": 1,
-      "topic": "Lämpötila ja lämpölaajeneminen",
-      "goal": "Tutustutaan lämpölaajenemisen käsitteeseen ja käytännön sovelluksiin.",
-      "tasks": "Kertaustehtävät 1–5",
-      "substituteNote": "Käy aihe lyhyesti läpi ja anna oppilaiden tehdä tehtävät. Lopuksi voidaan tarkistaa tehtäviä yhdessä."
+      "topic": "Johdatus fysiikan maailmaan",
+      "content": "KS aihe 0 / kirjan kpl 0. Mitä fysiikka tutkii, miksi sitä opiskellaan ja millaista on fysiikan kieli.",
+      "tasks": "TEHTÄVÄT: s. 6: T1 - 6",
+      "substituteNote": ""
     },
     {
       "lesson": 2,
-      "topic": "Lämpöenergia",
-      "goal": "Erotetaan lämpötila ja lämpöenergia toisistaan.",
-      "tasks": "Kertaustehtävät 6–9",
-      "substituteNote": "Aloita lyhyellä kertauksella. Oppilaat tekevät tehtävät itsenäisesti tai pareittain."
+      "topic": "Lämpötila ja lämpölaajeneminen, osa 1",
+      "content": "KS aihe 1 / kirjan kpl 1. Tutustutaan lämpölaajenemisen käsitteeseen ja käytännön sovelluksiin.",
+      "tasks": "TUTKIMUS: s. 8 - 9: Työt 1 ja 2. Simulaatio",
+      "substituteNote": ""
+    },
+        {
+      "lesson": 3,
+      "topic": "Lämpötila ja lämpölaajeneminen, osa 2",
+      "content": "KS aihe 1 / kirjan kpl 1. Jatketaan aiheen käsittely, harjoitustehtävien lisäksi myös eri aineiden lämpölaajenemisen tutkiminen.",
+      "tasks": "TEHTÄVÄT: s. 10 - 11: T1 - 7, s. 14 - 15: T1 - 5",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Lämpöenergia, osa 1",
+      "content": "KS aihe 2 / kirjan kpl 2. Lämpötilan ja lämpöenergian ero. Rakenneosasten liike lämpötilan kuvaajana.",
+      "tasks": "TUTKIMUS: s. 12: Työ 1. Simulaatio",
+      "substituteNote": ""
+    },
+        {
+      "lesson": 5,
+      "topic": "Lämpöenergia, osa 2",
+      "content": "KS aihe 2 / kirjan kpl 2. Jatketaan lämpöenergian käsittelyä, harjoitustehtävien lisäksi myös käytännön sovelluksia.",
+      "tasks": "TEHTÄVÄT: s. 14 - 15: T1 - 5",
+      "substituteNote": ""
     },
       {
-      "lesson": 3,
+      "lesson": 6,
       "topic": "Olomuodon muutokset",
-      "goal": "Tutustutaan olomuodon muutoksiin ja niiden vaikutuksiin.",
-      "tasks": "Kertaustehtävät 6–9",
-      "substituteNote": "Aloita lyhyellä kertauksella. Oppilaat tekevät tehtävät itsenäisesti tai pareittain."
+      "content": "KS aihe 3 / kirjan kpl 3. Tutustutaan olomuodon muutoksiin, sulamis- ja höyrystymislämpötiloihin ja energiaan olomuodon muutoksissa.",
+      "tasks": "TUTKIMUS: Simulaatiot. TEHTÄVÄT: s. 18 - 19: T1 - 5",
+      "substituteNote": ""
+    },
+        {
+      "lesson": 7,
+      "topic": "Lämmön siirtyminen",
+      "content": "KS aihe 4 / kirjan kpl 4. Tutustutaan lämmön siirtymisen mekanismeihin: johtuminen, konvektio ja säteily.",
+      "tasks": "TEHTÄVÄT: s. 22: T1 - 6, 8",
+      "substituteNote": ""
+    },
+        {
+      "lesson": 8,
+      "topic": "Värähdysliike",
+      "content": "KS aihe 5 / kirjan kpl 6. Tutustutaan värähdysliikkeen peruskäsitteisiin ja esimerkkeihin. Värähdysaika ja sen mittaaminen.",
+      "tasks": "TUTKIMUS: Heilurin rakentaminen, ohje kurssisivulla",
+      "substituteNote": ""
+    },
+        {
+      "lesson": 9,
+      "topic": "Aaltoliike",
+      "content": "KS aihe 6 / kirjan kpl 6. Tutustutaan aaltoliikkeen peruskäsitteisiin, pitkittäinen ja poikittainen aaltoliike. Amplitudi, aallonpituus ja taajuus.",
+      "tasks": "TUTKIMUS: s. 30: Työ 1 ja simulaatio. TEHTÄVÄT: s. 32 - 33: T1 - 8",
+      "substituteNote": ""
+    },
+        {
+      "lesson": 10,
+      "topic": "Ääni",
+      "content": "KS aihe 7 / kirjan kpl 7. Äänen eteneminen, nopeus ja aaltoliiketyyppi. Äänen taajuus ja korkeus sekä voimakkuus desibeliasteikolla.",
+      "tasks": "TUTKIMUS: s. 34 - 35: Työt 1 ja 2. TEHTÄVÄT: s. 36 - 37: T1 - 8",
+      "substituteNote": ""
+    },
+           {
+      "lesson": 11,
+      "topic": "Sähkömagneettinen säteily",
+      "content": "KS aihe 8. Tutustutaan sähkömagneettisen säteilyn lajeihin ja ominaisuuksiin.",
+      "tasks": "TUTKIMUS: Kursisivulta simulaatiot 1 ja 2.",
+      "substituteNote": ""
+    },
+            {
+      "lesson": 12,
+      "topic": "Valon heijastuminen ja peilit",
+      "content": "KS aihe 9 / kirjan kpl 8. Tutustutaan valon heijastumiseen ja erilaistenpeilien toimintaan.",
+      "tasks": "TUTKIMUS: s. 38 - 39: työt nro 1 ja 2. TEHTÄVÄT: s. 40 - 41: T1 - 6",
+      "substituteNote": ""
+    },
+            {
+      "lesson": 13,
+      "topic": "Valon taittuminen",
+      "content": "KS aihe 10 / kirjan kpl 9. Valon taittuminen eri aineiden rajapinnassa.",
+      "tasks": "TUTKIMUS: s. 42- 43: työt nro 1 ja 2. TEHTÄVÄT: s. 44 - 45: T1 - 6",
+      "substituteNote": ""
+    },
+            {
+      "lesson": 13,
+      "topic": "Linssit",
+      "content": "KS aihe 11 / kirjan kpl 10. Tutustutaan erilaisten linssien toimintaan ja valon taittumiseen linssien läpi.",
+      "tasks": "TUTKIMUS: s. 46: työ nro 1. TEHTÄVÄT: s. 47 - 48: T1 - 6",
+      "substituteNote": ""
     }
+    
   ]
 }

@@ -9,14 +9,10 @@
     "title": "Liike, voima ja energia",
     "file": "./fy_81.json"
   },
-  {
-    "code": "FY_91",
-    "title": "Sähkö ja magnetismi",
-    "file": "./fy_91.json"
-  },
-  {
-    "code": "FY_92",
-    "title": "Maapallolta maailmankaikkeuteen",
-    "file": "./fy_92.json"
+    {
+    "code": "MA_71",
+    "title": "Laskuoppi",
+    "file": "./ma_71.json"
   }
+
 ]

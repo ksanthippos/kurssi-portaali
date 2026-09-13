@@ -1,0 +1,3 @@
+- muutettava rakenne kurssit --> ryhmät, koska kaikilla yksilöllinen aikataulu
+- jokaiselle kurssille/ryhmälle kuvaus alkuun, mitkä kirjat käytössä, labrakäytännöt, tietokoneiden/simujen käyttö, kokeista yms
+- ylös ehkä hampurilaisvalikko johon jokin apua-osio tms
