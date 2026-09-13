@@ -3,8 +3,8 @@
   "FY_71": {
     "groups": {
       "FY_71.2": {
-        "startDate": "2026-08-13",
-        "endDate": "2027-08-12",
+        "startDate": "2026-08-21",
+        "endDate": "2026-10-09",
         "weekdays": [2, 5],
         "exceptions": [
           {
@@ -30,8 +30,8 @@
   "FY_81": {
     "groups": {
       "FY_81.2": {
-        "startDate": "2026-08-13",
-        "endDate": "2027-08-12",
+        "startDate": "2026-08-25",
+        "endDate": "2026-10-09",
         "weekdays": [2, 5],
         "exceptions": [
           {
