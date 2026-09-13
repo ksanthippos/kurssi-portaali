@@ -13,6 +13,16 @@
     "code": "MA_71",
     "title": "Laskuoppi",
     "file": "./ma_71.json"
+  },
+    {
+    "code": "MA_81",
+    "title": "Yhtälöt ja epäyhtälöt",
+    "file": "./ma_81.json"
+  },
+  {
+    "code": "MA_91",
+    "title": "Yhtälöparit",
+    "file": "./ma_91.json"
   }
 
 ]

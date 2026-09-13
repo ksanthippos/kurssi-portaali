@@ -1,0 +1,96 @@
+{
+  "code": "MA_81",
+  "title": "Yhtälöt ja epäyhtälöt",
+  "lessons": [
+    {
+      "lesson": 1,
+      "topic": "Aihe 1 / kirjan kpl 1. Yhtälöiden kertaus, osa 1",
+      "content": "Kerrataan yhtälöiden ratkaisemisen periaatteet kurssilta MA_73. Termien siirtämistekniikka ja yhtälön jakaminen puolittain samalla luvulla",
+      "tasks": "TEHTÄVÄT s. 9: T5, 7 ja yhtälöiden kertausmoniste",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Aihe 2 / kirjan kpl 2. Yhtälöiden kertaus, osa 2",
+      "content": "Sulkujen avaaminen ja hiukan monimutkaisempien yhtälöiden ratkaiseminen.",
+      "tasks": "TEHTÄVÄT s. 11: T1 - 3 s. 11: T4 - 7, s. 180: T8 s. 11: T8 - 13, s. 180: T11",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Aihe 3 / kirjan kpl 3. Nimittäjien poistaminen, osa 1",
+      "content": "Nimittäjien poistamisen perusperiaatteet.",
+      "tasks": "TEHTÄVÄT s. 11: T4, 9 s. 15: T1, 3 - 5 s. 15: T7 - 11",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Aihe 3 / kirjan kpl 3. Nimittäjien poistaminen, osa 2",
+      "content": "Nimittäjien poistamisen jatko ja monimutkaisempien esimerkkien ratkaiseminen.",
+      "tasks": "TEHTÄVÄT s. 17: T13 - 15, s. 182: T27, s. 17: T17 - 19, s. 182: T28, 29",
+      "substituteNote": ""
+    },
+{
+      "lesson": 5,
+      "topic": "Aihe 4 / kirjan kpl 6. Toisen asteen yhtälöt, osa 1",
+      "content": "Toisen asteen yhtälöiden ratkaisemisen perusperiaatteet. Neliöjuuren kertaus, plus-miinus-merkintä.",
+      "tasks": "TEHTÄVÄT s. 27: T1 - 4, s. 27: T6 - 9, s. 27: T11 - 14, s. 184: T59, 60",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Aihe 4 / kirjan kpl 6. Toisen asteen yhtälöt, osa 2",
+      "content": "Toisen asteen yhtälöiden haasteet, kuten pidemmät yhtälöt ja ratkaisemattomat yhtälöt.",
+      "tasks": "TEHTÄVÄT s. 29: T16 - 18, s. 29: T20 - 23, s. 185: T61 - 63, s. 29: T25 - 27, 30, s. 185: T66, 67",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Aihe 5 / kirjan kpl 5. Identtiset yhtälöt",
+      "content": "Identtisten yhtälöiden tunnistaminen ja ratkaiseminen. Identtisesti tosi ja epätosi yhtälö.",
+      "tasks": "TEHTÄVÄT s. 25: T10 - 12, s. 25: T15, 16, s. 184: T47 - 49, s. 25: T19, 20, s. 184: T50 - 52",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Aihe 6 / kirjan kpl 10. Ongelmanratkaisu yhtälöillä, osa 1",
+      "content": "Sanallisten tehtävien ratkaisua yhtälöillä, perustapauksia.",
+      "tasks": "TEHTÄVÄT s. 43: T1 - 4, s. 43: T5 - 7, s. 43: T8 - 10",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Aihe 7 / kirjan kpl 10. Ongelmanratkaisu yhtälöillä, osa 2",
+      "content": "Sanallisten tehtävien ratkaisua yhtälöillä, haastavampia tapauksia.",
+      "tasks": "s. 45: T11 - 14, s. 45: T15, 16, s. 47:  T23, 24,26, 29, s. 45: T19 - 21, s. 47: T30, 31, 35, s. 186- 187: T91, 99",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Aihe 8 / kirjan kpl 12. Suhde ja verranto, osa 1",
+      "content": "Suhteen käsitteen ymmärtäminen ja sen soveltaminen erilaisissa tehtävissä.",
+      "tasks": "TEHTÄVÄT s. 53: T2, 4, 5, 7, s. 53: T9, s. 189: T116 - 118, 122, 123, s. 53: T11, 12, s. 189: 121, 126, 127",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Aihe 8 / kirjan kpl 13. Suhde ja verranto, osa 2",
+      "content": "Verrannon käsite, yhtälön ratkaiseminen ristiinkertolaskulla.",
+      "tasks": "TEHTÄVÄT s. 57: T4, 5, s. 57: T8, 9, s. 59: T14, 15, 20, s. 57: T11, 12, s. 59: T16, 22, 23, s. 190: T138, 139",
+      "substituteNote": ""
+    },    {
+      "lesson": 12,
+      "topic": "Aihe 9 / kirjan kpl 14. Suoraan ja kääntäen verrannollisuus",
+      "content": "Suoraan ja kääntäen verrannollisuuden käsitteen ymmärtäminen.",
+      "tasks": "TEHTÄVÄT:",
+      "substituteNote": ""
+    },
+    {
+      "lesson": 13,
+      "topic": "Aihe 10 / kirjan kpl 11. Epäyhtälö",
+      "content": "Epäyhtälöiden ratkaiseminen ja niiden tulkinta.",
+      "tasks": "TEHTÄVÄT:",
+      "substituteNote": ""
+    }
+  ]
+}
