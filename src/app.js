@@ -45,7 +45,7 @@ async function loadCourses() {
 }
 
 function renderGroupButtons() {
-  courseList.innerHTML = "";
+  courseList.innerHTML = '<option value="">Valitse ryhmä</option>';
 
   state.courses.forEach((course) => {
     const courseSchedule = state.schedules[course.code];
@@ -55,17 +55,29 @@ function renderGroupButtons() {
     }
 
     Object.keys(courseSchedule.groups).forEach((groupCode) => {
-      const button = document.createElement("button");
+      const option = document.createElement("option");
 
-      button.className = "course-button";
-      button.textContent = groupCode;
+      option.value = `${course.code}|${groupCode}`;
+      option.textContent = groupCode;
 
-      button.addEventListener("click", () => {
-        selectGroup(course, groupCode);
-      });
-
-      courseList.appendChild(button);
+      courseList.appendChild(option);
     });
+  });
+
+  courseList.addEventListener("change", () => {
+    if (!courseList.value) {
+      return;
+    }
+
+    const [courseCodeValue, groupCode] = courseList.value.split("|");
+
+    const course = state.courses.find(
+      (course) => course.code === courseCodeValue
+    );
+
+    if (course) {
+      selectGroup(course, groupCode);
+    }
   });
 }
 
@@ -84,12 +96,7 @@ async function selectGroup(course, groupCode) {
     state.currentCourseData = await response.json();
     state.currentGroup = groupCode;
 
-    [...courseList.children].forEach((button) => {
-      button.classList.toggle(
-        "active",
-        button.textContent === groupCode
-      );
-    });
+
 
     courseCode.textContent = groupCode;
     courseTitle.textContent = course.title;
@@ -171,7 +178,7 @@ function renderLessons() {
           <div class="lesson-header">
             <div>
               <p class="lesson-number">
-                Oppitunti ${lesson.lesson}
+                Oppitunti #${lesson.lesson}
               </p>
 
               <p class="lesson-date">
@@ -256,10 +263,39 @@ function formatDate(date) {
   return `${year}-${month}-${day}`;
 }
 
-function formatDisplayDate(isoDate) {
-  const [year, month, day] = isoDate.split("-");
+function getWeekNumber(date) {
+  const d = new Date(date);
+  d.setHours(0, 0, 0, 0);
 
-  return `${day}.${month}.${year}`;
+  d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+
+  const yearStart = new Date(d.getFullYear(), 0, 1);
+
+  return Math.ceil(
+    (((d - yearStart) / 86400000) + 1) / 7
+  );
+}
+
+function formatDisplayDate(isoDate) {
+  const date = new Date(`${isoDate}T00:00:00`);
+
+  const weekdays = [
+    "Sunnuntai",
+    "Maanantai",
+    "Tiistai",
+    "Keskiviikko",
+    "Torstai",
+    "Perjantai",
+    "Lauantai"
+  ];
+
+  const weekday = weekdays[date.getDay()];
+
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const year = date.getFullYear();
+
+  return `${weekday} ${day}.${month}.${year} <span class="week-number"> vko ${getWeekNumber(date)}</span>`;
 }
 
 function renderEmpty(message) {

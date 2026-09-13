@@ -1,4 +1,6 @@
 
-- jokaiselle kurssille/ryhmälle kuvaus alkuun, mitkä kirjat käytössä, labrakäytännöt, tietokoneiden/simujen käyttö, kokeista yms
-- ylös ehkä hampurilaisvalikko johon jokin apua-osio tms
-- päivämäärien eteen viikonpäivä
+
+- ylös hampurilaisvalikko johon:
+    - kurssimateriaaleista --> mitä kirjoja käytössä
+    - yleisohjeita sijaiselle --> labrakäytänteet, poissaolojen ja numeroiden merkkaus jne
+    - yleistä --> tekijä ja versio

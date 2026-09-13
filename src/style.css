@@ -54,18 +54,52 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
 
 .course-list { display: grid; gap: 8px; }
 
-.course-button {
+
+/* Ryhmän pudotusvalikko */
+.course-select {
   width: 100%;
-  text-align: left;
-  border: 1px solid #dbe2ea;
-  background: #fff;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
   border-radius: 10px;
-  padding: 10px 12px;
   cursor: pointer;
+
+  /* Oma nuoli */
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #64748b 50%),
+    linear-gradient(135deg, #64748b 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 50%,
+    calc(100% - 12px) 50%;
+  background-size:
+    6px 6px,
+    6px 6px;
+  background-repeat: no-repeat;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.course-button:hover,
-.course-button.active { border-color: #17324d; background: #eef4f9; }
+.course-select:hover {
+  border-color: #94a3b8;
+}
+
+.course-select:focus {
+  outline: none;
+  border-color: #64748b;
+  box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.15);
+}
+
+/* Ensimmäinen "Valitse ryhmä" -vaihtoehto */
+.course-select option:first-child {
+  color: #64748b;
+}
+
 
 .content { padding: 24px; }
 
@@ -134,6 +168,18 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
   padding: 20px 0;
   color: #64748b;
   font-size: 0.9rem;
+}
+
+.week-number {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #64748b;
+  background: #f1f5f9;
+  border-radius: 5px;
+  white-space: nowrap;
 }
 
 @media (max-width: 760px) {

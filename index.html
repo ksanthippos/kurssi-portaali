@@ -10,16 +10,18 @@
   <header class="site-header">
     <div class="container">
       <p class="eyebrow">1. jakso (13.8.2026 - 9.10.2026)</p>
-      <h1>RAUH -Kurssiportaali</h1>
-      <p class="lead">RAUH - opetusryhmien kurssisuunnitelmat ja oppituntien sisällöt tehtävineen.</p>
+      <h1>RAUH - kurssiportaali</h1>
+      <p class="lead">Kaikkien opetusryhmien kurssisisällöt, aikataulut ja tärkeät päivämäärät.</p>
     </div>
   </header>
 
   <main class="container layout">
-    <aside class="sidebar" aria-label="Kurssivalinta">
-      <h2>Ryhmät</h2>
-      <div id="course-list" class="course-list"></div>
-    </aside>
+  <aside class="sidebar" aria-label="Ryhmän valinta">
+    <h2>Ryhmä</h2>
+    <select id="course-list" class="course-select">
+      <option value="">Valitse ryhmä</option>
+    </select>
+  </aside>
 
     <section class="content" aria-live="polite">
       <div class="toolbar">

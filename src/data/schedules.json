@@ -14,13 +14,13 @@
           },
           {
             "date": "2026-09-22",
-            "type": "KOE",
-            "description": "Kurssikoe! Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
+            "type": "** KOE **",
+            "description": "Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
           },
           {
             "date": "2026-10-09",
-            "type": "MUU",
-            "description": "Seurasaari-päivä. Ei opetusta."
+            "type": "SEURASAARI - PÄIVÄ",
+            "description": "Ei normaalia oppituntia, lisätiedot KR - opettajalta."
           }
         ]
       }
@@ -41,13 +41,13 @@
           },
           {
             "date": "2026-09-18",
-            "type": "KOE",
-            "description": "Kurssikoe! Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
+            "type": "** KOE **",
+            "description": "Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
           },
           {
             "date": "2026-10-09",
-            "type": "MUU",
-            "description": "Seurasaari-päivä. Ei opetusta."
+            "type": "SEURASAARI - PÄIVÄ",
+            "description": "Ei normaalia oppituntia, lisätiedot KR - opettajalta."
           }
         ]
       }
@@ -80,13 +80,13 @@
           },
           {
             "date": "2026-09-16",
-            "type": "KOE",
+            "type": "** KOE **",
             "description": "Kurssikoe! Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
           },
           {
             "date": "2026-09-21",
-            "type": "MUU",
-            "description": "FUNA-testi (suomen kieli). Kysy SUK-opettajaltasi tarvittaessa lisätietoja"
+            "type": "FUNA - TESTI",
+            "description": "Aiheena suomen kieli. Kysy SUK-opettajaltasi tarvittaessa lisätietoja."
           }
         ]
       },
@@ -103,13 +103,13 @@
           },
           {
             "date": "2026-09-24",
-            "type": "KOE",
-            "description": "Kurssikoe! Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
+            "type": "** KOE **",
+            "description": "Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
           },
           {
             "date": "2026-10-01",
-            "type": "MUU OHJELMA",
-            "description": "FUNA-testi (matematiikka). Ei vaikuta arvosanaan!"
+            "type": "FUNA - TESTI",
+            "description": "Aiheena matematiikka. Ei vaikuta arvosanaan."
           }
         ]
       },
@@ -121,13 +121,13 @@
         "exceptions": [
             {
             "date": "2026-10-02",
-            "type": "KOE",
-            "description": "Kurssikoe! Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
+            "type": "** KOE **",
+            "description": "Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
           },
           {
             "date": "2026-10-09",
-            "type": "MUU",
-            "description": "Seurasaari-päivä. Ei opetusta."
+            "type": "SEURASAARI - PÄIVÄ",
+            "description": "Ei normaalia oppituntia, lisätiedot KR - opettajalta."
           }
         ]
       }
@@ -143,8 +143,8 @@
         "exceptions": [
           {
             "date": "2026-09-28",
-            "type": "KOE",
-            "description": "Kurssikoe! Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
+            "type": "** KOE **",
+            "description": "Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
           }
         ]
       }
@@ -160,8 +160,8 @@
         "exceptions": [
           {
             "date": "2026-10-05",
-            "type": "KOE",
-            "description": "Kurssikoe! Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
+            "type": "** KOE **",
+            "description": "Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
           }
         ]
       }
