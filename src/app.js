@@ -2,7 +2,8 @@ const state = {
   courses: [],
   schedules: {},
   currentCourse: null,
-  currentCourseData: null
+  currentCourseData: null,
+  currentGroup: null
 };
 
 const courseList = document.querySelector("#course-list");
@@ -24,10 +25,18 @@ async function loadCourses() {
     state.courses = await coursesResponse.json();
     state.schedules = await schedulesResponse.json();
 
-    renderCourseButtons();
+    renderGroupButtons();
 
-    if (state.courses.length > 0) {
-      selectCourse(state.courses[0]);
+    const firstCourse = state.courses.find(
+      (course) => state.schedules[course.code]?.groups
+    );
+
+    if (firstCourse) {
+      const firstGroup = Object.keys(
+        state.schedules[firstCourse.code].groups
+      )[0];
+
+      selectGroup(firstCourse, firstGroup);
     }
   } catch (error) {
     console.error(error);
@@ -83,49 +92,60 @@ function formatDisplayDate(isoDate) {
   return `${day}.${month}.${year}`;
 }
 
-function renderCourseButtons() {
-  courseList.replaceChildren();
+function renderGroupButtons() {
+  courseList.innerHTML = "";
 
-  for (const course of state.courses) {
-    const button = document.createElement("button");
-    button.className = "course-button";
-    button.type = "button";
-    button.textContent = `${course.code} – ${course.title}`;
+  state.courses.forEach((course) => {
+    const courseSchedule = state.schedules[course.code];
 
-    button.addEventListener("click", () => selectCourse(course));
+    if (!courseSchedule?.groups) {
+      return;
+    }
 
-    courseList.append(button);
-  }
+    Object.keys(courseSchedule.groups).forEach((groupCode) => {
+      const button = document.createElement("button");
+
+      button.className = "course-button";
+      button.textContent = groupCode;
+
+      button.addEventListener("click", () => {
+        selectGroup(course, groupCode);
+      });
+
+      courseList.appendChild(button);
+    });
+  });
 }
 
-async function selectCourse(course) {
+async function selectGroup(course, groupCode) {
   try {
     const fileName = course.file.split("/").pop();
-
     const response = await fetch(`./src/data/${fileName}`);
 
     if (!response.ok) {
-      throw new Error(`Kurssin ${course.code} lataaminen epäonnistui.`);
+      throw new Error(
+        `Kurssin ${course.code} lataaminen epäonnistui.`
+      );
     }
 
     state.currentCourse = course;
     state.currentCourseData = await response.json();
+    state.currentGroup = groupCode;
 
     [...courseList.children].forEach((button) => {
       button.classList.toggle(
         "active",
-        button.textContent.startsWith(state.currentCourse.code)
+        button.textContent === groupCode
       );
     });
 
-    courseCode.textContent = state.currentCourse.code;
-    courseTitle.textContent = state.currentCourse.title;
+    courseCode.textContent = groupCode;
+    courseTitle.textContent = course.title;
 
     renderLessons();
-
   } catch (error) {
-    console.error("Kurssin lataus/renderöinti epäonnistui:", error);
-    renderEmpty(`Virhe: ${error.message}`);
+    console.error(error);
+    renderEmpty("Oppituntien lataaminen epäonnistui.");
   }
 }
 
@@ -137,7 +157,8 @@ function renderLessons() {
     return;
   }
 
-  const schedule = state.schedules[state.currentCourse.code];
+  const courseSchedule = state.schedules[state.currentCourse.code];
+  const schedule = courseSchedule.groups[state.currentGroup];
 
   if (!schedule) {
     lessonList.innerHTML = `
