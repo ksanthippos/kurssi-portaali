@@ -69,6 +69,14 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
 
 .content { padding: 24px; }
 
+.exception-box {
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #f3f3f3;
+  font-size: 0.95rem;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;

@@ -44,54 +44,6 @@ async function loadCourses() {
   }
 }
 
-function formatDate(date) {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-
-  return `${year}-${month}-${day}`;
-}
-
-function getLessonDate(lessonNumber, schedule) {
-  const startDate = new Date(`${schedule.startDate}T00:00:00`);
-  const endDate = new Date(`${schedule.endDate}T00:00:00`);
-
-  const holidays = new Set(schedule.holidays || []);
-  const cancelled = new Set(schedule.cancelled || []);
-
-  let currentDate = new Date(startDate);
-  let lessonCount = 0;
-
-  while (currentDate <= endDate) {
-    const isoDate = formatDate(currentDate);
-
-    // JavaScript: sunnuntai = 0, maanantai = 1, ..., lauantai = 6
-    const weekday = currentDate.getDay();
-
-    const isTeachingDay = schedule.weekdays.includes(weekday);
-    const isHoliday = holidays.has(isoDate);
-    const isCancelled = cancelled.has(isoDate);
-
-    if (isTeachingDay && !isHoliday && !isCancelled) {
-      lessonCount++;
-
-      if (lessonCount === lessonNumber) {
-        return isoDate;
-      }
-    }
-
-    currentDate.setDate(currentDate.getDate() + 1);
-  }
-
-  return null;
-}
-
-function formatDisplayDate(isoDate) {
-  const [year, month, day] = isoDate.split("-");
-
-  return `${day}.${month}.${year}`;
-}
-
 function renderGroupButtons() {
   courseList.innerHTML = "";
 
@@ -150,28 +102,69 @@ async function selectGroup(course, groupCode) {
 }
 
 function renderLessons() {
-  const lessonList = document.getElementById("lesson-list");
-
-  if (!state.currentCourse || !state.currentCourseData) {
-    renderEmpty();
-    return;
-  }
-
   const courseSchedule = state.schedules[state.currentCourse.code];
   const schedule = courseSchedule.groups[state.currentGroup];
 
-  if (!schedule) {
-    lessonList.innerHTML = `
-      <p class="empty-message">
-        Kurssille ei ole määritetty aikataulua.
-      </p>
-    `;
-    return;
-  }
+  const lessons = state.currentCourseData.lessons;
+  const exceptions = schedule.exceptions || [];
 
-  lessonList.innerHTML = state.currentCourseData.lessons
-    .map((lesson) => {
-      const date = getLessonDate(lesson.lesson, schedule);
+  const events = [];
+
+  // Lasketaan jokaisen normaalin oppitunnin päivämäärä.
+  lessons.forEach((lesson) => {
+    const date = getLessonDate(lesson.lesson, schedule);
+
+    if (date) {
+      events.push({
+        date: date,
+        lesson: lesson,
+        exception: null
+      });
+    }
+  });
+
+  // Lisätään poikkeukset omiksi tapahtumikseen.
+  exceptions.forEach((exception) => {
+    events.push({
+      date: exception.date,
+      lesson: null,
+      exception: exception
+    });
+  });
+
+  // Järjestetään kaikki päivämäärän mukaan.
+  events.sort((a, b) => a.date.localeCompare(b.date));
+
+  lessonList.innerHTML = events
+    .map((event) => {
+      if (event.exception) {
+        return `
+          <article class="lesson-card exception-card">
+            <div class="lesson-header">
+              <div>
+                <p class="lesson-number">Poikkeusohjelmaa</p>
+               
+                <p class="lesson-date">
+                  ${formatDisplayDate(event.date)}
+                </p>
+                  <div class="exception-box">
+                  <strong>
+                    ${escapeHtml(event.exception.type)}
+                  </strong>
+                </div>
+                <p>
+                  ${escapeHtml(event.exception.description)}
+                </p>
+                
+              </div>
+            </div>
+
+           
+          </article>
+        `;
+      }
+
+      const lesson = event.lesson;
 
       return `
         <article class="lesson-card">
@@ -181,13 +174,13 @@ function renderLessons() {
                 Oppitunti ${lesson.lesson}
               </p>
 
-              ${
-                date
-                  ? `<p class="lesson-date">${formatDisplayDate(date)}</p>`
-                  : ""
-              }
+              <p class="lesson-date">
+                ${formatDisplayDate(event.date)}
+              </p>
 
-              <h3>${escapeHtml(lesson.topic)}</h3>
+              <h3>
+                ${escapeHtml(lesson.topic || lesson.title)}
+              </h3>
             </div>
           </div>
 
@@ -200,21 +193,18 @@ function renderLessons() {
               ? `
                 <div class="tasks">
                   <h4>Tehtävät</h4>
-                  ${(Array.isArray(lesson.tasks) ? lesson.tasks : [lesson.tasks])
-                    .filter(Boolean)
-                    .map((task) => `<p>${escapeHtml(task)}</p>`)
-                    .join("")}
+                  <p>${escapeHtml(lesson.tasks)}</p>
                 </div>
               `
               : ""
           }
 
           ${
-            lesson.substitute
+            lesson.substituteNote
               ? `
                 <div class="substitute-box">
                   <strong>Sijaiselle</strong>
-                  <p>${escapeHtml(lesson.substitute)}</p>
+                  <p>${escapeHtml(lesson.substituteNote)}</p>
                 </div>
               `
               : ""
@@ -223,6 +213,53 @@ function renderLessons() {
       `;
     })
     .join("");
+}
+
+function getLessonDate(lessonNumber, schedule) {
+  const startDate = new Date(`${schedule.startDate}T00:00:00`);
+  const endDate = new Date(`${schedule.endDate}T00:00:00`);
+
+  const exceptions = schedule.exceptions || [];
+
+  let currentDate = new Date(startDate);
+  let normalLessonCount = 0;
+
+  while (currentDate <= endDate) {
+    const isoDate = formatDate(currentDate);
+    const weekday = currentDate.getDay();
+
+    if (schedule.weekdays.includes(weekday)) {
+      const isException = exceptions.some(
+        (exception) => exception.date === isoDate
+      );
+
+      if (!isException) {
+        normalLessonCount++;
+
+        if (normalLessonCount === lessonNumber) {
+          return isoDate;
+        }
+      }
+    }
+
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
+
+  return null;
+}
+
+function formatDate(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+}
+
+function formatDisplayDate(isoDate) {
+  const [year, month, day] = isoDate.split("-");
+
+  return `${day}.${month}.${year}`;
 }
 
 function renderEmpty(message) {

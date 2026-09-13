@@ -4,14 +4,24 @@
     "groups": {
       "MA_71.1": {
         "startDate": "2026-08-17",
-        "endDate": "2026-10-07",
+        "endDate": "2026-10-09",
         "weekdays": [1, 3],
-        "holidays": [
-        ],
-        "cancelled": [
-          "2026-08-10",
-          "2026-09-16",
-          "2026-09-21"
+        "exceptions": [
+          {
+            "date": "2026-09-14",
+            "type": "KERTAUS",
+            "description": "Kokeeseen kertausta. Katso koealue ja muut lisätiedot Wilmasta."
+          },
+          {
+            "date": "2026-09-16",
+            "type": "KOE",
+            "description": "Kurssikoe! Tule ajoissa ja kaikki tarvittavat välineet mukaan."
+          },
+          {
+            "date": "2026-09-21",
+            "type": "MUU",
+            "description": "FUNA-testi (suomen kieli). Kysy SUK-opettajaltasi tarvittaessa lisätietoja"
+          }
         ]
       },
 
@@ -19,27 +29,42 @@
         "startDate": "2026-08-20",
         "endDate": "2026-10-08",
         "weekdays": [1, 4],
-        "holidays": [
-          "2026-10-12",
-          "2026-10-14",
-          "2026-10-16"
-        ],
-        "cancelled": []
+        "exceptions": [
+          {
+            "date": "2026-09-21",
+            "type": "KERTAUS",
+            "description": "Kokeeseen kertausta. Katso koealue ja muut lisätiedot Wilmasta."
+          },
+          {
+            "date": "2026-09-24",
+            "type": "KOE",
+            "description": "Kurssikoe! Tule ajoissa ja kaikki tarvittavat välineet mukaan."
+          },
+          {
+            "date": "2026-10-01",
+            "type": "MUU OHJELMA",
+            "description": "FUNA-testi (matematiikka). Ei vaikuta arvosanaan!"
+          }
+        ]
       },
 
       "MA_71.6": {
-      "startDate": "2026-08-13",
-      "endDate": "2027-08-12",
-      "weekdays": [2, 5],
-      "holidays": [
-        "2026-10-12",
-        "2026-10-14",
-        "2026-10-16"
-      ],
-      "cancelled": [
-        "2026-11-22"
-      ]
-    }
+        "startDate": "2026-08-21",
+        "endDate": "2026-10-09",
+        "weekdays": [2, 5],
+        "exceptions": [
+            {
+            "date": "2026-10-02",
+            "type": "KOE",
+            "description": "Kurssikoe! Tule ajoissa ja kaikki tarvittavat välineet mukaan."
+          },
+                    {
+            "date": "2026-10-09",
+            "type": "MUU",
+            "description": "Seurasaari-päivä. Ei opetusta."
+          }
+        ]
+      }
   }
   },
 
@@ -49,8 +74,18 @@
         "startDate": "2026-08-13",
         "endDate": "2027-08-12",
         "weekdays": [1, 3],
-        "holidays": [],
-        "cancelled": []
+        "exceptions": [
+          {
+            "date": "2026-10-12",
+            "type": "loma",
+            "description": "Syysloma"
+          },
+          {
+            "date": "2026-10-14",
+            "type": "tapahtuma",
+            "description": "Koulun salitilaisuus"
+          }
+        ]
       }
     }
   },
@@ -61,8 +96,18 @@
         "startDate": "2026-08-13",
         "endDate": "2027-08-12",
         "weekdays": [1, 3],
-        "holidays": [],
-        "cancelled": []
+        "exceptions": [
+          {
+            "date": "2026-10-12",
+            "type": "loma",
+            "description": "Syysloma"
+          },
+          {
+            "date": "2026-10-14",
+            "type": "tapahtuma",
+            "description": "Koulun salitilaisuus"
+          }
+        ]
       }
     }
   },
@@ -73,8 +118,18 @@
         "startDate": "2026-08-13",
         "endDate": "2027-08-12",
         "weekdays": [1, 3],
-        "holidays": [],
-        "cancelled": []
+        "exceptions": [
+          {
+            "date": "2026-10-12",
+            "type": "loma",
+            "description": "Syysloma"
+          },
+          {
+            "date": "2026-10-14",
+            "type": "tapahtuma",
+            "description": "Koulun salitilaisuus"
+          }
+        ]
       }
     }
   },
@@ -85,8 +140,18 @@
         "startDate": "2026-08-13",
         "endDate": "2027-08-12",
         "weekdays": [1, 3],
-        "holidays": [],
-        "cancelled": []
+        "exceptions": [
+          {
+            "date": "2026-10-12",
+            "type": "loma",
+            "description": "Syysloma"
+          },
+          {
+            "date": "2026-10-14",
+            "type": "tapahtuma",
+            "description": "Koulun salitilaisuus"
+          }
+        ]
       }
     }
   }
