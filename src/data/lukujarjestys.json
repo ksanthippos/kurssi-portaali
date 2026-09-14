@@ -51,19 +51,19 @@
           "alku": "08:30",
           "loppu": "10:00",
           "ryhma": "FY_71.2",
-          "tila": "A 2090/A 2091"
+          "tila": "A 2090"
         },
         {
           "tyyppi": "valvonta",
           "alku": "10:00",
           "loppu": "10:15",
-          "paikka": "pingis"
+          "paikka": "1. kerros"
         },
         {
           "tyyppi": "valvonta",
           "alku": "12:00",
           "loppu": "12:15",
-          "paikka": "ruokala"
+          "paikka": "Ruokala"
         },
         {
           "tyyppi": "oppitunti",
@@ -77,7 +77,7 @@
           "alku": "14:05",
           "loppu": "15:35",
           "ryhma": "FY_81.2",
-          "tila": "A 2090/A 2091"
+          "tila": "A 2090"
         }
       ]
     },
@@ -121,7 +121,7 @@
           "tyyppi": "valvonta",
           "alku": "12:00",
           "loppu": "12:15",
-          "paikka": "ruokala"
+          "paikka": "Ruokala"
         },
         {
           "tyyppi": "kotiryhma",
@@ -146,14 +146,14 @@
           "alku": "10:15",
           "loppu": "11:45",
           "ryhma": "FY_81.2",
-          "tila": "A 2090/A 2091"
+          "tila": "A 2090"
         },
         {
           "tyyppi": "oppitunti",
           "alku": "12:20",
           "loppu": "13:50",
           "ryhma": "FY_71.2",
-          "tila": "A 2090/A 2091"
+          "tila": "A 2090"
         }
       ]
     }
