@@ -92,7 +92,7 @@
       },
 
       "MA_71.2": {
-        "startDate": "2026-08-20",
+        "startDate": "2026-08-17",
         "endDate": "2026-10-08",
         "weekdays": [1, 4],
         "exceptions": [
@@ -115,7 +115,7 @@
       },
 
       "MA_71.6": {
-        "startDate": "2026-08-21",
+        "startDate": "2026-08-18",
         "endDate": "2026-10-09",
         "weekdays": [2, 5],
         "exceptions": [
