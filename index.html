@@ -8,32 +8,86 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <p class="eyebrow">1. jakso (13.8.2026 - 9.10.2026)</p>
-      <h1>RAUH - kurssiportaali</h1>
-      <p class="lead">Kaikkien opetusryhmien kurssisisällöt, aikataulut ja tärkeät päivämäärät.</p>
+    <div class="container header-inner">
+      <div>
+        <p class="eyebrow">1. jakso (13.8.2026 - 9.10.2026)</p>
+        <h1>RAUH - kurssiportaali</h1>
+        <p class="lead">Kaikkien opetusryhmien kurssisisällöt, aikataulut ja tärkeät päivämäärät.</p>
+      </div>
+
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-label="Avaa valikko"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+
+    <nav id="main-navigation" class="main-navigation container" aria-label="Päänavigaatio" hidden>
+      <button type="button" class="nav-link" data-view="courses">Kurssiportaali</button>
+      <button type="button" class="nav-link" data-view="schedule">Lukujärjestys</button>
+      <button type="button" class="nav-link" data-view="substitute">Sijaiselle</button>
+    </nav>
   </header>
 
   <main class="container layout">
-  <aside class="sidebar" aria-label="Ryhmän valinta">
-    <h2>Ryhmä</h2>
-    <select id="course-list" class="course-select">
-      <option value="">Valitse ryhmä</option>
-    </select>
-  </aside>
+    <!-- Nykyinen kurssiportaalinäkymä -->
+    <section id="courses-view" class="view" aria-live="polite">
+      <div class="course-layout">
+        <aside class="sidebar" aria-label="Ryhmän valinta">
+          <h2>Ryhmä</h2>
+          <select id="course-list" class="course-select">
+            <option value="">Valitse ryhmä</option>
+          </select>
+        </aside>
 
-    <section class="content" aria-live="polite">
-      <div class="toolbar">
+        <section class="content">
+          <div class="toolbar">
+            <div>
+              <p class="eyebrow" id="course-code">Kurssi</p>
+              <h2 id="course-title">Valitse kurssi</h2>
+            </div>
+          </div>
+
+          <div id="lesson-list" class="lesson-list"></div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Lukujärjestys -->
+    <section id="schedule-view" class="view standalone-view" aria-live="polite" hidden>
+      <div class="standalone-header">
+        <button type="button" class="back-button" data-view="courses">← Takaisin</button>
         <div>
-          <p class="eyebrow" id="course-code">Kurssi</p>
-          <h2 id="course-title">Valitse kurssi</h2>
+          <p class="eyebrow">Oma näkymä</p>
+          <h2>Lukujärjestys</h2>
         </div>
       </div>
 
-      <div id="lesson-list" class="lesson-list"></div>
+      <div id="schedule-content" class="schedule-content">
+        <div class="empty">Lukujärjestys tulee tähän.</div>
+      </div>
     </section>
 
+    <!-- Sijaiselle -->
+    <section id="substitute-view" class="view standalone-view" aria-live="polite" hidden>
+      <div class="standalone-header">
+        <button type="button" class="back-button" data-view="courses">← Takaisin</button>
+        <div>
+          <p class="eyebrow">Poissaolotilanne</p>
+          <h2>Sijaiselle</h2>
+        </div>
+      </div>
+
+      <div class="empty">
+        Sijaisnäkymä tulee tähän.
+      </div>
     </section>
   </main>
 

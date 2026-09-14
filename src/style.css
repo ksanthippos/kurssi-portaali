@@ -9,15 +9,28 @@
 
 body { margin: 0; }
 
+button,
+select {
+  font: inherit;
+}
+
 .container {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
 }
 
 .site-header {
+  position: relative;
   background: #17324d;
   color: white;
-  padding: 48px 0 40px;
+  padding: 36px 0 32px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .eyebrow {
@@ -31,31 +44,121 @@ body { margin: 0; }
 
 h1, h2, h3 { line-height: 1.15; }
 
-h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
 
-.lead { max-width: 720px; margin: 12px 0 0; opacity: 0.9; }
+.lead {
+  max-width: 720px;
+  margin: 12px 0 0;
+  opacity: 0.9;
+}
+
+/* Hampurilaisvalikko */
+
+.menu-button {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.menu-button:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-button span {
+  display: block;
+  width: 21px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-button.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-button.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.main-navigation[hidden] {
+  display: none;
+}
+
+.nav-link {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* Näkymät */
 
 .layout {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 28px;
   padding: 32px 0 48px;
 }
 
+.view[hidden] {
+  display: none;
+}
+
+.course-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 28px;
+}
+
 .sidebar,
-.content {
+.content,
+.standalone-view {
   background: white;
   border: 1px solid #dbe2ea;
   border-radius: 14px;
 }
 
-.sidebar { padding: 20px; height: fit-content; }
-.sidebar h2 { margin-top: 0; }
+.sidebar {
+  padding: 20px;
+  height: fit-content;
+}
 
-.course-list { display: grid; gap: 8px; }
+.sidebar h2 {
+  margin-top: 0;
+}
 
-
-/* Ryhmän pudotusvalikko */
 .course-select {
   width: 100%;
   padding: 0.75rem 2.5rem 0.75rem 1rem;
@@ -67,10 +170,9 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
   border: 1px solid #cbd5e1;
   border-radius: 10px;
   cursor: pointer;
-
-  /* Oma nuoli */
   appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, #64748b 50%),
+  background-image:
+    linear-gradient(45deg, transparent 50%, #64748b 50%),
     linear-gradient(135deg, #64748b 50%, transparent 50%);
   background-position:
     calc(100% - 18px) 50%,
@@ -79,10 +181,7 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
     6px 6px,
     6px 6px;
   background-repeat: no-repeat;
-
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .course-select:hover {
@@ -95,20 +194,12 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
   box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.15);
 }
 
-/* Ensimmäinen "Valitse ryhmä" -vaihtoehto */
 .course-select option:first-child {
   color: #64748b;
 }
 
-
-.content { padding: 24px; }
-
-.exception-box {
-  margin: 0.75rem 0 1rem;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  background: #f3f3f3;
-  font-size: 0.95rem;
+.content {
+  padding: 24px;
 }
 
 .toolbar {
@@ -120,14 +211,15 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
   padding-bottom: 18px;
 }
 
-.toolbar h2 { margin: 0; }
-
-.substitute-box {
-  padding-top: 10px;
-  border-top: 1px solid #e5e7eb;
+.toolbar h2 {
+  margin: 0;
 }
 
-.lesson-list { display: grid; gap: 16px; margin-top: 20px; }
+.lesson-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
 
 .lesson {
   border: 1px solid #dbe2ea;
@@ -152,15 +244,84 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
   align-items: start;
 }
 
-.lesson h3 { margin: 0; }
-.lesson-number { color: #64748b; white-space: nowrap; }
-.lesson-grid { display: grid; gap: 10px; margin-top: 14px; }
-.lesson-grid strong { display: block; margin-bottom: 2px; }
-.lesson-grid p { margin: 0; }
+.lesson h3 {
+  margin: 0;
+}
+
+.lesson-number {
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.lesson-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.lesson-grid strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.lesson-grid p {
+  margin: 0;
+}
+
+.exception-box {
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #f3f3f3;
+  font-size: 0.95rem;
+}
+
+.substitute-box {
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
 
 .empty {
   padding: 32px 0;
   color: #64748b;
+}
+
+/* Erilliset näkymät */
+
+.standalone-view {
+  padding: 24px;
+}
+
+.standalone-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.standalone-header h2 {
+  margin: 0;
+}
+
+.back-button {
+  flex: 0 0 auto;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  color: #334155;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.schedule-content {
+  padding-top: 4px;
 }
 
 .site-footer {
@@ -182,8 +343,157 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
   white-space: nowrap;
 }
 
+/* -----------------------------
+   Lukujärjestys
+----------------------------- */
+
+.schedule-period {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.schedule-day {
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.schedule-day-header {
+  padding: 12px 14px;
+  background: #f1f5f9;
+  border-bottom: 1px solid #dbe2ea;
+}
+
+.schedule-day-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.schedule-day-header span {
+  display: block;
+  margin-top: 2px;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.schedule-events {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+}
+
+.schedule-event {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #dbe2ea;
+  border-radius: 8px;
+  background: white;
+}
+
+.schedule-time {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.schedule-event-content {
+  min-width: 0;
+}
+
+.schedule-event-content strong,
+.schedule-event-content span {
+  display: block;
+}
+
+.schedule-event-content strong {
+  font-size: 0.95rem;
+}
+
+.schedule-event-content span {
+  margin-top: 2px;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* Valvonta ja kotiryhmätunti erottuvat hieman,
+   mutta eivät liian voimakkaasti. */
+
+.schedule-event.supervision {
+  background: #f8fafc;
+}
+
+.schedule-event.homeroom {
+  background: #f8fafc;
+}
+
+
+/* Mobiilinäkymä */
+
+@media (max-width: 900px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .schedule-day-header span {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 760px) {
-  .layout { grid-template-columns: 1fr; }
-  .toolbar, .lesson header { align-items: stretch; flex-direction: column; }
-  .lesson-date { white-space: normal; }
+  .site-header {
+    padding: 28px 0 24px;
+  }
+
+  .header-inner {
+    align-items: center;
+  }
+
+  .main-navigation {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: left;
+  }
+
+  .course-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar,
+  .lesson header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .lesson-date {
+    white-space: normal;
+  }
+
+  .standalone-header {
+    flex-direction: column;
+  }
+
+  .back-button {
+    align-self: flex-start;
+  }
 }

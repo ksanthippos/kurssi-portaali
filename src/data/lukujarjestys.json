@@ -1,0 +1,161 @@
+{
+  "jakso": "1",
+  "viikko": 38,
+  "alkupvm": "2026-09-14",
+  "loppupvm": "2026-09-18",
+  "paivat": {
+    "maanantai": {
+      "date": "2026-09-14",
+      "tapahtumat": [
+        {
+          "tyyppi": "oppitunti",
+          "alku": "08:30",
+          "loppu": "10:00",
+          "ryhma": "MA_71.2",
+          "tila": "A 5044"
+        },
+        {
+          "tyyppi": "valvonta",
+          "alku": "10:00",
+          "loppu": "10:15",
+          "paikka": "5. kerros"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "10:15",
+          "loppu": "11:45",
+          "ryhma": "MA_71.1",
+          "tila": "A 5063"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "12:20",
+          "loppu": "13:50",
+          "ryhma": "MA_91.1",
+          "tila": "A 2103"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "14:05",
+          "loppu": "15:35",
+          "ryhma": "MA_81.1",
+          "tila": "A 2090"
+        }
+      ]
+    },
+    "tiistai": {
+      "date": "2026-09-15",
+      "tapahtumat": [
+        {
+          "tyyppi": "oppitunti",
+          "alku": "08:30",
+          "loppu": "10:00",
+          "ryhma": "FY_71.2",
+          "tila": "A 2090/A 2091"
+        },
+        {
+          "tyyppi": "valvonta",
+          "alku": "10:00",
+          "loppu": "10:15",
+          "paikka": "pingis"
+        },
+        {
+          "tyyppi": "valvonta",
+          "alku": "12:00",
+          "loppu": "12:15",
+          "paikka": "ruokala"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "12:20",
+          "loppu": "13:50",
+          "ryhma": "MA_71.6",
+          "tila": "A 5044"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "14:05",
+          "loppu": "15:35",
+          "ryhma": "FY_81.2",
+          "tila": "A 2090/A 2091"
+        }
+      ]
+    },
+    "keskiviikko": {
+      "date": "2026-09-16",
+      "tapahtumat": [
+        {
+          "tyyppi": "oppitunti",
+          "alku": "10:15",
+          "loppu": "11:45",
+          "ryhma": "MA_81.1",
+          "tila": "A 2090"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "12:20",
+          "loppu": "13:50",
+          "ryhma": "MA_71.1",
+          "tila": "A 5063"
+        }
+      ]
+    },
+    "torstai": {
+      "date": "2026-09-17",
+      "tapahtumat": [
+        {
+          "tyyppi": "oppitunti",
+          "alku": "08:30",
+          "loppu": "10:00",
+          "ryhma": "MA_91.1",
+          "tila": "A 2103"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "10:15",
+          "loppu": "11:45",
+          "ryhma": "MA_71.2",
+          "tila": "A 5044"
+        },
+        {
+          "tyyppi": "valvonta",
+          "alku": "12:00",
+          "loppu": "12:15",
+          "paikka": "ruokala"
+        },
+        {
+          "tyyppi": "kotiryhma",
+          "alku": "12:20",
+          "loppu": "12:50",
+          "ryhma": "KR.11"
+        }
+      ]
+    },
+    "perjantai": {
+      "date": "2026-09-18",
+      "tapahtumat": [
+        {
+          "tyyppi": "oppitunti",
+          "alku": "08:30",
+          "loppu": "10:00",
+          "ryhma": "MA_71.6",
+          "tila": "A 5044"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "10:15",
+          "loppu": "11:45",
+          "ryhma": "FY_81.2",
+          "tila": "A 2090/A 2091"
+        },
+        {
+          "tyyppi": "oppitunti",
+          "alku": "12:20",
+          "loppu": "13:50",
+          "ryhma": "FY_71.2",
+          "tila": "A 2090/A 2091"
+        }
+      ]
+    }
+  }
+}
