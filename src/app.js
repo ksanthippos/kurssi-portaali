@@ -168,11 +168,13 @@ function renderLessons() {
                 <p class="lesson-date">
                   ${formatDisplayDate(event.date)}
                 </p>
+
                 <div class="exception-box">
                   <strong>
                     ${escapeHtml(event.exception.type)}
                   </strong>
                 </div>
+
                 <p>
                   ${escapeHtml(event.exception.description)}
                 </p>
@@ -274,19 +276,6 @@ function formatDate(date) {
   return `${year}-${month}-${day}`;
 }
 
-function getWeekNumber(date) {
-  const d = new Date(date);
-  d.setHours(0, 0, 0, 0);
-
-  d.setDate(d.getDate() + 4 - (d.getDay() || 7));
-
-  const yearStart = new Date(d.getFullYear(), 0, 1);
-
-  return Math.ceil(
-    (((d - yearStart) / 86400000) + 1) / 7
-  );
-}
-
 function formatDisplayDate(isoDate) {
   const date = new Date(`${isoDate}T00:00:00`);
 
@@ -306,7 +295,7 @@ function formatDisplayDate(isoDate) {
   const month = String(date.getMonth() + 1).padStart(2, "0");
   const year = date.getFullYear();
 
-  return `${weekday} ${day}.${month}.${year} <span class="week-number"> vko ${getWeekNumber(date)}</span>`;
+  return `${weekday} ${day}.${month}.${year}`;
 }
 
 function renderEmpty(message) {
@@ -322,7 +311,6 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-
 function renderTimetable() {
   if (!scheduleContent || !state.timetable) return;
 
@@ -337,20 +325,22 @@ function renderTimetable() {
   const days = Object.entries(state.timetable.paivat || {});
 
   scheduleContent.innerHTML = `
-    <p class="schedule-period">${escapeHtml(state.timetable.jakso)}. jakso · vko ${escapeHtml(state.timetable.viikko)} · ${formatShortDate(state.timetable.alkupvm)}–${formatShortDate(state.timetable.loppupvm)}</p>
     <div class="schedule-grid">
-      ${days.map(([key, day]) => `
-        <article class="schedule-day">
-          <header class="schedule-day-header">
-            <h3>${dayNames[key] || escapeHtml(key)} ${formatShortDate(day.date)}</h3>
-          </header>
-          <div class="schedule-events">
-            <div class="schedule-timeline">
-              ${(day.tapahtumat || []).map(renderScheduleEvent).join("")}
+      ${days.map(([key, day]) => {
+        return `
+          <article class="schedule-day">
+            <header class="schedule-day-header">
+              <h3>${dayNames[key] || escapeHtml(key)}</h3>
+            </header>
+
+            <div class="schedule-events">
+              <div class="schedule-timeline">
+                ${(day.tapahtumat || []).map(renderScheduleEvent).join("")}
+              </div>
             </div>
-          </div>
-        </article>
-      `).join("")}
+          </article>
+        `;
+      }).join("")}
     </div>
   `;
 }
@@ -384,11 +374,6 @@ function minutesBetween(start, end) {
   return toMinutes(end) - toMinutes(start);
 }
 
-function formatShortDate(isoDate) {
-  const date = new Date(`${isoDate}T00:00:00`);
-  return `${date.getDate()}.${date.getMonth() + 1}.`;
-}
-
 function renderSubstituteGuide() {
   if (!substituteContent) return;
 
@@ -396,6 +381,7 @@ function renderSubstituteGuide() {
     <div class="guide-content">
       <h3>Oppimateriaalit</h3>
       <p>Oppimateriaalit, kuten opettajan oppaat, löydät seuraavasti:</p>
+
       <ul>
         <li><strong>Talon sisäiset sijaiset:</strong> Opehuone-Drive → Sijaiset JAETTU → Yläkoulu → RAUH</li>
         <li><strong>Talon ulkopuoliset sijaiset:</strong> Kirjaudu sijaisläppärillä → selaimella Google Drive → Minulle jaetut → Sijaiset JAETTU → Yläkoulu → RAUH</li>
@@ -405,6 +391,7 @@ function renderSubstituteGuide() {
       <p>Oppilaiden tuntitehtävissä on eri tyyppejä ja vaikeustasoja.</p>
 
       <h4>MATEMATIIKKA</h4>
+
       <ul class="task-levels">
         <li><span class="level-dot black"></span><strong>Musta:</strong> lämmittelytehtävät, kaikille pakolliset</li>
         <li><span class="level-dot blue"></span><strong>Sininen:</strong> arvosanan 8 tehtävät</li>
@@ -412,6 +399,7 @@ function renderSubstituteGuide() {
       </ul>
 
       <h4>FYSIIKKA</h4>
+
       <ul class="task-levels">
         <li><span class="level-dot green"></span><strong>Vihreä:</strong> tutkimukset, simulaatiot ja labratyöt</li>
         <li><span class="level-dot blue"></span><strong>Sininen:</strong> arvosanan 8 tehtävät</li>
@@ -419,15 +407,22 @@ function renderSubstituteGuide() {
       </ul>
 
       <h3>Tuntimerkinnät</h3>
+
       <p>Oppilaiden tuntimerkinnät kirjataan <strong>paperisiin oppilaslistoihin</strong>.</p>
+
       <p>Merkitse:</p>
+
       <ul>
         <li>ketkä ovat pois tunnilta</li>
         <li>ketkä ovat myöhässä</li>
         <li>muut olennaiset tuntimerkinnät</li>
       </ul>
+
       <p>Merkitse lisäksi kouluarvosana-asteikolla <strong>4–10</strong>, millaista tuntityöskentelyä kullakin oppilaalla on ollut. Huomioon otetaan esimerkiksi läksyt, harjoittelu ja aktiivisuus.</p>
-      <div class="guide-important"><strong>Ilman tätä tietoa en pysty arvioimaan oppilaita, älä unohda tehdä sitä!</strong></div>
+
+      <div class="guide-important">
+        <strong>Ilman tätä tietoa en pysty arvioimaan oppilaita, älä unohda tehdä sitä!</strong>
+      </div>
     </div>
   `;
 }
