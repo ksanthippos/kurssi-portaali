@@ -345,24 +345,81 @@ function renderTimetable() {
   };
 
   const days = Object.entries(state.timetable.paivat || {});
+  const referenceMonday = getTimetableReferenceDate();
 
   scheduleContent.innerHTML = `
-    <p class="schedule-period">${escapeHtml(state.timetable.jakso)}. jakso · vko ${escapeHtml(state.timetable.viikko)} · ${formatShortDate(state.timetable.alkupvm)}–${formatShortDate(state.timetable.loppupvm)}</p>
+    <p class="schedule-period">
+      ${escapeHtml(state.timetable.jakso)}. jakso ·
+      vko ${getWeekNumber(referenceMonday)} ·
+      ${formatShortDate(referenceMonday)}–${formatShortDate(
+        getDateForWeekday(referenceMonday, "perjantai")
+      )}
+    </p>
+
     <div class="schedule-grid">
-      ${days.map(([key, day]) => `
-        <article class="schedule-day">
-          <header class="schedule-day-header">
-            <h3>${dayNames[key] || escapeHtml(key)} ${formatShortDate(day.date)}</h3>
-          </header>
-          <div class="schedule-events">
-            <div class="schedule-timeline">
-              ${(day.tapahtumat || []).map(renderScheduleEvent).join("")}
+      ${days.map(([key, day]) => {
+        const date = getDateForWeekday(referenceMonday, key);
+
+        return `
+          <article class="schedule-day">
+            <header class="schedule-day-header">
+              <h3>${dayNames[key] || escapeHtml(key)} ${formatShortDate(date)}</h3>
+            </header>
+
+            <div class="schedule-events">
+              <div class="schedule-timeline">
+                ${(day.tapahtumat || []).map(renderScheduleEvent).join("")}
+              </div>
             </div>
-          </div>
-        </article>
-      `).join("")}
+          </article>
+        `;
+      }).join("")}
     </div>
   `;
+}
+
+function getTimetableReferenceDate() {
+  const today = new Date();
+  today.setHours(12, 0, 0, 0);
+
+  return getMonday(today);
+}
+
+function getMonday(date) {
+  const monday = new Date(date);
+  monday.setHours(12, 0, 0, 0);
+
+  const day = monday.getDay();
+  const difference = day === 0 ? -6 : 1 - day;
+
+  monday.setDate(monday.getDate() + difference);
+
+  return monday;
+}
+
+function getDateForWeekday(referenceMonday, weekdayKey) {
+  const weekdayNumbers = {
+    maanantai: 1,
+    tiistai: 2,
+    keskiviikko: 3,
+    torstai: 4,
+    perjantai: 5
+  };
+
+  const date = new Date(referenceMonday);
+  date.setHours(12, 0, 0, 0);
+
+  const weekdayNumber = weekdayNumbers[weekdayKey];
+
+  if (!weekdayNumber) {
+    return date;
+  }
+
+  date.setDate(
+    date.getDate() + (weekdayNumber - 1)
+  );
+
+  return date;
 }
 
 function renderScheduleEvent(event) {
@@ -394,8 +451,11 @@ function minutesBetween(start, end) {
   return toMinutes(end) - toMinutes(start);
 }
 
-function formatShortDate(isoDate) {
-  const date = new Date(`${isoDate}T00:00:00`);
+function formatShortDate(value) {
+  const date = value instanceof Date
+    ? value
+    : new Date(`${value}T00:00:00`);
+
   return `${date.getDate()}.${date.getMonth() + 1}.`;
 }
 
