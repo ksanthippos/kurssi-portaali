@@ -470,12 +470,20 @@ function renderSubstituteGuide() {
   substituteContent.innerHTML = `
     <div class="guide-content">
       <div class="guide-content">
+      <p></p>
       <h3>Oppimateriaalit</h3>
-      <p>Oppimateriaalit, kuten opettajan oppaat, löydät seuraavasti:</p>
+      <p>Löydät esimerkiksi opettajan oppaat ja muun tarpeellisen seuraavasti:</p>
       <ul>
         <li><strong>Talon sisäiset sijaiset:</strong> Opehuone-Drive → Sijaiset JAETTU → Yläkoulu → RAUH</li>
         <li><strong>Talon ulkopuoliset sijaiset:</strong> Kirjaudu sijaisläppärillä → selaimella Google Drive → Minulle jaetut → Sijaiset JAETTU → Yläkoulu → RAUH</li>
       </ul>
+      <p>Tuntien aiheet ilmoitetaan seuraavista lähteistä: </p>
+      <ul>
+      <li>Kurssisivusto (KS)</li>
+      <li>Avoin matematiikka (AM), pdf-muodossa</li>
+      <li>Oppikirja (esim. Kuutio X)</li>
+      </ul>
+      <p>Kurssisivusto toimii vain koulun tunnuksilla eli esimerkiksi sijaisläppärillä. Osoitteen löydät oppimateriaalikansiosta ja se on jaettu myös oppilaille. </p>
 
       <h3>Oppilaiden tuntitehtävät</h3>
       <p>Oppilaiden tuntitehtävissä on eri tyyppejä ja vaikeustasoja.</p>
@@ -494,6 +502,9 @@ function renderSubstituteGuide() {
         <li><span class="level-dot red"></span><strong>Punainen:</strong> arvosanojen 9 ja 10 tehtävät</li>
       </ul>
 
+      <p>HUOM! Värit ovat toistaiseksi käytössä vasta kurssisivustolla, eivät kurssiportaalissa. Fysiikan tutkimukset eivät
+      toistaiseksi vielä vihreällä värillä merkittynä.</p>
+
       <h3>Tuntimerkinnät</h3>
       <p>Oppilaiden tuntimerkinnät kirjataan <strong>paperisiin oppilaslistoihin</strong>.</p>
       <p>Merkitse:</p>
@@ -504,7 +515,7 @@ function renderSubstituteGuide() {
       </ul>
       <p>Merkitse lisäksi kouluarvosana-asteikolla <strong>4–10</strong>, millaista tuntityöskentelyä kullakin oppilaalla on ollut. 
       Huomioon otetaan esimerkiksi läksyt, harjoittelumäärä ja erityisesti laatu, kaverien auttaminen ja aktiivisuus.</p>
-      <div class="guide-important"><strong>Ilman tätä tietoa en pysty arvioimaan oppilaita, älä unohda tehdä sitä!</strong></div>
+      <div class="guide-important"><strong>Ilman tätä tietoa oppilaiden jatkuva arviointi ei ole mahdollista, ethän unohda tehdä sitä!</strong></div>
 
       <h3>Koetilanne</h3>
       <p>Sallitut välineet kokeissa:</p>
@@ -757,7 +768,7 @@ function buildSubstituteInstructions(events, start, end) {
     `Olen poissa ${range}. Tässä poissaoloni aikana pidettävät oppitunnit ja niiden ohjeet:`,
     ``,
     lines.join("\n"),
-    `Kurssiportaalista löytyvät kurssien tarkemmat sisällöt ja tehtävät:`,
+    `Luethan myös muut sijaisuuksiin liittyvät ohjeet kurssiportaalista:`,
     siteUrl,
     ``,
     `Ystävällisin terveisin,`,
@@ -766,11 +777,6 @@ function buildSubstituteInstructions(events, start, end) {
 }
 
 function renderGeneratedInstructions(emailText, start, end, eventCount) {
-  const subject = `Sijaisohjeet ${formatDateRange(start, end)}`;
-
-  const mailto =
-    `mailto:?subject=${encodeURIComponent(subject)}` +
-    `&body=${encodeURIComponent(emailText)}`;
 
   generatedInstructions.hidden = false;
 
@@ -786,7 +792,6 @@ function renderGeneratedInstructions(emailText, start, end, eventCount) {
     ></div>
 
     <div class="instruction-actions">
-      <a class="primary-button" href="${mailto}">Avaa sähköpostissa</a>
 
       <button
         id="copy-instructions"
