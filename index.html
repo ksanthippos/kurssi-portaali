@@ -33,6 +33,7 @@
       <button type="button" class="nav-link" data-view="courses">Kurssiportaali</button>
       <button type="button" class="nav-link" data-view="schedule">Lukujärjestys</button>
       <button type="button" class="nav-link" data-view="substitute">Sijaiselle</button>
+      <button type="button" class="nav-link" data-view="instructions">Luo ohjeet</button>
     </nav>
   </header>
 
@@ -75,13 +76,41 @@
       </div>
     </section>
 
+    <!-- Luo ohjeet -->
+    <section id="instructions-view" class="view standalone-view" aria-live="polite" hidden>
+      <div class="standalone-header">
+        <button type="button" class="back-button" data-view="courses">← Takaisin</button>
+        <div>
+          <p class="eyebrow">Sijaisjärjestely</p>
+          <h2>Luo ohjeet</h2>
+        </div>
+      </div>
+
+      <div id="instructions-content" class="instructions-content">
+        <div class="guide-content">
+          <p>Valitse poissaolon alku- ja loppupäivä. Sivusto muodostaa niiden perusteella sähköpostiluonnoksen tämän sivuston aikataulu- ja kurssidatan avulla.</p>
+        </div>
+
+        <div class="instruction-form">
+          <label for="absence-start">Poissaolon alku</label>
+          <input id="absence-start" type="date">
+
+          <label for="absence-end">Poissaolon loppu</label>
+          <input id="absence-end" type="date">
+
+          <button id="generate-instructions" class="primary-button" type="button">Luo sijaisohjeet</button>
+        </div>
+
+        <div id="generated-instructions" class="generated-instructions" hidden></div>
+      </div>
+    </section>
+
     <!-- Sijaiselle -->
     <section id="substitute-view" class="view standalone-view" aria-live="polite" hidden>
       <div class="standalone-header">
         <button type="button" class="back-button" data-view="courses">← Takaisin</button>
         <div>
-          <p class="eyebrow">Poissaolotilanne</p>
-          <h2>Sijaiselle</h2>
+          <h2>Sijaisen muistilista</h2>
         </div>
       </div>
 

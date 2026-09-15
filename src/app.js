@@ -14,6 +14,11 @@ const courseCode = document.querySelector("#course-code");
 const courseTitle = document.querySelector("#course-title");
 const scheduleContent = document.querySelector("#schedule-content");
 const substituteContent = document.querySelector("#substitute-content");
+const instructionsContent = document.querySelector("#instructions-content");
+const absenceStart = document.querySelector("#absence-start");
+const absenceEnd = document.querySelector("#absence-end");
+const generateInstructionsButton = document.querySelector("#generate-instructions");
+const generatedInstructions = document.querySelector("#generated-instructions");
 
 const menuButton = document.querySelector("#menu-button");
 const mainNavigation = document.querySelector("#main-navigation");
@@ -21,7 +26,8 @@ const mainNavigation = document.querySelector("#main-navigation");
 const views = {
   courses: document.querySelector("#courses-view"),
   schedule: document.querySelector("#schedule-view"),
-  substitute: document.querySelector("#substitute-view")
+  substitute: document.querySelector("#substitute-view"),
+  instructions: document.querySelector("#instructions-view")
 };
 
 async function loadCourses() {
@@ -168,13 +174,11 @@ function renderLessons() {
                 <p class="lesson-date">
                   ${formatDisplayDate(event.date)}
                 </p>
-
                 <div class="exception-box">
                   <strong>
                     ${escapeHtml(event.exception.type)}
                   </strong>
                 </div>
-
                 <p>
                   ${escapeHtml(event.exception.description)}
                 </p>
@@ -276,6 +280,19 @@ function formatDate(date) {
   return `${year}-${month}-${day}`;
 }
 
+function getWeekNumber(date) {
+  const d = new Date(date);
+  d.setHours(0, 0, 0, 0);
+
+  d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+
+  const yearStart = new Date(d.getFullYear(), 0, 1);
+
+  return Math.ceil(
+    (((d - yearStart) / 86400000) + 1) / 7
+  );
+}
+
 function formatDisplayDate(isoDate) {
   const date = new Date(`${isoDate}T00:00:00`);
 
@@ -295,7 +312,7 @@ function formatDisplayDate(isoDate) {
   const month = String(date.getMonth() + 1).padStart(2, "0");
   const year = date.getFullYear();
 
-  return `${weekday} ${day}.${month}.${year}`;
+  return `${weekday} ${day}.${month}.${year} <span class="week-number"> vko ${getWeekNumber(date)}</span>`;
 }
 
 function renderEmpty(message) {
@@ -311,6 +328,11 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+
+/* -----------------------------
+   Lukujärjestys
+----------------------------- */
+
 function renderTimetable() {
   if (!scheduleContent || !state.timetable) return;
 
@@ -325,22 +347,20 @@ function renderTimetable() {
   const days = Object.entries(state.timetable.paivat || {});
 
   scheduleContent.innerHTML = `
+    <p class="schedule-period">${escapeHtml(state.timetable.jakso)}. jakso · vko ${escapeHtml(state.timetable.viikko)} · ${formatShortDate(state.timetable.alkupvm)}–${formatShortDate(state.timetable.loppupvm)}</p>
     <div class="schedule-grid">
-      ${days.map(([key, day]) => {
-        return `
-          <article class="schedule-day">
-            <header class="schedule-day-header">
-              <h3>${dayNames[key] || escapeHtml(key)}</h3>
-            </header>
-
-            <div class="schedule-events">
-              <div class="schedule-timeline">
-                ${(day.tapahtumat || []).map(renderScheduleEvent).join("")}
-              </div>
+      ${days.map(([key, day]) => `
+        <article class="schedule-day">
+          <header class="schedule-day-header">
+            <h3>${dayNames[key] || escapeHtml(key)} ${formatShortDate(day.date)}</h3>
+          </header>
+          <div class="schedule-events">
+            <div class="schedule-timeline">
+              ${(day.tapahtumat || []).map(renderScheduleEvent).join("")}
             </div>
-          </article>
-        `;
-      }).join("")}
+          </div>
+        </article>
+      `).join("")}
     </div>
   `;
 }
@@ -374,14 +394,24 @@ function minutesBetween(start, end) {
   return toMinutes(end) - toMinutes(start);
 }
 
+function formatShortDate(isoDate) {
+  const date = new Date(`${isoDate}T00:00:00`);
+  return `${date.getDate()}.${date.getMonth() + 1}.`;
+}
+
+
+/* -----------------------------
+   Yleiset sijaisohjeet
+----------------------------- */
+
 function renderSubstituteGuide() {
   if (!substituteContent) return;
 
   substituteContent.innerHTML = `
     <div class="guide-content">
+      <div class="guide-content">
       <h3>Oppimateriaalit</h3>
       <p>Oppimateriaalit, kuten opettajan oppaat, löydät seuraavasti:</p>
-
       <ul>
         <li><strong>Talon sisäiset sijaiset:</strong> Opehuone-Drive → Sijaiset JAETTU → Yläkoulu → RAUH</li>
         <li><strong>Talon ulkopuoliset sijaiset:</strong> Kirjaudu sijaisläppärillä → selaimella Google Drive → Minulle jaetut → Sijaiset JAETTU → Yläkoulu → RAUH</li>
@@ -391,7 +421,6 @@ function renderSubstituteGuide() {
       <p>Oppilaiden tuntitehtävissä on eri tyyppejä ja vaikeustasoja.</p>
 
       <h4>MATEMATIIKKA</h4>
-
       <ul class="task-levels">
         <li><span class="level-dot black"></span><strong>Musta:</strong> lämmittelytehtävät, kaikille pakolliset</li>
         <li><span class="level-dot blue"></span><strong>Sininen:</strong> arvosanan 8 tehtävät</li>
@@ -399,7 +428,6 @@ function renderSubstituteGuide() {
       </ul>
 
       <h4>FYSIIKKA</h4>
-
       <ul class="task-levels">
         <li><span class="level-dot green"></span><strong>Vihreä:</strong> tutkimukset, simulaatiot ja labratyöt</li>
         <li><span class="level-dot blue"></span><strong>Sininen:</strong> arvosanan 8 tehtävät</li>
@@ -407,25 +435,505 @@ function renderSubstituteGuide() {
       </ul>
 
       <h3>Tuntimerkinnät</h3>
-
       <p>Oppilaiden tuntimerkinnät kirjataan <strong>paperisiin oppilaslistoihin</strong>.</p>
-
       <p>Merkitse:</p>
-
       <ul>
         <li>ketkä ovat pois tunnilta</li>
         <li>ketkä ovat myöhässä</li>
         <li>muut olennaiset tuntimerkinnät</li>
       </ul>
+      <p>Merkitse lisäksi kouluarvosana-asteikolla <strong>4–10</strong>, millaista tuntityöskentelyä kullakin oppilaalla on ollut. 
+      Huomioon otetaan esimerkiksi läksyt, harjoittelumäärä ja erityisesti laatu, kaverien auttaminen ja aktiivisuus.</p>
+      <div class="guide-important"><strong>Ilman tätä tietoa en pysty arvioimaan oppilaita, älä unohda tehdä sitä!</strong></div>
 
-      <p>Merkitse lisäksi kouluarvosana-asteikolla <strong>4–10</strong>, millaista tuntityöskentelyä kullakin oppilaalla on ollut. Huomioon otetaan esimerkiksi läksyt, harjoittelu ja aktiivisuus.</p>
-
-      <div class="guide-important">
-        <strong>Ilman tätä tietoa en pysty arvioimaan oppilaita, älä unohda tehdä sitä!</strong>
-      </div>
+      <h3>Koetilanne</h3>
+      <p>Sallitut välineet kokeissa:</p>
+      <ul>
+        <li>Kynä ja pyyhekumi</li>
+        <li>Opettajan antamaa tyhjää paperia (oppilaan omia ei saa käyttää)</li>
+        <li>Laskin (ilmoitetaan kokeen tiedoissa erikseen)</li>
+        <li>Tietokone (ilmoitetaan kokeen tiedoissa erikseen))</li>
+      </ul>
+      <p>Kielletyt välineet kokeissa:</p>
+      <ul>
+        <li>Oppilaan omat lunttilaput yms</li>
+        <li>Puhelimet</li>
+        <li>Älykellot</li>
+        <li>Kuulokkeet</li>
+        <li>Älylasit</li>
+      </ul>
+      <p>Ennnen koetta valvova opettaja tarkistaa, että kiellettyjä välineitä ei ole (esim ranteet ja korvat tulee näyttää).
+      Oppilaiden reput viedään opettajan osoittamaan paikkaan, kuten luokan etu- tai takaosaan.</p> 
+      <p>Varmista, että oppilaat istuvat sellaisessa paikassa, johon on hyvä näkyvyys. Jos kokeen aikana oppilas tarvitsee apua, opettaja ei mene oppilaan luo, vaan oppilas tulee opettajan luo.</p>
+      <p>Jos koe on kirjallinen, valvotaan luokan etuosasta. Jos koe on sähköinen, luokan takaosasta näkee parhaiten oppilaiden näytöt.
+      Muista oikeasti VALVOA oppilaita, älä puuhastele omiasi!</p>
+      <p>Lunttaustilanteessa oppilaan koe keskeytetään ja koevälineet kerätään pois. Paikalle voidaan pyytää tarvittaessa lisäksi toinen aikuinen kuitenkin niin, että valvoja ei itse poistu tilasta.</p>
+      <p>Oppilaan koe voidaan myös keskeyttää, jos hän aiheuttaa häiriötä tai ei noudata koesääntöjä. Kaikista tällaisista poikkeustilanteista tulee tehdä muistiinpanot.</p>
+      
+      <p>Kun koe on palautettu, oppilaat voivat lukea luokassa olevia lehtiä tai kirjoja. Omia tietokoneita ja puhelimia ei saa käyttää. Koe päättyy aina viimeistään silloin,
+      kun oppitunti päättyy. Oppilaita kannattaa muistuttaa, kun koe on loppumassa (esim. 15 minuuttia ennen).</p>
     </div>
   `;
 }
+
+
+/* -----------------------------
+   Sijaisohjeiden generaattori
+----------------------------- */
+
+const weekdayNames = [
+  "Sunnuntai",
+  "Maanantai",
+  "Tiistai",
+  "Keskiviikko",
+  "Torstai",
+  "Perjantai",
+  "Lauantai"
+];
+
+function getScheduleForGroup(groupCode) {
+  const courseCodeValue = groupCode.split(".").slice(0, -1).join(".");
+  const courseSchedule = state.schedules[courseCodeValue];
+
+  if (!courseSchedule?.groups) {
+    return null;
+  }
+
+  // Lukujärjestyksen ryhmätunnuksen pitäisi normaalisti vastata schedules.json-tunnusta.
+  // Jos kurssilla on vain yksi ryhmä, voidaan käyttää sitä myös silloin kun loppunumero
+  // on eri (esim. lukujärjestyksen MA_81.1 ja schedules.jsonin MA_81.2).
+  if (courseSchedule.groups[groupCode]) {
+    return courseSchedule.groups[groupCode];
+  }
+
+  const groupCodes = Object.keys(courseSchedule.groups);
+  return groupCodes.length === 1 ? courseSchedule.groups[groupCodes[0]] : null;
+}
+
+function getCourseForGroup(groupCode) {
+  const courseCodeValue = groupCode.split(".").slice(0, -1).join(".");
+  return state.courses.find((course) => course.code === courseCodeValue) || null;
+}
+
+function getLessonForDate(course, schedule, isoDate) {
+  if (!course || !schedule) return null;
+
+  const lessons = state._courseData?.[course.code]?.lessons || [];
+  const date = new Date(`${isoDate}T12:00:00`);
+  const startDate = new Date(`${schedule.startDate}T12:00:00`);
+  const endDate = new Date(`${schedule.endDate}T12:00:00`);
+
+  if (
+    date < startDate ||
+    date > endDate ||
+    !schedule.weekdays.includes(date.getDay())
+  ) {
+    return null;
+  }
+
+  const exception = (schedule.exceptions || []).find(
+    (item) => item.date === isoDate
+  );
+
+  if (exception) {
+    return { exception };
+  }
+
+  let lessonNumber = 0;
+  const currentDate = new Date(startDate);
+
+  while (currentDate <= date) {
+    const currentIso = formatDate(currentDate);
+
+    if (schedule.weekdays.includes(currentDate.getDay())) {
+      const isException = (schedule.exceptions || []).some(
+        (item) => item.date === currentIso
+      );
+
+      if (!isException) {
+        lessonNumber++;
+      }
+    }
+
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
+
+  const lesson = lessons.find((item) => item.lesson === lessonNumber);
+
+  return lesson ? { lesson } : null;
+}
+
+async function loadAllCourseData() {
+  if (state._courseData) {
+    return state._courseData;
+  }
+
+  state._courseData = {};
+
+  await Promise.all(
+    state.courses.map(async (course) => {
+      const response = await fetch(
+        `./src/data/${course.file.split("/").pop()}`
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          `Kurssin ${course.code} lataaminen epäonnistui.`
+        );
+      }
+
+      state._courseData[course.code] = await response.json();
+    })
+  );
+
+  return state._courseData;
+}
+
+function formatEmailDate(isoDate) {
+  const date = new Date(`${isoDate}T12:00:00`);
+
+  return `${weekdayNames[date.getDay()]} ${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
+}
+
+function formatDateRange(start, end) {
+  const startDate = new Date(`${start}T12:00:00`);
+  const endDate = new Date(`${end}T12:00:00`);
+
+  return `${startDate.getDate()}.${startDate.getMonth() + 1}.–${endDate.getDate()}.${endDate.getMonth() + 1}.${endDate.getFullYear()}`;
+}
+
+function getTimetableEventsForDate(isoDate) {
+  if (!state.timetable) {
+    return [];
+  }
+
+  const date = new Date(`${isoDate}T12:00:00`);
+
+  const dayNames = {
+    1: "maanantai",
+    2: "tiistai",
+    3: "keskiviikko",
+    4: "torstai",
+    5: "perjantai"
+  };
+
+  const day = state.timetable.paivat?.[dayNames[date.getDay()]];
+
+  return (day?.tapahtumat || []).filter(
+    (event) => event.tyyppi === "oppitunti"
+  );
+}
+
+function getDatesBetween(start, end) {
+  const dates = [];
+
+  const current = new Date(`${start}T12:00:00`);
+  const last = new Date(`${end}T12:00:00`);
+
+  while (current <= last) {
+    dates.push(formatDate(current));
+    current.setDate(current.getDate() + 1);
+  }
+
+  return dates;
+}
+
+function buildSubstituteInstructions(events, start, end) {
+  const lines = [];
+  const grouped = new Map();
+
+  events.forEach((event) => {
+    const date = event.date;
+    if (!grouped.has(date)) grouped.set(date, []);
+    grouped.get(date).push(event);
+  });
+
+  [...grouped.entries()].forEach(([date, dayEvents]) => {
+    // Päiväotsikko
+    lines.push(formatEmailDate(date));
+    lines.push("");
+
+    dayEvents.forEach((event, eventIndex) => {
+      // Oppitunnin otsikko
+      lines.push(
+        `  ${event.alku}–${event.loppu}  ${event.ryhma}  (${event.tila || ""})`
+      );
+
+      // Oppitunnin sisältö
+      if (event.exception) {
+        lines.push(`    ${event.exception.type}`);
+        lines.push(`    ${event.exception.description}`);
+      } else if (event.lesson) {
+        lines.push(
+          `    Aihe: ${event.lesson.topic || event.lesson.title || ""}`
+        );
+
+        if (event.lesson.tasks) {
+          lines.push(`    Tehtävät: ${event.lesson.tasks}`);
+        }
+
+        if (event.lesson.substituteNote) {
+          lines.push(`    Sijaiselle: ${event.lesson.substituteNote}`);
+        }
+      }
+
+      // Tyhjä rivi vain oppituntien väliin,
+      // ei oppitunnin eri tietojen väliin.
+      if (eventIndex < dayEvents.length - 1) {
+        lines.push("");
+      }
+    });
+
+    // Tyhjä rivi ennen seuraavaa päivää
+    lines.push("");
+  });
+
+  const siteUrl = window.location.href.split("#")[0];
+  const range = formatDateRange(start, end);
+
+  return [
+    `Hei!`,
+    ``,
+    `Olen poissa ${range}. Tässä poissaoloni aikana pidettävät oppitunnit ja niiden ohjeet:`,
+    ``,
+    lines.join("\n"),
+    `Kurssiportaalista löytyvät kurssien tarkemmat sisällöt ja tehtävät:`,
+    siteUrl,
+    ``,
+    `Ystävällisin terveisin,`,
+    `Mikael`
+  ].join("\n").replace(/\n{3,}/g, "\n\n");
+}
+
+function renderGeneratedInstructions(emailText, start, end, eventCount) {
+  const subject = `Sijaisohjeet ${formatDateRange(start, end)}`;
+
+  const mailto =
+    `mailto:?subject=${encodeURIComponent(subject)}` +
+    `&body=${encodeURIComponent(emailText)}`;
+
+  generatedInstructions.hidden = false;
+
+  generatedInstructions.innerHTML = `
+    <div class="generated-header">
+      <h3>Valmis sijaisohje</h3>
+      <p>${eventCount} oppituntia löytyi aikaväliltä ${formatDateRange(start, end)}.</p>
+    </div>
+
+    <div
+      id="instructions-preview-formatted"
+      class="instructions-preview-formatted"
+    ></div>
+
+    <div class="instruction-actions">
+      <a class="primary-button" href="${mailto}">Avaa sähköpostissa</a>
+
+      <button
+        id="copy-instructions"
+        class="secondary-button"
+        type="button"
+      >
+        Kopioi teksti
+      </button>
+    </div>
+
+    <p
+      id="copy-status"
+      class="copy-status"
+      aria-live="polite"
+    ></p>
+  `;
+
+  const preview = document.querySelector(
+    "#instructions-preview-formatted"
+  );
+
+  const previewLines = emailText.split("\n");
+
+  const previewHtml = previewLines
+  .map((line) => {
+    const dateMatch = line.match(
+      /^(Sunnuntai|Maanantai|Tiistai|Keskiviikko|Torstai|Perjantai|Lauantai) \d{1,2}\.\d{1,2}\.\d{4}$/
+    );
+
+    // Päiväotsikko
+    if (dateMatch) {
+      return `
+        <div
+          class="generated-date-heading"
+          style="margin: 1.25rem 0 0.45rem 0; padding: 0; line-height: 1.5;"
+        ><strong>${escapeHtml(line)}</strong></div>
+      `;
+    }
+
+    // Tyhjä rivi
+    if (line === "") {
+      return `<div style="height: 0.75rem; margin: 0; padding: 0;"></div>`;
+    }
+
+    // Oppitunnin otsikko
+    const lessonHeaderMatch = line.match(
+      /^  \d{2}:\d{2}–\d{2}:\d{2}\s+.+$/
+    );
+
+    if (lessonHeaderMatch) {
+      return `
+        <div style="margin: 0; padding: 0; line-height: 1.5; white-space: pre-wrap;"><strong>${escapeHtml(line)}</strong></div>
+      `;
+    }
+
+    // Muut rivit
+    return `
+      <div style="margin: 0; padding: 0; line-height: 1.5; white-space: pre-wrap;">${escapeHtml(line)}</div>
+    `;
+  })
+  .join("");
+
+
+
+  preview.innerHTML = previewHtml;
+
+  document
+    .querySelector("#copy-instructions")
+    .addEventListener("click", async () => {
+      try {
+        if (
+          navigator.clipboard &&
+          navigator.clipboard.write &&
+          typeof ClipboardItem !== "undefined"
+        ) {
+          const htmlDocument = `
+            <div style="font-family: sans-serif; line-height: 1.5; margin: 0; padding: 0;">
+              ${previewHtml}
+            </div>
+          `;
+
+          const clipboardItem = new ClipboardItem({
+            "text/plain": new Blob(
+              [emailText],
+              { type: "text/plain" }
+            ),
+            "text/html": new Blob(
+              [htmlDocument],
+              { type: "text/html" }
+            )
+          });
+
+          await navigator.clipboard.write([clipboardItem]);
+
+          document.querySelector("#copy-status").textContent =
+            "Muotoiltu teksti kopioitu leikepöydälle.";
+        } else {
+          await navigator.clipboard.writeText(emailText);
+
+          document.querySelector("#copy-status").textContent =
+            "Teksti kopioitu leikepöydälle.";
+        }
+      } catch (error) {
+        console.error(error);
+
+        document.querySelector("#copy-status").textContent =
+          "Tekstin kopiointi ei onnistunut automaattisesti.";
+      }
+    });
+}
+
+async function generateSubstituteInstructions() {
+  const start = absenceStart.value;
+  const end = absenceEnd.value;
+
+  if (!start || !end) {
+    generatedInstructions.hidden = false;
+
+    generatedInstructions.innerHTML = `
+      <p class="form-error">
+        Valitse sekä poissaolon alku- että loppupäivä.
+      </p>
+    `;
+
+    return;
+  }
+
+  if (start > end) {
+    generatedInstructions.hidden = false;
+
+    generatedInstructions.innerHTML = `
+      <p class="form-error">
+        Poissaolon loppupäivän pitää olla sama tai myöhäisempi kuin alkupäivän.
+      </p>
+    `;
+
+    return;
+  }
+
+  generateInstructionsButton.disabled = true;
+  generateInstructionsButton.textContent = "Luodaan ohjeita…";
+
+  try {
+    await loadAllCourseData();
+
+    const events = [];
+
+    getDatesBetween(start, end).forEach((date) => {
+      getTimetableEventsForDate(date).forEach((timetableEvent) => {
+        const course = getCourseForGroup(timetableEvent.ryhma);
+        const schedule = getScheduleForGroup(timetableEvent.ryhma);
+        const courseEvent = getLessonForDate(
+          course,
+          schedule,
+          date
+        );
+
+        events.push({
+          date,
+          ...timetableEvent,
+          lesson: courseEvent?.lesson || null,
+          exception: courseEvent?.exception || null
+        });
+      });
+    });
+
+    events.sort((a, b) =>
+      `${a.date}${a.alku}`.localeCompare(
+        `${b.date}${b.alku}`
+      )
+    );
+
+    const emailText = buildSubstituteInstructions(
+      events,
+      start,
+      end
+    );
+
+    renderGeneratedInstructions(
+      emailText,
+      start,
+      end,
+      events.length
+    );
+  } catch (error) {
+    console.error(error);
+
+    generatedInstructions.hidden = false;
+
+    generatedInstructions.innerHTML = `
+      <p class="form-error">
+        Ohjeiden muodostaminen epäonnistui. Tarkista, että kurssi- ja aikatauludata on saatavilla.
+      </p>
+    `;
+  } finally {
+    generateInstructionsButton.disabled = false;
+    generateInstructionsButton.textContent = "Luo sijaisohjeet";
+  }
+}
+
+if (generateInstructionsButton) {
+  generateInstructionsButton.addEventListener(
+    "click",
+    generateSubstituteInstructions
+  );
+}
+
 
 /* -----------------------------
    Navigointi
@@ -443,25 +951,48 @@ function setView(viewName) {
   });
 
   closeNavigation();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 function openNavigation() {
   mainNavigation.hidden = false;
-  menuButton.setAttribute("aria-expanded", "true");
-  menuButton.setAttribute("aria-label", "Sulje valikko");
+
+  menuButton.setAttribute(
+    "aria-expanded",
+    "true"
+  );
+
+  menuButton.setAttribute(
+    "aria-label",
+    "Sulje valikko"
+  );
+
   menuButton.classList.add("is-open");
 }
 
 function closeNavigation() {
   mainNavigation.hidden = true;
-  menuButton.setAttribute("aria-expanded", "false");
-  menuButton.setAttribute("aria-label", "Avaa valikko");
+
+  menuButton.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+  menuButton.setAttribute(
+    "aria-label",
+    "Avaa valikko"
+  );
+
   menuButton.classList.remove("is-open");
 }
 
 menuButton.addEventListener("click", () => {
-  const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+  const isOpen =
+    menuButton.getAttribute("aria-expanded") === "true";
 
   if (isOpen) {
     closeNavigation();
