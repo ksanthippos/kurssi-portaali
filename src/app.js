@@ -691,7 +691,9 @@ function getTimetableEventsForDate(isoDate) {
   const day = state.timetable.paivat?.[dayNames[date.getDay()]];
 
   return (day?.tapahtumat || []).filter(
-    (event) => event.tyyppi === "oppitunti"
+    (event) =>
+      event.tyyppi === "oppitunti" ||
+      event.tyyppi === "valvonta"
   );
 }
 
@@ -725,26 +727,33 @@ function buildSubstituteInstructions(events, start, end) {
     lines.push("");
 
     dayEvents.forEach((event, eventIndex) => {
-      // Oppitunnin otsikko
-      lines.push(
-        `  ${event.alku}–${event.loppu}  ${event.ryhma}  (${event.tila || ""})`
-      );
 
-      // Oppitunnin sisältö
-      if (event.exception) {
-        lines.push(`    ${event.exception.type}`);
-        lines.push(`    ${event.exception.description}`);
-      } else if (event.lesson) {
+      // Tapahtuman otsikko
+      if (event.tyyppi === "valvonta") {
         lines.push(
-          `    Aihe: ${event.lesson.topic || event.lesson.title || ""}`
+          `  ${event.alku}–${event.loppu}  VALVONTA  (${event.paikka || ""})`
+        );
+      } else {
+        lines.push(
+          `  ${event.alku}–${event.loppu}  ${event.ryhma}  (${event.tila || ""})`
         );
 
-        if (event.lesson.tasks) {
-          lines.push(`    Tehtävät: ${event.lesson.tasks}`);
-        }
+        // Oppitunnin sisältö
+        if (event.exception) {
+          lines.push(`    ${event.exception.type}`);
+          lines.push(`    ${event.exception.description}`);
+        } else if (event.lesson) {
+          lines.push(
+            `    Aihe: ${event.lesson.topic || event.lesson.title || ""}`
+          );
 
-        if (event.lesson.substituteNote) {
-          lines.push(`    Sijaiselle: ${event.lesson.substituteNote}`);
+          if (event.lesson.tasks) {
+            lines.push(`    Tehtävät: ${event.lesson.tasks}`);
+          }
+
+          if (event.lesson.substituteNote) {
+            lines.push(`    Sijaiselle: ${event.lesson.substituteNote}`);
+          }
         }
       }
 
@@ -756,7 +765,7 @@ function buildSubstituteInstructions(events, start, end) {
     });
 
     // Tyhjä rivi ennen seuraavaa päivää
-    lines.push("");
+    //lines.push("");
   });
 
   const siteUrl = window.location.href.split("#")[0];
@@ -836,6 +845,19 @@ function renderGeneratedInstructions(emailText, start, end, eventCount) {
       return `<div style="height: 0.75rem; margin: 0; padding: 0;"></div>`;
     }
 
+    // Valvonta
+    const supervisionMatch = line.match(
+      /^  \d{2}:\d{2}–\d{2}:\d{2}\s+VALVONTA\s+.+$/
+    );
+
+    if (supervisionMatch) {
+      return `
+        <div
+          style="margin: 0; padding: 0; line-height: 1.5; white-space: pre-wrap; color: #dc2626;"
+        ><strong>${escapeHtml(line)}</strong></div>
+      `;
+    }
+
     // Oppitunnin otsikko
     const lessonHeaderMatch = line.match(
       /^  \d{2}:\d{2}–\d{2}:\d{2}\s+.+$/
@@ -843,11 +865,21 @@ function renderGeneratedInstructions(emailText, start, end, eventCount) {
 
     if (lessonHeaderMatch) {
       return `
-        <div style="margin: 0; padding: 0; line-height: 1.5; white-space: pre-wrap;"><strong>${escapeHtml(line)}</strong></div>
+        <div
+          style="margin: 0; padding: 0; line-height: 1.5; white-space: pre-wrap;"
+        ><strong>${escapeHtml(line)}</strong></div>
       `;
     }
 
     // Muut rivit
+    if (line.startsWith("Luethan myös muut sijaisuuksiin liittyvät ohjeet")) {
+      return `
+        <div
+          style="margin: 1rem 0 0 0; padding: 0; line-height: 1.5; white-space: pre-wrap;"
+        >${escapeHtml(line)}</div>
+      `;
+    }
+
     return `
       <div style="margin: 0; padding: 0; line-height: 1.5; white-space: pre-wrap;">${escapeHtml(line)}</div>
     `;
@@ -941,6 +973,22 @@ async function generateSubstituteInstructions() {
 
     getDatesBetween(start, end).forEach((date) => {
       getTimetableEventsForDate(date).forEach((timetableEvent) => {
+
+        // Valvonnat eivät liity kurssiin, joten niille
+        // ei tarvitse hakea kurssi- tai tuntitietoja.
+        if (timetableEvent.tyyppi === "valvonta") {
+          events.push({
+            date,
+            ...timetableEvent,
+            lesson: null,
+            exception: null
+          });
+
+          return;
+        }
+
+        // Oppitunneille haetaan edelleen kurssi,
+        // aikataulu ja kyseisen päivän sisältö normaalisti.
         const course = getCourseForGroup(timetableEvent.ryhma);
         const schedule = getScheduleForGroup(timetableEvent.ryhma);
         const courseEvent = getLessonForDate(
@@ -974,7 +1022,7 @@ async function generateSubstituteInstructions() {
       emailText,
       start,
       end,
-      events.length
+      events.filter((event) => event.tyyppi === "oppitunti").length
     );
   } catch (error) {
     console.error(error);
