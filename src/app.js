@@ -538,6 +538,8 @@ function renderSubstituteGuide() {
       <li>Kurssisivusto (KS)</li>
       <li>Avoin matematiikka (AM), pdf-muodossa</li>
       <li>Oppikirja (esim. Kuutio X)</li>
+      <li>Työkirja (vain fysiikassa, FYKE-kirjasarja)</li>
+
       </ul>
       <p>Kurssisivusto toimii vain koulun tunnuksilla eli esimerkiksi sijaisläppärillä. Osoitteen löydät oppimateriaalikansiosta ja se on jaettu myös oppilaille. </p>
 
@@ -546,15 +548,15 @@ function renderSubstituteGuide() {
 
       <h4>MATEMATIIKKA</h4>
       <ul class="task-levels">
-        <li><span class="level-dot black"></span><strong>Musta:</strong> Lämmittelytehtävät, kaikille pakolliset</li>
-        <li><span class="level-dot blue"></span><strong>Sininen:</strong> Arvosanan 8 tehtävät</li>
-        <li><span class="level-dot red"></span><strong>Punainen:</strong> Arvosanojen 9 ja 10 tehtävät</li>
+        <li><span class="level-dot black"></span><strong>Lämmittely:</strong> Kaikille pakolliset aloitustehtävät</li>
+        <li><span class="level-dot blue"></span><strong>Siniset:</strong> Arvosanan 8 tasoon tähtäävät tehtävät</li>
+        <li><span class="level-dot red"></span><strong>Punaiset:</strong> Arvosanojen 9 ja 10 tasoon tähtäävät tehtävät</li>
       </ul>
 
       <h4>FYSIIKKA</h4>
       <ul class="task-levels">
-        <li><span class="level-dot green"></span><strong>Tutkimus:</strong> Labratyöt, simulaatiot ja demot</li>
-        <li><span class="level-dot black"></span><strong>Työkirja:</strong> Harjoitustehtävät FYKE-työkirjasta</li>
+        <li><span class="level-dot green"></span><strong>Tutkimus:</strong> Labratyöt (työkirjasta, jos sivunumero), simulaatiot ja demot</li>
+        <li><span class="level-dot black"></span><strong>Työkirja:</strong> Harjoitustehtävät työkirjasta, loppupään tehtävät haastavampia</li>
       </ul>
 
       <h3>Tuntimerkinnät</h3>
