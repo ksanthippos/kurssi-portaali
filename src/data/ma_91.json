@@ -97,23 +97,9 @@
       },
       "substituteNote": ""
     },
-            {
+              {
       "lesson": 12,
-      "topic": "Aihe 9 / Avoin matikka 8.lk osio 1. Epäyhtälöt, osa 1",
-      "content": "Epäyhtälöiden ratkaisemista ja tulkintaa.",
-      "tasks": "TEHTÄVÄT:",
-      "substituteNote": ""
-    },
-            {
-      "lesson": 13,
-      "topic": "Aihe 9 / Avoin matikka 8.lk osio 1. Epäyhtälöt, osa 2",
-      "content": "Epäyhtälöt jatkoa.",
-      "tasks": "TEHTÄVÄT: ",
-      "substituteNote": ""
-    },
-          {
-      "lesson": 14,
-      "topic": "Aihe 10 / kirjan kpl 13. Yhtälöparin ratkaiseminen graafisesti.",
+      "topic": "Aihe 9 / kirjan kpl 13. Yhtälöparin ratkaiseminen graafisesti.",
       "content": "Yhtälöparin ratkaisemista koordinaatiston avulla.",
       "tasks": {
         "warmup": "s. 47: T1 - 5",
@@ -121,7 +107,20 @@
         "red": "s. 47: T9, s. 82: T116, 117"
       },
       "substituteNote": ""
+    },
+    {
+      "lesson": 13,
+      "topic": "Aihe 10 / Avoin matikka 8.lk osio 1. Epäyhtälöt",
+      "content": "Epäyhtälön käsite, esittäminen lukusuoralla ja huomiot ratkaisutekniikassa (suunnan kääntö).",
+      "tasks": {
+        "warmup": "s. 34: T112 - 115",
+        "blue": "s. 35: T119 - 124",
+        "red": "s. 36: T165 - 131"
+      },
+      "substituteNote": ""
     }
+
+
 
 
   ]

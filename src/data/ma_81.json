@@ -122,16 +122,25 @@
     },    {
       "lesson": 12,
       "topic": "Aihe 9 / kirjan kpl 14. Suoraan ja kääntäen verrannollisuus",
-      "content": "Suoraan ja kääntäen verrannollisuuden käsitteen ymmärtäminen.",
-      "tasks": "TEHTÄVÄT:",
+      "content": "Suoraan ja kääntäen verrannollisuuden käsitteet sekä taulukkona että kuvaajana, verrantoyhtälön hyödyntäminen ongelmanratkaisussa.",
+            "tasks": {
+        "warmup": "s. 61: T1 - 5",
+        "blue": "s. 63: T11 - 14, s. 192: T149, 150",
+        "red": "s. 63: T17 - 22, s. 192: T151, 152"
+      },
       "substituteNote": ""
     },
     {
       "lesson": 13,
-      "topic": "Aihe 10 / kirjan kpl 11. Epäyhtälö",
-      "content": "Epäyhtälöiden ratkaiseminen ja niiden tulkinta.",
-      "tasks": "TEHTÄVÄT:",
+      "topic": "Aihe 10 / kirjan kpl 11. Epäyhtälöt",
+      "content": "Epäyhtälön käsite, esittäminen lukusuoralla ja huomiot ratkaisutekniikassa (suunnan kääntö).",
+      "tasks": {
+        "warmup": "s. 49: T1, 7, s. 51: T12",
+        "blue": "s. 51: T13 - 19",
+        "red": "s. 51: T21 - 23"
+      },
       "substituteNote": ""
     }
+
   ]
 }
