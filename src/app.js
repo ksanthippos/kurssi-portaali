@@ -129,6 +129,71 @@ async function selectGroup(course, groupCode) {
   }
 }
 
+function renderTaskGroups(tasks) {
+  if (!tasks || typeof tasks !== "object") {
+    return "";
+  }
+
+  const taskDefinitions = [
+    {
+      key: "research",
+      label: "Tutkimus",
+      className: "task-research"
+    },
+    {
+      key: "theory",
+      label: "Työkirja",
+      className: "task-theory"
+    },
+    {
+      key: "warmup",
+      label: "Lämmittely",
+      className: "task-warmup"
+    },
+    {
+      key: "blue",
+      label: "Siniset",
+      className: "task-blue"
+    },
+    {
+      key: "red",
+      label: "Punaiset",
+      className: "task-red"
+    }
+  ];
+
+  const rows = taskDefinitions
+    .filter(
+      (task) =>
+        tasks[task.key] !== undefined &&
+        tasks[task.key] !== null &&
+        tasks[task.key] !== ""
+    )
+    .map(
+      (task) => `
+        <div class="task-row ${task.className}">
+          <strong>${task.label}</strong>
+          <span>${escapeHtml(tasks[task.key])}</span>
+        </div>
+      `
+    )
+    .join("");
+
+  if (!rows) {
+    return "";
+  }
+
+  return `
+    <div class="tasks">
+      <h4>Tehtävät</h4>
+      <div class="task-groups">
+        ${rows}
+      </div>
+    </div>
+  `;
+}
+
+
 function renderLessons() {
   const courseSchedule = state.schedules[state.currentCourse.code];
   const schedule = courseSchedule.groups[state.currentGroup];
@@ -212,16 +277,7 @@ function renderLessons() {
             ${lesson.content || ""}
           </div>
 
-          ${
-            lesson.tasks
-              ? `
-                <div class="tasks">
-                  <h4>Tehtävät</h4>
-                  <p>${escapeHtml(lesson.tasks)}</p>
-                </div>
-              `
-              : ""
-          }
+          ${renderTaskGroups(lesson.tasks)}
 
           ${
             lesson.substituteNote
@@ -490,20 +546,16 @@ function renderSubstituteGuide() {
 
       <h4>MATEMATIIKKA</h4>
       <ul class="task-levels">
-        <li><span class="level-dot black"></span><strong>Musta:</strong> lämmittelytehtävät, kaikille pakolliset</li>
-        <li><span class="level-dot blue"></span><strong>Sininen:</strong> arvosanan 8 tehtävät</li>
-        <li><span class="level-dot red"></span><strong>Punainen:</strong> arvosanojen 9 ja 10 tehtävät</li>
+        <li><span class="level-dot black"></span><strong>Musta:</strong> Lämmittelytehtävät, kaikille pakolliset</li>
+        <li><span class="level-dot blue"></span><strong>Sininen:</strong> Arvosanan 8 tehtävät</li>
+        <li><span class="level-dot red"></span><strong>Punainen:</strong> Arvosanojen 9 ja 10 tehtävät</li>
       </ul>
 
       <h4>FYSIIKKA</h4>
       <ul class="task-levels">
-        <li><span class="level-dot green"></span><strong>Vihreä:</strong> tutkimukset, simulaatiot ja labratyöt</li>
-        <li><span class="level-dot blue"></span><strong>Sininen:</strong> arvosanan 8 tehtävät</li>
-        <li><span class="level-dot red"></span><strong>Punainen:</strong> arvosanojen 9 ja 10 tehtävät</li>
+        <li><span class="level-dot green"></span><strong>Tutkimus:</strong> Labratyöt, simulaatiot ja demot</li>
+        <li><span class="level-dot black"></span><strong>Työkirja:</strong> Harjoitustehtävät FYKE-työkirjasta</li>
       </ul>
-
-      <p>HUOM! Värit ovat toistaiseksi käytössä vasta kurssisivustolla, eivät kurssiportaalissa. Fysiikan tutkimukset eivät
-      toistaiseksi vielä vihreällä värillä merkittynä.</p>
 
       <h3>Tuntimerkinnät</h3>
       <p>Oppilaiden tuntimerkinnät kirjataan <strong>paperisiin oppilaslistoihin</strong>.</p>
@@ -748,7 +800,28 @@ function buildSubstituteInstructions(events, start, end) {
           );
 
           if (event.lesson.tasks) {
-            lines.push(`    Tehtävät: ${event.lesson.tasks}`);
+            const taskLines = Object.entries(event.lesson.tasks)
+              .filter(
+                ([, value]) =>
+                  value !== undefined &&
+                  value !== null &&
+                  value !== ""
+              )
+              .map(([key, value]) => {
+                const labels = {
+                  research: "Tutkimus",
+                  theory: "Työkirja",
+                  warmup: "Lämmittely",
+                  blue: "Siniset",
+                  red: "Punaiset"
+                };
+
+                return `${labels[key] || key}: ${value}`;
+              });
+
+            if (taskLines.length) {
+              lines.push(`    Tehtävät: ${taskLines.join(" | ")}`);
+            }
           }
 
           if (event.lesson.substituteNote) {

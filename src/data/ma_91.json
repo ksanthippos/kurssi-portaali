@@ -37,40 +37,64 @@
       "lesson": 6,
       "topic": "Aihe 5 / kirjan kpl 12. Yhtälöparin käsite",
       "content": "Kahden muuttujan yhtälö ja yhtälöpari. Ratkaisun kokeileminen ja tuloksen tulkinta.",
-      "tasks": "TEHTÄVÄT: s. 45: T1 - 4, s. 45: T5, 6, s. 82: T107, 108, s. 45: T8, 9, s. 82: T110, 111 ",
+      "tasks": {
+        "warmup": "s. 45: T1 - 4",
+        "blue": "s. 45: T5, 6, s. 82: T107, 108",
+        "red": "s. 45: T8, 9, s. 82: T110, 111"
+      },
       "substituteNote": ""
     },   {
       "lesson": 7,
       "topic": "Aihe 6 / kirjan kpl 14.Sijoituskeino",
       "content": "Yhtälöparin ratkaiseminen sijoituskeinolla.",
-      "tasks": "TEHTÄVÄT: s. 51: T1 - 4, s. 51: T6, 7, s. 83: T123 - 126, s. 51: T9, 10, s. 83: T127, 128 ",
+      "tasks": {
+        "warmup": "s. 51: T1 - 4",
+        "blue": "s. 51: T6, 7, s. 83: T123 - 126",
+        "red": "s. 51: T9, 10, s. 83: T127, 128"
+      },
       "substituteNote": ""
     },   {
       "lesson": 8,
       "topic": "Aihe 7 / kirjan kpl 14.Yhteenlaskukeino, osa 1",
       "content": "Yhtälöparin ratkaiseminen yhteenlaskukeinolla.",
-      "tasks": "TEHTÄVÄT s. 53: T11, 12, s. 53: T13 - 17, s. 83: T129 - 131, s. 53: T19 - 21, s. 83: T128, 133",
+      "tasks": {
+        "warmup": "s. 53: T11, 12",
+        "blue": "s. 53: T13 - 17, s. 83: T129 - 131",
+        "red": "s. 53: T19 - 21, s. 83: T128, 133"
+      },
       "substituteNote": ""
     },  
     {
       "lesson": 9,
       "topic": "Aihe 8 / kirjan kpl 14. Yhteenlaskukeino, osa 2",
       "content": "Yhteenlaskukeinon jatkoharjoituksia ja parhaan ratkaisukeinon valinta eri tilanteissa.",
-      "tasks": "TEHTÄVÄT: TUNTITEHTÄVÄT, osa 2:, s. 55: T22 - 28, s. 84: T134 - 136, s. 55: T29 - 32, s. 84: T137, 138",
+      "tasks": {
+        "warmup": "s. 55: T22 - 28",
+        "blue": "s. 84: T134 - 136",
+        "red": "s. 55: T29 - 32, s. 84: T137, 138"
+      },
       "substituteNote": ""
     },
     {
       "lesson": 10,
       "topic": "Aihe 8 / kirjan kpl 15. Ongelmanratkaisu yhtälöparilla, osa 1",
       "content": "Sanallisten tehtävien ratkaisemista yhtälöparien avulla.",
-      "tasks": "TEHTÄVÄT: s. 57: T1 - 4, s. 57: T5 - 7, s. 57: T8 - 10, s. 84: T143",
+      "tasks": {
+        "warmup": "s. 57: T1 - 4",
+        "blue": "s. 57: T5 - 7",
+        "red": "s. 57: T8 - 10, s. 84: T143"
+      },
       "substituteNote": ""
     },
         {
       "lesson": 11,
       "topic": "Aihe 8 / kirjan kpl 15. Ongelmanratkaisu yhtälöparilla, osa 2",
       "content": "Sanalliset tehtävät, haastavampia tapauksia.",
-      "tasks": "TEHTÄVÄT: s. 59: T11 - 13, s. 59: T15 - 17, s. 85: T144 - 146, s. 59: T19, 20, s. 85: T147 - 149, 151",
+      "tasks": {
+        "warmup": "s. 59: T11 - 13",
+        "blue": "s. 59: T15 - 17, s. 85: T144 - 146",
+        "red": "s. 59: T19, 20, s. 85: T147 - 149, 151"
+      },
       "substituteNote": ""
     },
             {
@@ -91,7 +115,11 @@
       "lesson": 14,
       "topic": "Aihe 10 / kirjan kpl 13. Yhtälöparin ratkaiseminen graafisesti.",
       "content": "Yhtälöparin ratkaisemista koordinaatiston avulla.",
-      "tasks": "TEHTÄVÄT: TUNTITEHTÄVIÄ: s. 47: T1 - 5, s. 47: T6 - 8, s. 82: T112 - 115, s. 47: T9, s. 82: T116, 117",
+      "tasks": {
+        "warmup": "s. 47: T1 - 5",
+        "blue": "s. 47: T6 - 8, s. 82: T112 - 115",
+        "red": "s. 47: T9, s. 82: T116, 117"
+      },
       "substituteNote": ""
     }
 

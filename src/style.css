@@ -774,3 +774,90 @@ h1 {
   display: block;
   height: 1rem;
 }
+
+/* -----------------------------
+   Kurssitehtävien tasot ja tyypit
+----------------------------- */
+
+.tasks {
+  margin-top: 1.25rem;
+}
+
+.tasks h4 {
+  margin: 0 0 0.65rem;
+}
+
+.task-groups {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.task-row {
+  display: grid;
+  grid-template-columns: 155px 1fr;
+  gap: 0.75rem;
+  padding: 0.55rem 0.7rem;
+  border-left: 4px solid #cbd5e1;
+  border-radius: 5px;
+  background: #f8fafc;
+}
+
+.task-row strong {
+  white-space: nowrap;
+}
+
+.task-row span {
+  min-width: 0;
+}
+
+/* Fysiikan tutkimukset / simulaatiot / labrat */
+.task-research {
+  border-left-color: #16a34a;
+}
+
+.task-research strong {
+  color: #15803d;
+}
+
+/* Fysiikan teoria / harjoitustehtävät */
+.task-theory {
+  border-left-color: #64748b;
+}
+
+.task-theory strong {
+  color: #475569;
+}
+
+/* Matematiikan lämmittely */
+.task-warmup {
+  border-left-color: #111827;
+}
+
+.task-warmup strong {
+  color: #111827;
+}
+
+/* Matematiikan siniset */
+.task-blue {
+  border-left-color: #2563eb;
+}
+
+.task-blue strong {
+  color: #2563eb;
+}
+
+/* Matematiikan punaiset */
+.task-red {
+  border-left-color: #dc2626;
+}
+
+.task-red strong {
+  color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .task-row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}

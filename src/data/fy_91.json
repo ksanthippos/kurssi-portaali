@@ -6,7 +6,9 @@
       "lesson": 1,
       "topic": "Sähkövaraus ja Coulombin laki",
       "content": "Tutustutaan sähkövaraukseen ja Coulombin lakiin.",
-      "tasks": "Kertaustehtävät 1–5",
+      "tasks": {
+        "theory": "Kertaustehtävät 1–5"
+      },
       "substituteNote": "Käy aihe lyhyesti läpi ja anna oppilaiden tehdä tehtävät. Lopuksi voidaan tarkistaa tehtäviä yhdessä."
     }
 
