@@ -50,13 +50,23 @@
           <select id="course-list" class="course-select">
             <option value="">Valitse ryhmä</option>
           </select>
-        </aside>
+          <!-- Erillinen nappi nykyiseen oppituntiin siirtymistä varten -->
+          <!--
+          <button
+            id="jump-to-current-lesson"
+            class="secondary-button jump-to-current-lesson"
+            type="button">
+            Siirry tähän päivään
+          </button>
+          -->
 
+        </aside>
+        
         <section class="content">
           <div class="toolbar">
             <div>
               <p class="eyebrow" id="course-code">Kurssi</p>
-              <h2 id="course-title">Valitse kurssi</h2>
+              <h2 id="course-title"></h2>
             </div>
             <div id="lesson-controls" class="lesson-controls" hidden>
               <button type="button" id="expand-all" class="text-button">Avaa kaikki</button>
@@ -130,6 +140,15 @@
   <footer class="site-footer">
     <div class="container">Kurssiportaali (c) Mikael Rauhala Pasilan peruskoulu</div>
   </footer>
+
+  <button
+    id="back-to-top"
+    class="back-to-top"
+    type="button"
+    aria-label="Siirry sivun alkuun"
+  >
+    ↑ Alkuun
+  </button>
 
   <script type="module" src="src/app.js"></script>
 </body>

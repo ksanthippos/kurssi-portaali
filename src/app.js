@@ -23,6 +23,14 @@ const generatedInstructions = document.querySelector("#generated-instructions");
 const menuButton = document.querySelector("#menu-button");
 const mainNavigation = document.querySelector("#main-navigation");
 
+const jumpToCurrentLessonButton = document.querySelector(
+  "#jump-to-current-lesson"
+);
+
+const backToTopButton = document.querySelector(
+  "#back-to-top"
+);
+
 const views = {
   courses: document.querySelector("#courses-view"),
   schedule: document.querySelector("#schedule-view"),
@@ -50,17 +58,7 @@ async function loadCourses() {
     renderTimetable();
     renderSubstituteGuide();
 
-    const firstCourse = state.courses.find(
-      (course) => state.schedules[course.code]?.groups
-    );
-
-    if (firstCourse) {
-      const firstGroup = Object.keys(
-        state.schedules[firstCourse.code].groups
-      )[0];
-
-      selectGroup(firstCourse, firstGroup);
-    }
+   
   } catch (error) {
     console.error(error);
     renderEmpty("Kurssitietojen lataaminen epäonnistui.");
@@ -232,7 +230,7 @@ function renderLessons() {
     .map((event) => {
       if (event.exception) {
         return `
-          <article class="lesson-card exception-card">
+          <article class="lesson-card exception-card" data-date="${event.date}">
             <div class="lesson-header">
               <div>
                 <p class="lesson-number">Poikkeusohjelmaa</p>
@@ -256,7 +254,7 @@ function renderLessons() {
       const lesson = event.lesson;
 
       return `
-        <article class="lesson-card">
+        <article class="lesson-card" data-date="${event.date}">
           <div class="lesson-header">
             <div>
               <p class="lesson-number">
@@ -293,6 +291,8 @@ function renderLessons() {
       `;
     })
     .join("");
+
+    highlightCurrentLesson(true);
 }
 
 function getLessonDate(lessonNumber, schedule) {
@@ -1122,10 +1122,79 @@ if (generateInstructionsButton) {
   );
 }
 
+function highlightCurrentLesson(scrollIntoView = true) {
+  const cards = [...document.querySelectorAll(".lesson-card")];
+
+  if (!cards.length) {
+    return;
+  }
+
+  // Poistetaan mahdollinen aikaisempi korostus.
+  cards.forEach((card) => {
+    card.classList.remove("current-lesson");
+  });
+
+  const today = formatDate(new Date());
+
+  // Etsitään kortit, joiden data-date vastaa tätä päivää.
+  let target = cards.find(
+    (card) => card.dataset.date === today
+  );
+
+  // Jos tänään ei ole tuntia, valitaan viimeisin jo pidetty tunti.
+  if (!target) {
+    const pastCards = cards.filter(
+      (card) => card.dataset.date <= today
+    );
+
+    if (pastCards.length) {
+      target = pastCards[pastCards.length - 1];
+    } else {
+      // Kurssi ei ole vielä alkanut.
+      target = cards[0];
+    }
+  }
+
+  if (!target) {
+    return;
+  }
+
+  target.classList.add("current-lesson");
+
+  if (scrollIntoView) {
+    setTimeout(() => {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+    }, 50);
+  }
+}
 
 /* -----------------------------
    Navigointi
 ----------------------------- */
+if (jumpToCurrentLessonButton) {
+  jumpToCurrentLessonButton.addEventListener("click", () => {
+    highlightCurrentLesson(true);
+  });
+}
+
+if (backToTopButton) {
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  window.addEventListener("scroll", () => {
+    backToTopButton.classList.toggle(
+      "is-visible",
+      window.scrollY > 500
+    );
+  });
+}
 
 function setView(viewName) {
   if (!views[viewName]) {
