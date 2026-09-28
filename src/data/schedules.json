@@ -159,6 +159,11 @@
         "weekdays": [1, 4],
         "exceptions": [
           {
+            "date": "2026-10-01",
+            "type":"KERTAUS",
+            "description":"Kokeeseen kertausta. Katso koealue ja muut lisätiedot Wilmasta."
+          },
+          {
             "date": "2026-10-05",
             "type": "** KOE **",
             "description": "Tule ajoissa ja muista ottaa mukaan kaikki tarvittavat välineet."
