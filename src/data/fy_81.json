@@ -82,48 +82,31 @@
     },
     {
       "lesson": 9,
-      "topic": "Mekaaninen energia",
-      "content": "KS aihe 8 / kirjan kpl 16. Kineettisen energian muodot liike-energia ja potentiaalienergia.",
+      "topic": "Työ ja energia",
+      "content": "PÄIVITÄ NÄMÄ!! Fysikaalisen työn määritelmä. Työn ja energian yhteys.",
       "tasks": {
-        "research": "Simulaatio",
-        "theory": "s. 78: T1 - 5"
-      },
+        "research": "",
+        "theory": ""
+      },  
       "substituteNote": ""
     },
     {
       "lesson": 10,
-      "topic": "Työ, osa 1",
-      "content": "KS aihe 9 / kirjan kpl 17 ja 18. Fysikaalisen työn määritelmä. Työn ja energian yhteys.",
+      "topic": "Nostotyö ja potentiaalienergia",
+      "content": "PÄIVITÄ NÄMÄ!! Tehon määritelmä ja yksikkö, työn ja tehon yhteys.",
       "tasks": {
-        "research": "s. 79 työ 1",
-        "theory": "s. 80: T1 - 3"
-      },
-      "substituteNote": ""
-    },
-        {
-      "lesson": 11,
-      "topic": "Työ, osa 2",
-      "content": "KS aihe 9 / kirjan kpl 17 ja 18. Laskutehtäviä työstä ja mekaanisesta energiasta",
-      "tasks": {
-        "theory": "s. 84 - 85: T1 - 6"
-      },
-      "substituteNote": ""
-    },
-        {
-      "lesson": 12,
-      "topic": "Fysikaalinen teho, osa 1",
-      "content": "KS aihe 10 / kirjan kpl 17 ja 18. Tehon määritelmä ja yksikkö, työn ja tehon yhteys.",
-      "tasks": {
-        "research": "s. 86 työt 1 ja 2"
+        "research": "",
+        "theory": ""
       },
       "substituteNote": ""
     },
     {
-      "lesson": 13,
-      "topic": "Fysikaalinen teho, osa 2",
-      "content": "KS aihe 10 / kirjan kpl 17 ja 18. Teholaskut",
+      "lesson": 11,
+      "topic": "Teho ja hyötysuhde",
+      "content": "PÄIVITÄ NÄMÄ!! Tehon määritelmä ja laskeminen.",
       "tasks": {
-        "theory": "s. 88: T1 - 3, s. 89: T4, 5"
+        "research": "",
+        "theory": ""
       },
       "substituteNote": ""
     }
