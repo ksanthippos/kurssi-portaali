@@ -1,16 +1,105 @@
 {
   "code": "MA_82",
-  "title": "",
+  "title": "Geometria II",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Pinta-ala ja yksikkömuunnokset",
+      "content": "KS aihe 1. Pinta-alan yksiköt ja yksikkömuunnokset. Suorakulmion ja neliön pinta-ala ja sivun pituuden ratkaiseminen neliöjuurella.",
       "tasks": {
-        "theory": ""
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Suunnikkaan ja kolmion pinta-ala",
+      "content": "KS aihe 2. Suunnikkaan pinta-ala A = a · h ja kolmion pinta-ala A = (a · h) / 2. Kolmion korkeusjana ja piirin laskeminen.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Pythagoraan lause",
+      "content": "KS aihe 3. Suorakulmaisen kolmion kateetit ja hypotenuusa. Pythagoraan lause a² + b² = c² sekä tuntemattoman sivun ratkaiseminen.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Puolisuunnikkaan pinta-ala",
+      "content": "KS aihe 4. Puolisuunnikkaan määritelmä, kannat a ja b sekä korkeus h. Pinta-alan kaava A = ((a + b) · h) / 2.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Ympyrä ja luku pii",
+      "content": "KS aihe 5. Ympyrän osat: keskipiste, säde r ja halkaisija d. Luku pii π ja ympyrän kehän pituus p = π · d = 2πr.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Ympyrän kaaren pituus",
+      "content": "KS aihe 6. Ympyrän kaari ja keskuskulma α. Kaaren pituuden kaava b = (α / 360°) · 2πr.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Ympyrän pinta-ala",
+      "content": "KS aihe 7. Ympyrän pinta-alan kaava Ap = πr² ja soveltavat laskut.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Sektorin pinta-ala",
+      "content": "KS aihe 8. Ympyrän sektori ja keskuskulma α. Sektorin pinta-ala Asektori = (α / 360°) · πr².",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Yhdenmuotoisuus",
+      "content": "KS aihe 9. Yhdenmuotoiset kuviot ja mittasuhteet. Vastinsivut, vastinkulmat ja pituuksien ratkaiseminen verrannon avulla.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
       },
       "substituteNote": ""
     }
-
   ]
 }

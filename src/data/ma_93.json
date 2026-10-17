@@ -1,16 +1,138 @@
 {
   "code": "MA_93",
-  "title": "",
+  "title": "Funktiot",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Koordinaatiston kertaus",
+      "content": "KS aihe 1. Koordinaatiston perusteiden ja pisteiden merkitsemisen kertausta (Avoin matematiikka 7. lk osio 2).",
       "tasks": {
-        "theory": ""
+        "warmup": "s. 6: T1 - 4",
+        "blue": "s. 7 - 8: T6 - 13",
+        "red": "s. 8: T14, 15"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Funktion käsite",
+      "content": "KS aihe 2. Funktion käsite: kone, syöte ja tuloste, sääntö ja kuvaaja. Funktiomerkinnät f(x) ja funktion arvon laskeminen.",
+      "tasks": {
+        "warmup": "s. 11: T7 - 9",
+        "blue": "s. 13: T1 - 4, 7, s. 72: T14 - 18",
+        "red": "s. 13: T11 - 14, s. 72: T19, 20"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Funktiot ja koordinaatisto",
+      "content": "KS aihe 3. Funktion kuvaaja koordinaatistossa f(x) = y, kuvaajan pisteet ja arvojen tulkitseminen kuvaajalta sekä laskemalla.",
+      "tasks": {
+        "warmup": "s. 15: T15, 16, s. 72: T21 - 23",
+        "blue": "s. 15: T18, 19, s. 72: T24, 25",
+        "red": "s. 15: T21, 22, s. 72: T26 - 28"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Funktion kuvaajan piirtäminen",
+      "content": "KS aihe 4. Lineaarinen funktio ja suoran piirtäminen arvomääritysten ja pisteiden (vähintään 3 pistettä) avulla.",
+      "tasks": {
+        "warmup": "s. 17: T1 - 3, 5",
+        "blue": "s. 73: T29 - 31, s. 17: T6, 8",
+        "red": "s. 73: T31, 32, s. 17: T9 - 11, s. 73: T33"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Suoran yhtälö",
+      "content": "KS aihe 5. Suoran yhtälö y = kx + b. Kulmakerroin k (nouseva/laskeva) ja vakiotermi b (y-akselin leikkauspiste).",
+      "tasks": {
+        "warmup": "s. 19: T12 - 14",
+        "blue": "s. 74: T34, 35, s. 19: T16, 19, 20, s. 74: T38",
+        "red": "s. 19: T21, 22, s. 74: T39"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Suoran yhtälö kuvaajan avulla, osa 1",
+      "content": "KS aihe 6. Kulmakertoimen ja vakiotermin määrittäminen kuvaajalta suorakulmaisen kolmion avulla.",
+      "tasks": {
+        "warmup": "s. 23: T1 - 7",
+        "blue": "s. 75: T47 - 49",
+        "red": "s. 75: T50 - 52"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Suoran yhtälö kuvaajan avulla, osa 2: Erikoistapaukset",
+      "content": "KS aihe 6. Vaakasuorat (y = b) ja pystysuorat (x = a) suorat koordinaatistossa.",
+      "tasks": {
+        "warmup": "s. 21: T1 - 4",
+        "blue": "s. 74: T40 - 42, s. 21: T7, 9",
+        "red": "s. 21: T10, 11, s. 74: T44 - 46"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Suoran yhtälö ilman kuvaajaa",
+      "content": "KS aihe 7. Suoran yhtälön y = kx + b määrittäminen pisteen ja kulmakertoimen avulla laskennallisesti.",
+      "tasks": {
+        "warmup": "s. 25: T8 - 10",
+        "blue": "s. 75: T57, s. 25: T12 - 14",
+        "red": "s. 25: T15 - 17, s. 76: T58 - 60"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Toisen asteen käyrät, osa 1: Paraabeli",
+      "content": "KS aihe 8. Epälineaariset funktiot, perusparaabeli f(x) = x², paraabelin huippu ja symmetria-akseli.",
+      "tasks": {
+        "warmup": "s. 27: T1 - 5",
+        "blue": "s. 76: T63, 64, s. 27: T6, 7",
+        "red": "s. 76: T65, s. 27: T8, 9"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Toisen asteen käyrät, osa 2: Yleinen paraabeli",
+      "content": "KS aihe 8. Yleinen paraabeli y = ax² + c, aukeamissuunta ja kertoimen vaikutus jyrkkyyteen.",
+      "tasks": {
+        "warmup": "s. 29: T10 - 13",
+        "blue": "s. 76: T66 - 69, s. 29: T14, 15",
+        "red": "s. 29: T16, 17, s. 76: T71, 72"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Funktion nollakohdat",
+      "content": "KS aihe 9. Funktion kuvaajan ja x-akselin leikkauspisteet eli nollakohdat f(x) = 0 sekä funktion positiivisuus ja negatiivisuus.",
+      "tasks": {
+        "warmup": "s. 31: T1 - 4",
+        "blue": "s. 31: T5, 6, s. 77: T73 - 76",
+        "red": "s. 31: T7, 8, s. 77: T77 - 79"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 12,
+      "topic": "Funktion suurin ja pienin arvo",
+      "content": "KS aihe 10. Suljettu väli, funktion suurin ja pienin arvo annetulla välillä sekä lokaalit ääriarvot.",
+      "tasks": {
+        "warmup": "s. 33: T9 - 14",
+        "blue": "s. 78: T80 - 82",
+        "red": "s. 78: T83 - 86"
       },
       "substituteNote": ""
     }
-
   ]
 }

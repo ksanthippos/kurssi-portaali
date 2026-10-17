@@ -1,16 +1,72 @@
 {
   "code": "MA_94",
-  "title": "",
+  "title": "Trigonometria ja kertaus",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Kertaus ja johdanto",
+      "content": "KS aihe 1. Pythagoraan lauseen ja yhdenmuotoisuuden kertausta. Suorakulmaisen kolmion kateettien ja hypotenuusan suhteet.",
       "tasks": {
-        "theory": ""
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Trigonometriset funktiot",
+      "content": "KS aihe 2. Sini (sin), kosini (cos) ja tangentti (tan) suorakulmaisessa kolmiossa: vastainen/viereinen kateetti ja hypotenuusa.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Laskimen käyttö",
+      "content": "KS aihe 3. Trigonometristen funktioiden arvojen laskeminen laskimella (DEG-asetus) ja kulman selvittäminen käänteistoiminnoilla (SHIFT/ALT: sin⁻¹, cos⁻¹, tan⁻¹).",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Sivun pituuden ratkaiseminen",
+      "content": "KS aihe 4. Kateetin ja hypotenuusan ratkaiseminen trigonometrisen yhtälön avulla.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Kulman ratkaiseminen",
+      "content": "KS aihe 5. Terävän kulman suuruuden ratkaiseminen kahden tunnetun sivun ja käänteisfunktioiden (arkussini, arkuskosini, arkustangentti) avulla.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Taitojen soveltamista",
+      "content": "KS aihe 6. Pythagoraan lauseen ja trigonometrian soveltaminen, tasasivuiset ja tasakylkiset kolmiot.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
       },
       "substituteNote": ""
     }
-
   ]
 }

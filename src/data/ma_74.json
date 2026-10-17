@@ -1,16 +1,149 @@
 {
   "code": "MA_74",
-  "title": "",
+  "title": "Potenssit ja polynomit",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Potenssilasku",
+      "content": "KS aihe 1. Potenssilaskun käsite: kantaluku ja eksponentti. Negatiivinen kantaluku ja sulkujen merkitys sekä murto- ja desimaalilukujen potenssit.",
       "tasks": {
-        "theory": ""
+        "warmup": "moniste / s. 9: T2 - 9",
+        "blue": "s. 9: T10 - 12",
+        "red": "s. 9: T14 - 16, s. 72: T9, 10"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Samankantaisten potenssien tulo",
+      "content": "KS aihe 2. Samankantaisten potenssien tulon laskusääntö a^m · a^n = a^(m+n) ja sieventäminen muuttujilla.",
+      "tasks": {
+        "warmup": "s. 11: T2 - 5, 7",
+        "blue": "s. 72: T12, 13",
+        "red": "s. 11: T13, s. 72: T14 - 16"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Samankantaisten potenssien osamäärä",
+      "content": "KS aihe 3. Samankantaisten potenssien osamäärän laskusääntö a^m / a^n = a^(m-n) sekä tulon ja osamäärän yhdistetyt laskut.",
+      "tasks": {
+        "warmup": "s. 13: T1 - 8",
+        "blue": "s. 73: T17 - 20",
+        "red": "s. 13: T13 - 15, s. 73: T22"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Tulon ja osamäärän potenssi",
+      "content": "KS aihe 4. Tulon potenssi (a·b)^n = a^n · b^n ja osamäärän potenssi (a/b)^n = a^n / b^n.",
+      "tasks": {
+        "warmup": "s. 15: T1 - 4",
+        "blue": "s. 17: T1 - 3, 6",
+        "red": "s. 15: T8, 15, s. 73: T28, 34"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Potenssin potenssi",
+      "content": "KS aihe 5. Potenssin potenssin laskusääntö (a^m)^n = a^(m·n) ja yhdistetyt laskutoimitukset.",
+      "tasks": {
+        "warmup": "s. 19: T2 - 7",
+        "blue": "s. 19: T12, 13, s. 74: T35, 36",
+        "red": "s. 19: T14, 15, s. 74: T37 - 41"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Eksponenttina nolla tai negatiivinen luku",
+      "content": "KS aihe 6. Nolla eksponenttina a^0 = 1 ja negatiivinen eksponentti käänteislukuna a^(-n) = 1 / a^n.",
+      "tasks": {
+        "warmup": "s. 21: T1 - 3, 8 - 10, s. 23: T1 - 6",
+        "blue": "s. 74: T42 - 44, s. 23: T10 - 13",
+        "red": "s. 21: T15, s. 23: T16 - 18, s. 74: T45, T57"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Kymmenpotenssit ja etuliitteet",
+      "content": "KS aihe 7. Lukujen esittäminen kymmenpotenssimuodossa ja kymmenpotenssien etuliitteet (kilo, mega, giga, mikro, nano jne.).",
+      "tasks": {
+        "warmup": "s. 25: T1 - 3, s. 27: T17, 18",
+        "blue": "s. 25: T8, s. 27: T19, 20, s. 75: T61, 62, 67, 68",
+        "red": "s. 25: T9, s. 27: T14, 21 - 24, s. 75: T65, 71"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Neliöjuuri",
+      "content": "KS aihe 8. Neliöjuuren käsite potenssilaskun käänteistoimituksena, neliöjuurimerkki ja laskujärjestys.",
+      "tasks": {
+        "warmup": "s. 29: T2 - 5, s. 31: T1 - 5",
+        "blue": "s. 31: T7, 8, 10 - 13, s. 77: T83, 84",
+        "red": "s. 31: T14, 16, 17 - 20, s. 76 - 77: T76, 86, 87"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Polynomi",
+      "content": "KS aihe 9. Polynomin käsite: monomi, binomi, trinomi. Polynomin asteluku ja termien järjestäminen korkeimman asteen mukaan.",
+      "tasks": {
+        "warmup": "s. 39: T1 - 3, 6 - 8",
+        "blue": "s. 78: T98 - 101",
+        "red": "s. 78: T102 - 106"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Sieventäminen",
+      "content": "KS aihe 10. Samanmuotoisten termien yhdistäminen ja polynomien sieventäminen.",
+      "tasks": {
+        "warmup": "s. 41: T2 - 5",
+        "blue": "s. 43: T18, 19, 21 - 24, s. 80: T121, 122",
+        "red": "s. 43: T25 - 29, s. 80: T124, 126"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Polynomin arvo",
+      "content": "KS aihe 11. Polynomin nimeäminen P(x) ja lukuarvon laskeminen sijoittamalla muuttujan paikalle annettu arvo.",
+      "tasks": {
+        "warmup": "s. 45: T1 - 3",
+        "blue": "s. 45: T4 - 7, s. 80: T127 - 130",
+        "red": "s. 45: T10 - 14, s. 80: T132, 133, 135, 136"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 12,
+      "topic": "Polynomien yhteen- ja vähennyslasku",
+      "content": "KS aihe 12. Kahden tai useamman polynomin yhteen- ja vähennyslasku sekä sulkujen poistaminen etumerkkisääntöjä noudattaen.",
+      "tasks": {
+        "warmup": "s. 49: T1 - 3, s. 51: T1, 3, 4",
+        "blue": "s. 82: T151 - 154",
+        "red": "s. 51: T14, s. 82: T155, s. 53: T8, 12, 14"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 13,
+      "topic": "Polynomien kerto- ja jakolasku",
+      "content": "KS aihe 13. Monomin kertominen ja jakaminen monomilla, monomin kertominen polynomilla sekä kahden polynomin kertolasku.",
+      "tasks": {
+        "warmup": "s. 55: T2 - 4, s. 57: T1, 2",
+        "blue": "s. 57: T4, 5, s. 84: T176, 177",
+        "red": "s. 55: T6, s. 57: T9, s. 59: T1 - 3"
       },
       "substituteNote": ""
     }
-
   ]
 }

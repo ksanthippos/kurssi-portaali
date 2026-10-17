@@ -1,16 +1,138 @@
 {
   "code": "MA_73",
-  "title": "",
+  "title": "Lausekkeet ja yhtälöt",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Muuttujat",
+      "content": "KS aihe 1. Muuttujan käsite, muuttujat ja kertoimet. Lausekkeen sieventämisen perussäännöt (kertomerkkien ja ykkösten piilottaminen). Summa, erotus, tulo ja osamäärä muuttujilla.",
       "tasks": {
-        "theory": ""
+        "warmup": "s. 135: T1 - 3",
+        "blue": "s. 135: T6 - 8, s. 225: T41 - 44",
+        "red": "s. 135: T12, 13, 15, s. 225: T45 - 48"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Lausekkeen arvo",
+      "content": "KS aihe 2. Lukuarvon sijoittaminen muuttujan paikalle ja lausekkeen arvon laskeminen välivaiheittain. Negatiiviset luvut ja sulut sijoituksessa.",
+      "tasks": {
+        "warmup": "s. 137: T16, 17",
+        "blue": "s. 137: T18, 19, 22, 24, s. 226: T50 - 52",
+        "red": "s. 137: T25 - 31, s. 226: T55 - 57"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Termi",
+      "content": "KS aihe 3. Summalausekkeen termit: muuttujatermit ja vakiotermit. Termin kerroin ja muuttujaosa.",
+      "tasks": {
+        "warmup": "s. 139: T1 - 6",
+        "blue": "s. 139: T7, 8, s. 227: T58 - 61",
+        "red": "s. 139: T9, 10, s. 227: T63, 65 - 67"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Termien yhteen- ja vähennyslasku, osa 1",
+      "content": "KS aihe 4. Samanmuotoisten termien yhdistäminen ja sieventäminen.",
+      "tasks": {
+        "warmup": "s. 141: T3 - 8",
+        "blue": "s. 228: T68 - 73, s. 141: T11 - 15",
+        "red": "s. 228: T74 - 79, s. 141: T16, 17"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Termien yhteen- ja vähennyslasku, osa 2",
+      "content": "KS aihe 4. Useamman termin ja sulkujen sieventäminen etumerkkisääntöjä noudattaen.",
+      "tasks": {
+        "warmup": "s. 142: T18 - 27",
+        "blue": "s. 143: T28 - 39, s. 229: T89, 90",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Yhtälö, osa 1",
+      "content": "KS aihe 5. Yhtälön käsite, vaakamalli, yhtälön vasen ja oikea puoli sekä ratkaiseminen päättelemällä.",
+      "tasks": {
+        "warmup": "s. 155: T1 - 4",
+        "blue": "s. 232: T130 - 135",
+        "red": "s. 232: T136 - 141"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Yhtälö, osa 2",
+      "content": "KS aihe 5. Yhtälön ratkaisun eli juuren tarkistaminen sijoittamalla.",
+      "tasks": {
+        "warmup": "s. 157: T7 - 10",
+        "blue": "s. 234: T144, 146, s. 157: T12 - 15",
+        "red": "s. 157: T16, 17, s. 234: T148 - 151"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Vastalukutekniikka",
+      "content": "KS aihe 6. Yhtälön ratkaiseminen vastalukutekniikalla, kaksoisviivamerkinnät (//) ja yhtälön tasapaino.",
+      "tasks": {
+        "warmup": "s. 159: T1 - 3",
+        "blue": "s. 235: T152 - 154, 159: T4 - 8",
+        "red": "s. 159: T9 - 13, s. 235: T157 - 160"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Kerto- ja jakolaskutekniikka",
+      "content": "KS aihe 7. Kertoimen ja jakajan kumoaminen käänteistoimituksilla (jakolasku ja kertolasku) sekä monivaiheiset yhtälöt.",
+      "tasks": {
+        "warmup": "s. 161: T17 - 19",
+        "blue": "s. 235: T161 - 164, s. 161: T21 - 24",
+        "red": "s. 161: T26 - 29, s. 235: T165 - 169"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Termien siirtämistekniikka",
+      "content": "KS aihe 8. Termien siirtäminen yhtälön puolelta toiselle etumerkin vaihdolla.",
+      "tasks": {
+        "warmup": "s. 163: T1 - 5",
+        "blue": "s. 163: T7, 8, s. 236: T170 - 173",
+        "red": "s. 163: T10, s. 236: T175 - 178, 180"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Tekniikoiden soveltaminen",
+      "content": "KS aihe 9. Yhtälönratkaisutekniikoiden yhdistäminen ja soveltaminen monimutkaisempiin yhtälöihin.",
+      "tasks": {
+        "warmup": "s. 165: T1 - 4, s. 237: T181 - 185",
+        "blue": "",
+        "red": "s. 165: T6 - 9, s. 237: T188, 189, 191"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 12,
+      "topic": "Yhtälöt sanallisissa tehtävissä",
+      "content": "KS aihe 10. Sanallisten tehtävien muuttaminen yhtälömuotoon ja ratkaiseminen.",
+      "tasks": {
+        "warmup": "s. 169: T1 - 3",
+        "blue": "s. 169: T6 - 9, s. 238: T204 - 206",
+        "red": "s. 169: T10 - 12, s. 238: T209 - 212"
       },
       "substituteNote": ""
     }
-
   ]
 }

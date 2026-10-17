@@ -1,16 +1,94 @@
 {
   "code": "MA_83",
-  "title": "",
+  "title": "Prosenttilaskenta",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Prosentin käsite",
+      "content": "KS aihe 1. Prosentin käsite (sadasosa), prosenttiluvun esittäminen murtolukuna ja desimaalilukuna sekä visuaalinen tulkinta ruudukossa.",
       "tasks": {
-        "theory": ""
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Prosenttiosuuden laskeminen",
+      "content": "KS aihe 2. Prosenttiosuuden laskeminen päässä (1 %, 10 %, 20 %, 25 %, 50 %) ja verrannon avulla.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Prosenttiluvun laskeminen",
+      "content": "KS aihe 3. Prosenttiluvun laskeminen osuuden ja kokonaismäärän suhteesta verrantotekniikalla.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Muutosprosentti",
+      "content": "KS aihe 4. Hinnan alennus ja korotus, muutosprosentin laskeminen verrannon avulla.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Vertailuprosentti",
+      "content": "KS aihe 5. Arvojen vertailu prosenteissa ja perusarvon (100 %) valinnan merkitys.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Prosenttiyksikkö",
+      "content": "KS aihe 6. Prosentti vs. prosenttiyksikkö, kannatuksen ja arvonlisäveron muutokset.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Perusarvon laskeminen",
+      "content": "KS aihe 7. Kokonaismäärän (100 %) ratkaiseminen tunnetusta prosenttiosuudesta verrantoyhtälöllä.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Korkolaskut",
+      "content": "KS aihe 8. Koron käsite, lainakorko ja talletuskorko sekä vuosi-, kuukausi- ja päiväkoron laskeminen.",
+      "tasks": {
+        "warmup": "",
+        "blue": "",
+        "red": ""
       },
       "substituteNote": ""
     }
-
   ]
 }

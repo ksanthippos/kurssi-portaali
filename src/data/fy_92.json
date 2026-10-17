@@ -1,16 +1,107 @@
 {
   "code": "FY_92",
-  "title": "Energiamuodot",
+  "title": "Maapallolta maailmankaikkeuteen",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "Energia",
-      "content": "",
+      "topic": "Energiamuodot ja -tuotanto",
+      "content": "KS aihe 0 & 1. Kurssin esittely. Energian säilyminen ja muuntuminen, uusiutuvat ja uusiutumattomat energialähteet. Höyryturbiini ja sähköntuotanto.",
       "tasks": {
-        "theory": ""
+        "research": "Energiamuodot-simulaatio (PhET)",
+        "theory": "Energiakaavio-tehtävänanto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Geofysiikka",
+      "content": "KS aihe 2. Geofysiikka ja sen osa-alueet: maankuori, ilmakehä, meret ja jäätiköt (aeronomia, glasiologia).",
+      "tasks": {
+        "theory": "Geofysiikka aiheet -oppilastyö"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Ilmakehän fysiikkaa",
+      "content": "KS aihe 3. Ilmakehän kerrokset (troposfääri, stratosfääri, mesosfääri, termosfääri, eksosfääri), ilmakehän kaasut ja otsonikerros (O3, CFC-yhdisteet). Meteorologia ja sääilmiöt.",
+      "tasks": {
+        "research": "Otsoni ja UV-säteily -simulaatio",
+        "theory": "FY_92: Ilmakehän fysiikkaa -tehtävä"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Kasvihuoneilmiö ja ilmastonmuutos",
+      "content": "KS aihe 4. Kasvihuoneilmiö, kasvihuonekaasut (vesihöyry, CO2, metaani, typpioksiduuli, otsoni) ja ilmastonmuutoksen laajat vaikutukset.",
+      "tasks": {
+        "theory": "Ilmastonmuutos oppilastyön tehtävänanto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Säteily ja radioaktiivisuus",
+      "content": "KS aihe 5. Säteilylajit: sähkömagneettinen ja hiukkassäteily, ionisoiva säteily. Alfa-, beeta- ja gammasäteily sekä niiden läpäisykyky.",
+      "tasks": {
+        "theory": "Radioaktiivisuuden oppilastyön tehtävänanto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Luonnon happamoituminen",
+      "content": "KS aihe 6. Veden kiertokulku, typen ja rikin oksidit (NO2, SO2), happosateet ja luonnon puskurointikyky.",
+      "tasks": {
+        "theory": "Luonnon happamoituminen -tutkimustehtävä"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Aurinkokunta",
+      "content": "KS aihe 7. Aurinkokunnan planeetat (kivi- ja kaasuplaneetat), etäisyydet (AU). Kuu ja sen vaiheet, vuorovesi. Kääpiöplaneetat, asteroidit, komeetat, meteoroidit ja Oortin pilvi.",
+      "tasks": {
+        "theory": "Aurinkokunta tehtävänanto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Tähdet ja tähden elinkaari",
+      "content": "KS aihe 8. Tähtien energianlähde (fuusioreaktiot). Auringon rakenne ja auringonpilkut. Tähden elinkaari: pääsarja, punainen jättiläinen, valkoinen kääpiö, supernova, neutronitähti ja musta aukko. Lähitähdet ja tähdistöt.",
+      "tasks": {
+        "theory": "Tähdet tehtävänanto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Galaksit ja tähtisumut",
+      "content": "KS aihe 9. Galaksityypit: kierre-, ellipsi- ja kääpiögalaksit. Linnunrata ja paikallinen ryhmä. Aktiiviset galaksit ja kvasaarit. Tähtienvälinen aine ja sumutyypit.",
+      "tasks": {
+        "theory": "Galaksit ja tähtisumut tehtävänanto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Maailmankaikkeus",
+      "content": "KS aihe 10. Alkuräjähdys (Big Bang), aineen ja säteilyn kehitys, kosmisen taustasäteilyn synty. Universumin laajeneminen, punasiirtymä ja tulevaisuuden skenaariot.",
+      "tasks": {
+        "theory": "Maailmankaikkeus tehtävänanto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Tähtitaivaan matematiikkaa",
+      "content": "KS aihe 11. Valonnopeus c, valovuosi (vv), astronominen yksikkö (AU) ja parsek (pc). Näennäinen (m) ja absoluuttinen (M) magnitudi sekä etäisyyden laskeminen. Keplerin lait ja planeettojen radat.",
+      "tasks": {
+        "theory": "FY_92: Tähtitaivaan matematiikkaa -harjoitustehtävät"
       },
       "substituteNote": ""
     }
-
   ]
 }
