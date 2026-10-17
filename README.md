@@ -5,8 +5,8 @@ Pieni staattinen verkkosovellus opettajan kurssi- ja sijaisohjeiden hallintaan.
 ## Rakenne
 
 - `index.html` – käyttöliittymä
-- `src/css/style.css` – ulkoasu
-- `src/js/app.js` – toiminnallisuus
+- `src/style.css` – ulkoasu
+- `src/app.js` – toiminnallisuus
 - `src/data/courses.json` – kurssien lista
 - `src/data/fy7.json` – esimerkkikurssin tuntidata
 

@@ -1,16 +1,136 @@
 {
   "code": "MA_92",
-  "title": "",
+  "title": "Avaruusgeometria",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Tasogeometrian kertausta, osa 1: Pythagoraan lause",
+      "content": "KS aihe 1. Pythagoraan lauseen kertausta (Avoin matematiikka 8. lk osio 3).",
       "tasks": {
-        "theory": ""
+        "warmup": "s. 51: T153, 155, 156",
+        "blue": "s. 56: T169 - 172, 173, 174",
+        "red": "s. 57: T176 - 178, 190, 191"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Tasogeometrian kertausta, osa 2: Laskukaavat",
+      "content": "KS aihe 1. Tasogeometrian keskeisten laskukaavojen kertausta (oppikirjan kpl 7 & Avoin matikka 7. lk osio 2).",
+      "tasks": {
+        "warmup": "s. 83: T1 - 6",
+        "blue": "s. 83: T7 - 10",
+        "red": "Avoin matikka 7. lk osio 2, s. 89: T273, 276, 277"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Yksikkömuunnokset",
+      "content": "KS aihe 2. Pituuden (suhdeluku 10), pinta-alan (suhdeluku 100) ja tilavuuden (suhdeluku 1000) yksikkömuunnokset sekä vetoisuusmitat (l, dl, cl, ml ja 1 dm³ = 1 l, 1 cm³ = 1 ml).",
+      "tasks": {
+        "warmup": "s. 85: T1 - 4",
+        "blue": "s. 85: T6, 7, s. 212: T45, 46",
+        "red": "s. 85: T8, 9, s. 212: T47"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Särmiön tilavuus",
+      "content": "KS aihe 3. Särmiön määritelmä, pohjat, vaippa ja tahkot. Suorakulmaisen särmiön tilavuus V = a · b · c.",
+      "tasks": {
+        "warmup": "s. 89: T1 - 3",
+        "blue": "s. 89: T5, 6, s. 179: T79 - 82",
+        "red": "s. 89: T7 - 9, s. 179: T83 - 86"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Särmiön pinta-ala",
+      "content": "KS aihe 3. Särmiön tasolevitys ja tahkojen pinta-alat. Särmiön kokonaispinta-alan laskeminen eri tahkoista.",
+      "tasks": {
+        "warmup": "s. 91: T10 - 12",
+        "blue": "s. 91: T13, 14, s. 180: T88, 89",
+        "red": "s. 91: T15, 16, s. 180: T92, T95 - 97"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Lieriön tilavuus",
+      "content": "KS aihe 4. Lieriön määritelmä, yhtenevät pohjat ja vaippa. Lieriön tilavuus V = Ap · h.",
+      "tasks": {
+        "warmup": "s. 93: T1 - 3",
+        "blue": "s. 93: T4, 6, s. 181: T98 - 101",
+        "red": "s. 93: T7, 8, s. 181: T104 - 108"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Lieriön pinta-ala",
+      "content": "KS aihe 4. Ympyrälieriön vaipan auki rullaus ja vaipan ala Av = 2πrh. Kokonaispinta-ala Akok = 2Ap + Av.",
+      "tasks": {
+        "warmup": "s. 95: T9 - 11",
+        "blue": "s. 95: T12 - 14, s. 183: T110 - 113",
+        "red": "s. 95: T15, 16, s. 183: T114 - 118"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Kartion tilavuus",
+      "content": "KS aihe 5. Kartion määritelmä, pohja, vaippa ja kärki. Kartion tilavuus V = (Ap · h) / 3 ja korkeuden määrittäminen Pythagoraan lauseella.",
+      "tasks": {
+        "warmup": "s. 97: T1 - 3",
+        "blue": "s. 97: T6, s. 184: T119 - 121",
+        "red": "s. 97: T7, 8, s. 184: T122, 123, 125"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Kartion pinta-ala",
+      "content": "KS aihe 5. Ympyräkartion vaipan ala Av = πrs (sivujana s) ja kokonaispinta-ala Ak = Av + Ap = πrs + πr².",
+      "tasks": {
+        "warmup": "s. 99: T9 - 11",
+        "blue": "s. 99: T12, s. 185: T126 - 129",
+        "red": "s. 99: T14, 15, s. 185: T131, 132"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Pyramidin tilavuus ja pinta-ala",
+      "content": "KS aihe 6. Monikulmiopohjainen pyramidi, tasolevitys ja sivukolmiot. Sivukolmion korkeuden laskeminen Pythagoraan lauseella ja kokonaispinta-ala.",
+      "tasks": {
+        "warmup": "s. 101: T1, 2, s. 103: T8, 9",
+        "blue": "s. 103: T10, 11, s. 216: T78, 82",
+        "red": "s. 103: T12, 13, s. 216: T79, 83"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Pallon tilavuus ja pinta-ala",
+      "content": "KS aihe 7. Pallon säde r ja halkaisija d. Pallon tilavuus V = 4/3 πr³ ja pinta-ala A = 4πr². Soveltavat monivaiheiset laskut.",
+      "tasks": {
+        "warmup": "s. 105: T1, 2",
+        "blue": "s. 105: T4, 6, 7, s. 107: T12, 13, s. 188: T153, 154",
+        "red": "s. 105: T9 - 11, s. 107: T18, 19, s. 188 - 189: T156, 157"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 12,
+      "topic": "Projektiot",
+      "content": "KS aihe 8. 3-ulotteisen kappaleen esittäminen 2-ulotteisessa muodossa: kavaljeeriprojektio, isometrinen projektio, perspektiivi ja pohjapiirrokset.",
+      "tasks": {
+        "warmup": "Kavaljeeriprojektion ja erilaisten projektioiden piirtotehtävät"
       },
       "substituteNote": ""
     }
-
   ]
 }

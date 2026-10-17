@@ -7,6 +7,16 @@
         "endDate": "2026-12-18",
         "weekdays": [2, 5],
         "exceptions": [
+                    {
+            "date": "2026-11-17",
+            "type": "KERTAUS",
+            "description": "Kertaustehtävät ilmoitettu Wilmassa. Kirjoita muistiin itsellesi vaikeat asiat jo etukäteen, selvitellään niitä tunnilla."
+          },
+          {
+            "date": "2026-11-20",
+            "type": "*** KOE ***",
+            "description": "Koealue ilmoitettu Wilmassa. Muista tulla ajoissa ja kaikki välineet mukaan."
+          }
         ]
       }
     }
@@ -19,11 +29,31 @@
 
   "FY_91": {
     "groups": {
-        "FY_91.3": {
+      "FY_91.3": {
         "startDate": "2026-10-19",
         "endDate": "2026-12-18",
         "weekdays": [1, 3],
         "exceptions": [
+          {
+            "date": "2026-11-09",
+            "type": "TET-harjoittelu",
+            "description": "9. luokkien TET-viikko. Ei oppituntia."
+          },
+          {
+            "date": "2026-11-11",
+            "type": "TET-harjoittelu",
+            "description": "9. luokkien TET-viikko. Ei oppituntia."
+          },
+          {
+            "date": "2026-12-02",
+            "type": "KERTAUS",
+            "description": "Kertaustehtävät ilmoitettu Wilmassa. Kirjoita muistiin itsellesi vaikeat asiat jo etukäteen, selvitellään niitä tunnilla."
+          },
+          {
+            "date": "2026-12-07",
+            "type": "*** KOE ***",
+            "description": "Koealue ilmoitettu Wilmassa. Muista tulla ajoissa ja kaikki välineet mukaan."
+          }
         ]
       }
     }
@@ -41,6 +71,16 @@
         "endDate": "2026-12-18",
         "weekdays": [1, 4],
         "exceptions": [
+          {
+            "date": "2026-11-26",
+            "type": "KERTAUS",
+            "description": "Kertaustehtävät ilmoitettu Wilmassa. Kirjoita muistiin itsellesi vaikeat asiat jo etukäteen, selvitellään niitä tunnilla."
+          },
+          {
+            "date": "2026-11-30",
+            "type": "*** KOE ***",
+            "description": "Koealue ilmoitettu Wilmassa. Muista tulla ajoissa ja kaikki välineet mukaan."
+          }
         ]
       },
       "MA_72.2": {
@@ -48,6 +88,16 @@
         "endDate": "2026-12-18",
         "weekdays": [1, 4],
         "exceptions": [
+          {
+            "date": "2026-12-10",
+            "type": "KERTAUS",
+            "description": "Kertaustehtävät ilmoitettu Wilmassa. Kirjoita muistiin itsellesi vaikeat asiat jo etukäteen, selvitellään niitä tunnilla."
+          },
+          {
+            "date": "2026-12-14",
+            "type": "*** KOE ***",
+            "description": "Koealue ilmoitettu Wilmassa. Muista tulla ajoissa ja kaikki välineet mukaan."
+          }
         ]
       }
     }
@@ -60,7 +110,18 @@
         "startDate": "2026-10-19",
         "endDate": "2026-12-18",
         "weekdays": [2, 5],
-        "exceptions": []
+        "exceptions": [
+          {
+            "date": "2026-11-24",
+            "type": "KERTAUS",
+            "description": "Kertaustehtävät ilmoitettu Wilmassa. Kirjoita muistiin itsellesi vaikeat asiat jo etukäteen, selvitellään niitä tunnilla."
+          },
+          {
+            "date": "2026-11-27",
+            "type": "*** KOE ***",
+            "description": "Koealue ilmoitettu Wilmassa. Muista tulla ajoissa ja kaikki välineet mukaan."
+          }
+        ]
       }
     }
   },
@@ -77,6 +138,26 @@
         "endDate": "2026-12-18",
         "weekdays": [1, 3],
         "exceptions": [
+          {
+            "date": "2026-11-09",
+            "type": "TET-harjoittelu",
+            "description": "9. luokkien TET-viikko. Ei oppituntia."
+          },
+          {
+            "date": "2026-11-11",
+            "type": "TET-harjoittelu",
+            "description": "9. luokkien TET-viikko. Ei oppituntia."
+          },
+          {
+            "date": "2026-11-30",
+            "type": "KERTAUS",
+            "description": "Kertaustehtävät ilmoitettu Wilmassa. Kirjoita muistiin itsellesi vaikeat asiat jo etukäteen, selvitellään niitä tunnilla."
+          },
+          {
+            "date": "2026-12-02",
+            "type": "*** KOE ***",
+            "description": "Koealue ilmoitettu Wilmassa. Muista tulla ajoissa ja kaikki välineet mukaan."
+          }
         ]
       }
     }

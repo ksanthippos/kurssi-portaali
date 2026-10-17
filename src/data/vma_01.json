@@ -1,16 +1,105 @@
 {
   "code": "VMA_01",
-  "title": "",
+  "title": "Matematiikan valinnaiskurssi",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Äärettömyys ja erilaiset lukujoukot",
+      "content": "KS aihe 0 & 1. Kurssin esittely ja tavoitteet. Äärettömyyden käsite, lukujoukot ja Hilbertin hotelli -paradoksi.",
       "tasks": {
-        "theory": ""
+        "theory": "Hilbertin hotelli -harjoitukset ja pohdintatehtävät"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Binääriluvuista bitteihin",
+      "content": "KS aihe 2. Binäärijärjestelmä ja tietojenkäsittely. ASCII-merkistö, bittikarttakuvat ja digitaalinen ääni. Tavut (kt, Mt, Gt, Tt).",
+      "tasks": {
+        "theory": "Binääriluvuista biteiksi -harjoitustiedosto ja lisätehtävät"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Todennäköisyyksiä ja pelejä",
+      "content": "KS aihe 3. Klassinen todennäköisyys, vastatapahtuma, riippumattomat ja riippuvat tapahtumat. Texas Hold'em -pokeri ja todennäköisyydet peleissä.",
+      "tasks": {
+        "theory": "Pokerin todennäköisyydet ja peliharjoitukset"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Kompleksilukujen maailma",
+      "content": "KS aihe 4. Imaginääriyksikkö i (i² = -1), kompleksitaso (Re, Im) ja kompleksilukujen yhteen-, vähennys- ja kertolasku.",
+      "tasks": {
+        "theory": "Kompleksiluvut -harjoitustiedosto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Vektorilaskentaa",
+      "content": "KS aihe 5. Vektorin käsite ja paikkavektori. Vektorien summa ja erotus graafisesti ja komponenteittain sekä vektorin pituus Pythagoraan lauseella.",
+      "tasks": {
+        "theory": "Vektorilaskentaa -harjoitustiedosto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Pelisuunnittelua",
+      "content": "KS aihe 6. Pelien matematiikka, strategiapelit ja oman pelin suunnittelu.",
+      "tasks": {
+        "theory": "Suunnittele oma peli -tehtävä"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Millennium-ongelmat",
+      "content": "KS aihe 7. Clay-instituutin ratkaisemattomat matemaattiset ongelmat, Riemannin zeeta-funktio ja Riemannin hypoteesi.",
+      "tasks": {
+        "theory": "Riemannin zeeta-funktio -laskuharjoitus (Excel/paperi)"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Ohjelmointia",
+      "content": "KS aihe 8. Ohjelmointikielten vertailu ja Python-koodauksen perusteet tekstipohjaisessa editorissa.",
+      "tasks": {
+        "theory": "W3Schools Python Tutorial -harjoitukset Online Pythonissa"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Raja-arvot äärettömyydessä",
+      "content": "KS aihe 9. Funktion raja-arvon tutkiminen koordinaatistossa, lim-merkintä äärettömyydessä ja lausekkeen sieventäminen yhteisellä tekijällä.",
+      "tasks": {
+        "theory": "Raja-arvot -harjoitustiedosto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Toisen asteen normaalimuotoinen yhtälö",
+      "content": "KS aihe 10. Toisen asteen yhtälön ratkaiseminen normaalimuodossa ax² + bx + c = 0.",
+      "tasks": {
+        "theory": "2. asteen yhtälön normaalimuoto -harjoitustiedosto"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Salausmenetelmistä",
+      "content": "KS aihe 11. Tietoturva, salasanojen murtaminen (brute force) ja kryptografian historia (skytale, Caesar, Enigma). Caesar-salaus.",
+      "tasks": {
+        "theory": "Salakirjoituksia.pdf (Summamutikka-keskus)"
       },
       "substituteNote": ""
     }
-
   ]
 }

@@ -1,16 +1,111 @@
 {
   "code": "FY_91",
-  "title": "Sähkö ja magnetismi",
+  "title": "Sähkömagnetismi",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "Sähkövaraus ja Coulombin laki",
-      "content": "Tutustutaan sähkövaraukseen ja Coulombin lakiin.",
+      "topic": "Johdatus sähköfysiikkaan",
+      "content": "KS aihe 1. Alkeishiukkaset ja niiden sähkövaraukset, ionit, kappaleen varautuminen hankauksessa ja polarisoituminen. Sähköinen voima, sähkökenttä ja kenttäviivat.",
       "tasks": {
-        "theory": "Kertaustehtävät 1–5"
+        "research": "Simulaatiot (villapaita ja ilmapallo, sähkökenttä) ja tutkimukset välineillä",
+        "theory": "s. 97: T1, 2, s. 98: T1 - 3, s. 99: T4, 6"
       },
-      "substituteNote": "Käy aihe lyhyesti läpi ja anna oppilaiden tehdä tehtävät. Lopuksi voidaan tarkistaa tehtäviä yhdessä."
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Jännite, sähkövirta ja virtapiirit",
+      "content": "KS aihe 2. Jännite U (voltti V), sähkövirta I (ampeeri A) ja virtapiirin komponentit. Suljettu ja avoin virtapiiri sekä kytkentäkaaviomerkit.",
+      "tasks": {
+        "research": "s. 100: T2, simulaatio (Circuit Construction Kit)",
+        "theory": "s. 102: T2 - 4, s. 103: T5, 6"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Kytkennät ja mittarien käyttö",
+      "content": "KS aihe 3. Sarjaan- ja rinnankytkentä paristoilla ja komponenteilla. Jännitemittarin (rinnan) ja virtamittarin (sarjaan) kytkentä virtapiiriin.",
+      "tasks": {
+        "research": "s. 104 - 105: T1, 2, simulaatio",
+        "theory": "s. 106: T1 - 3, s. 107: T4 - 6"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Resistanssi ja Ohmin laki",
+      "content": "KS aihe 4. Resistanssi R (ohmi Ω), Ohmin laki R = U / I ja suoraan verrannollisuus. Mittaustulokset, (I, U) -kuvaaja ja oikosulku.",
+      "tasks": {
+        "research": "Simulaatiot (kytkentä ja Ohmin laki), virtapiirin mittaukset ja kuvaajan piirtäminen",
+        "theory": "Resistanssilaskumoniste: T17 - 20, T22 - 25, T26 - 28, lisätehtävät 1 - 7 ja kirjoitustehtävät"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Vastusten kytkennät",
+      "content": "KS aihe 5. Vastukset ja niiden värikoodit (EIA). Vastusten sarjaankytkentä (Rk = R1 + R2) ja rinnankytkentä käänteislukujen avulla (1/Rk = 1/R1 + 1/R2).",
+      "tasks": {
+        "theory": "Vastusten kytkennät -laskumoniste"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Sähköenergia ja -teho",
+      "content": "KS aihe 6. Sähköteho P = U · I (watti W) ja sähköenergia E = P · t (joule J, wattitunti Wh, kilowattitunti kWh). Kodin sähkölaitteiden kulutustietoja.",
+      "tasks": {
+        "theory": "TK s. 114 - 115: T1 - 4, s. 115: T5 - 7"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Sähköturvallisuus",
+      "content": "KS aihe 7. Kodin sähköturvallisuuden perusteet ja vaaratilanteiden välttäminen. Tukesin oppimateriaali ja opetusvideot.",
+      "tasks": {
+        "theory": "Tukesin kodin sähköturvallisuus -sivusto ja opetusvideot"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Magnetismi ja sähkömagneetti",
+      "content": "KS aihe 8. Magneetit, kohtiot ja magneettikenttä. Ferromagneettiset aineet. Johtimen magneettikenttä (peukalosääntö), käämi, sähkömagneetti ja sähkömoottori.",
+      "tasks": {
+        "research": "Simulaatiot (sauvamagneetti ja sähkömagneetti), kokeilut magneeteilla",
+        "theory": "TK s. 122 - 123: T1 - 6, s. 123: T7, 8"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Sähkömagneettinen induktio",
+      "content": "KS aihe 9. Muuttuvan magneettikentän indusoima jännite ja sähkövirta (induktiovirta). Generaattori, induktioliesi sekä vaihto- ja tasavirta.",
+      "tasks": {
+        "theory": "TK s. 126 - 127: T1 - 6, s. 127: T8, 9"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Sähkön siirto ja muuntajat, osa 1",
+      "content": "KS aihe 10. Sähköenergian siirto ja sähköverkot (suur-, keski- ja pienjännite). Muuntajan rakenne (ensiö- ja toisiokäämi, rautasydän).",
+      "tasks": {
+        "research": "TK s. 128: T1 - 6 (kokeellinen työ), simulaatio (vaihtojännite ja -virta)",
+        "theory": "TK s. 130 - 131: T1 - 4"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Sähkön siirto ja muuntajat, osa 2",
+      "content": "KS aihe 10. Muuntajayhtälö U1 / U2 = N1 / N2, jännitteen muuntaminen ja muuntajalaskut.",
+      "tasks": {
+        "theory": "TK s. 134 - 135: T1 - 6, s. 135: T7, 8"
+      },
+      "substituteNote": ""
     }
-
   ]
 }

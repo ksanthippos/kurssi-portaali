@@ -1,16 +1,160 @@
 {
   "code": "MA_72",
-  "title": "",
+  "title": "Geometria I",
   "lessons": [
     {
       "lesson": 1,
-      "topic": "",
-      "content": "",
+      "topic": "Koordinaatisto",
+      "content": "KS aihe 1. (x, y) -koordinaatisto, koordinaattiakselit, origo, pisteet ja murtoviivat. Desimaalikoordinaatit ja ilmansuunnat.",
       "tasks": {
-        "theory": ""
+        "warmup": "s. 75: T12 - 16",
+        "blue": "s. 75: T18 - 20",
+        "red": "s. 75: T21, 22, s. 201: T11"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 2,
+      "topic": "Geometriset objektit",
+      "content": "KS aihe 2. 0-, 1- ja 2-ulotteiset objektit: piste, jana, suora, puolisuora, murtoviiva, avoin ja suljettu viiva sekä tasokuviot.",
+      "tasks": {
+        "warmup": "s. 201: T1 - 4, s. 73: T1",
+        "blue": "s. 73: T5 - 7",
+        "red": "s. 73: T8, 10, 11, s. 201: T5"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 3,
+      "topic": "Kulma, osa 1",
+      "content": "KS aihe 3. Kulman käsite, kärki ja kyljet. Kulman nimeäminen (kreikkalaiset aakkoset) ja kulmien luokittelu (nolla-, terävä, suora, tylppä, oiko-, kupera ja täysi kulma).",
+      "tasks": {
+        "warmup": "s. 77: T1 - 5, 8",
+        "blue": "s. 202: T12 - 14",
+        "red": "s. 202: T16 - 18"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 4,
+      "topic": "Kulma, osa 2",
+      "content": "KS aihe 3. Kulman mittaaminen ja piirtäminen astelevyllä. Eksplementtikulma.",
+      "tasks": {
+        "warmup": "s. 79: T10 - 12, 15",
+        "blue": "s. 202: T19, 21 - 23",
+        "red": "s. 202: T24 - 27"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 5,
+      "topic": "Vieruskulma ja ristikulma",
+      "content": "KS aihe 4. Kahden suoran leikkauspisteeseen muodostuvat ristikulmat (yhtä suuret) ja vieruskulmat (summa 180°).",
+      "tasks": {
+        "warmup": "s. 83: T1, 3 - 4",
+        "blue": "s. 204: T36, 38 - 40, s. 83: T6, 7",
+        "red": "s. 83: T8, s. 204: T41, 43"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 6,
+      "topic": "Normaali ja keskinormaali",
+      "content": "KS aihe 5. Suoran normaali (90° kulma), janan keskinormaali ja pisteen lyhin etäisyys suorasta.",
+      "tasks": {
+        "warmup": "s. 85: T1 - 3, s. 205: T44",
+        "blue": "s. 85: T7, 8, s. 205: T46, 47",
+        "red": "s. 85: T9, s. 205: T48, 49"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 7,
+      "topic": "Samankohtaisuus ja yhdensuuntaisuus",
+      "content": "KS aihe 6. Samankohtaiset kulmat ja yhdensuuntaisten suorien leikkaaminen. Kulmalaskut ja geometriset sovellukset.",
+      "tasks": {
+        "warmup": "s. 87: T1, 3, 5",
+        "blue": "s. 87: T6, 7, s. 206: T53, 54",
+        "red": "s. 87: T8, 9, s. 206: T55 - 57"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 8,
+      "topic": "Ympyrä",
+      "content": "KS aihe 7. Ympyrän osat: keskipiste, säde r, halkaisija d, jänne, segmentti, sektori ja kaari. Ympyrän piirtäminen harpilla ja Geogebralla.",
+      "tasks": {
+        "warmup": "s. 89: T1, 2, s. 207: T58, 59",
+        "blue": "s. 89: T5, s. 207: T60 - 62",
+        "red": "s. 89: T8, s. 207: T64 - 67"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 9,
+      "topic": "Tangentti, keskuskulma ja kehäkulma",
+      "content": "KS aihe 8. Ympyrän tangentti ja sekantti, tangenttikulma ja keskuskulma. Kehäkulmalause (kehäkulma puolet keskuskulmasta) ja Thaleen lause.",
+      "tasks": {
+        "warmup": "s. 91: T1, 4, 5, 6",
+        "blue": "s. 91: T7, s. 208: T68 - 71",
+        "red": "s. 91: T8, s. 208: T73 - 75"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 10,
+      "topic": "Kolmio, osa 1",
+      "content": "KS aihe 9. Kolmion käsite, nimeäminen ja kolmion kulmien summa (180°).",
+      "tasks": {
+        "warmup": "s. 99: T1 - 4",
+        "blue": "s. 99: T5 - 8, s. 210: T97, 99 - 101",
+        "red": "s. 99: T9 - 12, s. 210: T102 - 104"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 11,
+      "topic": "Kolmio, osa 2",
+      "content": "KS aihe 9. Kolmioiden luokittelu (tasasivuinen, tasakylkinen, suorakulmainen) ja kulmalaskut.",
+      "tasks": {
+        "warmup": "s. 101: T13 - 15",
+        "blue": "s. 101: T17 - 21, s. 211: T107 - 110",
+        "red": "s. 101: T22 - 25, s. 211: T111 - 116"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 12,
+      "topic": "Yhtenevyys",
+      "content": "KS aihe 10. Yhtenevät kuviot, vastinpisteet ja vastinsivut.",
+      "tasks": {
+        "warmup": "s. 113: T1, 2, s. 217: T161, 162",
+        "blue": "s. 113: T4, s. 217: T163 - 165",
+        "red": "s. 113: T6 - 8, s. 217: T166 - 168"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 13,
+      "topic": "Peilaaminen, osa 1: Suoran suhteen",
+      "content": "KS aihe 11. Peilaaminen suoran suhteen, peilikuvapisteet ja kuvion symmetria-akseli.",
+      "tasks": {
+        "warmup": "s. 115: T1, 2, 5",
+        "blue": "s. 115: T8, s. 218: T169 - 173",
+        "red": "s. 115: T9, s. 218: T174 - 176"
+      },
+      "substituteNote": ""
+    },
+    {
+      "lesson": 14,
+      "topic": "Peilaaminen, osa 2: Pisteen suhteen",
+      "content": "KS aihe 11. Peilaaminen pisteen (esim. origon) suhteen ja peilikuvakuvion muodostaminen.",
+      "tasks": {
+        "warmup": "s. 219: T177, 178, s. 117: T10, 11",
+        "blue": "s. 117: T12, 15 - 18, s. 219: T179, 180",
+        "red": "s. 219: T181 - 183"
       },
       "substituteNote": ""
     }
-
   ]
 }
