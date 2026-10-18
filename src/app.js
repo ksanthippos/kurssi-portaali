@@ -145,7 +145,7 @@ function renderTaskGroups(tasks) {
     },
     {
       key: "warmup",
-      label: "Lämmittely",
+      label: "Yhteiset",
       className: "task-warmup"
     },
     {
@@ -415,11 +415,12 @@ function renderTimetable() {
     <div class="schedule-grid">
       ${days.map(([key, day]) => {
         const date = getDateForWeekday(referenceMonday, key);
+        const isToday = formatDate(date) === formatDate(new Date());
 
         return `
-          <article class="schedule-day">
+          <article class="schedule-day ${isToday ? "is-today" : ""}">
             <header class="schedule-day-header">
-              <h3>${dayNames[key] || escapeHtml(key)} ${formatShortDate(date)}</h3>
+              <h3>${dayNames[key] || escapeHtml(key)} ${formatShortDate(date)}${isToday ? " · Tänään" : ""}</h3>
             </header>
 
             <div class="schedule-events">
@@ -548,7 +549,7 @@ function renderSubstituteGuide() {
 
       <h4>MATEMATIIKKA</h4>
       <ul class="task-levels">
-        <li><span class="level-dot black"></span><strong>Lämmittely:</strong> Kaikille pakolliset aloitustehtävät</li>
+        <li><span class="level-dot black"></span><strong>Yhteiset:</strong> Kaikille pakolliset aloitustehtävät</li>
         <li><span class="level-dot blue"></span><strong>Siniset:</strong> Arvosanan 8 tasoon tähtäävät tehtävät</li>
         <li><span class="level-dot red"></span><strong>Punaiset:</strong> Arvosanojen 9 ja 10 tasoon tähtäävät tehtävät</li>
       </ul>
@@ -813,7 +814,7 @@ function buildSubstituteInstructions(events, start, end) {
                 const labels = {
                   research: "Tutkimus",
                   theory: "Työkirja",
-                  warmup: "Lämmittely",
+                  warmup: "Yhteiset",
                   blue: "Siniset",
                   red: "Punaiset"
                 };
@@ -1205,6 +1206,10 @@ function setView(viewName) {
 
   Object.entries(views).forEach(([name, view]) => {
     view.hidden = name !== viewName;
+  });
+
+  document.querySelectorAll(".main-navigation .nav-link").forEach((button) => {
+    button.classList.toggle("active", button.dataset.view === viewName);
   });
 
   closeNavigation();
