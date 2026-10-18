@@ -5,107 +5,203 @@
     {
       "lesson": 1,
       "topic": "Johdatus sähköfysiikkaan",
-      "content": "KS aihe 1. Alkeishiukkaset ja niiden sähkövaraukset, ionit, kappaleen varautuminen hankauksessa ja polarisoituminen. Sähköinen voima, sähkökenttä ja kenttäviivat.",
+      "title": "Johdatus sähköfysiikkaan",
+      "content": "Alkeishiukkaset, sähkövaraukset, kappaleen varautuminen hankauksessa, polarisoituminen ja sähkökenttä.",
+      "summary": "Alkeishiukkaset, sähkövaraukset, kappaleen varautuminen hankauksessa, polarisoituminen ja sähkökenttä.",
+      "theory": "<p>Aloitetaan matka sähköfysiikan ihmeelliseen maailmaan! Kertauksena 8. luokan kemiasta muistetaan tunnetuimmat alkeishiukkaset:</p><ul><li><strong>Elektroni</strong>: sähkövaraus negatiivinen ($-$)</li><li><strong>Protoni</strong>: sähkövaraus positiivinen ($+$)</li><li><strong>Neutroni</strong>: sähköisesti neutraali (ei varausta)</li></ul><p>Sähköfysiikassa meitä kiinnostavat erityisesti <strong>negatiiviset varaukset</strong>, koska sähköjohdoissa ja virtapiireissä varauksenkuljettajina toimivat vapaat elektronit. Elektroneja voi siirtyä kappaleesta toiseen myös hankauksen kautta: esimerkiksi villapaidan ja ilmapallon hangatessa toisiaan elektroneja siirtyy villapaidasta ilmapalloon, jolloin ilmapallo saa negatiivisen ja villapaita positiivisen varauksen.</p><h4>Polarisoituminen ja sähkökenttä</h4><p>Kun varattu ilmapallo viedään sähköisesti neutraalin seinän lähelle, seinän omat elektronit pakenevat sähköisen poistovoiman vaikutuksesta hieman syvemmälle. Pintaan jää paikallinen positiivinen varausjakauma, joka vetää ilmapalloa puoleensa. Tätä ilmiötä kutsutaan <strong>polarisoitumiseksi</strong>.</p><p>Sähkövarausten ympärille muodostuu <strong>sähkökenttä</strong>, jota kuvataan kenttäviivoilla. Sähkövarauksen yksikkö on <em>coulombi</em> ($\\text{C}$) ja simulaatioissa usein <em>nanocoulombi</em> ($1\\text{ nC} = 10^{-9}\\text{ C}$).</p>",
       "tasks": {
         "research": "Simulaatiot (villapaita ja ilmapallo, sähkökenttä) ja tutkimukset välineillä",
         "theory": "s. 97: T1, 2, s. 98: T1 - 3, s. 99: T4, 6"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi ilmapallo tarttuu seinään ja miten sähkökenttä toimii?",
+        "content": "<h4>Polarisoituminen: Miksi varattu kappale vetää puoleensa neutraalia esinettä?</h4><p>Kun negatiivisesti varattu ilmapallo tuodaan sähköisesti neutraalin seinän lähelle, tapahtuu mielenkiintoinen mikroskooppinen ilmiö: seinän sisällä olevat elektronit ovat keveitä ja herkkäliikkeisiä, joten ne pakenevat sähköisen poistovoiman vaikutuksesta hieman syvemmälle seinään. Positiiviset atomiytimet sen sijaan pysyvät paikoillaan huomattavasti suuremman massansa vuoksi.</p><p>Tämän seurauksena seinän pintakerrokseen syntyy <strong>paikallinen positiivinen varausjakauma</strong>, joka vetää negatiivista ilmapalloa puoleensa. Tätä ilmiötä kutsutaan <strong>polarisoitumiseksi</strong> (huom. ei pidä sekoittaa valo-opin polarisaatioon!). Varausjakauma ei ole pysyvä: jos ilmapallo siirretään toiseen kohtaan, elektronit palautuvat alkuperäisille paikoilleen.</p><h4>Sähkökenttä ja kenttäviivat</h4><p>Sähköisen voiman suuntaa ja voimakkuutta kuvataan <strong>kenttäviivoilla</strong>. Kenttäviivat osoittavat aina suunnan, johon positiiviseen testivaraukseen kohdistuva voima vaikuttaa (positiivisesta varauksesta poispäin ja negatiivista kohti). Jos sähkökenttään asetetaan pieni negatiivinen varaus (kuten elektroni), se liikkuu kenttäviivoja pitkin vastakkaiseen suuntaan kohti positiivista varausta.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sähkövarauksen yksikkö <em>coulombi</em> ($\\text{C}$) on arkimittakaavassa valtavan suuri: yhden coulombin varaus vastaisi noin $6{,}24 \\cdot 10^{18}$ elektronin siirtymistä! Siksi staattisessa sähkössä ja simulaatioissa käytetään usein nanocoulowbeja ($1\\text{ nC} = 10^{-9}\\text{ C}$).</div>"
+      },
+      "simulation": {
+        "title": "PhET: Villapaita ja ilmapallot (Staattinen sähkö)",
+        "url": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_all.html"
+      }
     },
     {
       "lesson": 2,
       "topic": "Jännite, sähkövirta ja virtapiirit",
-      "content": "KS aihe 2. Jännite U (voltti V), sähkövirta I (ampeeri A) ja virtapiirin komponentit. Suljettu ja avoin virtapiiri sekä kytkentäkaaviomerkit.",
+      "title": "Jännite, sähkövirta ja virtapiirit",
+      "content": "Jännite U (voltti), sähkövirta I (ampeeri), suljettu ja avoin virtapiiri sekä kytkentäkaaviomerkit.",
+      "summary": "Jännite U (voltti), sähkövirta I (ampeeri), suljettu ja avoin virtapiiri sekä kytkentäkaaviomerkit.",
+      "theory": "<p>Kahden erimerkkisen varauksen välistä varauseroa kutsutaan <strong>jännitteeksi</strong>. Jännitteen tunnus on $U$ ja yksikkö <strong>voltti</strong> ($\\text{V}$):</p>$$U = 9\\text{ V}$$<p>Jännite saa varaukset liikkeelle, kun muodostetaan <strong>suljettu virtapiiri</strong>. Tällöin johtimen vapaat elektronit alkavat vaeltaa plusnavasta kohti miinusnapaa synnyttäen ilmiön nimeltä <strong>sähkövirta</strong>. Sähkövirran tunnus on $I$ ja sen yksikkö on <strong>ampeeri</strong> ($\\text{A}$):</p>$$I = 320\\text{ mA} = 0{,}32\\text{ A}$$<p>Jos virtapiiri katkaistaan, syntyy <em>avoin virtapiiri</em>, jossa virta ei kulje, vaikka jännite säilyy.</p>",
       "tasks": {
         "research": "s. 100: T2, simulaatio (Circuit Construction Kit)",
         "theory": "s. 102: T2 - 4, s. 103: T5, 6"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Ukkonen ja sähköpurkaukset: Miten virta voi kulkea ilman halki?",
+        "content": "<h4>Miten salama syntyy?</h4><p>Normaaliolosuhteissa ilma toimii tehokkaana sähköneristeenä, eikä sähkövirta pääse kulkemaan sen läpi. Ukkosella tilanne kuitenkin muuttuu dramaattisesti: ukkospilven alaosaan kertyy valtava määrä negatiivista sähkövarausta, joka polarisoi maanpintaa ja synnyttää pilven ja maan välille jopa <strong>100 miljoonan voltin</strong> ($100\\text{ MV}$) jännitteen!</p><p>Kun jännite ylittää ilman läpilyöntilujuuden, voimakas sähkökenttä repii ilmamolekyyleiltä elektroneja irti. Ilma kuumenee äkillisesti kymmeniin tuhansiin asteisiin ja sen hiukkaset ionisoituvat johtavaksi plasmaksi (nk. <em>purkauskanava</em>). Tällöin suljetun virtapiirin kautta purkautuu hetkellisesti jopa <strong>kymmenientuhansien ampeerien</strong> suuruinen sähkövirta!</p><h4>Staattiset purkaukset arjessa</h4><p>Sama fysiikan ilmiö pienoiskoossa tapahtuu talvella kuivassa huoneilmassa: kun riisut keinokuituisen villapaidan pimeässä ja kosketat ovenkahvaa, kehoosi varastoitunut sähkövaraus purkautuu pienenä kipinänä ilman halki.</p><div class=\"deep-dive-callout\"><strong>Kuorman merkitys virtapiirissä:</strong> Virtapiirissä on aina oltava jokin sähköä kuluttava kuorma (esim. lamppu tai vastus). Ilman kuormaa resistanssi on lähellä nollaa ja syntyy oikosulku, jolloin johtimet kuumenevat hehkulampun langan tavoin sekunneissa ja voivat sytyttää tulipalon.</div>"
+      },
+      "simulation": {
+        "title": "PhET: Virtapiirin perusteet (Circuit Construction Kit: DC)",
+        "url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_all.html"
+      }
     },
     {
       "lesson": 3,
       "topic": "Kytkennät ja mittarien käyttö",
-      "content": "KS aihe 3. Sarjaan- ja rinnankytkentä paristoilla ja komponenteilla. Jännitemittarin (rinnan) ja virtamittarin (sarjaan) kytkentä virtapiiriin.",
+      "title": "Kytkennät ja mittarien käyttö",
+      "content": "Sarjaan- ja rinnankytkentä. Jännitemittarin kytkeminen rinnan ja virtamittarin sarjaan.",
+      "summary": "Sarjaan- ja rinnankytkentä. Jännitemittarin kytkeminen rinnan ja virtamittarin sarjaan.",
+      "theory": "<p>Virtapiirin komponenteille on kaksi peruskytkentätapaa:</p><ul><li><strong>Sarjaankytkentä</strong>: Komponentit kytketään peräkkäin samaan virtasilmukkaan. Paristojen sarjaankytkennässä jännitteet summautuvat ($U_{kok} = U_1 + U_2$).</li><li><strong>Rinnankytkentä</strong>: Komponentit kytketään rinnakkain omiin haaroihinsa. Paristojen rinnankytkennässä jännite pysyy samana, mutta kapasiteetti ja käyttöaika kasvavat.</li></ul><h4>Mittarien oikea kytkeminen:</h4><ul><li><strong>Jännitemittari (V)</strong>: Kytketään aina <em>rinnan</em> mitattavan komponentin yli.</li><li><strong>Virtamittari (A)</strong>: Kytketään aina <em>sarjaan</em> osaksi virtapiiriä. Virtamittarin kanssa piirissä on aina oltava jokin kuorma (esim. lamppu tai vastus), ettei mittari kärvenny!</li></ul>",
       "tasks": {
         "research": "s. 104 - 105: T1, 2, simulaatio",
         "theory": "s. 106: T1 - 3, s. 107: T4 - 6"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi mittarit kytketään eri tavoin ja mitä paristojen rinnankytkennässä tapahtuu?",
+        "content": "<h4>Miksi paristoja kytketään rinnan?</h4><p>Toisin kuin sarjaankytkennässä, jossa jännitteet summautuvat ($1{,}5\\text{ V} + 1{,}5\\text{ V} = 3\\text{ V}$), paristojen rinnankytkentä <strong>ei kasvata jännitettä lainkaan</strong>. Kahden pariston rinnankytkennässä jännite pysyy $1{,}5\\text{ voltissa}$, mutta piirin virrantarve jakautuu tasan paristojen kesken.</p><p>Tämä tarkoittaa, että kumpikin paristo luovuttaa vain puolet virrasta. Tuloksena laitteen käyttöaika (paristojen ampeerituntikapasiteetti, $\\text{Ah}$) kaksinkertaistuu ilman, että jännitteelle herkkä laite rikkoutuu liian korkeasta jännitteestä.</p><h4>Miksi jännitemittari rinnan ja virtamittari sarjaan?</h4><ul><li><strong>Jännitemittari (V):</strong> Mittaa kahden pisteen välistä potentiaalieroa (lähdejännitettä tai komponentin jännitehäviötä). Sen sisäinen resistanssi on suunniteltu valtavan suureksi (useita megaohmeja, $\\text{M}\\Omega$), jotta sen läpi ei karkaa käytännössä lainkaan virtaa eikä se häiritse mittauskohdetta.</li><li><strong>Virtamittari (A):</strong> Mittaa johtimen läpi kulkevaa virtaa ja sen on oltava osa virtasilmukkaa (sarjassa). Sen sisäinen resistanssi on lähes nolla ($R \\approx 0\\ \\Omega$), jotta se ei jarruta virtaa. <strong>Varoitus:</strong> Jos virtamittari kytketään rinnan suoraan pariston napoihin ilman kuormaa, syntyy oikosulku ja mittarin sisäinen sulake palaa välittömästi!</li></ul>"
+      }
     },
     {
       "lesson": 4,
       "topic": "Resistanssi ja Ohmin laki",
-      "content": "KS aihe 4. Resistanssi R (ohmi Ω), Ohmin laki R = U / I ja suoraan verrannollisuus. Mittaustulokset, (I, U) -kuvaaja ja oikosulku.",
+      "title": "Resistanssi ja Ohmin laki",
+      "content": "Resistanssi R (ohmi), Ohmin laki R = U / I ja suoraan verrannollisuus.",
+      "summary": "Resistanssi R (ohmi), Ohmin laki R = U / I ja suoraan verrannollisuus.",
+      "theory": "<p>Komponenttien kykyä vastustaa sähkövirran kulkua kutsutaan <strong>resistanssiksi</strong> ($R$). Sen yksikkö on <strong>ohmi</strong> ($\\Omega$).</p><p>Saksalainen fyysikko Georg Ohm havaitsi, että johtimessa kulkeva virta on suoraan verrannollinen jännitteeseen. Tätä riippuvuutta kutsutaan <strong>Ohmin laiksi</strong>:</p>$$R = \\frac{U}{I} \\iff U = R \\cdot I \\iff I = \\frac{U}{R}$$<p>Jos virtapiirin resistanssi putoaa äkillisesti lähelle nollaa (esim. johtimet osuvat toisiinsa ilman kuormaa), syntyy <strong>oikosulku</strong>. Tällöin virta kasvaa valtavan suureksi ja voi sytyttää tulipalon.</p>",
       "tasks": {
         "research": "Simulaatiot (kytkentä ja Ohmin laki), virtapiirin mittaukset ja kuvaajan piirtäminen",
         "theory": "Resistanssilaskumoniste: T17 - 20, T22 - 25, T26 - 28, lisätehtävät 1 - 7 ja kirjoitustehtävät"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Vesiputkianalogia, hehkulangan lämpötilariippuvuus ja oikosulun fysiikka",
+        "content": "<h4>Vesiputkimalli: Sähköfysiikan havainnollistus</h4><p>Jännitteen, virran ja resistanssin suhdetta kuvataan usein vesiputkianalogialla:</p><ul><li><strong>Jännite $U$ (voltti):</strong> Vastaa vesijohtoverkoston painetta tai vesitornin korkeuseroa, joka puskee vettä eteenpäin.</li><li><strong>Sähkövirta $I$ (ampeeri):</strong> Vastaa putkessa sekunnissa virtaavaa vesimäärää (litraa/sekunti).</li><li><strong>Resistanssi $R$ (ohmi):</strong> Vastaa putken ahtautta, kalkkikertymiä tai kuristusventtiiliä, joka jarruttaa veden virtaamista.</li></ul><p>Mitä suurempi paine (jännite), sitä enemmän vettä virtaa. Mutta jos putkessa on ahdas tukos (suuri resistanssi), kovakaan paine ei saa aikaan suurta virtausta.</p><h4>Lämpötilan vaikutus resistanssiin</h4><p>Metallijohtimissa atomit värähtelevät voimakkaammin lämpötilan noustessa. Vapaat elektronit törmäilevät tiheämmin atomiytimiin, jolloin johtimen <strong>resistanssi kasvaa lämpötilan noustessa</strong>. Hehkulampun lanka ei siksi noudata täysin suoraa Ohmin lakia: kun langan lämpötila nousee yli 2000 °C:een, sen resistanssi moninkertaistuu kylmään lankaan verrattuna!</p><h4>Miksi oikosulku sytyttää tulipalon?</h4><p>Jos virtapiirin johtimet koskettavat toisiaan ohi kuorman (tai laitteen sisus kastuu), piirin resistanssi putoaa lähes nollaan ($R \\approx 0{,}1\\ \\Omega$). Ohmin lain mukaan sähkövirta kasvaa räjähdysmäisesti:</p>$$I = \\frac{U}{R} = \\frac{230\\text{ V}}{0{,}1\\ \\Omega} = 2300\\text{ A}$$<p>Tällainen sähkövirta kuljettaa mukanaan valtavan määrän lämpöenergiaa ($P = R \\cdot I^2$), mikä sulattaa kuparin ja sytyttää ympäröivät materiaalit sekunnin murto-osassa.</p>"
+      },
+      "simulation": {
+        "title": "PhET: Ohmin laki (Ohm's Law)",
+        "url": "https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_all.html"
+      }
     },
     {
       "lesson": 5,
       "topic": "Vastusten kytkennät",
-      "content": "KS aihe 5. Vastukset ja niiden värikoodit (EIA). Vastusten sarjaankytkentä (Rk = R1 + R2) ja rinnankytkentä käänteislukujen avulla (1/Rk = 1/R1 + 1/R2).",
+      "title": "Vastusten kytkennät",
+      "content": "Vastukset ja EIA-värikoodit. Sarjaankytkentä ja rinnankytkentä käänteisluvuilla.",
+      "summary": "Vastukset ja EIA-värikoodit. Sarjaankytkentä ja rinnankytkentä käänteisluvuilla.",
+      "theory": "<p>Elektroniikassa käytetään erilaisia <strong>vastuksia</strong> (resistor), joiden resistanssi ilmoitetaan usein värirenkailla (EIA-koodi).</p><h4>Vastukset sarjassa:</h4><p>Kokonaisresistanssi on vastusten summa:</p>$$R_k = R_1 + R_2 + \\dots$$<h4>Vastukset rinnan:</h4><p>Rinnankytkettyjen vastusten kokonaisresistanssi lasketaan käänteislukujen avulla:</p>$$\\frac{1}{R_k} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots$$<p>Esimerkki: Kaksi $10\\ \\Omega$ vastusta rinnan:</p>$$\\frac{1}{R_k} = \\frac{1}{10} + \\frac{1}{10} = \\frac{2}{10} \\implies R_k = \\frac{10}{2} = 5\\ \\Omega$$",
       "tasks": {
         "theory": "Vastusten kytkennät -laskumoniste"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi rinnankytkettyjen vastusten kokonaisresistanssi pienenee? Käänteislukujen matematiikkaa",
+        "content": "<h4>Miten vastuksen EIA-värikoodit luetaan?</h4><p>Elektroniikan perusvastuksissa (resistor) resistanssi merkitään 4 tai 5 väriraidalla:</p><ul><li><strong>Numeroraidat:</strong> Musta (0), Ruskea (1), Punainen (2), Oranssi (3), Keltainen (4), Vihreä (5), Sininen (6), Violetti (7), Harmaa (8), Valkoinen (9).</li><li><strong>Kerroinraita:</strong> Kertoo, monellako kymmenellä kerrotaan (esim. oranssi $= \\cdot 10^3 = 1000$).</li><li><strong>Toleranssiraita:</strong> Kulta ($\\pm 5\\%$) tai hopea ($\\pm 10\\%$).</li></ul><p>Esimerkki: Vastus, jossa on värit <em>keltainen (4) – violetti (7) – oranssi ($\\times 1000$) – kulta ($\\pm 5\\%$)</em>, on resistanssiltaan $47\\text{ k}\\Omega \\pm 5\\%$.</p><h4>Miksi rinnankytkentä pienentää resistanssia?</h4><p>Kun vastuksia kytketään rinnan, sähkövirralle tarjotaan useita rinnakkaisia kulkureittejä. Ilmiötä voi verrata kaupan kassajonoon: vaikka jokainen uusi kassa olisi hieman hidas, kokonaisuutena useampi avoin kassa purkaa jonon nopeammin kuin yksi ainoa!</p><p>Siksi rinnankytkettyjen vastusten kokonaisresistanssi $R_k$ on <strong>aina pienempi kuin yksikään piirin yksittäisistä vastuksista</strong>. Kahden $10\\ \\Omega$ vastuksen rinnankytkennässä kokonaisresistanssi puolittuu:</p>$$\\frac{1}{R_k} = \\frac{1}{10\\ \\Omega} + \\frac{1}{10\\ \\Omega} = \\frac{2}{10\\ \\Omega} \\implies R_k = \\frac{10\\ \\Omega}{2} = 5\\ \\Omega$$"
+      }
     },
     {
       "lesson": 6,
       "topic": "Sähköenergia ja -teho",
-      "content": "KS aihe 6. Sähköteho P = U · I (watti W) ja sähköenergia E = P · t (joule J, wattitunti Wh, kilowattitunti kWh). Kodin sähkölaitteiden kulutustietoja.",
+      "title": "Sähköenergia ja -teho",
+      "content": "Sähköteho P = U · I (watti), energia E = P · t (joule, Wh, kWh) ja laitteiden kulutus.",
+      "summary": "Sähköteho P = U · I (watti), energia E = P · t (joule, Wh, kWh) ja laitteiden kulutus.",
+      "theory": "<p>Sähkölaitteen ottama teho riippuu jännitteestä ja sähkövirrasta:</p>$$P = U \\cdot I$$<p>Tehon yksikkö on <strong>watti</strong> ($\\text{W}$). Esimerkiksi puhelimen laturi ($5\\text{ V}$, $1\\text{ A}$) toimii teholla $P = 5\\text{ V} \\cdot 1\\text{ A} = 5\\text{ W}$.</p><p>Sähkölaitteen kuluttama energia riippuu tehosta ja käyttöajasta:</p>$$E = P \\cdot t = U \\cdot I \\cdot t$$<p>Kotitalouksissa sähköenergian mittayksikkönä käytetään <strong>kilowattituntia</strong> ($\\text{kWh}$):</p>$$1\\text{ kWh} = 1000\\text{ W} \\cdot 3600\\text{ s} = 3{,}6\\text{ MJ}$$",
       "tasks": {
         "theory": "TK s. 114 - 115: T1 - 4, s. 115: T5 - 7"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Akkujen lataaminen, kapasiteetti ja kodin laitteiden todelliset sähkölaskut",
+        "content": "<h4>Miksi pientä älylaitetta ei ladata 100 W kannettavan laturilla?</h4><p>Vaikka USB-C-liitin sopisi fyysisesti sekä puhelimeen, kelloon että kannettavaan tietokoneeseen, laitteen akun fyysinen ja kemiallinen rakenne määrittää aina sen turvallisen lataustehon. Pienen älykellon akku ei pysty ottamaan vastaan suurta sähkövirtaa ylikuumenematta ja vaurioitumatta. Nykyaikaiset laturit neuvottelevat laitteen kanssa sopivan jännitteen ja virran automaattisesti.</p><h4>Kilowattitunti (kWh) ja sähkölaskut</h4><p>Koska fysiikan perusyksikkö <em>joule</em> ($1\\text{ J} = 1\\text{ Ws}$) on arjessa aivan liian pieni luku, energiayhtiöt mittaavat sähkönkulutusta <strong>kilowattitunneissa</strong> ($1\\text{ kWh} = 3{,}6\\text{ miljoonaa joulea}$).</p><p>Esimerkkilaskelma: Jos tietokoneen laturia ($45\\text{ W}$) käytetään kuukaudessa 3 tuntia päivässä ja sähkön hinta on $10\\text{ snt/kWh}$:</p>$$E = 45\\text{ W} \\cdot 3\\text{ h/pv} \\cdot 30\\text{ pv} = 4050\\text{ Wh} \\approx 4\\text{ kWh}$$<p>Kuukauden latauskuluksi tulee vain $4\\text{ kWh} \\cdot 0{,}10\\text{ €} = 0{,}40\\text{ €}$.</p><h4>Mihin kotona oikeasti kuluu eniten sähköä?</h4><p>Valaistus ja elektroniikka vievät nykyisin vain murto-osan sähköstä. Suurimmat sähkösyöpöt liittyvät aina <strong>lämmön tuottamiseen</strong>: sähkökiuas ($8\\text{ kWh}$ yhdellä 1,5 h saunomiskerralla), kuivausrumpu ($3\\text{ kWh}$) ja lämmin vesi.</p>"
+      }
     },
     {
       "lesson": 7,
       "topic": "Sähköturvallisuus",
-      "content": "KS aihe 7. Kodin sähköturvallisuuden perusteet ja vaaratilanteiden välttäminen. Tukesin oppimateriaali ja opetusvideot.",
+      "title": "Sähköturvallisuus",
+      "content": "Kodin sähköturvallisuuden perusteet, vaaratilanteiden ennaltaehkäisy ja Tukesin ohjeet.",
+      "summary": "Kodin sähköturvallisuuden perusteet, vaaratilanteiden ennaltaehkäisy ja Tukesin ohjeet.",
+      "theory": "<p>Kodin verkkojännite Suomessa on $230\\text{ V}$, mikä on ihmiselle hengenvaarallinen. Tärkeimmät turvallisuusperiaatteet:</p><ul><li>Älä koskaan käytä vaurioituneita johtoja tai pistokkeita.</li><li>Sähkölaitteita ei saa käyttää märissä tiloissa (kuten kylvyssä), ellei niitä ole siihen erikseen hyväksytty.</li><li>Sulakkeet ja vikavirtasuojakytkimet katkaisevat virran vikatilanteissa.</li></ul>",
       "tasks": {
         "theory": "Tukesin kodin sähköturvallisuus -sivusto ja opetusvideot"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miten vikavirtasuoja toimii ja miksi sähköisku vedessä on hengenvaarallinen?",
+        "content": "<h4>Ihmiskehon resistanssi: Kuiva iho vs. märkä iho</h4><p>Ihmiskehon johtavuus riippuu ratkaisevasti ihon kosteudesta. Kuivan ja ehjän ihon resistanssi voi olla kymmeniä tuhansia ohmeja ($R \\approx 50\\text{ k}\\Omega$). Tällöin $230\\text{ V}$ verkkojännitteestä aiheutuva virta on suhteellisen pieni (vaikkakin kivulias ja lihakset kouristava).</p><p>Märällä iholla tai vedessä ihmisen resistanssi romahtaa alle tuhanteen ohmiin ($R < 1000\\ \\Omega$). Tällöin verkkovirta aiheuttaa kehon läpi satojen milliampeerien virran, mikä aiheuttaa välittömän <strong>sydänkammiovärinän ja hengityslaman</strong>. Tästä syystä sähkölaitteita ei saa koskaan käyttää suihkussa tai kylvyssä!</p><h4>Miksi tavallinen sulake ei suojaa ihmistä sähköiskulta?</h4><p>Kodin tavallinen sulake (10 A tai 16 A) on suunniteltu suojaamaan <strong>seinien johtoja ja taloa tulipalolta</strong>. Ihmiselle jo $0{,}05\\text{ ampeerin}$ ($50\\text{ mA}$) virta sydämen läpi voi olla tappava – sulake ei siis ehdi laueta ihmisen pelastamiseksi!</p><h4>Vikavirtasuojakytkin (VVSK) hengenpelastajana</h4><p>Nykyaikaisissa asunnoissa on lakisääteinen vikavirtasuoja. Se vertaa jatkuvasti virtapiiriin menevää virtaa ja sieltä palaavaa virtaa. Jos virtojen välillä on yli <strong>$30\\text{ mA}$ ero</strong> (eli virtaa vuotaa ihmiskehon kautta maahan), vikavirtasuoja katkaisee sähköt silmänräpäyksessä (alle 30 millisekunnissa), ennen kuin sydän ehtii vaurioitua.</p>"
+      }
     },
     {
       "lesson": 8,
       "topic": "Magnetismi ja sähkömagneetti",
-      "content": "KS aihe 8. Magneetit, kohtiot ja magneettikenttä. Ferromagneettiset aineet. Johtimen magneettikenttä (peukalosääntö), käämi, sähkömagneetti ja sähkömoottori.",
+      "title": "Magnetismi ja sähkömagneetti",
+      "content": "Magneettikenttä, peukalosääntö, käämi ja sähkömagneetin toimintaperiaate.",
+      "summary": "Magneettikenttä, peukalosääntö, käämi ja sähkömagneetin toimintaperiaate.",
+      "theory": "<p>Magneetilla on kaksi kohtiota: <strong>pohjoiskohtio</strong> ja <strong>eteläkohtio</strong>. Erimerkkiset kohtiot vetävät toisiaan puoleensa ja samanmerkkiset hylkivät. Magneetin ympärille muodostuu <strong>magneettikenttä</strong> ($B$, yksikkö tesla $\\text{T}$).</p><p>Kun johtimessa kulkee sähkövirta, sen ympärille syntyy ympyränmuotoinen magneettikenttä (<strong>oikean käden sääntö</strong>). Kun johdin kierretään kiepille, syntyy <strong>käämi</strong>. Käämi, jonka sisällä on rautasydän, muodostaa voimakkaan <strong>sähkömagneetin</strong>, jota käytetään mm. sähkömoottoreissa, kaiuttimissa ja sähkölukoissa.</p>",
       "tasks": {
         "research": "Simulaatiot (sauvamagneetti ja sähkömagneetti), kokeilut magneeteilla",
         "theory": "TK s. 122 - 123: T1 - 6, s. 123: T7, 8"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi käämeissä on rautasydän ja miten sähkömoottori pyörii jatkuvasti?",
+        "content": "<h4>Miksi käämin sisään laitetaan rautasydän?</h4><p>Kun johdin kierretään kiepille, syntyy <strong>käämi</strong>. Käämin sisällä magneettikenttä on huomattavasti voimakkaampi kuin suorassa johtimessa. Jos käämin sisään työnnetään <strong>rautasydän</strong>, tapahtuu merkittävä muutos: rauta on <em>ferromagneettinen</em> aine, joka sisältää mikroskooppisia magneettisia alueita (nk. <em>alkeismagneetteja</em>).</p><p>Käämin sähkövirran luoma heikkokin kenttä kääntää rautasydämen alkeismagneetit täsmälleen samaan suuntaan. Rautasydän magnetisoituu ja <strong>moninkertaistaa käämin magneettivuon tiheyden jopa satoja kertoja voimakkaammaksi</strong>! Kun virta katkaistaan, pehmeä rautasydän menettää magneettisuutensa välittömästi, mikä tekee sähkömagneetista täydellisesti ohjattavan.</p><h4>Maan magneettikenttä ja revontulet</h4><p>Maan sula rautaydin toimii jättimäisenä dynamona, joka luo Maan ympärille suojaavan magneettikentän (magnetosfäärin). Auringosta purkautuva <strong>aurinkotuuli</strong> (sähköisesti varattuja protoneja ja elektroneja) ohjautuu Maan magneettikentän viivoja pitkin kohti napa-alueita. Napa-alueiden ilmakehässä nämä hiukkaset törmäävät happi- ja typpiatomeihin, jolloin atomit virittyvät ja vapauttavat energiansa hehkuvana vihreänä ja punaisena valona – <strong>revontulina</strong>!</p><h4>Miten sähkömoottori saadaan pyörimään ympäri?</h4><p>Sähkömoottorissa käämi pyörii kestomagneetin napojen välissä. Kun käämi kääntyy puoli kierrosta, vastakkaiset magneettiset navat vetävät sitä puoleensa ja liike pysähtyisi. Jatkuva pyöriminen ratkaistaan <strong>virrankääntimellä eli kommutaattorilla</strong>: se kääntää virran suunnan käämissä aina puolen kierroksen välein, jolloin magneettinen poistovoima ja vetovoima pitävät akselin jatkuvassa pyörimisliikkeessä!</p>"
+      }
     },
     {
       "lesson": 9,
       "topic": "Sähkömagneettinen induktio",
-      "content": "KS aihe 9. Muuttuvan magneettikentän indusoima jännite ja sähkövirta (induktiovirta). Generaattori, induktioliesi sekä vaihto- ja tasavirta.",
+      "title": "Sähkömagneettinen induktio",
+      "content": "Muuttuva magneettikenttä indusoi jännitteen. Generaattori ja vaihtovirta.",
+      "summary": "Muuttuva magneettikenttä indusoi jännitteen. Generaattori ja vaihtovirta.",
+      "theory": "<p>Sähkömagneettinen vuorovaikutus toimii myös toisin päin: kun magneettikenttä käämin sisällä muuttuu (esim. magneettia liikutetaan käämissä), käämin napojen välille indusoituu jännite. Tätä kutsutaan <strong>sähkömagneettiseksi induktioksi</strong> ja syntyvää virtaa <strong>induktiovirraksi</strong>.</p><p>Tähän ilmiöön perustuu <strong>generaattori</strong>, joka muuntaa pyörivän liikkeen liike-energian sähköenergiaksi (vesi-, tuuli- ja ydinvoimaloissa). Koska pyörivä liike vaihtaa magneetin suuntaa jatkuvasti, syntyy <strong>vaihtojännitettä ja vaihtovirtaa</strong> ($50\\text{ Hz}$).</p>",
       "tasks": {
         "theory": "TK s. 126 - 127: T1 - 6, s. 127: T8, 9"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Vaihtojännitteen 50 Hz taajuus ja induktiolieden nerokas toiminta",
+        "content": "<h4>Miksi generaattori tuottaa nimenomaan vaihtovirtaa?</h4><p>Generaattorissa johdinsilmukka tai kestomagneetti pyörii akselin ympäri. Kun silmukka kääntyy, sen läpi kulkeva magneettivuo kasvaa maksimiin, pienenee nollaan, kääntyy vastakkaissuuntaiseksi ja palaa jälleen alkuun. Tämä jatkuva magneettikentän suunnan vaihtuminen indusoi johtimeen <strong>sinimuotoista vaihtojännitettä</strong> ($AC$, Alternating Current).</p><p>Euroopan sähköverkossa generaattorit on tahdistettu pyörimään siten, että virran suunta vaihtuu edestakaisin <strong>50 kertaa sekunnissa ($50\\text{ Hz}$)</strong>. Tasavirtaan ($DC$) verrattuna vaihtovirran ylivoimainen etu on se, että sen jännitettä voidaan helposti muuntaa muuntajalla!</p><h4>Miten induktioliesi lämmittää kattilan ilman kuumaa liettä?</h4><p>Induktiolieden keraamisen lasitason alla on käämi, johon syötetään suuritaajuista vaihtovirtaa (noin $20\\text{–}100\\text{ kHz}$). Tämä synnyttää lasin yläpuolelle voimakkaasti vaihtelevan magneettikentän.</p><p>Kun liedelle asetetaan ferromagneettinen kattila (rauta- tai teräspohja), muuttuva magneettikenttä indusoi kattilan metalliseen pohjaan voimakkaita pyörrevirtoja. Metallin sähköinen resistanssi vastustaa näitä virtoja, jolloin <strong>kattilan pohja kuumenee suoraan sisältäpäin</strong>. Itse liesitaso ei tuota lämpöä lainkaan, vaan se lämpiää ainoastaan kuumasta kattilasta johtuvan lämmön takia!</p>"
+      },
+      "simulation": {
+        "title": "PhET: Faradayn laki (Induktio ja generaattori)",
+        "url": "https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_all.html"
+      }
     },
     {
       "lesson": 10,
       "topic": "Sähkön siirto ja muuntajat, osa 1",
-      "content": "KS aihe 10. Sähköenergian siirto ja sähköverkot (suur-, keski- ja pienjännite). Muuntajan rakenne (ensiö- ja toisiokäämi, rautasydän).",
+      "title": "Sähkön siirto ja muuntajat, osa 1",
+      "content": "Sähkönsiirto ja jakeluverkot (suur-, keski- ja pienjännite). Muuntajan rakenne.",
+      "summary": "Sähkönsiirto ja jakeluverkot (suur-, keski- ja pienjännite). Muuntajan rakenne.",
+      "theory": "<p>Voimaloissa tuotettu sähköenergia siirretään koteihin sähköverkon kautta. Koska pitkissä siirtojohdoissa on resistanssia, suuret virrat aiheuttaisivat valtavia lämpöhäviöitä ($P = R \\cdot I^2$). Tämän vuoksi jännite nostetaan siirron ajaksi satoihin tuhansiin voltteihin (<strong>suurjänniteverkko</strong>), jolloin virta pysyy pienenä.</p><p>Jännitteen nostamiseen ja laskemiseen käytetään <strong>muuntajaa</strong>. Muuntaja koostuu <em>ensiökäämistä</em>, <em>toisiokäämistä</em> ja niitä yhdistävästä <em>rautasydämestä</em>.</p>",
       "tasks": {
         "research": "TK s. 128: T1 - 6 (kokeellinen työ), simulaatio (vaihtojännite ja -virta)",
         "theory": "TK s. 130 - 131: T1 - 4"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi sähkö siirretään sadoilla tuhansilla volteilla ja miksi muuntaja ei toimi tasavirralla?",
+        "content": "<h4>Häviöiden minimointi: Miksi siirtoverkossa käytetään $400\\text{ kV}$ suurjännitettä?</h4><p>Pitkillä sähkönsiirtolinjoilla (voimaloista kaupunkeihin) kaapeleiden oma resistanssi $R$ aiheuttaa aina tehohäviöitä lämpönä johtimissa. Tehohäviö noudattaa kaavaa:</p>$$P_{häviö} = R \\cdot I^2$$<p>Huomaa virran toinen potenssi ($I^2$): jos virta kaksinkertaistuu, lämpöhäviöt nelinkertaistuvat! Jotta siirrettävä teho $P = U \\cdot I$ saadaan perille ilman valtavia häviöitä, <strong>jännite nostetaan muuntajilla satoihin tuhansiin voltteihin (esim. $400\\text{ kV}$)</strong>. Tällöin sähkövirta $I$ putoaa murto-osaan, ja johtimien lämpöhäviöt pienenevät jopa miljoonasosaan!</p><h4>Miksi muuntaja vaatii vaihtovirtaa?</h4><p>Muuntajan toiminta perustuu puhtaasti sähkömagneettiseen induktioon. Jotta toisiokäämiin voisi indusoitua jännite, <strong>magneettikentän on oltava jatkuvasti muuttuva</strong>.</p><p>Jos ensiökäämiin syötettäisiin tasajännitettä (kuten paristosta), rautasydämeen syntyisi vain paikallaan pysyvä, muuttumaton magneettikenttä. Koska kenttä ei muutu, toisiokäämin napoihin ei indusoidu yhtään jännitettä ($U_2 = 0\\text{ V}$)! Tämän lisäksi tasavirralla ensiökäämin ainoa virtaa rajoittava tekijä olisi johdon pieni resistanssi, jolloin käämi kuumenisi ja palaisi nopeasti poroksi.</p>"
+      }
     },
     {
       "lesson": 11,
       "topic": "Sähkön siirto ja muuntajat, osa 2",
-      "content": "KS aihe 10. Muuntajayhtälö U1 / U2 = N1 / N2, jännitteen muuntaminen ja muuntajalaskut.",
+      "title": "Sähkön siirto ja muuntajat, osa 2",
+      "content": "Muuntajayhtälö ja jännitelaskut.",
+      "summary": "Muuntajayhtälö ja jännitelaskut.",
+      "theory": "<p>Muuntajan toisiokäämiin indusoituvan jännitteen suhde ensiökäämin jännitteeseen on suoraan verrannollinen käämien kierroslukujen suhteeseen (<strong>muuntajayhtälö</strong>):</p>$$\\frac{U_1}{U_2} = \\frac{N_1}{N_2}$$<p>missä:</p><ul><li>$U_1$ ja $U_2$ ovat ensiö- ja toisiojännitteet ($\\text{V}$)</li><li>$N_1$ ja $N_2$ ovat ensiö- ja toisiokäämin kierrosluvut</li></ul><p>Esimerkki: Jos ensiöjännite $U_1 = 230\\text{ V}$ halutaan muuntaa $U_2 = 5\\text{ V}$ laturijännitteeksi ja $N_1 = 1500$, saadaan ristiin kertomalla:</p>$$N_2 = \\frac{U_2 \\cdot N_1}{U_1} = \\frac{5\\text{ V} \\cdot 1500}{230\\text{ V}} \\approx 33\\text{ kierrosta}$$",
       "tasks": {
         "theory": "TK s. 134 - 135: T1 - 6, s. 135: T7, 8"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Muuntajayhtälön soveltaminen käytännössä: Laturit ja ristiinkertominen",
+        "content": "<h4>Muuntajayhtälön matemaattinen pyörittely</h4><p>Muuntajan käämien kierroslukujen suhde määrää suoraan jännitemuutoksen:</p>$$\\frac{U_1}{U_2} = \\frac{N_1}{N_2}$$<p>Tästä perusyhtälöstä voidaan ratkaista mikä tahansa neljästä suureesta ristiin kertomalla ($U_1 \\cdot N_2 = U_2 \\cdot N_1$):</p><ul><li><strong>Toisiojännite $U_2$:</strong> $$U_2 = \\frac{U_1 \\cdot N_2}{N_1}$$</li><li><strong>Toisiokäämin kierrosluku $N_2$:</strong> $$N_2 = \\frac{U_2 \\cdot N_1}{U_1}$$</li><li><strong>Ensiökäämin kierrosluku $N_1$:</strong> $$N_1 = \\frac{U_1 \\cdot N_2}{U_2}$$</li></ul><h4>Käytännön esimerkki: Älypuhelimen pikalaturi</h4><p>Pikalaturi ottaa seinästä $230\\text{ V}$ verkkojännitettä ja muuntaa sen akun lataukseen sopivaksi $5\\text{ voltin}$ jännitteeksi. Jos ensiökäämissä on $1500$ ohutta kierrosta, toisiokäämiin tarvitaan:</p>$$N_2 = \\frac{5\\text{ V} \\cdot 1500}{230\\text{ V}} \\approx 32{,}6 \\to 33\\text{ kierrosta paksumpaa lankaa.}$$"
+      }
     }
-  ]
+  ],
+  "subtitle": "Sähkömagnetismin salat",
+  "grade": "9. luokka",
+  "subject": "Fysiikka"
 }
