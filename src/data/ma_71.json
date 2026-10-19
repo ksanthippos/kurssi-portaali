@@ -5,158 +5,309 @@
     {
       "lesson": 1,
       "topic": "KS aihe 1, kirjan kpl 1. Laskujärjestys osa 1",
+      "title": "Peruslaskutoimitukset ja laskujärjestys",
       "content": "Kerrataan laskujärjestys ja peruslaskutoimitukset sekä niiden soveltamisen erilaisissa laskutehtävissä.",
+      "summary": "Laskutoimitusten tärkeysjärjestys: sulkeet, kerto- ja jakolasku vasemmalta oikealle, yhteen- ja vähennyslasku vasemmalta oikealle.",
+      "theory": "<p>Tervetuloa 7. luokan matematiikkaan! Kaikki matematiikka perustuu yhteisesti sovittuihin pelisääntöihin. Ilman sovittua <strong>laskujärjestystä</strong> laskulle $2 + 3 \\cdot 4$ voitaisiin saada kaksi eri vastausta ($20$ tai $14$)!</p><h4>1. Sovittu laskujärjestys</h4><ol><li><strong>Sulkeissa</strong> olevat laskutoimitukset suoritetaan aina ensin.</li><li><strong>Kerto- ja jakolaskut</strong> lasketaan vasemmalta oikealle siinä järjestyksessä kuin ne tulevat.</li><li><strong>Yhteen- ja vähennyslaskut</strong> lasketaan viimeisenä vasemmalta oikealle.</li></ol><h4>Esimerkkejä:</h4><ul><li>$2 + 3 \\cdot 4 = 2 + 12 = \\mathbf{14}$ (kertolasku ennen yhteenlaskua!)</li><li>$(2 + 3) \\cdot 4 = 5 \\cdot 4 = \\mathbf{20}$ (sulkeet määräävät järjestyksen)</li><li>$18 - 6 : 2 + 5 = 18 - 3 + 5 = 15 + 5 = \\mathbf{20}$</li><li>$24 : 4 \\cdot 2 = 6 \\cdot 2 = \\mathbf{12}$ (vasemmalta oikealle!)</li></ul>",
       "tasks": {
         "warmup": "s. 9: T2 - 4",
         "blue": "s. 9: T5 - 7, s. 188: T1 - 3",
         "red": "s. 9: T11, 12, 14, s. 188: T9 - 11"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi laskujärjestys on olemassa? Al-Khwarizmi ja algoritmit",
+        "content": "<h4>Universaali kieli ilman tulkinnanvaraisuutta</h4><p>Jos matematiikalla ei olisi tiukkoja laskujärjestyssääntöjä, insinöörit ja arkkitehdit saisivat samoilla piirustuksilla täysin erilaisia lujuuslaskelmia ja sillat romahtaisivat!</p><p>Säännöt kehittyivät vuosisatojen kuluessa. Persialainen 800-luvun oppinut <strong>Al-Khwarizmi</strong> loi ensimmäiset järjestelmälliset säännöt algebralliselle laskennalle (joista syntyi sana <em>algoritmi</em>). Tietokoneet ja ohjelmointikielet noudattavat täsmälleen tätä samaa laskujärjestystä joka sekunti.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Englanninkielisessä maailmassa laskujärjestys muistetaan usein muistisäännöstä <strong>PEMDAS</strong> (Parentheses, Exponents, Multiplication, Division, Addition, Subtraction) tai lauseesta <em>'Please Excuse My Dear Aunt Sally'</em>!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Laskujärjestys ja lukusuora",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 2,
       "topic": "KS aihe 1, kirjan kpl 1. Laskujärjestys osa 2",
+      "title": "Sisäkkäiset sulkeet ja jakoviiva laskujärjestyksessä",
       "content": "Pidemmät laskutoimitukset ja erilaiset sulkulausekkeet, kuten aalto- ja hakasulut.",
+      "summary": "Sisäkkäisten sulkeiden purkaminen sisältä ulospäin: kaarisulut (), hakasulut [] ja aaltosulut {}, sekä jakoviiva sulkuna.",
+      "theory": "<p>Kun laskutoimitukset monimutkaistuvat, tarvitaan useampia sulkulausekkeita sisäkkäin.</p><h4>1. Sisäkkäiset sulkeet</h4><p>Kun sulkeiden sisällä on toiset sulkeet, laskeminen aloitetaan aina <strong>kaikkein sisimmistä sulkeista</strong> edeten sisältä ulospäin:</p><ol><li>Kaarisulut: $( \\dots )$</li><li>Hakasulut: $[ \\dots ]$</li><li>Aaltosulut: $\\{ \\dots \\}$</li></ol><p><em>Laskuesimerkki:</em><br>$$100 - [20 + 3 \\cdot (8 - 2)]$$<br>$$= 100 - [20 + 3 \\cdot 6]$$<br>$$= 100 - [20 + 18]$$<br>$$= 100 - 38 = \\mathbf{62}$$</p><h4>2. Jakoviiva toimii sulkuna</h4><p>Murtoluvun tai rationaalilausekkeen jakoviiva toimii samalla tavalla kuin sulkeet osoittajan ja nimittäjän ympärillä:</p><p>$$\\frac{15 + 9}{10 - 2} = (15 + 9) : (10 - 2) = 24 : 8 = \\mathbf{3}$$</p><p><em>Laske siis aina osoittaja ja nimittäjä ensin kokonaan valmiiksi omiksi luvuikseen ennen jakolaskua!</em></p>",
       "tasks": {
         "warmup": "s. 11: T16, 17",
         "blue": "s. 11: T18, 20, s. 188: T13, 14, 16",
         "red": "s. 11: T23 - 26, 28, 29, s. 188: T17"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "François Viète ja algebrallisten symbolien vallankumous 1591",
+        "content": "<h4>Matematiikka ilman symboleja oli sanallista proosaa</h4><p>Vielä 1500-luvulla laskutoimituksille ei ollut käytössä sulkeita, plus- tai miinusmerkkejä! Matemaatikot joutuivat kirjoittamaan laskut auki kokonaisilla lauseilla, kuten: <em>'Otetaan viidestä kahden erotuksen tulo kymmenellä...'</em></p><h4>Kirjainsymbolit käyttöön</h4><p>Ranskalainen matemaatikko ja kuningas Henrik IV:n koodinmurtaja <strong>François Viète</strong> otti ensimmäisenä käyttöön järjestelmälliset kirjaimet tuntemattomille ja sulkumerkit ryhmittelyyn vuonna 1591. Tämä symbolinen algebra avasi tien nykyaikaiselle tieteelle ja insinööritaidoille!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Hakasulut $[\\,]$ keksi englantilainen matemaatikko John Wallis vuonna 1657 helpottamaan monimutkaisten geometristen kaavojen luettavuutta!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Aritmetiikan laskulaituri",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 3,
       "topic": "KS aihe 2, kirjan kpl 3. Murtoluvun käsite",
+      "title": "Murtoluvun käsite, laventaminen ja supistaminen",
       "content": "Murtoluvun osoittaja ja nimittäjä, laventaminen ja supistaminen, samannimisyys.",
+      "summary": "Osoittaja ja nimittäjä, murtoluvun arvo osana kokonaisuudesta, laventaminen (kerrotaan luvulla) ja supistaminen (jaetaan luvulla) perusmuotoon.",
+      "theory": "<p><strong>Murtoluku</strong> ilmaisee kokonaisuuden osaa tai jakolaskua:</p><p>$$\\mathbf{\\frac{a}{b} = \\frac{\\text{Osoittaja}}{\\text{Nimittäjä}}}$$</p><ul><li><strong>Nimittäjä ($b$)</strong>: Kertoo, kuinka moneen yhtä suureen osaan kokonaisuus on jaettu (esim. pizza jaettu 4 palaan). Nimittäjä ei koskaan saa olla $0$!</li><li><strong>Osoittaja ($a$)</strong>: Kertoo, kuinka monta näistä osista otetaan (esim. syödään 3 palaa $\\implies \\frac{3}{4}$).</li></ul><h4>1. Laventaminen</h4><p>Murtoluvun <strong>laventaminen</strong> tarkoittaa sekä osoittajan että nimittäjän kertomista samalla nollasta poikkeavalla luvulla $k$. Murtoluvun arvo ei muutu, vain osien koko pienenee ja määrä kasvaa!</p><p>$$\\overset{(2)}{\\frac{3}{5}} = \\frac{3 \\cdot 2}{5 \\cdot 2} = \\mathbf{\\frac{6}{10}}$$</p><h4>2. Supistaminen</h4><p>Murtoluvun <strong>supistaminen</strong> tarkoittaa sekä osoittajan että nimittäjän jakamista samalla luvulla. Murtoluku pyritään aina supistamaan <strong>perusmuotoon</strong>, jossa osoittajalla ja nimittäjällä ei ole enää yhteisiä tekijöitä:</p><p>$$\\overset{(4)}{\\frac{12}{16}} = \\frac{12 : 4}{16 : 4} = \\mathbf{\\frac{3}{4}}$$</p>",
       "tasks": {
         "warmup": "s. 17: T1 - 6",
         "blue": "s. 17: T8 - 13",
         "red": "s. 190 - 191: T46 - 52"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Horus-jumalan silmä: Muinaisen Egyptin murtolukujärjestelmä 1650 eaa.",
+        "content": "<h4>Kuusi aistia ja murtoluvut</h4><p>Muinaisessa Egyptissä käytettiin Rhindin papyruksen mukaan viljamittojen jakamiseen pyhää <strong>Horuksen silmän (Wedjat)</strong> hieroglyfiä. Silmän eri osat vastasivat kakkosen potenssien murtolukuja:</p><ul><li>Kulmakarva: $\\frac{1}{8}$</li><li>Pupilli: $\\frac{1}{4}$</li><li>Silmän vasen kulma: $\\frac{1}{2}$</li><li>Oikea kyynelura: $\\frac{1}{16}$ jne.</li></ul><p>Kaikkien silmän osien summa oli $\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\frac{1}{16} + \\frac{1}{32} + \\frac{1}{64} = \\frac{63}{64}$. Legendan mukaan puuttuvan $\\frac{1}{64}$ osan toi viisauden jumala Thot!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Egyptiläiset tunsivat vain yksikkömurtolukuja, joiden osoittaja oli aina 1 (kuten $\\frac{1}{3}, \\frac{1}{7}$). Mikä tahansa muu murtoluku oli kirjoitettava eri yksikkömurtolukujen summana (esim. $\\frac{2}{5} = \\frac{1}{3} + \\frac{1}{15}$)!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Murtolukujen perusteet (Fraction Matcher)",
+        "url": "https://phet.colorado.edu/fi/simulations/fraction-matcher"
+      }
     },
     {
       "lesson": 4,
       "topic": "KS aihe 3, kirjan kpl 3. Murtoluvut ja sekaluvut",
+      "title": "Aito murtoluku, epäaito murtoluku ja sekaluku",
       "content": "Murtolukujen muuntaminen sekaluvuksi ja toisin päin.",
+      "summary": "Aito murtoluku (< 1), epäaito murtoluku (>= 1) ja sekaluku sekä muunnokset niiden välillä.",
+      "theory": "<p>Murtoluvut jaetaan osoittajan ja nimittäjän koon perusteella eri ryhmiin:</p><h4>1. Murtolukujen tyypit</h4><ul><li><strong>Aito murtoluku</strong>: Osoittaja on pienempi kuin nimittäjä (arvo on alle $1$, esim. $\\frac{2}{3}, \\frac{5}{8}$).</li><li><strong>Epäaito murtoluku</strong>: Osoittaja on yhtä suuri tai suurempi kuin nimittäjä (arvo on $\\ge 1$, esim. $\\frac{7}{4}, \\frac{12}{5}, \\frac{6}{6} = 1$).</li><li><strong>Sekaluku</strong>: Yhdistelmä kokonaisosaa ja aitoa murtolukua (esim. $1\\frac{3}{4}$).</li></ul><h4>2. Epäaito murtoluku $\\to$ Sekaluvuksi</h4><p>Jaetaan osoittaja nimittäjällä:</p><p>$$\\frac{14}{3} = 14 : 3 = 4 \\text{ ja jakojäännös } 2 \\implies \\mathbf{4\\frac{2}{3}}$$</p><h4>3. Sekaluku $\\to$ Epäaidoksi murtoluvuksi</h4><p>Kerrotaan kokonaisosa nimittäjällä ja lisätään osoittajaan:</p><p>$$3\\frac{2}{5} = \\frac{3 \\cdot 5 + 2}{5} = \\mathbf{\\frac{17}{5}}$$</p><p><em>Muistisääntö: Laskuissa sekaluvut kannattaa lähes aina muuntaa epäaidoksi murtoluvuksi ennen laskutoimitusta virheiden välttämiseksi!</em></p>",
       "tasks": {
         "warmup": "s. 19: T16 - 19",
         "blue": "s. 191: T53, 54, moniste: T1 - 7",
         "red": "s. 191: T59, 60"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Babylonialaisten 60-järjestelmä: Miksi tunnissa on 60 minuuttia?",
+        "content": "<h4>Sumerilaisten savitaulut 4000 vuoden takaa</h4><p>Muinaisessa Mesopotamiassa sumerit ja babylonialaiset eivät käyttäneet kymmenjärjestelmää vaan <strong>kuusikymmenjärjestelmää (seksagesimaali)</strong>. Mutta miksi juuri luku 60?</p><h4>Murtolukujen jakamisen helppous</h4><p>Luku 60 on poikkeuksellisen helppo jakaa tasan murtoluvuilla: sillä on peräti 12 jakajaa ($1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60$)! Puolet on 30, kolmasosa 20, neljäsosa 15, viidesosa 12 ja kuudesosa 10. Tästä syystä me jaamme edelleen tunnin 60 minuuttiin, minuutin 60 sekuntiin ja ympyrän $360^\\circ$ asteeseen ($6 \\times 60$)!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Babylonialaiset laskivat sormillaan kuuteenkymmeneen käyttämällä peukaloa osoittamaan toisen käden neljän sormen kahtatoista sormiluuta ($4 \\times 3 = 12$) ja toisen käden viittä sormea ($12 \\times 5 = 60$)!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Murtolukujen rakentaja",
+        "url": "https://phet.colorado.edu/fi/simulations/fractions-intro"
+      }
     },
     {
       "lesson": 5,
       "topic": "KS aihe 4, kirjan kpl 4. Murtolukujen yhteen- ja vähennyslasku, osa 1",
+      "title": "Murtolukujen yhteen- ja vähennyslasku samannimisillä ja erinimisillä",
       "content": "Murtolukujen yhteen- ja vähennyslasku, laventaminen tarvittaessa",
+      "summary": "Samannimisten murtolukujen laskeminen (osoittajat lasketaan yhteen, nimittäjä säilyy) ja erinimisten laventaminen yhteiseen nimittäjään.",
+      "theory": "<p>Murtolukuja ei voi laskea suoraan yhteen, elleivät palat ole samankokoisia!</p><h4>1. Samannimiset murtoluvut (nimittäjät ovat samat)</h4><p>Kun nimittäjät ovat samat, <strong>osoittajat lasketaan yhteen tai vähennetään</strong>, ja <strong>nimittäjä pysyy samana</strong>:</p><p>$$\\frac{2}{7} + \\frac{3}{7} = \\frac{2 + 3}{7} = \\mathbf{\\frac{5}{7}}$$</p><p>$$\\frac{8}{11} - \\frac{3}{11} = \\frac{8 - 3}{11} = \\mathbf{\\frac{5}{11}}$$</p><h4>2. Erinimiset murtoluvut (nimittäjät ovat eri)</h4><p>Erinimiset murtoluvut täytyy <strong>ensin laventaa samannimisiksi</strong> yhteiseen nimittäjään:</p><p>$$\\overset{(3)}{\\frac{1}{4}} + \\overset{(2)}{\\frac{1}{6}} = \\frac{3}{12} + \\frac{2}{12} = \\mathbf{\\frac{5}{12}}$$</p><p><em>Vinkki yhteisen nimittäjän etsimiseen:</em> Etsi pienin luku, joka on jaollinen molemmilla nimittäjillä (pienin yhteinen jaettava eli pyj). Nelosen ja kutosen pienin yhteinen jaettava on $12$.</p>",
       "tasks": {
         "warmup": "s. 19: T16 - 19",
         "blue": "s. 191: T53, 54, moniste: T1 - 7",
         "red": "s. 191: T59, 60"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Eukleideen algoritmi: Miten antiikin kreikkalaiset löysivät pienimmän yhteisen nimittäjän?",
+        "content": "<h4>Geometrian isä Aleksandriassa 300 eaa.</h4><p>Kreikkalainen matemaatikko <strong>Eukleides</strong> kuvasi teoksessaan <em>Alkeet (Stoikheia)</em> nerokkaan tavan löytää kahden luvun suurin yhteinen tekijä (syt) vähentämällä pienempää lukua suuremmasta toistuvasti.</p><h4>Algoritmin periaate</h4><p>Kun halutaan laventaa luvut $\\frac{1}{48}$ ja $\\frac{1}{36}$ samannimisiksi, Eukleideen menetelmä paljastaa sekunneissa, että molemmat ovat jaollisia luvulla 12. Tämä algoritmi on edelleen yksi tietotekniikan ja tietokoneiden perusalgoritmeista!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Eukleideen <em>Alkeet</em> on Raamatun jälkeen ihmiskunnan historian eniten painettu, käännetty ja tutkittu kirja: sitä käytettiin matematiikan pääoppikirjana yli 2000 vuotta yhtäjaksoisesti!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Murtolukujen yhteenlasku visuaalisesti",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 6,
       "topic": "KS aihe 4, kirjan kpl 4. Murtolukujen yhteen- ja vähennyslasku, osa 2",
+      "title": "Sekalukujen yhteen- ja vähennyslasku ja sovellukset",
       "content": "Sekalukujen muuntaminen ennen laskemista. Haastavammat ja pidemmät murtolukujen yhteen- ja vähennyslaskut.",
+      "summary": "Sekalukujen laskeminen epäaidon murtoluvun kautta, lainaaminen kokonaisosasta ja murtolukujen sanalliset sovellukset.",
+      "theory": "<p>Sekalukujen yhteen- ja vähennyslasku vaatii tarkkuutta, erityisesti silloin kun joudutaan 'lainaamaan' kokonaisosasta.</p><h4>Tapa 1: Muunnos epäaidoksi murtoluvuksi (varmin tapa!)</h4><p>Muunnetaan kaikki sekaluvut ensin epäaidoksi murtoluvuiksi ja lavennetaan samannimisiksi:</p><p>$$2\\frac{1}{3} - 1\\frac{3}{4} = \\frac{7}{3} - \\frac{7}{4} = \\overset{(4)}{\\frac{7}{3}} - \\overset{(3)}{\\frac{7}{4}} = \\frac{28}{12} - \\frac{21}{12} = \\mathbf{\\frac{7}{12}}$$</p><h4>Tapa 2: Kokonaisosat ja murto-osat erikseen</h4><p>Lasketaan kokonaiset erikseen ja murto-osat erikseen:</p><p>$$3\\frac{2}{5} + 2\\frac{1}{5} = (3 + 2) + \\left(\\frac{2}{5} + \\frac{1}{5}\\right) = \\mathbf{5\\frac{3}{5}}$$</p><h4>Huomio vähennyslaskussa lainatessa:</h4><p>Jos murto-osa ei riitä, lainataan kokonaisesta $1$ muuntamalla se nimittäjän suuruiseksi murtoluvuksi ($1 = \\frac{5}{5}$):<br>$$4\\frac{1}{5} - 1\\frac{3}{5} = 3\\frac{6}{5} - 1\\frac{3}{5} = \\mathbf{2\\frac{3}{5}}$$</p>",
       "tasks": {
         "blue": "s. 22: T32 - 41",
         "red": "s. 23: T42 - 53"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Leonardo Fibonacci ja Liber Abaci 1202: Miten arabialaiset numerot saapuivat Eurooppaan?",
+        "content": "<h4>Pisan kauppiaan poika Pohjois-Afrikassa</h4><p>Keskiajalla Euroopassa käytettiin kömpelöitä roomalaisia numeroita ($I, V, X, L, C, D, M$) ja laskut tehtiin helmitauluilla. Italialainen <strong>Leonardo Pisano (Fibonacci)</strong> matkusti isänsä mukana nykyisen Algerian alueelle ja näki arabikauppiaiden laskevan hindulais-arabialaisilla numeroilla $0, 1, 2, \\dots, 9$ ja murtoluvuilla.</p><h4>Mullistava kirja: Liber Abaci</h4><p>Vuonna 1202 Fibonacci julkaisi teoksen <em>Liber Abaci (Laskentakirja)</em>, jossa hän opetti eurooppalaisille paikkajärjestelmän, nollan ja murtolukujen laskusäännöt. Kauppiaat huomasivat heti menetelmän ylivoimaisuuden korkolaskuissa ja valuutanvaihdossa!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Firenzen kaupunki kielsi aluksi arabialaiset numerot lailla, koska virkamiehet pelkäsivät, että numeroa $0$ oli liian helppo väärentää numeroksi $6$ tai $9$ velkakirjoissa!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Murtolukujen yhteenlaskulaboratorio",
+        "url": "https://phet.colorado.edu/fi/simulations/fractions-equality"
+      }
     },
     {
       "lesson": 7,
       "topic": "KS aihe 5, kirjan kpl 5. Murtolukujen kertolasku",
+      "title": "Murtolukujen kertolasku ja ristiinsupistaminen",
       "content": "Murtolukujen kertolasku, sekalukujen muuntaminen ennen laskemista.",
+      "summary": "Kokonaisluvun ja murtoluvun tulo, murtolukujen kertolasku: osoittajat kerrotaan keskenään ja nimittäjät keskenään, sekä ristiinsupistaminen.",
+      "theory": "<p>Murtolukujen kertolasku on itse asiassa paljon helpompaa kuin yhteenlasku: <strong>murtolukuja ei tarvitse laventaa samannimisiksi!</strong></p><h4>1. Murtoluvun kertominen kokonaisluvulla</h4><p>Kokonaisluvulla kerrotaan vain osoittaja (nimittäjä pysyy samana):</p><p>$$3 \\cdot \\frac{2}{7} = \\frac{3 \\cdot 2}{7} = \\mathbf{\\frac{6}{7}}$$</p><h4>2. Kahden murtoluvun kertolasku</h4><p>Osoittajat kerrotaan keskenään ja nimittäjät kerrotaan keskenään:</p><p>$$\\mathbf{\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}}$$</p><p><em>Esimerkki:</em> $\\frac{2}{3} \\cdot \\frac{4}{5} = \\frac{2 \\cdot 4}{3 \\cdot 5} = \\mathbf{\\frac{8}{15}}$.</p><h4>3. Ristiinsupistaminen (laskijan paras ystävä!)</h4><p>Aina kun mahdollista, <strong>supista osoittajassa ja nimittäjässä olevia lukuja keskenään ennen kertolaskun suorittamista</strong>. Tämä pitää luvut pieninä ja säästää valtavasti vaivaa:</p><p>$$\\frac{3}{8} \\cdot \\frac{4}{9} = \\frac{\\overset{1}{\\cancel{3}} \\cdot \\overset{1}{\\cancel{4}}}{\\underset{2}{\\cancel{8}} \\cdot \\underset{3}{\\cancel{9}}} = \\frac{1 \\cdot 1}{2 \\cdot 3} = \\mathbf{\\frac{1}{6}}$$</p>",
       "tasks": {
         "warmup": "s. 25: T1 - 5",
         "blue": "s. 193: T79 - 82",
         "red": "s. 25: T13, 14, s. 193: T86"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Mitä murtoluvulla kertominen oikeastaan tarkoittaa?",
+        "content": "<h4>Kokonaisluku suurentaa, murtoluku pienentää</h4><p>Alakoulussa opitaan, että 'kertolasku suurentaa aina lukua' ($3 \\times 4 = 12$). Mutta kun kerrotaan aidolla murtoluvulla (arvo alle 1), tulos <strong>pienenee</strong>!</p><h4>'Osa osasta'</h4><p>Lasku $\\frac{1}{2} \\cdot \\frac{3}{4}$ tarkoittaa suomeksi: <em>'Kuinka paljon on puolet kolmesta neljäsosasta?'</em> Jos leikkaat suklaalevystä $\\frac{3}{4}$ ja syöt siitä puolet, olet syönyt $\\frac{3}{8}$ koko levystä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kertolaskun sana <em>'kertoa'</em> tulee suomen kielessä vanhasta sanasta <em>kerta</em> (toistaa monta kertaa), mutta murtoluvuilla kertominen vastaa geometrisesti suorakulmion pinta-alan laskemista sivujen pituuksien tulona!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Murtolukujen tulo pinta-alamallina",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 8,
       "topic": "KS aihe 6, kirjan kpl 6. Murtolukujen jakolasku",
+      "title": "Käänteisluku ja murtolukujen jakolasku",
       "content": "Murtolukujen jakaminen niin kokonais-, murto- kuin sekaluvuilla. Jakolaskun konsepti käänteisluvun kertolaskun avulla.",
+      "summary": "Käänteisluvun määritelmä a/b -> b/a, jakolaskun sääntö: jaettava kerrotaan jakajan käänteisluvulla, sekä miksi nollalla ei voi jakaa.",
+      "theory": "<p>Miten voidaan jakaa murtoluvulla, esimerkiksi $\\frac{3}{4} : \\frac{1}{8}$?</p><h4>1. Käänteisluku</h4><p>Luvun <strong>käänteisluku</strong> saadaan vaihtamalla osoittaja ja nimittäjä päittäin keskenään:</p><ul><li>Murtoluvun $\\frac{2}{3}$ käänteisluku on $\\mathbf{\\frac{3}{2}}$.</li><li>Kokonaisluvun $5 = \\frac{5}{1}$ käänteisluku on $\\mathbf{\\frac{1}{5}}$.</li><li>Luvun ja sen käänteisluvun tulo on aina tasan yksi ($1$):<br>$$\\frac{2}{3} \\cdot \\frac{3}{2} = \\frac{6}{6} = 1$$</li><li><em>Huom: Luvulla 0 ei ole käänteislukua!</em></li></ul><h4>2. Murtolukujen jakolaskun sääntö</h4><blockquote><strong>Murtoluvulla jaettaessa jaettava kerrotaan jakajan käänteisluvulla!</strong></blockquote><p>$$\\mathbf{\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\cdot \\frac{d}{c}}$$</p><p><em>Laskuesimerkki:</em><br>$$\\frac{3}{4} : \\frac{2}{5} = \\frac{3}{4} \\cdot \\frac{5}{2} = \\frac{3 \\cdot 5}{4 \\cdot 2} = \\mathbf{\\frac{15}{8}} = \\mathbf{1\\frac{7}{8}}$$</p>",
       "tasks": {
         "warmup": "s. 27: T2 - 4",
         "blue": "s. 28: T9 - 15, 17, 18",
         "red": "s. 29: T20 - 26, 30 - 33, s. 194: T99, 100"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi nollalla jakaminen on ankarasti kiellettyä matematiikassa?",
+        "content": "<h4>Mitä jakolasku tarkoittaa?</h4><p>Jakolasku on kertolaskun käänteistoimitus: $6 : 2 = 3$, koska $3 \\cdot 2 = 6$. Kysytään siis: <em>'Millä luvulla jakaja pitää kertoa, jotta saadaan jaettava?'</em></p><h4>Mitä tapahtuisi, jos jaettaisiin nollalla?</h4><p>Tarkastellaan laskua $5 : 0 = x$. Silloin pitäisi päteä $x \\cdot 0 = 5$. Mutta mikä tahansa luku kerrottuna nollalla on aina $0$, eikä koskaan $5$! Yhtälöllä ei ole mitään ratkaisua.</p><p>Entä $0 : 0 = x$? Silloin $x \\cdot 0 = 0$. Tämä puolestaan pätee <em>kaikilla mahdollisilla luvuilla</em> ($x$ voisi olla $1, 7$ tai miljoona)! Tulos on täysin määräämätön.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Vuonna 1997 Yhdysvaltain laivaston ohjusristeilijä USS Yorktown pysähtyi keskelle valtamerta lähes kolmeksi tunniksi, kun tietokonejärjestelmän ohjelmakoodissa tapahtui nollalla jakaminen ja koko laivan ohjausjärjestelmä kaatui!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Murtolukujen jakolasku havainnollisesti",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 9,
       "topic": "KS aihe 7, kirjan kpl 2. Desimaaliluvut",
+      "title": "Desimaaliluvut, paikka-arvot ja pyöristäminen",
       "content": "Desimaalilukujen käsittely, pyöristäminen ja vertailu. Desimaaliluvuilla laskeminen, tarvittaessa muunnos murtoluvuksi ennen laskemista.",
+      "summary": "Desimaaliluvun paikkajärjestelmä (kymmenesosa, sadasosa, tuhannesosa), pyöristyssäännöt ja desimaaliluvun muuntaminen murtoluvuksi.",
+      "theory": "<p><strong>Desimaaliluku</strong> on toinen tapa esittää murtolukuja kymmenjärjestelmässä pilkun avulla.</p><h4>1. Desimaaliluvun paikka-arvot pilkun jälkeen</h4><p>Luvussa $3{,}478$:</p><ul><li>$3$ on <strong>ykkösiä</strong></li><li>$4$ on <strong>kymmenesosia</strong> ($\\frac{1}{10} = 0{,}1$)</li><li>$7$ on <strong>sadasosia</strong> ($\\frac{1}{100} = 0{,}01$)</li><li>$8$ on <strong>tuhannesosia</strong> ($\\frac{1}{1000} = 0{,}001$)</li></ul><h4>2. Desimaaliluvun pyöristäminen</h4><p>Kun luku pyöristetään tiettyyn tarkkuuteen, katsotaan <strong>ensimmäistä poisjäävää numeroa</strong>:</p><ul><li>Jos poisjäävä numero on <strong>$0, 1, 2, 3$ tai $4$</strong>: viimeinen mukaan jäävä numero <strong>pysyy samana</strong> (pyöristys alaspäin).<br><em>Esim. $5{,}34 \\approx 5{,}3$</em></li><li>Jos poisjäävä numero on <strong>$5, 6, 7, 8$ tai $9$</strong>: viimeinen mukaan jäävä numero <strong>kasvaa yhdellä</strong> (pyöristys ylöspäin).<br><em>Esim. $5{,}38 \\approx 5{,}4$ ja $2{,}97 \\approx 3{,}0$</em></li></ul><h4>3. Muunnos desimaaliluvusta murtoluvuksi</h4><p>Kirjoitetaan murtoluvuksi paikka-arvon mukaan ja supistetaan perusmuotoon:</p><p>$$0{,}75 = \\frac{75}{100} = \\overset{(25)}{\\frac{75}{100}} = \\mathbf{\\frac{3}{4}}$$</p><p>$$0{,}4 = \\frac{4}{10} = \\mathbf{\\frac{2}{5}}$$</p>",
       "tasks": {
         "warmup": "s. 13: T3 - 6",
         "blue": "s. 15: T16 - 19, s. 189: T29 - 31",
         "red": "s. 15: T22 - 25, s. 189: T40, 41"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Simon Stevin ja 'De Thiende' 1585: Miten desimaalipilkku mullisti laskennan?",
+        "content": "<h4>Flaamilainen sotilasinsinööri ja kymmenesosat</h4><p>Ennen 1500-luvun loppua kaikki mittaukset ja rahasummat laskettiin vaikeilla murtoluvuilla. Flaamilainen matemaatikko <strong>Simon Stevin</strong> julkaisi vuonna 1585 pienen vihkosen nimeltä <em>De Thiende (Kymmenesosat)</em>.</p><h4>Pilkun voittokulku</h4><p>Stevin osoitti, että kun otetaan käyttöön desimaalierotin, kaikki murtolukulaskut voidaan laskea täsmälleen samalla tavalla kuin tavalliset kokonaislukujen yhteen-, vähennys- ja kertolaskut! Skotlantilainen John Napier otti pian käyttöön tutun desimaalipilkun ja -pisteen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Suomessa ja useimmissa Euroopan maissa desimaalierottimena käytetään pilkkua ($3{,}14$), kun taas englanninkielisessä maailmassa ja ohjelmoinnissa käytetään aina pistettä ($3.14$)!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Desimaaliluvut lukusuoralla ja paikka-arvot",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 10,
       "topic": "KS aihe 8, kirjan kpl 10. Lukusuora",
+      "title": "Lukusuora ja lukujen vertailu",
       "content": "Lukujen vertailu lukusuoralla. Erisuuruusmerkit ja niiden käyttö.",
+      "summary": "Lukusuora, positiiviset ja negatiiviset luvut, vertailumerkit <, >, <=, >= ja lukujen järjestäminen suuruusjärjestykseen.",
+      "theory": "<p><strong>Lukusuora</strong> on vaakasuora viiva, joka havainnollistaa kaikkia lukuja ja niiden keskinäistä järjestystä.</p><h4>1. Lukusuoran periaate</h4><ul><li>Origossa sijaitsee luku <strong>$0$</strong>.</li><li>Nollasta oikealle ovat <strong>positiiviset luvut ($> 0$)</strong>, ja ne kasvavat oikealle mentäessä.</li><li>Nollasta vasemmalle ovat <strong>negatiiviset luvut ($< 0$)</strong>, ja ne pienenevät vasemmalle mentäessä.</li><li><em>Perussääntö: Mitä enemmän luku on lukusuoralla oikealla, sitä SUUREMPI se on!</em></li></ul><p><em>Esimerkki:</em> $-5$ on pienempi kuin $-2$, koska $-5$ on lukusuoralla kauempana vasemmalla ($-5 < -2$). Ajattele lämpötilaa: $-5^\\circ\\text{C}$ on kylmempi ilma kuin $-2^\\circ\\text{C}$!</p><h4>2. Vertailumerkit</h4><ul><li>$<$ : pienempi kuin (esim. $3 < 7$, kärki osoittaa aina pienempään lukuun!)</li><li>$>$ : suurempi kuin (esim. $-1 > -10$)</li><li>$\\le$ : pienempi tai yhtä suuri kuin</li><li>$\\ge$ : suurempi tai yhtä suuri kuin</li><li>$=$ : yhtä suuri kuin, $\\ne$ : erisuuri kuin</li></ul>",
       "tasks": {
         "warmup": "s. 43: T1 - 4, 6",
         "blue": "s. 43: T8 - 10, s. 195: T112",
         "red": "s. 43: T11 - 13, s. 195: T113, 114"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "John Wallis ja lukusuoran keksiminen 1685",
+        "content": "<h4>Geometria yhdistyy numeroihin</h4><p>Brittiläinen matemaatikko <strong>John Wallis</strong> esitteli vuonna 1685 teoksessaan <em>Treatise on Algebra</em> ensimmäisen modernin lukusuoran. Ennen Wallisia matemaatikoilla oli suuria vaikeuksia hahmottaa negatiivisia lukuja: miten jokin voisi olla 'vähemmän kuin ei mitään'?</p><p>Wallis osoitti, että suunta ratkaisee: jos nollasta eteenpäin kulkeminen on positiivista, nollasta taaksepäin kulkeminen on negatiivista. Tämä yksinkertainen viiva teki negatiivisista luvuista täysin konkreettisia ja intuitiivisia!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> John Wallis oli myös ensimmäinen matemaatikko, joka otti käyttöön vaakasuoran kahdeksikon '$\\infty$' äärettömyyden symbolina!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Lukusuora ja kokonaisluvut",
+        "url": "https://phet.colorado.edu/fi/simulations/number-line-integers"
+      }
     },
     {
       "lesson": 11,
       "topic": "KS aihe 9, kirjan kpl 11 ja 12. Itseisarvo ja vastaluku",
+      "title": "Vastaluku ja itseisarvo",
       "content": "Itseisarvon ja vastaluvun määritelmät. Lukujen sijoittaminen lukusuoralle. Vastaluvun laskeminen miinusmerkin avulla.",
+      "summary": "Luvun vastaluku -a ja niiden summa a + (-a) = 0, itseisarvo |a| etäisyytenä nollasta lukusuoralla sekä laskutoimitukset itseisarvolla.",
+      "theory": "<p>Lukusuoralla jokaisella luvulla on kaksi tärkeää ominaisuutta suhteessa nollaan: sen peilikuva eli <strong>vastaluku</strong> ja sen etäisyys eli <strong>itseisarvo</strong>.</p><h4>1. Vastaluku</h4><p>Luvun $a$ <strong>vastaluku</strong> on luku, joka sijaitsee lukusuoralla yhtä kaukana nollasta, mutta vastakkaisella puolella. Vastaluku merkitään miinusmerkillä luvun eteen:</p><ul><li>Luvun $5$ vastaluku on $\\mathbf{-5}$.</li><li>Luvun $-7$ vastaluku on $-(-7) = \\mathbf{+7}$.</li><li>Luvun $0$ vastaluku on $0$.</li><li><strong>Luvun ja sen vastaluvun summa on aina nolla</strong>:<br>$$\\mathbf{a + (-a) = 0}$$</li></ul><h4>2. Itseisarvo ($|a|$)</h4><p>Luvun <strong>itseisarvo</strong> kertoo, <strong>kuinka kaukana luku on nollasta lukusuoralla</strong>. Koska matka ja etäisyys eivät voi koskaan olla negatiivisia, <strong>itseisarvo on aina positiivinen tai nolla</strong>!</p><p>Itseisarvo merkitään pystyviivoilla $|a|$:</p><ul><li>$|5| = \\mathbf{5}$ (etäisyys nollaan on 5 yksikköä)</li><li>$|-5| = \\mathbf{5}$ (etäisyys nollaan on 5 yksikköä)</li><li>$|0| = \\mathbf{0}$</li></ul><p><em>Esimerkki laskusta:</em> $|-8| - |-3| = 8 - 3 = \\mathbf{5}$.</p>",
       "tasks": {
         "warmup": "s. 45: T1 - 4, s. 47: T2 - 5",
         "blue": "s. 45: T10, 11, s. 47: T9, 11, 12",
         "red": "s. 45: T13, 14, s. 195: T121, s. 47: T12 - 14, s. 196: T126, 127"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Manhattan-metriikka: Miten itseisarvo mittaa taksimatkoja New Yorkissa?",
+        "content": "<h4>Taksikuski ruutukaavassa</h4><p>Tavallisessa geometriassa kahden pisteen välinen etäisyys mitataan linnuntietä Pythagoraan lauseella. Mutta New Yorkin Manhattanilla kadut muodostavat suorakulmaisen ruudukon, jossa talojen läpi ei voi lentää suoraan!</p><h4>Itseisarvojen summa etäisyytenä</h4><p>Pisteestä $(x_1, y_1)$ pisteeseen $(x_2, y_2)$ ajava taksi joutuu liikkumaan vain vaaka- ja pystysuoria katuja pitkin. Todellinen ajomatka on itseisarvojen summa:</p><p>$$d = |x_1 - x_2| + |y_1 - y_2|$$</p><p>Tätä kutsutaan matematiikassa ja tekoälyssä <strong>Manhattan-etäisyydeksi</strong> tai taksimetriikaksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Itseisarvomerkinnän $|x|$ otti käyttöön saksalainen matemaatikko Karl Weierstrass vuonna 1841 analyysin perusteissa!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Itseisarvo etäisyytenä lukusuoralla",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 12,
       "topic": "KS aihe 10, kirjan kpl 14 ja 15. Sulkumerkkien poistaminen",
+      "title": "Etumerkkisäännöt ja sulkujen poistaminen",
       "content": "Kahden tai useamman etumerkin muuntaminen yhdeksi ennen laskutoimitusta",
+      "summary": "Kahden peräkkäisen merkin sääntö: + (+) = +, - (-) = +, + (-) = -, - (+) = -, sekä sulkeiden poistaminen etumerkin mukaan.",
+      "theory": "<p>Kun laskutoimituksissa esiintyy negatiivisia lukuja ja sulkeita peräkkäin, kaksi peräkkäistä merkkiä korvataan aina <strong>yhdellä ainoalla merkillä</strong> ennen varsinaista yhteen- tai vähennyslaskua.</p><h4>1. Kahden peräkkäisen merkin säännöt</h4><table class=\"styled-table\"><thead><tr><th>Merkkiyhdistelmä</th><th>Tulosmerkki</th><th>Muistisääntö</th><th>Esimerkki</th></tr></thead><tbody><tr><td>$+(+)$</td><td>$+$</td><td>Samat merkit $\\to$ <strong>Plus</strong></td><td>$5 + (+3) = 5 + 3 = 8$</td></tr><tr><td>$-(-)$</td><td>$+$</td><td>Samat merkit $\\to$ <strong>Plus</strong> (miinus miinus tekee plussan!)</td><td>$5 - (-3) = 5 + 3 = 8$</td></tr><tr><td>$+(-)$</td><td>$-$</td><td>Eri merkit $\\to$ <strong>Miinus</strong></td><td>$5 + (-3) = 5 - 3 = 2$</td></tr><tr><td>$-(+)$</td><td>$-$</td><td>Eri merkit $\\to$ <strong>Miinus</strong></td><td>$5 - (+3) = 5 - 3 = 2$</td></tr></tbody></table><h4>2. Sulkeiden poistaminen lausekkeesta</h4><ul><li>Jos sulkeiden edessä on <strong>plusmerkki ($+$)</strong>, sulkeet voidaan poistaa suoraan muuttamatta termien merkkejä:<br>$$+(a - b) = a - b$$</li><li>Jos sulkeiden edessä on <strong>miinusmerkki ($-$)</strong>, sulkeita poistettaessa <strong>kaikkien sulkeiden sisällä olevien termien etumerkit vaihtuvat vastakkaisiksi</strong>:<br>$$-(a - b + c) = -a + b - c$$</li></ul>",
       "tasks": {
         "warmup": "s. 53: T1, 2, 4 - 7",
         "blue": "s. 55: T1 - 4, 6, 7",
         "red": "s. 55: T11 - 14, s. 197: T165"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Brahmagupta ja negatiiviset luvut 628 jaa.: Velka, omaisuus ja nolla",
+        "content": "<h4>Muinaisen Intian talousmatematiikka</h4><p>Intialainen tähtitieteilijä ja matemaatikko <strong>Brahmagupta</strong> kirjoitti vuonna 628 teoksen <em>Brahmasphutasiddhanta</em>, jossa hän määritteli ensimmäisenä maailmassa negatiivisten lukujen laskusäännöt.</p><h4>Konkreettiset metaforat</h4><p>Brahmagupta selitti säännöt talouden avulla:</p><ul><li>Positiivinen luku on <strong>omaisuutta</strong> (varallisuutta).</li><li>Negatiivinen luku on <strong>velkaa</strong>.</li><li>Nolla on <strong>tyhjyys</strong> (ei velkaa eikä omaisuutta).</li></ul><p><em>'Velan poistaminen on omaisuuden lisäämistä'</em> $\\implies$ tästä syystä miinus miinus on plus: $-(-a) = +a$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Eurooppalaiset matemaatikot vastustivat negatiivisia lukuja vielä 1600-luvulla kutsuen niitä 'absurdeiksi luvuiksi', kunnes Brahmaguptan yli tuhat vuotta vanhat säännöt vihdoin hyväksyttiin!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Kokonaislukujen yhteen- ja vähennyslasku",
+        "url": "https://phet.colorado.edu/fi/simulations/number-line-integers"
+      }
     },
     {
       "lesson": 13,
       "topic": "KS aihe 11, kirjan kpl 16. Kertolasku negatiivisilla luvuilla",
+      "title": "Kertolasku negatiivisilla luvuilla",
       "content": "Negatiivisten lukujen kertolaskun säännöt. Tuloksen etumerkin määrittäminen.",
+      "summary": "Kertolaskun etumerkkisäännöt: samamerkkisten tulo on positiivinen (+, + tai -, -) ja erimerkkisten tulo on negatiivinen (+, -), sekä useamman tekijän tulo.",
+      "theory": "<p>Mitä saadaan, kun kerrotaan kaksi negatiivista lukua keskenään? Entä positiivinen ja negatiivinen?</p><h4>1. Kertolaskun etumerkkisäännöt</h4><table class=\"styled-table\"><thead><tr><th>Laskutoimitus</th><th>Tuloksen merkki</th><th>Esimerkki</th></tr></thead><tbody><tr><td>Positiivinen $\\cdot$ Positiivinen</td><td><strong>Positiivinen ($+$)</strong></td><td>$3 \\cdot 4 = \\mathbf{12}$</td></tr><tr><td>Positiivinen $\\cdot$ Negatiivinen</td><td><strong>Negatiivinen ($-$)</strong></td><td>$3 \\cdot (-4) = \\mathbf{-12}$</td></tr><tr><td>Negatiivinen $\\cdot$ Positiivinen</td><td><strong>Negatiivinen ($-$)</strong></td><td>$(-3) \\cdot 4 = \\mathbf{-12}$</td></tr><tr><td>Negatiivinen $\\cdot$ Negatiivinen</td><td><strong>Positiivinen ($+$)</strong></td><td>$(-3) \\cdot (-4) = \\mathbf{12}$</td></tr></tbody></table><blockquote><strong>Muistisääntö:</strong><br>Jos kerrottavilla luvuilla on <strong>sama merkki</strong>, tulos on <strong>positiivinen ($+$)</strong>.<br>Jos kerrottavilla luvuilla on <strong>eri merkit</strong>, tulos on <strong>negatiivinen ($-$)</strong>.</blockquote><h4>2. Useamman luvun tulo ja miinusmerkkien määrä</h4><p>Kun kerrotaan useita lukuja peräkkäin, tuloksen etumerkki voidaan päätellä suoraan <strong>miinusmerkkien lukumäärästä</strong>:</p><ul><li><strong>Parillinen määrä miinuksia</strong> ($0, 2, 4, \\dots$) $\\implies$ tulos on <strong>positiivinen ($+$)</strong>.</li><li><strong>Pariton määrä miinuksia</strong> ($1, 3, 5, \\dots$) $\\implies$ tulos on <strong>negatiivinen ($-$)</strong>.</li></ul><p><em>Esimerkki:</em> $(-2) \\cdot (-3) \\cdot (-4) = \\mathbf{-24}$ (3 miinusmerkkiä $\\implies$ pariton $\\implies$ miinus).</p>",
       "tasks": {
         "warmup": "s. 57: T1 - 5",
         "blue": "s. 59: T1 - 4, s. 59: T6 - 11",
         "red": "s. 59: T12 - 17, s. 198: T180"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "'Viholliseni vihollinen on ystäväni': Kertolaskun logiikka",
+        "content": "<h4>Looginen päättelyketju</h4><p>Miksi kahden negatiivisen luvun tulo on positiivinen? Tarkastellaan lauseketta:</p><p>$$(-1) \\cdot (3 - 3) = (-1) \\cdot 0 = 0$$</p><p>Avataan sulkeet kertomalla termit erikseen:</p><p>$$(-1) \\cdot 3 + (-1) \\cdot (-3) = 0$$</p><p>$$-3 + (-1) \\cdot (-3) = 0$$</p><p>Jotta summaksi tulisi tasan nolla, termin $(-1) \\cdot (-3)$ on pakko olla $+3$! Matematiikan looginen eheys vaatii, että negatiivinen kertaa negatiivinen on aina positiivinen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Elokuvissa ja videonauhoituksissa periaate näkyy ajassa: jos auto peruuttaa (negatiivinen nopeus) ja katsot videota takaperin kelattuna (negatiivinen aika), ruudulla auto näyttää kulkevan eteenpäin: $(-v) \\cdot (-t) = +s$!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Negatiivisten lukujen tulo ja koordinaatisto",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
-      {
-      "lesson": 14  ,
+    {
+      "lesson": 14,
       "topic": "KS aihe 12, kirjan kpl 17. Jakolasku negatiivisilla luvuilla",
+      "title": "Jakolasku negatiivisilla luvuilla ja kurssin yhteenveto",
       "content": "Negatiivisten lukujen jakolasku, perustelu kertolaskun avulla.",
+      "summary": "Jakolaskun etumerkkisäännöt (+/+, -/-, +/-, -/+), murtoluvun etumerkin paikka ja laskuopin kokonaiskertaus.",
+      "theory": "<p>Koska jakolasku on kertolaskun käänteistoimitus, <strong>jakolaskussa pätevät täsmälleen samat etumerkkisäännöt kuin kertolaskussakin</strong>!</p><h4>1. Jakolaskun etumerkkisäännöt</h4><table class=\"styled-table\"><thead><tr><th>Laskutoimitus</th><th>Tuloksen merkki</th><th>Esimerkki</th></tr></thead><tbody><tr><td>$+ : +$</td><td><strong>Positiivinen ($+$)</strong></td><td>$20 : 4 = \\mathbf{5}$</td></tr><tr><td>$- : -$</td><td><strong>Positiivinen ($+$)</strong></td><td>$(-20) : (-4) = \\mathbf{5}$</td></tr><tr><td>$+ : -$</td><td><strong>Negatiivinen ($-$)</strong></td><td>$20 : (-4) = \\mathbf{-5}$</td></tr><tr><td>$- : +$</td><td><strong>Negatiivinen ($-$)</strong></td><td>$(-20) : 4 = \\mathbf{-5}$</td></tr></tbody></table><blockquote><strong>Muistisääntö:</strong><br>Samamerkkisten osamäärä on <strong>positiivinen ($+$)</strong>.<br>Erimerkkisten osamäärä on <strong>negatiivinen ($-$)</strong>.</blockquote><h4>2. Miinusmerkin paikka murtoluvussa</h4><p>Miinusmerkki voidaan kirjoittaa vapaasti joko osoittajaan, nimittäjään tai koko murtoluvun eteen – ne tarkoittavat täsmälleen samaa lukua:</p><p>$$\\mathbf{-\\frac{a}{b} = \\frac{-a}{b} = \\frac{a}{-b}}$$</p><p>Selkeyden vuoksi miinusmerkki merkitään useimmiten <strong>suoraan murtoviivan eteen</strong>: $-\\frac{3}{4}$.</p>",
       "tasks": {
         "warmup": "s. 61: T1 - 3, 6, 7",
         "blue": "s. 65: T2 - 7, 10, 11",
         "red": "s. 65: T12 - 16, s. 200: T201, 206, 200 "
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Ariane 5 -avaruusraketin tuhoutuminen 1996: Kallein laskuvirhe historiassa",
+        "content": "<h4>37 sekuntia laukaisusta</h4><p>Kesäkuun 4. päivänä 1996 Euroopan avaruusjärjestö ESA laukaisi Ranskan Guayanasta uuden uutukaisen <strong>Ariane 5</strong> -raketin, jonka kyydissä oli neljä kallista tieteellistä satelliittia. Vain 37 sekuntia laukaisun jälkeen raketti kääntyi äkillisesti kyljelleen ja räjähti tulipalloksi!</p><h4>Tietokoneen muunnosvirhe</h4><p>Onnettomuustutkinnassa selvisi, että syynä oli pieni ohjelmointivirhe: tietokone yritti muuntaa 64-bittistä liukulukua (desimaalilukua) 16-bittiseksi kokonaisluvuksi. Luku oli liian suuri mahtumaan muuttujaan (ylivuoto, overflow), jolloin tietokone antoi virheilmoituksen, raketin peräsimet kääntyivät ääriasentoon ja raketti tuhoutui ilmanpaineen voimasta!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ariane 5:n räjähdys maksoi yli <strong>370 miljoonaa dollaria</strong> ja sitä pidetään historian kalleimpana yksittäisenä koodaus- ja lukumuunnosvirheenä!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Jakolaskun ja murtolukujen kertaus",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
-
-
-
   ]
 }

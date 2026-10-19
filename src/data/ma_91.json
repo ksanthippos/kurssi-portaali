@@ -5,123 +5,272 @@
     {
       "lesson": 1,
       "topic": "Aihe 1. Polynomien kertaus, osa 1",
+      "title": "Polynomin käsite ja peruslaskutoimitukset",
       "content": "Kerrataan polynomien perusominaisuudet ja laskutoimitukset.",
+      "summary": "Monomi, binomi ja polynomi, polynomin asteluku, samanmuotoisten termien yhdistäminen sekä yhteen- ja vähennyslasku.",
+      "theory": "<p>Tervetuloa 9. luokan algebran pariin! <strong>Polynomi</strong> on monomin tai useiden monomien summa:</p><p>$$P(x) = 3x^2 - 5x + 7$$</p><h4>1. Polynomin osat ja käsitteet</h4><ul><li><strong>Termi</strong>: Polynomin yhteenlaskettava osa etumerkkeineen (termit ovat $+3x^2$, $-5x$ ja $+7$).</li><li><strong>Kerroin</strong>: Muuttujan edessä oleva luku (termin $-5x$ kerroin on $-5$).</li><li><strong>Vakiotermi</strong>: Lukuosa, jossa ei ole muuttujaa ($+7$).</li><li><strong>Asteluku</strong>: Muuttujan suurin eksponentti (polynomi $3x^2 - 5x + 7$ on <strong>toisen asteen polynomi</strong>).</li></ul><h4>2. Samanmuotoisten termien yhdistäminen</h4><p>Termit ovat <strong>samanmuotoisia</strong>, jos niissä on täsmälleen sama kirjainosa samoine eksponentteineen. Vain samanmuotoiset termit voidaan yhdistää laskemalla kertoimet yhteen:</p><p>$$4x^2 + 3x - 2x^2 + 5x = (4 - 2)x^2 + (3 + 5)x = \\mathbf{2x^2 + 8x}$$</p><h4>3. Polynomien yhteen- ja vähennyslasku</h4><p>Poistetaan sulkeet ja yhdistetään samanmuotoiset termit (muista: miinus sulkeiden edessä vaihtaa kaikkien termien merkit!):</p><p>$$(3x^2 - 2x + 1) - (x^2 - 5x - 4) = 3x^2 - 2x + 1 - x^2 + 5x + 4 = \\mathbf{2x^2 + 3x + 5}$$</p>",
       "tasks": "Moniste",
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "René Descartes ja kärpänen katossa: Koordinaatiston ja polynomien liitto 1637",
+        "content": "<h4>Sairasvuoteessa katsellen kattoon</h4><p>Ranskalainen filosofi ja matemaatikko <strong>René Descartes</strong> makasi aamulla vuoteessaan ja seurasi katossa ryömivää kärpästä. Hän oivalsi, että kärpäsen tarkan sijainnin pystyi ilmoittamaan kahdella luvulla: sen etäisyydellä huoneen kahdesta seinästä!</p><h4>Analyyttisen geometrian synty</h4><p>Tästä oivalluksesta syntyi tuttu <strong>karteesinen koordinaatisto</strong>. Descartes osoitti, että jokainen algebrallinen polynomi vastaa geometrista käyrää ja jokainen käyrä vastaa yhtälöä. Tämä yhdisti geometrian ja algebran yhdeksi tieteenalaksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Descartesin kuuluisin filosofinen lause oli: <em>'Cogito, ergo sum'</em> ('Ajattelen, siis olen')!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Polynomien visualisointi koordinaatistossa",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
-       {
+    {
       "lesson": 2,
       "topic": "Aihe 2. Polynomien kertaus, osa 2",
+      "title": "Polynomien kertolasku ja binomikaavat",
       "content": "Kerrataan polynomien perusominaisuudet ja laskutoimitukset.",
+      "summary": "Monomin ja polynomin tulo, kahden polynomin tulo (jokainen kerrotaan jokaisella) sekä binomin neliöt ja muistikaavat.",
+      "theory": "<p>Polynomien kertolaskussa sovelletaan potenssien laskusääntöä: <strong>kantaluvut säilyvät ja eksponentit lasketaan yhteen ($x^a \\cdot x^b = x^{a+b}$)!</strong></p><h4>1. Monomin ja polynomin kertolasku</h4><p>Sulkeiden ulkopuolella olevalla monomilla kerrotaan jokainen sulkeiden sisällä oleva termi:</p><p>$$2x(3x^2 - 5) = 2x \\cdot 3x^2 - 2x \\cdot 5 = \\mathbf{6x^3 - 10x}$$</p><h4>2. Kahden polynomin kertolasku</h4><blockquote><strong>Jokainen ensimmäisen polynomin termi kerrotaan jokaisella toisen polynomin termillä!</strong></blockquote><p>$$(2x + 3)(x - 4) = 2x \\cdot x + 2x \\cdot (-4) + 3 \\cdot x + 3 \\cdot (-4)$$</p><p>$$= 2x^2 - 8x + 3x - 12 = \\mathbf{2x^2 - 5x - 12}$$</p><h4>3. Tärkeät binomikaavat</h4><ul><li>Summan neliö: $(a + b)^2 = a^2 + 2ab + b^2$</li><li>Erotuksen neliö: $(a - b)^2 = a^2 - 2ab + b^2$</li><li>Summan ja erotuksen tulo: $(a + b)(a - b) = a^2 - b^2$</li></ul>",
       "tasks": "Kuutio X",
-      "substituteNote": ""
-    },   {
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Pascalin kolmio ja binomikertoimet: Matematiikan kaunein kolmio",
+        "content": "<h4>Luku pyramidissa</h4><p>Ranskalainen <strong>Blaise Pascal</strong> (ja häntä ennen kiinalaiset matemaatikot 1200-luvulla) tutki lukukolmiota, jossa jokainen luku saadaan laskemalla yhteen kaksi sen yläpuolella olevaa lukua:</p><pre><code>      1
+     1 1
+    1 2 1
+   1 3 3 1
+  1 4 6 4 1</code></pre><h4>Binomin potenssit</h4><p>Nämä luvut ovat suoraan binomin $(a + b)^n$ kertoimia! Esimerkiksi rivi $1, 2, 1$ antaa $(a+b)^2 = 1a^2 + 2ab + 1b^2$, ja rivi $1, 3, 3, 1$ antaa $(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Pascalin kolmioon kätkeytyvät myös kaikki Fibonaccin lukujonon luvut ja fraktaalit (Sierpinskin kolmio, kun parittomat luvut väritetään mustiksi)!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Pinta-alamalli ja polynomien kertolasku",
+        "url": "https://phet.colorado.edu/fi/simulations/area-model-algebra"
+      }
+    },
+    {
       "lesson": 3,
       "topic": "Aihe 2. Polynomien kertaus, osa 3",
+      "title": "Polynomin jakaminen ja tekijöihin jako",
       "content": "Kerrataan polynomien perusominaisuudet ja laskutoimitukset.",
+      "summary": "Polynomin jakaminen monomilla termeittäin sekä tekijöihin jakaminen yhteisen tekijän sulkeiden ulkopuolelle ottamisella.",
+      "theory": "<p>Kertolaskun lisäksi polynomeja voidaan jakaa monomilla ja jakaa tekijöihin.</p><h4>1. Polynomin jakaminen monomilla</h4><p>Polynomi jaetaan monomilla <strong>jakamalla jokainen osoittajan termi erikseen jakajalla</strong>:</p><p>$$\\frac{6x^3 - 9x^2 + 3x}{3x} = \\frac{6x^3}{3x} - \\frac{9x^2}{3x} + \\frac{3x}{3x} = \\mathbf{2x^2 - 3x + 1}$$</p><p><em>Muista: Viimeinen termi $\\frac{3x}{3x} = 1$, ei suinkaan nolla!</em></p><h4>2. Tekijöihin jako: Yhteisen tekijän ottaminen</h4><p>Tekijöihin jako on sulkujen avaamisen käänteistoimitus: etsitään suurin yhteinen kerroin ja muuttujaosa, joka esiintyy jokaisessa termissä, ja siirretään se sulkeiden eteen:</p><p>$$4x^2 - 12x = \\mathbf{4x(x - 3)}$$</p><p>$$10a^3b + 15ab^2 = \\mathbf{5ab(2a^2 + 3b)}$$</p><p><em>Tarkistus onnistuu aina avaamalla sulut kertomalla: tuloksen pitää olla alkuperäinen lauseke!</em></p>",
       "tasks": "Kuutio X",
-      "substituteNote": ""
-    },   {
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Al-Samawal ja polynomien algebra Bagdadissa 1149 jaa.",
+        "content": "<h4>19-vuotiaan neron käsikirjoitus</h4><p>Juutalaissyntyinen lääkäri ja matemaatikko <strong>Al-Samawal al-Maghribi</strong> kirjoitti 19-vuotiaana Bagdadissa teoksen <em>al-Bahir fi'l-jabr (Loistava algebrassa)</em>. Hän määritteli ensimmäisenä polynomien jakolaskun ja negatiiviset eksponentit.</p><p>Al-Samawal kirjoitti algebran voimasta: <em>'Käyttämällä algebrallisia operaatioita tuntemattomiin samalla tavalla kuin aritmetiikkaa numeroihin, me teemme näkymättömästä näkyvän ja tuntemattomasta tunnetun.'</em></p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tekijöihin jakoa käytetään nykyään salakirjoituksessa (RSA-salaus): kahden valtavan satalukuisen alkuluvun tulo on helppo laskea, mutta tulon jakaminen takaisin tekijöihinsä kestäisi tietokoneilta miljoonia vuosia!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Polynomien tekijöihin jako",
+        "url": "https://www.geogebra.org/calculator"
+      }
+    },
+    {
       "lesson": 4,
       "topic": "Aihe 3. Yhtälöiden kertaus",
+      "title": "Ensimmäisen ja toisen asteen yhtälöiden kertaus",
       "content": "Ratkaisutekniikoiden kertausta.",
+      "summary": "1. asteen lineaarisen yhtälön ratkaisupolku, nimittäjien poisto sekä vaillinaisen toisen asteen yhtälön ratkaisut (x = ±√a).",
+      "theory": "<p>Kerrataan 7. ja 8. luokalla opitut tärkeimmät yhtälönratkaisumenetelmät ennen yhtälöparien käsittelyä.</p><h4>1. Ensimmäisen asteen yhtälö</h4><p>$$4(x - 2) - 2(3x + 1) = 6$$</p><ol><li>Poistetaan sulkeet: $4x - 8 - 6x - 2 = 6$</li><li>Yhdistetään samanmuotoiset: $-2x - 10 = 6$</li><li>Siirretään vakiotermi: $-2x = 6 + 10 = 16$</li><li>Jaetaan muuttujan kertoimella: $x = \\frac{16}{-2} = \\mathbf{-8}$</li></ol><h4>2. Murtolukuyhtälö</h4><p>$$\\frac{2x}{3} - \\frac{x}{4} = 5 \\quad \\Vert \\cdot 12 \\quad \\implies \\quad 8x - 3x = 60 \\quad \\implies \\quad 5x = 60 \\quad \\implies \\quad \\mathbf{x = 12}$$</p><h4>3. Vaillinainen toisen asteen yhtälö</h4><p>$$3x^2 - 48 = 0 \\quad \\implies \\quad 3x^2 = 48 \\quad \\Vert : 3 \\quad \\implies \\quad x^2 = 16 \\quad \\implies \\quad \\mathbf{x = \\pm 4}$$</p>",
       "tasks": "Moniste",
-      "substituteNote": ""
-    },   {
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi yhtälöt ovat modernin teknologian kieli?",
+        "content": "<h4>Sään ennustamisesta lentokoneiden suunnitteluun</h4><p>Kaikki ympärillämme oleva tekniikka perustuu yhtälöiden ratkaisemiseen:</p><ul><li>Ilmatieteen laitoksen sääennusteet ratkaisevat miljoonia ilmakehän paine- ja lämpötilayhtälöitä joka tunti supertietokoneella.</li><li>Älypuhelimen akunsäästöalgoritmit optimoivat virrankulutusta yhtälöillä.</li><li>Auton ABS-jarrut laskevat renkaiden pyörimisnopeuksien yhtälöitä satoja kertoja sekunnissa estääkseen luiston.</li></ul><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maailman suurin yhtälönratkaisuprojekti liittyy ilmastomallinnukseen ja mustien aukkojen gravitaatioaaltojen simuloimiseen suhteellisuusteorian yhtälöillä!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Yhtälöiden ratkaisu ja tasapaino",
+        "url": "https://phet.colorado.edu/fi/simulations/equality-explorer"
+      }
+    },
+    {
       "lesson": 5,
       "topic": "Aihe 4. Sanallisten tehtävien ratkaisu yhtälöillä",
+      "title": "Sanallisen ongelman kääntäminen yhtälöksi",
       "content": "Sanallisten tehtävien ratkaisemista yhtälöiden avulla.",
+      "summary": "Tehtävänannon purkaminen, muuttujan valinta, yhtälön muodostaminen ja ratkaisun järkevyyden arviointi.",
+      "theory": "<p>Kerrataan sanallisten tehtävien ratkaiseminen yhdellä muuttujalla ennen kahden muuttujan tilanteisiin siirtymistä.</p><h4>Esimerkki (Lipunmyynti):</h4><p>Koulun teatteriesitykseen myytiin yhteensä $120$ lippua. Aikuisten lippu maksoi $10$ € ja oppilaslippu $5$ €. Lipputuloja kertyi yhteensä $850$ €. Kuinka monta aikuisten lippua ja oppilaslippua myytiin?</p><h4>Ratkaisun vaiheet:</h4><ol><li><strong>Valitaan tuntematon $x$</strong>: Olkoon aikuisten lippujen määrä $= x$.</li><li><strong>Oppilaslippujen määrä</strong>: Koska lippuja oli yhteensä 120, oppilaslippuja on $120 - x$.</li><li><strong>Muodostetaan tuloyhtälö</strong>:<br>$$\\text{Aikuisten tuotto} + \\text{Oppilaiden tuotto} = \\text{Koko potti}$$<br>$$10x + 5(120 - x) = 850$$</li><li><strong>Ratkaistaan yhtälö</strong>:<br>$$10x + 600 - 5x = 850$$<br>$$5x = 850 - 600 = 250 \\quad \\implies \\quad \\mathbf{x = 50}$$</li><li><strong>Vastaus</strong>: Aikuisten lippuja myytiin <strong>50 kpl</strong> ja oppilaslippuja $120 - 50 = \\mathbf{70\\text{ kpl}}$.<br><em>Tarkistus: $50 \\cdot 10 + 70 \\cdot 5 = 500 + 350 = 850$ €. Täsmää!</em></li></ol>",
       "tasks": "Avoin matematiikka 8.lk osa 1",
-      "substituteNote": ""
-    },   {
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Tekoäly ja sanallisten tehtävien ymmärtäminen (NLP)",
+        "content": "<h4>Miksi sanallinen tehtävä on tietokoneelle vaikea?</h4><p>Tietokone ratkaisee yhtälön $10x + 5(120 - x) = 850$ nanosekunnissa. Mutta tehtävän tekstin (<em>'Koulun esitykseen myytiin...'</em>) kääntäminen kyseiseksi yhtälöksi vaatii luonnollisen kielen ymmärtämistä (Natural Language Processing, NLP).</p><p>Modernit suuret kielimallit (kuten ChatGPT ja Gemini) oppivat tunnistamaan tekstistä asiayhteyksiä, rooleja ja reaalimaailman rajoitteita matematiikan kielelle kääntämiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kun opettelet kääntämään sanallisen tehtävän yhtälöksi, harjoittelet täsmälleen samaa abstraktin mallintamisen taitoa, jota tarvitaan ohjelmistosuunnittelussa ja data-analytiikassa!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Sanallisten tehtävien mallintaminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
+    },
+    {
       "lesson": 6,
       "topic": "Aihe 5 / kirjan kpl 12. Yhtälöparin käsite",
+      "title": "Kahden muuttujan yhtälö ja yhtälöparin käsite",
       "content": "Kahden muuttujan yhtälö ja yhtälöpari. Ratkaisun kokeileminen ja tuloksen tulkinta.",
+      "summary": "Kahden muuttujan lineaarinen yhtälö ax + by = c, yhtälöparin merkintä aaltosululla sekä ratkaisuparin (x, y) kokeileminen ja tarkistaminen.",
+      "theory": "<p>Jos tiedetään vain, että kahden luvun summa on 10 ($x + y = 10$), ratkaisuja on äärettömän monta ($0+10, 1+9, 2+8, -5+15$ jne.). Yksi yhtälö kahdella muuttujalla ei riitä määrittämään lukuja yksikäsitteisesti!</p><h4>1. Mikä on yhtälöpari?</h4><p>Kun meillä on <strong>kaksi muuttujaa ($x$ ja $y$)</strong>, tarvitaan <strong>kaksi toisistaan riippumatonta yhtälöä</strong>, jotka ovat voimassa samanaikaisesti. Tätä kutsutaan <strong>lineaariseksi yhtälöpariksi</strong>:</p><p>$$\\begin{cases} x + y = 10 \\\\ x - y = 4 \\end{cases}$$</p><h4>2. Yhtälöparin ratkaisu on lukupari $(x, y)$</h4><p>Lukupari $(x, y)$ on yhtälöparin ratkaisu vain ja ainoastaan silloin, kun se <strong>toteuttaa molemmat yhtälöt samanaikaisesti</strong>!</p><p>Kokeillaan lukuparia $x = 7, y = 3$:</p><ul><li>Ylempi yhtälö: $7 + 3 = 10$ (Tosi!)</li><li>Alempi yhtälö: $7 - 3 = 4$ (Tosi!)</li></ul><p>Lukupari $(7, 3)$ on siis yhtälöparin ratkaisu. Merkitään:<br>$$\\mathbf{x = 7 \\quad \\text{ja} \\quad y = 3} \\quad \\text{tai} \\quad \\mathbf{(7, 3)}$$</p>",
       "tasks": {
         "warmup": "s. 45: T1 - 4",
         "blue": "s. 45: T5, 6, s. 82: T107, 108",
         "red": "s. 45: T8, 9, s. 82: T110, 111"
       },
-      "substituteNote": ""
-    },   {
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Yhtälöparien universaali voima arjessa ja taloudessa",
+        "content": "<h4>Mihin yhtälöpareja tarvitaan?</h4><p>Aina kun kahden toisiinsa vaikuttavan tuntemattoman arvo halutaan selvittää, tarvitaan yhtälöpari:</p><ul><li><strong>Yrityksen nollatulos (Break-even point)</strong>: Tulojen yhtälö ja menojen yhtälö muodostavat yhtälöparin, jonka leikkauspiste kertoo, kuinka monta tuotetta yrityksen on myytävä tehdäkseen voittoa.</li><li><strong>Ravintotiede</strong>: Kaloreiden ja proteiinien saannin optimointi kahdesta eri ruoka-aineesta.</li><li><strong>Navigointi</strong>: Laivan paikan määrittäminen kahden eri majakan suuntimien leikkauksesta.</li></ul><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Aaltosulku $\\{\\}$ yhtälöparin edessä tarkoittaa loogista 'JA'-operaatiota (konjunktiota): molempien yhtälöiden on oltava totta samaan aikaan!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Yhtälöparin ratkaisuparin kokeileminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
+    },
+    {
       "lesson": 7,
       "topic": "Aihe 6 / kirjan kpl 14.Sijoituskeino",
+      "title": "Yhtälöparin ratkaiseminen sijoituskeinolla",
       "content": "Yhtälöparin ratkaiseminen sijoituskeinolla.",
+      "summary": "Toisen muuttujan ratkaiseminen toisesta yhtälöstä (esim. y = 3x - 1), lausekkeen sijoittaminen toiseen yhtälöön ja molempien muuttujien ratkaiseminen.",
+      "theory": "<p>Ensimmäinen tarkka algebrallinen menetelmä yhtälöparin ratkaisemiseen on <strong>sijoituskeino</strong>.</p><h4>Sijoituskeinon neljä vaihetta:</h4><ol><li><strong>Ratkaise toisesta yhtälöstä toinen muuttuja</strong> ($x$ tai $y$) yksinään toiselle puolelle (valitse se yhtälö ja muuttuja, jonka kerroin on $1$ tai $-1$).</li><li><strong>Sijoita saatu lauseke toiseen yhtälöön</strong> kyseisen muuttujan paikalle (käytä aina sulkeita!).</li><li><strong>Ratkaise syntynyt yhden muuttujan yhtälö</strong>.</li><li><strong>Laske toinen muuttuja</strong> sijoittamalla saatu arvo vaiheen 1 lausekkeeseen.</li></ol><h4>Täydellinen esimerkkiratkaisu:</h4><p>$$\\begin{cases} y = 2x - 1 \\\\ 3x + y = 14 \\end{cases}$$</p><ol><li>Ylemmässä yhtälössä $y$ on jo valmiiksi ratkaistu: $y = 2x - 1$.</li><li>Sijoitetaan alemman yhtälön $y$:n paikalle lauseke $(2x - 1)$:<br>$$3x + (2x - 1) = 14$$</li><li>Ratkaistaan $x$:<br>$$5x - 1 = 14 \\implies 5x = 15 \\implies \\mathbf{x = 3}$$</li><li>Lasketaan $y$ sijoittamalla $x = 3$:<br>$$y = 2 \\cdot 3 - 1 = 6 - 1 = \\mathbf{5}$$</li></ol><p><strong>Vastaus: $\mathbf{x = 3}$ ja $\mathbf{y = 5}$ (tai lukupari $(3, 5)$).</strong></p>",
       "tasks": {
         "warmup": "s. 51: T1 - 4",
         "blue": "s. 51: T6, 7, s. 83: T123 - 126",
         "red": "s. 51: T9, 10, s. 83: T127, 128"
       },
-      "substituteNote": ""
-    },   {
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Muuttujan eliminoinnin idea: Vaikeasta ongelmasta tuttuun",
+        "content": "<h4>Ongelman pelkistäminen</h4><p>Koko sijoituskeinon syvin matemaattinen idea on <strong>muuttujan eliminointi</strong>: emme osaa heti ratkaista yhtälöä, jossa on kaksi tuntematonta, mutta osaamme ratkaista yhden muuttujan yhtälön hetkessä!</p><p>Sijoittamalla $y$:n tilalle $x$:stä riippuva lauseke muuttuja $y$ poistuu yhtälöstä kokonaan ja jäljelle jää vain tuttu 7. luokan yhtälö. Tätä tekniikkaa käytetään yliopistotason matematiikassa satojen muuttujien epälineaarisissa järjestelmissä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos sijoituksen jälkeen saat tulokseksi $0 = 0$, yhtälöparilla on ääretön määrä ratkaisuja; jos saat $0 = 7$, yhtälöparilla ei ole ratkaisua!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Sijoituskeinon vaiheittainen ratkaisu",
+        "url": "https://www.geogebra.org/calculator"
+      }
+    },
+    {
       "lesson": 8,
       "topic": "Aihe 7 / kirjan kpl 14.Yhteenlaskukeino, osa 1",
+      "title": "Yhteenlaskukeino: Vastakkaiset kertoimet",
       "content": "Yhtälöparin ratkaiseminen yhteenlaskukeinolla.",
+      "summary": "Yhtälöparin ratkaiseminen yhteenlaskukeinolla, kun toisen muuttujan kertoimet ovat toistensa vastalukuja (kuten +y ja -y tai +2x ja -2x).",
+      "theory": "<p>Toinen tehokas tapa ratkaista yhtälöpari on <strong>yhteenlaskukeino (eliminointikeino)</strong>. Se perustuu siihen, että yhtälöt voidaan laskea puolittain yhteen!</p><h4>Milloin yhteenlaskukeino toimii heti?</h4><p>Kun toisen muuttujan kertoimet yhtälöissä ovat <strong>toistensa vastalukuja</strong> (esimerkiksi $+y$ ja $-y$ tai $+3x$ ja $-3x$). Tällöin yhtälöt puolittain yhteen laskettaessa kyseinen muuttuja häviää suoraan nollaksi ($+y + (-y) = 0$)!</p><h4>Esimerkki:</h4><p>$$\\begin{cases} 2x + y = 11 \\\\ 3x - y = 9 \\end{cases}$$</p><ol><li>Lasketaan yhtälöt puolittain yhteen allekkain:<br>$$\\begin{aligned} 2x + y &= 11 \\\\ + \\quad 3x - y &= 9 \\\\ \\hline 5x + 0 &= 20 \\end{aligned}$$</li><li>Saadaan yhden muuttujan yhtälö: $5x = 20 \\implies \\mathbf{x = 4}$</li><li>Lasketaan toinen muuttuja $y$ sijoittamalla $x = 4$ kumpaan tahansa alkuperäisistä yhtälöistä:<br>$$2 \\cdot 4 + y = 11 \\implies 8 + y = 11 \\implies \\mathbf{y = 3}$$</li></ol><p><strong>Vastaus: $\mathbf{x = 4}$ ja $\mathbf{y = 3}$.</strong></p>",
       "tasks": {
         "warmup": "s. 53: T11, 12",
         "blue": "s. 53: T13 - 17, s. 83: T129 - 131",
         "red": "s. 53: T19 - 21, s. 83: T128, 133"
       },
-      "substituteNote": ""
-    },  
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Carl Friedrich Gauss ja Gaussin eliminointimenetelmä",
+        "content": "<h4>Matematiikan ruhtinas (Princeps Mathematicorum)</h4><p>Saksalainen huippumatemaatikko <strong>Carl Friedrich Gauss</strong> (1777–1855) kehitti järjestelmällisen menetelmän kymmenien ja satojen yhtälöiden ratkaisemiseen yhteenlaskukeinon avulla.</p><h4>Kääpiöplaneetta Cereksen löytö 1801</h4><p>Kun tähtitieteilijä Giuseppe Piazzi hukkasi vastalöydetyn kääpiöplaneetta Cereksen Auringon häikäisyyn vain muutaman havaintopisteen jälkeen, 24-vuotias Gauss ratkaisi havaintodatan laajan yhtälöryhmän eliminointimenetelmällään ja ennusti täsmälleen paikan, josta Ceres löytyi kaukoputkella uudelleen!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneiden 3D-grafiikka, fysiikkamoottorit ja tekoälyverkot ratkaisevat nykyään Gaussin eliminointiin perustuvilla matriisialgoritmeilla miljoonia yhtälöitä joka sekunti!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Yhteenlaskukeinon allekkainlasku",
+        "url": "https://www.geogebra.org/calculator"
+      }
+    },
     {
       "lesson": 9,
       "topic": "Aihe 8 / kirjan kpl 14. Yhteenlaskukeino, osa 2",
+      "title": "Yhtälöparin laventaminen ja ratkaisutavan valinta",
       "content": "Yhteenlaskukeinon jatkoharjoituksia ja parhaan ratkaisukeinon valinta eri tilanteissa.",
+      "summary": "Yhtälön tai molempien yhtälöiden kertominen puolittain sopivilla kertoimilla vastalukujen luomiseksi, sekä sijoitus- vs. yhteenlaskukeinon valintastrategia.",
+      "theory": "<p>Mitä tehdään, jos kertoimet eivät valmiiksi ole vastalukuja? <strong>Lavennetaan yhtälöt kertomalla puolittain sopivilla luvuilla!</strong></p><h4>Esimerkki (yhtälön kertominen):</h4><p>$$\\begin{cases} 3x + 2y = 16 \\\\ x - y = 2 \\quad \\Vert \\cdot 2 \\end{cases}$$</p><p>Kerrotaan alempi yhtälö luvulla $2$, jotta $y$:n kertoimiksi saadaan $+2$ ja $-2$:</p><p>$$\\begin{cases} 3x + 2y = 16 \\\\ 2x - 2y = 4 \\end{cases}$$</p><p>Lasketaan yhtälöt puolittain yhteen:</p><p>$$5x = 20 \\implies \\mathbf{x = 4}$$</p><p>Sijoitetaan $x = 4$ alempaan yhtälöön: $4 - y = 2 \\implies \\mathbf{y = 2}$.</p><h4>Molempien yhtälöiden kertominen:</h4><p>Jos kertoimet ovat esimerkiksi $2x$ ja $3x$, kerrotaan toinen luvulla $3$ ja toinen luvulla $-2$ $\\implies$ saadaan $+6x$ ja $-6x$!</p><h4>Kumpi keino kannattaa valita?</h4><ul><li><strong>Sijoituskeino</strong>: Paras silloin, kun jommassakummassa yhtälössä muuttujan kerroin on jo valmiiksi $1$ tai $-1$ (esim. $y = 3x - 5$ tai $x + 2y = 8$).</li><li><strong>Yhteenlaskukeino</strong>: Paras silloin, kun kertoimet ovat suurempia lukuja (esim. $3x + 4y = 18$ ja $2x - 5y = -11$).</li></ul>",
       "tasks": {
         "warmup": "s. 55: T22 - 28",
         "blue": "s. 84: T134 - 136",
         "red": "s. 55: T29 - 32, s. 84: T137, 138"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi yhtälöitä voi kertoa ja laskea yhteen puolittain?",
+        "content": "<h4>Kahden vaa'an yhdistäminen</h4><p>Ajattele kahta erillistä tasapainossa olevaa vaakaa. Vaa'alla A vasemmassa kupissa on paino $2x + y$ ja oikeassa kupissa $11\\text{ kg}$. Vaa'alla B vasemmassa kupissa on $3x - y$ ja oikeassa kupissa $9\\text{ kg}$.</p><p>Jos kippaat molempien vaakojen vasemmat kupit yhteen isoon kuppiin ja oikeat kupit toiseen isoon kuppiin, uuden vaa'an on pakko olla edelleen täydellisessä tasapainossa! Yhtälöiden yhteenlaskeminen on fysikaalisesti ja loogisesti täysin luonnollista.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Moni opiskelija tekee virheen kertomalla vain yhtälön vasemman puolen mutta unohtaa kertoa oikean puolen luvun – muista kertoa vaa'an molemmat puolet!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Yhtälöparin lavennustyökalu",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 10,
       "topic": "Aihe 8 / kirjan kpl 15. Ongelmanratkaisu yhtälöparilla, osa 1",
+      "title": "Kahden tuntemattoman sanalliset tehtävät",
       "content": "Sanallisten tehtävien ratkaisemista yhtälöparien avulla.",
+      "summary": "Sanallisen ongelman mallintaminen kahdella muuttujalla x ja y, yhtälöparin muodostaminen, ratkaisu ja sanallinen vastaus.",
+      "theory": "<p>Monet arjen ja talouden pulmat ratkeavat huomattavasti helpommin kahdella muuttujalla $x$ ja $y$ kuin yhdellä muuttujalla kikkailemalla.</p><h4>Esimerkki: Kahvilaostos</h4><p>Vilma ostaa 2 kahvia ja 3 korvapuustia, ja maksaa niistä $13$ euroa. Leo ostaa samasta kahvilasta 3 kahvia ja 1 korvapuustin, ja maksaa $9$ euroa. Mitä maksaa yksi kahvi ja mitä yksi korvapuusti?</p><h4>Ratkaisupolku:</h4><ol><li><strong>Nimetään tuntemattomat</strong>:<br>Kahvin hinta $= x$ (€)<br>Korvapuustin hinta $= y$ (€)</li><li><strong>Muodostetaan yhtälöpari</strong>:<br>$$\\begin{cases} 2x + 3y = 13 \\\\ 3x + y = 9 \\quad \\implies \\quad y = 9 - 3x \\end{cases}$$</li><li><strong>Ratkaistaan sijoittamalla</strong> $y = 9 - 3x$ ylempään yhtälöön:<br>$$2x + 3(9 - 3x) = 13$$<br>$$2x + 27 - 9x = 13$$<br>$$-7x = 13 - 27 = -14 \\quad \\implies \\quad \\mathbf{x = 2}$$</li><li><strong>Lasketaan $y$</strong>:<br>$$y = 9 - 3 \\cdot 2 = 9 - 6 = \\mathbf{3}$$</li><li><strong>Vastaus sanallisesti</strong>: Kahvi maksaa <strong>2 €</strong> ja korvapuusti <strong>3 €</strong>.<br><em>Tarkistus: $2 \\cdot 2 + 3 \\cdot 3 = 4 + 9 = 13$ € ja $3 \\cdot 2 + 1 \\cdot 3 = 6 + 3 = 9$ €. Täsmää täydellisesti!</em></li></ol>",
       "tasks": {
         "warmup": "s. 57: T1 - 4",
         "blue": "s. 57: T5 - 7",
         "red": "s. 57: T8 - 10, s. 84: T143"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Kanojen ja kanien arvoitus: Muinaisen Kiinan 'Yhdeksän lukutaidon kirjaa' (Jiuzhang Suanshu)",
+        "content": "<h4>Han-dynastian aikainen pulma 2000 vuoden takaa</h4><p>Muinaisessa kiinalaisessa klassikkoteoksessa <em>Jiuzhang Suanshu</em> esitetään kuuluisa pulma:</p><blockquote><em>'Häkissä on kanoja ja kaneja. Ylhäältä laskettuna päitä on yhteensä 35, ja alhaalta laskettuna jalkoja on yhteensä 94. Kuinka monta kanaa ja kania häkissä on?'</em></blockquote><h4>Yhtälöparin ratkaisu</h4><p>Olkoon kanoja $x$ (2 jalkaa) ja kaneja $y$ (4 jalkaa):</p><p>$$\\begin{cases} x + y = 35 \\\\ 2x + 4y = 94 \\end{cases}$$</p><p>Kerrotaan ylempi yhtälö luvulla $-2$ $\\implies -2x - 2y = -70$. Lasketaan yhteen $\\implies 2y = 24 \\implies \\mathbf{y = 12\\text{ kania}}$. Kanoja on $35 - 12 = \\mathbf{23\\text{ kanaa}}$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kiinalaiset ratkaisivat yhtälöparit jo 200 eaa. bambutikuilla ruudukossa käyttäen menetelmää, joka on täysin identtinen Gaussin eliminointikeinon kanssa!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Sanallisten yhtälöparien mallintaminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
-        {
+    {
       "lesson": 11,
       "topic": "Aihe 8 / kirjan kpl 15. Ongelmanratkaisu yhtälöparilla, osa 2",
+      "title": "Nopeus-, seos- ja geometriset yhtälöparitehtävät",
       "content": "Sanalliset tehtävät, haastavampia tapauksia.",
+      "summary": "Haastavampien sanallisten ongelmien ratkaiseminen yhtälöparilla: myötä- ja vastatuulitehtävät sekä prosenttiseokset.",
+      "theory": "<p>Tarkastellaan kahta klassista soveltavaa ongelmatyyppiä, joita esiintyy lukion fysiikassa ja kemiassa.</p><h4>1. Myötä- ja vastatuulitehtävä (nopeusongelma)</h4><p><em>Tehtävä:</em> Lentokone lentää myötätuulessa $1200\\text{ km}$ matkan kahdessa tunnissa. Paluumatka samaa reittiä vastatuulessa kestää 3 tuntia. Laske koneen oma nopeus tyynessä ilmassa ($v$) ja tuulen nopeus ($u$).</p><ul><li>Myötätuulessa nopeudet lasketaan yhteen: $v + u = \\frac{1200\\text{ km}}{2\\text{ h}} = 600\\text{ km/h}$</li><li>Vastatuulessa tuuli jarruttaa: $v - u = \\frac{1200\\text{ km}}{3\\text{ h}} = 400\\text{ km/h}$</li><li>Muodostetaan yhtälöpari ja lasketaan yhteen:<br>$$\\begin{aligned} v + u &= 600 \\\\ + \\quad v - u &= 400 \\\\ \\hline 2v &= 1000 \\implies \\mathbf{v = 500\\text{ km/h}} \\end{aligned}$$</li><li>Tuulen nopeus: $u = 600 - 500 = \\mathbf{100\\text{ km/h}}$.</li></ul><h4>2. Liuostehtävä (seoksen prosenttipitoisuus)</h4><p>Kun sekoitetaan kahta eri vahvuista suolaliuosta halutun pitoisuuden saavuttamiseksi, muodostetaan kaksi yhtälöä: toinen liuosten <strong>kokonaismassoille ($x + y = m_{\\text{kok}}$)</strong> ja toinen <strong>puhtaan suolan määrille</strong>!</p>",
       "tasks": {
         "warmup": "s. 59: T11 - 13",
         "blue": "s. 59: T15 - 17, s. 85: T144 - 146",
         "red": "s. 59: T19, 20, s. 85: T147 - 149, 151"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "GPS-satelliittipaikannus ja trilateraatio: Kolmen tuntemattoman yhtälöryhmä",
+        "content": "<h4>Miten kännykkä tietää missä olet?</h4><p>Kun avaat karttasovelluksen, puhelimesi vastaanottaa radiosignaaleja vähintään 4 eri GPS-satelliitilta, jotka kiertävät maapalloa $20\\,000\\text{ kilometrin}$ korkeudessa.</p><h4>Aikaero ja etäisyysyhtälöt</h4><p>Signaalin kulkuaika kertoo puhelimen etäisyyden kustakin satelliitista. Jokainen satelliitti muodostaa pallopinnan yhtälön avaruudessa $(x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2 = (c \\cdot \\Delta t_i)^2$. Puhelimen prosessori ratkaisee tämän neljän yhtälön epälineaarisen yhtälöryhmän ja löytää pisteen $(x, y, z)$, jossa pallot leikkaavat – eli tarkan sijaintisi metrin tarkkuudella!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> GPS-satelliittien kellot ottavat huomioon jopa Einsteinin suhteellisuusteorian aiheuttamat aikavääristymät: ilman tätä GPS-sijainti heittäisi yli 10 kilometriä joka ikinen päivä!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Liikkeen ja nopeuden yhtälöparit",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
-              {
+    {
       "lesson": 12,
       "topic": "Aihe 9 / kirjan kpl 13. Yhtälöparin ratkaiseminen graafisesti.",
+      "title": "Yhtälöparin graafinen ratkaiseminen koordinaatistossa",
       "content": "Yhtälöparin ratkaisemista koordinaatiston ja kuvaajien avulla.",
+      "summary": "Suoran yhtälö y = kx + b, suorien piirtäminen koordinaatistoon, leikkauspiste yhtälöparin ratkaisuna (x, y) sekä yhdensuuntaiset ja yhtenevät suorat.",
+      "theory": "<p>Jokainen kahden muuttujan ensimmäisen asteen yhtälö $ax + by = c$ kuvaa <strong>suoraa viivaa koordinaatistossa</strong>!</p><h4>1. Suoran yhtälön ratkaistu muoto ($y = kx + b$)</h4><p>Muutetaan yhtälöt muotoon $y = kx + b$:</p><ul><li>$k$ = kulmakerroin (suoran jyrkkyys ja suunta)</li><li>$b$ = vakiotermi ($y$-akselin leikkauspisteen korkeus $(0, b)$)</li></ul><h4>2. Yhtälöparin ratkaisu on suorien leikkauspiste!</h4><p>Piirretään molemmat suorat samaan koordinaatistoon:</p><ul><li><strong>Yksi leikkauspiste $(x, y)$</strong>: Suorat leikkaavat toisensa yhdessä pisteessä $\\implies$ <strong>yksi ratkaisu</strong>.</li><li><strong>Yhdensuuntaiset suorat</strong>: Suorilla on sama kulmakerroin ($k_1 = k_2$), muttei yhteisiä pisteitä $\\implies$ <strong>ei ratkaisua</strong>!</li><li><strong>Yhtenevät suorat</strong>: Suorat ovat täsmälleen sama suora päällekkäin $\\implies$ <strong>ääretön määrä ratkaisuja</strong>!</li></ul><p><em>Esimerkki:</em> $\\begin{cases} y = x + 1 \\\\ y = -x + 3 \\end{cases}$<br>Suorat leikkaavat pisteessä $(1, 2)$. Ratkaisu on $\\mathbf{x = 1, y = 2}$.</p>",
       "tasks": {
         "warmup": "s. 47: T1 - 5",
         "blue": "s. 47: T6 - 8, s. 82: T112 - 115",
         "red": "s. 47: T9, s. 82: T116, 117"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Graafinen tarkkuus vs. algebrallinen tarkkuus",
+        "content": "<h4>Miksi tarvitsemme algebrallisia ratkaisukeinoja?</h4><p>Graafinen ratkaisu on nopea ja erittäin havainnollinen: näet heti suorien asennon ja summittaisen leikkauspisteen. Mutta mitä jos suorien leikkauspiste onkin $x = \\frac{17}{73} \\approx 0{,}23287...$ ja $y = 4\\frac{12}{19}$?</p><p>Paperille lyijykynällä piirretystä ruudukosta ei pysty millään lukemaan tällaisia murtolukuvastauksia tarkasti! Siksi sijoitus- ja yhteenlaskukeinot ovat välttämättömiä absoluuttisen tarkan vastauksen saamiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneohjelmat (kuten GeoGebra tai Desmos) yhdistävät molemmat: ne laskevat leikkauspisteen taustalla algebrallisesti ja piirtävät sen salamannopeasti graafisesti näytölle!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Kahden suoran leikkauspiste ja yhtälöpari",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 13,
       "topic": "Aihe 10 / Avoin matikka 8.lk osio 1. Epäyhtälöt",
+      "title": "Epäyhtälöt ja yhtälöparin kurssikertaus",
       "content": "Epäyhtälön käsite, esittäminen lukusuoralla ja huomiot ratkaisutekniikassa (suunnan kääntö).",
+      "summary": "Epäyhtälöiden ratkaiseminen, suunnanvaihto negatiivisella jaettaessa, lukusuoraesitys sekä yhtälöparikurssin kokonaiskertaus.",
+      "theory": "<p>Kerrataan vielä kurssin päätteeksi epäyhtälön ratkaisemisen perussäännöt ja tehdään yhteenveto yhtälöparimenetelmistä.</p><h4>1. Epäyhtälön ratkaiseminen</h4><p>Epäyhtälö ratkaistaan yhtälön tapaan, mutta:</p><blockquote><strong>Aina kun jaat tai kerrot negatiivisella luvulla, epäyhtälömerkin suunta KÄÄNTYY!</strong></blockquote><p>$$-3x + 6 \\le 18 \\quad \\implies \\quad -3x \\le 12 \\quad \\Vert : (-3) \\quad \\implies \\quad \\mathbf{x \\ge -4}$$</p><h4>2. Lukusuoraesitys</h4><ul><li>Merkintä $\\le$ tai $\\ge$: Piste otetaan mukaan $\\implies$ <strong>umpinainen pallo $\\bullet$</strong> lukusuoralle.</li><li>Merkintä $<$ tai $>$: Piste ei kuulu ratkaisuun $\\implies$ <strong>avoin rengas $\\circ$</strong> lukusuoralle.</li></ul><h4>3. Yhtälöparin ratkaisumenetelmien valintaopas:</h4><ol><li><strong>Graafinen keino</strong>: Tilanteen nopea hahmottaminen ja leikkauspisteen visuaalinen arviointi.</li><li><strong>Sijoituskeino</strong>: Kun toinen yhtälö on helppo ratkaista muuttujan $x$ tai $y$ suhteen.</li><li><strong>Yhteenlaskukeino</strong>: Tehokkain ja varmin yleismenetelmä lähes kaikkiin yhtälöpareihin!</li></ol>",
       "tasks": {
         "warmup": "s. 34: T112 - 115",
         "blue": "s. 35: T119 - 124",
         "red": "s. 36: T165 - 131"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "George Dantzig ja lineaarinen optimointi: Miljoonien epäyhtälöiden ratkaisija",
+        "content": "<h4>Nuori matemaatikko saapuu myöhässä luennolle</h4><p>Vuonna 1939 Berkeleyn yliopiston jatko-opiskelija <strong>George Dantzig</strong> saapui myöhässä kuuluisan professorin Jerzy Neymanin luennolle. Taululle oli kirjoitettu kaksi tilastotieteen tehtävää, jotka Dantzig luuli kotitehtäviksi. Hän pahoitteli viivästystä ja palautti ratkaisut muutamaa päivää myöhemmin todeten niiden olleen <em>'hieman tavallista vaikeampia'</em>.</p><h4>Kaksi ratkaisematonta ongelmaa</h4><p>Pian professori ryntäsi innoissaan Dantzigin ovelle: taululla olleet tehtävät eivät olleet kotitehtäviä, vaan kaksi kuuluisaa ratkaisematonta tilastotieteen ongelmaa, joita kukaan maailmassa ei ollut aiemmin kyennyt ratkaisemaan!</p><p>Myöhemmin toisen maailmansodan aikana Dantzig kehitti <strong>Simplex-algoritmin</strong> ja lineaarisen optimoinnin: menetelmän, jolla teollisuus ja lentoyhtiöt ratkaisevat nykyään tuhansien epäyhtälöiden järjestelmiä kuljetusreittien ja polttoaineen optimoimiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Dantzigin tositarina toimi inspiraationa kuuluisan elokuvan <em>Good Will Hunting</em> aloitukselle!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Epäyhtälöiden ratkaisualue koordinaatistossa",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
-
-
-
-
   ]
 }

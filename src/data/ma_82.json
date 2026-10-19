@@ -1,105 +1,204 @@
 {
   "code": "MA_82",
-  "title": "Geometria II",
+  "title": "Geometria II: Syventävä tasogeometria",
   "lessons": [
     {
       "lesson": 1,
       "topic": "Pinta-ala ja yksikkömuunnokset",
+      "title": "Pinta-alan perusteet ja yksikkömuunnokset",
       "content": "KS aihe 1. Pinta-alan yksiköt ja yksikkömuunnokset. Suorakulmion ja neliön pinta-ala ja sivun pituuden ratkaiseminen neliöjuurella.",
+      "summary": "Pinta-alan käsite, suorakulmion A = a · h ja neliön A = a² pinta-alat, puuttuvien sivujen ratkaiseminen sekä pinta-alayksiköiden suhdeluku 100.",
+      "theory": "<p>Pinta-ala kuvaa kaksiulotteisen tason tai kuvion peittämän alueen laajuutta. Aloitetaan kertaamalla perusmonikulmioiden pinta-alat:</p><h4>1. Suorakulmion pinta-ala</h4><p>$$A_{\\text{sk}} = a \\cdot h$$</p><p>missä $a$ on suorakulmion <strong>kanta</strong> ja $h$ on suorakulmion <strong>korkeus</strong>.</p><p>Jos suorakulmion pinta-ala ja toinen sivu tunnetaan, toinen sivu voidaan ratkaista jakolaskulla:</p><p>$$a = \\frac{A_{\\text{sk}}}{h} \\qquad \\text{ja} \\qquad h = \\frac{A_{\\text{sk}}}{a}$$</p><h4>2. Neliön pinta-ala ja sivun ratkaisu</h4><p>Neliö on säännöllinen suorakulmio, jonka kaikki sivut ovat yhtä pitkiä ($a = h$). Neliön pinta-ala saadaan potenssilaskulla:</p><p>$$A_{\\text{neliö}} = a \\cdot a = a^2$$</p><p>Neliön sivun pituus voidaan ratkaista pinta-alasta <strong>neliöjuuren avulla</strong>:</p><p>$$a = \\sqrt{A_{\\text{neliö}}}$$</p><p><em>Esimerkki:</em> Jos neliön pinta-ala on $64\\text{ cm}^2$, sen sivun pituus on $a = \\sqrt{64\\text{ cm}^2} = 8\\text{ cm}$.</p><h4>3. Pinta-alayksiköt ja suhdeluku 100</h4><p>Pinta-alayksiköissä siirtyminen yksiköstä toiseen tapahtuu aina <strong>suhdeluvulla 100</strong> (pilkku siirtyy 2 numeroa):</p><p>$$\\text{mm}^2 \\; \\xrightarrow{: 100} \\; \\text{cm}^2 \\; \\xrightarrow{: 100} \\; \\text{dm}^2 \\; \\xrightarrow{: 100} \\; \\text{m}^2 \\; \\xrightarrow{: 100} \\; \\text{a (aari)} \\; \\xrightarrow{: 100} \\; \\text{ha (hehtaari)} \\; \\xrightarrow{: 100} \\; \\text{km}^2$$</p><ul><li>$1\\text{ m}^2 = 100\\text{ dm}^2 = 10\\,000\\text{ cm}^2$</li><li>$1\\text{ a (aari)} = 100\\text{ m}^2$</li><li>$1\\text{ ha (hehtaari)} = 100\\text{ a} = 10\\,000\\text{ m}^2$</li><li>$1\\text{ km}^2 = 100\\text{ ha} = 1\\,000\\,000\\text{ m}^2$</li></ul>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi pinta-alayksiköiden suhdeluku on 100 eikä 10?",
+        "content": "<h4>Kahden ulottuvuuden loukku</h4><p>Moni tekee yksikkömuunnoksissa virheen olettaen, että $1\\text{ m}^2$ olisi $10\\text{ dm}^2$, koska pituudessa $1\\text{ m} = 10\\text{ dm}$. Mutta miksi neliömetrissä onkin <strong>satakertainen</strong> määrä neliödesimetrejä?</p><h4>Neliön geometrinen jako</h4><p>Piirrä mielessäsi neliö, jonka sivu on $1\\text{ m} = 10\\text{ dm}$. Jaa kanta kymmeneen $1\\text{ dm}$ palaan ja korkeus kymmeneen $1\\text{ dm}$ palaan. Neliön sisälle muodostuu ruudukko, jossa on $10$ riviä ja $10$ saraketta:</p><p>$$10 \\cdot 10 = 100 \\text{ kpl } 1\\text{ dm}^2 \\text{ ruutuja!}$$</p><p>Koska pinta-ala on kahden pituuden tulo, suhdeluku korottuu aina toiseen potenssiin: $10^2 = 100$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jalkapallokentän pinta-ala on tyypillisesti noin $0{,}7$ hehtaaria ($7\\,000\\text{ m}^2$). Yksi hehtaari ($100\\text{ m} \\times 100\\text{ m} = 10\\,000\\text{ m}^2$) vastaa siis noin puolitoista jalkapallokenttää!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Suorakulmion ja neliön pinta-ala",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 2,
       "topic": "Suunnikkaan ja kolmion pinta-ala",
+      "title": "Suunnikkaan ja kolmion pinta-ala",
       "content": "KS aihe 2. Suunnikkaan pinta-ala A = a · h ja kolmion pinta-ala A = (a · h) / 2. Kolmion korkeusjana ja piirin laskeminen.",
+      "summary": "Suunnikkaan muuntaminen suorakulmioksi A = a · h, kolmion pinta-ala suunnikkaan puolikkaana A = (a · h) / 2 ja korkeusjanan määrittäminen.",
+      "theory": "<p>Suunnikas on nelikulmio, jonka vastakkaiset sivut ovat keskenään yhtä pitkät ja yhdensuuntaiset.</p><h4>Suunnikkaan pinta-ala</h4><p>Jos suunnikkaan toisesta päästä leikataan suorakulmainen kolmio irti ja siirretään se toiseen päähän, suunnikas muuttuu suorakulmioksi! Tästä syystä suunnikkaan pinta-ala lasketaan samalla kaavalla kuin suorakulmion:</p><p>$$A_{\\text{suunnikas}} = a \\cdot h$$</p><p>missä $a$ on <strong>kanta</strong> ja $h$ on <strong>korkeus</strong> (kannan ja vastakkaisen sivun välinen kohtisuora etäisyys). <em>Huomaa, että korkeusjana ei ole vino sivu, ja se voi piirtyä myös kuvion ulkopuolelle!</em></p><h4>Kolmion pinta-ala</h4><p>Otetaan mikä tahansa kolmio, peilataan se ja liitetään alkuperäisen viereen. Saadaan suunnikas, jonka pinta-ala on $a \\cdot h$. Koska alkuperäinen kolmio on tasan puolet tästä suunnikkaasta, <strong>kolmion pinta-ala on aina puolet kanta kertaa korkeudesta</strong>:</p><p>$$A_{\\text{kolmio}} = \\frac{a \\cdot h}{2}$$</p><h4>Korkeusjanan sijainti</h4><ul><li><strong>Teräväkulmainen kolmio</strong>: Korkeusjana $h$ sijaitsee kolmion sisällä.</li><li><strong>Suorakulmainen kolmio</strong>: Toinen kateetti toimii suoraan toisen kateetin korkeusjanana ($A = \\frac{a \\cdot b}{2}$).</li><li><strong>Tylppäkulmainen kolmio</strong>: Korkeusjana putoaa kannan jatkeelle kolmion <em>ulkopuolelle</em>.</li></ul><h4>Esimerkki: Tasasivuisesta kolmiosta piiri</h4><p>Tasasivuisen kolmion pinta-ala on $30\\text{ cm}^2$ ja korkeus $4{,}5\\text{ cm}$. Laske kolmion piiri.</p><ol><li>Ratkaistaan kanta $a$ yhtälöllä:<br>$$A = \\frac{a \\cdot h}{2} \\implies 2A = a \\cdot h \\implies a = \\frac{2A}{h} = \\frac{2 \\cdot 30}{4{,}5} \\approx 13{,}33\\text{ cm}$$</li><li>Tasasivuisen kolmion kaikki sivut ovat yhtä pitkiä, joten piiri on:<br>$$p = 3 \\cdot a = 3 \\cdot 13{,}33\\text{ cm} \\approx 40\\text{ cm}$$</li></ol>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Heronin kaava: Miten kolmion ala lasketaan tuntematta korkeutta?",
+        "content": "<h4>Maanmittaajien ikiaikainen pulma</h4><p>Aina kolmion korkeutta ei voida mitata helposti maastossa (esim. jyrkän vuorenrinteen tai suon takia). Aleksandrialainen insinööri ja matemaatikko <strong>Heron Aleksandrialainen</strong> esitti noin vuonna 60 jaa. nerokkaan kaavan, jolla kolmion pinta-ala saadaan laskettua <em>pelkkien kolmen sivun pituuksien $a, b, c$ perusteella</em>!</p><h4>Heronin kaava</h4><p>Lasketaan ensin kolmion puolipiiri $s = \\frac{a + b + c}{2}$. Kolmion pinta-ala on tällöin:</p><p>$$A = \\sqrt{s(s - a)(s - b)(s - c)}$$</p><p>Tämä kaava on edelleen yksi maanmittauksen ja GPS-kolmiomittauksen tärkeimmistä perustyökaluista!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Heron oli myös antiikin suuri keksijä: hän loi maailman ensimmäisen höyrykoneen (<em>aeolipile</em>), automaattisen kolikkokäyttöisen pyhän veden annostelijan sekä ensimmäisen ohjelmoitavan robottiteatterin!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Suunnikkaan ja kolmion pinta-alamallit",
+        "url": "https://www.geogebra.org/geometry"
+      }
     },
     {
       "lesson": 3,
       "topic": "Pythagoraan lause",
+      "title": "Pythagoraan lause",
       "content": "KS aihe 3. Suorakulmaisen kolmion kateetit ja hypotenuusa. Pythagoraan lause a² + b² = c² sekä tuntemattoman sivun ratkaiseminen.",
+      "summary": "Suorakulmaisen kolmion osat (kateetit ja hypotenuusa), Pythagoraan lause a² + b² = c², sivun pituuden ratkaisu ja suorakulmaisuuden todistaminen.",
+      "theory": "<p>Pythagoraan lause on geometrian kuuluisin ja käytetyin sääntö. Se pätee <strong>vain ja ainoastaan suorakulmaisissa kolmioissa</strong>!</p><h4>Suorakulmaisen kolmion osat</h4><ul><li><strong>Kateetit ($a$ ja $b$)</strong>: Sivut, jotka muodostavat $90^\\circ$ suoran kulman.</li><li><strong>Hypotenuusa ($c$)</strong>: Suoraa kulmaa vastapäätä oleva kolmion <strong>pisin sivu</strong>.</li></ul><h4>Pythagoraan lause</h4><p>$$\\mathbf{a^2 + b^2 = c^2}$$</p><p><em>Kateettien neliöiden summa on yhtä suuri kuin hypotenuusan neliö!</em></p><h4>Sovellus 1: Hypotenuusan ratkaiseminen</h4><p>Laskettelurinteen pystykorkeus on $70\\text{ m}$ ja vaakapituus $260\\text{ m}$. Laske rinteen todellinen pituus $x$:</p><p>$$x^2 = 70^2 + 260^2 = 4900 + 67600 = 72500 \\qquad // \\sqrt{}$$</p><p>$$x = \\sqrt{72500} \\approx 270\\text{ m}$$</p><h4>Sovellus 2: Kateetin ratkaiseminen</h4><p>$5{,}7\\text{ m}$ pitkät tikkaat nojaavat seinää vasten. Tikkaiden alapää on $1{,}3\\text{ m}$ seinästä. Kuinka korkealle tikkaat yltävät ($x$)?</p><p>$$x^2 + 1{,}3^2 = 5{,}7^2$$</p><p>$$x^2 = 5{,}7^2 - 1{,}3^2 = 32{,}49 - 1{,}69 = 30{,}80 \\qquad // \\sqrt{}$$</p><p>$$x = \\sqrt{30{,}80} \\approx 5{,}5\\text{ m}$$</p><h4>Sovellus 3: Onko kolmio suorakulmainen?</h4><p>Jos kolmion sivut ovat $3\\text{ cm}, 4\\text{ cm}$ ja $5\\text{ cm}$:</p><p>$$3^2 + 4^2 = 9 + 16 = 25 = 5^2 \\quad \\implies \\text{Kolmio ON suorakulmainen!}$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Presidentti Garfieldin todistus ja Pythagoraan kolmikot",
+        "content": "<h4>Yli 400 eri tapaa todistaa sama lause</h4><p>Pythagoraan lauseesta tunnetaan enemmän matemaattisia todistuksia kuin mistään muusta lauseesta maailmassa. Yhden tunnetuimmista todistuksista kehitti vuonna 1876 Yhdysvaltain 20. presidentti <strong>James A. Garfield</strong> (tuolloin senaattori). Hän julkaisi todistuksensa <em>New England Journal of Education</em> -lehdessä.</p><h4>Garfieldin puolisuunnikastodistus</h4><p>Garfield asetti kaksi identtistä suorakulmaista kolmiota ($a, b, c$) vierekkäin ja yhdisti huiput muodostaen puolisuunnikkaan. Laskemalla puolisuunnikkaan alan kahdella eri tavalla (yhtenä isona kuviona ja kolmena kolmiona) saadaan suoraan algebrallisesti $a^2 + b^2 = c^2$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Egyptiläiset pyramidien rakentajat käyttivät 12-solmuista narua (sivut 3, 4 ja 5 solmuväliä) asettaakseen täydellisiä $90^\\circ$ suoria kulmia maastoon jo yli 1500 vuotta ennen Pythagoraan syntymää!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Pythagoraan lauseen visuaalinen todistus neliöillä",
+        "url": "https://www.geogebra.org/m/kpxqufeg"
+      }
     },
     {
       "lesson": 4,
       "topic": "Puolisuunnikkaan pinta-ala",
+      "title": "Puolisuunnikkaan pinta-ala",
       "content": "KS aihe 4. Puolisuunnikkaan määritelmä, kannat a ja b sekä korkeus h. Pinta-alan kaava A = ((a + b) · h) / 2.",
+      "summary": "Puolisuunnikkaan ominaisuudet (yhdensuuntaiset kannat a ja b), pinta-alakaavan johtaminen suunnikkaan avulla ja käytännön laskut.",
+      "theory": "<p><strong>Puolisuunnikas</strong> on nelikulmio, jolla on tasan kaksi keskenään yhdensuuntaista sivua. Näitä yhdensuuntaisia sivuja kutsutaan puolisuunnikkaan <strong>kannoiksi ($a$ ja $b$)</strong>. Kantojen välistä kohtisuoraa etäisyyttä kutsutaan puolisuunnikkaan <strong>korkeudeksi ($h$)</strong>.</p><h4>Pinta-alakaavan johtaminen</h4><p>Otetaan puolisuunnikas $ABCD$ ja liitetään sen viereen ylösalaisin käännetty kopio $DCEF$. Nämä kaksi puolisuunnikasta muodostavat yhdessä suuren <strong>suunnikkaan</strong>, jonka:</p><ul><li>Kannan pituus on kantojen summa: $a + b$</li><li>Korkeus on sama $h$</li><li>Suunnikkaan ala on siis $(a + b) \\cdot h$</li></ul><p>Koska alkuperäinen puolisuunnikas on tasan puolet tästä suunnikkaasta, saadaan puolisuunnikkaan pinta-alakaava:</p><p>$$\\mathbf{A = \\frac{(a + b) \\cdot h}{2}} \\qquad \\text{tai} \\qquad \\mathbf{A = \\frac{a + b}{2} \\cdot h}$$</p><p>Kaava voidaan tulkita niin, että lasketaan ensin kantojen keskiarvo $\\frac{a+b}{2}$ ('keskikanta') ja kerrotaan se korkeudella $h$.</p><h4>Laskuesimerkki</h4><p>Puolisuunnikkaan kannat ovat $a = 8\\text{ cm}$ ja $b = 4\\text{ cm}$, ja korkeus on $h = 3\\text{ cm}$. Lasketaan pinta-ala:</p><p>$$A = \\frac{(8 + 4) \\cdot 3}{2} = \\frac{12 \\cdot 3}{2} = \\frac{36}{2} = 18\\text{ cm}^2$$</p><p><em>Laskinvinkki: Muista aina sulut kannoille laskimella laskiessa: (8 + 4) * 3 / 2. Ilman sulkuja laskin jakaisi vain luvun 4 ja tulos olisi väärä!</em></p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Puolisuunnikassääntö ja integraalilaskenta: Miten käyrien alainen ala mitataan?",
+        "content": "<h4>Miten mitataan järven tai siiven pinta-ala?</h4><p>Tosielämässä maastonmuodot, joet, järvet ja lentokoneen siipien poikkileikkaukset eivät ole suorakulmioita tai ympyröitä, vaan niiden reunat ovat mielivaltaisen mutkittelevia käyriä. Miten tällaisen kaarevan muodon pinta-ala saadaan selville?</p><h4>Puolisuunnikasmenetelmä (Trapezoidal Rule)</h4><p>Matematiikassa ja tietokonesimulaatioissa kaareva alue jaetaan kymmeniin tai tuhansiin ohuisiin pystysuoriin kaistaleisiin. Jokainen kaistale approksimoidaan kapeaksi <strong>puolisuunnikkaaksi</strong>. Laskemalla kaikkien puolisuunnikkaiden pinta-alat yhteen saadaan hämmästyttävän tarkka arvio kaarevan kuvion alasta. Tämä on modernin differentiaali- ja integraalilaskennan perusta!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Autojen ajotietokoneet käyttävät puolisuunnikassääntöä laskeessaan kuljettua kokonaismatkaa nopeusanturin mittaamista hetkellisistä nopeuslukemista!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Puolisuunnikkaan pinta-alan muodostus suunnikkaasta",
+        "url": "https://www.geogebra.org/geometry"
+      }
     },
     {
       "lesson": 5,
       "topic": "Ympyrä ja luku pii",
+      "title": "Ympyrä, luku π ja kehän pituus",
       "content": "KS aihe 5. Ympyrän osat: keskipiste, säde r ja halkaisija d. Luku pii π ja ympyrän kehän pituus p = π · d = 2πr.",
+      "summary": "Ympyrän anatomia (keskipiste, säde r, halkaisija d), luvun pii π määrittely kehän ja halkaisijan suhteena sekä kehän pituuden kaavat p = πd ja p = 2πr.",
+      "theory": "<p>Ympyrä on tason kuvio, jonka jokainen kehän piste on täsmälleen yhtä kaukana ympyrän keskipisteestä. Ympyrä nimetään keskipisteensä mukaan (esim. ympyrä $A$).</p><h4>Ympyrän osat</h4><ul><li><strong>Keskipiste ($A$)</strong>: Ympyrän symmetriakeskus.</li><li><strong>Kehä ($p$, engl. perimeter)</strong>: Ympyrää rajaava suljettu kaareva viiva.</li><li><strong>Säde ($r$, engl. radius)</strong>: Keskipisteen ja kehän välinen suora jana.</li><li><strong>Halkaisija ($d$, engl. diameter)</strong>: Keskipisteen kautta kulkeva, kehän kaksi vastakkaista pistettä yhdistävä jana. Halkaisija on kaksi kertaa säde:<br>$$d = 2r$$</li></ul><h4>Mistä luku pii ($\\pi$) tulee?</h4><p>Jos mittaat minkä tahansa maailman pyöreän esineen kehän pituuden $p$ ja jaat sen halkaisijalla $d$, saat aina täsmälleen saman suhteen:</p><p>$$\\frac{p}{d} \\approx 3{,}1415926535...$$</p><p>Tätä luonnonvakioiden kuningasta merkitään kreikkalaisella kirjaimella <strong>$\\pi$ (pii)</strong>. Päässälaskussa sen likiarvona käytetään usein lukua $3$ tai $3{,}14$.</p><h4>Kehän pituuden laskukaavat</h4><p>$$\\mathbf{p = \\pi \\cdot d} \\qquad \\text{tai säteellä} \\qquad \\mathbf{p = 2\\pi r}$$</p><p><em>Kirjoitussääntö kaavoissa: Ensin numero (2), sitten kreikkalainen kirjain ($\\pi$), lopuksi latinalainen muuttuja ($r$).</em></p><h4>Esimerkki</h4><p>Ympyrän säde on $5{,}3\\text{ cm}$. Laske kehän pituus:</p><p>$$p = 2 \\cdot \\pi \\cdot 5{,}3\\text{ cm} \\approx 33{,}3\\text{ cm}$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Luku pii (π) kautta vuosituhanten: Babylonista biljooniin desimaaleihin",
+        "content": "<h4>Antiikin arviot</h4><p>Jo 4000 vuotta sitten muinaiset babylonialaiset tiesivät, että ympyrän kehä on hieman yli kolme kertaa sen halkaisija (he käyttivät lukua $3\\frac{1}{8} = 3{,}125$). Vanhassa testamentissa (1. Kun. 7:23) Salomon temppelin pyöreän vaskialtaan mitoiksi ilmoitetaan halkaisija 10 kyynärää ja ympärysmitta 30 kyynärää (eli $\\pi \\approx 3$).</p><h4>Ludolph van Ceulenin elämäntyö</h4><p>Vuonna 1596 saksalais-hollantilainen matemaatikko <strong>Ludolph van Ceulen</strong> käytti suuren osan elämästään laskeakseen piille 35 desimaalia käyttämällä $2^{62}$-sivuista monikulmiota. Hän oli saavutuksestaan niin ylpeä, että pyysi kaivertamaan nämä 35 desimaalia hautakiveensä!</p><h4>Pii on irrationaalinen ja transkendenttinen</h4><p>Vuonna 1761 Johann Lambert todisti, että $\\pi$ on <strong>irrationaaliluku</strong>: sen desimaaliesitys jatkuu ikuisesti toistumatta koskaan säännöllisesti jaksollisena. Piin desimaaleista löytyy siis periaatteessa jokaisen ihmisen syntymäpäivä, puhelinnumero ja koko maailmankirjallisuus binäärikoodina!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Supertietokoneet ovat laskeneet piille jo yli 100 biljoonaa ($10^{14}$) desimaalia! Kuitenkin NASAn raketti-insinööreille riittää vain 15-16 desimaalia koko aurinkokunnan luotainlentojen äärimmäisen tarkkaan navigointiin.</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Luku pii ja kehän rullaus suoralle",
+        "url": "https://www.geogebra.org/m/e7wcmvsy"
+      }
     },
     {
       "lesson": 6,
       "topic": "Ympyrän kaaren pituus",
+      "title": "Ympyrän kaaren pituus",
       "content": "KS aihe 6. Ympyrän kaari ja keskuskulma α. Kaaren pituuden kaava b = (α / 360°) · 2πr.",
+      "summary": "Ympyrän kaari kehän osana, keskuskulma α, suhde α / 360° ja kaaren pituuden laskeminen kehän osana.",
+      "theory": "<p>Ympyrän <strong>kaari ($b$)</strong> on ympyrän kehän rajattu osa kahden pisteen välillä. Kaarta vastaa aina ympyrän keskipisteestä aukeava <strong>keskuskulma ($\\alpha$)</strong>.</p><h4>Kaaren pituuden kaava</h4><p>Koko ympyrän täysi kierros on $360^\\circ$. Keskuskulma $\\alpha$ kattaa ympyrästä murto-osan $\\frac{\\alpha}{360^\\circ}$. Kaaren pituus lasketaan siis ottamalla tämä sama osuus koko ympyrän kehän pituudesta:</p><p>$$\\mathbf{b = \\frac{\\alpha}{360^\\circ} \\cdot 2\\pi r}$$</p><h4>Tuttuja erikoistapauksia</h4><ul><li><strong>Puoliympyrä</strong>: Keskuskulma on $\\alpha = 180^\\circ$. Kerroin on $\\frac{180^\\circ}{360^\\circ} = \\frac{1}{2}$ (puolet kehästä).</li><li><strong>Neljännesympyrä</strong>: Keskuskulma on $\\alpha = 90^\\circ$. Kerroin on $\\frac{90^\\circ}{360^\\circ} = \\frac{1}{4}$ (neljäsosa kehästä).</li></ul><h4>Laskuesimerkki</h4><p>Ympyrän säde on $r = 5{,}3\\text{ cm}$ ja keskuskulma on $\\alpha = 47^\\circ$. Laske kaaren pituus $b$:</p><p>$$b = \\frac{47^\\circ}{360^\\circ} \\cdot 2 \\cdot \\pi \\cdot 5{,}3\\text{ cm} \\approx 4{,}3\\text{ cm}$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Eratosthenes 240 eaa.: Miten maapallon ympärysmitta mitattiin kaaren avulla?",
+        "content": "<h4>Varjot kaivossa ja Aleksandriassa</h4><p>Vuonna 240 eaa. Aleksandrian kirjastonhoitaja <strong>Eratosthenes</strong> tiesi, että kesäpäivänseisauksen keskipäivänä Syenen kaupungissa (nykyinen Assuan) aurinko paistoi suoraan syvän kaivon pohjalle – siellä ei siis ollut varjoa lainkaan. Samaan aikaan $800\\text{ km}$ pohjoisempana Aleksandriassa pystysuora pylväs loi pienen varjon, jonka kulmaksi mitattiin $7{,}2^\\circ$.</p><h4>Ympyrän kaaren mittasuhteet ratkaisivat arvoituksen</h4><p>Eratosthenes oivalsi maapallon olevan pallo, jolloin kaupunkien välinen etäisyys $800\\text{ km}$ oli ympyrän kaari ja kulmaero $7{,}2^\\circ$ oli tätä vastaava keskuskulma maapallon keskipisteestä katsottuna!</p><p>$$\\frac{7{,}2^\\circ}{360^\\circ} = \\frac{1}{50}$$</p><p>Koska kaari oli $\\frac{1}{50}$ maapallon koko kehästä, koko maapallon ympärysmitta oli:</p><p>$$50 \\cdot 800\\text{ km} = 40\\,000\\text{ km}!$$</p><p>Tulos oli hämmästyttävän tarkka: modernin satelliittimittauksen mukaan maapallon ympärysmitta navoilta mitattuna on $40\\,008\\text{ km}$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Eratosthenes mittasi maapallon koon yli 1700 vuotta ennen Kolumbuksen purjehdusta käyttämällä vain keppiä, auringonvarjoa ja ympyrän kaaren kaavaa!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Ympyrän kaaren pituus ja keskuskulma",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 7,
       "topic": "Ympyrän pinta-ala",
+      "title": "Ympyrän pinta-ala",
       "content": "KS aihe 7. Ympyrän pinta-alan kaava Ap = πr² ja soveltavat laskut.",
+      "summary": "Ympyrän pinta-alan kaavan A = πr² johtaminen leikkaamalla sektoreiksi, pinta-alan laskeminen säteestä ja kehän pituuden hyödyntäminen.",
+      "theory": "<p>Miten ympyrän pinta-ala voidaan laskea, jos ympyrässä ei ole suoria sivuja tai kulmia? Ratkaisu piilee suorakulmiossa!</p><h4>Mistä kaava $A = \\pi r^2$ tulee?</h4><p>Leikataan ympyrä kymmeniin ohuisiin pizzamaisiin sektoreihin ja asetetaan sektorit vuorotellen lomittain toisiaan vasten. Muodostuu kuvio, joka muistuttaa melkein täydellistä <strong>suorakulmiota</strong>:</p><ul><li>Suorakulmion korkeus on ympyrän <strong>säde $r$</strong>.</li><li>Suorakulmion kanta muodostuu puolesta ympyrän kehästä: $\\frac{2\\pi r}{2} = \\mathbf{\\pi r}$.</li></ul><p>Suorakulmion pinta-ala on kanta kertaa korkeus:</p><p>$$A = (\\pi r) \\cdot r = \\mathbf{\\pi r^2}$$</p><p><em>Tärkeää: Kaavassa vain säde $r$ korotetaan toiseen potenssiin, ei lukua $\\pi$! Halkaisijaa ei käytetä suoraan kaavassa, vaan se jaetaan aina ensin kahdella säteeksi.</em></p><h4>Esimerkki 1: Pinta-ala säteestä</h4><p>Laske ympyrän pinta-ala, kun säde on $4{,}7\\text{ cm}$:</p><p>$$A = \\pi r^2 = \\pi \\cdot (4{,}7\\text{ cm})^2 \\approx 69\\text{ cm}^2$$</p><h4>Esimerkki 2: Pinta-ala kehän pituudesta</h4><p>Ympyrän kehän pituus on $136\\text{ cm}$. Mikä on ympyrän pinta-ala?</p><ol><li>Lasketaan halkaisija kehästä: $d = \\frac{p}{\\pi} = \\frac{136}{\\pi} \\approx 43{,}29\\text{ cm}$.</li><li>Säde on puolet halkaisijasta: $r = \\frac{43{,}29}{2} \\approx 21{,}65\\text{ cm}$.</li><li>Lasketaan pinta-ala: $A = \\pi r^2 = \\pi \\cdot 21{,}65^2 \\approx 1470\\text{ cm}^2$.</li></ol>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Pizzapulma: Kannattaako ostaa yksi iso vai kaksi pientä pizzaa?",
+        "content": "<h4>Pizzerian klassinen matemaattinen ansa</h4><p>Pizzeriassa on tarjous: voit valita joko <strong>yhden suuren pizzan</strong> (halkaisija $40\\text{ cm}$) hintaan $16\\text{ €}$ tai <strong>kaksi pientä pizzaa</strong> (halkaisija $28\\text{ cm}$) yhteishintaan $18\\text{ €}$. Kumpi tarjous antaa enemmän syötävää?</p><h4>Lasketaan pinta-alat!</h4><ul><li>Pienen pizzan säde on $14\\text{ cm}$. Kahden pienen pizzan yhteenlaskettu pinta-ala on:<br>$$2 \\cdot A_{\\text{pieni}} = 2 \\cdot \\pi \\cdot 14^2 = 2 \\cdot 196\\pi = 392\\pi \\approx 1231\\text{ cm}^2$$</li><li>Ison pizzan säde on $20\\text{ cm}$. Sen pinta-ala on:<br>$$A_{\\text{iso}} = \\pi \\cdot 20^2 = 400\\pi \\approx 1257\\text{ cm}^2$$</li></ul><p>Yksi iso pizza on pinta-alaltaan <strong>suurempi kuin kaksi pientä yhteensä</strong>, ja se on vielä kaksi euroa halvempi! Koska pinta-ala riippuu säteen neliöstä ($r^2$), halkaisijan maltillinenkin kasvu suurentaa pinta-alaa räjähdysmäisesti.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tämä neliöllinen ilmiö pätee myös puiden runkoihin: yksi $60\\text{ cm}$ paksu puunrunko tuottaa enemmän sahatavaraa kuin neljä $30\\text{ cm}$ paksua puuta!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Ympyrän pinta-alan havainnollistus sektoreilla",
+        "url": "https://www.geogebra.org/m/kpxqufeg"
+      }
     },
     {
       "lesson": 8,
       "topic": "Sektorin pinta-ala",
+      "title": "Ympyrän sektorin pinta-ala",
       "content": "KS aihe 8. Ympyrän sektori ja keskuskulma α. Sektorin pinta-ala Asektori = (α / 360°) · πr².",
+      "summary": "Ympyrän sektori, keskuskulma α, sektorin pinta-alakaava A = (α / 360°) · πr² ja ympyrädiagrammien tulkinta.",
+      "theory": "<p>Ympyrän <strong>sektori</strong> on kahden säteen ja niiden välisen ympyrän kaaren rajaama alue ympyrästä (kuin pizzapala tai kakkuviipale).</p><h4>Sektorin pinta-alakaava</h4><p>Sektorin pinta-ala lasketaan täsmälleen samalla periaatteella kuin kaaren pituus: lasketaan keskuskulman $\\alpha$ osuus täydestä $360^\\circ$ kierroksesta ja kerrotaan se <strong>koko ympyrän pinta-alalla</strong>:</p><p>$$\\mathbf{A_{\\text{sektori}} = \\frac{\\alpha}{360^\\circ} \\cdot \\pi r^2}$$</p><h4>Erikoistapaukset</h4><ul><li><strong>Puoliympyrän ala</strong>: $\\alpha = 180^\\circ \\implies A = \\frac{180^\\circ}{360^\\circ} \\cdot \\pi r^2 = \\frac{1}{2} \\pi r^2$</li><li><strong>Neljännesympyrän ala</strong>: $\\alpha = 90^\\circ \\implies A = \\frac{90^\\circ}{360^\\circ} \\cdot \\pi r^2 = \\frac{1}{4} \\pi r^2$</li></ul><h4>Laskuesimerkki</h4><p>Ympyrän säde on $r = 6\\text{ cm}$ ja sektorin keskuskulma on $\\alpha = 60^\\circ$. Laske sektorin pinta-ala:</p><p>$$A_{\\text{sektori}} = \\frac{60^\\circ}{360^\\circ} \\cdot \\pi \\cdot (6\\text{ cm})^2 = \\frac{1}{6} \\cdot \\pi \\cdot 36\\text{ cm}^2 = 6\\pi \\approx 18{,}8\\text{ cm}^2$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Ympyrädiagrammit ja sektorit tilastotieteessä: Florence Nightingalen ruusudiagrammi",
+        "content": "<h4>Sektorit hengenpelastajina Krimin sodassa</h4><p>Vuonna 1855 Krimin sodan aikana brittiläinen sairaanhoitaja ja tilastotieteilijä <strong>Florence Nightingale</strong> keksi aivan uudenlaisen sektoridiagrammin: <em>ruusudiagrammin (coxcomb)</em>.</p><h4>Diagrammi, joka muutti lääketieteen</h4><p>Hän esitti ympyrän sektoreina sotilaiden kuolinsyyt: siniset sektorit kuvasivat estettävissä olevia tartuntatauteja ja punaiset taisteluvammoja. Sektorit osoittivat kiistattomasti, että huonon hygienian ja puhtaanapidon vuoksi sairaaloissa kuoli kymmenkertainen määrä miehiä taisteluihin verrattuna! Tämän visuaalisen esityksen ansiosta armeijan sairaaloihin säädettiin tiukat puhtausvaatimukset, mikä pelasti miljoonia ihmishenkiä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Florence Nightingale oli ensimmäinen nainen, joka valittiin arvostetun Britannian kuninkaallisen tilastotieteellisen seuran (Royal Statistical Society) jäseneksi vuonna 1858!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Sektorin pinta-ala ja keskuskulma",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 9,
       "topic": "Yhdenmuotoisuus",
+      "title": "Yhdenmuotoisuus ja mittakaava",
       "content": "KS aihe 9. Yhdenmuotoiset kuviot ja mittasuhteet. Vastinsivut, vastinkulmat ja pituuksien ratkaiseminen verrannon avulla.",
+      "summary": "Yhdenmuotoisuuden käsite (muoto säilyy, koko muuttuu), vastinsivut ja vastinkulmat sekä tuntemattoman sivun ratkaiseminen mittakaavalla tai verrannolla.",
+      "theory": "<p>Kaksi kuviota ovat <strong>yhdenmuotoisia</strong> (merkitään $\\sim$), jos toinen on toisen tarkka suurennos tai pienennys. Tällöin kuvion mittasuhteet eli muoto säilyvät täysin samoina:</p><h4>Yhdenmuotoisuuden kaksi perusehtoa</h4><ol><li><strong>Vastinkulmat ovat yhtä suuret</strong> (kuvion kulmat eivät muutu suurennettaessa tai pienennettäessä!).</li><li><strong>Vastinsivujen suhde on vakio</strong> (kaikki sivut kasvavat tai pienenevät samassa suhteessa).</li></ol><h4>Mittakaava $k$ ja vastinsivut</h4><p>Toisiaan vastaavia sivuja kutsutaan <strong>vastinsivuiksi</strong>. Vastinsivujen suhdetta kutsutaan <strong>mittakaavaksi $k$</strong>:</p><p>$$k = \\frac{\\text{suurempi vastinsivu}}{\\text{pienempi vastinsivu}}$$</p><h4>Tuntemattoman sivun ratkaiseminen verrannolla</h4><p>Olkoon kahdessa yhdenmuotoisessa kolmiossa kantojen pituudet $a = 3$ ja $e = 6$, ja pienemmän kolmion sivu $b = 4{,}47$. Halutaan ratkaista isomman kolmion vastinsivu $d$:</p><p>Muodostetaan vastinsivujen suhteista <strong>verranto</strong>:</p><p>$$\\frac{d}{b} = \\frac{e}{a} \\implies \\frac{d}{4{,}47} = \\frac{6}{3}$$</p><p>Koska $\\frac{6}{3} = 2$ (suurennussuhde on $2$), voidaan ratkaista suoraan:</p><p>$$d = 2 \\cdot 4{,}47 = 8{,}94$$</p><p>Tai perinteisellä ristiinkertomisella:</p><p>$$3 \\cdot d = 4{,}47 \\cdot 6 \\implies 3d = 26{,}82 \\implies d = \\frac{26{,}82}{3} = 8{,}94$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Thales ja Kheopsin pyramidi: Miten varjo mittasi maailman ihmeen?",
+        "content": "<h4>Miten mitata 146 metriä korkea pyramidi viivottimella?</h4><p>Noin 600 eaa. kreikkalainen filosofi ja matemaatikko <strong>Thales Miletoslainen</strong> matkusti Egyptiin. Egyptin faaraon papit haastoivat Thaleen mittaamaan suuren Kheopsin pyramidin korkeuden, jota kukaan ei ollut kyennyt mittaamaan sen jyrkkien ja vaarallisten seinämien vuoksi.</p><h4>Yhdenmuotoiset varjokolmiot</h4><p>Thales iski oman kävelysauvansa pystyyn hiekkaan pyramidin viereen. Hän odotti päivällä hetkeä, jolloin hänen sauvansa varjon pituus oli täsmälleen yhtä pitkä kuin sauva itse! Hän oivalsi, että auringonsäteiden muodostamat kolmiot olivat yhdenmuotoisia: tällä täsmälleen samalla hetkellä pyramidin heittämän varjon pituus (mitattuna pyramidin keskipisteestä varjon kärkeen) oli <strong>täsmälleen yhtä suuri kuin pyramidin korkeus</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Thaleen varjomenetelmä perustui suorakulmaisten kolmioiden yhdenmuotoisuuteen. Thales osoitti myös, että mittaus toimii minä tahansa vuorokaudenaikana verrannon $\\frac{\\text{pyramidin korkeus}}{\\text{sauvan korkeus}} = \\frac{\\text{pyramidin varjo}}{\\text{sauvan varjo}}$ avulla!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Yhdenmuotoiset kolmiot ja vastinsivut",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
   ]
 }

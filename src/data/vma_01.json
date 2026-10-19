@@ -5,101 +5,226 @@
     {
       "lesson": 1,
       "topic": "Äärettömyys ja erilaiset lukujoukot",
+      "title": "Äärettömyys ja Hilbertin hotelli",
       "content": "KS aihe 0 & 1. Kurssin esittely ja tavoitteet. Äärettömyyden käsite, lukujoukot ja Hilbertin hotelli -paradoksi.",
+      "summary": "Äärellinen vs. ääretön joukko, lukujoukot N, Z, Q, R sekä David Hilbertin äärettömän hotellin paradoksi.",
+      "theory": "<p>Tervetuloa matematiikan valinnaiskurssille! Tällä kurssilla kurkistamme peruskoulun opetussuunnitelman ulkopuolelle matemaattisiin ilmiöihin, joita tutkitaan lukio- ja yliopistotasolla.</p><h4>1. Mikä on ääretöntä ja mikä äärellistä?</h4><p>Sellaiset asiat, joiden määrä voidaan periaatteessa laskea jossakin tietyssä ajassa, ovat <strong>äärellisiä</strong> (esim. maailmankaikkeuden atomit, hiekkarannan jyvät, kaupungin asukkaat). Vaikka luku olisi käsittämättömän valtava, se on silti äärellinen.</p><p><strong>Ääretön ($\\infty$)</strong> ei ole luku, vaan käsite tai prosessi, jolla ei ole loppua. Matematiikassa ensimmäinen ääretön joukko on <strong>luonnollisten lukujen joukko $\\mathbb{N}$</strong>:</p><p>$$\\mathbb{N} = \\{0, 1, 2, 3, \\dots\\}$$</p><p>Merkintä '$\\dots$' (piste piste piste) tarkoittaa, että luettelo jatkuu loputtomiin. Vastaavasti jos joukossa on vain luvut $\\{1, 2, 3\\}$, se on äärellinen.</p><h4>2. Hilbertin hotelli -paradoksi</h4><p>Saksalainen huippumatemaatikko <strong>David Hilbert</strong> kehitti vuonna 1924 kuuluisan ajatuskokeen havainnollistamaan äärettömyyden kummallisuutta:</p><p>Kuvitellaan hotelli, jossa on <strong>ääretön määrä huoneita</strong> ($1, 2, 3, \\dots$), ja se on <strong>täynnä</strong> (jokaisessa huoneessa asuu vieras).</p><ul><li><strong>Tapaus 1: Yksi uusi vieras saapuu</strong><br>Siirretään huoneessa 1 asuva huoneeseen 2, huoneessa 2 asuva huoneeseen 3, ja yleisesti huoneessa $n$ asuva huoneeseen $n+1$. Kaikki vanhat vieraat saavat edelleen oman huoneen, ja huone 1 vapautuu uudelle vieraalle! $\\implies \\infty + 1 = \\infty$!</li><li><strong>Tapaus 2: Ääretön bussi saapuu (äärettömästi uusia vieraita)</strong><br>Siirretään huoneessa $n$ asuva huoneeseen $2n$ (huoneen 1 asukas huoneeseen 2, huoneen 2 asukas huoneeseen 4 jne.). Kaikki vanhat vieraat siirtyvät parillisiin huoneisiin, ja <strong>kaikki parittomat huoneet ($1, 3, 5, 7, \\dots$) vapautuvat</strong>, joihin mahtuu ääretön määrä uusia vieraita! $\\implies \\infty + \\infty = \\infty$!</li></ul>",
       "tasks": {
         "theory": "Hilbertin hotelli -harjoitukset ja pohdintatehtävät"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Georg Cantor ja äärettömyyden eri koot: Onko olemassa 'suurempaa' ääretöntä?",
+        "content": "<h4>Kaikki äärettömät eivät ole yhtä suuria</h4><p>Ennen 1800-luvun loppua matemaatikot ajattelivat äärettömyyden olevan vain yksi ja sama jakamaton käsite. Saksalainen <strong>Georg Cantor</strong> (1845–1918) kuitenkin todisti jotain mullistavaa: <em>on olemassa eri kokoisia äärettömyyksiä!</em></p><h4>Cantorin diagonaalitodistus</h4><p>Luonnolliset luvut $\\mathbb{N}$, kokonaisluvut $\\mathbb{Z}$ ja jopa murtoluvut $\\mathbb{Q}$ ovat 'yhtä suuria' eli <strong>numeroituvasti äärettömiä</strong> (niiden koko on $\\aleph_0$, alef-nolla). Mutta reaalilukuja $\\mathbb{R}$ (kaikki desimaaliluvut lukusuoralla) on niin paljon, ettei niitä voi edes numeroida 1-to-1 jonoon!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Välillä $0$ ja $1$ on enemmän reaalilukuja kuin mitä koko luonnollisten lukujen joukossa on kokonaislukuja yhteensä! Cantorin aikalaiset pitivät tätä aluksi hulluutena, mutta nykyään se on koko modernin matematiikan kiveenhakattu perusta.</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Äärettömyys ja Hilbertin hotellin visualisointi",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 2,
       "topic": "Binääriluvuista bitteihin",
+      "title": "Binäärijärjestelmä, bitit ja digitaalinen data",
       "content": "KS aihe 2. Binäärijärjestelmä ja tietojenkäsittely. ASCII-merkistö, bittikarttakuvat ja digitaalinen ääni. Tavut (kt, Mt, Gt, Tt).",
+      "summary": "Kanta-10 vs. kanta-2 (binääri), muunnokset, bitit ja tavut (kt, Mt, Gt, Tt), ASCII-koodi, bittikarttakuvat ja digitaalinen ääni (näytteenottotaajuus & bittisyvyys).",
+      "theory": "<p>Arkielämässä käytämme <strong>kymmenjärjestelmää</strong> (kantaluku 10), jossa numeron paikka määrää luvun 10 potenssin:</p><p>$$327 = 3 \\cdot 10^2 + 2 \\cdot 10^1 + 7 \\cdot 10^0 = 300 + 20 + 7$$</p><h4>1. Binäärijärjestelmä (kantaluku 2)</h4><p>Tietokoneet toimivat sähköllä: virtapiirissä virta joko kulkee ($1$) tai ei kulje ($0$). Siksi tietotekniikassa käytetään <strong>kaksijärjestelmää eli binäärijärjestelmää</strong>, jossa on vain numerot $0$ ja $1$. Jokainen binäärinumero on kakkosen potenssi:</p><p>$$\\mathbf{11001_2} = 1 \\cdot 2^4 + 1 \\cdot 2^3 + 0 \\cdot 2^2 + 0 \\cdot 2^1 + 1 \\cdot 2^0 = 16 + 8 + 0 + 0 + 1 = \\mathbf{25_{10}}$$</p><h4>2. Bitit tavuiksi ja ASCII-koodiksi</h4><p>Yksi binääriluku on <strong>bitti (bit)</strong>. Kahdeksan bitin ryhmää kutsutaan <strong>tavuksi (byte, B)</strong>:</p><p>$$1\\text{ tavu} = 8\\text{ bittiä} \\implies 2^8 = 256\\text{ eri arvoa (0 – 255)}$$</p><p><strong>ASCII-merkistössä</strong> jokaiselle kirjaimelle ja merkille on sovittu oma bittijononsa, esimerkiksi sana <strong>KIVA</strong>:</p><ul><li>'K' $\\to 01001011_2 = 75$</li><li>'I' $\\to 01001001_2 = 73$</li><li>'V' $\\to 01010110_2 = 86$</li><li>'A' $\\to 01000001_2 = 65$</li></ul><h4>3. Kuvat ja ääni bitteinä</h4><ul><li><strong>Bittikarttakuva (bitmap)</strong>: Mustavalkokuvassa $0 = \\text{musta}$ ja $1 = \\text{valkoinen}$. Värikuvassa (RGB) jokaisella pikselillä on kolme tavua (Red $0-255$, Green $0-255$, Blue $0-255$) $\\implies 16{,}7\\text{ miljoonaa väriä}$!</li><li><strong>Digitaalinen ääni</strong>: Ääniaalto muutetaan sähköiseksi AD-muuntimella. <strong>Näytteenottotaajuus</strong> (esim. CD-äänen $44{,}1\\text{ kHz}$) kertoo näytteiden määrän sekunnissa, ja <strong>bittisyvyys</strong> (esim. 16 bittiä) kertoo jokaisen näytteen tarkkuuden.</li></ul>",
       "tasks": {
         "theory": "Binääriluvuista biteiksi -harjoitustiedosto ja lisätehtävät"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Claude Shannon ja informaatioteorian synty: Miten bitistä tuli maailman valuutta?",
+        "content": "<h4>Matemaatikko, joka yhdisti logiikan ja virtapiirit</h4><p>Vuonna 1937 vasta 21-vuotias MIT:n opiskelija <strong>Claude Shannon</strong> kirjoitti pro gradu -työnsä, jota pidetään yhtenä historian merkittävimmistä opinnäytetöistä. Shannon huomasi, että 1800-luvun filosofin George Boolen kehittämä logiikka (tosi/epätosi) vastasi täydellisesti sähköreleiden auki- ja kiinni-asentoja.</p><h4>Vuoden 1948 vallankumous</h4><p>Myöhemmin Bell Labsilla Shannon loi kokonaisen uuden tieteenalan, <strong>informaatioteorian</strong>, ja otti ensimmäisenä käyttöön termin <em>bit (binary digit)</em>. Hän osoitti, että mikä tahansa viesti – puhe, teksti tai kuva – voidaan pakata ja siirtää virheettömästi ykkösinä ja nollina.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Claude Shannon rakensi vuonna 1950 mekaanisen 'Theseus'-nimisen hiiren, joka osasi sähkömagneettisten kytkimien avulla suunnistaa sokkelon läpi ja oppia oikean reitin ulkoa – kyseessä oli yksi maailman varhaisimmista koneoppimisen laitteista!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Digitaalinen aalto ja näytteenotto",
+        "url": "https://phet.colorado.edu/fi/simulations/wave-interference"
+      }
     },
     {
       "lesson": 3,
       "topic": "Todennäköisyyksiä ja pelejä",
+      "title": "Klassinen todennäköisyys ja peliteoria",
       "content": "KS aihe 3. Klassinen todennäköisyys, vastatapahtuma, riippumattomat ja riippuvat tapahtumat. Texas Hold'em -pokeri ja todennäköisyydet peleissä.",
+      "summary": "Klassinen todennäköisyys P(A), vastatapahtuma 1 - P(A), toisistaan riippumattomat vs. riippuvat tapahtumat (kertolaskusääntö) ja Texas Hold'em -pokerin todennäköisyydet.",
+      "theory": "<p>Lautapeleissä, korttipeleissä ja uhkapeleissä tulokset perustuvat satunnaisuuteen. Matematiikka antaa välineet arvioida mahdollisuuksia tarkasti.</p><h4>1. Klassinen todennäköisyys ja vastatapahtuma</h4><p>$$\\mathbf{P(A) = \\frac{\\text{suotuisten alkeistapausten lukumäärä}}{\\text{kaikkien alkeistapausten lukumäärä}}}$$</p><ul><li>Nopanheitolla saadaan kuutonen: $P(6) = \\frac{1}{6} \\approx 0{,}167 = 16{,}7\\,\\%$</li><li>Korttipakasta (52 korttia) vedetään pataässä: $P(\\text{pataässä}) = \\frac{1}{52} \\approx 0{,}019 = 1{,}9\\,\\%$</li><li><strong>Vastatapahtuma</strong>: $P(\\text{ei kuutosta}) = 1 - P(6) = 1 - \\frac{1}{6} = \\frac{5}{6} \\approx 83{,}3\\,\\%$</li></ul><h4>2. Riippumattomat vs. riippuvat tapahtumat</h4><ul><li><strong>Riippumattomat (tulos ei vaikuta seuraavaan)</strong>: Heitetään noppaa kolme kertaa peräkkäin kuutonen:<br>$$P = \\frac{1}{6} \\cdot \\frac{1}{6} \\cdot \\frac{1}{6} = \\frac{1}{216} \\approx 0{,}0046 = \\mathbf{0{,}46\\,\\%}$$</li><li><strong>Riippuvat (tilanne muuttuu ilman palautusta)</strong>: Vedetään korttipakasta peräkkäin kolme ässää:<br>$$P = \\frac{4}{52} \\cdot \\frac{3}{51} \\cdot \\frac{2}{50} = \\frac{24}{132\\,600} \\approx \\mathbf{0{,}018\\,\\%}$$</li></ul><h4>3. Texas Hold'em ja pokerikäsien todennäköisyydet</h4><p>Texas Hold'emissa pelaaja saa kaksi taskukorttia ja pöytään jaetaan viisi yhteiskorttia (floppi, turn, river). Menestyksekäs pelaaminen vaatii todennäköisyyksien ja odotusarvon laskemista:</p><ul><li><strong>Kuningasvärisuora (Royal Flush)</strong>: $1 : 649\\,740$ ($0{,}00015\\,\\%$)</li><li><strong>Värisuora (Straight Flush)</strong>: $1 : 72\\,193$</li><li><strong>Neloset (Four of a Kind)</strong>: $1 : 4\\,164$</li><li><strong>Täyskäsi (Full House)</strong>: $1 : 693$</li><li><strong>Väri (Flush)</strong>: $1 : 508$</li><li><strong>Suora (Straight)</strong>: $1 : 254$</li><li><strong>Kolmoset (Three of a Kind)</strong>: $1 : 47$</li><li><strong>Kaksi paria (Two Pair)</strong>: $1 : 21$</li><li><strong>Yksi pari (One Pair)</strong>: $1 : 2{,}36$ ($42{,}3\\,\\%$)</li></ul>",
       "tasks": {
         "theory": "Pokerin todennäköisyydet ja peliharjoitukset"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Pascal, Fermat ja nopanheittäjän pulma: Miten uhkapeli synnytti todennäköisyyslaskennan?",
+        "content": "<h4>Chevalier de Méré ja katkennut peli</h4><p>Vuonna 1654 ranskalainen aatelismies ja innokas uhkapeluri Antoine Gombaud (Chevalier de Méré) kääntyi neronleimauksena tunnetun matemaatikon <strong>Blaise Pascalin</strong> puoleen: Miten panokset pitäisi jakaa oikeudenmukaisesti pelaajien kesken, jos nopanheittopeli keskeytyy ennen aikojaan?</p><h4>Historiallinen kirjeenvaihto</h4><p>Pascal aloitti kirjeenvaihdon <strong>Pierre de Fermat'n</strong> kanssa. He kehittivät yhdessä kombinatoriikan ja todennäköisyyksien laskusäännöt, jotka loivat perustan koko nykyaikaiselle vakuutusmatematiikalle, tilastotieteelle ja rahoitusmarkkinoille!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Myöhemmin John von Neumann laajensi tätä kehittämällä <em>peliteorian</em> (Game Theory), joka tutkii matemaattisesti strategista päätöksentekoa tilanteissa, joissa toisten pelaajien siirrot vaikuttavat omaan tulokseen!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Todennäköisyys ja Plinko-lauta (Galtonin lauta)",
+        "url": "https://phet.colorado.edu/fi/simulations/plinko-probability"
+      }
     },
     {
       "lesson": 4,
       "topic": "Kompleksilukujen maailma",
+      "title": "Imaginääriyksikkö i ja kompleksitaso",
       "content": "KS aihe 4. Imaginääriyksikkö i (i² = -1), kompleksitaso (Re, Im) ja kompleksilukujen yhteen-, vähennys- ja kertolasku.",
+      "summary": "Negatiivisen luvun neliöjuuri, imaginääriyksikkö i² = -1, kompleksiluku z = a + bi, kompleksitaso (Re, Im) sekä kompleksilukujen peruslaskutoimitukset.",
+      "theory": "<p>Tavallisessa reaalilukujen maailmassa negatiivisella luvulla ei voi olla neliöjuurta, koska minkään reaaliluvun neliö ei ole negatiivinen ($x^2 \\ge 0$). Mutta entä jos laajennamme lukujen käsitettä?</p><h4>1. Imaginääriyksikkö $i$</h4><p>Määritellään uusi luku $i$ siten, että sen toinen potenssi on $-1$:</p><p>$$\\mathbf{i^2 = -1} \\iff \\mathbf{i = \\sqrt{-1}}$$</p><h4>2. Kompleksiluku $z = a + bi$</h4><p>Kun yhdistetään tavallinen reaaliluku ja imaginääriluku, saadaan <strong>kompleksiluku $z$</strong>:</p><p>$$\\mathbf{z = a + bi}$$</p><ul><li>$a$ on <strong>reaaliosa</strong> (merk. $\\text{Re}(z)$)</li><li>$b$ on <strong>imaginääriosa</strong> (merk. $\\text{Im}(z)$)</li></ul><p>Kompleksiluvut esitetään kaksiulotteisessa <strong>kompleksitasossa (Argand-taso)</strong>, jossa vaaka-akseli on reaalilukusuora (Re) ja pystyakseli imaginääriakseli (Im). Luku $z = a + bi$ vastaa tason pistettä $(a, b)$ tai origosta lähtevää vektoria!</p><h4>3. Kompleksilukujen peruslaskutoimitukset</h4><p>Olkoon $z_1 = a_1 + a_2 i$ ja $z_2 = b_1 + b_2 i$:</p><ul><li><strong>Yhteenlasku</strong>: Reaaliosat ja imaginääriosat lasketaan erikseen yhteen:<br>$$z_1 + z_2 = (a_1 + b_1) + (a_2 + b_2)i$$</li><li><strong>Vähennyslasku</strong>: Vastaavasti erotukset:<br>$$z_1 - z_2 = (a_1 - b_1) + (a_2 - b_2)i$$</li><li><strong>Kertolasku (kahden binomin tulo)</strong>:<br>$$(a_1 + a_2 i)(b_1 + b_2 i) = a_1 b_1 + a_1 b_2 i + a_2 b_1 i + a_2 b_2 \\mathbf{i^2}$$<br>Koska $i^2 = -1$, viimeinen termi muuttuu reaaliseksi: $-a_2 b_2$!<br>$$= \\mathbf{(a_1 b_1 - a_2 b_2) + (a_1 b_2 + a_2 b_1)i}$$</li></ul><p><em>Esimerkki:</em> $(2 + 3i)(1 - 4i) = 2 \\cdot 1 - 8i + 3i - 12 i^2 = 2 - 5i - 12(-1) = 2 + 12 - 5i = \\mathbf{14 - 5i}$.</p>",
       "tasks": {
         "theory": "Kompleksiluvut -harjoitustiedosto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Eulerin identiteetti: Matematiikan kaunein yhtälö",
+        "content": "<h4>Viisi tärkeintä vakiota yhdessä kaavassa</h4><p>Sveitsiläinen nero <strong>Leonhard Euler</strong> (1707–1783) osoitti, että kun luonnollisen logaritmin kantaluku $e \\approx 2{,}718$, ympyrän suhdeluku $\\pi$, imaginääriyksikkö $i$, luku $1$ ja luku $0$ yhdistetään, syntyy huikea kaava:</p><p>$$\\mathbf{e^{i\\pi} + 1 = 0}$$</p><h4>Mihin kompleksilukuja tarvitaan todellisuudessa?</h4><p>Vaikka sana 'imaginäärinen' tarkoittaa kuvitteellista, kompleksiluvut ovat fysiikan ja tekniikan tehokkaimpia työkaluja:</p><ol><li><strong>Sähkötekniikka</strong>: Vaihtovirtapiirien impedanssit, jännitteet ja vaihesiirrot lasketaan kompleksiluvuilla.</li><li><strong>Kvanttimekaniikka</strong>: Atomin aaltofunktio (Schrödingerin yhtälö) on luonteeltaan kompleksiarvoinen.</li><li><strong>Signaalinkäsittely ja Fourier-muunnos</strong>: Äänen ja kuvien pakkaus (MP3, JPEG, 5G-verkot).</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nobel-fyysikko Richard Feynman kutsui Eulerin identiteettiä 'koko matematiikan hämmästyttävimmäksi ja kauneimmaksi jalokiveksi'!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Kompleksiluvut ja kompleksitaso",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 5,
       "topic": "Vektorilaskentaa",
+      "title": "Vektorien alkeet ja koordinaattilaskenta",
       "content": "KS aihe 5. Vektorin käsite ja paikkavektori. Vektorien summa ja erotus graafisesti ja komponenteittain sekä vektorin pituus Pythagoraan lauseella.",
+      "summary": "Skalaari vs. vektori, paikkavektori, suunta ja suuruus, vektorien summa ja erotus graafisesti sekä komponenteittain, vektorin pituus Pythagoraan lauseella.",
+      "theory": "<p>Fysiikassa ja matematiikassa suureet jaetaan kahteen lajiin:</p><ul><li><strong>Skalaari</strong>: Suure, jolla on vain suuruus (esim. lämpötila $20^\\circ\\text{C}$, massa $5\\text{ kg}$, aika $10\\text{ s}$).</li><li><strong>Vektori</strong>: Suure, jolla on sekä <strong>suuruus (pituus)</strong> että <strong>suunta</strong> (esim. nopeus $50\\text{ km/h pohjoiseen}$, painovoima alaspäin).</li></ul><h4>1. Paikkavektori ja komponenttiesitys</h4><p>Koordinaatistossa origosta $A(0,0)$ pisteeseen $B(x, y)$ osoittavaa nuolta kutsutaan <strong>paikkavektoriksi</strong>:</p><p>$$\\mathbf{\\vec{u} = (x, y)}$$</p><p>Tässä $x$ on vektorin vakakomponentti ja $y$ pystykomponentti.</p><h4>2. Vektorien summa ja erotus</h4><p>Olkoon vektorit $\\vec{u} = (4, 2)$ ja $\\vec{v} = (1, 3)$:</p><ul><li><strong>Summavektori $\\vec{w} = \\vec{u} + \\vec{v}$</strong>: Komponentit lasketaan yhteen:<br>$$\\vec{u} + \\vec{v} = (4 + 1, 2 + 3) = \\mathbf{(5, 5)}$$<br><em>Graafisesti: Asetetaan toisen vektorin alkupiste ensimmäisen loppupisteeseen (nuolen kärkeen).</em></li><li><strong>Erotusvektori $\\vec{u} - \\vec{v}$</strong>:<br>$$\\vec{u} - \\vec{v} = (4 - 1, 2 - 3) = \\mathbf{(3, -1)}$$</li></ul><h4>3. Vektorin pituuden laskeminen (Pythagoraan lause)</h4><p>Vektorin komponentit $x$ ja $y$ muodostavat suorakulmaisen kolmion kateetit, jolloin vektori itse on kolmion hypotenuusa:</p><p>$$\\mathbf{|\\vec{s}| = \\sqrt{x^2 + y^2}}$$</p><p><em>Esimerkki:</em> Vektorin $\\vec{s} = (3, 4)$ pituus on:<br>$$|\\vec{s}| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = \\mathbf{5}$$</p>",
       "tasks": {
         "theory": "Vektorilaskentaa -harjoitustiedosto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Vektorit 3D-grafiikassa ja pelimoottoreissa: Miten pelimaailmat pyörivät?",
+        "content": "<h4>Unreal Engine, Unity ja miljardit vektorit sekunnissa</h4><p>Kaikki nykyaikaiset 3D-videopelit ja animaatiot (kuten Fortnite, GTA tai Pixar-elokuvat) perustuvat kokonaan vektorilaskentaan. Pelihahmon sijainti, liikesuunta, hyppyvoima ja törmäystarkastelut lasketaan kolmiulotteisina vektoreina $(x, y, z)$.</p><h4>Valonsäteiden heijastus (Ray Tracing)</h4><p>Huippugrafiikassa valon säteitä seurataan kamerasta kohti pintoja vektorien avulla. Kun sädevektori kohtaa pelihahmon polygonin pintanormaalivektorin, pistetulolla lasketaan valon heijastuskulma ja varjon tummuus.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nykyaikaiset grafiikkasuorittimet (näytönohjaimet eli GPU:t) on optimoitu rinnakkaiseen vektorilaskentaan: ne pystyvät tekemään kymmeniä tuhansia vektorien yhteen- ja kertolaskuja samanaikaisesti yhdessä mikrosekunnissa!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Vektorien yhteenlasku ja komponentit",
+        "url": "https://phet.colorado.edu/fi/simulations/vector-addition"
+      }
     },
     {
       "lesson": 6,
       "topic": "Pelisuunnittelua",
+      "title": "Pelimekaniikat, todennäköisyys ja pelisuunnittelu",
       "content": "KS aihe 6. Pelien matematiikka, strategiapelit ja oman pelin suunnittelu.",
+      "summary": "Pelien matematiikka, strategiapelit vs. tuurielementit, resurssienhallinta, nollasummapelit ja oman pelin suunnittelun periaatteet.",
+      "theory": "<p>Erilaiset pelit ovat kiehtoneet ihmiskuntaa tuhansia vuosia – antiikin kivipeleistä shakin ja pokerin kautta nykypäivän strategia- ja videopeleihin.</p><h4>1. Tuuri vastaan taito</h4><ul><li><strong>Deterministiset täydellisen informaation pelit</strong> (esim. shakki, go, ristinolla): Pelissä ei ole lainkaan satunnaisuutta (ei noppia, ei korttien sekoitusta) ja molemmat pelaajat näkevät koko pelitilanteen koko ajan. Voitto perustuu puhtaasti laskentaan ja strategiaan.</li><li><strong>Stokastiset epätäydellisen informaation pelit</strong> (esim. Texas Hold'em, Monopoly, Catan): Pelissä on mukana satunnaiselementtejä ja osa tiedosta on piilossa (vastustajan käsi). Menestys vaatii todennäköisyyksien arviointia, riskienhallintaa ja psykologiaa.</li></ul><h4>2. Pelimekaniikkojen matematiikka</h4><ul><li><strong>Resurssien hallinta</strong>: Pelissä kerätään pisteitä, rahaa tai materiaaleja. Talousmekaniikan täytyy olla tasapainossa (balancing), jottei peli ratkea liian aikaisin ns. 'lumipalloilmiöön'.</li><li><strong>Nollasummapeli (zero-sum game)</strong>: Tilanne, jossa yhden pelaajan voitto on suoraan pois muilta pelaajilta (voittojen summa on tasan nolla).</li></ul><h4>3. Tehtävänanto: Suunnittele oma peli</h4><ol><li><strong>Pelin ydinidea</strong>: Lautapeli, korttipeli vai noppapeli? Mikä on teema ja tavoite?</li><li><strong>Voittoehdot</strong>: Miten peli päättyy ja kuka voittaa?</li><li><strong>Pelimekaniikat ja säännöt</strong>: Mitä pelaaja tekee omalla vuorollaan? Miten tuurielementit ja strategiset valinnat kohtaavat?</li><li><strong>Testaus</strong>: Kokeile peliä parin kanssa ja hio sääntöjä!</li></ol>",
       "tasks": {
         "theory": "Suunnittele oma peli -tehtävä"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "John Nash ja vankien dilemma: Miksi itsekkyys johtaa huonoon tulokseen?",
+        "content": "<h4>Peliteorian suuri oivallus</h4><p>Vuonna 1950 matemaatikko <strong>John Nash</strong> (josta tehtiin kuuluisa elokuva <em>Kaunis mieli / A Beautiful Mind</em>) esitti teorian ei-kooperatiivisista peleistä ja tasapainotilasta, jota kutsutaan <strong>Nash-tasapainoksi</strong>.</p><h4>Vankien dilemma (Prisoner's Dilemma)</h4><p>Poliisi kuulustelee kahta eristyksissä olevaa epäiltyä rikoksesta:</p><ul><li>Jos molemmat vaikenevat (yhteistyö), molemmat saavat 1 vuoden tuomion.</li><li>Jos molemmat pettävät toisensa, molemmat saavat 5 vuotta vankeutta.</li><li>Jos toinen pettää ja toinen vaikenee, pettäjä pääsee vapaaksi (0 vuotta) ja vaikenija saa 10 vuotta!</li></ul><p>Loogisesti ajatellen molempien kannattaa pettää toisensa riippumatta toisen valinnasta. Niinpä molemmat päätyvät istumaan 5 vuotta – vaikka vaikenemalla molemmat olisivat selvinneet yhdellä vuodella!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> John Nash sai työstään Nobelin taloustieteen palkinnon vuonna 1994. Vankien dilemmaa käytetään nykyään mallintamaan niin ilmastosopimusten vaikeutta, yritysten hintakilpailua kuin eläinten evoluutiotakin!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Peliteoria ja todennäköisyysmallit",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 7,
       "topic": "Millennium-ongelmat",
+      "title": "Millennium-ongelmat ja Riemannin hypoteesi",
       "content": "KS aihe 7. Clay-instituutin ratkaisemattomat matemaattiset ongelmat, Riemannin zeeta-funktio ja Riemannin hypoteesi.",
+      "summary": "Clay-instituutin 7 ratkaisematonta miljoonan dollarin ongelmaa, sarjojen suppeneminen ja hajaantuminen, Riemannin zeeta-funktio zeta(s) ja kriittinen suora Re(s) = 1/2.",
+      "theory": "<p>Mikä on ehkä haastavin tapa ansaita miljoona dollaria? Vuonna 2000 amerikkalainen <strong>Clay Mathematics Institute</strong> nimesi seitsemän matematiikan visaisinta ratkaisematonta ongelmaa ja luvasi <strong>miljoonan dollarin palkkion</strong> kunkin ongelman aukottomasta ratkaisusta.</p><h4>Seitsemän Millennium-ongelmaa:</h4><ol><li><strong>Riemannin hypoteesi</strong> (lukuteoria, alkuluvut)</li><li><strong>P vastaan NP -ongelma</strong> (tietojenkäsittelytiede ja algoritmit)</li><li><strong>Hodgen konjektuuri</strong> (algebrallinen geometria)</li><li><strong>Poincarén konjektuuri</strong> (ratkaissut venäläinen Grigori Perelman vuonna 2002!)</li><li><strong>Yang-Millsin olemassaolo ja massarako</strong> (kvanttifysiikka)</li><li><strong>Navier-Stokesin yhtälöiden sileys</strong> (virtausmekaniikka)</li><li><strong>Birchin ja Swinnerton-Dyerin konjektuuri</strong> (elliptiset käyrät)</li></ol><h4>Riemannin zeeta-funktio $\\zeta(s)$</h4><p>Ongelmista kuuluisin liittyy saksalaisen <strong>Bernhard Riemannin</strong> vuonna 1859 tutkimaan äärettömään sarjaan:</p><p>$$\\mathbf{\\zeta(s) = \\sum_{n=1}^\\infty \\frac{1}{n^s} = \\frac{1}{1^s} + \\frac{1}{2^s} + \\frac{1}{3^s} + \\dots}$$</p><ul><li>Jos $s = 2$: $\\zeta(2) = 1 + \\frac{1}{4} + \\frac{1}{9} + \\dots = \\frac{\\pi^2}{6} \\approx 1{,}645$ (<strong>sarja suppenee</strong> kohti äärellistä lukua).</li><li>Jos $s = 1$: $\\zeta(1) = 1 + \\frac{1}{2} + \\frac{1}{3} + \\dots \\to \\infty$ (<strong>sarja hajaantuu</strong>).</li></ul><h4>Riemannin hypoteesi kompleksitasossa</h4><p>Kun muuttujaksi $s$ asetetaan kompleksilukuja, funktiolla on <strong>nollakohtia</strong> (arvoja, joilla $\\zeta(s) = 0$). Nollakohdat $s = -2, -4, -6, \\dots$ ovat helppoja 'triviaaleja' nollakohtia. Mutta kaikki muut nollakohdat näyttävät asettuvan täsmälleen suoralle:</p><p>$$\\mathbf{\\text{Re}(s) = \\frac{1}{2}} \\quad \\text{(ns. kriittinen suora)}$$</p><p>Tietokoneilla on tarkistettu yli 10 biljoonaa ensimmäistä nollakohtaa ja ne kaikki ovat tällä suoralla – mutta kukaan ei ole onnistunut todistamaan, että <em>kaikki äärettömän monet</em> nollakohdat ovat siinä!</p>",
       "tasks": {
         "theory": "Riemannin zeeta-funktio -laskuharjoitus (Excel/paperi)"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Grigori Perelman ja miljoonasta dollarista kieltäytyminen: Nerous ilman maallista mammonaa",
+        "content": "<h4>Poincarén konjektuurin ratkaisu 2002</h4><p>Vuonna 2002 pietarilainen erakkomainen huippumatemaatikko <strong>Grigori Perelman</strong> latasi internetin avoimeen tutkimusarkistoon (arXiv) kolme artikkelia, joissa hän esitti ratkaisun Poincarén satavuotiseen konjektuuriin 3-ulotteisten avaruuksien topologiasta.</p><h4>Kieltäytyminen Fieldsin mitalista ja miljoonasta dollarista</h4><p>Kun maailman parhaat matemaatikot olivat tarkistaneet satoja sivuja pitkän todistuksen ja todenneet sen täydellisen virheettömäksi, Perelmanille myönnettiin matematiikan 'Nobel' eli Fieldsin mitali vuonna 2006 ja Clay-instituutin miljoonan dollarin Millennium-palkinto vuonna 2010.</p><p>Perelman kieltäytyi molemmista! Hän totesi rauhallisesti asuvansa vaatimattomasti äitinsä kanssa Pietarissa eikä tarvitse rahaa: <em>'Jos todistus on oikea, mitään muuta tunnustusta ei tarvita.'</em></p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Perelman totesi toimittajille: 'Tiedän miten hallita maailmankaikkeutta. Kertokaa minulle, miksi minun pitäisi juosta miljoonan dollarin perässä?'</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Riemannin zeeta-funktion kuvaaja ja sarjan osasummat",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 8,
       "topic": "Ohjelmointia",
+      "title": "Ohjelmointikielten perusteet ja Python",
       "content": "KS aihe 8. Ohjelmointikielten vertailu ja Python-koodauksen perusteet tekstipohjaisessa editorissa.",
+      "summary": "Ohjelmointikielten vertailu (Python, Java, C++, JS), tulkattavat vs. käännettävät kielet, Python-koodin syntaksi ja W3Schools-harjoittelu.",
+      "theory": "<p><strong>Ohjelmointi (koodaus)</strong> tarkoittaa loogisten ohjeiden antamista tietokoneelle kielellä, jota kone ymmärtää. Alakoulusta tutut lohkopohjaiset ympäristöt (kuten Scratch) antavat hyvän perustan koodauksen logiikalle, mutta varsinainen ohjelmistokehitys tapahtuu tekstipohjaisilla ohjelmointikielillä.</p><h4>1. Suosituimmat ohjelmointikielet ja niiden roolit</h4><ul><li><strong>Python</strong>: Maailman suosituin yleiskieli. Erittäin helppo lukea ja kirjoittaa, standardikieli data-analyysissä, koneoppimisessa ja tekoälyssä (AI).</li><li><strong>JavaScript</strong>: Verkkoselaimen oma kieli. Kaikki nettisivut, verkkosovellukset ja käyttöliittymät pyörivät selaimessa JavaScriptillä.</li><li><strong>C++ ja C#</strong>: Peliteollisuuden valtiaat (Unreal Engine ja Unity). Äärimmäisen nopeita ja tehokkaita.</li><li><strong>Java</strong>: Yritysmaailman taustajärjestelmien ja Android-kehityksen klassikko (huom: Java ja JavaScript ovat täysin eri kieliä!).</li></ul><h4>2. Miksi Python? Syntaksin vertailu</h4><p>Tarkastellaan yksinkertaista ohjelmaa, joka tulostaa ruudulle sanan <em>\"moi\"</em>:</p><p><strong>Java:</strong></p><pre><code>public class Main {
+    public static void main(String[] args) {
+        System.out.println(\"moi\");
+    }
+}</code></pre><p><strong>Python:</strong></p><pre><code>print(\"moi\")</code></pre><p>Python karsii ylimääräisen 'ohjelmointijargonin' pois ja antaa keskittyä suoraan ongelmanratkaisuun!</p><h4>3. Koodauksen perusrakenteet</h4><ul><li><strong>Muuttujat</strong>: Tallentavat tietoa muistiin (esim. <code>ika = 15</code> tai <code>nimi = \"Pekka\"</code>).</li><li><strong>Ehtolauseet (if / elif / else)</strong>: Ohjelma tekee päätöksiä (esim. <code>if ika >= 18:</code>).</li><li><strong>Silmukat (for, while)</strong>: Toistavat asioita tuhansia kertoja salamannopeasti.</li><li><strong>Funktiot (def)</strong>: Uudelleenkäytettäviä koodilohkoja.</li></ul>",
       "tasks": {
         "theory": "W3Schools Python Tutorial -harjoitukset Online Pythonissa"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Ada Lovelace ja historian ensimmäinen tietokoneohjelma 1843",
+        "content": "<h4>Runoilijan tytär ja 'Analyyttinen kone'</h4><p>Kreivitär <strong>Ada Lovelace</strong> (1815–1852), kuuluisan runoilija Lordi Byronin tytär, opiskeli äitinsä kannustamana matematiikkaa. Hän alkoi tehdä yhteistyötä keksijä Charles Babbagen kanssa, joka oli suunnitellut hammasrattaille perustuvan mekaanisen tietokoneen esiasteen nimeltä <em>Analytical Engine</em>.</p><h4>Mullistava näkemys</h4><p>Vuonna 1843 Ada Lovelace julkaisi tutkimuksen, johon hän sisällytti ensimmäisen koneelle tarkoitetun algoritmin (Bernoullin lukujen laskemiseksi). Hän ymmärsi ensimmäisenä ihmisenä, että tietokone voisi käsitellä muutakin kuin puhtaita numeroita – esimerkiksi symboleja, sanoja ja musiikkia!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ada Lovelacea pidetään yleisesti maailman historian ensimmäisenä tietokoneohjelmoijana – yli sata vuotta ennen kuin yhtäkään modernia elektronista tietokonetta oli edes rakennettu!</div>"
+      },
+      "simulation": {
+        "title": "W3Schools: Online Python Editor & Try-it",
+        "url": "https://www.w3schools.com/python/"
+      }
     },
     {
       "lesson": 9,
       "topic": "Raja-arvot äärettömyydessä",
+      "title": "Funktion raja-arvo ja äärettömyys",
       "content": "KS aihe 9. Funktion raja-arvon tutkiminen koordinaatistossa, lim-merkintä äärettömyydessä ja lausekkeen sieventäminen yhteisellä tekijällä.",
+      "summary": "Raja-arvon käsite lim_(x -> inf) f(x), asyptoottinen käyttäytyminen koordinaatistossa, lausekkeen sieventäminen ja korkeimman asteen termin supistaminen.",
+      "theory": "<p>Lukion pitkän matematiikan keskeisin keksintö on <strong>differentiaali- ja integraalilaskenta</strong>, jonka peruskivenä toimii <strong>raja-arvo (limes, merk. $\\lim$)</strong>.</p><h4>1. Mitä raja-arvo tarkoittaa?</h4><p>Tarkastellaan funktiota $f(x) = \\frac{1}{x} + 3$. Mitä funktion arvolle tapahtuu, kun muuttuja $x$ kasvaa äärettömän suureksi ($x \\to \\infty$)?</p><ul><li>$f(1) = 1 + 3 = 4$</li><li>$f(10) = 0{,}1 + 3 = 3{,}1$</li><li>$f(1000) = 0{,}001 + 3 = 3{,}001$</li></ul><p>Termi $\\frac{1}{x}$ painuu kohti nollaa ($0$). Kuvaaja lähestyy vaakasuoraa viivaa $y = 3$, mutta ei koskaan leikkaa sitä. Sanomme, että funktion <strong>raja-arvo äärettömyydessä on 3</strong>:</p><p>$$\\mathbf{\\lim_{x \\to \\infty} \\left(\\frac{1}{x} + 3\\right) = 0 + 3 = 3}$$</p><h4>2. Raja-arvon laskeminen rationaalifunktiolle</h4><p>Entä jos $x$ esiintyy sekä osoittajassa että nimittäjässä toisessa potenssissa?</p><p>$$\\lim_{x \\to \\infty} \\frac{3x^2 - 2}{x^2 + 2x}$$</p><p>Suora sijoitus tuottaisi kielletyn muodon '$\\frac{\\infty}{\\infty}$'. Siksi lauseke täytyy ensin <strong>sieventää jakamalla korkeimman asteen termillä $x^2$</strong>:</p><ol><li>Otetaan osoittajasta ja nimittäjästä yhteiseksi tekijäksi $x^2$:<br>$$\\frac{x^2 \\left(3 - \\frac{2}{x^2}\\right)}{x^2 \\left(1 + \\frac{2}{x}\\right)}$$</li><li>Supistetaan yhteinen tekijä $x^2$ pois:<br>$$= \\frac{3 - \\frac{2}{x^2}}{1 + \\frac{2}{x}}$$</li><li>Annetaan $x \\to \\infty$, jolloin kaikki termit, joissa $x$ on nimittäjässä, menevät nollaksi:<br>$$\\mathbf{\\frac{3 - 0}{1 + 0} = \\frac{3}{1} = 3}$$</li></ol>",
       "tasks": {
         "theory": "Raja-arvot -harjoitustiedosto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Zenonin paradoksit: Voiko Akhilleus koskaan saavuttaa kilpikonnaa?",
+        "content": "<h4>Antiikin filosofin mahdoton kilpajuoksu</h4><p>Antiikin kreikkalainen filosofi <strong>Zenon Elealainen</strong> (n. 490–430 eaa.) esitti kuuluisan paradoksin: Tarunhohtoinen nopea juoksija Akhilleus ottaa juoksukilpailun hitaan kilpikonnan kanssa. Kilpikonna saa 100 metrin etumatkan.</p><h4>Äärettömän monen vaiheen pulma</h4><p>Kun Akhilleus juoksee kilpikonnan lähtöpaikkaan (100 m), kilpikonna on ehtinyt liikkua vaikkapa 10 metriä eteenpäin. Kun Akhilleus saavuttaa tuon pisteen, kilpikonna on liikkunut taas 1 metrin. Kun Akhilleus saavuttaa sen, kilpikonna on siirtynyt 10 senttimetriä...</p><p>Zenon väitti, että Akhilleuksen täytyy kulkea äärettömän monen pisteen läpi, joten hän ei voi koskaan saada kilpikonnaa kiinni!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Zenonin paradoksi ratkesi vasta raja-arvon avulla: äärettömän monen luvun summa voi olla täysin äärellinen luku! Esimerkiksi $\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\frac{1}{16} + \\dots = 1$. Aika ei lopu kesken, vaan Akhilleus pyyhältää kilpikonnan ohi juuri oikealla hetkellä!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Funktion raja-arvot ja asymptootit",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 10,
       "topic": "Toisen asteen normaalimuotoinen yhtälö",
+      "title": "Toisen asteen yhtälön ratkaiseminen",
       "content": "KS aihe 10. Toisen asteen yhtälön ratkaiseminen normaalimuodossa ax² + bx + c = 0.",
+      "summary": "Toisen asteen yhtälön normaalimuoto ax² + bx + c = 0, ratkaisukaava, diskriminantti D = b² - 4ac ja tekijöihin jako.",
+      "theory": "<p>Ensimmäisen asteen yhtälössä muuttuja $x$ esiintyy vain ensimmäisessä potenssissa (esim. $2x + 4 = 10$). <strong>Toisen asteen yhtälössä</strong> esiintyy termi $x^2$.</p><h4>1. Normaalimuoto</h4><p>Toisen asteen yhtälö saatetaan aina ensin <strong>normaalimuotoon</strong> siirtämällä kaikki termit vasemmalle puolelle:</p><p>$$\\mathbf{ax^2 + bx + c = 0} \\quad (a \\ne 0)$$</p><ul><li>$a$ on toisen asteen termin kerroin</li><li>$b$ on ensimmäisen asteen termin kerroin</li><li>$c$ on vakiotermi</li></ul><h4>2. Toisen asteen yhtälön ratkaisukaava</h4><p>Yhtälön juuret (ratkaisut) saadaan suoraan yleisellä <strong>ratkaisukaavalla</strong>:</p><p>$$\\mathbf{x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}}$$</p><h4>3. Diskriminantti $D = b^2 - 4ac$</h4><p>Neliöjuuren sisällä oleva lauseke $D$ määrää ratkaisujen lukumäärän:</p><ul><li>Jos $D > 0$: <strong>Kaksi erisuurta ratkaisua</strong>.</li><li>Jos $D = 0$: <strong>Yksi ratkaisu (kaksoisjuuri)</strong> $x = -\\frac{b}{2a}$.</li><li>Jos $D < 0$: <strong>Ei reaaliratkaisuja</strong> (juuret ovat kompleksilukuja!).</li></ul><h4>Laskuesimerkki:</h4><p>Ratkaise yhtälö $x^2 - 5x + 6 = 0$. Tässä $a = 1$, $b = -5$ ja $c = 6$:</p><p>$$x = \\frac{-(-5) \\pm \\sqrt{(-5)^2 - 4 \\cdot 1 \\cdot 6}}{2 \\cdot 1} = \\frac{5 \\pm \\sqrt{25 - 24}}{2} = \\frac{5 \\pm 1}{2}$$</p><p>Saadaan kaksi ratkaisua:<br>$$x_1 = \\frac{5 + 1}{2} = \\frac{6}{2} = \\mathbf{3} \\quad \\text{ja} \\quad x_2 = \\frac{5 - 1}{2} = \\frac{4}{2} = \\mathbf{2}$$</p>",
       "tasks": {
         "theory": "2. asteen yhtälön normaalimuoto -harjoitustiedosto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Al-Khwarizmi ja neliön täydentäminen: Miten algebra keksittiin?",
+        "content": "<h4>Persialainen oppinut Bagdadin viisauden talossa</h4><p>Noin vuonna 820 persialainen matemaatikko <strong>Muhammad ibn Musa al-Khwarizmi</strong> kirjoitti Bagdadissa arabiankielisen teoksen <em>Al-Kitab al-mukhtasar fi hisab al-jabr wa'l-muqabala</em>. Sanasta <em>al-jabr</em> ('palauttaminen / täydentäminen') tuli sana <strong>algebra</strong>, ja al-Khwarizmin omasta nimestä sana <strong>algoritmi</strong>!</p><h4>Geometrinen ratkaisumenetelmä</h4><p>Ennen kuin nykyisiä algebrallisia plus- ja miinusmerkkejä oli olemassa, al-Khwarizmi ratkaisi toisen asteen yhtälöt piirtämällä paperille neliöitä ja suorakulmioita. Menetelmää kutsutaan 'neliön täydentämiseksi' (completing the square), koska puuttuva pala täydennettiin kirjaimellisesti geometriseen kuvioon!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kaikki maailman toisen asteen yhtälöiden ratkaisukaavat perustuvat suoraan al-Khwarizmin yli 1200 vuotta sitten geometrisesti kehittämään neliöintiin!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Toisen asteen kuvaaja ja nollakohdat",
+        "url": "https://phet.colorado.edu/fi/simulations/graphing-quadratics"
+      }
     },
     {
       "lesson": 11,
       "topic": "Salausmenetelmistä",
+      "title": "Kryptografia, salausmenetelmät ja tietoturva",
       "content": "KS aihe 11. Tietoturva, salasanojen murtaminen (brute force) ja kryptografian historia (skytale, Caesar, Enigma). Caesar-salaus.",
+      "summary": "Salakirjoituksen historia (skytale, Caesar-salaus, Enigma), symmetrinen vs. asymmetrinen salaus, salasanojen murtaminen (brute force) ja moderni tietoturva.",
+      "theory": "<p><strong>Kryptografia</strong> (kreik. <em>kryptos</em> = salainen, <em>graphein</em> = kirjoittaa) tutkii menetelmiä, joilla viestit muutetaan lukukelvottomiksi kaikille muille paitsi viestin vastaanottajalle.</p><h4>1. Tietoturva ja salasanojen lujuus (Brute Force)</h4><p>Salasanan murtaminen raa'alla voimalla (<strong>brute force</strong>) tarkoittaa kaikkien mahdollisten kirjain- ja numeroyhdistelmien läpikäymistä tietokoneella:</p><ul><li>4-numeroinen PIN-koodi ($10^4 = 10\\,000$ vaihtoehtoa): Tietokone kokeilee kaikki alle sekunnin tuhannesosassa.</li><li>8-merkkinen pieniä kirjaimia sisältävä salasana ($26^8 \\approx 208$ miljardia): Murtuu muutamassa sekunnissa.</li><li>14-merkkinen salasana (isoja ja pieniä kirjaimia, numeroita ja erikoismerkkejä): Vaihtoehtoja on yli $90^{14} \\approx 2 \\cdot 10^{27}$ $\\implies$ murtaminen kestäisi supertietokoneella <strong>miljoonia vuosia</strong>!</li></ul><h4>2. Antiikin salausmenetelmät</h4><ul><li><strong>Skytale-sauva (Sparta)</strong>: Nahkanauha kiedottiin tietynpaksuisen puusauvan ympärille ja viesti kirjoitettiin pituussuunnassa. Nauhan avauduttua kirjaimet olivat sekaisin.</li><li><strong>Caesar-salaus (Rooma)</strong>: Jokainen kirjain korvataan aakkosissa $k$ askelta eteenpäin siirretyllä kirjaimella (esim. siirto $+3$):<br>$$\\text{A} \\to \\text{D}, \\quad \\text{B} \\to \\text{E}, \\quad \\dots, \\quad \\text{X} \\to \\text{A}$$</li></ul><h4>3. Caesar-salauksen murtaminen: Taajuusanalyysi</h4><p>Koska jokainen kielen kirjain esiintyy eri tiheydellä (suomen kielessä yleisimmät ovat <strong>A, I, T, E, S, N</strong>), salakirjoituksen useimmin toistuvat kirjaimet paljastavat heti siirtoavaimen $k$!</p>",
       "tasks": {
         "theory": "Salakirjoituksia.pdf (Summamutikka-keskus)"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Alan Turing ja Enigma: Miten koodin murtaminen ratkaisi toisen maailmansodan?",
+        "content": "<h4>Saksan sota-ase: Enigma-salauskone</h4><p>Toisessa maailmansodassa natsi-Saksa käytti <strong>Enigma</strong>-nimistä sähkömekaanista salauskonetta, jossa oli useita pyöriviä roottoreita ja kytkentätaulu. Jokaisen näppäinpainalluksen jälkeen roottorit pyörähtivät uuteen asentoon, jolloin sama kirjain koodautui joka kerta eri kirjaimeksi! Mahdollisia asetuksia oli yli <strong>150 triljoonaa</strong>.</p><h4>Bletchley Park ja sähkömekaaninen 'Bombe'</h4><p>Englantilainen matemaatikko <strong>Alan Turing</strong> rakensi Bletchley Parkissa valtavan sähkömekaanisen 'Bombe'-koneen. Se käytti loogisia päättelyketjuja ja karsi mahdottomat roottoriasetukset minuuteissa, jolloin liittoutuneet pystyivät lukemaan Saksan salaisia sukellusveneviestejä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Historioitsijoiden mukaan Turingin ja hänen tiiminsä työ Enigman parissa lyhensi toista maailmansotaa vähintään kahdella vuodella ja pelasti yli 14 miljoonan ihmisen hengen! Turingia pidetään myös modernin tietojenkäsittelytieteen ja tekoälyn isänä.</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra / Web: Caesar-salauksen ja kryptografian simulaatio",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
   ]
 }

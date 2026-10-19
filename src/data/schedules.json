@@ -8,11 +8,6 @@
         "weekdays": [2, 5],
         "exceptions": [
           {
-            "date": "2026-10-20",
-            "type": "KURSSIN ALOITUS",
-            "description": "Esittelyt, istumajärjestys, kurssin sisältö ja tavoitteet. Yleiset pelisäännöt ja arviointi. Kurssimateriaalin jakaminen."
-          },
-          {
             "date": "2026-10-23",
             "type": "Kirjamessut",
             "description": "Ilmoittaudu opettajalle (RAUH) Messukeskuksen aulassa klo 12.30."
@@ -131,11 +126,7 @@
         "endDate": "2026-12-18",
         "weekdays": [2, 5],
         "exceptions": [
-          {
-            "date": "2026-10-20",
-            "type": "KURSSIN ALOITUS",
-            "description": "Esittelyt, istumajärjestys, kurssin sisältö ja tavoitteet. Yleiset pelisäännöt ja arviointi. Kurssimateriaalin jakaminen."
-          },
+
           {
             "date": "2026-10-23",
             "type": "Kirjamessut",
@@ -201,11 +192,6 @@
         "endDate": "2026-12-18",
         "weekdays": [2, 4],
         "exceptions": [
-          {
-            "date": "2026-10-20",
-            "type": "KURSSIN ALOITUS",
-            "description": "Esittelyt, istumajärjestys, kurssin sisältö ja tavoitteet. Yleiset pelisäännöt ja arviointi. Kurssimateriaalin jakaminen."
-          }
         ]
       }
     }

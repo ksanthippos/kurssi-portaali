@@ -5,145 +5,288 @@
     {
       "lesson": 1,
       "topic": "Potenssilasku",
+      "title": "Potenssilaskun perusteet",
       "content": "KS aihe 1. Potenssilaskun käsite: kantaluku ja eksponentti. Negatiivinen kantaluku ja sulkujen merkitys sekä murto- ja desimaalilukujen potenssit.",
+      "summary": "Kantaluku ja eksponentti toistettuna tulona, negatiivisen kantaluvun sulut vs. ilman sulkuja sekä murto- ja desimaalilukujen potenssit.",
+      "theory": "<p>Alkuun muistutuksena: kertolasku on lyhennettyä yhteenlaskua, esimerkiksi:</p><p>$$5 \\cdot 2 = 2 + 2 + 2 + 2 + 2 = 10$$</p><p>$$3 \\cdot (-2) = (-2) + (-2) + (-2) = -6$$</p><h4>Mitä on potenssilasku?</h4><p><strong>Potenssilasku on sen sijaan lyhennettyä kertolaskua!</strong> Potenssilaskun merkinnässä käytetään käsitteitä <strong>kantaluku</strong> ja <strong>eksponentti</strong>, jossa eksponentti ilmaisee, kuinka monta kertaa kantaluku kerrotaan itsellään:</p><p>$$3^2 = 3 \\cdot 3 = 9$$</p><h4>Negatiivinen kantaluku ja sulkujen merkitys</h4><p>Kiinnitä erityistä huomiota seuraavaan eroon:</p><table class=\"styled-table\"><thead><tr><th>Merkintä</th><th>Laskutoimitus</th><th>Tulos</th><th>Selitys</th></tr></thead><tbody><tr><td>$(-3)^2$</td><td>$(-3) \\cdot (-3)$</td><td>$9$</td><td>Kantaluku on $-3$, sulut mukana!</td></tr><tr><td>$-3^2$</td><td>$-(3 \\cdot 3)$</td><td>$-9$</td><td>Kantaluku on $3$, miinus on edessä!</td></tr></tbody></table><p><em>Sääntö: Jos kantaluku on negatiivinen, se on ehdottomasti merkittävä sulkuihin. Jos sulkuja ei ole, miinusmerkki jää potenssilaskun eteen ja tulos on negatiivinen!</em></p><h4>Erikoistapaukset</h4><ul><li>$10^4 = 10 \\cdot 10 \\cdot 10 \\cdot 10 = 10\\,000$</li><li>$6^1 = 6$ (eksponentti $1$ pitää luvun samana)</li><li>$1^6 = 1 \\cdot 1 \\cdot 1 \\cdot 1 \\cdot 1 \\cdot 1 = 1$ ($1$ mihin tahansa potenssiin on aina $1$)</li></ul><h4>Murto- ja desimaalilukujen potenssit</h4><p>$$\\left(\\frac{2}{5}\\right)^2 = \\frac{2}{5} \\cdot \\frac{2}{5} = \\frac{4}{25} \\qquad \\text{mutta} \\qquad \\frac{2^2}{5} = \\frac{4}{5}$$</p><p>$$(-0{,}1)^3 = (-0{,}1) \\cdot (-0{,}1) \\cdot (-0{,}1) = -0{,}001$$</p><p>Huomaa, että sulut määräävät murtoluvuissa, korotetaanko koko murtoluku vai pelkkä osoittaja potenssiin.</p>",
       "tasks": {
         "warmup": "moniste / s. 9: T2 - 9",
         "blue": "s. 9: T10 - 12",
         "red": "s. 9: T14 - 16, s. 72: T9, 10"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Shakkilauta ja riisinjyvät: Eksponentiaalisen kasvun uskomaton voima",
+        "content": "<h4>Muinainen intialainen legenda</h4><p>Legendan mukaan shakkipelin keksinyt viisas brahmiini <strong>Sissa ibn Dahir</strong> esitteli pelin Intian kuninkaalle. Kuningas ihastui peliin niin syvästi, että lupasi keksijälle minkä tahansa palkkion. Sissa pyysi vaatimattoman oloisen palkkion:</p><blockquote><em>'Aseta shakkilaudan ensimmäiselle ruudulle yksi riisinjyvä, toiselle kaksi, kolmannelle neljä, neljännelle kahdeksan, ja tuplaa aina jyvien määrä seuraavalle ruudulle laudan loppuun asti.'</em></blockquote><h4>Potenssien räjähdysmäinen kasvu</h4><p>Kuningas piti pyyntöä naurettavan pienenä, kunnes hovin kirjanpitäjät laskivat summan: 64 ruudulle kertyisi yhteensä:</p><p>$$1 + 2 + 4 + 8 + \\dots + 2^{63} = 2^{64} - 1 = 18\\,446\\,744\\,073\\,709\\,551\\,615 \\text{ jyvää!}$$</p><p>Tämä vastaa yli <strong>18 triljoonaa riisinjyvää</strong> eli noin 460 miljardia tonnia riisiä – yli tuhatkertaisesti koko maapallon vuotuisen riisisadon! Kuningas tajusi, ettei koko valtakunnan varallisuus riittäisi palkkion maksamiseen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos taitat tavallisen A4-paperiarkin kahtia 42 kertaa (jokainen taitos tuplaa paksuuden: $0{,}1\\text{ mm} \\cdot 2^{42}$), syntyvän paperipinon paksuus yltäisi maapallolta kuuhun asti (noin $440\\,000\\text{ km}$)!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Potenssilaskun ja eksponentiaalisen kasvun havainnollistus",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 2,
       "topic": "Samankantaisten potenssien tulo",
+      "title": "Samankantaisten potenssien tulo",
       "content": "KS aihe 2. Samankantaisten potenssien tulon laskusääntö a^m · a^n = a^(m+n) ja sieventäminen muuttujilla.",
+      "summary": "Potenssien tulon laskusääntö saman kantaluvun tapauksessa, eksponenttien yhteenlasku ja muuttujien sieventäminen.",
+      "theory": "<p>Tarkastellaan kahden sellaisen potenssin tuloa, joilla on <strong>sama kantaluku 2</strong>:</p><p>$$2^4 \\cdot 2^3 = (2 \\cdot 2 \\cdot 2 \\cdot 2) \\cdot (2 \\cdot 2 \\cdot 2) = 2^7 = 128$$</p><p>Huomataan nerokas oikopolku: samaan lopputulokseen päästään suoraan <strong>laskemalla eksponentit yhteen</strong>:</p><p>$$2^4 \\cdot 2^3 = 2^{4 + 3} = 2^7 = 128$$</p><h4>Yleinen laskusääntö</h4><p>$$\\mathbf{a^m \\cdot a^n = a^{m+n}}$$</p><p><em>Samankantaisten potenssien tulossa kantaluku pysyy samana ja eksponentit lasketaan yhteen!</em></p><h4>Milloin sääntö EI toimi?</h4><p>Sääntö toimii <strong>vain ja ainoastaan silloin</strong>, kun kantaluku on täsmälleen sama. Jos kantaluvut ovat eri, potenssit on laskettava erikseen:</p><p>$$2^4 \\cdot 5^3 = 16 \\cdot 125 = 2000 \\quad \\text{(ei voi yhdistää kaavalla!)}$$</p><h4>Sieventäminen muuttujakirjaimilla</h4><p>Algebrassa muuttujien arvoja ei tunneta, joten lausekkeet sievennetään potenssikaavalla:</p><ul><li>$a^4 \\cdot a^3 = a^{4+3} = a^7$</li><li>$b^{13} \\cdot b^{14} = b^{13+14} = b^{27}$</li><li>$a \\cdot a^2 \\cdot a^3 = a^1 \\cdot a^2 \\cdot a^3 = a^{1+2+3} = a^6$ (muista piilotettu eksponentti $1$!)</li></ul>",
       "tasks": {
         "warmup": "s. 11: T2 - 5, 7",
         "blue": "s. 72: T12, 13",
         "red": "s. 11: T13, s. 72: T14 - 16"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Arkhimedes ja Hiekanlaskija: Miten antiikin nero laski maailmankaikkeuden atomit?",
+        "content": "<h4>Riittääkö hiekkarannan jyvät?</h4><p>Noin 250 eaa. kreikkalainen nero <strong>Arkhimedes</strong> kirjoitti teoksen <em>Psammites</em> (Hiekanlaskija). Aikalaiset uskoivat, että maailmankaikkeuden hiekanjyvien määrä on ääretön tai ainakin ihmismielelle mahdoton laskea.</p><h4>Kantaluvun $10^8$ suuruusluokat</h4><p>Arkhimedes kehitti oman potenssijärjestelmänsä kantaluvulle miriaadi ($10\\,000$). Hän osoitti käyttäen potenssien yhteenlaskulakia, että koko silloin tunnettuun maailmankaikkeuteen mahtuisi enintään:</p><p>$$10^{63} \\text{ hiekanjyvää!}$$</p><p>Tämä oli historian ensimmäinen kerta, kun ihminen käytti samankantaisten potenssien tuloa ja eksponenttien yhteenlaskua käsittämättömän suurten lukujen hallitsemiseen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nykytieteen mukaan koko havaittavassa maailmankaikkeudessa on noin $10^{80}$ atomia. Arkhimedeen 2200 vuotta sitten tekemä arvio oli hämmästyttävän lähellä tätä lukua!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Samankantaisten potenssien tulo ja pinta-alat",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 3,
       "topic": "Samankantaisten potenssien osamäärä",
+      "title": "Samankantaisten potenssien osamäärä",
       "content": "KS aihe 3. Samankantaisten potenssien osamäärän laskusääntö a^m / a^n = a^(m-n) sekä tulon ja osamäärän yhdistetyt laskut.",
+      "summary": "Potenssien jakolasku saman kantaluvun tapauksessa, eksponenttien vähennyslasku, supistaminen ja yhdistetyt laskutoimitukset.",
+      "theory": "<p>Tarkastellaan seuraavaksi potenssien jakolaskua eli osamäärää:</p><p>$$\\frac{2^6}{2^3} = \\frac{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2}{2 \\cdot 2 \\cdot 2}$$</p><p>Supistetaan osoittajasta ja nimittäjästä kolme kakkosta pois:</p><p>$$= 2 \\cdot 2 \\cdot 2 = 2^3 = 8$$</p><p>Jälleen löydämme nerokkaan säännön: samaan tulokseen päästään <strong>vähentämällä osoittajan eksponentista nimittäjän eksponentti</strong>:</p><p>$$\\frac{2^6}{2^3} = 2^{6 - 3} = 2^3 = 8$$</p><h4>Yleinen laskusääntö</h4><p>$$\\mathbf{\\frac{a^m}{a^n} = a^{m-n}} \\qquad (a \\neq 0)$$</p><p><em>Samankantaisten potenssien osamäärässä kantaluku pysyy samana ja osoittajan eksponentista vähennetään nimittäjän eksponentti!</em></p><h4>Muuttujalausekkeiden sieventäminen</h4><ul><li>$\\frac{a^6}{a^4} = a^{6-4} = a^2$</li><li>$\\frac{c^{25}}{c^{13}} = c^{25-13} = c^{12}$</li><li>$\\frac{x^3}{x} = \\frac{x^3}{x^1} = x^{3-1} = x^2$ (muista nimittäjän piilotettu eksponentti $1$!)</li></ul><h4>Yhdistetyt laskutoimitukset: Tulo ja osamäärä</h4><p>Laskujärjestys on: <strong>ensin osoittajan tulo, sitten osamäärä</strong>:</p><p>$$\\frac{x^3 \\cdot x^5}{x^7} = \\frac{x^{3+5}}{x^7} = \\frac{x^8}{x^7} = x^{8-7} = x^1 = x$$</p>",
       "tasks": {
         "warmup": "s. 13: T1 - 8",
         "blue": "s. 73: T17 - 20",
         "red": "s. 13: T13 - 15, s. 73: T22"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Logaritmit ja laskutikut: Miten osamäärästä tuli vähennyslaskua?",
+        "content": "<h4>Tähtitieteilijöiden pitkä urakka</h4><p>1500-luvulla tähtitieteilijät kuten Johannes Kepler ja Tyko Brahe joutuivat tekemään kuukausikaupalla käsin jättimäisiä kerto- ja jakolaskuja planeettojen kiertoradoista. Vuonna 1614 skotlantilainen matemaatikko <strong>John Napier</strong> keksi <em>logaritmit</em>, jotka perustuvat suoraan potenssien ominaisuuksiin.</p><h4>Laskutikku – kuuhun lentänyt mekaaninen tietokone</h4><p>Koska samankantaisten potenssien kerto muuttuu yhteenlaskuksi ($m+n$) ja jako vähennyslaskuksi ($m-n$), monimutkaiset kerto- ja jakolaskut voitiin muuttaa helpoiksi yhteen- ja vähennyslaskuiksi! Tämän pohjalta kehitettiin <strong>laskutikku</strong> (slide rule). Apollo 11 -astronautit Neil Armstrong ja Buzz Aldrin käyttivät laskutikkuja laskiessaan kiertoratakorjauksia matkalla kuuhun vuonna 1969!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ranskalainen matemaatikko Pierre-Simon Laplace sanoi: 'Keksimällä logaritmit Napier puolitti tähtitieteilijöiden työn ja siten tuplasi heidän elinikänsä!'</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Samankantaisten potenssien osamäärä ja supistaminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 4,
       "topic": "Tulon ja osamäärän potenssi",
+      "title": "Tulon ja osamäärän potenssi",
       "content": "KS aihe 4. Tulon potenssi (a·b)^n = a^n · b^n ja osamäärän potenssi (a/b)^n = a^n / b^n.",
+      "summary": "Tulon ja osamäärän korottaminen potenssiin, sulkujen jakaminen jokaiselle tekijälle ja negatiiviset kertoimet.",
+      "theory": "<p>Tarkastellaan termiä $2a$, joka tarkoittaa lukujen $2$ ja $a$ tuloa. Mitä tapahtuu, kun tulo korotetaan potenssiin $3$?</p><p>$$(2a)^3 = 2a \\cdot 2a \\cdot 2a = (2 \\cdot 2 \\cdot 2) \\cdot (a \\cdot a \\cdot a) = 8a^3$$</p><p>Sulkujen eksponentti $3$ voidaan siis antaa <strong>jokaiselle sulkujen sisällä olevalle tekijälle erikseen</strong>:</p><p>$$(2a)^3 = 2^3 a^3 = 8a^3$$</p><h4>Yleiset laskusäännöt</h4><p>$$\\mathbf{(a \\cdot b)^n = a^n \\cdot b^n} \\qquad \\text{ja} \\qquad \\mathbf{\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}}$$</p><h4>Esimerkkejä ja etumerkit</h4><ul><li>$(7x)^2 = 7^2 x^2 = 49x^2$</li><li>$(-3a)^2 = (-3)^2 a^2 = 9a^2$ (parillinen eksponentti poistaa miinuksen!)</li><li>$(-abc)^3 = (-1)^3 a^3 b^3 c^3 = -a^3 b^3 c^3$ (pariton eksponentti säilyttää miinuksen!)</li></ul><h4>Osamäärän potenssi</h4><p>$$\\left(\\frac{a}{3}\\right)^2 = \\frac{a^2}{3^2} = \\frac{a^2}{9}$$</p><p>Sekaluvut on <strong>aina muutettava ensin murtoluvuksi</strong>:</p><p>$$\\left(-2\\frac{1}{4}\\right)^2 = \\left(-\\frac{9}{4}\\right)^2 = \\frac{9^2}{4^2} = \\frac{81}{16} = 5\\frac{1}{16}$$</p><h4>Vaativampi yhdistelmä</h4><p>$$\\left(-\\frac{3x}{2y}\\right)^3 = \\frac{(-3x)^3}{(2y)^3} = \\frac{(-3)^3 x^3}{2^3 y^3} = -\\frac{27x^3}{8y^3}$$</p>",
       "tasks": {
         "warmup": "s. 15: T1 - 4",
         "blue": "s. 17: T1 - 3, 6",
         "red": "s. 15: T8, 15, s. 73: T28, 34"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Galilei ja neliö-kuutio-laki: Miksi jättiläisiä ei voi olla olemassa?",
+        "content": "<h4>Mitä tapahtuu, kun eläimen koko kaksinkertaistuu?</h4><p>Vuonna 1638 <strong>Galileo Galilei</strong> julkaisi kuuluisan <em>neliö-kuutio-lakinsa</em>, joka perustuu suoraan tulon potensseihin $(2x)^2$ ja $(2x)^3$. Jos skaalaat eläimen kaikki mitat kaksinkertaisiksi ($k = 2$):</p><ul><li>Lihasten ja luiden poikkipinta-ala (voima) kasvaa toiseen potenssiin: $(2a)^2 = 4a^2$ (nelinkertaistuu).</li><li>Eläimen tilavuus ja massa kasvaa kolmanteen potenssiin: $(2a)^3 = 8a^3$ (kahdeksankertaistuu!).</li></ul><h4>King Kong murtuisi oman painonsa alla</h4><p>Koska massa kasvaa kuutiossa ($2^3=8$) mutta luiden kantokyky vain neliössä ($2^2=4$), jättikokoiseksi suurennettu eläin tai ihminen ei pystyisi ottamaan askeltakaan ilman, että sen luut murskaantuisivat oman painon alla. Tästä syystä norsun jalat ovat suhteessa valtavan paksut pilarit verrattuna antiloopin ohuisiin jalkoihin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tulon potenssi selittää myös sen, miksi pienet hyönteiset eivät loukkaannu pudotessaan korkealta: niiden ilmanvastuspinta-ala suhteessa pieneen massaan on valtava!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Tulon ja osamäärän potenssi pinta-alamallina",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 5,
       "topic": "Potenssin potenssi",
+      "title": "Potenssin potenssi",
       "content": "KS aihe 5. Potenssin potenssin laskusääntö (a^m)^n = a^(m·n) ja yhdistetyt laskutoimitukset.",
+      "summary": "Potenssin korottaminen edelleen potenssiin, eksponenttien kertolasku sekä erottaminen tornipotenssista ilman sulkuja.",
+      "theory": "<p>Jos korotamme potenssilaskun vielä uudelleen potenssiin, kyseessä on <strong>potenssin potenssi</strong>. Tällöin käytetään aina sulkumerkintää:</p><p>$$(a^2)^3 = a^2 \\cdot a^2 \\cdot a^2 = (a \\cdot a) \\cdot (a \\cdot a) \\cdot (a \\cdot a) = a^6$$</p><p>Huomataan sääntö: sulkulausekkeessa <strong>eksponentit kerrotaan suoraan keskenään</strong>:</p><p>$$(a^2)^3 = a^{2 \\cdot 3} = a^6$$</p><h4>Yleinen laskusääntö</h4><p>$$\\mathbf{(a^m)^n = a^{m \\cdot n}}$$</p><h4>Varoitus: Sulut tekevät eron!</h4><p>Älä koskaan sekoita sulullista potenssin potenssia tilanteeseen, jossa sulkuja ei ole:</p><ul><li>$(2^3)^2 = 2^{3 \\cdot 2} = 2^6 = 64$</li><li>$2^{3^2} = 2^9 = 512$ (tässä eksponentissa lasketaan $3^2 = 9$!)</li></ul><h4>Yhdistetty esimerkki tulon, osamäärän ja potenssin potenssista</h4><p>$$\\left(\\frac{-5a^3}{4b}\\right)^2 = \\frac{(-5a^3)^2}{(4b)^2} = \\frac{(-5)^2 \\cdot (a^3)^2}{4^2 \\cdot b^2} = \\frac{25a^{3 \\cdot 2}}{16b^2} = \\frac{25a^6}{16b^2}$$</p>",
       "tasks": {
         "warmup": "s. 19: T2 - 7",
         "blue": "s. 19: T12, 13, s. 74: T35, 36",
         "red": "s. 19: T14, 15, s. 74: T37 - 41"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Googol ja Googolplex: Luvut, joita edes universumi ei voi kirjoittaa",
+        "content": "<h4>Mistä Google sai nimensä?</h4><p>Vuonna 1920 yhdysvaltalainen matemaatikko Edward Kasner pyysi 9-vuotiasta sisarenpoikaansa Milton Sirottaa keksimään nimen luvulle $1$, jota seuraa sata nollaa. Poika keksi sanan <strong>googol</strong> ($10^{100}$). Myöhemmin hakukonejätti Google otti nimensä tästä luvusta (kirjoitusvirheen kautta!).</p><h4>Googolplex ja tornipotenssi</h4><p>Kasner määritteli vieläkin suuremman luvun: <strong>googolplex</strong>, joka on $10^{\\text{googol}} = 10^{10^{100}}$. Tämä luku on niin käsittämättömän valtava, että jos jokainen universumin atomi muutettaisiin mustepisaraksi ja paperiksi, kaikki maailmankaikkeuden atomit eivät riittäisi luvun kaikkien nollien kirjoittamiseen!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietotekniikassa 64-bittinen prosessori voi käsitellä kerrallaan lukuja kokoluokkaan $2^{64} \\approx 1{,}84 \\cdot 10^{19}$. Sitä suuremmat luvut vaativat erityisiä mielivaltaisen tarkkuuden matematiikkakirjastoja!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Potenssin potenssin visualisointi",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 6,
       "topic": "Eksponenttina nolla tai negatiivinen luku",
+      "title": "Nolla ja negatiivinen eksponentti",
       "content": "KS aihe 6. Nolla eksponenttina a^0 = 1 ja negatiivinen eksponentti käänteislukuna a^(-n) = 1 / a^n.",
+      "summary": "Miksi mikä tahansa luku potenssiin nolla on 1, negatiivisen eksponentin kääntyminen käänteisluvuksi ja murtolukujen kääntäminen.",
+      "theory": "<p>Tutkitaan, mitä tapahtuu, kun kakkosen eksponenttia pienennetään pykälä kerrallaan:</p><p>$$2^4 = 16 \\quad \\xrightarrow{: 2} \\quad 2^3 = 8 \\quad \\xrightarrow{: 2} \\quad 2^2 = 4 \\quad \\xrightarrow{: 2} \\quad 2^1 = 2$$</p><p>Joka askeleella tulos puolittuu. Jatkamalla samaa logiikkaa:</p><p>$$2^0 = 2 : 2 = 1$$</p><h4>Miksi $a^0 = 1$? Todistus osamäärällä</h4><p>Samankantaisten potenssien osamäärän säännöllä:</p><p>$$\\frac{2^4}{2^4} = 2^{4-4} = 2^0$$</p><p>Toisaalta mikä tahansa luku jaettuna itsellään on $1$:</p><p>$$\\frac{2^4}{2^4} = \\frac{16}{16} = 1 \\implies \\mathbf{a^0 = 1} \\quad (a \\neq 0)$$</p><h4>Negatiivinen eksponentti on käänteisluku!</h4><p>Jatketaan jakamista kahdella nollan jälkeen:</p><ul><li>$2^{-1} = 1 : 2 = \\frac{1}{2} = \\frac{1}{2^1}$</li><li>$2^{-2} = \\frac{1}{2} : 2 = \\frac{1}{4} = \\frac{1}{2^2}$</li><li>$2^{-3} = \\frac{1}{8} = \\frac{1}{2^3}$</li></ul><h4>Yleiset laskusäännöt</h4><p>$$\\mathbf{a^{-n} = \\frac{1}{a^n}} \\qquad \\text{ja murtoluvuilla} \\qquad \\mathbf{\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n}$$</p><p><em>Negatiivinen eksponentti kääntää kantaluvun ympäri käänteisluvukseen ja vaihtaa samalla eksponentin positiiviseksi!</em></p><p><strong>Esimerkki:</strong> $\\left(\\frac{2}{3}\\right)^{-2} = \\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4} = 2\\frac{1}{4}$</p>",
       "tasks": {
         "warmup": "s. 21: T1 - 3, 8 - 10, s. 23: T1 - 6",
         "blue": "s. 74: T42 - 44, s. 23: T10 - 13",
         "red": "s. 21: T15, s. 23: T16 - 18, s. 74: T45, T57"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Matematiikan suuri arvoitus: Mitä on nolla potenssiin nolla ($0^0$)?",
+        "content": "<h4>Kahden säännön yhteentörmäys</h4><p>Mitä tapahtuu, kun lasketaan $0^0$? Tässä kaksi matematiikan perustavanlaatuista sääntöä joutuu tukkanuottasille:</p><ol><li>Sääntö A: <em>Mikä tahansa luku potenssiin nolla on $1$</em> ($x^0 = 1$). Tämän mukaan $0^0 = 1$.</li><li>Sääntö B: <em>Nolla mihin tahansa potenssiin on $0$</em> ($0^x = 0$). Tämän mukaan $0^0 = 0$.</li></ol><h4>Määrittelemätön arvo</h4><p>Matematiikan analyysissä lauseketta $0^0$ pidetään <strong>määrittelemättömänä (epämääräisenä muotona)</strong>, koska siihen voidaan päätyä eri raja-arvoilla tuottaen eri tuloksia. Kuitenkin algebrassa ja ohjelmoinnissa (kuten Pythonissa <code>0**0</code>) tulokseksi on sovittu kätevyyssyistä $1$, jotta polynomikaavat ja binomilause toimivat saumattomasti!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kokeile kirjoittaa puhelimesi laskimeen $0^0$. Osa laskimista antaa vastaukseksi $1$, kun taas toiset ilmoittavat virheestä (Error tai Määrittelemätön)!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Negatiiviset eksponentit ja käänteisluvut",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 7,
       "topic": "Kymmenpotenssit ja etuliitteet",
+      "title": "Kymmenpotenssit ja SI-etuliitteet",
       "content": "KS aihe 7. Lukujen esittäminen kymmenpotenssimuodossa ja kymmenpotenssien etuliitteet (kilo, mega, giga, mikro, nano jne.).",
+      "summary": "Suurten ja pienten lukujen ilmoittaminen kymmenpotensseina, tuhaterottimet sekä kansainväliset SI-etuliitteet.",
+      "theory": "<p>Tieteen ja tekniikan luvut voivat olla valtavia (maapallon massa) tai mikroskooppisen pieniä (atomin koko). Tällaisten lukujen kirjoittaminen pitkässä muodossa johtaa nollien sekamelskaan ja laskuvirheisiin. Avuksi otetaan <strong>kymmenpotenssimuoto</strong>:</p><h4>Kymmenpotenssit positiivisilla eksponenteilla</h4><table class=\"styled-table\"><thead><tr><th>Luku</th><th>Kymmenpotenssina</th><th>Nimi</th><th>Etuliite (tunnus)</th></tr></thead><tbody><tr><td>$1\\,000$</td><td>$10^3$</td><td>tuhat</td><td>kilo- ($k$)</td></tr><tr><td>$1\\,000\\,000$</td><td>$10^6$</td><td>miljoona</td><td>mega- ($M$)</td></tr><tr><td>$1\\,000\\,000\\,000$</td><td>$10^9$</td><td>miljardi</td><td>giga- ($G$)</td></tr><tr><td>$1\\,000\\,000\\,000\\,000$</td><td>$10^{12}$</td><td>biljoona</td><td>tera- ($T$)</td></tr></tbody></table><h4>Kymmenpotenssit negatiivisilla eksponenteilla</h4><table class=\"styled-table\"><thead><tr><th>Luku</th><th>Kymmenpotenssina</th><th>Nimi</th><th>Etuliite (tunnus)</th></tr></thead><tbody><tr><td>$0{,}01$</td><td>$10^{-2}$</td><td>sadasosa</td><td>sentti- ($c$)</td></tr><tr><td>$0{,}001$</td><td>$10^{-3}$</td><td>tuhannesosa</td><td>milli- ($m$)</td></tr><tr><td>$0{,}000\\,001$</td><td>$10^{-6}$</td><td>miljoonasosa</td><td>mikro- ($\\mu$)</td></tr><tr><td>$0{,}000\\,000\\,001$</td><td>$10^{-9}$</td><td>miljardisosa</td><td>nano- ($n$)</td></tr><tr><td>$0{,}000\\,000\\,000\\,001$</td><td>$10^{-12}$</td><td>pikosa</td><td>piko- ($p$)</td></tr></tbody></table><h4>Tuhaterottimien käyttö</h4><p>Kun kirjoitat suuria lukuja pitkässä muodossa, jaa nollat aina <strong>kolmen ryhmiin välilyönnillä</strong>: kirjoita $1\\,000\\,000\\,000$ mieluummin kuin $1000000000$. Ihmissilmä hahmottaa välilyönneistä heti: 3 ryhmää = 9 nollaa = miljardi!</p>",
       "tasks": {
         "warmup": "s. 25: T1 - 3, s. 27: T17, 18",
         "blue": "s. 25: T8, s. 27: T19, 20, s. 75: T61, 62, 67, 68",
         "red": "s. 25: T9, s. 27: T14, 21 - 24, s. 75: T65, 71"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Powers of Ten: Matka kvarkeista havaittavan universumin laidoille",
+        "content": "<h4>Klassikkoelokuva mittakaavoista</h4><p>Vuonna 1977 legendaariset muotoilijat Charles ja Ray Eames loivat lyhytelokuvan <em>Powers of Ten</em>. Elokuva alkaa nurmikolla piknikillä makaavasta miehestä ($10^0 = 1\\text{ m}$). Joka 10 sekunti kamera vetäytyy kymmenpotenssin verran kauemmas:</p><ul><li>$10^2\\text{ m}$ (urheilukenttä) $\\to 10^7\\text{ m}$ (koko maapallo) $\\to 10^{13}\\text{ m}$ (aurinkokunta) $\\to 10^{21}\\text{ m}$ (Linnunrata) $\\to 10^{26}\\text{ m}$ (koko havaittava universumi).</li></ul><p>Tämän jälkeen kamera palaa takaisin ja sukeltaa miehen käden ihoon:</p><ul><li>$10^{-3}\\text{ m}$ (ihosolut) $\\to 10^{-7}\\text{ m}$ (DNA-kaksoiskierre) $\\to 10^{-10}\\text{ m}$ (hiiliatomi) $\\to 10^{-15}\\text{ m}$ (protoni) $\\to 10^{-18}\\text{ m}$ (kvarkit).</li></ul><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietotekniikan tallennustilassa käytetään samoja etuliitteitä: $1\\text{ TB}$ (teratavu) kiintolevy sisältää biljoona tavua eli $10^{12}$ tavua dataa!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Lukujen mittakaavat ja kymmenpotenssit",
+        "url": "https://phet.colorado.edu/fi/simulations/expression-evaluator"
+      }
     },
     {
       "lesson": 8,
       "topic": "Neliöjuuri",
+      "title": "Neliöjuuri ja sen ominaisuudet",
       "content": "KS aihe 8. Neliöjuuren käsite potenssilaskun käänteistoimituksena, neliöjuurimerkki ja laskujärjestys.",
+      "summary": "Neliöjuuri toiseen potenssiin korottamisen käänteistoimituksena, neliöjuurimerkki, määrittelyalue ja laskujärjestys.",
+      "theory": "<p>Voisiko potenssin eksponentti olla murtoluku, kuten $\\frac{1}{2}$? Kyllä! Sitä kutsutaan <strong>neliöjuureksi</strong>:</p><p>$$\\sqrt{a} = a^{\\frac{1}{2}}$$</p><h4>Neliöjuuri on potenssin 2 käänteistoimitus</h4><p>Neliöjuuri vastaa kysymykseen: <em>'Mikä positiivinen luku kerrottiin itsellään, jotta saatiin tämä tulos?'</em></p><table class=\"styled-table\"><thead><tr><th>Potenssilasku</th><th>Neliöjuuri</th><th>Perustelu</th></tr></thead><tbody><tr><td>$5^2 = 25$</td><td>$\\sqrt{25} = 5$</td><td>Koska $5 \\cdot 5 = 25$</td></tr><tr><td>$7^2 = 49$</td><td>$\\sqrt{49} = 7$</td><td>Koska $7 \\cdot 7 = 49$</td></tr><tr><td>$12^2 = 144$</td><td>$\\sqrt{144} = 12$</td><td>Koska $12 \\cdot 12 = 144$</td></tr></tbody></table><h4>Tärkeä rajoitus: Negatiivisen luvun neliöjuuri</h4><p><em>Negatiivisesta luvusta ei voi laskea reaalista neliöjuurta</em>, koska minkään luvun toinen potenssi ei ole negatiivinen ($(-4)^2 = +16$ ja $4^2 = +16$).</p><ul><li>$\\sqrt{-16}$ $\\to$ <strong>ei määritelty</strong> reaaliluvuilla!</li><li>$-\\sqrt{16} = -4$ (miinus on juuren ulkopuolella, täysin sallittu!)</li><li>$\\sqrt{-(-36)} = \\sqrt{36} = 6$ (miinus miinuksesta tulee plus juuren sisällä!)</li></ul><h4>Laskujärjestys</h4><p>Koska neliöjuuri on potenssilasku, se suoritetaan <strong>heti sulkujen jälkeen ennen kerto- ja jakolaskua</strong>:</p><p>$$3 \\cdot \\sqrt{16} + 5 = 3 \\cdot 4 + 5 = 12 + 5 = 17$$</p>",
       "tasks": {
         "warmup": "s. 29: T2 - 5, s. 31: T1 - 5",
         "blue": "s. 31: T7, 8, 10 - 13, s. 77: T83, 84",
         "red": "s. 31: T14, 16, 17 - 20, s. 76 - 77: T76, 86, 87"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Hippasos ja $\\sqrt{2}$: Murhattiinko matemaatikko irrationaaliluvun takia?",
+        "content": "<h4>Pythagoralaisten pyhä geometria</h4><p>Antiikin Kreikassa noin 500 eaa. <strong>Pythagoras</strong> ja hänen uskonnollisen kaltainen veljeskuntansa uskoivat, että maailmankaikkeuden perimmäinen olemus on kokonaisluvuissa ja niiden suhteissa (murtoluvuissa). Kaikki asiat olivat heille harmoniaa ja murtolukuja.</p><h4>Luku, joka järkytti antiikin maailmaa</h4><p>Veljeskuntaan kuulunut <strong>Hippasos Metapontionlainen</strong> alkoi tutkia neliötä, jonka sivun pituus on $1$. Pythagoraan lauseen mukaan sen lävistäjän pituus on $\\sqrt{1^2 + 1^2} = \\sqrt{2}$. Hippasos todisti matemaattisesti, että $\\sqrt{2}$ ei voida <em>koskaan</em> esittää minkään kahden kokonaisluvun murtolukuna $\\frac{a}{b}$!</p><p>Legenda kertoo, että pythagoralaiset olivat niin järkyttyneitä tämän <strong>irrationaaliluvun</strong> olemassaolosta, että he heittivät Hippasoksen laivasta mereen hukutettavaksi salaisuuden suojelemiseksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Neliöjuuren merkki $\\sqrt{}$ kehitettiin 1500-luvulla latinan kielen sanan <em>radix</em> (juuri) pienestä r-kirjaimesta, jonka yläviiva pidennettiin suojaamaan laskettavaa lukua!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Neliöjuuri ja neliön geometrinen pinta-ala",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 9,
       "topic": "Polynomi",
+      "title": "Polynomit ja niiden asteluku",
       "content": "KS aihe 9. Polynomin käsite: monomi, binomi, trinomi. Polynomin asteluku ja termien järjestäminen korkeimman asteen mukaan.",
+      "summary": "Polynomin määritelmä, luokittelu termien määrän mukaan (monomi, binomi, trinomi), asteluku ja järjestäminen laskevaan järjestykseen.",
+      "theory": "<p>Kurssilla MA_73 opimme käsittelemään lausekkeita kuten $3a$ tai $2x - 5y + 7$. Nyt syvennämme tätä ja tutkimme yhtä matematiikan tärkeimmistä lausekeluokista: <strong>polynomeja</strong>.</p><h4>Mikä on polynomi?</h4><p><strong>Polynomi</strong> on summalauseke, jonka termeissä muuttujat ovat vain osoittajassa (muuttuja ei koskaan esiinny jakajana nimittäjässä!) ja muuttujien eksponentit ovat ei-negatiivisia kokonaislukuja.</p><ul><li>$3x^2 + 5x - 7$ on polynomi.</li><li>$\\frac{5}{x}$ <strong>ei ole polynomi</strong> (muuttuja nimittäjässä!).</li></ul><h4>Polynomien alaluokat termien määrän mukaan</h4><ul><li><strong>Monomi</strong>: 1 termi (esim. $5x^3$, $-7a$, $12$)</li><li><strong>Binomi</strong>: 2 termiä (esim. $3x + 4$, $a^2 - b^2$)</li><li><strong>Trinomi</strong>: 3 termiä (esim. $x^2 - 5x + 6$)</li><li>Yleisesti 4 tai useamman termin lausekkeita kutsutaan vain <strong>polynomiksi</strong>.</li></ul><h4>Polynomin asteluku</h4><p>Polynomin <strong>aste (asteluku)</strong> on sen sisältämien muuttujatermien <strong>suurin eksponentti</strong>:</p><ul><li>Polynomin $x^3 - 2x^2 + 5x - 1$ aste on <strong>$3$</strong> (kolmannen asteen polynomi).</li><li>Polynomin $7x + 2$ aste on <strong>$1$</strong> (ensimmäisen asteen polynomi, koska $x = x^1$).</li><li>Pelkän vakiotermin $15$ aste on <strong>$0$</strong> (nolla-asteinen polynomi).</li></ul><h4>Polynomin järjestäminen</h4><p>Polynomit kirjoitetaan aina <strong>laskevassa järjestyksessä</strong> korkeimmasta eksponentista alkaen, vakiotermi aina viimeisenä:</p><p>$$-5x + 11 - 2x^2 + x^3 \\implies x^3 - 2x^2 - 5x + 11$$</p>",
       "tasks": {
         "warmup": "s. 39: T1 - 3, 6 - 8",
         "blue": "s. 78: T98 - 101",
         "red": "s. 78: T102 - 106"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Algebran peruslause: Miksi polynomin aste määrää kaiken?",
+        "content": "<h4>Montako ratkaisua polynomiyhtälöllä voi olla?</h4><p>Vuonna 1799 matemaatikkojen kuningas <strong>Carl Friedrich Gauss</strong> todisti väitöskirjassaan yhden matematiikan historian upeimmista lauseista: <strong>Algebran peruslauseen</strong>.</p><h4>Asteluku kertoo ratkaisujen määrän</h4><p>Lause sanoo, että jokaisella $n$-asteisella polynomiyhtälöllä on kompleksilukujen joukossa <em>täsmälleen $n$ kappaletta ratkaisuja (juuria)</em>:</p><ul><li>1. asteen yhtälöllä $ax + b = 0$ on aina <strong>1 ratkaisu</strong>.</li><li>2. asteen yhtälöllä $ax^2 + bx + c = 0$ on aina <strong>2 ratkaisua</strong>.</li><li>3. asteen yhtälöllä on aina <strong>3 ratkaisua</strong>.</li></ul><p>Pelkästään katsomalla polynomin korkeinta eksponenttia tiedät välittömästi, kuinka monta nollakohtaa sen kuvaajalla voi enintään olla!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sanan <em>polynomi</em> etuliite <em>poly-</em> tulee kreikan kielen sanasta $\\pi o \\lambda \\acute{\\upsilon}\\varsigma$ (polys), joka tarkoittaa 'monia', ja loppuosa latinan sanasta <em>nomen</em> (nimi tai termi). Polynomi tarkoittaa siis 'monitermistä'!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Polynomien asteluvut ja kuvaajat",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 10,
       "topic": "Sieventäminen",
+      "title": "Polynomien sieventäminen",
       "content": "KS aihe 10. Samanmuotoisten termien yhdistäminen ja polynomien sieventäminen.",
+      "summary": "Samanasteisten ja samanmuotoisten muuttujatermien yhdistäminen, etumerkkien huomioiminen ja lopputuloksen järjestäminen.",
+      "theory": "<p>Polynomien sieventäminen noudattaa täsmälleen samoja lakeja kuin MA_73-kurssilla opittu termien yhdistäminen: <strong>vain samanmuotoisia termejä voi laskea yhteen tai vähentää</strong>!</p><h4>Milloin polynomien termit ovat samanmuotoisia?</h4><p>Polynomin termeissä muuttujakirjaimen lisäksi myös <strong>eksponentin on oltava täsmälleen sama</strong>:</p><ul><li>$3x^2$ ja $5x^2$ <strong>ovat samanmuotoisia</strong> $\\implies 3x^2 + 5x^2 = 8x^2$</li><li>$4x^2$ ja $4x$ <strong>eivät ole samanmuotoisia</strong> (asteet 2 ja 1), ei voi laskea yhteen!</li><li>$6xy$ ja $-2xy$ ovat samanmuotoisia $\\implies 6xy - 2xy = 4xy$</li></ul><h4>Malliesimerkki sieventämisestä</h4><p>Sievennä polynomi $4x^2 - 3x + 7 - x^2 + 5x - 2$:</p><ol><li>Ryhmitellään samanmuotoiset termit alenevassa järjestyksessä:<br>$$= (4x^2 - x^2) + (-3x + 5x) + (7 - 2)$$</li><li>Lasketaan kertoimet yhteen kussakin ryhmässä:<br>$$= 3x^2 + 2x + 5$$</li></ol><p>Lopputulos on siisti toisen asteen trinomi, jota ei voi enää laskea enempää yhteen.</p>",
       "tasks": {
         "warmup": "s. 41: T2 - 5",
         "blue": "s. 43: T18, 19, 21 - 24, s. 80: T121, 122",
         "red": "s. 43: T25 - 29, s. 80: T124, 126"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "CAS-ohjelmistot: Miten tietokone sieventää tuhansien termien polynomeja?",
+        "content": "<h4>Symbolinen laskenta tietokoneessa</h4><p>Tavallinen laskin muuttaa kaiken desimaaliluvuiksi, mutta <strong>CAS-ohjelmistot</strong> (Computer Algebra Systems, kuten GeoGebra CAS, Mathematica ja SymPy) osaavat sieventää kirjaimia ja polynomeja täsmälleen kuten ihminen paperilla.</p><h4>Miten algoritmi tunnistaa samanmuotoisuuden?</h4><p>Tietokoneessa polynomi tallennetaan tietorakenteena, jossa jokaiselle termille tallennetaan sen kerroin ja eksponentti. Algoritmi lajittelee termit eksponenttien mukaan, ryhmittelee samat eksponentit yhteen ja laskee kertoimet yhteen silmänräpäyksessä – oli termejä sitten viisi tai viisikymmentätuhatta!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nykyaikaiset tietokoneanimaatiot (kuten Pixar-elokuvien hahmot) käyttävät <em>Bézier-käyriä</em> ja <em>spline-polynomeja</em> hahmojen sileiden pintojen ja vaatteiden laskostumisen mallintamiseen!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Polynomien sieventäminen ja yhdistäminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 11,
       "topic": "Polynomin arvo",
+      "title": "Polynomin nimeäminen ja arvon laskeminen",
       "content": "KS aihe 11. Polynomin nimeäminen P(x) ja lukuarvon laskeminen sijoittamalla muuttujan paikalle annettu arvo.",
+      "summary": "Polynomin nimeäminen isoilla kirjaimilla P(x), muuttujan arvon sijoittaminen suluissa ja polynomin arvon laskeminen.",
+      "theory": "<p>Kun tarkastellaan samanaikaisesti useita eri polynomeja, ne on kätevää nimetä isoilla kirjaimilla kuten $P, Q, R$. Nimen perään merkitään sulkuihin polynomin käyttämä muuttuja:</p><ul><li>$P(x) = 2x^2 - 3x + 5$ (trinomi, jonka muuttuja on $x$)</li><li>$Q(x) = -4x^3$ (monomi, jonka muuttuja on $x$)</li><li>$R(a, b) = 3a - 5b$ (binomi, jossa kaksi muuttujaa $a$ ja $b$)</li></ul><h4>Polynomin arvon laskeminen</h4><p>Merkintä $P(2)$ tarkoittaa: <em>'Laske polynomin $P$ arvo, kun muuttujan $x$ paikalle sijoitetaan luku $2$!'</em></p><p><strong>Esimerkki 1:</strong> Olkoon $P(x) = 2x^2 - 3x + 5$. Laske $P(2)$.</p><p>$$P(2) = 2 \\cdot 2^2 - 3 \\cdot 2 + 5 = 2 \\cdot 4 - 6 + 5 = 8 - 6 + 5 = 7$$</p><p><strong>Esimerkki 2 (Negatiivinen sijoitus, muista sulut!):</strong> Laske $P(-3)$.</p><p>$$P(-3) = 2 \\cdot (-3)^2 - 3 \\cdot (-3) + 5 = 2 \\cdot 9 + 9 + 5 = 18 + 9 + 5 = 32$$</p><p><em>Muista: $(-3)^2 = +9$ ja $-3 \\cdot (-3) = +9$!</em></p>",
       "tasks": {
         "warmup": "s. 45: T1 - 3",
         "blue": "s. 45: T4 - 7, s. 80: T127 - 130",
         "red": "s. 45: T10 - 14, s. 80: T132, 133, 135, 136"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Leonhard Euler ja funktionotaation $f(x)$ synty",
+        "content": "<h4>Kaikkien aikojen tuotteliain matemaatikko</h4><p>Sveitsiläinen <strong>Leonhard Euler</strong> (1707–1783) julkaisi elämänsä aikana yli 800 tieteellistä tutkimusta. Hän keksi lähes kaikki nykymatematiikan keskeiset merkinnät: $\\pi$, $e$, $i$, $\\Sigma$ (summa) ja erityisesti <strong>funktionotaation $f(x)$ ja $P(x)$</strong> vuonna 1734.</p><h4>Miksi notaatio oli niin nerokas?</h4><p>Ennen Euleria matemaatikot joutuivat kirjoittamaan sanallisesti: 'Tarkastellaan lauseketta $2x^2 - 3x + 5$, johon sijoitetaan luku $3$'. Eulerin ansiosta tämä voitiin tiivistää kahteen merkkiin: <strong>$P(3)$</strong>! Tämä säästi valtavasti tilaa ja teki matematiikasta universaalia kieltä yli maarajojen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Euler jatkoi tutkimustensa tekemistä ja kirjojen sanelemista ulkomuistista vielä tultuaan elämänsä loppupuolella täysin sokeaksi!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Polynomin arvo ja funktion kuvaaja",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 12,
       "topic": "Polynomien yhteen- ja vähennyslasku",
+      "title": "Polynomien summa ja erotus",
       "content": "KS aihe 12. Kahden tai useamman polynomin yhteen- ja vähennyslasku sekä sulkujen poistaminen etumerkkisääntöjä noudattaen.",
+      "summary": "Polynomien merkitseminen suluilla, yhteenlasku, vähennyslasku ja kaikkien sulkujen sisäisten etumerkkien vaihtaminen miinuksen edellä.",
+      "theory": "<p>Kun lasketaan yhteen tai vähennetään useita polynomeja, <strong>jokainen polynomi laitetaan aina aluksi omiin sulkuihinsa</strong>!</p><p>Olkoon $P(x) = 3x^2 - 4x + 1$ ja $Q(x) = 2x^2 + 5x - 6$.</p><h4>1. Polynomien yhteenlasku (Summa)</h4><p>$$P(x) + Q(x) = (3x^2 - 4x + 1) + (2x^2 + 5x - 6)$$</p><p>Kun sulkujen edessä on plus-merkki, sulut voidaan poistaa suoraan muuttamatta mitään etumerkkejä:</p><p>$$= 3x^2 - 4x + 1 + 2x^2 + 5x - 6$$</p><p>$$= (3x^2 + 2x^2) + (-4x + 5x) + (1 - 6) = 5x^2 + x - 5$$</p><h4>2. Polynomien vähennyslasku (Erotus)</h4><p>$$P(x) - Q(x) = (3x^2 - 4x + 1) - (2x^2 + 5x - 6)$$</p><p><em>Varoitus: Miinusmerkki sulkujen edessä vaihtaa KAIKKIEN sulun sisällä olevien termien etumerkit päinvastaisiksi!</em></p><ul><li>$+2x^2 \\to -2x^2$</li><li>$+5x \\to -5x$</li><li>$-6 \\to +6$</li></ul><p>Kirjoitetaan auki ja sievennetään:</p><p>$$= 3x^2 - 4x + 1 - 2x^2 - 5x + 6$$</p><p>$$= (3x^2 - 2x^2) + (-4x - 5x) + (1 + 6) = x^2 - 9x + 7$$</p>",
       "tasks": {
         "warmup": "s. 49: T1 - 3, s. 51: T1, 3, 4",
         "blue": "s. 82: T151 - 154",
         "red": "s. 51: T14, s. 82: T155, s. 53: T8, 12, 14"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Talousmatematiikka: Voitto on tulojen ja menojen erotus",
+        "content": "<h4>Yrityksen tuloslaskelma polynomimuodossa</h4><p>Taloustieteessä yrityksen saamat tulot voidaan mallintaa myyntimäärän $x$ funktiona tulopolynomina $T(x)$, ja valmistuskustannukset menopolynomina $M(x)$:</p><ul><li>$T(x) = 50x$ (myyntihinta $50\\text{ €}$ per tuote)</li><li>$M(x) = 2x^2 + 10x + 100$ (kustannukset raaka-aineista, palkoista ja kiinteistä kuluista)</li></ul><p>Yrityksen voitto $V(x)$ saadaan vähentämällä menot tuloista:</p><p>$$V(x) = T(x) - M(x) = 50x - (2x^2 + 10x + 100) = -2x^2 + 40x - 100$$</p><p>Jos sulkujen etumerkin vaihto unohtuu, yritys luulee tekevänsä satojentuhansien voittoa, vaikka onkin todellisuudessa syöksymässä konkurssiin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lukion taloustiedossa ja kauppatieteissä polynomien erotuksista lasketaan optimituotantomääriä derivaatan nollakohtien avulla!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Polynomien summa ja erotus",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 13,
       "topic": "Polynomien kerto- ja jakolasku",
+      "title": "Polynomien kerto- ja jakolasku",
       "content": "KS aihe 13. Monomin kertominen ja jakaminen monomilla, monomin kertominen polynomilla sekä kahden polynomin kertolasku.",
+      "summary": "Monomien tulo ja osamäärä, sulkujen avaaminen monomilla kertomalla sekä binomien kertolasku (kaikki kerrotaan kaikilla).",
+      "theory": "<p>Tarkastellaan viimeiseksi polynomien kerto- ja jakolaskuja, jotka jaetaan kolmeen selkeään vaiheeseen:</p><h4>1. Monomin kertominen ja jakaminen monomilla</h4><p>Kertoimet kerrotaan keskenään ja muuttujille käytetään potenssisääntöjä $a^m \\cdot a^n = a^{m+n}$ ja $\\frac{a^m}{a^n} = a^{m-n}$:</p><ul><li>$$2x \\cdot 3x = (2 \\cdot 3) \\cdot (x \\cdot x) = 6x^2$$</li><li>$$3a^3 \\cdot (-5a^2) = 3 \\cdot (-5) \\cdot a^{3+2} = -15a^5$$</li><li>$$-ab^3 \\cdot (-2a^3b^2) = (-1) \\cdot (-2) \\cdot a^{1+3} \\cdot b^{3+2} = 2a^4b^5$$</li><li>$$\\frac{18a}{6} = 3a$$</li><li>$$\\frac{21x^3}{-7x} = -3x^{3-1} = -3x^2$$</li></ul><h4>2. Monomin kertominen polynomilla</h4><p>Monomilla kerrotaan sulkujen sisällä olevat termit <strong>jokainen erikseen</strong>:</p><p>$$3x(2x - 5) = 3x \\cdot 2x + 3x \\cdot (-5) = 6x^2 - 15x$$</p><p>$$-2a^2(3a^2 - 4a + 1) = -6a^4 + 8a^3 - 2a^2$$</p><h4>3. Kahden polynomin kertominen (Kaikki kerrotaan kaikilla!)</h4><p>Kun kerrotaan kaksi binomia $(x + 3)(x - 4)$, ensimmäisen sulun jokainen termi kerrotaan toisen sulun jokaisella termillä:</p><p>$$(x + 3)(x - 4) = x \\cdot x + x \\cdot (-4) + 3 \\cdot x + 3 \\cdot (-4)$$</p><p>$$= x^2 - 4x + 3x - 12$$</p><p>Lopuksi yhdistetään samanmuotoiset keskimmäiset termit:</p><p>$$= x^2 - x - 12$$</p>",
       "tasks": {
         "warmup": "s. 55: T2 - 4, s. 57: T1, 2",
         "blue": "s. 57: T4, 5, s. 84: T176, 177",
         "red": "s. 55: T6, s. 57: T9, s. 59: T1 - 3"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "FOIL-menetelmä ja geometrinen pinta-ala",
+        "content": "<h4>Miten binomien tulo piirretään paperille?</h4><p>Englanninkielisessä maailmassa kahden binomin tulon $(a+b)(c+d)$ muistisääntönä käytetään sanaa <strong>FOIL</strong>: <strong>F</strong>irst (ensimmäiset), <strong>O</strong>uter (ulommaiset), <strong>I</strong>nner (sisäiset), <strong>L</strong>ast (viimeiset).</p><h4>Suorakulmion pinta-alamalli</h4><p>Geometrisesti tulo $(a + b)(c + d)$ on suorakulmion pinta-ala, jonka sivujen pituudet ovat $a + b$ ja $c + d$. Jos jaat tämän suorakulmion neljään pienempään lohkoon, lohkojen pinta-alat ovat $ac$, $ad$, $bc$ ja $bd$! Koko suorakulmion ala on näiden neljän lohkon summa:</p><p>$$(a + b)(c + d) = ac + ad + bc + bd$$</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tätä geometrista suorakulmiomallia käytti jo Eukleides yli 2300 vuotta sitten geometrisessa algebrassan, ennen kuin nykyisiä algebrallisia kirjaimia oli edes keksitty!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Polynomien kertolasku ja pinta-alamalli",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
   ]
 }

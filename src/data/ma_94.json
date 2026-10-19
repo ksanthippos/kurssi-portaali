@@ -5,68 +5,134 @@
     {
       "lesson": 1,
       "topic": "Kertaus ja johdanto",
+      "title": "Pythagoraasta yhdenmuotoisuuteen ja kulmiin",
       "content": "KS aihe 1. Pythagoraan lauseen ja yhdenmuotoisuuden kertausta. Suorakulmaisen kolmion kateettien ja hypotenuusan suhteet.",
+      "summary": "Suorakulmaisen kolmion kateetit ja hypotenuusa, yhdenmuotoisuus sekä vastaisen ja viereisen kateetin käsitteet kulman näkökulmasta.",
+      "theory": "<p>Tervetuloa trigonometrian maailmaan! Sana <strong>trigonometria</strong> tulee kreikan kielen sanoista <em>trigonon</em> (kolmio) ja <em>metron</em> (mitta). Se yhdistää kolmion sivujen pituudet ja kulmien suuruudet toisiinsa.</p><h4>Kertaus: Pythagoraan lause ja sen rajoitus</h4><p>Kurssilta MA_82 muistamme, että suorakulmaisessa kolmiossa pätee $a^2 + b^2 = c^2$. Mutta Pythagoraan lauseella on suuri heikkous: <strong>sen käyttäminen vaatii aina kaksi tunnettua sivua</strong>, eikä se kerro mitään kolmion kulmista!</p><h4>Sivujen nimeäminen terävän kulman suhteen</h4><p>Kun tarkastellaan suorakulmaisen kolmion terävää kulmaa $\\alpha$:</p><ul><li><strong>Vastainen kateetti</strong>: Kateetti, joka sijaitsee suoraan kulmaa $\\alpha$ vastapäätä ('vastakkaisella puolella').</li><li><strong>Viereinen kateetti</strong>: Kateetti, joka koskettaa kulmaa $\\alpha$ ja muodostaa sen yhdessä hypotenuusan kanssa.</li><li><strong>Hypotenuusa</strong>: Suoran kulman vastainen pisin sivu (on aina molempien terävien kulmien vieressä).</li></ul><p><em>Huomaa: Jos vaihdat tarkasteltavaa kulmaa kolmion toiseen terävään kulmaan $\\beta$, kateettien roolit vaihtuvat päinvastaisiksi!</em></p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Hipparkhos ja tähtitaivaan jänteet: Miten trigonometria syntyi?",
+        "content": "<h4>Tähtitieteilijän mittakaavaongelma</h4><p>Noin 150 eaa. kreikkalainen tähtitieteilijä <strong>Hipparkhos Nikealainen</strong> halusi kartoittaa tähtien ja planeettojen liikkeitä taivaankannella. Taivaankappaleiden etäisyyksiä ei voinut mitata mittanauhalla, mutta niiden väliset kulmat voitiin mitata maasta käsin.</p><h4>Jänteiden taulukointi</h4><p>Hipparkhos laati historian ensimmäisen trigonometrisen taulukon: hän laski ympyrän jänteiden pituuksia eri keskuskulmilla. Hänen työtään jatkoi <strong>Klaudios Ptolemaios</strong> teoksessaan <em>Almagest</em>, jota käytettiin tähtitieteen ja merenkulun käsikirjana yli tuhat vuotta!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Hipparkhosta pidetään 'trigonometrian isänä'. Hänen kehittämiensä menetelmien avulla antiikin tähtitieteilijät pystyivät laskemaan kuun etäisyyden maasta vain muutaman prosentin tarkkuudella!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Suorakulmaisen kolmion sivut ja kulmat",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 2,
       "topic": "Trigonometriset funktiot",
+      "title": "Sini, kosini ja tangentti",
       "content": "KS aihe 2. Sini (sin), kosini (cos) ja tangentti (tan) suorakulmaisessa kolmiossa: vastainen/viereinen kateetti ja hypotenuusa.",
+      "summary": "Trigonometristen funktioiden määritelmät suorakulmaisessa kolmiossa: sin = vastainen/hypotenuusa, cos = viereinen/hypotenuusa ja tan = vastainen/viereinen.",
+      "theory": "<p>Yhdenmuotoisuudesta tiedämme, että jos kahdella suorakulmaisella kolmiolla on sama terävä kulma $\\alpha$, kolmiot ovat yhdenmuotoisia ja niiden vastinsivujen suhde on aina <strong>vakio</strong> kolmion koosta riippumatta!</p><p>Näille vakiintuneille suhteille on annettu omat kansainväliset nimet: <strong>sini, kosini ja tangentti</strong>.</p><h4>Trigonometriset määritelmät kulmalle $\\alpha$:</h4><ol><li><strong>Sini ($\sin$)</strong>: Vastaisen kateetin suhde hypotenuusaan:<br>$$\\mathbf{\\sin \\alpha = \\frac{\\text{vastainen kateetti}}{\\text{hypotenuusa}}}$$</li><li><strong>Kosini ($\cos$)</strong>: Viereisen kateetin suhde hypotenuusaan:<br>$$\\mathbf{\\cos \\alpha = \\frac{\\text{viereinen kateetti}}{\\text{hypotenuusa}}}$$</li><li><strong>Tangentti ($\tan$)</strong>: Vastaisen kateetin suhde viereiseen kateettiin:<br>$$\\mathbf{\\tan \\alpha = \\frac{\\text{vastainen kateetti}}{\\text{viereinen kateetti}}}$$</li></ol><h4>Esimerkki</h4><p>Kolmion kateetit ovat $3\\text{ cm}$ ja $4\\text{ cm}$, ja hypotenuusa on $5\\text{ cm}$. Kulman $\\alpha$ vastainen kateetti on $3$ ja viereinen $4$:</p><ul><li>$\\sin \\alpha = \\frac{3}{5} = 0{,}6$</li><li>$\\cos \\alpha = \\frac{4}{5} = 0{,}8$</li><li>$\\tan \\alpha = \\frac{3}{4} = 0{,}75$</li></ul>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "SOH-CAH-TOA: Maailman suosituin matematiikan muistisääntö",
+        "content": "<h4>Miten kaavat muistaa aina oikein?</h4><p>Englanninkielisessä maailmassa jokainen koululainen oppii ulkoa intiaanipäällikön nimeä muistuttavan sanan <strong>SOH-CAH-TOA</strong>:</p><ul><li><strong>SOH</strong>: $\\mathbf{S}\\text{in} = \\frac{\\mathbf{O}\\text{pposite}}{\\mathbf{H}\\text{ypotenuse}}$ (Sini = Vastainen / Hypotenuusa)</li><li><strong>CAH</strong>: $\\mathbf{C}\\text{os} = \\frac{\\mathbf{A}\\text{djacent}}{\\mathbf{H}\\text{ypotenuse}}$ (Kosini = Viereinen / Hypotenuusa)</li><li><strong>TOA</strong>: $\\mathbf{T}\\text{an} = \\frac{\\mathbf{O}\\text{pposite}}{\\mathbf{A}\\text{djacent}}$ (Tangentti = Vastainen / Viereinen)</li></ul><h4>Mistä sanat 'sini' ja 'kosini' tulevat?</h4><p>Sanan <em>sini</em> etymologia on uskomaton käännösvirheiden ketju: sanskritin jännettä tarkoittava sana <em>jya</em> kääntyi arabiaksi <em>jiba</em>, jonka eurooppalainen kääntäjä Gerardo Cremonalainen luki vuonna 1150 vahingossa sanaksi <em>jaib</em> (lahdenpoukama tai rinta) ja käänsi sen latinaksi <strong>sinus</strong> (poukama, poimu tai mutka)!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lääketieteessä ihmisen nenän sivuonteloita kutsutaan edelleen samalla latinankielisellä sanalla <em>sinus</em>!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Sini, kosini ja tangentti kolmiossa",
+        "url": "https://www.geogebra.org/m/e7wcmvsy"
+      }
     },
     {
       "lesson": 3,
       "topic": "Laskimen käyttö",
+      "title": "Trigonometria ja laskimen oikea käyttö",
       "content": "KS aihe 3. Trigonometristen funktioiden arvojen laskeminen laskimella (DEG-asetus) ja kulman selvittäminen käänteistoiminnoilla (SHIFT/ALT: sin⁻¹, cos⁻¹, tan⁻¹).",
+      "summary": "Laskimen DEG/RAD-asetuksen tarkistus, suhteiden laskeminen suorilla funktioilla ja kulman selvittäminen käänteistoiminnoilla sin⁻¹, cos⁻¹, tan⁻¹.",
+      "theory": "<p>Kaikissa funktiolaskimissa on näppäimet <code>sin</code>, <code>cos</code> ja <code>tan</code>. Niiden avulla kulmasta saadaan suoraan sivujen suhdeluku:</p><h4>1. Tarkista aina kulmayksikkö (DEG)!</h4><p><em>Varoitus: Varmista, että laskimesi yläreunassa lukee <strong>D tai DEG (Degrees = asteet)</strong>! Jos siinä lukee <strong>R tai RAD (radiaanit)</strong>, kaikki saamasi tulokset ovat täysin vääriä! Radiaanit kuuluvat vasta lukion matematiikkaan.</em></p><h4>2. Suhteiden näppäily laskimella</h4><ul><li>$\\sin 45^\\circ \\approx 0{,}707$</li><li>$\\cos 45^\\circ \\approx 0{,}707$ (kulmassa $45^\\circ$ sini ja kosini ovat yhtä suuret!)</li><li>$\\tan 45^\\circ = 1{,}000$ (koska kateetit ovat yhtä pitkät: $\\frac{a}{a} = 1$)</li><li>$\\sin 82^\\circ \\approx 0{,}990$</li><li>$\\cos 82^\\circ \\approx 0{,}140$</li><li>$\\tan 82^\\circ \\approx 7{,}115$ (tangentti voi olla mielivaltaisen suuri luku!)</li></ul><p><em>Huomaa: Sini ja kosini antavat suorakulmaisessa kolmiossa aina arvoja väliltä $0$ ja $1$, koska kateetti ei voi koskaan olla pidempi kuin hypotenuusa!</em></p><h4>3. Kulman selvittäminen käänteistoiminnolla (SHIFT / 2nd)</h4><p>Jos tiedetään suhde $\\sin \\alpha = 0{,}707$, kulma $\\alpha$ saadaan painamalla laskimesta <strong>SHIFT + SIN</strong> (näytöllä $\\sin^{-1}$):</p><p>$$\\alpha = \\sin^{-1}(0{,}707) \\approx \\mathbf{45^\\circ}$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miten laskin tietää sin(45°):n arvon? CORDIC-algoritmi",
+        "content": "<h4>Ei mittanauhaa prosessorin sisällä</h4><p>Kun painat laskimesta <code>sin 37</code>, miten mikrosirun transistorit tietävät oikean desimaaliluvun sekunnin murto-osassa? Taskulaskimen sisällä ei ole valmiiksi tallennettuna miljoonien kulmien taulukkoa.</p><h4>CORDIC-algoritmi (1959)</h4><p>Vuonna 1959 Jack Volder kehitti <strong>CORDIC-algoritmin</strong> (COordinate Rotation DIgital Computer) Convair-lentokoneiden navigointitietokoneisiin. Se laskee trigonometriset arvot pelkillä yhteenlaskuilla ja bittisiirroilla (potensseilla $2^{-n}$) pyörittämällä vektoria pienin esilasketuin kulmin askel askeleelta kohti kohdekulmaa. Tämä sama algoritmi toimii edelleen jokaisessa digitaalisessa laskimessa ja älykellossa!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ennen taskulaskimia (1970-luvulle saakka) insinöörit ja koululaiset etsivät trigonometriset arvot paksuista painetuista <em>matemaattisista taulukoista</em> (kuten MAOL-taulukon edeltäjistä)!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Trigonometristen funktioiden arvojen tutkiminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 4,
       "topic": "Sivun pituuden ratkaiseminen",
+      "title": "Sivun pituuden ratkaiseminen trigonometrialla",
       "content": "KS aihe 4. Kateetin ja hypotenuusan ratkaiseminen trigonometrisen yhtälön avulla.",
+      "summary": "Tuntemattoman sivun ratkaiseminen kulman ja yhden sivun avulla: muuttuja osoittajassa (kertolasku) ja muuttuja nimittäjässä (jako).",
+      "theory": "<p>Trigonometrian suurin hyöty on se, että <strong>yhden sivun ja yhden kulman avulla voidaan ratkaista kolmion kaikki muut sivut</strong>!</p><h4>Tapaus 1: Tuntematon sivu osoittajassa</h4><p>Suorakulmaisessa kolmiossa hypotenuusa on $5\\text{ m}$ ja kulma $\\alpha = 37^\\circ$. Halutaan ratkaista kulman vastainen kateetti $g$:</p><p>Valitaan funktio, joka yhdistää vastaisen kateetin ja hypotenuusan $\\implies \\mathbf{\\sin}$:</p><p>$$\\sin 37^\\circ = \\frac{g}{5} \\qquad // \\cdot 5$$</p><p>$$g = 5 \\cdot \\sin 37^\\circ \\approx 5 \\cdot 0{,}6018 \\approx \\mathbf{3{,}0\\text{ m}}$$</p><h4>Tapaus 2: Tuntematon sivu nimittäjässä (Hypotenuusan ratkaisu)</h4><p>Kulman $\\alpha = 37^\\circ$ viereinen kateetti on $4\\text{ m}$. Halutaan ratkaista hypotenuusa $h$:</p><p>Valitaan funktio, joka yhdistää viereisen kateetin ja hypotenuusan $\\implies \\mathbf{\\cos}$:</p><p>$$\\cos 37^\\circ = \\frac{4}{h} \\qquad // \\cdot h$$</p><p>$$h \\cdot \\cos 37^\\circ = 4 \\qquad // : \\cos 37^\\circ$$</p><p>$$h = \\frac{4}{\\cos 37^\\circ} \\approx \\frac{4}{0{,}7986} \\approx \\mathbf{5{,}0\\text{ m}}$$</p><p><em>Muistisääntö: Jos tuntematon on nimittäjässä, kerrotaan ensin tuntemattomalla ja jaetaan sitten trigonometrisella arvolla!</em></p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Struven ketju: Miten trigonometrialla mitattiin koko maapallo?",
+        "content": "<h4>Tornista torniin yli 2820 kilometriä</h4><p>Vuosina 1816–1855 tähtitieteilijä <strong>Friedrich Georg Wilhelm von Struve</strong> johti valtavaa kolmiomittausprojektia, joka ulottui Mustaltamereltä Pohjoiselle Jäämerelle Suomen halki (yhteensä 265 mittauspistettä, joista monet sijaitsevat Suomen vaarojen huipuilla).</p><h4>Miten mittaus tehtiin?</h4><p>Koko 2820 kilometrin matkalla mitattiin suoraan maastossa mittanauhalla vain muutama lyhyt perusviiva (kuten tasaisella pellolla). Kaikki loput satojen kilometrien etäisyydet laskettiin vuoren huipulta toiselle tähyilemällä kulmia teodoliitilla ja ratkaisemalla sivujen pituudet <strong>suoraan trigonometrisilla kaavoilla</strong>! Tämä todisti lopullisesti maapallon olevan navoiltaan litistynyt ellipsoidi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Struven ketju on nykyään UNESCOn maailmanperintökohde tieteen ja tekniikan historiassa. Yksi sen kuuluisista mittauspisteistä sijaitsee Jyväskylän Oravivuorella!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Kolmion sivujen ratkaiseminen trigonometrialla",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 5,
       "topic": "Kulman ratkaiseminen",
+      "title": "Terävän kulman ratkaiseminen käänteisfunktioilla",
       "content": "KS aihe 5. Terävän kulman suuruuden ratkaiseminen kahden tunnetun sivun ja käänteisfunktioiden (arkussini, arkuskosini, arkustangentti) avulla.",
+      "summary": "Kulman suuruuden selvittäminen kahdesta tunnetusta sivusta, käänteisfunktiot arkussini, arkuskosini ja arkustangentti (sin⁻¹, cos⁻¹, tan⁻¹).",
+      "theory": "<p>Jos suorakulmaisesta kolmiosta tunnetaan mitkä tahansa <strong>kaksi sivua</strong>, voidaan kolmion terävät kulmat ratkaista trigonometrian käänteisfunktioilla!</p><h4>Käänteisfunktiot (Lukko ja avain)</h4><p>Funktio ja sen käänteisfunktio kumoavat toisensa täsmälleen samalla tavalla kuin neliöjuuri kumoaa toisen potenssin ($\\sqrt{x^2} = x$):</p><ul><li>Sinin käänteisfunktio on <strong>arkussini</strong>: $\\sin^{-1}(\\sin \\beta) = \\beta$</li><li>Kosinin käänteisfunktio on <strong>arkuskosini</strong>: $\\cos^{-1}(\\cos \\beta) = \\beta$</li><li>Tangentin käänteisfunktio on <strong>arkustangentti</strong>: $\\tan^{-1}(\\tan \\beta) = \\beta$</li></ul><h4>Laskuesimerkki 1: Sini ja hypotenuusa</h4><p>Kolmion vastainen kateetti on $3\\text{ cm}$ ja hypotenuusa $5\\text{ cm}$. Ratkaise kulma $\\beta$:</p><p>$$\\sin \\beta = \\frac{3}{5} = 0{,}6 \\qquad // \\sin^{-1}$$</p><p>$$\\beta = \\sin^{-1}(0{,}6) \\approx \\mathbf{36{,}9^\\circ} \\approx 37^\\circ$$</p><h4>Laskuesimerkki 2: Tangentti ja kaksi kateettia</h4><p>Kulman vastainen kateetti on $2\\text{ m}$ ja viereinen kateetti $7\\text{ m}$. Ratkaise kulma $\\alpha$:</p><p>$$\\tan \\alpha = \\frac{2}{7} \\qquad // \\tan^{-1}$$</p><p>$$\\alpha = \\tan^{-1}\\left(\\frac{2}{7}\\right) \\approx \\mathbf{15{,}9^\\circ}$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Sekstantti ja valtameripurjehdus: Miten tähtiä katsomalla tiedettiin sijainti?",
+        "content": "<h4>Avomerellä ilman maamerkkejä</h4><p>Ennen satelliitteja ja radiomajakoita laivat purjehtivat viikkokausia aavalla valtamerellä näkemättä maata. Merikapteenin tärkein työkalu oli <strong>sekstantti</strong>: peileillä varustettu optinen mittalaite.</p><h4>Kulma horisontin ja Pohjantähden välillä</h4><p>Kapteeni tähtäsi sekstantilla keskipäivällä aurinkoon tai yöllä Pohjantähteen ja mittasi tähden kulmakorkeuden $\\alpha$ meren horisontista. Koska Pohjantähti sijaitsee suoraan maapallon pyörähdysakselin yläpuolella, sen <strong>kulmakorkeusasteet vastaavat suoraan laivan pohjoista leveyspiiriä</strong>! Trigonometristen taulukoiden avulla laivan paikka saatiin laskettua merimailin tarkkuudella.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sekstantti sai nimensä latinan sanasta <em>sextans</em> (kuudesosa), koska sen kaari kattaa täsmälleen kuudesosan ympyrästä eli $60^\\circ$!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Kulman ratkaiseminen trigonometrialla",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 6,
       "topic": "Taitojen soveltamista",
+      "title": "Trigonometrian ja geometrian yhdistäminen",
       "content": "KS aihe 6. Pythagoraan lauseen ja trigonometrian soveltaminen, tasasivuiset ja tasakylkiset kolmiot.",
+      "summary": "Kokonaisvaltainen päätöksentekomalli suorakulmaisen kolmion ratkaisemiseen, tasakylkisen kolmion puolittaminen ja monivaiheiset geometriset sovellukset.",
+      "theory": "<p>Nyt hallussasi on täydellinen työkalupakki minkä tahansa suorakulmaisen kolmion ratkaisemiseen. Tässä selkeä valintakaavio:</p><h4>Milloin mitäkin tekniikkaa käytetään?</h4><ol><li><strong>Tiedetään kaksi sivua, etsitään kolmatta sivua</strong> $\\implies$ <strong>Pythagoraan lause</strong> ($a^2 + b^2 = c^2$).</li><li><strong>Tiedetään yksi sivu ja yksi kulma, etsitään toista sivua</strong> $\\implies$ <strong>Trigonometrinen funktio</strong> ($\\sin, \\cos$ tai $\\tan$).</li><li><strong>Tiedetään kaksi sivua, etsitään kulmaa</strong> $\\implies$ <strong>Käänteisfunktio</strong> ($\\sin^{-1}, \\cos^{-1}$ tai $\\tan^{-1}$).</li></ol><h4>Tasakylkisen kolmion puolittaminen</h4><p>Monissa tehtävissä kolmio ei ole suorakulmainen, vaan esimerkiksi <strong>tasakylkinen kolmio</strong>. Tällöin kolmio <strong>puolitetaan korkeusjanalla kahdeksi identtiseksi suorakulmaiseksi kolmioksi</strong>:</p><p><em>Esimerkki:</em> Tasakylkisen kolmion kanta on $c = 4\\text{ cm}$ ja korkeus $h = 7\\text{ cm}$.</p><ol><li>Puolitetaan kanta: puolikas on $\\frac{4}{2} = 2\\text{ cm}$.</li><li>Ratkaistaan kylki $a$ Pythagoraalla:<br>$$a = \\sqrt{2^2 + 7^2} = \\sqrt{4 + 49} = \\sqrt{53} \\approx \\mathbf{7{,}28\\text{ cm}}$$</li><li>Kolmion piiri: $p = 4 + 2 \\cdot 7{,}28 = \\mathbf{18{,}56\\text{ cm} \\approx 18{,}6\\text{ cm}}$.</li><li>Ratkaistaan huippukulman puolikas $\\alpha$ tangentilla:<br>$$\\tan \\alpha = \\frac{2}{7} \\implies \\alpha = \\tan^{-1}\\left(\\frac{2}{7}\\right) \\approx 15{,}94^\\circ$$<br>Koko huippukulma on $2 \\cdot 15{,}94^\\circ \\approx \\mathbf{32^\\circ}$!</li></ol>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "3D-videopelit ja atan2: Miten pelihahmo kääntyy kohti hiirtä?",
+        "content": "<h4>Peliohjelmoijan tärkein trigonometrinen funktio</h4><p>Kun pelaat tietokonepeliä ja liikutat hiiren kursoria ruudulla, pelihahmon aseen tai katseen on käännyttävä välittömästi kohti kursoria. Miten pelimoottori tietää kääntökulman $\\theta$?</p><h4>Arctan2-funktio koodissa</h4><p>Tietokone laskee erotuksen hahmon ja kursorin koordinaateista: $\\Delta x = x_{\\text{hiiri}} - x_{\\text{hahmo}}$ ja $\\Delta y = y_{\\text{hiiri}} - y_{\\text{hahmo}}$.</p><p>Nämä kaksi lukua muodostavat suorakulmaisen kolmion kateetit. Ohjelmointikielissä (kuten Python, JavaScript, Unity C#) kutsutaan funktiota <code>Math.atan2(dy, dx)</code>, joka laskee arkustangentin avulla tarkan kääntökulman $0^\\circ - 360^\\circ$ väliltä ottaen huomioon myös negatiiviset suunnat!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jokainen 3D-pelin kamera, fysiikkamoottorin törmäystarkistus ja valonsäteiden heijastus (Ray Tracing) laskee miljoonia sin-, cos- ja tan-arvoja sekunnissa näytönohjaimen rinnakkaisilla grafiikkaytimillä!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Tasakylkisen kolmion ratkaiseminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
   ]
 }

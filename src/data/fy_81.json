@@ -5,111 +5,231 @@
     {
       "lesson": 1,
       "topic": "Tasainen liike, osa 1",
+      "title": "Tasainen liike ja nopeuden laskeminen",
       "content": "KS aihe 1 / kirjan kpl 11. Tutustutaan tasaisen liikkeen käsitteeseen ja siihen liittyviin suureisiin, kuten nopeuteen ja matkaan. Nopeuden kuvaaja.",
+      "summary": "Tasainen liike, nopeuden määritelmä v = s/t, yksikkömuunnokset m/s ja km/h (kertoimella 3,6) sekä keskinopeus.",
+      "theory": "<p>Fysiikassa <strong>tasainen liike</strong> tarkoittaa liikettä, jossa kappaleen nopeus ja kulkusuunta pysyvät koko ajan täysin samoina. Kappale etenee yhtä pitkinä aikoina yhtä pitkän matkan.</p><h4>1. Nopeuden määritelmä ja laskukaava</h4><p>Nopeus $v$ kertoo, kuinka pitkän matkan $s$ kappale kulkee kuluneessa ajassa $t$:</p><p>$$\\mathbf{v = \\frac{s}{t} \\iff s = v \\cdot t \\iff t = \\frac{s}{v}}$$</p><ul><li>$v$ = nopeus (metriä sekunnissa $\\text{m/s}$ tai kilometriä tunnissa $\\text{km/h}$)</li><li>$s$ = kuljettu matka (metreinä $\\text{m}$ tai kilometreinä $\\text{km}$)</li><li>$t$ = kulunut aika (sekunteina $\\text{s}$ tai tunteina $\\text{h}$)</li></ul><h4>2. Yksikkömuunnos: $\\text{m/s} \\leftrightarrow \\text{km/h}$</h4><p>Koska yhdessä tunnissa on $3600\\text{ s}$ ja kilometrissä $1000\\text{ m}$, yksiköiden välillä muunnetaan kertoimella <strong>3,6</strong>:</p><p>$$\\mathbf{1\\text{ m/s} = 3{,}6\\text{ km/h}}$$</p><ul><li>Kun muunnat $\\text{m/s} \\to \\text{km/h}$: <strong>kerro luvulla 3,6</strong> (esim. $10\\text{ m/s} \\cdot 3{,}6 = 36\\text{ km/h}$).</li><li>Kun muunnat $\\text{km/h} \\to \\text{m/s}$: <strong>jaa luvulla 3,6</strong> (esim. $100\\text{ km/h} / 3{,}6 \\approx 27{,}8\\text{ m/s}$).</li></ul><h4>3. Keskinopeus</h4><p>Käytännön elämässä (esim. automatkalla) nopeus vaihtelee pysähdysten ja mutkien takia. <strong>Keskinopeus</strong> lasketaan aina jakamalla koko kuljettu kokonaismatka koko matkaan kuluneella kokonaisajalla:</p><p>$$v_{\\text{keski}} = \\frac{\\Delta s_{\\text{kok}}}{\\Delta t_{\\text{kok}}}$$</p>",
       "tasks": {
         "research": "s. 51 - 52: Työt 1 ja 2",
         "theory": "s. 54 - 55: T1 - 7"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Usain Bolt ja ihmisen nopeusennätys: Kuinka kovaa ihminen voi juosta?",
+        "content": "<h4>Berliini 2009: 100 metriä ajassa 9,58 s</h4><p>Vuoden 2009 yleisurheilun MM-kisoissa jamaikalainen <strong>Usain Bolt</strong> juoksi 100 metrin maailmanennätyksen $9{,}58\\text{ sekuntia}$. Hänen keskinopeutensa koko matkalla oli:</p><p>$$v = \\frac{100\\text{ m}}{9{,}58\\text{ s}} \\approx 10{,}44\\text{ m/s} \\approx 37{,}6\\text{ km/h}$$</p><h4>Huippunopeus 60–80 metrin kohdalla</h4><p>Lähtötelineistä kiihdyttäminen vie aikaa, joten Bolt ei juossut koko matkaa tasaisella nopeudella. Tutkijat mittasivat Boltin huippunopeudeksi 60 ja 80 metrin välillä huimat <strong>$44{,}72\\text{ km/h}$ ($12{,}42\\text{ m/s}$)</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Vaikka Usain Bolt on ihmiskunnan nopein juoksija, eläinmaailman pikajuoksija gepardi kiihtyy $0 \\to 100\\text{ km/h}$ vain kolmessa sekunnissa ja saavuttaa huippunopeuden $120\\text{ km/h}$!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Tasainen liike ja nopeus",
+        "url": "https://phet.colorado.edu/fi/simulations/forces-and-motion-basics"
+      }
     },
-      {
+    {
       "lesson": 2,
       "topic": "Tasainen liike, osa 2",
+      "title": "Tasaisen liikkeen graafinen esitys",
       "content": "KS aihe 1 / kirjan kpl 11. Aiheen käsittely jatkuu, kuvaajien piirtäminen mittausdatasta.",
+      "summary": "Aika-matka -kuvaaja (t, s), suoran kulmakerroin fysikaalisena nopeutena sekä aika-nopeus -kuvaaja (t, v) ja pinta-ala kuljettuna matkana.",
+      "theory": "<p>Fysiikassa mittaustuloksia havainnollistetaan piirtämällä niistä kuvaajia koordinaatistoon. Kuvaajan avulla voidaan määrittää liiketila nopeasti ja luotettavasti.</p><h4>1. Aika-matka -kuvaaja eli $(t, s)$-kuvaaja</h4><p>$(t, s)$-koordinaatistossa vaaka-akselilla on aika $t$ ja pystyakselilla kuljettu matka $s$:</p><ul><li><strong>Tasaisessa liikkeessä kuvaaja on suora viiva</strong>, joka lähtee origosta $(0, 0)$.</li><li><strong>Fysikaalinen kulmakerroin on nopeus ($v$)</strong>:<br>$$v = \\frac{\\Delta s}{\\Delta t} = \\frac{s_2 - s_1}{t_2 - t_1}$$</li><li>Mitä <strong>jyrkempi suora</strong>, sitä <strong>suurempi nopeus</strong>!</li><li>Vaakasuora suora tarkoittaa, että matka ei kasva lainkaan eli kappale on <strong>paikallaan ($v = 0$)</strong>.</li></ul><h4>2. Aika-nopeus -kuvaaja eli $(t, v)$-kuvaaja</h4><p>$(t, v)$-koordinaatistossa pystyakselilla on nopeus $v$:</p><ul><li>Tasaisessa liikkeessä kuvaaja on <strong>vaakasuora suora</strong>, koska nopeus ei muutu.</li><li>Kuvaajan ja aika-akselin väliin jäävä suorakulmion <strong>pinta-ala kuvaa kuljettua matkaa</strong>:<br>$$\\text{Pinta-ala} = v \\cdot t = s$$</li></ul>",
       "tasks": {
-        "theory": "s. 54 - 555: T1 - 7"
+        "theory": "s. 54 - 55: T1 - 7"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Auton nopeusmittari ja GPS: Miten nopeus oikeasti mitataan?",
+        "content": "<h4>Renkaiden pyörimisnopeus vs. satelliitit</h4><p>Auton mekaaninen nopeusmittari mittaa renkaiden pyörintänopeutta akseleissa olevien magneettiantureiden avulla. Jos autoon vaihdetaan halkaisijaltaan suuremmat renkaat, mittari näyttää todellisuutta hitaampaa nopeutta!</p><p>Puhelimen ja navigaattorin GPS-nopeus puolestaan perustuu satelliittien lähettämien radioaaltojen Doppler-ilmiöön ja paikan muutoksen mittaamiseen sekunnin murto-osissa: se on tasaisessa ajossa mittaria tarkempi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lain mukaan auton nopeusmittari ei saa koskaan näyttää todellista nopeutta alempaa lukemaa, minkä vuoksi autonvalmistajat kalibroivat mittarit aina näyttämään noin $3-5\\text{ km/h}$ todellista enemmän!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Aika-matka -kuvaajan piirtäminen ja tulkinta",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
-  {
+    {
       "lesson": 3,
       "topic": "Kiihtyvä liike",
+      "title": "Muuttuva liike ja kiihtyvyys",
       "content": "KS aihe 2 / kirjan kpl 12. Nopeuden muutos ajan funktiona ja kiihtyvyyden käsite. Kiihtyvän liikkeen kuvaaja eri koordinaatistoissa.",
+      "summary": "Tasaisesti kiihtyvä ja hidastuva liike, kiihtyvyyden määritelmä a = Δv/Δt (m/s²), (t, v)-kuvaajan kulmakerroin ja vapaa pudotus (g ≈ 9,81 m/s²).",
+      "theory": "<p>Arkielämässä harva liike on täysin tasaista: autot kiihdyttävät liikennevaloista, jarruttavat risteykseen ja putoavat esineet syöksyvät kohti maata yhä kovempaa vauhtia. Liikettä, jossa nopeus muuttuu, kutsutaan <strong>muuttuvaksi liikkeeksi</strong>.</p><h4>1. Kiihtyvyyden määritelmä ja laskukaava</h4><p><strong>Kiihtyvyys ($a$)</strong> kuvaa sitä, kuinka nopeasti nopeus muuttuu kulunutta aikayksikköä kohden:</p><p>$$\\mathbf{a = \\frac{\\Delta v}{\\Delta t} = \\frac{v - v_0}{t}}$$</p><ul><li>$a$ = kiihtyvyys (yksikkö metriä sekunnissa toiseen, $\\mathbf{m/s^2}$)</li><li>$\\Delta v = v - v_0$ = nopeuden muutos (loppunopeus miinus alkunopeus, $\\text{m/s}$)</li><li>$t$ = kiihtymiseen kulunut aika ($\\text{s}$)</li></ul><h4>2. Kiihtyvä ja hidastuva liike</h4><ul><li><strong>Kiihtyvä liike ($a > 0$)</strong>: Nopeus kasvaa ajan kuluessa.</li><li><strong>Hidastuva liike ($a < 0$)</strong>: Nopeus pienenee ajan kuluessa (jarrutus, kiihtyvyys on negatiivinen).</li></ul><p><em>Laskuesimerkki:</em> Sähköauto kiihtyy levosta nopeuteen $108\\text{ km/h}$ ($30\\text{ m/s}$) ajassa $3{,}0\\text{ s}$. Kiihtyvyys on:<br>$$a = \\frac{30\\text{ m/s} - 0\\text{ m/s}}{3{,}0\\text{ s}} = \\mathbf{10\\text{ m/s^2}}$$</p><h4>3. Vapaa pudotus ja putoamiskiihtyvyys ($g$)</h4><p>Kun kappale putoaa maapallon painovoimakentässä ilman merkittävää ilmanvastusta, se putoaa <strong>vapaasti</strong>. Maan pinnalla putoamiskiihtyvyys on:</p><p>$$\\mathbf{g \\approx 9{,}81\\text{ m/s^2} \\approx 10\\text{ m/s^2}}$$</p><p>Tämä tarkoittaa, että jokaisen sekunnin aikana putoavan kiven nopeus kasvaa noin $10\\text{ m/s}$ ($36\\text{ km/h}$): 1 sekunnin jälkeen $36\\text{ km/h}$, 2 sekunnin jälkeen $72\\text{ km/h}$, 3 sekunnin jälkeen $108\\text{ km/h}$!</p>",
       "tasks": {
         "research": "s. 57: Työ 2",
         "theory": "s. 58: T1 - 6, 8"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "G-voimat ja hävittäjälentäjät: Mitä ihmiskeho kestää kiihtyvyydessä?",
+        "content": "<h4>Mitä g-voima tarkoittaa?</h4><p>Kiihtyvyyttä ilmaistaan usein suhteessa maapallon putoamiskiihtyvyyteen $g$. Yhden $g$:n kiihtyvyys ($1g$) tuntuu tavalliselta oman kehon painolta maassa. Kaarteessa $3g$ tarkoittaa, että keho tuntuu kolme kertaa normaalia raskaammalta!</p><h4>G-LOC – tajunnan menetys</h4><p>Kun taitolentäjä tai F/A-18 Hornet -lentäjä tekee jyrkän kaarron ylöspäin $9g$:n kiihtyvyydellä, veri pakenee aivoista kohti jalkoja. Näkökenttä sumenee ('greyout'), muuttuu mustaksi ('blackout') ja lentäjä voi menettää tajuntansa (G-LOC). Tätä vastaan lentäjät käyttävät painepukuja (G-suit), jotka puristavat jalkoja ja pakottavat veren pysymään aivoissa.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Vuoristoradoissa kiihtyvyys pidetään yleensä alle $4g$:n turvallisuussyistä, mutta Formula 1 -auton äkkijarrutuksessa kuljettajaan voi kohdistua jopa $5g$:n hidastuvuus!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Kiihtyvyys ja voimat",
+        "url": "https://phet.colorado.edu/fi/simulations/forces-and-motion-basics"
+      }
     },
     {
       "lesson": 4,
       "topic": "Vuorovaikutus ja voima",
+      "title": "Vuorovaikutus, voima ja Newtonin lait",
       "content": "KS aihe 3 / kirjan kpl 13. Erilaiset vuorovaikutustyypit, voiman määritelmä, mittaaminen ja yksikkö. Kokonaisvoiman käsite ja Newtonin lait.",
+      "summary": "Kosketus- ja etävuorovaikutus, voima vektorisuureena F (Newton N), voimakuvio ja Isaac Newtonin kolme liikelakia (N I jatkavuus, N II peruslaki F = ma, N III voima ja vastavoima).",
+      "theory": "<p>Fysiikassa mikään kappale ei muuta liiketilaansa itsestään. Liikkeen muutos vaatii aina <strong>vuorovaikutuksen</strong> toisen kappaleen kanssa.</p><h4>1. Vuorovaikutuksen kaksi perustyyppiä</h4><ul><li><strong>Kosketusvuorovaikutus</strong>: Kappaleet koskettavat fyysisesti toisiaan (esim. jalkapallon potkaisu, pöydän tukivoima kirjaa vasten, kitka, narun jännitys).</li><li><strong>Etävuorovaikutus</strong>: Vaikuttaa kappaleiden välillä ilman kosketusta, tyhjiönkin halki (esim. painovoima Maan ja Kuun välillä, magneettinen vetovoima, staattisen sähkön vetovoima).</li></ul><h4>2. Voima ($\vec{F}$)</h4><p><strong>Voima</strong> kuvaa vuorovaikutuksen voimakkuutta ja suuntaa. Voima on vektorisuure, jota piirretään nuolena. Voiman yksikkö on <strong>newton (N)</strong>.</p><h4>3. Isaac Newtonin kolme liikelakia (1687)</h4><ol><li><strong>1. laki (Jatkuvuuden laki, N I)</strong>: Kappale pysyy levossa tai jatkaa tasaista suoraviivaista liikettään, ellei siihen vaikuta mikään ulkoinen kokonaisvoima ($F_{\\text{kok}} = 0$).<br><em>Esimerkki: Jääkiekko liukisi kitkattomalla jäällä ikuisesti pysähtymättä!</em></li><li><strong>2. laki (Dynamiikan peruslaki, N II)</strong>: Kappaleelle syntyvä kiihtyvyys $a$ on suoraan verrannollinen siihen vaikuttavaan kokonaisvoimaan $F_{\\text{kok}}$ ja kääntäen verrannollinen kappaleen massaan $m$:<br>$$\\mathbf{F_{\\text{kok}} = m \\cdot a}$$</li><li><strong>3. laki (Voiman ja vastavoiman laki, N III)</strong>: Jos kappale A kohdistaa kappaleeseen B voiman $\\vec{F}$, niin kappale B kohdistaa samanaikaisesti kappaleeseen A yhtä suuren, mutta vastakkaissuuntaisen voiman $-\\vec{F}$.<br><em>Esimerkki: Kun työnnät rullaluistimilla seinää poispäin, seinä työntää sinua yhtä suurella voimalla taaksepäin!</em></li></ol>",
       "tasks": {
         "research": "s. 61: Työ 2",
         "theory": "s. 62: T1 - 7"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Isaac Newton ja ruttoepidemia 1665: Nerouden kultainen vuosi (Annus Mirabilis)",
+        "content": "<h4>Opiskelija eristyksissä maaseudulla</h4><p>Vuonna 1665 Lontoossa riehui musta surma eli paiserutto. Cambridgen yliopisto suljettiin ja 22-vuotias <strong>Isaac Newton</strong> vetäytyi perheensä maatilalle Woolsthorpeen eristykseen lähes kahdeksi vuodeksi.</p><h4>Omena puusta ja universumin lait</h4><p>Tuon kahden vuoden aikana Newton keksi differentiaalilaskennan, selitti valon ja prismat sekä loi kuuluisat kolme liikelakiaan ja yleisen gravitaatiolain nähtyään omenan putoavan puusta puutarhassaan. Hän oivalsi, että sama voima, joka vetää omenaa puusta maahan, pitää myös Kuun kiertämässä Maata!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Newton julkaisi teoriansa vasta 22 vuotta myöhemmin vuonna 1687 mestariteoksessaan <em>Principia</em> tähtitieteilijä Edmond Halleyn suostuttelemana ja rahoittamana!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Voimat ja liike (Newtonin lait)",
+        "url": "https://phet.colorado.edu/fi/simulations/forces-and-motion-basics"
+      }
     },
     {
       "lesson": 5,
       "topic": "Massa, paino ja hitaus",
-      "content": "KS aihe 4 / kirjan kpl 13. Massan ja painon ero, hitauden käsite. Painovoiman laskeminen.",  
+      "title": "Massa, paino ja hitaus",
+      "content": "KS aihe 4 / kirjan kpl 13. Massan ja painon ero, hitauden käsite. Painovoiman laskeminen.",
+      "summary": "Massan (m, kg) ja painon (G, N) ero, hitauden ominaisuus ja painovoiman kaava G = mg maan pinnalla ja avaruudessa.",
+      "theory": "<p>Arkikielessä kysytään usein: 'Paljonko sinä painat?' ja vastataan: '60 kiloa'. Fysiikassa tämä vastaus on kuitenkin väärin! Kilo on massan yksikkö, ei painon.</p><h4>1. Massa vastaan paino</h4><ul><li><strong>Massa ($m$)</strong>: Kuvaa kappaleen sisältämää ainemäärää ja sen taipumusta vastustaa liikkeen muutosta eli <strong>hitautta</strong>. Yksikkö on <strong>kilogramma (kg)</strong>. Kappaleen massa on täysin sama kaikkialla maailmankaikkeudessa!</li><li><strong>Paino ($G$ tai $F_G$)</strong>: On <strong>vetovoima</strong>, jolla taivaankappale (kuten Maa tai Kuu) vetää kappaletta puoleensa painovoiman avulla. Paino on voima, ja sen yksikkö on <strong>newton (N)</strong>. Paino riippuu siitä, millä planeetalla ollaan!</li></ul><h4>2. Painovoiman laskukaava</h4><p>Kappaleen paino $G$ saadaan kertomalla sen massa $m$ kyseisen paikan putoamiskiihtyvyydellä $g$:</p><p>$$\\mathbf{G = m \\cdot g}$$</p><ul><li>Maan pinnalla: $g_{\\text{Maa}} \\approx 9{,}81\\text{ N/kg} \\approx \\mathbf{10\\text{ N/kg}}$</li><li>Kuun pinnalla: $g_{\\text{Kuu}} \\approx \\mathbf{1{,}6\\text{ N/kg}}$ (Kuun painovoima on vain noin kuudesosa Maasta!)</li></ul><p><em>Esimerkki:</em> $60\\text{ kg}$ painavan astronautin massa on Maassa $60\\text{ kg}$ ja Kuussa $60\\text{ kg}$.<br>Mutta astronautin <strong>paino</strong> Maassa on $G = 60\\text{ kg} \\cdot 10\\text{ N/kg} = \\mathbf{600\\text{ N}}$, kun taas Kuussa astronautin paino on vain $G = 60\\text{ kg} \\cdot 1{,}6\\text{ N/kg} = \\mathbf{96\\text{ N}}$! Kuussa astronautti pystyy hyppäämään kuusi kertaa korkeammalle.</p><h4>3. Hitaus (inertia)</h4><p>Kaikilla kappaleilla on massansa suuruinen <strong>hitaus</strong>: kappale haluaa vastustaa nopeutensa tai suuntansa muuttamista. Kun auto tekee äkkijarrutuksen, matkustajat jatkavat eteenpäin hitauden takia – siksi <strong>turvavyö</strong> on hengenpelastaja!</p>",
       "tasks": {
         "research": "Simulaatiot ja putoamiskiihtyvyyden määrittäminen anturilla"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Painottomuus avaruusasemalla: Eikö ISS:llä todellakaan ole painovoimaa?",
+        "content": "<h4>Yleinen harhaluulo avaruudesta</h4><p>Monet luulevat, että kansainvälisellä avaruusasemalla (ISS) astronautit leijuvat ilmassa siksi, että avaruudessa ei muka olisi lainkaan Maan painovoimaa. Tämä on täyttä harhaa!</p><h4>Putoamista ilman pohjaa</h4><p>ISS kiertää maapalloa noin $400\\text{ kilometrin}$ korkeudessa. Siellä Maan painovoima on edelleen <strong>lähes $90\\,\\%$</strong> Maan pinnan painovoimasta! Astronautit leijuvat siksi, että avaruusasema ja kaikki sen sisällä olevat esineet ovat <strong>jatkuvassa vapaassa pudotuksessa</strong> kohti Maata huikealla $28\\,000\\text{ km/h}$ ratanopeudella. Asema putoaa maapallon kaarevuuden 'ohi', jolloin syntyy pysyvä painottomuuden tila!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lentokoneella voidaan luoda lyhytaikainen 20–30 sekunnin painottomuus syöksymällä parabolisella lentoradalla kohti maata ('Vomit Comet') astronauttien ja elokuvantekijöiden koulutuksessa!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Painovoima ja kiertoradat",
+        "url": "https://phet.colorado.edu/fi/simulations/gravity-and-orbits"
+      }
     },
     {
       "lesson": 6,
       "topic": "Kitka ja noste",
+      "title": "Kitka, ilmanvastus ja Arkhimedeen laki",
       "content": "KS aihe 5 / kirjan kpl 14. Kitkan määritelmä ja kitkavoiman merkitys liikkeessä. Nosteen laskeminen ja vaikutus kokonaisvoimaan.",
+      "summary": "Lepokitka vs. liukukitka, vierintävastus, ilman- ja väliaineenvastus, Arkhimedeen laki, nesteen noste ja kappaleen kelluminen ja uppoaminen.",
+      "theory": "<p>Arjessa kappaleet eivät liiku kitkatta: laatikon työntäminen lattialla vaatii voimaa, ja liu'utettu kiekko pysähtyy lopulta.</p><h4>1. Kitkavoima ($\vec{F}_k$)</h4><p><strong>Kitka</strong> on toisiaan koskettavien pintojen mikroskooppisista epätasaisuuksista johtuva voima, joka <strong>vastustaa kappaleiden liukumista toistensa suhteen</strong>.</p><ul><li><strong>Lepokitka</strong>: Estää kappaletta lähtemästä liikkeelle. Suurinta lepokitkaa kutsutaan <em>lähtökitkaksi</em>.</li><li><strong>Liukukitka</strong>: Vaikuttaa silloin, kun kappale jo liukuu pintaa pitkin. Liukukitka on aina pienempi kuin lepokitkan maksimiarvo (kappale on helpompi pitää liikkeessä kuin saada liikkeelle!).</li><li><strong>Kitkan hyödyt ja haitat</strong>: Ilman kitkaa kenkä luistaisi tyhjää eikä kukaan voisi kävellä tai ajaa polkupyörällä. Toisaalta moottoreissa kitka kuluttaa osia ja hukkaa polttoainetta lämmöksi $\\implies$ käytetään moottoriöljyä ja kuulalaakereita.</li></ul><h4>2. Väliaineen vastus (ilmanvastus)</h4><p>Kun kappale liikkuu ilmassa tai vedessä, väliaineen molekyylit törmäävät siihen. Ilmanvastus kasvaa nopeasti nopeuden kasvaessa (nopeuden neliössä!). Laskuvarjohyppääjä saavuttaa lopulta terminaalinopeuden (noin $200\\text{ km/h}$ ilman varjoa, $20\\text{ km/h}$ varjon avauduttua), jossa ilmanvastus kumoaa painovoiman.</p><h4>3. Arkhimedeen laki ja nesteen noste</h4><p>Antiikin keksijä Arkhimedes osoitti, että nesteeseen upotettuun kappaleeseen kohdistuu ylöspäin suuntautuva <strong>noste ($N$)</strong>, joka on yhtä suuri kuin kappaleen syrjäyttämän nestemäärän paino:</p><p>$$\\mathbf{N = \rho_{\\text{neste}} \\cdot V \\cdot g}$$</p><ul><li>Jos <strong>Noste $N >$ Paino $G$</strong>: Kappale nousee pintaan ja <strong>kelluu</strong> (tiheys on pienempi kuin nesteen tiheys, esim. puu tai jää vedessä).</li><li>Jos <strong>Noste $N <$ Paino $G$</strong>: Kappale <strong>uppoaa</strong> pohjaan (kivi tai teräsmutteri).</li><li><strong>Miksi teräksinen laiva kelluu?</strong> Vaikka teräs uppoaa, laivan rungon sisällä on suuri määrä ilmaa! Laivan keskimääräinen tiheys on paljon veden tiheyttä pienempi.</li></ul>",
       "tasks": {
         "research": "Simulaatiot",
         "theory": "s. 66: T1 - 7"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Arkhimedes kylvyssä: 'Heureka!' ja kuninkaan kultainen kruunu",
+        "content": "<h4>Kruunun kultapulma</h4><p>Syrakusan kuningas Hieron II epäili, että kultaseppä oli huijannut häntä ja sekoittanut kuninkaalliseen kultakruunuun halpaa hopeaa. Kuningas pyysi <strong>Arkhimedesta</strong> ratkaisemaan pulman vahingoittamatta kruunua.</p><h4>Kylpyammeen oivallus</h4><p>Astuessaan täyteen kylpyammeeseen Arkhimedes huomasi vedenpinnan nousevan ja veden valuvan reunan yli. Hän oivalsi välittömästi, että ammeesta valuneen veden tilavuus oli täsmälleen yhtä suuri kuin hänen oman kehonsa veteen uponnut tilavuus!</p><p>Koska kulta on paljon tiheämpää kuin hopea, puhdas kultakruunu syrjäyttäisi vähemmän vettä kuin samanpainoinen seoskruunu. Tarinan mukaan Arkhimedes ryntäsi alasti kadulle huutaen: <em>'Heureka! Heureka!'</em> ('Olen löytänyt sen!'). Koe osoitti kultasepän varkauden toteen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sukellusveneet säätelevät nostettaan painolastitankeilla: kun tankit täytetään vedellä, sukellusvene uppoaa; kun vesi puhalletaan ulos paineilmalla, vene nousee pintaan!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Tiheys ja Arkhimedeen noste",
+        "url": "https://phet.colorado.edu/fi/simulations/density"
+      }
     },
-     {
+    {
       "lesson": 7,
       "topic": "Paine",
+      "title": "Paine kiinteissä aineissa, nesteissä ja ilmakehässä",
       "content": "KS aihe 6 / kirjan kpl 15. Paineen määritelmä ja laskeminen. Ilmanpaine ja hydrostaattinen paine.",
+      "summary": "Paineen määritelmä p = F/A, Pascal Pa ja bar, kosketuspinta-alan vaikutus, hydrostaattinen syvyyspaine p = ρgh ja normaali-ilmanpaine 1013 hPa.",
+      "theory": "<p>Miksi terävä keittiöveitsi leikkaa tomaattia vaivattomasti, mutta tylpällä lusikalla se vain liiskaantuu, vaikka painaisit samalla voimalla? Selitys on <strong>paine</strong>!</p><h4>1. Paineen määritelmä ja kaava</h4><p><strong>Paine ($p$)</strong> kuvaa pintaan kohtisuorasti vaikuttavan voiman $F$ jakautumista kosketuspinta-alalle $A$:</p><p>$$\\mathbf{p = \\frac{F}{A}}$$</p><ul><li>$p$ = paine (yksikkö <strong>pascal, $\\text{Pa}$</strong>, missä $1\\text{ Pa} = 1\\text{ N/m}^2$)</li><li>$F$ = vaikuttava voima (newtoneina $\\text{N}$)</li><li>$A$ = kosketuspinta-ala (neliömetreinä $\\text{m}^2$)</li><li>Muita yksiköitä: $1\\text{ bar} = 100\\,000\\text{ Pa} = 1000\\text{ hPa}$ (hehtopascalia).</li></ul><h4>2. Pinta-alan vaikutus paineeseen</h4><ul><li><strong>Pieni pinta-ala $\\implies$ suuri paine</strong>: Terävä neula, nasta, luistimen terä ja kirveen terä keskittävät voiman murto-osamillimetrin alalle, jolloin paine nousee miljooniin pascaleihin ja uppoaa helposti aineeseen.</li><li><strong>Suuri pinta-ala $\\implies$ pieni paine</strong>: Lumikengät, sukset ja panssarivaunun leveät telaketjut jakavat painon laajalle alalle, jolloin paine pysyy pienenä eikä kulkija uppoa hankeen tai pehmeään maaperään.</li></ul><h4>3. Hydrostaattinen paine ja ilmanpaine</h4><ul><li><strong>Hydrostaattinen paine (nesteessä)</strong>: Veden syvyyden aiheuttama paine $p = \\rho g h$. Veden alla paine kasvaa <strong>noin $1\\text{ bar}$ jokaista 10 metrin syvyyttä kohden</strong>! $10\\text{ metrissä}$ paine on $2\\text{ baria}$, $100\\text{ metrissä}$ jo $11\\text{ baria}$.</li><li><strong>Ilmanpaine</strong>: Maan ilmakehän ilmamassan painosta johtuva paine. Merenpinnalla normaali ilmanpaine on noin <strong>$1013\\text{ hPa} \\approx 1\\text{ bar}$</strong>. Yhden neliömetrin alueelle kohdistuu ilmakehän painosta noin $100\\,000\\text{ N}$ voima – mikä vastaa 10 tonnin kuormaa!</li></ul>",
       "tasks": {
         "research": "s. 68: Työt 1 ja 2",
         "theory": "s. 70-71: T1 - 7"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Otto von Guericke ja Magdeburgin puolipallot 1654: Tyhjiön uskomaton voima",
+        "content": "<h4>16 hevosta vastaan ilmanpaine</h4><p>Vuonna 1654 Magdeburgin pormestari ja keksijä <strong>Otto von Guericke</strong> järjesti keisari Ferdinand III:lle ja hoville mykistävän fysiikkashow'n. Hän asetti kaksi onttoa kuparista puolipalloa (halkaisija 50 cm) vastakkain tiivisteellä ja pumppasi niiden välistä ilman pois tyhjiöpumpulla.</p><h4>Valtava puristusvoima</h4><p>Puolipallojen kumpaankin päähän valjastettiin 8 hevosta vetämään palloja irti toisistaan eri suuntiin. Hevoset vetivät kaikin voimin, mutta pallot eivät hievahtaneetkaan toisistaan! Koska pallon sisällä oli tyhjiö, ulkopuolinen normaali ilmanpaine puristi puoliskoja toisiaan vasten yli <strong>$20\\,000\\text{ newtonin}$ (2 tonnin) voimalla</strong>! Heti kun ilmaa päästettiin venttiilistä takaisin pallon sisään, puoliskot irtosivat toisistaan itsestään.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Imukupit seinässä perustuvat täsmälleen samaan periaatteeseen: imukupin alle muodostuu alipaine ja huoneen ilmanpaine puristaa kupin tiukasti seinää vasten!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Nesteiden ja ilmanpaineen simulaatio",
+        "url": "https://phet.colorado.edu/fi/simulations/under-pressure"
+      }
     },
     {
       "lesson": 8,
       "topic": "Energian eri muodot",
+      "title": "Mekaaninen energia ja energian säilyminen",
       "content": "KS aihe 7 / kirjan kpl 16. Energian muuntuminen ja energian säilymisen periaate.",
+      "summary": "Liike-energia (kineettinen energia Ek = 1/2 mv²), potentiaalienergia (asemaenergia Ep = mgh), mekaanisen energian säilymislaki ja kitkahäviöt.",
+      "theory": "<p><strong>Energia</strong> on fysiikan keskeisin käsite: se kuvaa kappaleen tai järjestelmän kykyä tehdä työtä. Energian yksikkö on <strong>joule (J)</strong>.</p><h4>1. Liike-energia eli kineettinen energia ($E_k$)</h4><p>Kaikilla liikkuvilla kappaleilla on massastaan ja nopeudestaan riippuva liike-energia:</p><p>$$\\mathbf{E_k = \\frac{1}{2} m v^2}$$</p><p><em>Tärkeä huomio liikenteessä:</em> Koska nopeus $v$ on toisessa potenssissa ($v^2$), <strong>nopeuden kaksinkertaistuminen nelinkertaistaa liike-energian</strong>! Kun auton nopeus nousee $50\\text{ km/h} \\to 100\\text{ km/h}$, jarrutusmatka kasvaa nelinkertaiseksi!</p><h4>2. Potentiaalienergia eli asemaenergia ($E_p$)</h4><p>Kun kappale nostetaan ylös maapallon painovoimaa vastaan, siihen varastoituu asemaenergiaa:</p><p>$$\\mathbf{E_p = m \\cdot g \\cdot h}$$</p><ul><li>$m$ = massa ($\\text{kg}$)</li><li>$g \\approx 10\\text{ m/s^2}$ = putoamiskiihtyvyys</li><li>$h$ = nostokorkeus (metreinä $\\text{m}$)</li></ul><h4>3. Mekaanisen energian säilymislaki</h4><p>Kun kitkaa ei oteta huomioon, kappaleen mekaaninen kokonaisenergia säilyy vakiona:</p><p>$$\\mathbf{E_p + E_k = \\text{vakio}}$$</p><p>Vuoristoradassa vaunun ollessa mäen huipulla ($h = h_{\\text{max}}$) kaikki energia on potentiaalienergiaa ($E_k = 0$). Kun vaunu syöksyy alas laaksoon ($h = 0$), kaikki potentiaalienergia muuttuu täsmälleen liike-energiaksi ja vaunu saavuttaa huippunopeutensa!</p>",
       "tasks": {
         "research": "Simulaatio",
         "theory": "s. 74: T2 ja 3, s. 76 - 77: T1  7"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Vuoristoradat ja energian fysiikka: Miksi ensimmäisen mäen täytyy olla aina korkein?",
+        "content": "<h4>Energian säilymisen murtumaton sääntö</h4><p>Oletko koskaan huomannut, että perinteisissä vuoristoradoissa ensimmäinen nousumäki on aina koko radan korkein? Tähän on selkeä fysikaalinen syy:</p><p>Alussa sähkömoottoriketju vetää vaunun ensimmäisen mäen laelle tehden nostotyötä. Tämä mäen korkeus määrää koko loppumatkan <strong>kokonaisenergian</strong>!</p><h4>Kitka vie osansa</h4><p>Koska mikään laite ei toimi ilman kitkaa ja ilmanvastusta, osa mekaanisesta energiasta muuttuu väistämättä kiskojen ja ilman lämmöksi jokaisessa käänteessä. Niinpä vaunulla ei ole enää tarpeeksi energiaa nousta ensimmäistä mäkeä korkeammalle ilman uutta moottorivetoa!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Korkeimmassa silmukassa (loopissa) matkustajat pysyvät penkeissään ylösalaisinkin ilman turvakaaria, koska vaunun nopeuden aiheuttama keskihakukiihtyvyys painaa heitä penkkiä vasten painovoimaa voimakkaammin!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Energian säilyminen ja skeittipuisto",
+        "url": "https://phet.colorado.edu/fi/simulations/energy-skate-park"
+      }
     },
     {
       "lesson": 9,
       "topic": "Työ ja energia",
-      "content": "PÄIVITÄ NÄMÄ!! Fysikaalisen työn määritelmä. Työn ja energian yhteys.",
+      "title": "Fysikaalinen työ ja energian siirtyminen",
+      "content": "Fysikaalisen työn määritelmä. Työn ja energian yhteys: voiman tekemä työ ja jarrutusmatka.",
+      "summary": "Fysikaalinen mekaaninen työ W = F·s, työn yksikkö Joule J (Nm), työn ja energian yhtäläisyys sekä kitkan tekemä jarrutustyö.",
+      "theory": "<p>Arkikielessä 'työ' tarkoittaa läksyjen tekemistä tai tietokoneella istumista. Fysiikassa <strong>työllä (W, work)</strong> on tarkka matemaattinen määritelmä.</p><h4>1. Fysikaalisen työn kaava</h4><p>Mekaanista työtä tehdään silloin, kun kappaleeseen vaikuttaa voima $F$ ja <strong>kappale liikkuu voiman suuntaan matkan $s$</strong>:</p><p>$$\\mathbf{W = F \\cdot s}$$</p><ul><li>$W$ = tehty työ (yksikkö <strong>joule, $\\text{J}$</strong>, missä $1\\text{ J} = 1\\text{ N} \\cdot 1\\text{ m} = 1\\text{ Nm}$)</li><li>$F$ = kappaletta liikuttava voima ($\\text{N}$)</li><li>$s$ = voiman suuntainen siirtymä ($\\text{m}$)</li></ul><h4>2. Milloin fysiikassa EI tehdä työtä?</h4><ol><li><strong>Kappale ei liiku ($s = 0$)</strong>: Vaikka puskisit seinää täysillä 10 minuuttia ja hikoilisit, fysiikan mielessä tehty mekaaninen työ on nolla ($W = F \\cdot 0 = 0$)!</li><li><strong>Voima ja liike ovat kohtisuorassa toisiaan vastaan</strong>: Jos kannat raskasta $20\\text{ kg}$ reppua sylissäsi kävellessäsi vaakasuoralla lattialla, kannatteluvoima osoittaa suoraan ylöspäin mutta liikut eteenpäin $\\implies$ kannatteluvoima ei tee mekaanista työtä.</li></ol><h4>3. Työ muuttaa energiaa</h4><p>Kun kappaleeseen tehdään työtä, sen energia muuttuu tehdyn työn verran: $\\Delta E = W$. Esimerkiksi auton jarrutuksessa jarrujen ja renkaiden kitkavoima tekee jarrutustyötä, joka poistaa auton liike-energian ja muuttaa sen jarrulevyjen polttavaksi lämmöksi.</p>",
       "tasks": {
-        "research": "",
-        "theory": ""
-      },  
-      "substituteNote": ""
+        "research": "Mekaaninen työ ja kitka -simulaatio",
+        "theory": "FY_81: Työ ja energia -tehtävät"
+      },
+      "substituteNote": "",
+      "deepDive": {
+        "title": "James Prescott Joule ja lämmön mekaaninen vastine 1843",
+        "content": "<h4>Oluenpanijan poika ja tarkat lämpömittarit</h4><p>Englantilainen oluenpanija ja amatööritutkija <strong>James Prescott Joule</strong> halusi selvittää, miten mekaaninen liike kytkeytyy lämpöön. Hän rakensi laitteen, jossa putoavat punukset pyörittivät vedellä täytetyssä eristetyssä astiassa siipipyörää.</p><h4>Mullistava mittaustulos</h4><p>Siipipyörän vispatessa vettä kitka lämmitti sitä. Joule mittasi äärimmäisen tarkoilla lämpömittareillaan, että aina kun tietty määrä mekaanista työtä ($W$) tehtiin, veden lämpötila nousi täsmälleen vastaavalla määrällä! Hän todisti, että mekaaninen työ ja lämpö ovat vain saman energian eri ilmenemismuotoja. Koko maailman energian yksikkö nimettiin hänen kunniakseen <strong>jouleksi</strong>.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ravintoarvoissa käytetty 'kalori' ($1\\text{ cal} \\approx 4{,}184\\text{ J}$) vastaa täsmälleen sitä energiamäärää, joka tarvitaan yhden vesigramman lämmittämiseen yhdellä asteella!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Mekaaninen työ ja kitka",
+        "url": "https://phet.colorado.edu/fi/simulations/forces-and-motion-basics"
+      }
     },
     {
       "lesson": 10,
       "topic": "Nostotyö ja potentiaalienergia",
-      "content": "PÄIVITÄ NÄMÄ!! Tehon määritelmä ja yksikkö, työn ja tehon yhteys.",
+      "title": "Nostotyö, potentiaalienergia ja mekaniikan kultainen sääntö",
+      "content": "Kappaleen nostaminen painovoimakentässä, nostotyö W = G·h, potentiaalienergian varastoituminen ja yksinkertaiset koneet.",
+      "summary": "Nostotyö W = mgh, potentiaalienergian sitoutuminen nostettaessa, yksinkertaiset koneet (kalteva taso, vipunvarsi, talja) ja mekaniikan kultainen sääntö.",
+      "theory": "<p>Kun nostat repun lattialta pulpetille, teet <strong>nostotyötä</strong> Maan painovoimaa vastaan.</p><h4>1. Nostotyön laskukaava</h4><p>Kun nostetaan tasaisella nopeudella massaltaan $m$ oleva kappale korkeudelle $h$, tarvittava nostava voima on yhtä suuri kuin kappaleen paino $G = mg$. Tehty nostotyö on:</p><p>$$\\mathbf{W = G \\cdot h = m \\cdot g \\cdot h}$$</p><p><em>Tämä tehty työ ei häviä mihinkään, vaan se varastoituu kappaleeseen potentiaalienergiaksi ($E_p = mgh$)!</em></p><h4>2. Yksinkertaiset koneet ja mekaniikan kultainen sääntö</h4><p>Ihminen on vuosituhansien ajan käyttänyt laitteita helpottamaan raskaiden taakkojen siirtämistä:</p><ul><li><strong>Vipuvarsi</strong> (rautakanki, sakset, kottikärryt)</li><li><strong>Kalteva taso</strong> (ramppi, kierteinen ruuvi, serpentiinitie vuoristossa)</li><li><strong>Talja ja väkipyörä</strong> (nosturit, purjelaivojen köydet)</li></ul><h4>Mekaniikan kultainen sääntö:</h4><blockquote><em>'Minkä voimassa voittaa, sen matkassa häviää!'</em></blockquote><p>Jos työnnät raskaan $100\\text{ kg}$ laatikon pakettiauton kyytiin $3\\text{ metriä}$ pitkää kaltevaa tasoa pitkin yhden metrin pystynoston sijasta, tarvitset vain kolmasosan nostovoimasta – mutta joudut työntämään laatikkoa kolminkertaisen matkan! Tehty kokonaistyö $W = F \\cdot s$ pysyy täysin samana.</p>",
       "tasks": {
-        "research": "",
-        "theory": ""
+        "research": "Kalteva taso ja nostotyö -simulaatio",
+        "theory": "FY_81: Nostotyö ja potentiaalienergia -tehtävät"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Gizan suuret pyramidit: Miten 2 miljoonan kilon kivilohkareet nostettiin?",
+        "content": "<h4>Pronssikauden insinööritaidonnäyte</h4><p>Noin 4500 vuotta sitten rakennettu Kheopsin pyramidi kohoaa 146 metrin korkeuteen. Se rakennettiin yli 2,3 miljoonasta kalkkikivilohkareesta, joista kukin painaa keskimäärin $2500\\text{ kg}$ (2,5 tonnia!). Muinaisilla egyptiläisillä ei ollut käytössään nostureita, sähkömoottoreita eikä edes rautatyökaluja.</p><h4>Kaltevan tason fysiikka ratkaisuna</h4><p>Egyptiläiset hyödynsivät massiivisia savesta ja kalkkikivimurskasta tehtyjä <strong>kaltevia tasoja (ramppeja)</strong>, joita pitkin tuhannet työmiehet vetivät kiviä puisilla jalaksilla. Hiekkaa kasteltiin vedellä kitkakertoimen puolittamiseksi. Mekaniikan kultainen sääntö teki mahdottomasta mahdollisen!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Arkhimedes sanoi kuuluisat sanat vivusta: <em>'Antakaa minulle riittävän pitkä vipuvarsi ja tukipiste, niin minä siirrän koko maapallon paikoiltaan!'</em></div>"
+      },
+      "simulation": {
+        "title": "PhET: Vipu ja tasapaino",
+        "url": "https://phet.colorado.edu/fi/simulations/balancing-act"
+      }
     },
     {
       "lesson": 11,
       "topic": "Teho ja hyötysuhde",
-      "content": "PÄIVITÄ NÄMÄ!! Tehon määritelmä ja laskeminen.",
+      "title": "Teho ja hyötysuhde teknologisissa prosesseissa",
+      "content": "Tehon määritelmä P = W/t ja yksikkö Watti (W). Laitteiden hyötysuhde eta ja energiahäviöt.",
+      "summary": "Tehon määritelmä P = W/t, Watti W ja hevosvoima hv, hyötysuhde eta = (E_tuotos / E_panos) · 100 % ja energian laadun heikkeneminen.",
+      "theory": "<p>Jos kaksi henkilöä kantaa samat kauppakassit 5. kerrokseen, molemmat tekevät täsmälleen saman nostotyön. Mutta jos toinen juoksee portaat ylös minuutissa ja toinen kävelee kymmenessä minuutissa, heidän <strong>tehonsa</strong> on aivan eri!</p><h4>1. Tehon kaava ja yksikkö</h4><p><strong>Teho ($P$, power)</strong> kuvaa työnteon tai energian muuntumisen nopeutta:</p><p>$$\\mathbf{P = \\frac{W}{t} = \\frac{E}{t}}$$</p><ul><li>$P$ = teho (yksikkö <strong>watti, $\\text{W}$</strong>, missä $1\\text{ W} = 1\\text{ J/s}$)</li><li>$W$, $E$ = tehty työ tai kulutettu energia (jouleina $\\text{J}$)</li><li>$t$ = aika (sekunteina $\\text{s}$)</li><li>Kerrannaisyksiköt: $1\\text{ kW} = 1000\\text{ W}$, $1\\text{ MW} = 1\\,000\\,000\\text{ W}$.</li><li>Perinteinen yksikkö: <strong>hevosvoima</strong> ($1\\text{ hv} \\approx 735\\text{ W}$).</li></ul><h4>2. Hyötysuhde ($\eta$, eeta)</h4><p>Yksikään todellinen kone tai laite ei pysty muuntamaan kaikkea ottamaansa energiaa puhtaaksi hyötyenergiaksi. Osa energiasta karkaa aina kitkan ja lämmön takia hukkaan. <strong>Hyötysuhde $\eta$</strong> ilmaisee hyödyksi saadun energian osuuden:</p><p>$$\\mathbf{\\eta = \\frac{E_{\\text{hyöty}}}{E_{\\text{kokonais}}} \\cdot 100\\,\\% = \\frac{P_{\\text{hyöty}}}{P_{\\text{kokonais}}} \\cdot 100\\,\\%}$$</p><h4>Eri laitteiden hyötysuhteita:</h4><ul><li><strong>Sähkömoottori</strong>: $\\eta \\approx 90\\,\\%$ (erittäin energiatehokas!)</li><li><strong>LED-lamppu</strong>: $\\eta \\approx 80-90\\,\\%$ (valontuotanto)</li><li><strong>Polttomoottoriauto (bensiini/diesel)</strong>: $\\eta \\approx 25-35\\,\\%$ (jopa $70\\,\\%$ polttoaineen energiasta karkaa hukkalämpönä ilmaan!)</li><li><strong>Perinteinen hehkulamppu</strong>: $\\eta \\approx 5\\,\\%$ ($95\\,\\%$ energiasta meni huoneen lämmitykseen, minkä vuoksi hehkulamput kiellettiin EU:ssa!).</li></ul>",
       "tasks": {
-        "research": "",
-        "theory": ""
+        "research": "Teho ja hyötysuhde -tutkimustehtävä",
+        "theory": "FY_81: Tehon ja hyötysuhteen laskuharjoitukset"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "James Watt ja höyrykone: Miten hevosvoima määriteltiin?",
+        "content": "<h4>Kaivosponien korvaaja 1782</h4><p>Skotlantilainen keksijä <strong>James Watt</strong> kehitti 1700-luvun lopulla modernin lauhduttimella varustetun höyrykoneen, joka käynnisti koko teollisen vallankumouksen. Myydäkseen uutta konettaan kaivosomistajille hänen piti pystyä osoittamaan, kuinka monta työhevosta yksi höyrykone korvasi.</p><h4>Yhden hevosvoiman määritelmä</h4><p>Watt laski olutpanimon työhevosten nostavan hiilisangon avulla vettä kaivoksesta. Hän arvioi vahvan hevon pystyvän nostamaan $75\\text{ kg}$ kuorman yhden metrin korkeuteen sekunnissa ($75\\text{ kg} \\cdot 9{,}81\\text{ m/s}^2 \\cdot 1\\text{ m} / 1\\text{ s} \\approx 735{,}5\\text{ W}$). Tätä alettiin kutsua <strong>hevosvoimaksi (hv)</strong>.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Huippu-urheilija (esim. ratapyöräilijä loppukirissä) pystyy tuottamaan omilla lihaksillaan hetkellisesti yli $1500\\text{ W}$ eli noin kahden hevosvoiman tehon!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Energiamuodot ja teho",
+        "url": "https://phet.colorado.edu/fi/simulations/energy-forms-and-changes"
+      }
     }
-    
   ]
 }

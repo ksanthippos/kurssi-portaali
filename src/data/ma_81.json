@@ -5,142 +5,285 @@
     {
       "lesson": 1,
       "topic": "Aihe 1 / kirjan kpl 1. Yhtälöiden kertaus, osa 1",
+      "title": "Yhtälönratkaisun perusteet ja vaakamalli",
       "content": "Kerrataan yhtälöiden ratkaisemisen periaatteet kurssilta MA_73. Termien siirtämistekniikka ja yhtälön jakaminen puolittain samalla luvulla",
+      "summary": "Yhtälön käsite kahden lausekkeen yhtäsuuruutena, vaakamalli, termien siirtäminen etumerkin vaihdolla ja yhtälön jakaminen muuttujan kertoimella.",
+      "theory": "<p><strong>Yhtälö</strong> on matemaattinen väite siitä, että kaksi lauseketta ovat yhtä suuria:</p><p>$$\\mathbf{2x + 5 = 17}$$</p><h4>1. Yhtälön vaakamalli</h4><p>Yhtälöä voi ajatella tasapainossa olevana perinteisenä <strong>kaksikuppisena vaakana</strong>. Yhtäsuuruusmerkki ($=$) on vaa'an tasapainopiste:</p><ul><li>Mitä tahansa teet yhtälön toiselle puolelle, <strong>se on tehtävä tismalleen samanlaisena myös toiselle puolelle</strong>, jotta vaaka pysyy tasapainossa!</li><li>Voit lisätä tai vähentää saman luvun molemmilta puolilta.</li><li>Voit kertoa tai jakaa molemmat puolet samalla nollasta poikkeavalla luvulla.</li></ul><h4>2. Termien siirtäminen ('etumerkki vaihtuu')</h4><p>Kun termi siirretään yhtäsuuruusmerkin toiselle puolelle, sen <strong>etumerkki vaihtuu vastakkaiseksi</strong>:</p><p>$$2x + 5 = 17 \\quad \\implies \\quad 2x = 17 - 5 \\quad \\implies \\quad 2x = 12$$</p><h4>3. Jakaminen muuttujan kertoimella</h4><p>Lopuksi yhtälö jaetaan puolittain muuttujan $x$ edessä olevalla kertoimella:</p><p>$$2x = 12 \\quad \\Vert : 2 \\quad \\implies \\quad \\mathbf{x = 6}$$</p><p><em>Tarkistus sijoittamalla:</em> $2 \\cdot 6 + 5 = 12 + 5 = 17$. Yhtälö pätee!</p>",
       "tasks": {
         "blue": "s. 9: T5, 7 ja yhtälöiden kertausmoniste"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Robert Recorde ja yhtäsuuruusmerkin '=' synty 1557",
+        "content": "<h4>Kaksi yhdensuuntaista viivaa</h4><p>Ennen 1500-lukua matemaatikot kirjoittivat yhtälöissä sanallisesti: <em>'aequales'</em> (on yhtä suuri kuin). Vuonna 1557 walesilainen lääkäri ja matemaatikko <strong>Robert Recorde</strong> kyllästyi toistelemaan samaa sanaa teoksessaan <em>The Whetstone of Witte</em>.</p><h4>Miksi juuri kaksi yhdensuuntaista viivaa?</h4><p>Recorde otti käyttöön kaksi täsmälleen samanpituista yhdensuuntaista viivaa '$\\mathbf{=}$' perustellen valintaansa runollisesti: <em>'Koska mikään kaksi asiaa eivät voi olla toistensa kanssa enemmän yhtä suuria kuin kaksi yhdensuuntaista janaa!'</em></p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Recorden alkuperäinen yhtäsuuruusmerkki oli huomattavasti nykyistä pidempi – jopa usean senttimetrin mittainen viivapari!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Yhtälönratkaisun vaakamalli (Equality Explorer)",
+        "url": "https://phet.colorado.edu/fi/simulations/equality-explorer"
+      }
     },
     {
       "lesson": 2,
       "topic": "Aihe 2 / kirjan kpl 2. Yhtälöiden kertaus, osa 2",
+      "title": "Sulkujen poisto ja monimutkaisemmat yhtälöt",
       "content": "Sulkujen avaaminen ja hiukan monimutkaisempien yhtälöiden ratkaiseminen.",
+      "summary": "Sulkeiden avaaminen kertomalla kertoimella, samanmuotoisten termien yhdistäminen kummallakin puolella ja monivaiheisen yhtälön ratkaisupolku.",
+      "theory": "<p>Kun yhtälössä esiintyy sulkulausekkeita ja muuttujia molemmilla puolilla, noudatetaan selkeää marssijärjestystä:</p><h4>Yhtälönratkaisun vaiheet:</h4><ol><li><strong>Poista sulkeet</strong> kertomalla sulkeiden edessä olevalla kertoimella jokainen sulkeiden sisällä oleva termi. Muista etumerkit!</li><li><strong>Yhdistä samanmuotoiset termit</strong> erikseen vasemmalla ja oikealla puolella.</li><li><strong>Siirrä kaikki muuttujatermit ($x$) toiselle puolelle</strong> (useimmiten vasemmalle) ja <strong>kaikki vakiotermit (luvut) toiselle puolelle</strong>.</li><li><strong>Jaa yhtälö puolittain</strong> muuttujan kertoimella.</li></ol><h4>Laskuesimerkki:</h4><p>Ratkaise yhtälö $3(2x - 4) = 2x + 8$:</p><ol><li>Avataan sulkeet: $6x - 12 = 2x + 8$</li><li>Siirretään termit: $6x - 2x = 8 + 12$</li><li>Yhdistetään: $4x = 20$</li><li>Jaetaan luvulla 4: $\\mathbf{x = 5}$</li></ol><p><em>Tarkistus:</em> Vasen puoli $3(2 \\cdot 5 - 4) = 3(10 - 4) = 3 \\cdot 6 = 18$. Oikea puoli $2 \\cdot 5 + 8 = 10 + 8 = 18$. Oikein!</p>",
       "tasks": {
         "warmup": "s. 11: T1 - 3",
         "blue": "s. 11: T4 - 7, s. 180: T8",
         "red": "s. 11: T8 - 13, s. 180: T11"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Distributiivilaki arjessa: Miksi kertoimella kerrotaan jokainen termi?",
+        "content": "<h4>Kauppakassivertaus</h4><p>Miksi laskussa $3(2x - 4)$ kakkosen lisäksi myös luku $-4$ kerrotaan kolmella? Ajattele kauppareissua: Ostat kolme samanlaista lahjakassia. Jokaisessa kassissa on 2 limsatölkkiä ($2x$) ja 4 euron alennuskuponki ($-4$ €).</p><p>Kun purat kaikki 3 kassia pöydälle, sinulla on yhteensä $3 \\times 2 = 6$ limsatölkkiä ja $3 \\times (-4) = -12$ euron arvosta alennuskuponkeja! Koko kassin sisältö moninkertaistuu kolminkertaiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sana <em>distributiivinen</em> tulee latinan verbistä <em>distribuere</em>, joka tarkoittaa 'jakamista' tai 'jakelua': kerroin jaellaan tasaisesti kaikille sulkeiden sisällä asuville termeille!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Sulkujen avaaminen ja yhtälönratkaisu",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 3,
       "topic": "Aihe 3 / kirjan kpl 3. Nimittäjien poistaminen, osa 1",
+      "title": "Nimittäjien poistaminen murtolukuyhtälöistä",
       "content": "Nimittäjien poistamisen perusperiaatteet.",
+      "summary": "Murtolukukertoimet yhtälössä, yhtälön kertominen nimittäjällä puolittain ja kokonaislukukertoimiin siirtyminen.",
+      "theory": "<p>Murtoluvut yhtälössä näyttävät monista pelottavilta, mutta ne voidaan poistaa heti ensimmäisessä vaiheessa yhdellä nerokkaalla siirrolla!</p><h4>1. Nimittäjän poistaminen kertomalla puolittain</h4><p>Koska jakoviiva tarkoittaa jakolaskua, nimittäjä saadaan kumottua <strong>kertomalla yhtälön molemmat puolet nimittäjän luvulla</strong>:</p><p>$$\\frac{x}{4} = 6 \\quad \\Vert \\cdot 4 \\quad \\implies \\quad x = 6 \\cdot 4 = \\mathbf{24}$$</p><h4>2. Useampi termi yhtälössä</h4><p>Kun yhtälö kerrotaan puolittain luvulla, <strong>jokainen yhtälön termi on kerrottava samalla luvulla</strong>:</p><p>$$\\frac{x}{3} + 2 = 7 \\quad \\Vert \\cdot 3$$</p><p>$$3 \\cdot \\frac{x}{3} + 3 \\cdot 2 = 3 \\cdot 7$$</p><p>$$x + 6 = 21 \\quad \\implies \\quad x = 21 - 6 = \\mathbf{15}$$</p><p><em>Varo yleistä virhettä: Älä unohda kertoa vakiotermiä $+2$ luvulla 3!</em></p>",
       "tasks": {
         "warmup": "s. 11: T4, 9",
         "blue": "s. 15: T1, 3 - 5",
         "red": "s. 15: T7 - 11"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Murtolukujen poiston periaate: Vaa'an moninkertaistaminen",
+        "content": "<h4>Kokonaiset luvut ovat ihmiselle helpompia</h4><p>Ihmisaivot hahmottavat kokonaisia lukuja paljon luontevammin kuin murtolukuja. Kertomalla koko yhtälö nimittäjällä vaa'an molemmat kupit vain suurennetaan kolminkertaisiksi, nelinkertaisiksi tai kymmenkertaisiksi.</p><p>Vaaka pysyy täydellisessä tasapainossa, mutta kaikki murtoluvut katoavat ja jäljelle jää vain helppoja kokonaislukuja!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneiden prosessorit tekevät kokonaislukujen yhteen- ja vähennyslaskuja huomattavasti nopeammin kuin liukulukujen murtolaskuja: monet peliohjelmoijat muuttavat desimaalikoordinaatit kokonaisluvuiksi juuri suorituskyvyn maksimoimiseksi!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Nimittäjien poisto yhtälöistä",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 4,
       "topic": "Aihe 3 / kirjan kpl 3. Nimittäjien poistaminen, osa 2",
+      "title": "Useamman nimittäjän poistaminen ja yhteinen nimittäjä",
       "content": "Nimittäjien poistamisen jatko ja monimutkaisempien esimerkkien ratkaiseminen.",
+      "summary": "Pienimmän yhteisen jaettavan (pyj) löytäminen nimittäjille ja kaikkien nimittäjien kumoaminen yhdellä kertolaskulla.",
+      "theory": "<p>Mitä tehdään, jos yhtälössä on useita erilaisia nimittäjiä, esimerkiksi luvut $2$ ja $5$?</p><h4>1. Pienimmällä yhteisellä nimittäjällä kertominen</h4><p>Etsitään nimittäjien <strong>pienin yhteinen jaettava (pyj)</strong> ja kerrotaan koko yhtälö sillä:</p><p>$$\\frac{x}{2} + \\frac{x}{5} = 7 \\quad \\Vert \\cdot 10 \\quad (\\text{koska } 2 \\cdot 5 = 10)$$</p><p>$$10 \\cdot \\frac{x}{2} + 10 \\cdot \\frac{x}{5} = 10 \\cdot 7$$</p><p>Supistetaan nimittäjät pois:</p><p>$$5x + 2x = 70 \\quad \\implies \\quad 7x = 70 \\quad \\implies \\quad \\mathbf{x = 10}$$</p><h4>2. Moniterminen osoittaja ja miinusmerkki</h4><p>Jos murtoluvun osoittajassa on lauseke (kuten $x - 1$) ja murtoluvun edessä on miinusmerkki, <strong>laita osoittaja sulkeisiin nimittäjän poiston jälkeen</strong>:</p><p>$$\\frac{2x + 1}{3} - \\frac{x - 2}{2} = 1 \\quad \\Vert \\cdot 6$$</p><p>$$2(2x + 1) - 3(x - 2) = 6$$</p><p>$$4x + 2 - 3x + 6 = 6 \\quad \\implies \\quad x + 8 = 6 \\quad \\implies \\quad \\mathbf{x = -2}$$</p>",
       "tasks": {
         "blue": "s. 17: T13 - 15, s. 182: T27",
         "red": "s. 17: T17 - 19, s. 182: T28, 29"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Etumerkkiloukku: Yhtälönratkaisun yleisin kompastuskivi",
+        "content": "<h4>Jakoviiva toimii sulkuna</h4><p>Kun laskussa on $-\\frac{x - 2}{2}$, miinusmerkki kuuluu <strong>koko osoittajan lausekkeelle</strong>, ei vain ensimmäiselle termille $x$! Kun nimittäjä 2 supistuu pois luvulla 6 kerrottaessa, osoittajan eteen jää $-3(x - 2)$.</p><p>Sulut avattaessa $-3 \\cdot (-2) = \\mathbf{+6}$! Jos sulkuja ei muista laittaa, vastaus menee aina väärin. Tämä on yläkoulun ja lukion matematiikan yleisin virhekohta kokeissa.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Matematiikan opettajat kutsuvat tätä 'miinusmerkkimiinaksi': turvallisin tapa on kirjoittaa osoittajan ympärille kaarisulut jo ennen yhtälön kertomista!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Murtolukuyhtälöiden ratkaisukone",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
-{
+    {
       "lesson": 5,
       "topic": "Aihe 4 / kirjan kpl 6. Toisen asteen yhtälöt, osa 1",
+      "title": "Vaillinainen toisen asteen yhtälö ja neliöjuuri",
       "content": "Toisen asteen yhtälöiden ratkaisemisen perusperiaatteet. Neliöjuuren kertaus, plus-miinus-merkintä.",
+      "summary": "Vaillinainen toisen asteen yhtälö muotoa x² = a, neliöjuuren ottaminen puolittain, plus-miinus-ratkaisut (±) ja geometrinen neliö.",
+      "theory": "<p>Kun yhtälössä esiintyy muuttujan toinen potenssi $x^2$, kyseessä on <strong>toisen asteen yhtälö</strong>.</p><h4>1. Yhtälö muotoa $x^2 = a$</h4><p>Kun $x^2 = a$ ja $a > 0$, yhtälöllä on aina <strong>kaksi ratkaisua: positiivinen ja negatiivinen</strong>!</p><p>Tämä johtuu siitä, että myös negatiivisen luvun toinen potenssi on positiivinen: $(-3)^2 = (-3) \\cdot (-3) = +9$.</p><p>$$\\mathbf{x^2 = 9 \\quad \\Vert \\sqrt{\\phantom{x}} \\quad \\implies \\quad x = \\pm \\sqrt{9} \\quad \\implies \\quad x = 3 \\quad \\text{tai} \\quad x = -3}$$</p><h4>2. Ratkaisujen merkitseminen</h4><p>Ratkaisut voidaan merkitä lyhyesti plus-miinus-merkillä:</p><p>$$\\mathbf{x = \\pm 3} \\quad \\text{tai} \\quad \\mathbf{x_1 = 3, \\quad x_2 = -3}$$</p><h4>3. Vaillinainen toisen asteen yhtälö $ax^2 + c = 0$</h4><p>Siirretään ensin vakiotermi oikealle ja jaetaan toisen asteen termin kertoimella:</p><p>$$2x^2 - 50 = 0 \\quad \\implies \\quad 2x^2 = 50 \\quad \\Vert : 2 \\quad \\implies \\quad x^2 = 25 \\quad \\implies \\quad \\mathbf{x = \\pm 5}$$</p>",
       "tasks": {
         "warmup": "s. 27: T1 - 4",
         "blue": "s. 27: T6 - 9",
         "red": "s. 27: T11 - 14, s. 184: T59, 60"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Pythagoralaiset ja irrationaaliluvun järkytys: Miten neliöjuuri 2 järkytti maailmaa?",
+        "content": "<h4>Kaikki on kokonaislukujen suhdetta?</h4><p>Noin 500 eaa. Pythagoras ja hänen salaseuransa uskoivat uskonnollisesti, että koko maailmankaikkeus ja sen kauneus perustuivat kokonaislukujen ja murtolukujen täydellisiin suhteisiin.</p><h4>Neliön lävistäjä $x^2 = 2$</h4><p>Eräs seuran jäsenistä, <strong>Hippasos Metapontionlainen</strong>, alkoi tutkia neliötä, jonka sivun pituus on $1$. Pythagoraan lauseen mukaan lävistäjälle päti $x^2 = 1^2 + 1^2 = 2 \\implies x = \\sqrt{2}$.</p><p>Hippasos todisti matemaattisesti, että lukua $\\sqrt{2}$ ei voi mitenkään esittää kahden kokonaisluvun murtolukuna (se on päättymätön ja jaksoton irrationaaliluku)! Legendan mukaan löytö oli pythagoralaisille niin suuri filosofinen skandaali, että Hippasos heitettiin laivasta mereen salaisuuden varjelemiseksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Luvun $\\sqrt{2} \\approx 1{,}41421356...$ desimaaleja on nykyään laskettu tietokoneilla yli 100 biljoonaa kappaletta ilman mitään toistuvaa jaksoa!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Toisen asteen yhtälö ja neliön pinta-ala",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 6,
       "topic": "Aihe 4 / kirjan kpl 6. Toisen asteen yhtälöt, osa 2",
+      "title": "Toisen asteen yhtälön ratkaisujen lukumäärä ja ratkeamattomat yhtälöt",
       "content": "Toisen asteen yhtälöiden haasteet, kuten pidemmät yhtälöt ja ratkaisemattomat yhtälöt.",
+      "summary": "Ratkaisujen lukumäärä yhtälölle x² = a (kaksi, yksi tai ei yhtään reaaliratkaisua) ja pidempien toisen asteen yhtälöiden ratkaiseminen.",
+      "theory": "<p>Toisen asteen yhtälöllä ei aina ole kahta ratkaisua. Ratkaisujen määrä riippuu täysin neliön arvosta!</p><h4>Ratkaisujen lukumäärän kolme tapausta yhtälössä $x^2 = a$:</h4><ol><li><strong>Jos $a > 0$ (positiivinen)</strong>: Yhtälöllä on <strong>kaksi ratkaisua</strong> ($x = \\pm \\sqrt{a}$).<br><em>Esimerkki:</em> $x^2 = 16 \\implies x = 4 \\text{ tai } x = -4$.</li><li><strong>Jos $a = 0$</strong>: Yhtälöllä on <strong>yksi ratkaisu</strong> ($x = 0$).<br><em>Esimerkki:</em> $x^2 = 0 \\implies x = 0$.</li><li><strong>Jos $a < 0$ (negatiivinen)</strong>: Yhtälöllä <strong>ei ole lainkaan reaaliratkaisuja</strong>!<br><em>Minkään reaaliluvun neliö ei voi olla negatiivinen: $(-5)^2 = +25 > 0$!</em></li></ol><p><em>Laskuesimerkki ratkeamattomasta yhtälöstä:</em><br>$$3x^2 + 27 = 0 \\quad \\implies \\quad 3x^2 = -27 \\quad \\Vert : 3 \\quad \\implies \\quad x^2 = -9$$<br>Koska negatiivisesta luvusta ei voi ottaa neliöjuurta reaalilukujen joukossa, kirjoitetaan vastaukseksi: <strong>Ei ratkaisua ($\\{\\}$ tai $\\emptyset$)</strong>.</p>",
       "tasks": {
         "warmup": "s. 29: T16 - 18",
         "blue": "s. 29: T20 - 23, s. 185: T61 - 63",
         "red": "s. 29: T25 - 27, 30, s. 185: T66, 67"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi 'ei ratkaisua' on täydellisen hyvä ja arvokas vastaus?",
+        "content": "<h4>Fysiikan mahdottomuudet</h4><p>Kun fysiikassa tai arkkitehtuurissa mallinnetaan todellista tilannetta yhtälöllä, yhtälön ratkaisu kertoo fysikaalisen totuuden. Jos lasket kiven heiton lentoradasta, milloin kivi saavuttaa 50 metrin korkeuden ja saat yhtälöksi $x^2 = -16$, vastaus 'ei ratkaisua' tarkoittaa konkreettisesti: <em>Kivi ei koskaan lennä niin korkealle!</em></p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kuten valinnaiskurssilla VMA_01 opitaan, 1500-luvun italialaiset matemaatikot keksivät yhtälöille $x^2 = -1$ kuvitteellisen luvun $i$ eli imaginääriyksikön, jolloin yhtälöille saadaan aina ratkaisut kompleksitasossa!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Toisen asteen kuvaaja ja nollakohtien lukumäärä",
+        "url": "https://phet.colorado.edu/fi/simulations/graphing-quadratics"
+      }
     },
     {
       "lesson": 7,
       "topic": "Aihe 5 / kirjan kpl 5. Identtiset yhtälöt",
+      "title": "Identtisesti tosi ja epätosi yhtälö",
       "content": "Identtisten yhtälöiden tunnistaminen ja ratkaiseminen. Identtisesti tosi ja epätosi yhtälö.",
+      "summary": "Erikoistapaukset yhtälönratkaisussa: identtisesti tosi yhtälö (0 = 0, kaikki luvut käyvät) ja epätosi yhtälö (0 = a, ei ratkaisua).",
+      "theory": "<p>Joskus yhtälöä ratkaistaessa tapahtuu jotain outoa: <strong>muuttuja $x$ katoaa yhtälöstä kokonaan pois!</strong></p><h4>Tapaus 1: Identtisesti tosi yhtälö ($0 = 0$)</h4><p>Tarkastellaan yhtälöä $2(x + 3) = 2x + 6$:</p><p>$$2x + 6 = 2x + 6$$</p><p>$$2x - 2x = 6 - 6 \\quad \\implies \\quad \\mathbf{0 = 0}$$</p><p>Väite $0 = 0$ pitää aina paikkansa riippumatta siitä, mitä lukuja $x$:n paikalle sijoitetaan! Vastaus on:</p><p>$$\\mathbf{\\text{Kaikki reaaliluvut ovat ratkaisuja (yhtälö on identtisesti tosi)}}.$$</p><h4>Tapaus 2: Epätosi yhtälö ($0 = 5$)</h4><p>Tarkastellaan yhtälöä $3x + 4 = 3x + 9$:</p><p>$$3x - 3x = 9 - 4 \\quad \\implies \\quad \\mathbf{0 = 5}$$</p><p>Väite $0 = 5$ on täysin mahdoton ja ristiriitainen valhe! Mikään luku $x$ ei voi saada nollaa ja vitosta yhtä suuriksi. Vastaus on:</p><p>$$\\mathbf{\\text{Yhtälöllä ei ole ratkaisua (yhtälö on epätosi)}}.$$</p>",
       "tasks": {
         "warmup": "s. 25: T10 - 12",
         "blue": "s. 25: T15, 16, s. 184: T47 - 49",
         "red": "s. 25: T19, 20, s. 184: T50 - 52"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Tautologia ja kontradiktio: Matemaattisen logiikan perusteet",
+        "content": "<h4>Aina totta vai aina valetta?</h4><p>Filosofiassa ja matemaattisessa logiikassa lausetta, joka on rakenteensa puolesta aina tosi riippumatta mistään ulkoisesta asiasta, kutsutaan <strong>tautologiaksi</strong> (esim. <em>'Ulkona joko sataa tai ei sada'</em> tai yhtälö $0 = 0$).</p><p>Vastaavasti lausetta, joka on itsensä kanssa sovittamattomassa ristiriidassa, kutsutaan <strong>kontradiktioksi</strong> (esim. <em>'Tämä ympyrä on neliö'</em> tai yhtälö $0 = 5$).</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneiden hakukoneet ja tekoälyt käyttävät Boolen logiikan tautologioita karsimaan miljardeja verkkosivuja hakutuloksista silmänräpäyksessä!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Identtiset yhtälöt suorien leikkauspisteenä",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 8,
       "topic": "Aihe 6 / kirjan kpl 10. Ongelmanratkaisu yhtälöillä, osa 1",
+      "title": "Sanallisten tehtävien ratkaisu yhtälöillä",
       "content": "Sanallisten tehtävien ratkaisua yhtälöillä, perustapauksia.",
+      "summary": "Sanallisen ongelman kääntäminen matematiikan kielelle: tuntemattoman valinta x:ksi, yhtälön muodostaminen, ratkaisu ja vastauksen järkevyyden tarkistus.",
+      "theory": "<p>Yhtälöiden suurin voima on arjen pulmien ja sanallisten ongelmien ratkaisemisessa.</p><h4>Nelivaiheinen ongelmanratkaisustrategia:</h4><ol><li><strong>Valitse tuntematon ja nimeä se muuttujaksi $x$</strong>: Kirjoita selkeästi paperille, mitä $x$ tarkoittaa (esim. <em>'Olkoon omenoiden määrä $= x$'</em>).</li><li><strong>Ilmaise muut tehtävän asiat muuttujan $x$ avulla</strong>: Esim. <em>'Päärynöitä on 3 enemmän kuin omenoita $\\implies x + 3$'</em>.</li><li><strong>Muodosta yhtälö</strong> tehtävänannon antaman tiedon perusteella (esim. <em>'hedelmiä on yhteensä 17'</em>):<br>$$x + (x + 3) = 17$$</li><li><strong>Ratkaise yhtälö, tarkista ja vastaa sanallisesti yksikön kera</strong>:<br>$$2x + 3 = 17 \\implies 2x = 14 \\implies x = 7$$<br><em>Vastaus: Omenoita on 7 kpl ja päärynöitä $7 + 3 = 10\\text{ kpl}$. Yhteensä $7 + 10 = 17\\text{ kpl}$.</em></li></ol>",
       "tasks": {
         "warmup": "s. 43: T1 - 4",
         "blue": "s. 43: T5 - 7",
         "red": "s. 43: T8 - 10"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "George Pólya ja 'How to Solve It' 1945: Ongelmanratkaisun käsikirja",
+        "content": "<h4>Unkarilainen professori Stanfordin yliopistossa</h4><p>Vuonna 1945 unkarilainen matemaatikko <strong>George Pólya</strong> kirjoitti kirjan <em>How to Solve It</em>, jota on myyty miljoonia kappaleita ympäri maailmaa. Pólya oivalsi, että kaikki hyvät ongelmanratkaisijat noudattavat samoja heuristisia vaiheita:</p><ol><li>Ymmärrä ongelma (mitä kysytään? mitä tietoja on annettu?).</li><li>Laadi suunnitelma (voitko piirtää kuvan? ratkaista helpomman erikoistapauksen?).</li><li>Toteuta suunnitelma (laske huolellisesti).</li><li>Katso taaksepäin (onko vastaus järkevä? voisitko ratkaista pulman toisin?).</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos sanallisessa tehtävässä kysytään ihmisten määrää bussissa ja saat vastaukseksi $x = -2{,}5$, Pólyan neljäs sääntö 'katso taaksepäin' paljastaa heti, että jossain laskuvaiheessa on tapahtunut virhe!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Sanallisten tehtävien visualisointi",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 9,
       "topic": "Aihe 7 / kirjan kpl 10. Ongelmanratkaisu yhtälöillä, osa 2",
+      "title": "Geometriset ja taloudelliset yhtälösovellukset",
       "content": "Sanallisten tehtävien ratkaisua yhtälöillä, haastavampia tapauksia.",
+      "summary": "Piiriin, pinta-alaan, ikäongelmiin ja lippuhintoihin liittyvien monivaiheisten yhtälöiden ratkaiseminen.",
+      "theory": "<p>Syvennetään yhtälöiden soveltamista geometriaan ja arkielämän tilanteisiin.</p><h4>1. Geometriset sovellukset (suorakulmion piiri)</h4><p><em>Esimerkki:</em> Suorakulmion muotoisen pihan pituus on $4\\text{ metriä}$ pidempi kuin sen leveys. Pihan piiri on $36\\text{ metriä}$. Laske pihan mitat.</p><ul><li>Olkoon leveys $= x$</li><li>Pituus on tällöin $= x + 4$</li><li>Suorakulmion piiri on $p = 2 \\cdot \\text{leveys} + 2 \\cdot \\text{pituus}$:<br>$$2x + 2(x + 4) = 36$$<br>$$2x + 2x + 8 = 36$$<br>$$4x = 28 \\implies \\mathbf{x = 7}$$</li><li><em>Vastaus: Pihan leveys on $7\\text{ m}$ ja pituus $7 + 4 = 11\\text{ m}$. (Tarkistus: $2 \\cdot 7 + 2 \\cdot 11 = 14 + 22 = 36\\text{ m}$.)</em></li></ul><h4>2. Ikäongelmat</h4><p><em>Esimerkki:</em> Äiti on nyt 32 vuotta ja tytär 6 vuotta. Kuinka monen vuoden kuluttua äiti on tasan kolme kertaa niin vanha kuin tytär?</p><ul><li>Kulukoon aikaa $x$ vuotta.</li><li>Äidin ikä on silloin $32 + x$ ja tyttären ikä $6 + x$.</li><li>Muodostetaan yhtälö:<br>$$32 + x = 3(6 + x)$$<br>$$32 + x = 18 + 3x \\implies x - 3x = 18 - 32 \\implies -2x = -14 \\implies \\mathbf{x = 7}$$</li><li><em>Vastaus: 7 vuoden kuluttua (äiti 39 v, tytär 13 v, ja $3 \\cdot 13 = 39$).</em></li></ul>",
       "tasks": {
         "warmup": "s. 45: T11 - 14",
         "blue": "s. 45: T15, 16, s. 47: T23, 24, 26, 29",
         "red": "s. 45: T19 - 21, s. 47: T30, 31, 35, s. 186 - 187: T91, 99"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Diofantoksen hautakirjoitus: Antiikin kuuluisin matemaattinen ikäarvoitus",
+        "content": "<h4>Aleksandrialaisen algebran isän hauta</h4><p>Antiikin kreikkalaisen matemaatikon <strong>Diofantoksen</strong> (n. 250 jaa.) hautakiveen kaiverrettiin arvoitus, josta kuka tahansa yhtälöitä osaava voi laskea hänen elinikänsä:</p><blockquote><em>'Tämä hauta kätkee Diofantoksen. Jumala soi hänen olla poika kuudenneksen elämästään, ja kahdestoistaosan kuluttua hänen poskensa saivat parran. Seitsemänneksen jälkeen syttyi avioliiton soihtu, ja viiden vuoden kuluttua syntyi poika. Voi kurjaa lasta: saavutettuaan puolet isänsä eliniästä julma kohtalo otti hänet pois. Isä lohdutti suruaan matematiikalla vielä neljä vuotta ennen kuolemaansa.'</em></blockquote><p>Yhtälö: $\\frac{x}{6} + \\frac{x}{12} + \\frac{x}{7} + 5 + \\frac{x}{2} + 4 = x$. Kun tämän ratkaisee, saadaan $\\mathbf{x = 84\\text{ vuotta}}$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Diofantoksen kirjan <em>Arithmetica</em> marginaaliin ranskalainen Pierre de Fermat kirjoitti vuonna 1637 kuuluisan 'Fermat'n suuren lauseen', jota ei saatu ratkaistua ennen vuotta 1995!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Geometriset yhtälömallit",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 10,
       "topic": "Aihe 8 / kirjan kpl 12. Suhde ja verranto, osa 1",
+      "title": "Suhteen käsite ja jakaminen suhteessa",
       "content": "Suhteen käsitteen ymmärtäminen ja sen soveltaminen erilaisissa tehtävissä.",
+      "summary": "Suureiden suhde a : b jakolaskuna ja murtolukuna, suhteen supistaminen perusmuotoon ja kokonaisuuden jakaminen annetussa suhteessa.",
+      "theory": "<p><strong>Suhde</strong> vertaa kahta samankaltaista suuretta jakolaskun avulla. Se kertoo, kuinka moninkertainen toinen suure on toiseen verrattuna.</p><h4>1. Suhteen merkitseminen ja sieventäminen</h4><p>Luvun $a$ ja luvun $b$ suhde merkitään kaksoispisteellä tai murtolukuna:</p><p>$$\\mathbf{a : b = \\frac{a}{b}}$$</p><p>Suhde sievennetään aina <strong>pienimpien mahdollisten kokonaislukujen suhteeksi</strong> supistamalla:</p><p>$$12\\text{ cm} : 18\\text{ cm} = \\frac{12}{18} = \\overset{(6)}{\\frac{12}{18}} = \\mathbf{2 : 3}$$</p><h4>2. Kokonaisuuden jakaminen tietyssä suhteessa</h4><p><em>Esimerkki:</em> Mehutiivistettä ja vettä sekoitetaan suhteessa $1 : 4$. Kuinka paljon tiivistettä tarvitaan, kun valmista mehua tehdään $15\\text{ desilitraa}$?</p><ol><li>Lasketaan osien kokonaismäärä: $1 + 4 = 5\\text{ osaa}$.</li><li>Lasketaan yhden osan koko:<br>$$\\frac{15\\text{ dl}}{5} = 3\\text{ dl}$$</li><li>Lasketaan ainesosat:<br>Tiivistettä: $1 \\cdot 3\\text{ dl} = \\mathbf{3\\text{ dl}}$<br>Vettä: $4 \\cdot 3\\text{ dl} = \\mathbf{12\\text{ dl}}$</li></ol>",
       "tasks": {
         "warmup": "s. 53: T2, 4, 5, 7",
         "blue": "s. 53: T9, s. 189: T116 - 118, 122, 123",
         "red": "s. 53: T11, 12, s. 189: 121, 126, 127"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Pythagoras ja sävelten suhteet: Miten musiikki perustuu murtolukuihin?",
+        "content": "<h4>Sepän alasin ja kireät kielet</h4><p>Antiikin Kreikassa Pythagoras kulki sepän pajan ohi ja huomasi, että eripainoiset vasarat tuottivat alasimeen osuessaan harmonisia, toisiinsa sointuvia ääniä. Hän alkoi tutkia värähtelevän kielen pituuksia (monokordi).</p><h4>Musiikilliset intervallit suhteina</h4><p>Pythagoras teki hämmästyttävän havainnon:</p><ul><li>Jos kielen pituus puolitetaan (suhde $1 : 2$), syntyy täydellinen <strong>oktaavi</strong>!</li><li>Jos kielen pituuden suhde on $2 : 3$, syntyy puhdas <strong>kvintti</strong>.</li><li>Jos suhde on $3 : 4$, syntyy <strong>kvartti</strong>.</li></ul><p>Koko länsimainen musiikin sävelasteikko ja harmonia perustuvat suoraan näihin yksinkertaisiin kokonaislukujen suhteisiin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Pythagoras uskoi taivaankappaleiden planeettojen ratojen tuottavan avaruudessa ihmiskorvalle kuulumatonta 'sfäärien harmoniaa' (Musica Universalis) samojen matemaattisten suhteiden mukaan!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Suhteen jakaminen ja sekoitussuhteet",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 11,
       "topic": "Aihe 8 / kirjan kpl 13. Suhde ja verranto, osa 2",
+      "title": "Verranto ja ristiinkertolasku",
       "content": "Verrannon käsite, yhtälön ratkaiseminen ristiinkertolaskulla.",
+      "summary": "Verranto kahden suhteen yhtäsuuruutena a/b = c/d, ristiinkertominen a·d = b·c ja tuntemattoman ratkaiseminen.",
+      "theory": "<p>Kun kaksi suhdetta merkitään yhtä suuriksi, saadaan <strong>verranto</strong>:</p><p>$$\\mathbf{\\frac{a}{b} = \\frac{c}{d}}$$</p><h4>1. Ristiinkertolaskun sääntö</h4><p>Verrantoyhtälö ratkaistaan kätevimmin <strong>kertomalla ristiin</strong> (osoittaja kerrotaan vastakkaisen puolen nimittäjällä):</p><p>$$\\mathbf{\\frac{a}{b} = \\frac{c}{d} \\iff a \\cdot d = b \\cdot c}$$</p><h4>2. Laskuesimerkki</h4><p>Ratkaise verranto $\\frac{x}{6} = \\frac{5}{15}$:</p><ol><li>Kerrotaan ristiin:<br>$$x \\cdot 15 = 6 \\cdot 5$$<br>$$15x = 30$$</li><li>Jaetaan luvulla 15:<br>$$\\mathbf{x = 2}$$</li></ol><h4>3. Sovellusesimerkki arjesta</h4><p>Auton kulutus on $6{,}0\\text{ litraa}$ sadalla kilometrillä ($100\\text{ km}$). Kuinka paljon polttoainetta kuluu $350\\text{ km}$ matkaan?</p><p>$$\\frac{x}{350} = \\frac{6{,}0}{100} \\implies 100x = 6{,}0 \\cdot 350 = 2100 \\implies \\mathbf{x = 21\\text{ litraa}}$$</p>",
       "tasks": {
         "warmup": "s. 57: T4, 5",
         "blue": "s. 57: T8, 9, s. 59: T14, 15, 20",
         "red": "s. 57: T11, 12, s. 59: T16, 22, 23, s. 190: T138, 139"
       },
-      "substituteNote": ""
-    },    {
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Thales ja pyramidin korkeuden mittaaminen kepin varjolla 600 eaa.",
+        "content": "<h4>Faaraon mittaamaton monumentti</h4><p>Kreikkalainen filosofi <strong>Thales Miletoslainen</strong> vieraili Egyptissä. Egyptin faarao haastoi Thaleen: pystyisikö hän mittaamaan Kheopsin suuren pyramidin korkeuden kiipeämättä sen huipulle?</p><h4>Verrannon oivallus varjosta</h4><p>Thales iski maahan pystysuoran kepin ja odotti päivällä hetkeä, jolloin kepin varjo oli täsmälleen yhtä pitkä kuin keppi itse. Hän oivalsi, että samalla hetkellä myös pyramidin varjo oli täsmälleen yhtä pitkä kuin pyramidin korkeus!</p><p>Myöhemmin hän yleisti tämän mihin tahansa vuorokaudenaikaan verrannon avulla:</p><p>$$\\frac{\\text{pyramidin korkeus}}{\\text{pyramidin varjo}} = \\frac{\\text{kepin korkeus}}{\\text{kepin varjo}}$$</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Thaleen keksintöä pidetään historian ensimmäisenä dokumentoituna geometrisena mittauksena, joka hyödynsi yhdenmuotoisia kolmioita ja verrantoa!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Verranto ja mittakaava",
+        "url": "https://phet.colorado.edu/fi/simulations/proportion-playground"
+      }
+    },
+    {
       "lesson": 12,
       "topic": "Aihe 9 / kirjan kpl 14. Suoraan ja kääntäen verrannollisuus",
+      "title": "Suoraan ja kääntäen verrannollisuus",
       "content": "Suoraan ja kääntäen verrannollisuuden käsitteet sekä taulukkona että kuvaajana, verrantoyhtälön hyödyntäminen ongelmanratkaisussa.",
-            "tasks": {
+      "summary": "Suoraan verrannollisuus y = kx (origon kautta kulkeva suora, suhde vakio) vs. kääntäen verrannollisuus y = k/x (hyperbeli, tulo vakio).",
+      "theory": "<p>Kahden muuttujan välinen suhde voi käyttäytyä luonnossa ja taloudessa kahdella täysin vastakkaisella tavalla:</p><h4>1. Suoraan verrannollisuus ($y \\sim x$)</h4><p>Suureet ovat <strong>suoraan verrannollisia</strong>, jos toisen suureen kaksinkertaistuessa myös toinen suure <strong>kaksinkertaistuu</strong>. Niiden <strong>suhde (osamäärä) pysyy vakiona</strong>:</p><p>$$\\mathbf{\\frac{y}{x} = k \\iff y = k \\cdot x}$$</p><ul><li>Kuvaaja $(x, y)$-koordinaatistossa on aina <strong>origon $(0, 0)$ kautta kulkeva nouseva suora</strong>.</li><li><em>Esimerkkejä:</em> Bensiinin määrä ja hinta, ajettu matka ja kulunut aika tasaisessa liikkeessä, työtunnit ja palkka.</li></ul><h4>2. Kääntäen verrannollisuus</h4><p>Suureet ovat <strong>kääntäen verrannollisia</strong>, jos toisen suureen kaksinkertaistuessa toinen suure <strong>puolittuu</strong>. Niiden <strong>tulo pysyy aina vakiona</strong>:</p><p>$$\\mathbf{x \\cdot y = k \\iff y = \\frac{k}{x}}$$</p><ul><li>Kuvaaja koordinaatistossa on laskeva käyrä eli <strong>hyperbeli</strong>.</li><li><em>Esimerkkejä:</em> Työmiesten lukumäärä ja urakkaan kuluva aika (2 miestä tekee työn 6 tunnissa $\\implies 4$ miestä tekee 3 tunnissa), auton nopeus ja matka-aika vakiomatkalla.</li></ul>",
+      "tasks": {
         "warmup": "s. 61: T1 - 5",
         "blue": "s. 63: T11 - 14, s. 192: T149, 150",
         "red": "s. 63: T17 - 22, s. 192: T151, 152"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Boylen laki ja sukeltajien fysiikka: Kääntäen verrannollisuus hengenvaarassa",
+        "content": "<h4>Irlantilainen kemisti Robert Boyle 1662</h4><p>Tutkiessaan kaasujen käyttäytymistä Robert Boyle huomasi, että suljetun ilmasäiliön paine ja tilavuus ovat kääntäen verrannollisia: kun tilavuus puristetaan puoleen, paine kaksinkertaistuu ($p \\cdot V = \\text{vakio}$).</p><h4>Sukeltajantaudin riski</h4><p>Kun laitesukeltaja laskeutuu 20 metrin syvyyteen, veden alla paine on kolminkertainen ($3\\text{ baria}$). Jos sukeltaja ottaa keuhkonsa täyteen ilmaa ja nousee pintaan pidättäen hengitystään, paineen pudotessa kolmasosaan keuhkoissa oleva ilma laajenee Boylen lain mukaan <strong>kolminkertaiseksi</strong>, mikä voi repiä keuhkokudoksen hengenvaarallisesti!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sukelluskurssin ehdoton kultainen sääntö nro 1 on: <em>'Älä koskaan pidätä hengitystäsi noustessasi pintaan!'</em></div>"
+      },
+      "simulation": {
+        "title": "PhET: Suoraan ja kääntäen verrannollisuus kuvaajina",
+        "url": "https://phet.colorado.edu/fi/simulations/graphing-lines"
+      }
     },
     {
       "lesson": 13,
       "topic": "Aihe 10 / kirjan kpl 11. Epäyhtälöt",
+      "title": "Epäyhtälön ratkaiseminen ja merkin kääntösääntö",
       "content": "Epäyhtälön käsite, esittäminen lukusuoralla ja huomiot ratkaisutekniikassa (suunnan kääntö).",
+      "summary": "Epäyhtälömerkit (<, >, <=, >=), ratkaisujoukko lukusuoralla ja kriittinen sääntö: epäyhtälömerkin suunta kääntyy aina jaettaessa tai kerrottaessa negatiivisella luvulla.",
+      "theory": "<p><strong>Epäyhtälössä</strong> yhtäsuuruusmerkin paikalla on vertailumerkki ($<, >, \\le, \\ge$). Toisin kuin tavallisella yhtälöllä, jolla on usein yksi ainoa ratkaisu, <strong>epäyhtälöllä on yleensä ääretön määrä ratkaisuja</strong>, jotka muodostavat lukusuoran välin.</p><h4>1. Epäyhtälön ratkaisutekniikka</h4><p>Epäyhtälö ratkaistaan lähes täysin samalla tavalla kuin tavallinen yhtälö:</p><p>$$3x - 5 < 10 \\quad \\implies \\quad 3x < 15 \\quad \\Vert : 3 \\quad \\implies \\quad \\mathbf{x < 5}$$</p><p><em>Ratkaisuna ovat kaikki luvut, jotka ovat vitosta pienempiä (esim. $4, 0, -10$).</em></p><h4>2. EPÄYHTÄLÖN TÄRKEIN ERIKOISSÄÄNTÖ: Merkin kääntö!</h4><blockquote><strong>Jos epäyhtälö kerrotaan tai jaetaan NEGATIIVISELLA luvulla, epäyhtälömerkin suunta KÄÄNTYY aina vastakkaiseksi!</strong></blockquote><p>$$-2x \\le 8 \\quad \\Vert : (-2) \\quad \\implies \\quad \\mathbf{x \\ge -4}$$</p><h4>Miksi merkki kääntyy? Testaa numeroilla:</h4><p>Tiedämme, että $2 < 5$. Kerrotaan molemmat puolet luvulla $-1$:</p><p>$$-2 \\quad \\text{ja} \\quad -5$$</p><p>Lukusuoralla $-2$ on suurempi kuin $-5$ (lähempänä nollaa)! Siis: $\\mathbf{-2 > -5}$. Epäyhtälömerkin oli pakko kääntyä, jotta väite pysyi totena!</p>",
       "tasks": {
         "warmup": "s. 49: T1, 7, s. 51: T12",
         "blue": "s. 51: T13 - 19",
         "red": "s. 51: T21 - 23"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Thomas Harriot ja vertailumerkkien keksiminen 1631",
+        "content": "<h4>Auringonpilkkujen tutkija ja matemaatikko</h4><p>Englantilainen matemaatikko ja tutkimusmatkailija <strong>Thomas Harriot</strong> (1560–1621) oli ensimmäisiä, jotka katselivat kaukoputkella Kuun kraattereita ja Auringon pilkkuja jo ennen Galileita. Hänen kuolemansa jälkeen vuonna 1631 julkaistiin hänen matematiikan käsikirjoituksensa <em>Artis Analyticae Praxis</em>.</p><h4>Krokotiilin kita kohti suurempaa</h4><p>Harriot otti ensimmäisenä käyttöön tutut merkit <strong>$<$ (pienempi kuin)</strong> ja <strong>$>$ (suurempi kuin)</strong> korvaamaan aiemmat kömpelöt sanalliset ilmaisut. Merkin leveämpi avoin pää osoittaa aina suurempaan lukuun ja terävä kärki pienempään!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Harriot matkusti Walter Raleigh'n retkikunnassa Pohjois-Amerikan Virginiaan 1585 ja toimi siirtokunnan kartoittajana oppien paikallisen algonkin-intiaanien kielen!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Epäyhtälön ratkaisujoukko lukusuoralla",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
-
   ]
 }

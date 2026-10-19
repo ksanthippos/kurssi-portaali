@@ -2,129 +2,271 @@
   "code": "FY_71",
   "title": "Lämpöoppi ja aaltoliike",
   "lessons": [
-        {
+    {
       "lesson": 1,
       "topic": "Johdatus fysiikan maailmaan",
+      "title": "Mitä fysiikka tutkii? Suureet ja mittaaminen",
       "content": "KS aihe 0 / kirjan kpl 0. Mitä fysiikka tutkii, miksi sitä opiskellaan ja millaista on fysiikan kieli.",
+      "summary": "Fysiikan tutkimusalueet luonnontieteenä, mittaukset, suureet ja yksiköt, SI-järjestelmän perussuureet sekä tieteellinen tutkimusmenetelmä.",
+      "theory": "<p>Tervetuloa fysiikan pariin! <strong>Fysiikka</strong> on perustavanlaatuinen kokeellinen luonnontiede, joka tutkii ainetta, energiaa ja luonnonilmiöitä – aina pienimmistä alkeishiukkasista koko maailmankaikkeuden mittakaavaan.</p><h4>1. Fysiikan tutkimusmenetelmä</h4><ol><li><strong>Havainto</strong>: Tehdään havainto luonnonilmiöstä.</li><li><strong>Hypoteesi</strong>: Muodostetaan oletus tai malli siitä, miksi ilmiö tapahtuu.</li><li><strong>Koe (eksperimentti)</strong>: Testataan oletusta toistettavilla mittauksilla laboratoriossa.</li><li><strong>Luonnonlaki</strong>: Jos kokeet toistuvasti vahvistavat mallin, tuloksesta muodostuu matemaattinen luonnonlaki.</li></ol><h4>2. Suure ja mittayksikkö</h4><p>Fysiikan tulokset ilmaistaan <strong>suureiden</strong> avulla. Jokainen mittaustulos koostuu mittaluvusta ja mittayksiköstä:</p><p>$$\\mathbf{\\text{Suure} = \\text{mittaluku} \\times \\text{yksikkö}}$$</p><p><em>Esimerkki:</em> Matka $s = 5{,}2\\text{ m}$. Tässä suure on pituus $s$, mittaluku on $5{,}2$ ja yksikkö on metri ($\\text{m}$).</p><h4>3. Kansainvälinen SI-järjestelmä</h4><p>Tiedemaailmassa käytetään yhteisesti sovittua SI-mittajärjestelmää. Sen keskeisiä perussuureita ovat:</p><ul><li><strong>Pituus</strong>: $s$, $l$ (metri, $\\text{m}$)</li><li><strong>Massa</strong>: $m$ (kilogramma, $\\text{kg}$)</li><li><strong>Aika</strong>: $t$ (sekunti, $\\text{s}$)</li><li><strong>Lämpötila</strong>: $T$ (kelvin, $\\text{K}$) tai Celsius-aste ($^\\circ\\text{C}$)</li><li><strong>Sähkövirta</strong>: $I$ (ampeeri, $\\text{A}$)</li></ul>",
       "tasks": {
         "theory": "s. 6: T1 - 6"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Galileo Galilei ja Pisan kalteva torni: Kokeellisen tieteen vallankumous",
+        "content": "<h4>Antiikin uskomukset vastaan todelliset kokeet</h4><p>Yli 2000 vuoden ajan ihmiset uskoivat antiikin filosofi Aristoteleen väitteeseen, jonka mukaan painavat esineet putoavat nopeammin kuin kevyet esineet. Kukaan ei kuitenkaan ollut vaivautunut kokeilemaan asiaa järjestelmällisesti käytännössä!</p><h4>Pudotuskoe Pisassa</h4><p>Noin vuonna 1589 italialainen fyysikko <strong>Galileo Galilei</strong> kiipesi tarinan mukaan Pisan kaltevaan torniin ja pudotti samanaikaisesti kaksi eripainoista kuulaa. Molemmat osuivat maahan tasan samaan aikaan! Galilei osoitti, että painovoima kiihdyttää kaikkia kappaleita samalla tavalla, ja ainoa ero arjessa johtuu ilmanvastuksesta.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Apollo 15 -astronautti David Scott toisti Galilein kokeen Kuussa vuonna 1971 pudottamalla tyhjiössä yhtä aikaa haukan sulan ja geologin vasaran: ne osuivat kuun kamaraan täsmälleen samaan aikaan!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Luonnon mittakaavat ja mittaaminen",
+        "url": "https://phet.colorado.edu/fi/simulations/states-of-matter"
+      }
     },
     {
       "lesson": 2,
       "topic": "Lämpötila ja lämpölaajeneminen, osa 1",
+      "title": "Lämpötila ja kiinteiden aineiden lämpölaajeneminen",
       "content": "KS aihe 1 / kirjan kpl 1. Tutustutaan lämpölaajenemisen käsitteeseen ja käytännön sovelluksiin.",
+      "summary": "Lämpötila fysikaalisena suureena, Celsius- ja Kelvin-asteikot, lämpölaajenemisen ilmiö kiinteissä aineissa ja bimetalliliuskan toiminta.",
+      "theory": "<p><strong>Lämpötila</strong> on fysikaalinen suure, joka kuvaa aineen rakenneosasten lämpöliikkeen voimakkuutta. Mitä kuumempi aine on, sitä nopeammin sen atomit tai molekyylit värähtelevät ja liikkuvat.</p><h4>1. Kiinteiden aineiden lämpölaajeneminen</h4><p>Kun ainetta lämmitetään, sen rakenneosaset alkavat värähdellä laajemmalla alueella ja tönivät toisiaan kauemmas. Tämän seurauksena <strong>aine laajenee</strong>:</p><ul><li>Kiinteiden aineiden pituus ja tilavuus kasvavat lämpötilan noustessa.</li><li>Jäähtyessään aine supistuu takaisin pienempään tilaan.</li></ul><h4>2. Lämpölaajeneminen arjessa ja tekniikassa</h4><ul><li><strong>Sillat ja rautatiet</strong>: Siltojen päihin rakennetaan metalliset kampamaiset liikuntasaumat, jotta silta mahtuu laajenemaan kesähelteillä jopa kymmeniä senttimetrejä ilman että rakenteet murtuvat. Samasta syystä junankiskoihin jätetään pienet raot.</li><li><strong>Sähköjohdot</strong>: Sähkölinjojen kuparijohdot roikkuvat kesällä paljon alempana kuin talvipakkasilla.</li></ul><h4>3. Bimetalliliuska</h4><p>Kun kaksi eri metallia (esimerkiksi kupari ja rauta), jotka laajenevat eri tavalla, niitataan tiukasti toisiinsa kiinni, saadaan <strong>bimetalliliuska</strong>. Lämmitettäessä enemmän laajeneva kupari pakottaa koko liuskan taipumaan raudan puolelle! Tätä hyödynnetään mekaanisissa termostaateissa, silitysraudoissa ja perinteisissä palovaroittimissa kytkimenä.</p>",
       "tasks": {
         "research": "s. 8 - 9: Työt 1 ja 2. Simulaatio"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Anders Celsius ja nurinkurinen lämpömittari 1742",
+        "content": "<h4>Sata astetta jäätymiselle?</h4><p>Ruotsalainen tähtitieteilijä <strong>Anders Celsius</strong> esitteli vuonna 1742 uuden lämpömittarin asteikon, jonka hän perusti veden kiehumis- ja jäätymispisteisiin. Mutta hänen alkuperäisessä asteikossaan veden kiehumispiste oli $0^\\circ$ ja veden jäätymispiste $100^\\circ$!</p><h4>Asteikon kääntäminen</h4><p>Celsiuksen kuoltua kuuluisa kasvitieteilijä Carl von Linné ja muut ruotsalaiset tutkijat käänsivät asteikon toisinpäin nykyiseen loogisempaan muotoonsa: $0^\\circ\\text{C}$ sulamiselle ja $100^\\circ\\text{C}$ kiehumiselle normaali-ilmanpaineessa.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maailman suurin metallinen rakenne, Eiffel-torni Pariisissa, kasvaa kesähelteellä lämpölaajenemisen vuoksi jopa 15 senttimetriä pidemmäksi kuin talvipakkasilla! Lisäksi Auringon puoleinen sivu laajenee enemmän, jolloin tornin huippu kaartuu hieman varjon puolelle.</div>"
+      },
+      "simulation": {
+        "title": "PhET: Lämpötila ja aineen lämpöliike",
+        "url": "https://phet.colorado.edu/fi/simulations/states-of-matter-basics"
+      }
     },
-        {
+    {
       "lesson": 3,
       "topic": "Lämpötila ja lämpölaajeneminen, osa 2",
+      "title": "Nesteiden ja kaasujen lämpölaajeneminen ja veden anomalia",
       "content": "KS aihe 1 / kirjan kpl 1. Jatketaan aiheen käsittely, harjoitustehtävien lisäksi myös eri aineiden lämpölaajenemisen tutkiminen.",
+      "summary": "Nesteiden ja kaasujen tilavuuden lämpölaajeneminen, kaasujen yleinen tilanyhtälö sekä veden poikkeuksellinen tiheysmaksimi +4 °C lämpötilassa.",
+      "theory": "<p>Kiinteiden aineiden lisäksi myös nesteet ja kaasut laajenevat lämmetessään – ja yleensä paljon voimakkaammin kuin kiinteät aineet!</p><h4>1. Nesteiden ja kaasujen lämpölaajeneminen</h4><ul><li><strong>Nesteet</strong>: Nesteen lämpölaajeneminen on tilavuuden kasvua. Perinteiset nestelämpömittarit perustuvat värjätyn alkoholin tai elohopean tilavuuden kasvuun ohuessa kapillaariputkessa.</li><li><strong>Kaasut</strong>: Kaasut laajenevat kaikista aineista voimakkaimmin. Lämmin ilma harvenee (sen tiheys pienenee) ja nousee siksi ylöspäin – tähän perustuu kuumailmapallon nousuvoima!</li></ul><h4>2. Veden poikkeuksellinen lämpölaajeneminen (Veden anomalia)</h4><p>Lähes kaikki luonnon aineet tiivistyvät ja niiden tiheys kasvaa sitä mukaa kun ne jäähtyvät. <strong>Vesi tekee poikkeuksen</strong>:</p><ul><li>Vesi supistuu jäähtyessään $+4^\\circ\\text{C}$ lämpötilaan saakka.</li><li><strong>Vesi on tiheimmillään $+4^\\circ\\text{C}$ lämpötilassa</strong> (tiheys $\\rho = 1000\\text{ kg/m}^3$).</li><li>Kun vettä jäähdytetään edelleen $+4^\\circ\\text{C} \\to 0^\\circ\\text{C}$, se alkaa yllättäen <strong>laajentua</strong>!</li><li>Kun vesi jäätyy jääksi ($0^\\circ\\text{C}$), sen tilavuus kasvaa noin $9\\,\\%$! Jään tiheys on vain $917\\text{ kg/m}^3$.</li></ul><h4>Miksi tämä on elintärkeää elämälle?</h4><p>Koska jää on vettä harvempaa, se <strong>kelluu veden pinnalla</strong>. Talvella järvien pinta jäätyy kanneksi, joka toimii lämpöeristeenä. Raskain $+4^\\circ\\text{C}$ vesi painuu järven pohjalle, joten järvet eivät jäädy pohjia myöten ja kalat sekä vesieliöt pystyvät talvehtimaan pohjalla turvassa!</p>",
       "tasks": {
         "theory": "s. 10 - 11: T1 - 7, s. 14 - 15: T1 - 5"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Veden kiderakenne: Miksi jää halkaisee vesiputket ja kalliot?",
+        "content": "<h4>Vetysidosten kuusikulmainen häkkirakenne</h4><p>Nestemäisessä vedessä vesimolekyylit ($H_2O$) liikkuvat sikin sokin toistensa lomassa tiiviisti pakattuna. Mutta kun vesi jäätyy jääkiteeksi, vesimolekyylien väliset vetysidokset pakottavat molekyylit säännölliseen kuusikulmaiseen rakenteeseen.</p><p>Tämän kiderakenteen sisään jää paljon tyhjää tilaa. Siksi jää vie enemmän tilaa kuin sama määrä nestemäistä vettä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Veden jäätymisen aiheuttama laajenemispaine on valtava – jopa yli $2000\\text{ baria}$! Tämä ilmiö halkaisee talvella suojaamattomat vesiputket ja aiheuttaa luonnossa kallioiden rapautumista (pakkasrapautuminen), kun kallionhalkeamiin päässyt vesi jäätyy ja lohkoo kivipaasia irti.</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Veden tiheys eri lämpötiloissa",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 4,
       "topic": "Lämpöenergia, osa 1",
+      "title": "Lämpötila vastaan lämpöenergia ja absoluuttinen nollapiste",
       "content": "KS aihe 2 / kirjan kpl 2. Lämpötilan ja lämpöenergian ero. Rakenneosasten liike lämpötilan kuvaajana.",
+      "summary": "Lämpötilan ja lämpöenergian käsitteellinen ero, sisäenergia, rakenneosasten mikroskooppinen lämpöliike ja absoluuttinen nollapiste (0 K = -273,15 °C).",
+      "theory": "<p>Arkikielessä sanat 'lämpötila' ja 'lämpö' menevät usein sekaisin. Fysiikassa niillä on kuitenkin tarkka ja täysin eri merkitys:</p><h4>1. Lämpötila vs. Lämpöenergia</h4><ul><li><strong>Lämpötila ($T$)</strong> mittaa aineen rakenneosasten <em>keskimääräistä liike-energiaa</em>. Se ei riipu aineen määrästä.</li><li><strong>Lämpöenergia eli sisäenergia ($E$)</strong> on aineen kaikkien rakenneosasten lämpöliikkeen <em>kokonaisenergia</em>. Se riippuu sekä lämpötilasta että aineen massasta!</li></ul><p><em>Klassinen vertaus:</em> Palavassa tulitikun liekissä on erittäin korkea lämpötila (noin $800^\\circ\\text{C}$), mutta koska tikussa on vähän atomeja, sen kokonaislämpöenergia on hyvin pieni. Valtavassa $0^\\circ\\text{C}$ jäävuoressa lämpötila on paljon matalampi, mutta sen atomimassan vuoksi siinä on miljoonakertainen määrä lämpöenergiaa tulitikkuun verrattuna!</p><h4>2. Absoluuttinen nollapiste</h4><p>Kun ainetta jäähdytetään, sen rakenneosasten liike hidastuu. Lopulta saavutetaan tila, jossa lämpöliike lakkaa lähes täysin. Tätä alinta mahdollista lämpötilaa kutsutaan <strong>absoluuttiseksi nollapisteeksi</strong>:</p><p>$$\\mathbf{0\\text{ K} = -273{,}15^\\circ\\text{C}}$$</p><p>Tätä kylmempää lämpötilaa ei fysiikan lakien mukaan voi olla olemassa missään päin maailmankaikkeutta!</p><h4>3. Kelvin-asteikko</h4><p>Fysiikan laskuissa käytetään Kelvin-asteikkoa, jonka nollakohtana on absoluuttinen nollapiste:</p><p>$$\\mathbf{T(\\text{K}) = t(^\\circ\\text{C}) + 273{,}15}$$</p>",
       "tasks": {
         "research": "s. 12: Työ 1. Simulaatio"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Lordi Kelvin ja kosmisen kylmyyden etsintä: Kuinka kylmää avaruudessa on?",
+        "content": "<h4>William Thomson (Lordi Kelvin) 1848</h4><p>Skotlantilainen fyysikko William Thomson oivalsi, että kaasujen tilavuus pienenee tasaisesti aina $1/273$ osalla jokaista astetta kohden. Tästä hän laski suoraan pisteen $-273^\\circ\\text{C}$, jossa kaasun tilavuus teoreettisesti painuisi nollaan.</p><h4>Kylmintä luonnossa ja laboratoriossa</h4><p>Syvällä avaruudessa, kaukana tähdistä, kosminen taustasäteily pitää avaruuden tyhjiön noin $2{,}73\\text{ Kelvinin}$ (noin $-270^\\circ\\text{C}$) lämpötilassa.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maailmankaikkeuden kylmin tunnettu paikka ei sijaitse kaukaisessa avaruudessa, vaan fysiikan laboratorioissa maapallolla! Laserjäähdytyksen avulla tutkijat (muun muassa Suomessa Aalto-yliopiston O.V. Lounasmaa -laboratoriossa) ovat onnistuneet jäähdyttämään atomeja vain muutaman nanokelvinin (asteen miljardisosan!) päähän absoluuttisesta nollapisteestä.</div>"
+      },
+      "simulation": {
+        "title": "PhET: Kaasujen ominaisuudet ja lämpötila",
+        "url": "https://phet.colorado.edu/fi/simulations/gas-properties"
+      }
     },
-        {
+    {
       "lesson": 5,
       "topic": "Lämpöenergia, osa 2",
+      "title": "Ominaislämpökapasiteetti ja lämpöenergian laskeminen",
       "content": "KS aihe 2 / kirjan kpl 2. Jatketaan lämpöenergian käsittelyä, harjoitustehtävien lisäksi myös käytännön sovelluksia.",
+      "summary": "Ominaislämpökapasiteetti c, kaava Q = c·m·Δt lämmön sitoutumiselle/vapautumiselle ja veden korkean lämpökapasiteetin ilmastovaikutukset.",
+      "theory": "<p>Eri aineet vaativat eri määrän lämpöenergiaa saman lämpötilanmuutoksen saavuttamiseksi. Esimerkiksi metallilusikka kuumenee kuumassa teessä sekunneissa polttavaksi, kun taas vesi lämpenee hitaasti.</p><h4>1. Ominaislämpökapasiteetti $c$</h4><p><strong>Ominaislämpökapasiteetti $c$</strong> kertoo, kuinka paljon lämpöenergiaa tarvitaan yhden kilogramman ainetta lämmittämiseen yhdellä asteella:</p><ul><li>Vesi: $c_{\\text{vesi}} \\approx 4{,}19\\text{ kJ}/(\\text{kg}\\cdot^\\circ\\text{C})$ (erittäin suuri!)</li><li>Rauta: $c_{\\text{rauta}} \\approx 0{,}45\\text{ kJ}/(\\text{kg}\\cdot^\\circ\\text{C})$</li><li>Kupari: $c_{\\text{kupari}} \\approx 0{,}39\\text{ kJ}/(\\text{kg}\\cdot^\\circ\\text{C})$</li><li>Ilma: $c_{\\text{ilma}} \\approx 1{,}0\\text{ kJ}/(\\text{kg}\\cdot^\\circ\\text{C})$</li></ul><p>Vesi vaatii lähes kymmenen kertaa enemmän energiaa lämmetäkseen saman verran kuin sama määrä rautaa!</p><h4>2. Lämpöenergian laskukaava</h4><p>Lämpömäärä $Q$, joka sitoutuu ainetta lämmitettäessä tai vapautuu sen jäähtyessä, lasketaan kaavalla:</p><p>$$\\mathbf{Q = c \\cdot m \\cdot \\Delta t}$$</p><ul><li>$Q$ = siirtynyt lämpömäärä (jouleina $\\text{J}$ tai kilojouleina $\\text{kJ}$)</li><li>$c$ = aineen ominaislämpökapasiteetti</li><li>$m$ = aineen massa (kilogrammoina $\\text{kg}$)</li><li>$\\Delta t$ = lämpötilan muutos ($t_2 - t_1$) asteina</li></ul><p><em>Laskuesimerkki:</em> Kuinka paljon energiaa tarvitaan $2\\text{ kg}$ veden lämmittämiseen huoneenlämmöstä ($20^\\circ\\text{C}$) kiehuvaksi ($100^\\circ\\text{C}$)?<br>$\\Delta t = 100 - 20 = 80^\\circ\\text{C}$.<br>$$Q = 4{,}19\\text{ kJ}/(\\text{kg}\\cdot^\\circ\\text{C}) \\cdot 2\\text{ kg} \\cdot 80^\\circ\\text{C} = \\mathbf{670{,}4\\text{ kJ}}$$.</p>",
       "tasks": {
         "theory": "s. 14 - 15: T1 - 5"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Vesi ilmaston tasaajana: Miksi Pohjolassa on niin leutoa?",
+        "content": "<h4>Valtameret maapallon lämpöakkuina</h4><p>Koska veden ominaislämpökapasiteetti on niin poikkeuksellisen korkea, maailman valtameret pystyvät sitomaan ja varastoimaan Auringosta tulevaa lämpöenergiaa valtavia määriä lämpenemättä itse kovinkaan montaa astetta.</p><h4>Golfvirta kuljettaa lämpöä</h4><p>Meksikonlahdelta alkava Golfvirta kuljettaa lämmintä merivettä tuhansien kilometrien matkan kohti Pohjois-Eurooppaa. Tämän vuoksi Suomessa ja Skandinaviassa on $10-20^\\circ\\text{C}$ lämpimämpää kuin samoilla leveysasteilla Siperiassa tai Alaskassa!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Samasta syystä vettä käytetään talojen kaukolämpöverkoissa ja polttomoottoriautojen jäähdytysjärjestelmissä: mikään muu tavallinen ja turvallinen neste ei pysty kuljettamaan putkissa yhtä paljon lämpöenergiaa yhtä litraa kohden kuin puhdas vesi!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Energiamuodot ja energian muutokset",
+        "url": "https://phet.colorado.edu/fi/simulations/energy-forms-and-changes"
+      }
     },
-      {
+    {
       "lesson": 6,
       "topic": "Olomuodon muutokset",
+      "title": "Aineen kolme olomuotoa ja faasimuutokset",
       "content": "KS aihe 3 / kirjan kpl 3. Tutustutaan olomuodon muutoksiin, sulamis- ja höyrystymislämpötiloihin ja energiaan olomuodon muutoksissa.",
+      "summary": "Kiinteä, neste, kaasu, sulaminen ja jähmettyminen, höyrystyminen ja tiivistyminen, sublimoituminen ja härmistyminen sekä ominaissulamis- ja höyrystymislämpö.",
+      "theory": "<p>Aine voi esiintyä kolmessa eri <strong>olomuodossa</strong> riippuen lämpötilasta ja paineesta:</p><ol><li><strong>Kiinteä (s, solid)</strong>: Rakenneosaset ovat tiukasti kiderakenteessa ja vain värähtelevät paikoillaan. Aineella on tarkka muoto ja tilavuus.</li><li><strong>Neste (l, liquid)</strong>: Rakenneosaset pääsevät liukumaan toistensa ohi. Neste ottaa astian muodon, mutta sen tilavuus säilyy.</li><li><strong>Kaasu (g, gas)</strong>: Rakenneosaset liikkuvat täysin vapaasti ja nopeasti törmäillen toisiinsa. Kaasu täyttää koko tilan.</li></ol><h4>Olomuodonmuutosten nimitykset:</h4><ul><li>Kiinteä $\\to$ Neste: <strong>Sulaminen</strong> (sulamispisteessä)</li><li>Neste $\\to$ Kiinteä: <strong>Jähmettyminen</strong></li><li>Neste $\\to$ Kaasu: <strong>Höyrystyminen</strong> (haihtuminen pinnalta tai kiehuminen koko nesteessä)</li><li>Kaasu $\\to$ Neste: <strong>Tiivistyminen</strong></li><li>Kiinteä suoraan kaasuksi: <strong>Sublimoituminen</strong> (esim. kuivajää eli kiinteä $CO_2$ huoneenlämmössä)</li><li>Kaasu suoraan kiinteäksi: <strong>Härmistyminen</strong> (esim. ilman vesihöyryn härmistyminen kuuraksi puiden oksiin pakkasella)</li></ul><h4>Energia olomuodonmuutoksissa</h4><p>Kun jäätä sulatetaan vedeksi, sen lämpötila <strong>pysyy tasan $0^\\circ\\text{C}$ lämpötilassa koko sulamisen ajan</strong>! Kaikki lämpöenergia kuluu sidosten murtamiseen (ominaissulamislämpö $s$). Vasta kun kaikki jää on sulanut, veden lämpötila alkaa nousta.</p>",
       "tasks": {
         "research": "Simulaatiot",
         "theory": "s. 18 - 19: T1 - 5"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi hiki viilentää ihoa? Haihtumisen fysiikka",
+        "content": "<h4>Nopeimmat molekyylit karkaavat</h4><p>Kun ihminen hikoilee urheillessa tai saunan jälkeen, ihon pinnalle nousee hikipisaroita. Vesi alkaa haihtua iholta ilmaan. Mutta miksi haihtuminen kylmentää?</p><p>Veden haihtumisessa vain ne vesimolekyylit, joilla on <strong>kaikkein suurin liike-energia</strong>, pystyvät voittamaan pintajännityksen ja karkaamaan ilmaan kaasuna. Kun nopeat molekyylit poistuvat, iholle jäävien molekyylien keskimääräinen liike-energia (eli lämpötila) laskee!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Koirat eivät pysty hikoilemaan ihon läpi paksun turkin takia, joten ne viilentävät itseään läähättämällä: kielen ja hengitysteiden pinnalta haihtuva vesi poistaa ylimääräisen lämmön koiran kehosta!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Aineen olomuotojen faasidiagrammi",
+        "url": "https://phet.colorado.edu/fi/simulations/states-of-matter"
+      }
     },
-        {
+    {
       "lesson": 7,
       "topic": "Lämmön siirtyminen",
+      "title": "Lämmön siirtymistavat: Johtuminen, kulkeutuminen ja säteily",
       "content": "KS aihe 4 / kirjan kpl 4. Tutustutaan lämmön siirtymisen mekanismeihin: johtuminen, konvektio ja säteily.",
+      "summary": "Lämpöopin nollas pääsääntö, johtuminen kiinteissä aineissa (johteet vs. eristeet), konvektio nesteissä ja kaasuissa sekä lämpösäteily tyhjiössä (termospullo).",
+      "theory": "<p>Lämpöenergia siirtyy luonnostaan aina <strong>korkeammasta lämpötilasta kohti matalampaa lämpötilaa</strong>, kunnes lämpötilat tasoittuvat (lämpöopin tasapaino). Lämpö voi siirtyä kolmella eri tavalla:</p><h4>1. Johtuminen (konduktio)</h4><p>Lämmön johtumisessa lämpöenergia siirtyy aineen sisällä atomilta toiselle ilman, että aine itse virtaa paikaltaan. Esimerkiksi metallisen paistinpannun kahva kuumenee liedellä.</p><ul><li><strong>Hyvät lämmönjohteet</strong>: Metallit (kupari, alumiini, rauta) johtavat lämpöä erinomaisesti vapaiden elektronien avulla.</li><li><strong>Lämmöneristeet</strong>: Aineet, jotka johtavat huonosti lämpöä (ilma, villa, puu, styroksi). Eristeiden teho perustuu lähes aina niiden sisään vangittuun liikkumattomaan ilmaan!</li></ul><h4>2. Kulkeutuminen (konvektio)</h4><p>Lämmön kulkeutumisessa lämmennyt neste tai kaasu <strong>virtaa itse mukanaan kantaen lämpöenergian</strong>. Lämmin ilma kohoaa huoneen patterin päältä kattoon ja viileä ilma laskeutuu lattialle synnyttäen kiertoliikkeen.</p><h4>3. Säteily (radiatio)</h4><p>Lämpösäteily on <strong>sähkömagneettista infrapunasäteilyä</strong>. Toisin kuin johtuminen ja kulkeutuminen, säteily <strong>ei tarvitse väliainetta, vaan etenee tyhjiössä valonnopeudella</strong>! Näin Aurinko lämmittää Maata avaruuden tyhjiön halki, ja takkatuli lämmittää kasvoja huoneen toiselle puolelle.</p>",
       "tasks": {
         "theory": "s. 22: T1 - 6, 8"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Sir James Dewar ja termospullo 1892: Miten pysäyttää kaikki kolme siirtymistapaa?",
+        "content": "<h4>Nestemäisen kaasun säilytyspulma</h4><p>Vuonna 1892 skotlantilainen kemisti <strong>James Dewar</strong> halusi säilyttää nesteytettyä typpeä ja vetyä, jotka kiehuvat pois jo yli $-200^\\circ\\text{C}$ lämpötiloissa. Hän suunnitteli erikoispullon estämään lämmön siirtymisen täydellisesti:</p><ol><li><strong>Kaksinkertainen lasiseinä</strong> ja niiden väliin pumpattu <strong>tyhjiö</strong>: Koska tyhjiössä ei ole atomeja, johtuminen ja kulkeutuminen pysähtyvät $100\\,\\%$!</li><li><strong>Hopeoidut peilipinnat</strong>: Sisäseinien heijastava pinta heijastaa lämpösäteilyn takaisin!</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Dewar ei koskaan patentoinut keksintöään, jolloin saksalainen lasinpuhaltaja Reinhold Burger patentoi sen kotitalouskäyttöön nimellä <em>Thermos</em> (kreikan kielen sanasta lämmin) ja loi siitä maailmanlaajuisen miljoonabisneksen!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Lämmön johtuminen ja lämpöeristeet",
+        "url": "https://phet.colorado.edu/fi/simulations/energy-forms-and-changes"
+      }
     },
-        {
+    {
       "lesson": 8,
       "topic": "Värähdysliike",
+      "title": "Värähdysliike, jaksonaika ja heiluri",
       "content": "KS aihe 5 / kirjan kpl 6. Tutustutaan värähdysliikkeen peruskäsitteisiin ja esimerkkeihin. Värähdysaika ja sen mittaaminen.",
+      "summary": "Jaksollinen liike, tasapainoasema, poikkeama, amplitudi A, värähdysaika T, taajuus f = 1/T (Hertsi Hz) ja lankaheilurin heilahdusaika.",
+      "theory": "<p><strong>Värähdysliike</strong> on jaksollista edestakaista liikettä tasapainoaseman molemmin puolin (esim. heiluri, kitaran kieli, hyppykepin jousi, sydämen syke).</p><h4>1. Värähdysliikkeen peruskäsitteet</h4><ul><li><strong>Tasapainoasema</strong>: Piste, johon värähtelijä asettuu levossa.</li><li><strong>Poikkeama ($x$)</strong>: Värähtelijän etäisyys tasapainoasemasta tietyllä hetkellä.</li><li><strong>Amplitudi ($A$)</strong>: Suurin poikkeama tasapainoasemasta (ääriasento).</li><li><strong>Värähdysaika eli jaksonaika ($T$)</strong>: Yhteen kokonaiseen edestakaiseen värähdykseen kuluva aika sekunteina [$\\text{s}$].</li><li><strong>Taajuus ($f$)</strong>: Värähdysten lukumäärä yhdessä sekunnissa. Yksikkö on <strong>hertsi</strong> ($1\\text{ Hz} = 1/\\text{s}$):</li></ul><p>$$\\mathbf{f = \\frac{1}{T} \\iff T = \\frac{1}{f}}$$</p><p><em>Esimerkki:</em> Jos rumpukalvo värähtelee taajuudella $f = 100\\text{ Hz}$, yhden värähdyksen kesto on $T = \\frac{1}{100\\text{ Hz}} = 0{,}01\\text{ s} = 10\\text{ ms}$.</p><h4>2. Lankaheiluri</h4><p>Lankaheilurissa narun päähän kiinnitetty punus heilahtelee painovoiman ja langan jännityksen vaikutuksesta. <strong>Lankaheilurin jaksonaikaan vaikuttaa vain langan pituus</strong> ($l$), ei heiluvan kuulan massa!</p>",
       "tasks": {
         "research": "Heilurin rakentaminen, ohje kurssisivulla"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Galileo ja Pisan kirkon kattokruunu: Ajan mittaamisen vallankumous 1581",
+        "content": "<h4>Oma sydämen syke kellona</h4><p>Nuori 17-vuotias Galileo Galilei istui Pisan tuomiokirkossa ja katseli ilmavirtauksessa laiskasti keinuvaa pronssista kattokruunua. Hän huomasi jotain hämmästyttävää: Vaikka kruunun heilahdusten laajuus (amplitudi) vähitellen vaimeni, kunkin heilahduksen kesto pysyi täsmälleen samana!</p><p>Koska tuolloin ei ollut tarkkoja sekuntikelloja, Galileo mittasi heilahdusaikoja tunnustelemalla omaa rannepulssiaan. Havainto johti <strong>heilurikellon</strong> keksimiseen (Christiaan Huygens 1656), mikä mahdollisti ensimmäistä kertaa ihmiskunnan historiassa sekunnintarkat aikamittaukset.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maanpyörähdysnopeus todistettiin Pariisin Panthéonissa vuonna 1851 <strong>Foucault'n heilurilla</strong>: 67 metrin vaijerissa heiluvan 28 kg kuulan heilahdustaso kiertyy hitaasti maapallon pyöriessä sen alla!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Heilurilaboratorio",
+        "url": "https://phet.colorado.edu/fi/simulations/pendulum-lab"
+      }
     },
-        {
+    {
       "lesson": 9,
       "topic": "Aaltoliike",
+      "title": "Mekaaninen aaltoliike ja aallon perusyhtälö",
       "content": "KS aihe 6 / kirjan kpl 6. Tutustutaan aaltoliikkeen peruskäsitteisiin, pitkittäinen ja poikittainen aaltoliike. Amplitudi, aallonpituus ja taajuus.",
+      "summary": "Poikittainen aaltoliike vs. pitkittäinen aaltoliike, aallonpituus lambda, aallonnopeus v ja aallon perusyhtälö v = f · lambda.",
+      "theory": "<p>Kun värähtelijä häiritsee ympäröivää väliainetta, häiriö alkaa edetä avaruudessa <strong>aaltoliikkeenä</strong>. Tärkeää on ymmärtää, että aaltoliikkeessä <strong>energia ja informaatio etenevät, mutta itse aine vain värähtelee paikallaan</strong>!</p><h4>1. Poikittainen vs. Pitkittäinen aaltoliike</h4><ul><li><strong>Poikittainen aaltoliike</strong>: Rakenneosasten värähtelysuunta on <em>kohtisuorassa</em> aallon etenemissuuntaa vastaan (esim. valo, sähkömagneettiset aallot, vesiaallot ja narun aalto). Koostuu aallonharjoista ja aallonpohjista.</li><li><strong>Pitkittäinen aaltoliike</strong>: Rakenneosaset värähtelevät <em>samansuuntaisesti</em> aallon etenemissuunnan kanssa (esim. ääni ilmassa, kierrejousen puristukset). Koostuu tihentymistä ja harventumista.</li></ul><h4>2. Aallonpituus ($\\lambda$, lambda)</h4><p><strong>Aallonpituus $\\lambda$</strong> on kahden peräkkäisen samassa vaiheessa olevan pisteen – esimerkiksi kahden vierekkäisen aallonharjan tai tihentymän – välinen etäisyys metreinä [$\\text{m}$].</p><h4>3. Aallon perusyhtälö</h4><p>Aallon etenemisnopeus $v$, taajuus $f$ ja aallonpituus $\\lambda$ kytkeytyvät toisiinsa aallon perusyhtälöllä:</p><p>$$\\mathbf{v = f \\cdot \\lambda}$$</p><ul><li>$v$ = aallon etenemisnopeus ($\\text{m/s}$)</li><li>$f$ = aallon taajuus ($\\text{Hz}$)</li><li>$\\lambda$ = aallonpituus ($\\text{m}$)</li></ul><p><em>Esimerkki:</em> Meren aaltojen aallonpituus on $\\lambda = 12\\text{ m}$ ja aallot saapuvat rantaan taajuudella $f = 0{,}5\\text{ Hz}$. Aallon nopeus on $v = 0{,}5\\text{ Hz} \\cdot 12\\text{ m} = \\mathbf{6\\text{ m/s}}$.</p>",
       "tasks": {
         "research": "s. 30: Työ 1 ja simulaatio",
         "theory": "s. 32 - 33: T1 - 8"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Tsunami: Miksi avomerellä huomaamaton aalto muuttuu rannassa tuhoisaksi?",
+        "content": "<h4>Merenpohjan maanjäristys synnyttää aallon</h4><p>Kun merenalainen maanjäristys liikahtaa äkillisesti, se työntää liikkeelle koko vesipatsaan pohjasta pintaan saakka. Avomerellä, missä syvyys on 4000 metriä, tsunami etenee matkustajalentokoneen nopeudella: <strong>yli $800\\text{ km/h}$</strong>! Kuitenkin sen aallonpituus on kymmeniä kilometrejä ja korkeus avomerellä vain alle metrin, joten laivat eivät edes huomaa sen ohitusta.</p><h4>Rannan mataloituminen</h4><p>Aallon saapuessa matalaan rannikkoveteen sen nopeus hidastuu jyrkästi. Koska energia ei voi hävitä, aallonpituus lyhenee ja valtava vesimassa pakkautuu ylöspäin jopa 20–30 metriä korkeaksi vesiseinäksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ensimmäinen merkki lähestyvästä tsunamista on usein meren äkillinen vetäytyminen satoja metrejä tavallista rantaviivaa kauemmas (aallonpohja saapuu ennen aallonharjaa), jolloin merenpohja kaloineen paljastuu hetkeksi näkyviin.</div>"
+      },
+      "simulation": {
+        "title": "PhET: Aalto narussa (Wave on a String)",
+        "url": "https://phet.colorado.edu/fi/simulations/wave-on-a-string"
+      }
     },
-        {
+    {
       "lesson": 10,
       "topic": "Ääni",
+      "title": "Äänen fysiikka, kuuloalue ja äänenvoimakkuus",
       "content": "KS aihe 7 / kirjan kpl 7. Äänen eteneminen, nopeus ja aaltoliiketyyppi. Äänen taajuus ja korkeus sekä voimakkuus desibeliasteikolla.",
+      "summary": "Ääni pitkittäisenä paineaaltona, äänennopeus ilmassa 340 m/s ja eri väliaineissa, taajuus ja äänenkorkeus, ihmisen kuuloalue (20 Hz - 20 kHz), ultraääni ja desibeliasteikko dB.",
+      "theory": "<p><strong>Ääni</strong> on mekaanista pitkittäistä aaltoliikettä, joka etenee ilmassa tihentyminä ja harventumina. Korvamme tärykalvo aistii nämä paineenvaihtelut ja aivot tulkitsevat ne ääniksi.</p><h4>1. Äänen nopeus eri väliaineissa</h4><p>Ääni tarvitsee aina aineellisen väliaineen – <strong>avaruuden tyhjiössä ääni ei voi edetä lainkaan</strong>!</p><ul><li><strong>Ilmassa ($20^\\circ\\text{C}$)</strong>: $v \\approx \\mathbf{340\\text{ m/s}}$ ($1224\\text{ km/h}$)</li><li><strong>Vedessä</strong>: $v \\approx 1500\\text{ m/s}$</li><li><strong>Teräksessä</strong>: $v \\approx 5100\\text{ m/s}$ (tiheässä kiinteässä aineessa ääni etenee huomattavasti nopeammin kuin kaasussa)</li></ul><p><em>Ukkossääntö:</em> Koska valo kulkee silmänräpäyksessä ja ääni etenee $340\\text{ m/s}$, ääni kulkee yhden kilometrin noin 3 sekunnissa. Laske sekunnit salaman ja jyrähdyksen välillä ja jaa kolmella $\\implies$ saat etäisyyden kilometreinä!</p><h4>2. Äänenkorkeus ja kuuloalue</h4><ul><li><strong>Äänenkorkeuden määrää taajuus ($f$)</strong>: Mitä suurempi taajuus, sitä korkeampi ääni (esim. sopraanolaulu tai pilli). Pieni taajuus tuottaa matalan bassoäänen.</li><li><strong>Ihmisen kuuloalue</strong>: Noin $20\\text{ Hz} - 20\\,000\\text{ Hz}$ ($20\\text{ kHz}$).</li><li><strong>Infraääni ($< 20\\text{ Hz}$)</strong>: Liian matalaa ihmiskorvalle (norsut, valaat, tulivuorenpurkaukset).</li><li><strong>Ultraääni ($> 20\\,000\\text{ Hz}$)</strong>: Liian korkeaa ihmiselle (lepakoiden kaikututka, lääketieteelliset ultraäänikuvaukset).</li></ul><h4>3. Äänenvoimakkuus ja desibelit (dB)</h4><p>Äänenvoimakkuutta mitataan <strong>desibeliasteikolla (dB)</strong>, joka on logaritminen: $+10\\text{ dB}$ tarkoittaa äänen äänienergian kymmenkertaistumista!</p><ul><li>$0\\text{ dB}$: Kuulokynnys</li><li>$30\\text{ dB}$: Kuiskaus tai hiljainen kirjasto</li><li>$60\\text{ dB}$: Normaali puhe</li><li>$85\\text{ dB}$: Kuulonsuojauksen raja (pitkäaikainen altistus vaurioittaa kuuloa)</li><li>$120-130\\text{ dB}$: Kipukynnys (suihkukoneen vieressä, korvatulpat välttämättömät!)</li></ul>",
       "tasks": {
         "research": "s. 34 - 35: Työt 1 ja 2",
         "theory": "s. 36 - 37: T1 - 8"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Äänivallin murtaminen: Chuck Yeager ja Bell X-1 lentokone 1947",
+        "content": "<h4>Äänennopeuden ylittäminen ilmassa</h4><p>Kun lentokone lähestyy äänennopeutta ($Mach\\,1 \\approx 1200\\text{ km/h}$), sen edelle työntämät ilman paineaallot eivät ehdi enää karkuun, vaan ne kasautuvat koneen nokkaan ja siipiin tiiviiksi tiivistysaalloksi eli 'äänivalliksi'.</p><h4>Historiallinen lento Mojaven aavikolla</h4><p>Lokakuun 14. päivänä 1947 yhdysvaltalainen koelentäjä <strong>Chuck Yeager</strong> lensi oranssilla rakettilentokoneella <em>Bell X-1</em>. Ylittäessään äänennopeuden kone täräytti aavikon ylle maata järisyttävän pamauksen (yliäänipamaus, sonic boom) ja lensi virheettömästi äänennopeuden tuolle puolen!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Karjaisun tai härkäpiiskan viuhahduksen päässä kuuluva kova terävä pamaus johtuu siitä, että piiskan kärkiosa ylittää ilman halki viilettäessään äänennopeuden – piiska oli ihmiskunnan ensimmäinen työkalu, joka mursi äänivallin!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Ääniaallot ja äänen taajuus",
+        "url": "https://phet.colorado.edu/fi/simulations/sound-waves"
+      }
     },
-            {
+    {
       "lesson": 11,
       "topic": "Valon heijastuminen ja peilit",
-      "content": "KS aihe 9 / kirjan kpl 8. Tutustutaan valon heijastumiseen ja erilaistenpeilien toimintaan.",
+      "title": "Valon suoraviivainen kulku, heijastuslaki ja peilit",
+      "content": "KS aihe 9 / kirjan kpl 8. Tutustutaan valon heijastumiseen ja erilaisten peilien toimintaan.",
+      "summary": "Valon suoraviivainen eteneminen ja varjojen muodostuminen, heijastuslaki i = r, tasopeili ja valekuvan muodostuminen sekä koverat ja kuperat peilit (polttopiste F ja polttoväli f).",
+      "theory": "<p><strong>Valo</strong> on sähkömagneettista aaltoliikettä, joka etenee suoraviivaisesti valonsäteinä huikealla valonnopeudella $c \\approx 300\\,000\\text{ km/s}$.</p><h4>1. Valon heijastuslaki</h4><p>Kun valonsäde osuu heijastavaan pintaan (kuten peiliin), se heijastuu. Piirretään pinnan kohtaamispisteeseen kohtisuora viiva eli <strong>pinnan normaali</strong>:</p><p>$$\\mathbf{\\text{Tulokulma } i = \\text{Heijastuskulma } r}$$</p><h4>2. Tasopeili ja valekuva</h4><p>Tasaisessa peilissä kuva näyttää olevan yhtä kaukana peilin takana kuin esine on peilin edessä. Koska säteet eivät oikeasti leikkaa peilin takana (vain niiden kuvitteelliset jatkeet leikkaavat), kyseessä on <strong>valekuva</strong>. Kuva on saman kokoinen kuin esine, mutta peilikuva on oikean ja vasemman suhteen kääntynyt.</p><h4>3. Kaarevat peilit: Kovera ja kupera peili</h4><ul><li><strong>Kovera peili (kovertuu sisäänpäin)</strong>: Kokoaa peiliin saapuvat yhdensuuntaiset valonsäteet yhteen pisteeseen eli <strong>polttopisteeseen ($F$)</strong>. Etäisyyttä peilistä polttopisteeseen kutsutaan <strong>polttoväliksi ($f$)</strong>.<br><em>Sovellukset:</em> Auton ajovalojen heijastimet, parta- ja meikkipeilit (läheltä katsottuna antaa suurennetun kuvan), heijastuskaukoputket.</li><li><strong>Kupera peili (pullistuu ulospäin)</strong>: Hajottaa valonsäteet laajempaan kulmaan. Kuperan peilin kuva on aina oikeinpäin oleva, pienentynyt valekuva, jolla on laaja näkökenttä.<br><em>Sovellukset:</em> Auton oikeanpuoleinen sivupeili, kauppojen valvontapeilit ja risteysten liikennepeilit.</li></ul>",
       "tasks": {
         "research": "s. 38 - 39: työt nro 1 ja 2",
         "theory": "s. 40 - 41: T1 - 6"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Arkhimedes ja Syrakusan polttopeilit: Tarua vai totta?",
+        "content": "<h4>Roomalaiset laivat tulessa</h4><p>Legendan mukaan antiikin suurin keksijä <strong>Arkhimedes</strong> puolusti kotikaupunkiaan Syrakusaa vuonna 214 eaa. roomalaiselta laivastolta asettamalla kaupunginmuurille satoja kiillotettuja pronssikilpiä koveraksi peilipinnaksi. Kilvet heijastivat ja keskittivät Auringon säteet yhteen pisteeseen roomalaisten laivojen puisissa purjeissa sytyttäen ne tuleen!</p><h4>Modernit testit</h4><p>Myytinmurtajat (MythBusters) ja MIT:n opiskelijat ovat toistaneet kokeen: vaikka purjeet saatiin kytemään ja savuamaan oikeissa olosuhteissa, liikkuvan laivan sytyttäminen sodan melskeessä on äärimmäisen vaikeaa. Aurinkoenergialaitoksissa samaa periaatetta käytetään nykyään sähköntuotantoon keskittämällä peileillä valo vesihöyrytorniin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> James Webb -avaruusteleskoopin (JWST) kultapäällysteinen pääpeili on kovera ja sen halkaisija on $6{,}5\\text{ metriä}$: se kerää avaruuden kaukaisimmista tähdistä saapuvat heikot fotonit tarkasti ilmaisimeen!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Valon heijastuminen ja koveran peilin sädegeometria",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
-            {
+    {
       "lesson": 12,
       "topic": "Valon taittuminen",
+      "title": "Valon taittuminen rajapinnassa ja kokonaisheijastus",
       "content": "KS aihe 10 / kirjan kpl 9. Valon taittuminen eri aineiden rajapinnassa.",
+      "summary": "Valon nopeuden muuttuminen optisessa tiheydessä, taittumislaki kohti normaalia ja poispäin normaalista, taitekerroin n, kokonaisheijastuksen rajakulma ja valokuituteknologia.",
+      "theory": "<p>Kun valo saapuu vinosti aineesta toiseen (esimerkiksi ilmasta veteen tai lasiin), sen suunta muuttuu. Tätä ilmiötä kutsutaan <strong>valon taittumiseksi</strong>. Taittuminen johtuu siitä, että <strong>valon nopeus on eri aineissa erilainen</strong>!</p><h4>1. Taittumisen säännöt</h4><ul><li><strong>Optisesti harvemmasta tiheämpään</strong> (ilmasta veteen tai lasiin): Valon nopeus hidastuu $\\implies$ valo <strong>taittuu kohti normaalia</strong> (tulokulma $i >$ taitekulma $r$).</li><li><strong>Optisesti tiheämmästä harvempaan</strong> (vedestä tai lasista ilmaan): Valon nopeus kasvaa $\\implies$ valo <strong>taittuu poispäin normaalista</strong> (tulokulma $i <$ taitekulma $r$).</li></ul><p><em>Arjen havaintoja:</em> Vesi näyttää aina todellista matalammalta, ja veteen työnnetty mela tai pilli näyttää katkenneelta veden pinnassa taittumisen takia!</p><h4>2. Kokonaisheijastus</h4><p>Kun valo pyrkii optisesti tiheämmästä aineesta (kuten vedestä tai lasista) harvempaan (ilmaan), taitekulma kasvaa tulokulmaa nopeammin. Kun tulokulma ylittää tietyn <strong>rajakulman (vedessä n. $48{,}5^\\circ$, lasissa n. $42^\\circ$)</strong>, valo ei pääse enää lainkaan toiseen aineeseen, vaan <strong>heijastuu sataprosenttisesti takaisin</strong>!</p><h4>3. Kokonaisheijastuksen sovelluksia</h4><ul><li><strong>Valokuitu</strong>: Lasisesta kuidusta tehty kaapeli, jossa lasersäde heijastuu kokonaisheijastuksella edestakaisin lasin sisällä karkaamatta ulos. Valokuidut muodostavat koko maailmanlaajuisen internetin nopean runkoverkon!</li><li><strong>Timantti</strong>: Timantin suuri taitekerroin ($n \\approx 2{,}42$) tekee sen rajakulmasta erittäin pienen ($24^\\circ$). Huolellisesti hiotut pinnat pitävät valon timantin sisällä heijastumassa monta kertaa, mikä synnyttää timantin häikäisevän säihkeen.</li></ul>",
       "tasks": {
         "research": "s. 42- 43: työt nro 1 ja 2",
         "theory": "s. 44 - 45: T1 - 6"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Fermat'n vähimmän ajan periaate: Miksi valo osaa valita nopeimman reitin?",
+        "content": "<h4>Uimavalvojan dilemma</h4><p>Kuvitellaan rantahiekalla istuva uimavalvoja, joka näkee uimarin hädässä meressä. Valvoja juoksee hiekalla paljon nopeammin kuin ui vedessä. Mikä on nopein reitti uimarin luokse? Suora viiva ei ole nopein reitti, koska silloin vedessä joutuisi uimaan pidemmän matkan! Nopein reitti on juosta hiekalla hieman pidemmälle ja taittaa kulkusuuntaa vinosti kohti uimaria.</p><h4>Valo 'tietää' nopeimman reitin</h4><p>Vuonna 1662 ranskalainen matemaatikko <strong>Pierre de Fermat</strong> osoitti, että valonsäteet toimivat täsmälleen samalla tavalla: valo kulkee aina sitä reittiä, johon kuluu <strong>vähiten aikaa</strong>! Tästä periaatteesta johdetaan suoraan Snellin taittumislaki.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kangastukset aavikolla ja kuumalla asvaltilla johtuvat valon taittumisesta: kuuma ilma lähellä maanpintaa on harvempaa kuin viileämpi ilma ylempänä, jolloin taivaalta tuleva valo kaartuu takaisin ylöspäin ja näyttää kaukaiselta vesilammikolta!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Valon taittuminen (Bending Light)",
+        "url": "https://phet.colorado.edu/fi/simulations/bending-light"
+      }
     },
-            {
-      "lesson": 13  ,
+    {
+      "lesson": 13,
       "topic": "Linssit",
+      "title": "Kokoavat ja hajottavat linssit ja ihmissilmä",
       "content": "KS aihe 11 / kirjan kpl 10. Tutustutaan erilaisten linssien toimintaan ja valon taittumiseen linssien läpi.",
+      "summary": "Kokoava linssi (kupera, pluslinssi), hajottava linssi (kovera, miinuslinssi), polttoväli f ja taittovoimakkuus D dioptrioina, todellinen kuva vs. valekuva, silmän toiminta ja liki- vs. kaukotaittoisuus.",
+      "theory": "<p><strong>Linssi</strong> on läpinäkyvästä aineesta (lasi tai optinen muovi) tehty optinen kappale, jolla on kaksi kaarevaa pintaa ja joka taittaa valoa hyödyllisellä tavalla.</p><h4>1. Linssien kaksi päätyyppiä</h4><ul><li><strong>Kokoava linssi (kupera linssi, pluslinssi)</strong>: Keskeltä paksumpi kuin reunoilta. Keskittää valonsäteet yhteen pisteeseen eli <strong>polttopisteeseen ($F$)</strong>.<br><em>Ominaisuudet:</em> Läheltä katsottaessa toimii suurennuslasina (suurennettu oikeinpäin oleva valekuva). Kauempaa muodostaa todellisen ylösalaisen kuvan valkokankaalle tai kameran kennolle.</li><li><strong>Hajottava linssi (kovera linssi, miinuslinssi)</strong>: Keskeltä ohuempi kuin reunoilta. Hajottaa yhdensuuntaiset valonsäteet. Kuva on aina <strong>pienentynyt, oikeinpäin oleva valekuva</strong>.</li></ul><h4>2. Taittovoimakkuus ja dioptria ($D$)</h4><p>Mitä lyhyempi linssin polttoväli $f$ on, sitä voimakkaammin linssi taittaa valoa. Silmälasien vahvuus ilmoitetaan <strong>taittovoimakkuutena ($D$)</strong>, jonka yksikkö on <strong>dioptria</strong> ($\\text{dpt} = 1/\\text{m}$):</p><p>$$\\mathbf{D = \\frac{1}{f}}$$</p><p><em>Esimerkki:</em> Jos kokoavan linssin polttoväli on $0{,}5\\text{ m}$, sen taittovoimakkuus on $D = \\frac{1}{0{,}5} = \\mathbf{+2{,}0\\text{ dpt}}$.</p><h4>3. Ihmissilmä ja näkövirheet</h4><ul><li><strong>Silmän toiminta</strong>: Silmän sarveiskalvo ja joustava mykiö toimivat kokoavana linssinä, joka heijastaa ylösalaisen todellisen kuvan verkkokalvon aistinsoluille.</li><li><strong>Likitaittoisuus (myopia)</strong>: Silmämuna on liian pitkä, joten kuva tarkentuu verkkokalvon eteen $\\implies$ kauas ei näe tarkasti. Korjataan <strong>hajottavilla miinuslaseilla</strong> ($-$).</li><li><strong>Kaukotaittoisuus (hyperopia)</strong>: Silmämuna on liian lyhyt, kuva tarkentuisi verkkokalvon taakse $\\implies$ lähelle ei näe tarkasti. Korjataan <strong>kokoavilla pluslaseilla</strong> ($+$).</li></ul>",
       "tasks": {
         "research": "s. 46: työ nro 1",
         "theory": "s. 47 - 48: T1 - 6"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Antonie van Leeuwenhoek ja ensimmäiset mikroskoopit: Pieni lasihelmi paljasti mikrobimaailman",
+        "content": "<h4>Kangaspuotias ja salaiset lasihelmet</h4><p>1670-luvulla hollantilainen kankaiden kauppias <strong>Antonie van Leeuwenhoek</strong> halusi tutkia myymiensä kankaiden lankatiheyttä tarkemmin. Hän oppi sulattamaan lasinpaloja liekissä pikkuruisiksi, vain millimetrin kokoisiksi lasipalloiksi, joilla oli äärimmäisen lyhyt polttoväli ja valtava yli 200-kertainen suurennusteho!</p><h4>'Animacules' – eläinhiukkaset vesipisarassa</h4><p>Kun Leeuwenhoek katsoi mikroskoopillaan lammikkovettä ja hammaskiveä, hän näki ensimmäisenä ihmisenä historiassa tuhansia uivia mikroskooppisia eliöitä: bakteereja, siittiöitä ja alkueläimiä! Lontoon Royal Society ei aluksi uskonut häntä, mutta keksintö loi perustan koko modernille solubiologialle ja lääketieteelle.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nykyaikaisissa älypuhelimissa on jopa 5–6 pikkuruista muovilinssiä päällekkäin kamerakennon edessä korjaamassa linssien väri- ja muotovääristymiä (aberraatioita)!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Geometrinen optiikka ja linssit",
+        "url": "https://phet.colorado.edu/fi/simulations/geometric-optics"
+      }
     }
-    
   ]
 }

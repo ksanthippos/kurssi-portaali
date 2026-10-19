@@ -5,134 +5,266 @@
     {
       "lesson": 1,
       "topic": "Muuttujat",
+      "title": "Muuttujat ja lausekkeet",
       "content": "KS aihe 1. Muuttujan käsite, muuttujat ja kertoimet. Lausekkeen sieventämisen perussäännöt (kertomerkkien ja ykkösten piilottaminen). Summa, erotus, tulo ja osamäärä muuttujilla.",
+      "summary": "Muuttujan käsite, sieventämisen perussäännöt (kertomerkkien ja ykkösten piilottaminen) sekä peruslaskutoimitukset muuttujilla.",
+      "theory": "<p>Tervetuloa algebran maailmaan! Kun laskuissa ryhdytään käyttämään numeroiden lisäksi kirjaimia, moni saattaa aluksi hämmentyä. Ajatus on kuitenkin tuttu jo arkielämästä:</p><p>Jos meillä on viisi euroa rahaa, se kirjoitetaan lyhyesti $5\\text{ €}$. Voisimme ajatella, että viisi euroa koostuu viidestä yhden euron kolikosta:</p><p>$$5\\text{ €} = 5 \\cdot 1\\text{ €}$$</p><p>Vastaavasti $13\\text{ \\$} = 13 \\cdot 1\\text{ \\$}$ ja $60\\text{ £} = 60 \\cdot 1\\text{ £}$. Mutta mitä jos meillä on 'valuutta', jota merkitään kirjaimella $a$ tai $x$? Jos otamme 5 kappaletta näitä kolikoita, voimme kirjoittaa:</p><p>$$5 \\cdot 1a = 5a \\qquad 14 \\cdot 1x = 14x$$</p><h4>Muuttujan käsite</h4><p>Kirjaimia kuten $a, b, c, x, y$ kutsutaan <strong>muuttujiksi</strong>. Erona oikeisiin valuuttoihin on se, että muuttujan arvoa ei välttämättä etukäteen tiedetä – se on <em>tuntematon</em>, ellei sitä erikseen kerrota.</p><h4>Sieventämisen kolme perussääntöä</h4><p>Lausekkeen merkitsemistä lyhyempään ja siistimpään muotoon kutsutaan <strong>sieventämiseksi</strong>:</p><ol><li><strong>Kertomerkki piilotetaan</strong> numeron ja muuttujakirjaimen tai kahden muuttujakirjaimen välistä: $5 \\cdot a = 5a$ ja $a \\cdot b = ab$.</li><li><strong>Numero 1 piilotetaan</strong>, jos muuttujaa kerrotaan luvulla $1$ tai $-1$: $1 \\cdot c = c$ ja $-1 \\cdot d = -d$.</li><li><strong>Kertomerkki sulkulausekkeen edestä piilotetaan</strong>: $-4 \\cdot (x + 5) = -4(x + 5)$.</li></ol><p><em>Muista: Kertomerkkien ja ykkösten lisäksi mitään muita merkkejä, kirjaimia tai numeroita ei saa piilottaa!</em></p><h4>Lauseke vs. lasku</h4><p>Koska emme tiedä muuttujan arvoa, lauseketta $4a + 5b$ ei voi laskea yhdeksi luvuksi. Siksi puhutaan <strong>lausekkeesta</strong> eikä laskusta (laskulla on aina vastaus, kuten $4 + 5 = 9$).</p><h4>Peruskäsitteet muuttujilla</h4><ul><li>Lukujen $a$ ja $b$ <strong>summa</strong>: $a + b$</li><li>Lukujen $c$ ja $d$ <strong>erotus</strong>: $c - d$</li><li>Lukujen $6$ ja $x$ <strong>tulo</strong>: $6x$</li><li>Lukujen $y$ ja $4$ <strong>osamäärä</strong>: $\\frac{y}{4}$</li></ul>",
       "tasks": {
         "warmup": "s. 135: T1 - 3",
         "blue": "s. 135: T6 - 8, s. 225: T41 - 44",
         "red": "s. 135: T12, 13, 15, s. 225: T45 - 48"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Al-Khwarizmi ja algebran synty: Miksi tuntematon on aina 'x'?",
+        "content": "<h4>Mistä sana algebra tulee?</h4><p>Noin vuonna 820 jaa. persialainen matemaatikko <strong>Muhammad ibn Musa al-Khwarizmi</strong> kirjoitti Bagdadissa uraauurtavan teoksen <em>Al-Kitab al-mukhtasar fi hisab al-jabr wa'l-muqabala</em>. Teoksen nimessä esiintyvä sana <strong>al-jabr</strong> tarkoittaa 'palauttamista' tai 'murtuneiden osien yhdistämistä' (alun perin sitä käytettiin myös lääketieteessä luunmurtumien korjaamiseen!). Tästä arabiankielisestä sanasta kehittyi nykyinen matematiikan haara <strong>algebra</strong>. Samalla al-Khwarizmin omasta nimestä syntyi sana <em>algoritmi</em>.</p><h4>Miksi juuri kirjain x?</h4><p>Arabiankielisessä algebrassa tuntematonta kutsuttiin sanalla <em>šay'</em> (شَيْء), joka tarkoittaa 'asiaa' tai 'jokin'. Kun arabialaiset matemaattiset tekstit käännettiin Espanjassa 1100-luvulla latinan kielelle, espanjalaisilla ei ollut kirjainta arabian 'š'-äänteelle. He lainasivat kreikkalaisen kirjaimen $\\chi$ (khi), joka kirjoitettiin myöhemmin latinalaisena kirjaimena <strong>x</strong>.</p><p>Lopullisesti kirjainten $x, y, z$ vakiinnuttamisesta tuntemattomiksi saamme kiittää <strong>René Descartesta</strong> (1637). Tarinan mukaan kirjapainon latojalla oli kirjasinlaatikossaan eniten vapaita x-kirjaimia, koska x oli ranskassa varsin harvinainen kirjain!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Röntgenputken keksinyt Wilhelm Röntgen antoi havaitsemalleen uudelle säteilylle nimen <em>X-säteet</em> (X-rays) nimenomaan algebran matematiikasta lainatulla logiikalla: säteilyn todellinen luonne oli aluksi täysin tuntematon suure 'x'!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Muuttujat ja lukusuora",
+        "url": "https://www.geogebra.org/m/m9kptf6y"
+      }
     },
     {
       "lesson": 2,
       "topic": "Lausekkeen arvo",
+      "title": "Lausekkeen arvo ja sijoittaminen",
       "content": "KS aihe 2. Lukuarvon sijoittaminen muuttujan paikalle ja lausekkeen arvon laskeminen välivaiheittain. Negatiiviset luvut ja sulut sijoituksessa.",
+      "summary": "Muuttujan lukuarvon sijoittaminen lausekkeeseen välivaiheittain, piilotettujen kertomerkkien palauttaminen sekä negatiiviset luvut ja sulut.",
+      "theory": "<p>Edellisessä aiheessa lausekkeita sievennettiin, koska muuttujien arvoja ei tiedetty. Mutta mitä tehdään, kun <strong>muuttujan arvo tiedetäänkin</strong>?</p><h4>Sijoittamisen 5 vaihetta</h4><p>Tarkastellaan lauseketta $5a + 4b$. Jos $a = 3$ ja $b = 2$, mikä on lausekkeen arvo?</p><p>Ennen laskemista on muistettava, että lauseke on sievennetyssä muodossa: siinä on <strong>piilossa kaksi kertomerkkiä</strong>, jotka on otettava esille ennen lukujen sijoittamista! Muutoin saisimme virheellisen laskun $53 + 42 = 95$.</p><ol><li>Kirjoita alkuperäinen lauseke.</li><li>Kirjoita sama lauseke kertomerkit näkyvissä.</li><li>Sijoita muuttujien paikalle annetut lukuarvot.</li><li>Laske lasku loppuun noudattaen laskujärjestystä (kerto ennen yhteenlaskua).</li><li>Viimeiselle riville vastaus.</li></ol><h4>Mallisuoritus</h4><p>$$5a + 4b$$</p><p>$$= 5 \\cdot a + 4 \\cdot b$$</p><p>$$= 5 \\cdot 3 + 4 \\cdot 2$$</p><p>$$= 15 + 8 = 23$$</p><h4>Negatiiviset luvut ja sulut sijoituksessa</h4><p>Jos muuttujan arvo on negatiivinen, se on <strong>aina sijoitettava suluissa</strong>, jotta kaksi laskumerkkiä ei joudu peräkkäin ilman sulkua:</p><p><strong>Esimerkki 1:</strong> Laske lausekkeen $-3a + 5$ arvo, kun $a = -2$.</p><p>$$-3a + 5 = -3 \\cdot a + 5 = -3 \\cdot (-2) + 5 = 6 + 5 = 11$$</p><p><em>Muista merkkisääntö: miinus kertaa miinus on plus!</em></p><p><strong>Esimerkki 2:</strong> Laske lausekkeen $4(x - 3)$ arvo, kun $x = 1$.</p><p>$$4(x - 3) = 4 \\cdot (1 - 3) = 4 \\cdot (-2) = -8$$</p>",
       "tasks": {
         "warmup": "s. 137: T16, 17",
         "blue": "s. 137: T18, 19, 22, 24, s. 226: T50 - 52",
         "red": "s. 137: T25 - 31, s. 226: T55 - 57"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Tietokoneohjelmointi ja muuttujat: Miten koodi sijoittaa arvoja?",
+        "content": "<h4>Muuttuja koodarin työkalupakissa</h4><p>Ohjelmoinnissa (Python, JavaScript, C++) muuttuja on kuin nimikoitu laatikko tietokoneen keskusmuistissa. Kun koodissa kirjoitetaan:</p><pre><code>x = 3\ny = 2\ntulos = 5 * x + 4 * y</code></pre><p>Tietokone tekee täsmälleen saman lausekkeen arvon laskemisen kuin matematiikan tunnilla: se hakee muistilokerosta <code>x</code> arvon 3, muistilokerosta <code>y</code> arvon 2, suorittaa kertolaskut $15$ ja $8$, ja tallentaa tuloksen $23$ lokeroon <code>tulos</code>.</p><h4>Pelimoottorit ja 60 kuvaa sekunnissa</h4><p>Videopeleissä fysiikkamoottori laskee pelihahmon sijaintilauseketta $s = v \\cdot t + \\frac{1}{2} a t^2$ peräti 60 tai 120 kertaa sekunnissa jokaiselle pelimaailman esineelle ja hahmolle. Joka kerralla ajan muuttujan $t$ paikalle sijoitetaan kulunut sekunnin murto-osa!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Vuonna 1962 NASAn Mariner 1 -avaruusluotain jouduttiin räjäyttämään vain 293 sekuntia laukaisun jälkeen, koska käsin kirjoitetusta lausekkeesta oli koodiin siirrettäessä jäänyt pois yksi yläviiva (keskiarvoa kuvaava merkki). Tämä yhden merkin virhe maksoi 18,5 miljoonaa dollaria!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Lausekkeen arvon laskenta ja havainnollistus",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 3,
       "topic": "Termi",
+      "title": "Termit, kerroin ja muuttujaosa",
       "content": "KS aihe 3. Summalausekkeen termit: muuttujatermit ja vakiotermit. Termin kerroin ja muuttujaosa.",
+      "summary": "Summalausekkeen rakenne, muuttujatermit ja vakiotermit, kertoimen ja muuttujaosan tunnistaminen sekä piilotetut kertoimet.",
+      "theory": "<p>Tarkastellaan lausekkeita:</p><p>$$3a + 4b \\qquad \\text{ja} \\qquad 2x - 5y + 7$$</p><p>Vaikka alemmassa lausekkeessa on mukana miinusmerkkejä, tällaisia lausekkeita kutsutaan yhteisnimityksellä <strong>summalauseke</strong>. Lausekkeen yhteenlaskettavia 'jäseniä' kutsutaan lausekkeen <strong>termeiksi</strong>. Voidaan siis ajatella, että summalauseke koostuu termeistään.</p><h4>Muuttujatermit ja vakiotermit</h4><ul><li><strong>Muuttujatermi</strong>: Sisältää muuttujakirjaimen (esim. $3a$, $4b$, $2x$ ja $-5y$). Muuttujatermin arvo vaihtelee riippuen siitä, mikä arvo muuttujalle annetaan.</li><li><strong>Vakiotermi</strong>: Ei sisällä muuttujaa (esim. $+7$). Sen arvo ei muutu koskaan, vaan pysyy nimensä mukaisesti <em>vakiona</em>. Vakiotermi sijoitetaan lausekkeessa aina viimeiseksi.</li></ul><h4>Kertoimen ja muuttujaosan anatomia</h4><p>Muuttujatermi muodostuu kahdesta toisiinsa kytkeytyneestä osasta:</p><ol><li><strong>Kerroin</strong>: Termin edessä oleva luku etumerkkeineen.</li><li><strong>Muuttujaosa (kirjainosa)</strong>: Termissä oleva kirjain tai kirjaintulo.</li></ol><table class=\"styled-table\"><thead><tr><th>Termi</th><th>Kerroin</th><th>Muuttujaosa</th><th>Huomio</th></tr></thead><tbody><tr><td>$3x$</td><td>$3$</td><td>$x$</td><td>$3 \\cdot x$</td></tr><tr><td>$-5a$</td><td>$-5$</td><td>$a$</td><td>Etumerkki kuuluu kertoimeen!</td></tr><tr><td>$ab$</td><td>$1$</td><td>$ab$</td><td>Piilotettu kerroin $1$</td></tr><tr><td>$-x$</td><td>$-1$</td><td>$x$</td><td>Piilotettu kerroin $-1$</td></tr><tr><td>$15$</td><td>$15$</td><td>–</td><td>Pelkkä vakiotermi</td></tr></tbody></table><h4>Termien numerointi vasemmalta oikealle</h4><p>Lausekkeessa $3a - 5b + c - 7$:</p><ul><li>1. termi on $3a$</li><li>2. termi on $-5b$</li><li>3. termi on $c$ (kerroin 1)</li><li>4. termi on $-7$ (vakiotermi)</li></ul>",
       "tasks": {
         "warmup": "s. 139: T1 - 6",
         "blue": "s. 139: T7, 8, s. 227: T58 - 61",
         "red": "s. 139: T9, 10, s. 227: T63, 65 - 67"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Termin etymologia: Roomalainen rajajumala Terminus matematiikassa",
+        "content": "<h4>Miksi matematiikan osia kutsutaan termeiksi?</h4><p>Sana <strong>termi</strong> juontaa juurensa latinan sanasta <em>terminus</em>, joka tarkoittaa 'rajaa', 'rajapyykkiä' tai 'päätepistettä'. Muinaisessa Roomassa <strong>Terminus</strong> oli rajojen ja rajapyykkien suojelusjumala. Rajakiviä pidettiin pyhinä, ja kuka tahansa rajakiveä siirtänyt julistettiin kirotuksi!</p><h4>Rajapyykit lausekkeessa</h4><p>Matematiikassa laskumerkit $+$ ja $-$ toimivat täsmälleen kuin rajapyykit lausekkeen maastossa: ne erottavat lausekkeen itsenäiset osat toisistaan. Kukin termi on oma rajattu 'tonttinsa', jolla on oma kerroin ja oma kirjainosa.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lentokenttien ja satamien <em>terminaali</em> sekä tietokoneen <em>pääte (terminal)</em> ovat saaneet nimensä täsmälleen samasta latinan sanasta <em>terminus</em> kuin matematiikan algebrallinen termi!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Algebran peruskäsitteet ja termit",
+        "url": "https://www.geogebra.org/m/e7wcmvsy"
+      }
     },
     {
       "lesson": 4,
       "topic": "Termien yhteen- ja vähennyslasku, osa 1",
+      "title": "Samanmuotoisten termien yhdistäminen",
       "content": "KS aihe 4. Samanmuotoisten termien yhdistäminen ja sieventäminen.",
+      "summary": "Samanmuotoisten termien tunnistaminen (sama muuttujaosa), kertoimien laskeminen yhteen ja erotuksen muodostaminen.",
+      "theory": "<p>Kuvitellaan kaksi kaverusta, Mirka ja Mikko, jotka palaavat matkalta Lontoosta taskuissaan sekä euroja että puntia:</p><ul><li>Mirkan rahat: $5\\text{ €}$ ja $7\\text{ £}$</li><li>Mikon rahat: $4\\text{ €}$ ja $3\\text{ £}$</li></ul><p>Lasketaan heidän rahansa yhteen:</p><p>$$5\\text{ €} + 7\\text{ £} + 4\\text{ €} + 3\\text{ £} = (5\\text{ €} + 4\\text{ €}) + (7\\text{ £} + 3\\text{ £}) = 9\\text{ €} + 10\\text{ £}$$</p><p>Euroja ja puntia ei voi enää laskea yhteen, koska ne ovat eri valuuttoja. Lasku päättyy tähän.</p><h4>Sama sääntö algebrassa!</h4><p>Korvataan valuutat muuttujilla $a$ ja $b$:</p><p>$$5a + 7b + 4a + 3b = 5a + 4a + 7b + 3b = 9a + 10b$$</p><p>Tätä kutsutaan <strong>samanmuotoisten termien yhdistämiseksi</strong>.</p><h4>Milloin termit ovat samanmuotoisia?</h4><p>Termit ovat <strong>samanmuotoisia</strong> vain ja ainoastaan silloin, kun niillä on <strong>täsmälleen sama muuttujaosa</strong>:</p><ul><li>$8a - 5a = 3a$ (samanmuotoiset, voidaan laskea)</li><li>$7x - 9x = -2x$ (samanmuotoiset, voidaan laskea)</li><li>$120b - 140b = -20b$ (samanmuotoiset, voidaan laskea)</li><li>$4a - 3b$ <strong>ei voida yhdistää</strong>, koska muuttujaosat $a$ ja $b$ ovat eri!</li><li>$3x^2$ ja $5x$ <strong>eivät ole samanmuotoisia</strong>, koska eksponentti on eri!</li></ul>",
       "tasks": {
         "warmup": "s. 141: T3 - 8",
         "blue": "s. 228: T68 - 73, s. 141: T11 - 15",
         "red": "s. 228: T74 - 79, s. 141: T16, 17"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Dimensioanalyysi fysiikassa: Omenat, appelsiinit ja avaruusluotaimet",
+        "content": "<h4>Älä koskaan laske omenoita ja appelsiineja yhteen!</h4><p>Koulussa toistetaan usein lausetta: 'Et voi laskea yhteen omenoita ja appelsiineja'. Fysiikassa ja insinööritieteissä tätä periaatetta kutsutaan <strong>dimensioanalyysiksi</strong>. Et voi laskea yhteen matkaa ja aikaa: lasku $10\\text{ m} + 5\\text{ s}$ on fysiikassa täysin merkityksetön ja mahdoton!</p><h4>Mars Climate Orbiterin tuho 1999</h4><p>Vuonna 1999 NASAn Mars Climate Orbiter -luotain syöksyi Marsin ilmakehään ja tuhoutui. Tutkinnassa selvisi uskomaton syy: toinen alihankkijatiimi oli laskenut rakettimoottorin työntövoimaa brittiläisissä paunavoimayksiköissä ($lbf$), kun taas NASAn ohjelmisto odotti kansainvälisiä SI-järjestelmän newtoneita ($N$). Lukuarvoja oli yhdistetty suoraan huomioimatta niiden erilaisia 'muuttujaosia'. 327 miljoonan dollarin alus menetettiin, koska samanmuotoisuuden sääntö oli unohdettu!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kun ratkaiset fysiikan tai kemian tehtäviä, kirjoita suureiden yksiköt aina näkyviin. Yksiköt käyttäytyvät täsmälleen samalla tavalla kuin algebran muuttujat: $\\text{m} \\cdot \\text{m} = \\text{m}^2$ ja $\\frac{\\text{m}}{\\text{s}} \\cdot \\text{s} = \\text{m}$!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Algebralliset lausekkeet ja yhdistäminen",
+        "url": "https://phet.colorado.edu/fi/simulations/expression-evaluator"
+      }
     },
     {
       "lesson": 5,
       "topic": "Termien yhteen- ja vähennyslasku, osa 2",
+      "title": "Monitermiset lausekkeet ja sulkujen poisto",
       "content": "KS aihe 4. Useamman termin ja sulkujen sieventäminen etumerkkisääntöjä noudattaen.",
+      "summary": "Monitermisten lausekkeiden sieventäminen, etumerkkien kuljettaminen mukana, sulkujen poisto ja vastaluvut.",
+      "theory": "<p>Monimutkaisemmissa lausekkeissa on useita eri muuttujatermejä ja vakiotermejä sekaisin. Tällöin on tärkeää <strong>kuljettaa jokaisen termin etumerkki aina termin mukana</strong>:</p><h4>Esimerkki 1: Muuttujat ja vakiot sekaisin</h4><p>$$4x - 5y + 3x + 2y$$</p><ol><li>Ryhmitellään samanmuotoiset termit vierekkäin etumerkkeineen:<br>$$= 4x + 3x - 5y + 2y$$</li><li>Lasketaan kertoimet yhteen:<br>$$= 7x - 3y$$</li></ol><p>Termit $7x$ ja $-3y$ eivät ole samanmuotoisia, joten sieventäminen päättyy tähän.</p><h4>Esimerkki 2: Muuttujat ja vakiot</h4><p>$$6a + 7 - 5a - 6 = 6a - 5a + 7 - 6 = a + 1$$</p><h4>Esimerkki 3: Sulkulausekkeiden sieventäminen</h4><p>$$3a - 4b + (-5) - a - (-4b) - 8$$</p><ol><li>Poistetaan sulut etumerkkisääntöjen avulla ($+(-) \\to -$ ja $-(-) \\to +$):<br>$$= 3a - 4b - 5 - a + 4b - 8$$</li><li>Ryhmitellään samanmuotoiset vierekkäin:<br>$$= 3a - a - 4b + 4b - 5 - 8$$</li><li>Sievennetään: $3a - 1a = 2a$, $-4b + 4b = 0$ (jää pois!), ja $-5 - 8 = -13$:<br>$$= 2a - 13$$</li></ol><p><em>Varoitus: Laskussa $-5 - 8$ ei ole kahta peräkkäistä miinusmerkkiä! Siinä luvusta $-5$ vähennetään $8$, jolloin mennään vielä syvemmälle pakkaselle tulokseen $-13$.</em></p>",
       "tasks": {
         "warmup": "s. 142: T18 - 27",
         "blue": "s. 143: T28 - 39, s. 229: T89, 90",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miinusmerkin kaksoisrooli: Etumerkki vastaan vähennyslasku",
+        "content": "<h4>Miksi miinusmerkki aiheuttaa eniten virheitä?</h4><p>Matematiikan oppimisessa suurin yksittäinen sekaannuksen lähde on miinusmerkin kaksoisrooli. Miinusmerkillä on kaksi täysin eri merkitystä:</p><ol><li><strong>Etumerkki (unäärioperaattori)</strong>: Kertoo, onko luku negatiivinen (nollan alapuolella), kuten $-5$.</li><li><strong>Laskutoimitus (binäärioperaattori)</strong>: Kertoo vähennyslaskusta kahden luvun välillä, kuten $8 - 3$.</li></ol><h4>Negatiivisten lukujen vaikea historia</h4><p>Eurooppalaiset matemaatikot kieltäytyivät vuosisatojen ajan hyväksymästä negatiivisia lukuja. Vielä 1500-luvulla saksalainen matemaatikko Michael Stifel kutsui niitä 'absurdeiksi luvuiksi' (<em>numeri absurdi</em>). Intiassa sen sijaan jo 600-luvulla matemaatikko <strong>Brahmagupta</strong> käytti negatiivisia lukuja sujuvasti velkoina ja positiivisia varallisuutena, ja muotoili säännön: 'Kahden velan tulo on varallisuutta' (eli miinus kertaa miinus on plus)!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Alkeislaskimissa on usein kaksi eri miinusnäppäintä: iso miinusnäppäin $-$ vähennyslaskua varten ja erillinen pieni $(-)$ tai $\\pm$ -näppäin negatiivisen luvun syöttämistä varten!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Samanmuotoisten termien sieventäminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 6,
       "topic": "Yhtälö, osa 1",
+      "title": "Yhtälön käsite ja vaakamalli",
       "content": "KS aihe 5. Yhtälön käsite, vaakamalli, yhtälön vasen ja oikea puoli sekä ratkaiseminen päättelemällä.",
+      "summary": "Yhtälön käsite, yhtälön puolet, vaakamalli ja tasapaino sekä yhtälön ratkaiseminen päättelemällä ja merkintätapa.",
+      "theory": "<p>Otetaan kaksi eri laskulauseketta: $3 + 5$ ja $2 + 6$. Kummastakin saadaan tulokseksi $8$. Voimme siis kirjoittaa:</p><p>$$3 + 5 = 2 + 6 \\iff 8 = 8$$</p><p>Korvataan nyt luku $3$ muuttujakirjaimella $x$. Saadaan:</p><p>$$x + 3 = 8$$</p><p>Kun kaksi lauseketta merkitään yhtäsuuruusmerkillä yhtä suuriksi, kyseessä on <strong>yhtälö</strong>. Yhtäsuuruusmerkki jakaa yhtälön kahteen osaan:</p><ul><li><strong>Vasen puoli (VP)</strong>: $x + 3$</li><li><strong>Oikea puoli (OP)</strong>: $8$</li></ul><h4>Yhtälön vaakamalli</h4><p>Yhtälöä voidaan mallintaa täydellisesti perinteisellä <strong>kaksikuppisella vaa'alla</strong>. Vasen ja oikea puoli vastaavat vaakakuppeja:</p><ul><li>Vaaka pysyy tasapainossa, kun kummassakin vaakakupissa on täsmälleen yhtä painava kuorma.</li><li>Muuttuja $x$ vastaa suljettua rasiaa, jonka massaa emme tiedä. Numerot vastaavat tunnettuja punnuksia.</li></ul><h4>Ratkaiseminen päättelemällä</h4><p>Yksinkertaisissa yhtälöissä oikea ratkaisu voidaan päätellä ('arvata' ja testata):</p><p><strong>Esimerkki 1:</strong> Päättele yhtälön $x + 7 = 12$ ratkaisu.</p><ol><li>Alkuperäinen yhtälö: $x + 7 = 12$</li><li>Sijoitetaan arvaus $x = 5$: $5 + 7 = 12$</li><li>Vasemman ja oikean puolen yhtäsuuruus: $12 = 12$ (tosi!)</li><li>Vastausrivi: <strong>Yhtälön ratkaisu $x = 5$.</strong></li></ol><p><strong>Esimerkki 2:</strong> Päättele yhtälön $x - 6 = -2$ ratkaisu.</p><p>$$x - 6 = -2 \\implies 4 - 6 = -2 \\implies -2 = -2 \\quad \\text{(tosi!)} \\implies x = 4$$</p><p><em>Tärkeä kirjoitussääntö: Kirjoita yhtäsuuruusmerkit aina allekkain suoraan linjaan! Älä koskaan kirjoita yhtälöketjuja samalle riville (kuten $x + 3 = 8 = x = 5$), sillä se sekoittaa yhtälön puolet.</em></p>",
       "tasks": {
         "warmup": "s. 155: T1 - 4",
         "blue": "s. 232: T130 - 135",
         "red": "s. 232: T136 - 141"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Robert Recorde ja yhtäsuuruusmerkin (=) keksiminen vuonna 1557",
+        "content": "<h4>Miten ennen kirjoitettiin yhtäsuuruus?</h4><p>Ennen 1500-lukua matemaatikoilla ei ollut yhtäsuuruusmerkkiä. He kirjoittivat pitkiä sanallisia lauseita: latinaksi <em>aequales</em> tai <em>aequantur</em>, italiaksi <em>fa</em>, tai ranskaksi <em>est egale</em>. Tämä teki yhtälöiden kirjoittamisesta hidasta ja raskasta luettavaa.</p><h4>Kaksi yhdensuuntaista viivaa</h4><p>Vuonna 1557 walesilainen lääkäri ja matemaatikko <strong>Robert Recorde</strong> julkaisi englanninkielisen algebran oppikirjan <em>The Whetstone of Witte</em>. Hän kyllästyi toistamaan sanoja 'is equal to' ja piirsi kaksi yhdensuuntaista janaa perustellen valintaansa runollisesti:</p><blockquote><em>\"Bicause noe 2 thynges can be moare equalle.\"</em> (Koska mitkään kaksi asiaa eivät voi olla yhtäläisempiä kuin kaksi samanlaista yhdensuuntaista suoraa.)</blockquote><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Recorden alkuperäinen yhtäsuuruusmerkki oli huomattavasti pidempi kuin nykyinen – jopa useita senttimetrejä pitkä vaakasuora viivapari! Ajan myötä kirjapainot lyhensivät sen nykyiseen kompaktiin muotoonsa.</div>"
+      },
+      "simulation": {
+        "title": "PhET: Yhtälöiden vaakamalli (Equality Explorer: Basics)",
+        "url": "https://phet.colorado.edu/fi/simulations/equality-explorer"
+      }
     },
     {
       "lesson": 7,
       "topic": "Yhtälö, osa 2",
+      "title": "Yhtälön juuri ja ratkaisun tarkistaminen",
       "content": "KS aihe 5. Yhtälön ratkaisun eli juuren tarkistaminen sijoittamalla.",
+      "summary": "Yhtälön juuren käsite, ehdotetun ratkaisun tarkistaminen sijoittamalla vasemmalle ja oikealle puolelle sekä yhtäsuuruuden toteaminen.",
+      "theory": "<p>Yhtälön ratkaisua kutsutaan matematiikassa usein nimellä <strong>yhtälön juuri</strong>. Se tarkoittaa sellaista lukua, joka muuttujan paikalle sijoitettuna tekee yhtälön vasemmasta ja oikeasta puolesta <em>yhtä suuret</em>.</p><h4>Miten ehdotettu ratkaisu tarkistetaan?</h4><p>Kun halutaan tietää, onko jokin luku yhtälön oikea ratkaisu, luku sijoitetaan muuttujan paikalle ja lasketaan molempien puolien arvot erikseen:</p><p><strong>Tehtävä 1:</strong> Onko luku $x = 5$ yhtälön $3x + 2 = 17$ ratkaisu?</p><p>Sijoitetaan luku $5$ muuttujan $x$ paikalle (muista piilotettu kertolasku $3x = 3 \\cdot x$):</p><p>$$3x + 2 = 17$$</p><p>$$3 \\cdot 5 + 2 = 17$$</p><p>$$15 + 2 = 17$$</p><p>$$17 = 17 \\quad \\text{Vasen puoli = Oikea puoli!}$$</p><p><strong>Vastaus: Kyllä</strong>, luku $x = 5$ on yhtälön ratkaisu.</p><hr><p><strong>Tehtävä 2:</strong> Onko luku $x = -3$ yhtälön $-2x - 1 = 7$ ratkaisu?</p><p>Sijoitetaan $x = -3$ suluissa yhtälöön:</p><p>$$-2x - 1 = 7$$</p><p>$$-2 \\cdot (-3) - 1 = 7$$</p><p>$$6 - 1 = 7$$</p><p>$$5 = 7 \\quad \\text{Ristiriita! Vasen puoli } \\neq \\text{ Oikea puoli!}$$</p><p><strong>Vastaus: Ei</strong>, luku $x = -3$ ei ole yhtälön ratkaisu.</p>",
       "tasks": {
         "warmup": "s. 157: T7 - 10",
         "blue": "s. 234: T144, 146, s. 157: T12 - 15",
         "red": "s. 157: T16, 17, s. 234: T148 - 151"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi yhtälön ratkaisua kutsutaan 'juureksi'?",
+        "content": "<h4>Kasvioppia matematiikassa?</h4><p>Miksi puhutaan yhtälön <em>juuresta</em> (engl. <em>root</em>, lat. <em>radix</em>)? Käsite periytyy antiikin ja keskiajan arabialaisesta matematiikasta. Arabialainen sana <strong>jidhr</strong> (جذر) tarkoittaa puun tai kasvin juurta. Arabialaiset matemaatikot ajattelivat, että yhtälö kasvaa ja kukkii kuin kasvi, mutta sen perimmäinen perusta, josta koko kasvu versoo, on piilossa maan alla oleva 'juuri' eli tuntemattoman arvo.</p><h4>Kokeen paras salainen ase</h4><p>Tarkistaminen on matematiikan kokeessa oppilaan paras työkalu: kun ratkaiset minkä tahansa yhtälön, voit sijoittaa saamasi luvun takaisin alkuperäiseen yhtälöön. Jos vasen ja oikea puoli täsmäävät, <strong>tiedät 100 % varmuudella saaneesi täydet pisteet</strong> jo ennen kuin opettaja edes näkee koepaperiasi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Latinankielinen juurta tarkoittava sana <em>radix</em> on antanut meille myös matemaattisen neliöjuurimerkin $\\sqrt{}$ ja sanan <em>radikaali</em> (joka alun perin tarkoitti 'juuriin asti menevää')!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Yhtälöiden ratkaisun tutkiminen",
+        "url": "https://phet.colorado.edu/fi/simulations/equality-explorer"
+      }
     },
     {
       "lesson": 8,
       "topic": "Vastalukutekniikka",
+      "title": "Vastalukutekniikka yhtälönratkaisussa",
       "content": "KS aihe 6. Yhtälön ratkaiseminen vastalukutekniikalla, kaksoisviivamerkinnät (//) ja yhtälön tasapaino.",
+      "summary": "Yhtälönratkaisun periaate vastaluvun lisäämisellä kummallekin puolelle, yhtälön tasapainon säilyttäminen ja kaksoisviivamerkinnät.",
+      "theory": "<p>Yksinkertaiset yhtälöt kuten $x + 2 = 5$ on helppo ratkaista päättelemällä. Mutta entä tällainen yhtälö:</p><p>$$5x - 6 = 4x + 8$$</p><p>Päättely muuttuu mahdottoman hitaaksi, varsinkin jos ratkaisu olisikin negatiivinen luku tai murtoluku. Tarvitsemme järjestelmällisen menetelmän: <strong>vastalukutekniikan</strong>.</p><h4>Yhtälön kultainen sääntö</h4><p><em>Yhtälön molemmille puolille voidaan lisätä tai kummaltakin puolelta vähentää sama luku ilman, että vaaka kallistuu tai tasapaino järkkyy.</em></p><h4>Miten vastalukutekniikka toimii?</h4><p>Tarkastellaan yhtälöä $x + 5 = 8$. Haluamme vasemmalle puolelle pelkän $x$:n. Pääsemme luvusta $+5$ eroon lisäämällä sen <strong>vastaluvun $-5$ molemmille puolille</strong>:</p><p>$$x + 5 = 8 \\qquad // - 5$$</p><p>$$x + 5 - 5 = 8 - 5$$</p><p>$$x = 3$$</p><h4>Kaksoisviivamerkintä ($//$)</h4><p>Yhtälön rivin oikeaan laitaan merkitään kaksoisviiva $//$, jonka jälkeen kirjoitetaan toimenpide, joka tehdään yhtälön <strong>kummallekin puolelle</strong>.</p><h4>Esimerkki: Termejä molemmilla puolilla</h4><p>Ratkaistaan yhtälö $5x - 6 = 4x + 8$:</p><ol><li>Haluamme muuttujat vasemmalle: lisätään $4x$:n vastaluku $-4x$ kummallekin puolelle:<br>$$5x - 6 = 4x + 8 \\qquad // -4x$$<br>$$5x - 6 - 4x = 4x + 8 - 4x$$<br>$$x - 6 = 8$$</li><li>Haluamme vakiot oikealle: lisätään $-6$:n vastaluku $+6$ kummallekin puolelle:<br>$$x - 6 = 8 \\qquad // +6$$<br>$$x - 6 + 6 = 8 + 6$$<br>$$x = 14$$</li></ol>",
       "tasks": {
         "warmup": "s. 159: T1 - 3",
         "blue": "s. 235: T152 - 154, 159: T4 - 8",
         "red": "s. 159: T9 - 13, s. 235: T157 - 160"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Al-Muqabala: Tasapainottamisen ikivanha taide",
+        "content": "<h4>Vaaka pysyy aina vaaterissa</h4><p>Al-Khwarizmin teoksessa vuonna 820 toinen kirjan pääsanoista oli <strong>al-muqabala</strong> (المقابلة), joka tarkoittaa vastakkain asettamista tai tasapainottamista. Se tarkoitti juuri sitä, että yhtälön kummaltakin puolelta poistetaan yhtä suuret määrät samaa lajia olevia termejä, jotta vaaka pysyy suorassa.</p><h4>Miksi molemmat puolet on aina muistettava?</h4><p>Ajattele kaksihaaraista vaakaa, jonka kummassakin kupissa on $10\\text{ kg}$ kuorma. Jos nostat toisesta vaakakupista pois $5\\text{ kg}$ punnuksen, vaaka heilahtaa välittömästi alas toiselle puolelle. Tasapaino palautuu vasta, kun nostat tasan samanlaisen $5\\text{ kg}$ painon myös toisesta kupista!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kaksoisviivaa $//$ kutsutaan koulumatematiikassa myös 'komentoviivaksi'. Se kertoo opettajalle ja lukijalle suoraan: 'Tämän operaation aion tehdä nyt yhtälön kummallekin puolelle'. Se tekee laskujen tarkistamisesta ja virheiden löytämisestä vaivatonta!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Yhtälönratkaisun vaakamalli ja vastaluvut",
+        "url": "https://www.geogebra.org/m/e7wcmvsy"
+      }
     },
     {
       "lesson": 9,
       "topic": "Kerto- ja jakolaskutekniikka",
+      "title": "Kerto- ja jakolaskutekniikka yhtälöissä",
       "content": "KS aihe 7. Kertoimen ja jakajan kumoaminen käänteistoimituksilla (jakolasku ja kertolasku) sekä monivaiheiset yhtälöt.",
+      "summary": "Muuttujan kertoimen kumoaminen jakolaskulla, jakajan kumoaminen kertolaskulla ja tekniikoiden oikea suoritusjärjestys.",
+      "theory": "<p>Tarkastellaan yhtälöitä, joissa muuttujalla on kerroin tai jakaja:</p><p>$$3x = 21 \\qquad \\text{tai} \\qquad \\frac{x}{5} = 4$$</p><p>Näitä yhtälöitä ei voi ratkaista vastalukutekniikalla: $-3$ ei ole termin $3x$ vastaluku. Vastaluvun sijaan käytetään <strong>käänteisiä laskutoimituksia</strong>:</p><ul><li>Kertolaskun käänteistoimitus on <strong>jakolasku</strong>.</li><li>Jakolaskun käänteistoimitus on <strong>kertolasku</strong>.</li></ul><h4>Kertoimen kumoaminen jakolaskulla</h4><p>Koska $x$ on kerrottu kolmella, <strong>jaetaan molemmat puolet kolmella</strong> ($// : 3$):</p><p>$$3x = 21 \\qquad // : 3$$</p><p>$$\\frac{3x}{3} = \\frac{21}{3}$$</p><p>$$x = 7$$</p><p>Vasemmalla puolella $\\frac{3}{3} = 1$, jolloin jäljelle jää haluttu $1x$ eli $x$.</p><h4>Jakajan kumoaminen kertolaskulla</h4><p>Koska $x$ on jaettu viidellä, <strong>kerrotaan molemmat puolet viidellä</strong> ($// \\cdot 5$):</p><p>$$\\frac{x}{5} = 4 \\qquad // \\cdot 5$$</p><p>$$5 \\cdot \\frac{x}{5} = 5 \\cdot 4$$</p><p>$$x = 20$$</p><h4>Tekniikoiden yhdistäminen: Oikea järjestys!</h4><p>Kun yhtälössä on sekä summia/erotuksia että kertoimia, noudatetaan aina sääntöä:</p><ol><li><strong>Ensin aina vastaluvut / yhteen- ja vähennyslasku</strong>.</li><li><strong>Viimeisenä aina kerto- ja jakolaskutekniikka</strong> (jaetaan muuttujan kertoimella).</li></ol><p><strong>Esimerkki:</strong></p><p>$$7x - 6 = 4x + 9 \\qquad // +6$$</p><p>$$7x = 4x + 15 \\qquad // -4x$$</p><p>$$3x = 15 \\qquad // : 3$$</p><p>$$x = 5$$</p>",
       "tasks": {
         "warmup": "s. 161: T17 - 19",
         "blue": "s. 235: T161 - 164, s. 161: T21 - 24",
         "red": "s. 161: T26 - 29, s. 235: T165 - 169"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Käänteistoimitukset ja fysiikan kaavojen pyörittäminen",
+        "content": "<h4>Miksi käänteistoimitukset hallitsevat koko tiedettä?</h4><p>Käänteistoimituksen periaate on kuin takin vetoketjun sulkeminen ja avaaminen: se toimenpide, joka tehtiin viimeisenä, puretaan ensimmäisenä päinvastaisella liikkeellä. Kaikki fysiikan kaavat pyörivät täsmälleen kerto- ja jakolaskutekniikan varassa:</p><p>Nopeuden kaavasta $v = \\frac{s}{t}$ saadaan matka $s$ kertomalla molemmat puolet ajalla $t$:</p><p>$$v = \\frac{s}{t} \\qquad // \\cdot t \\implies s = v \\cdot t$$</p><h4>Miksi nollalla jakaminen on ankarasti kielletty?</h4><p>Yhtälön kumpaakin puolta voi jakaa millä tahansa luvulla – <em>paitsi nollalla</em>! Jos jakaisimme nollalla, voisimme 'todistaa' mitä tahansa järjetöntä:</p><p>$$0 \\cdot 1 = 0 \\cdot 2$$</p><p>Jos nyt jakaisimme molemmat puolet nollalla ($// : 0$), saisimme tuloksen $1 = 2$! Tästä syystä nollalla jakaminen johtaa matematiikan romahdukseen ja se on määrittelemätön toimitus.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneiden prosessorit joutuvat vakavaan virhetilaan (Divide by Zero Exception), jos ohjelmakoodi käskee niitä jakamaan luvun nollalla. Se on aiheuttanut useita kuuluisia ohjelmistojen kaatumisia!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Kerto- ja jakolaskutekniikka yhtälöissä",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 10,
       "topic": "Termien siirtämistekniikka",
+      "title": "Termien siirtäminen ja etumerkin vaihto",
       "content": "KS aihe 8. Termien siirtäminen yhtälön puolelta toiselle etumerkin vaihdolla.",
+      "summary": "Termien nopea siirtäminen yhtälön puolelta toiselle, etumerkin vaihtuminen siirrossa ja välivaiheiden selkeys.",
+      "theory": "<p>Tarkastellaan aiheesta 8 tuttua yhtälöä:</p><p>$$5x - 6 = 4x + 8$$</p><p>Vastalukutekniikalla kirjoitimme pitkät välivaiheet: $// -4x$, sitten $// +6$. Voimme kuitenkin oikaista ja tehdä saman asian huomattavasti nopeammin <strong>termien siirtämistekniikalla</strong>!</p><h4>Siirtosääntö</h4><p><em>Termi voidaan siirtää yhtälön puolelta toiselle, kunhan sen etumerkki vaihdetaan vastakkaiseksi:</em></p><ul><li>Positiivinen termi ($+$) muuttuu toisella puolella negatiiviseksi ($-$).</li><li>Negatiivinen termi ($-$) muuttuu toisella puolella positiiviseksi ($+$).</li></ul><h4>Mallisuoritus siirtämällä</h4><p>$$5x - 6 = 4x + 8$$</p><p>Siirretään muuttujatermi $+4x$ vasemmalle (muuttuu muotoon $-4x$) ja vakiotermi $-6$ oikealle (muuttuu muotoon $+6$):</p><p>$$5x - 4x = 8 + 6$$</p><p>Sievennetään kumpikin puoli:</p><p>$$x = 14$$</p><p>Tulos saatiin kahdella rivillä! Siirtämistekniikka perustuu täysin samaan vastalukujen lakiin, mutta säästää valtavasti aikaa ja tilaa paperilla.</p>",
       "tasks": {
         "warmup": "s. 163: T1 - 5",
         "blue": "s. 163: T7, 8, s. 236: T170 - 173",
         "red": "s. 163: T10, s. 236: T175 - 178, 180"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Rajan ylitys ja etumerkin vaihto: Tullimaksu yhtälössä",
+        "content": "<h4>Miksi etumerkki vaihtuu?</h4><p>Moni oppilas miettii: onko termien siirtäminen taikuutta? Miksi ihmeessä merkki vain yhtäkkiä vaihtuu? Ajattele yhtäsuuruusmerkkiä $=$ valtioiden välisenä rajana. Kun termi matkustaa rajan yli toiseen valtioon, se joutuu maksamaan 'tullimaksun'. Tullimaksu on termin etumerkin kääntyminen vastakkaiseksi!</p><p>Todellisuudessa siirtäminen on vain nopeutettu tapa ajatella vastaluvun lisäämistä molemmille puolille: kun lisäät $-4x$ molemmille puolille, oikealta puolelta se häviää ($4x - 4x = 0$) ja vasemmalle puolelle se ilmestyy etumerkillä $-4x$.</p><h4>Mitä kokeessa saa käyttää?</h4><p>Voit aina itse valita, käytätkö vastalukutekniikkaa vai termien siirtämistekniikkaa. Molemmat ovat täysin matemaattisesti päteviä ja johtavat aina samaan oikeaan ratkaisuun!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lukion pitkässä matematiikassa ja yliopistoissa käytetään käytännössä poikkeuksetta termien siirtämistekniikkaa, koska monimutkaisissa differentiaaliyhtälöissä välivaiheita olisi muuten satoja rivejä!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Termien siirtäminen ja yhtälönratkaisu",
+        "url": "https://www.geogebra.org/m/e7wcmvsy"
+      }
     },
     {
       "lesson": 11,
       "topic": "Tekniikoiden soveltaminen",
+      "title": "Yhtälönratkaisun yleinen strategia",
       "content": "KS aihe 9. Yhtälönratkaisutekniikoiden yhdistäminen ja soveltaminen monimutkaisempiin yhtälöihin.",
+      "summary": "Kaikkien yhtälönratkaisutekniikoiden yhdistäminen, murtolukumuotoiset yhtälöt ja järjestelmällinen eteneminen kohti ratkaisua.",
+      "theory": "<p>Nyt hallussamme on täysi työkalupakki yhtälöiden ratkaisemiseen:</p><ol><li>Vastalukutekniikka / Termien siirtämistekniikka</li><li>Samanmuotoisten termien sieventäminen</li><li>Kerto- ja jakolaskutekniikka</li></ol><h4>Kaikkien yhtälöiden yleinen 4 askeleen strategia</h4><ol><li><strong>Siirrä</strong> muuttujatermit yhtälön vasemmalle puolelle ja vakiotermit oikealle puolelle (muista vaihtaa siirtyvien termien etumerkit!).</li><li><strong>Sievennä</strong> kumpikin puoli erikseen laskemalla samanmuotoiset termit yhteen.</li><li><strong>Jaa</strong> yhtälön molemmat puolet muuttujan kertoimella (tai kerro nimittäjällä).</li><li><strong>Kirjoita ratkaisu</strong> muodossa $x = \\dots$ ja tarkista tarvittaessa!</li></ol><h4>Esimerkki 1: Perusyhtälö siirroilla</h4><p>$$7x - 6 = 4x + 9$$</p><p>$$7x - 4x = 9 + 6$$</p><p>$$3x = 15 \\qquad // : 3$$</p><p>$$x = 5$$</p><h4>Esimerkki 2: Jakaja mukana</h4><p>$$\\frac{x}{2} - 5 = 7$$</p><p>Siirretään vakio oikealle:</p><p>$$\\frac{x}{2} = 7 + 5$$</p><p>$$\\frac{x}{2} = 12 \\qquad // \\cdot 2$$</p><p>$$x = 24$$</p>",
       "tasks": {
         "warmup": "s. 165: T1 - 4, s. 237: T181 - 185",
         "blue": "",
         "red": "s. 165: T6 - 9, s. 237: T188, 189, 191"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miten tietokoneet ratkaisevat miljoonia yhtälöitä sekunnissa?",
+        "content": "<h4>Carl Friedrich Gauss ja eliminointimenetelmä</h4><p>Kun yhtälöitä on yhden sijasta kymmeniä tai tuhansia (yhtälöryhmät), ihminen väsyy nopeasti. 1800-luvun alun suuri matemaatikko <strong>Carl Friedrich Gauss</strong> kehitti systemaattisen menetelmän, <em>Gaussin eliminaation</em>, jolla yhtälöistä eliminoidaan muuttujia yksi kerrallaan täsmälleen samoilla operaatioilla, joita 7. luokalla opitaan.</p><h4>Tekoäly ja matriisilaskenta</h4><p>Nykypäivän tekoälyt, 3D-grafiikkapeleissä esiintyvä valaistus ja huomisen sääennusteet ratkaisevat supertietokoneilla matriiseja, joissa on miljoonia lineaariyhtälöitä samanaikaisesti. Kaikki nämä valtavat laskelmat perustuvat täsmälleen samoihin algebran perussääntöihin: termien siirtoihin, kertoimilla jakamiseen ja yhteenlaskuihin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokonegrafiikassa hahmon jokainen 3D-piste muunnetaan ruudulle kaksiulotteiseksi käyttämällä $4 \\times 4$ -kokoista yhtälömatriisia 60 kertaa sekunnissa!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Monivaiheisten yhtälöiden ratkaisija",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 12,
       "topic": "Yhtälöt sanallisissa tehtävissä",
+      "title": "Sanalliset tehtävät ja yhtälön muodostaminen",
       "content": "KS aihe 10. Sanallisten tehtävien muuttaminen yhtälömuotoon ja ratkaiseminen.",
+      "summary": "Arkikielisten ongelmien muuntaminen algebralliseksi yhtälöksi, muuttujan valinta, ratkaiseminen ja tuloksen sanallinen tulkinta.",
+      "theory": "<p>Algebran suurin voima piilee siinä, että sen avulla voidaan ratkaista monimutkaisia arvoituksia ja tosielämän ongelmia. Tehtävän tekstin muuntaminen matematiikan kielelle noudattaa selkeää kaavaa:</p><h4>Sanallisen tehtävän 5 vaihetta</h4><ol><li><strong>Valitse muuttuja $x$</strong>: Merkitse kysyttyä tai pienintä tuntematonta suuretta kirjaimella $x$.</li><li><strong>Ilmaise muut tiedot $x$:n avulla</strong>.</li><li><strong>Muodosta yhtälö</strong> tekstissä annettujen tietojen perusteella.</li><li><strong>Ratkaise yhtälö</strong> opituilla tekniikoilla.</li><li><strong>Vastaa kysymykseen sanallisesti</strong> yksiköiden kera ja tarkista vastauksen järkevyys!</li></ol><h4>Esimerkki 1 (Taso 1: Lukuarvoitus)</h4><p><em>Erään luvun kolminkertaisen arvon ja luvun 6 summa on 27. Mikä luku on?</em></p><ul><li>Merkitään kysyttyä lukua $x$:llä.</li><li>Luvun kolminkertainen arvo: $3x$.</li><li>Summa luvun 6 kanssa: $3x + 6$.</li><li>Yhtälö: $3x + 6 = 27$</li><li>Ratkaisu: $3x = 27 - 6 \\implies 3x = 21 \\implies x = 7$.</li><li><strong>Vastaus: Kysytty luku on 7.</strong></li></ul><h4>Esimerkki 2 (Taso 2: Vertailutehtävä)</h4><p><em>Jukka on $25\\text{ cm}$ pidempi kuin Pekka. Yhdessä heidän pituutensa on $225\\text{ cm}$. Kuinka pitkiä pojat ovat?</em></p><ul><li>Pekan pituus: $x$ (valitaan lyhyempi $x$:ksi)</li><li>Jukan pituus: $x + 25$</li><li>Yhteispituus: $\\text{Pekka} + \\text{Jukka} = 225$</li><li>Yhtälö: $x + (x + 25) = 225$</li><li>Ratkaisu: $2x + 25 = 225 \\implies 2x = 200 \\implies x = 100\\text{ cm}$.</li><li>Jukan pituus: $100 + 25 = 125\\text{ cm}$.</li><li><strong>Vastaus: Pekka on $100\\text{ cm}$ ja Jukka $125\\text{ cm}$ pitkä.</strong></li></ul><h4>Esimerkki 3 (Taso 3: Monen henkilön ikätehtävä)</h4><p><em>Unelma on 3 vuotta Selmaa nuorempi ja Anni on neljä kertaa niin vanha kuin Unelma. Kolmikon ikä yhteensä on 51 vuotta. Kuinka vanhoja he ovat?</em></p><ul><li>Unelman ikä: $x$ (nuorin)</li><li>Selman ikä: $x + 3$</li><li>Annin ikä: $4x$</li><li>Yhtälö: $x + (x + 3) + 4x = 51$</li><li>Ratkaisu: $6x + 3 = 51 \\implies 6x = 48 \\implies x = 8$.</li><li>Unelma on 8 v, Selma on $8 + 3 = 11$ v ja Anni on $4 \\cdot 8 = 32$ v. (Tarkistus: $8 + 11 + 32 = 51$ v!)</li><li><strong>Vastaus: Unelma on 8 v, Selma 11 v ja Anni 32 v.</strong></li></ul>",
       "tasks": {
         "warmup": "s. 169: T1 - 3",
         "blue": "s. 169: T6 - 9, s. 238: T204 - 206",
         "red": "s. 169: T10 - 12, s. 238: T209 - 212"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Diofantoksen hautakivi: Historian kuuluisin sanallinen yhtälötehtävä",
+        "content": "<h4>Arvoitus 1700 vuoden takaa</h4><p>Antiikin kreikkalais-egyptiläisen matemaatikon <strong>Diofantoksen</strong> (n. 200–284 jaa.) elämästä tiedetään hyvin vähän, mutta hänen hautakiveensä kaiverrettiin sanallinen matemaattinen arvoitus, josta hänen elinikänsä pystyy ratkaisemaan:</p><blockquote><em>'Tässä lepää Diofantos. Jumala soi hänelle poikavuosia kuudesosan elämästä. Kahdestoistaosa kului ennen kuin poskille kasvoi parta. Seitsemäsosan jälkeen hän solmi avioliiton. Viisi vuotta myöhemmin syntyi poika, joka eli vain puolet isänsä eliniästä. Syvässä surussa isä eli vielä neljä vuotta ennen kuolemaansa.'</em></blockquote><h4>Ratkaistaan yhtälö!</h4><p>Merkitään Diofantoksen elinikää kirjaimella $x$:</p><p>$$\\frac{x}{6} + \\frac{x}{12} + \\frac{x}{7} + 5 + \\frac{x}{2} + 4 = x$$</p><p>Kerrotaan yhtälön molemmat puolet nimittäjien pienimmällä yhteisellä jaettavalla $84$:</p><p>$$14x + 7x + 12x + 420 + 42x + 336 = 84x$$</p><p>$$75x + 756 = 84x \\implies 9x = 756 \\implies x = 84$$</p><p>Diofantos eli siis kunnioitettavat 84 vuotta vanhaksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Diofantosta pidetään 'algebran isänä' rinnan Al-Khwarizmin kanssa. Hänen kirjansa <em>Arithmetica</em> inspiroi 1600-luvulla Pierre de Fermat'ta keksimään kuuluisan Fermat'n suuren lauseen!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Yhtälöiden sanalliset mallit",
+        "url": "https://phet.colorado.edu/fi/simulations/equality-explorer"
+      }
     }
   ]
 }

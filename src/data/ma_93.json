@@ -5,134 +5,266 @@
     {
       "lesson": 1,
       "topic": "Koordinaatiston kertaus",
+      "title": "Koordinaatiston perusteiden kertaus",
       "content": "KS aihe 1. Koordinaatiston perusteiden ja pisteiden merkitsemisen kertausta (Avoin matematiikka 7. lk osio 2).",
+      "summary": "(x, y) -koordinaatisto, vaaka- ja pystyakselit, origo (0, 0), neljännekset I–IV ja pisteiden lukeminen ja merkitseminen.",
+      "theory": "<p>Funktioiden visualisoimiseksi tarvitsemme suorakulmaisen <strong>$(x, y)$-koordinaatiston</strong>:</p><ul><li><strong>$x$-akseli</strong>: Vaakasuora lukusuora (ensimmäinen koordinaatti).</li><li><strong>$y$-akseli</strong>: Pystysuora lukusuora (toinen koordinaatti).</li><li><strong>Origo $(0, 0)$</strong>: Akselien risteyskohta.</li></ul><h4>Pisteen merkitseminen</h4><p>Pisteen sijainti ilmoitetaan aina muodossa <strong>$(x, y)$ aakkosjärjestyksessä</strong>: ensin liikutaan vaakasuoraan $x$-akselia pitkin, sitten pystysuoraan $y$-akselia pitkin.</p><p>Esimerkiksi pisteeseen $P(2, -3)$ kuljetaan origosta 2 askelta oikealle ja 3 askelta alas. Jos piste on akselilla, toinen koordinaatti on nolla: $(5, 0)$ on $x$-akselilla ja $(0, -4)$ on $y$-akselilla.</p>",
       "tasks": {
         "warmup": "s. 6: T1 - 4",
         "blue": "s. 7 - 8: T6 - 13",
         "red": "s. 8: T14, 15"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Descartes ja sotilasinsinöörit: Miten kartesianismi syntyi vuoteessa maaten?",
+        "content": "<h4>Vuoteessa makaava filosofi</h4><p>1600-luvun alun ranskalainen sotilas, filosofi ja matemaatikko <strong>René Descartes</strong> ei ollut aamuihminen: hänellä oli tapana maata sängyssä puolillepäivin mietiskelemässä. Katossa kävelevän kärpäsen seuraaminen herätti oivalluksen: kärpäsen paikka voitiin ilmaista kahdella etäisyydellä huoneen seinistä.</p><h4>Geometrian ja algebran avioliitto</h4><p>Tästä syntyi <em>kartesinen koordinaatisto</em>, joka yhdisti Eukleideen antiikin geometrian ja Al-Khwarizmin algebran toisiinsa. Yhtäkkiä geometrisia muotoja pystyttiin käsittelemään yhtälöinä ja funktioina!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Descartesin kuuluisa filosofinen lause 'Cogito, ergo sum' (Ajattelen, siis olen) syntyi samassa mietiskelykammiossa kuin matematiikan suorakulmainen koordinaatisto!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Koordinaatisto ja pisteiden piirtäminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 2,
       "topic": "Funktion käsite",
+      "title": "Funktion käsite, syöte ja tuloste",
       "content": "KS aihe 2. Funktion käsite: kone, syöte ja tuloste, sääntö ja kuvaaja. Funktiomerkinnät f(x) ja funktion arvon laskeminen.",
+      "summary": "Funktio koneena ja sääntönä, syöte x ja tuloste f(x), funktiomerkintä f(x) = lauseke sekä funktion arvon laskeminen.",
+      "theory": "<p>Sana <em>function</em> tarkoittaa toimintoa tai matemaattista sääntöä. Matematiikassa funktio voidaan ymmärtää kolmella tavalla:</p><ol><li><strong>Koneena</strong>: Kone ottaa vastaan luvun (<strong>syöte $x$</strong>), suorittaa sille laskutoimituksen ja palauttaa muunnetun luvun ulos (<strong>tuloste $f(x)$</strong>).</li><li><strong>Laskusääntönä</strong>: Esimerkiksi 'lisää jokaiseen syötettyyn lukuun 3' $\\implies f(x) = x + 3$.</li><li><strong>Kuvaajana</strong>: Koordinaatistoon piirretty käyrä tai suora, joka esittää säännön graafisesti.</li></ol><h4>Funktiomerkintä $f(x)$</h4><ul><li>Kirjain $f$ (tai $g, h$) on <strong>funktion nimi</strong>.</li><li>Suluissa oleva $x$ on <strong>muuttuja (syöte)</strong>.</li><li>Yhtälön oikea puoli on funktion <strong>sääntö (lauseke)</strong>: esim. $f(x) = 2x + 1$.</li></ul><h4>Funktion arvon laskeminen</h4><p>Merkintä $f(4)$ tarkoittaa: <em>'Laske funktion $f$ arvo, kun syötteeksi annetaan luku $4$!'</em></p><p>$$f(4) = 2 \\cdot 4 + 1 = 8 + 1 = 9$$</p>",
       "tasks": {
         "warmup": "s. 11: T7 - 9",
         "blue": "s. 13: T1 - 4, 7, s. 72: T14 - 18",
         "red": "s. 13: T11 - 14, s. 72: T19, 20"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Gottfried Leibniz ja sanan 'funktio' synty",
+        "content": "<h4>Saksan suuri yleisnero</h4><p>Sanan <strong>funktio</strong> (lat. <em>functio</em>, 'suoritus' tai 'tehtävä') toi matematiikkaan saksalainen monilahjakkuus <strong>Gottfried Wilhelm Leibniz</strong> vuonna 1673. Hän käytti sitä kuvaamaan geometrisia ominaisuuksia, jotka riippuivat käyrän pisteestä.</p><h4>Tietokoneiden binäärijärjestelmän isä</h4><p>Leibniz ei pelkästään keksinyt differentiaalilaskentaa ja funktioita, vaan hän kehitti myös nykytietokoneiden käyttämän <strong>kaksijärjestelmän (binäärijärjestelmän)</strong> nollat ja ykköset jo 1600-luvulla! Hänen unelmanaan oli rakentaa yleismaailmallinen päättelykone, joka pystyisi ratkaisemaan minkä tahansa loogisen riidan mekaanisesti.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ohjelmoinnissa sana <code>function</code> tarkoittaa täsmälleen samaa kuin matematiikassa: uudelleenkäytettävää koodilohkoa, joka ottaa argumentteja (syötteitä) ja palauttaa paluuarvon (tulosteen)!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Funktion kone ja syöte-tuloste-taulukko",
+        "url": "https://phet.colorado.edu/fi/simulations/function-builder"
+      }
     },
     {
       "lesson": 3,
       "topic": "Funktiot ja koordinaatisto",
+      "title": "Funktion kuvaaja ja sopimus f(x) = y",
       "content": "KS aihe 3. Funktion kuvaaja koordinaatistossa f(x) = y, kuvaajan pisteet ja arvojen tulkitseminen kuvaajalta sekä laskemalla.",
+      "summary": "Sopimus f(x) = y koordinaatistossa, pisteet (x, y), funktion arvon ja muuttujan lukeminen kuvaajalta sekä funktioiden leikkauspisteet f(x) = g(x).",
+      "theory": "<p>Kun funktion syötteet ja tulosteet halutaan piirtää kuvaajaksi koordinaatistoon, noudatetaan universaalia sopimusta:</p><p>$$\\mathbf{y = f(x)}$$</p><ol><li>Vaaka-akselin koordinaatti $x$ vastaa funktion <strong>syötettä (muuttujaa)</strong>.</li><li>Pystyakselin koordinaatti $y$ vastaa funktion <strong>tulostetta (funktion arvoa)</strong>.</li></ol><h4>Kuvaajan pisteiden tulkinta</h4><p>Jos funktion $f$ kuvaaja kulkee pisteen $(1, 4)$ kautta, se tarkoittaa täsmälleen samaa kuin algebrallinen yhtälö:</p><p>$$f(1) = 4$$</p><h4>Funktioiden leikkauspiste</h4><p>Kahden funktion $f(x)$ ja $g(x)$ kuvaajien leikkauspisteessä kumpikin funktio saa täsmälleen <strong>saman arvon samalla muuttujan arvolla</strong>:</p><p>$$f(x) = g(x)$$</p><p><em>Esimerkki:</em> Olkoon $f(x) = x + 3$ ja $g(x) = -2x$. Leikkauspisteen $x$-koordinaatti ratkaistaan yhtälöllä:</p><p>$$x + 3 = -2x \\implies 3x = -3 \\implies x = -1$$</p><p>Sijoitetaan $x = -1$: $y = f(-1) = -1 + 3 = 2$. Leikkauspiste on siis <strong>$(-1, 2)$</strong>!</p>",
       "tasks": {
         "warmup": "s. 15: T15, 16, s. 72: T21 - 23",
         "blue": "s. 15: T18, 19, s. 72: T24, 25",
         "red": "s. 15: T21, 22, s. 72: T26 - 28"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "GPS-satelliitit ja funktioiden leikkauspisteet avaruudessa",
+        "content": "<h4>Miten älypuhelimesi tietää missä seisot?</h4><p>Puhelimesi GPS-vastaanotin vastaanottaa jatkuvasti aikasignaaleja maapalloa kiertäviltä satelliiteilta. Jokainen satelliitti määrittää etäisyyden perusteella pallopinnan muotoisen funktioyhtälön:</p><p>$$(x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2 = (c \\cdot t_i)^2$$</p><p>Kun vastaanotat signaalin <strong>vähintään neljältä eri satelliitilta</strong>, puhelimesi fysiikkaprosessori ratkaisee näiden neljän funktion leikkauspisteen. Tämä leikkauspiste ilmoittaa sijaintisi maapallon pinnalla senttimetrien tarkkuudella!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> GPS-paikannus joutuu ottamaan huomioon myös Albert Einsteinin yleisen suhteellisuusteorian mukaisen ajan hidastumisen, muuten leikkauspiste heittäisi yli 10 kilometriä joka päivä!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Funktio koordinaatistossa ja leikkauspisteet",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 4,
       "topic": "Funktion kuvaajan piirtäminen",
+      "title": "Lineaarisen funktion kuvaajan piirtäminen",
       "content": "KS aihe 4. Lineaarinen funktio ja suoran piirtäminen arvomääritysten ja pisteiden (vähintään 3 pistettä) avulla.",
+      "summary": "Lineaarinen funktio (1. asteen funktio), arvojen taulukointi, miksi tarvitaan vähintään 3 pistettä suoran tarkkaan piirtämiseen.",
+      "theory": "<p>Jos funktion yhtälö on ensimmäistä astetta (korkein muuttujan eksponentti on $1$, kuten $y = 2x + 1$), funktiota kutsutaan <strong>lineaariseksi funktioksi</strong>. Sen kuvaaja on koordinaatistossa aina <strong>suora</strong>.</p><h4>Kuvaajan piirtämisen vaiheet</h4><ol><li><strong>Laadi taulukko</strong>: Valitse vähintään 3 helppoa $x$:n arvoa (esim. $0, 1, 2$).</li><li><strong>Laske $y$:n arvot</strong> kullekin valitulle $x$:lle.</li><li><strong>Merkitse pisteet $(x, y)$ koordinaatistoon</strong>.</li><li><strong>Piirrä suora viivottimella</strong> pisteiden kautta.</li></ol><h4>Esimerkkitaulukko: $y = 2x + 1$</h4><table class=\"styled-table\"><thead><tr><th>$x$</th><th>Lasku $y = 2x + 1$</th><th>Piste $(x, y)$</th></tr></thead><tbody><tr><td>$0$</td><td>$2 \\cdot 0 + 1 = 1$</td><td>$A(0, 1)$</td></tr><tr><td>$1$</td><td>$2 \\cdot 1 + 1 = 3$</td><td>$B(1, 3)$</td></tr><tr><td>$2$</td><td>$2 \\cdot 2 + 1 = 5$</td><td>$C(2, 5)$</td></tr></tbody></table><h4>Miksi aina vähintään 3 pistettä?</h4><p>Geometrian mukaan kaksi pistettä määrää aina suoran. Mutta jos teet yhden laskuvirheen kahden pisteen välillä, et huomaa sitä koskaan – piirrät vain väärän suoran! <strong>Kolmas piste toimii varmistajana</strong>: jos kolme pistettä eivät osu täsmälleen samalle suoralle viivottimen reunaa vasten, tiedät heti tehneesi laskuvirheen ja voit korjata sen!</p>",
       "tasks": {
         "warmup": "s. 17: T1 - 3, 5",
         "blue": "s. 73: T29 - 31, s. 17: T6, 8",
         "red": "s. 73: T31, 32, s. 17: T9 - 11, s. 73: T33"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Virheenkorjauskoodit ja kolmas piste: Informaatioteorian synty",
+        "content": "<h4>Miksi tietoliikenne vaatii tarkistuspisteitä?</h4><p>Periaate, jonka mukaan suoralle tarvitaan kolmas piste varmistajaksi, on täsmälleen sama laki, joka suojaa kaikkea internetin tiedonsiirtoa ja WiFi-liikennettä. Claude Shannon loi 1940-luvulla <strong>informaatioteorian</strong>, jossa viesteihin lisätään ylimääräisiä tarkistusbittejä (<em>redundanssia</em>).</p><h4>Pariteetti ja Hamming-koodit</h4><p>Jos vastaanotat kaksi bittiä, et voi tietää onko toinen niistä korruptoitunut matkalla. Mutta jos lähetät kolmannen tarkistusbitin, tietokone pystyy automaattisesti havaitsemaan ja korjaamaan häiriön bittivirrassa ilman, että dataa täytyy lähettää uudestaan!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> QR-koodit käyttävät Reed-Solomon-virheenkorjauskoodia, joka perustuu korkea-asteisten polynomien leikkauspisteisiin: vaikka 30 % QR-koodista olisi lian peitossa tai repeytynyt pois, puhelimesi kamera lukee koodin silti täydellisesti!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Suoran piirtäminen taulukon avulla",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 5,
       "topic": "Suoran yhtälö",
+      "title": "Suoran yhtälö y = kx + b",
       "content": "KS aihe 5. Suoran yhtälö y = kx + b. Kulmakerroin k (nouseva/laskeva) ja vakiotermi b (y-akselin leikkauspiste).",
+      "summary": "Suoran ratkaistu muoto y = kx + b, kulmakerroin k suunnan ja jyrkkyyden määrääjänä, vakiotermi b y-leikkauksena ja suorien yhdensuuntaisuus.",
+      "theory": "<p>Jokaisen ei-pystysuoran suoran yhtälö voidaan esittää ratkaistussa muodossa:</p><p>$$\\mathbf{y = kx + b}$$</p><h4>1. Kulmakerroin $k$ (Suoran jyrkkyys ja suunta)</h4><ul><li><strong>$k > 0$ (positiivinen)</strong>: Suora on <strong>nouseva</strong> (vasemmalta oikealle katsottaessa mennään ylämäkeen).</li><li><strong>$k < 0$ (negatiivinen)</strong>: Suora on <strong>laskeva</strong> (vasemmalta oikealle mennään alamäkeen).</li><li><strong>$k = 0$</strong>: Suora on <strong>vaakasuora</strong> ($y = b$).</li></ul><p>Mitä suurempi $|k|$ on, sitä jyrkempi suora on.</p><h4>2. Vakiotermi $b$ (y-akselin leikkauspiste)</h4><p>Vakiotermi $b$ kertoo suoraan, missä pisteessä suora leikkaa pystysuoran $y$-akselin: <strong>leikkauspiste on aina $(0, b)$</strong>.</p><ul><li>Jos $b = 0$, suora kulkee suoraan <strong>origon $(0, 0)$</strong> kautta ($y = kx$).</li></ul><h4>Yhdensuuntaiset suorat</h4><p>Kaksi suoraa ovat <strong>yhdensuuntaisia</strong>, jos ja vain jos niillä on <strong>täsmälleen sama kulmakerroin</strong> ($k_1 = k_2$):</p><p>$$y = 3x + 2 \\qquad \\text{ja} \\qquad y = 3x - 7 \\quad \\text{ovat yhdensuuntaisia!}$$</p>",
       "tasks": {
         "warmup": "s. 19: T12 - 14",
         "blue": "s. 74: T34, 35, s. 19: T16, 19, 20, s. 74: T38",
         "red": "s. 19: T21, 22, s. 74: T39"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Mitä liikennemerkin 12 % mäki tarkoittaa matematiikassa?",
+        "content": "<h4>Vuoristotien varoitusmerkki</h4><p>Kun ajat autolla vuoristossa, tien varressa näkyy varoitusmerkki jyrkästä mäestä: esimerkiksi <strong>12 %</strong>. Mitä tämä prosentti tarkoittaa kulmakertoimena?</p><h4>Kulmakerroin prosentteina</h4><p>Tien kaltevuusprosentti on suoraan suoran kulmakerroin $k$ ilmoitettuna sadasosina:</p><p>$$12\\,\\% = \\frac{12}{100} = 0{,}12$$</p><p>Tämä tarkoittaa, että <em>jokaista 100 metrin vaakasuoraa etenemää kohti tie nousee (tai laskee) pystysuunnassa 12 metriä</em>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maailman jyrkin asuttu katu on Baldwin Street Uudessa-Seelannissa. Sen jyrkimmän kohdan kaltevuus on huikeat $35\\,\\%$, mikä vastaa kulmakerrointa $k = 0{,}35$ ja noin $19^\\circ$ nousukulmaa!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Suoran yhtälön liukusäätimet k ja b",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 6,
       "topic": "Suoran yhtälö kuvaajan avulla, osa 1",
+      "title": "Kulmakertoimen ja vakiotermin määritys kuvaajalta",
       "content": "KS aihe 6. Kulmakertoimen ja vakiotermin määrittäminen kuvaajalta suorakulmaisen kolmion avulla.",
+      "summary": "Suoran yhtälön lukeminen suoraan piirretystä kuvaajasta suorakulmaisen kolmion menetelmällä (k = korkeus / kanta) ja vakiotermi b y-leikkauksesta.",
+      "theory": "<p>Kun koordinaatistoon on piirretty suora, sen yhtälö $y = kx + b$ saadaan selville kahdella askeleella:</p><h4>Askel 1: Lue vakiotermi $b$</h4><p>Katso, missä pisteessä suora leikkaa $y$-akselin. Jos leikkauspiste on $(0, 1)$, niin $\\mathbf{b = 1}$.</p><h4>Askel 2: Määritä kulmakerroin $k$ suorakulmaisella kolmiolla</h4><p>Valitse suoralta kaksi pistettä, jotka osuvat ruudukon risteyskohtiin (esim. piste $A(0, 1)$ ja piste $B(1, 4)$). Piirrä niiden väliin suorakulmainen apukolmio:</p><ol><li>Kulje pisteestä $A$ vaakasuoraan oikealle pisteen $B$ alle $\\implies$ saadaan kolmion <strong>kanta ($\\Delta x$)</strong>.</li><li>Kulje pystysuoraan pisteeseen $B$ $\\implies$ saadaan kolmion <strong>korkeus ($\\Delta y$)</strong>.</li></ol><p>$$\\mathbf{k = \\frac{\\text{korkeus}}{\\text{kanta}} = \\frac{\\Delta y}{\\Delta x}}$$</p><h4>Esimerkkejä:</h4><ul><li><strong>Nouseva suora</strong>: 1 askel oikealle, 3 askelta ylös $\\implies k = \\frac{+3}{1} = 3 \\implies y = 3x + 1$.</li><li><strong>Laskeva suora</strong>: 1 askel oikealle, 1 askel alas $\\implies k = \\frac{-1}{1} = -1 \\implies y = -x + 3$.</li><li><strong>Loiva murtolukusuora</strong>: 3 askelta oikealle, 2 askelta ylös $\\implies k = \\frac{2}{3} \\implies y = \\frac{2}{3}x$.</li></ul>",
       "tasks": {
         "warmup": "s. 23: T1 - 7",
         "blue": "s. 75: T47 - 49",
         "red": "s. 75: T50 - 52"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Fysiikan nopeus ja kiihtyvyys: Kulmakerroin luonnonlakina",
+        "content": "<h4>Mitä kuvaajan jyrkkyys mittaa luonnontieteissä?</h4><p>Fysiikassa kulmakerroin ei ole pelkkä numero koordinaatistossa, vaan se kuvaa aina <strong>muutosnopeutta</strong>:</p><ul><li><strong>Aika-paikka-kuvaaja $(t, s)$</strong>: Pystyakselilla on matka ja vaaka-akselilla aika. Suoran kulmakerroin on $\\frac{\\Delta s}{\\Delta t} = \\mathbf{v}$ eli <strong>nopeus</strong>! Mitä jyrkempi suora, sitä kovempaa auto ajaa.</li><li><strong>Aika-nopeus-kuvaaja $(t, v)$</strong>: Pystyakselilla nopeus ja vaaka-akselilla aika. Kulmakerroin on $\\frac{\\Delta v}{\\Delta t} = \\mathbf{a}$ eli <strong>kiihtyvyys</strong>!</li></ul><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos auton aika-matka-kuvaaja on vaakasuora ($k = 0$), auto seisoo täysin paikallaan liikennevaloissa: aika kuluu, mutta matka ei etene lainkaan!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Kulmakertoimen suorakulmainen kolmio",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 7,
       "topic": "Suoran yhtälö kuvaajan avulla, osa 2: Erikoistapaukset",
+      "title": "Vaakasuorat ja pystysuorat suorat",
       "content": "KS aihe 6. Vaakasuorat (y = b) ja pystysuorat (x = a) suorat koordinaatistossa.",
+      "summary": "Erikoissuorat koordinaatistossa: vaakasuorat suorat y = vakio ja pystysuorat suorat x = vakio, sekä pystysuoratestin merkitys.",
+      "theory": "<p>Kaikki suorat eivät ole vinoja. Tarkastellaan kahta tärkeää erikoistapausta:</p><h4>1. Vaakasuorat suorat ($x$-akselin suuntaiset)</h4><p>Vaakasuora suora ei nouse eikä laske, joten sen <strong>kulmakerroin on $k = 0$</strong>. Sijoittamalla suoran yhtälöön $y = 0 \\cdot x + b$ muuttujatermi häviää:</p><p>$$\\mathbf{y = b}$$</p><ul><li>Suora $y = 3$: Kaikki pisteet ovat korkeudella $3$ (kulkee pisteiden $(-2, 3)$, $(0, 3)$, $(4, 3)$ kautta).</li><li>Suora $y = -2$: Vaakasuora viiva korkeudella $-2$.</li><li>$x$-akselin oma yhtälö on $y = 0$.</li></ul><h4>2. Pystysuorat suorat ($y$-akselin suuntaiset)</h4><p>Pystysuora suora on äärettömän jyrkkä. Sille ei voida määrittää reaalilukuista kulmakerrointa, eikä se ole funktion kuvaaja. Kaikilla suoran pisteillä on kuitenkin <strong>sama $x$-koordinaatti</strong>:</p><p>$$\\mathbf{x = a}$$</p><ul><li>Suora $x = 4$: Pystysuora viiva, joka leikkaa $x$-akselin kohdassa $4$.</li><li>Suora $x = -2$: Pystysuora viiva kohdassa $-2$.</li><li>$y$-akselin oma yhtälö on $x = 0$.</li></ul>",
       "tasks": {
         "warmup": "s. 21: T1 - 4",
         "blue": "s. 74: T40 - 42, s. 21: T7, 9",
         "red": "s. 21: T10, 11, s. 74: T44 - 46"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miksi pystysuora suora ei ole funktio? Pystysuoratestin sääntö",
+        "content": "<h4>Funktion perusvaatimus</h4><p>Funktion määritelmä sanoo: <em>jokaista syötettä $x$ kohti saa olla olemassa tasan yksi tuloste $y$</em>. Jos syötät juoma-automaattiin yhden euron ja painat nappia, et voi saada samalla hetkellä ulos kymmentä eri tölkkiä eri puolilta konetta.</p><h4>Pystysuoratesti (Vertical Line Test)</h4><p>Pystysuoralla suoralla $x = 3$ yhdellä ainoalla syötteellä $x = 3$ on <strong>äärettömän monta eri $y$:n arvoa</strong>! Tästä syystä pystysuora suora $x = 3$ on kyllä geometrinen suora, mutta se <strong>ei ole funktio</strong>. Kuvaaja esittää funktiota vain, jos mikään pystysuora viiva ei leikkaa sitä useammassa kuin yhdessä pisteessä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ympyrän yhtälö $x^2 + y^2 = r^2$ ei sekään ole funktio, koska pystysuora viiva leikkaa ympyrän kahdessa pisteessä (yläpuoliskossa ja alapuoliskossa)!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Vaaka- ja pystysuorat suorat koordinaatistossa",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 8,
       "topic": "Suoran yhtälö ilman kuvaajaa",
+      "title": "Suoran yhtälön ratkaiseminen laskennallisesti",
       "content": "KS aihe 7. Suoran yhtälön y = kx + b määrittäminen pisteen ja kulmakertoimen avulla laskennallisesti.",
+      "summary": "Suoran yhtälön muodostaminen algebrallisesti tuntematta kuvaajaa: kulmakertoimen k tunnistaminen ja vakiotermin b ratkaiseminen pisteen koordinaattien sijoituksella.",
+      "theory": "<p>Mitä tehdään, jos suoran yhtälö pitää selvittää <strong>ilman kuvaajan piirtämistä</strong>?</p><h4>Esimerkkitehtävä:</h4><p><em>Määritä sen suoran yhtälö, joka on yhdensuuntainen suoran $y = 2x - 4$ kanssa ja kulkee pisteen $(1, 3)$ kautta.</em></p><h4>Ratkaisun kaksi vaihetta:</h4><ol><li><strong>Selvitä kulmakerroin $k$</strong>:<br>Koska suora on yhdensuuntainen suoran $y = 2x - 4$ kanssa, niillä on sama kulmakerroin $\\implies \\mathbf{k = 2}$.<br>Yhtälö on siis muotoa $y = 2x + b$.</li><li><strong>Selvitä vakiotermi $b$ sijoittamalla annettu piste</strong>:<br>Koska piste $(1, 3)$ sijaitsee suoralla, sen koordinaatit $x = 1$ ja $y = 3$ toteuttavat suoran yhtälön:<br>$$y = 2x + b$$<br>$$3 = 2 \\cdot 1 + b$$<br>$$3 = 2 + b \\qquad // - 2$$<br>$$b = 1$$</li></ol><p>Valmis suoran yhtälö on siis: <strong>$y = 2x + 1$</strong>.</p>",
       "tasks": {
         "warmup": "s. 25: T8 - 10",
         "blue": "s. 75: T57, s. 25: T12 - 14",
         "red": "s. 25: T15 - 17, s. 76: T58 - 60"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Lineaarinen regressio ja koneoppiminen: Miten tekoäly sovittaa suoria?",
+        "content": "<h4>Tuhansia pisteitä ilman täydellistä suoraa</h4><p>Tosielämän mittauksissa (esim. asunnon neliömäärä vs. hinta tai opiskelutunnit vs. koearvosana) pisteet eivät koskaan osu täydellisesti yhdelle suoralle, vaan muodostavat hajanaisen pistepilven.</p><h4>Pienimmän neliösumman menetelmä (Linear Regression)</h4><p>Koneoppimisen perusmalli, <em>lineaarinen regressio</em>, etsii sellaisen suoran $y = kx + b$, joka minimoi mittauspisteiden ja suoran välisten pystysuorien etäisyyksien neliösumman. Tämä optimaalinen suora ennustaa tulevia arvoja – ja se ratkaistaan täsmälleen samoilla kulmakertoimen ja vakiotermin yhtälöillä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kaikki modernit tekoäly- ja sääennustemallit aloittavat opetusprosessinsa lineaarisella regressiolla ennen siirtymistä monimutkaisempiin neuroverkkoihin!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Suoran yhtälön algebrallinen ratkaisin",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 9,
       "topic": "Toisen asteen käyrät, osa 1: Paraabeli",
+      "title": "Toisen asteen käyrät ja perusparaabeli",
       "content": "KS aihe 8. Epälineaariset funktiot, perusparaabeli f(x) = x², paraabelin huippu ja symmetria-akseli.",
+      "summary": "Toisen asteen epälineaarinen funktio, perusparaabeli f(x) = x², 7 pisteen taulukointi negatiivisilla luvuilla, symmetria-akseli ja huippu.",
+      "theory": "<p>Jos funktion yhtälössä muuttuja $x$ korotetaan toiseen potenssiin ($f(x) = x^2$), kyseessä on <strong>toisen asteen funktio</strong>. Sen kuvaaja ei ole suora, vaan kaareva käyrä nimeltä <strong>paraabeli</strong>.</p><h4>Perusparaabelin $f(x) = x^2$ taulukointi</h4><p>Koska toinen potenssi muuttaa negatiivisen luvun positiiviseksi ($(-2)^2 = +4$), paraabelille valitaan aina sekä positiivisia että negatiivisia $x$:n arvoja (vähintään 7 pistettä):</p><table class=\"styled-table\"><thead><tr><th>$x$</th><th>$f(x) = x^2$</th><th>Piste $(x, y)$</th></tr></thead><tbody><tr><td>$-3$</td><td>$(-3)^2 = 9$</td><td>$(-3, 9)$</td></tr><tr><td>$-2$</td><td>$(-2)^2 = 4$</td><td>$(-2, 4)$</td></tr><tr><td>$-1$</td><td>$(-1)^2 = 1$</td><td>$(-1, 1)$</td></tr><tr><td>$0$</td><td>$0^2 = 0$</td><td>$(0, 0)$ (Huippu!)</td></tr><tr><td>$1$</td><td>$1^2 = 1$</td><td>$(1, 1)$</td></tr><tr><td>$2$</td><td>$2^2 = 4$</td><td>$(2, 4)$</td></tr><tr><td>$3$</td><td>$3^2 = 9$</td><td>$(3, 9)$</td></tr></tbody></table><h4>Paraabelin keskeiset käsitteet</h4><ul><li><strong>Symmetria-akseli</strong>: Pystysuora viiva, joka jakaa paraabelin kahteen toistensa peilikuvana olevaan puoliskoon (perusparaabelilla $y$-akseli).</li><li><strong>Paraabelin huippu</strong>: Symmetria-akselin ja paraabelin leikkauspiste, jossa käyrä kääntyy (perusparaabelilla origo $(0, 0)$).</li><li><strong>U-muotoinen kuvaaja</strong>: Älä yhdistä pisteitä viivottimella kulmikkaaksi, vaan piirrä tasainen, pehmeä käyrä!</li></ul>",
       "tasks": {
         "warmup": "s. 27: T1 - 5",
         "blue": "s. 76: T63, 64, s. 27: T6, 7",
         "red": "s. 76: T65, s. 27: T8, 9"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Satelliittilautaset ja taskulamput: Paraabelin maaginen polttopiste",
+        "content": "<h4>Miksi satelliittiantennit ovat paraabeleja?</h4><p>Paraabelilla on ainutlaatuinen optinen ja geometrinen ominaisuus: sillä on piste nimeltä <strong>polttopiste (focus)</strong>.</p><p>Kaikki kaukaa avaruudesta yhdensuuntaisina tulevat radioaallot heijastuvat paraabelin pinnasta <em>täsmälleen samaan pisteeseen – polttopisteeseen</em>! Kun satelliittilautasen vastaanotin asetetaan tähän polttopisteeseen, heikkokin avaruudesta saapuva tv-signaali vahvistuu tuhansinkertaiseksi.</p><h4>Taskulamppu toimii toisin päin</h4><p>Taskulampussa tai auton ajovalossa polttopisteeseen asetettu hehkulamppu heijastaa valon eteenpäin täydellisen yhdensuuntaisena, kauas kantavana valokeilana!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Arkhimedeen kerrotaan puolustaneen kotikaupunkiaan Syrakusaa suuntaamalla vihollisen roomalaisiin laivoihin aurinkoa heijastavia paraabelipeilejä, jotka sytyttivät laivojen purjeet palamaan!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Perusparaabelin tutkiminen ja pisteiden asettaminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 10,
       "topic": "Toisen asteen käyrät, osa 2: Yleinen paraabeli",
+      "title": "Yleinen paraabeli y = ax² + c",
       "content": "KS aihe 8. Yleinen paraabeli y = ax² + c, aukeamissuunta ja kertoimen vaikutus jyrkkyyteen.",
+      "summary": "Toisen asteen kertoimen a vaikutus (aukeamissuunta ylös/alas ja jyrkkyys) sekä vakiotermin c vaikutus paraabelin huipun pystysijaintiin.",
+      "theory": "<p>Yleisen paraabelin yhtälö peruskoulussa on muotoa:</p><p>$$\\mathbf{y = ax^2 + c}$$</p><h4>1. Kerroin $a$ määrää aukeamissuunnan ja jyrkkyyden</h4><ul><li><strong>$a > 0$ (positiivinen)</strong>: Paraabeli aukeaa <strong>ylöspäin</strong> ('hymyilevä suu' $\\cup$). Huipussa on funktion <strong>pienin arvo</strong>.</li><li><strong>$a < 0$ (negatiivinen)</strong>: Paraabeli aukeaa <strong>alaspäin</strong> ('surullinen suu' $\\cap$). Huipussa on funktion <strong>suurin arvo</strong>.</li><li><strong>Mitä suurempi $|a|$</strong>: Paraabelin kyljet puristuvat kapeammiksi ja jyrkemmiksi kohti $y$-akselia ($y = 3x^2$).</li><li><strong>Mitä pienempi $|a|$</strong> (esim. $\\frac{1}{3}$): Paraabeli leviää laajaksi ja loivaksi maljaksi.</li></ul><h4>2. Vakiotermi $c$ määrää huipun sijainnin</h4><p>Vakiotermi $c$ nostaa tai laskee paraabelia pystysuunnassa: paraabelin <strong>huippu ja $y$-akselin leikkauspiste on aina $(0, c)$</strong>.</p><ul><li>$y = x^2 + 3$: Huippu kohdassa $(0, 3)$, aukeaa ylöspäin.</li><li>$y = -x^2 + 3$: Huippu kohdassa $(0, 3)$, aukeaa alaspäin.</li><li>$y = 2x^2 - 2$: Huippu kohdassa $(0, -2)$, jyrkkä, aukeaa ylöspäin.</li></ul>",
       "tasks": {
         "warmup": "s. 29: T10 - 13",
         "blue": "s. 76: T66 - 69, s. 29: T14, 15",
         "red": "s. 29: T16, 17, s. 76: T71, 72"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Heittoliike ja riippusillat: Miksi painovoima piirtää aina paraabelin?",
+        "content": "<h4>Potkaistun jalkapallon lentorata</h4><p>Kun potkaiset jalkapallon ilmaan, miksi sen lentorata on täydellinen alaspäin aukeava paraabeli? Galileo Galilei osoitti, että liike koostuu kahdesta riippumattomasta komponentista:</p><ol><li>Vaakasuora liike tasaisella nopeudella: $x = v_x \\cdot t$.</li><li>Pystysuora liike painovoiman vetämänä kiihtyvänä liikkeenä: $y = v_y \\cdot t - \\frac{1}{2} g t^2$.</li></ol><p>Kun aika $t$ eliminoidaan yhtälöistä, saadaan suoraan toisen asteen funktio: $y = ax^2 + bx$! Jokainen tykinkuula, koripallon heitto ja suihkulähteen vesisuihku piirtää ilmaan täsmällisen paraabelin.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Riippusiltojen (kuten Golden Gate -sillan) pääkannatinkaapelit asettuvat paraabelin muotoon, koska ne kannattelevat tasaista vaakasuoraa ajoradan painoa!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Paraabelin parametrien a ja c tutkiminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 11,
       "topic": "Funktion nollakohdat",
+      "title": "Funktion nollakohdat ja merkkikaavio",
       "content": "KS aihe 9. Funktion kuvaajan ja x-akselin leikkauspisteet eli nollakohdat f(x) = 0 sekä funktion positiivisuus ja negatiivisuus.",
+      "summary": "Nollakohdan määritelmä f(x) = 0 (x-akselin leikkauspiste), funktion positiivisuus f(x) > 0 ja negatiivisuus f(x) < 0 sekä kaksoisepäyhtälöt.",
+      "theory": "<p>Funktion kuvaajan ja vaakasuoran $x$-akselin leikkauspisteitä kutsutaan <strong>funktion nollakohdiksi</strong>. Niissä funktion korkeus $y = f(x)$ on täsmälleen <strong>nolla</strong>.</p><h4>Nollakohtien ratkaiseminen</h4><p>Nollakohdat ratkaistaan asettamalla funktion lauseke yhtä suureksi kuin nolla:</p><p>$$\\mathbf{f(x) = 0}$$</p><p><strong>Esimerkki 1 (Suora):</strong> $g(x) = -2x + 2$</p><p>$$-2x + 2 = 0 \\implies -2x = -2 \\implies \\mathbf{x = 1}$$</p><p><strong>Esimerkki 2 (Paraabeli):</strong> $f(x) = x^2 - 4$</p><p>$$x^2 - 4 = 0 \\implies x^2 = 4 \\implies \\mathbf{x = 2} \\quad \\text{tai} \\quad \\mathbf{x = -2}$$</p><h4>Vedenpinta-analogia ja funktion etumerkki</h4><p>Ajattele $x$-akselia tyynenä vedenpintana:</p><ul><li><strong>$f(x) > 0$ (Positiivinen)</strong>: Kuvaaja on <em>vedenpinnan yläpuolella</em> (ilmassa).</li><li><strong>$f(x) = 0$ (Nollakohta)</strong>: Kuvaaja <em>leikkaa vedenpinnan</em>.</li><li><strong>$f(x) < 0$ (Negatiivinen)</strong>: Kuvaaja on <em>veden alla</em>.</li></ul><p>Paraabelille $f(x) = x^2 - 4$:</p><ul><li>Funktio saa negatiivisia arvoja nollakohtien välissä: <strong>$-2 < x < 2$</strong> (kaksoisepäyhtälö).</li><li>Funktio saa positiivisia arvoja nollakohtien ulkopuolella: <strong>$x < -2$ tai $x > 2$</strong>.</li></ul>",
       "tasks": {
         "warmup": "s. 31: T1 - 4",
         "blue": "s. 31: T5, 6, s. 77: T73 - 76",
         "red": "s. 31: T7, 8, s. 77: T77 - 79"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Nollakohdat taloudessa: Milloin yritys tekee nollatuloksen (Break-Even)?",
+        "content": "<h4>Tappiosta voitolliseksi</h4><p>Liiketaloudessa jokainen uusi tuote aloittaa tappiolla, koska tuotekehitys ja tehtaiden pystyttäminen maksavat rahaa. Yrityksen tulosfunktio $T(x)$ kuvaa voittoa valmistettujen kappaleiden $x$ mukaan:</p><p>Piste, jossa $T(x) = 0$, on yrityksen <strong>kriittinen piste (Break-Even Point)</strong>. Se kertoo johtoryhmälle tarkan kappalemäärän, joka tuotetta on myytävä, jotta kaikki kiinteät ja muuttuvat kulut saadaan katettua ja yritys alkaa tuottaa voittoa ($T(x) > 0$)!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Elokuvateollisuudessa nollakohta lasketaan lipputuloista: esimerkiksi 200 miljoonan dollarin Hollywood-hittielokuvan on myytävä lippuja usein noin 400 miljoonalla päästäkseen nollatulokseen teattereiden ottamien osuuksien jälkeen!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Nollakohdat ja funktion etumerkin visualisointi",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 12,
       "topic": "Funktion suurin ja pienin arvo",
+      "title": "Funktion suurin ja pienin arvo suljetulla välillä",
       "content": "KS aihe 10. Suljettu väli, funktion suurin ja pienin arvo annetulla välillä sekä lokaalit ääriarvot.",
+      "summary": "Suljettu väli a ≤ x ≤ b, funktion arvojen käyttäytyminen välillä, huipun ääriarvo vs. välin päätepisteiden arvot.",
+      "theory": "<p>Jos tarkastellaan funktiota koko lukusuoralla, suoran tai paraabelin arvot usein jatkuvat kohti ääretöntä. Mutta kun tarkastelualue rajataan <strong>suljetulle välille</strong>:</p><p>$$\\mathbf{a \\le x \\le b}$$</p><p>funktiolle löytyy aina <strong>suurin arvo</strong> ja <strong>pienin arvo</strong>!</p><h4>Mistä suurin ja pienin arvo löytyvät?</h4><p>Suljetulla välillä funktion suurin ja pienin arvo voivat sijaita vain kahdessa paikassa:</p><ol><li><strong>Paraabelin huipussa (tai funktion paikallisessa ääriarvokohdassa)</strong>, jos huippu osuu annetulle välille.</li><li><strong>Välin päätepisteissä</strong> $x = a$ tai $x = b$.</li></ol><h4>Esimerkki</h4><p>Tarkastellaan funktiota $f(x) = -x^2 + 4$ suljetulla välillä $-1 \\le x \\le 3$:</p><ul><li>Funktion huippu on kohdassa $x = 0$, jossa funktion arvo on $f(0) = 0 + 4 = \\mathbf{4}$. Koska $0$ kuuluu välille $[-1, 3]$, funktion <strong>suurin arvo on 4</strong>.</li><li>Lasketaan välin päätepisteiden arvot:<br>$f(-1) = -(-1)^2 + 4 = -1 + 4 = 3$<br>$f(3) = -(3)^2 + 4 = -9 + 4 = \\mathbf{-5}$</li><li>Pienin näistä arvoista on $-5$, joten funktion <strong>pienin arvo kyseisellä välillä on -5</strong>.</li></ul>",
       "tasks": {
         "warmup": "s. 33: T9 - 14",
         "blue": "s. 78: T80 - 82",
         "red": "s. 78: T83 - 86"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Optimointi tekoälyssä: Miten neuroverkot oppivat etsimällä minimiä?",
+        "content": "<h4>Tekoälyn virhefunktio</h4><p>Kun tekoälymallia (kuten kielimallia tai kuvantunnistinta) koulutetaan, sille määritellään matemaattinen <em>häviöfunktio (Loss function)</em>. Se kuvaa tekoälyn tekemien virheiden määrää.</p><h4>Gradienttilaskeutuminen (Gradient Descent)</h4><p>Tekoälyn oppiminen on puhtaasti <strong>funktion pienimmän arvon (minimin) etsimistä</strong> satojen miljardien parametrien avaruudessa! Algoritmi ottaa pieniä askeleita alaspäin pitkin virhefunktion käyrää kohti laakson pohjaa – aivan kuten kuula vierii kulhossa kohti sen alinta pistettä. Kun minimi saavutetaan, tekoäly tekee mahdollisimman vähän virheitä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Weierstrassin min-max-lause todistaa, että jokaisella jatkuvalla funktiolla suljetulla välillä on matemaattisesti taatusti olemassa sekä suurin että pienin arvo!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Ääriarvot ja suurin sekä pienin arvo välillä",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
   ]
 }

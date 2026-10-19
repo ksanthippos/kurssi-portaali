@@ -5,90 +5,178 @@
     {
       "lesson": 1,
       "topic": "Prosentin käsite",
+      "title": "Prosentin käsite ja muodot",
       "content": "KS aihe 1. Prosentin käsite (sadasosa), prosenttiluvun esittäminen murtolukuna ja desimaalilukuna sekä visuaalinen tulkinta ruudukossa.",
+      "summary": "Prosentin määritelmä sadasosana (pro centum), muunnokset murto- ja desimaaliluvuiksi sekä 100 ruudun ruudukkomalli.",
+      "theory": "<p>Sana <strong>prosentti</strong> tulee latinan kielen ilmauksesta <em>per centum</em> (tai <em>pro centum</em>), joka tarkoittaa kirjaimellisesti <strong>'sadasta'</strong> tai <strong>'sadasosaa'</strong>.</p><h4>Yksi prosentti kolmessa muodossa</h4><p>Matemaattisesti yksi prosentti on tasan yksi sadasosa. Jokainen prosenttiluku voidaan esittää kolmella yhtä pitävällä tavalla:</p><p>$$\\mathbf{1\\,\\% = \\frac{1}{100} = 0{,}01}$$</p><h4>Prosenttilukujen muunnokset</h4><table class=\"styled-table\"><thead><tr><th>Prosenttiluku</th><th>Murtolukuna</th><th>Desimaalilukuna</th><th>Merkitys</th></tr></thead><tbody><tr><td>$7\\,\\%$</td><td>$\\frac{7}{100}$</td><td>$0{,}07$</td><td>Seitsemän sadasosaa</td></tr><tr><td>$12\\,\\%$</td><td>$\\frac{12}{100}$</td><td>$0{,}12$</td><td>Kaksitoista sadasosaa</td></tr><tr><td>$450\\,\\%$</td><td>$\\frac{450}{100}$</td><td>$4{,}50$</td><td>$4{,}5$-kertainen määrä</td></tr><tr><td>$0{,}2\\,\\%$</td><td>$\\frac{0{,}2}{100}$</td><td>$0{,}002$</td><td>Kaksi tuhannesosaa</td></tr></tbody></table><h4>Visuaalinen ruudukkomalli</h4><p>Kuvitellaan ruudukko, jossa on $10 \\times 10 = 100$ pientä ruutua:</p><ul><li><strong>$1\\,\\%$</strong> on tasan <strong>1 ruutu</strong> 100 ruudusta.</li><li><strong>$25\\,\\%$</strong> on <strong>25 ruutua</strong> (neljäsosa ruudukosta).</li><li><strong>$50\\,\\%$</strong> on <strong>50 ruutua</strong> (tasan puolet ruudukosta).</li><li><strong>$100\\,\\%$</strong> tarkoittaa, että <strong>kaikki 100 ruutua</strong> on väritetty (koko kokonaisuus).</li><li><strong>Yli $100\\,\\%$</strong> tarkoittaa, että tarvitaan useampi kuin yksi kokonainen ruudukko!</li></ul>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Mistä prosenttimerkki (%) syntyi? Italian kauppiaiden käsialavirhe",
+        "content": "<h4>Vuosisatainen lyhentämisen ketju</h4><p>Ennen painokoneita ja tietokoneita keskiajan Italian renessanssikauppiaat kirjoittivat tilikirjoihinsa jatkuvasti sanoja <em>per cento</em> (sadasta). Ajan ja musteen säästämiseksi he alkoivat lyhentää sanaparia:</p><ul><li>1425: Kirjoitettiin <code>p cento</code></li><li>1480: Kirjoitettiin <code>p 100</code></li><li>1600-luku: Yläpuolelle piirrettiin pieni ympyrä ja alapuolelle toinen ympyrä: <code>p c/o</code></li><li>1700-luku: Kirjain <code>p</code> jäi kokonaan pois, ja jäljelle jäi kaksi ympyrää ja jakoviiva: <strong>%</strong>!</li></ul><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Prosenttimerkin kaksi pientä ympyrää edustavat alun perin luvun 100 kahta nollaa! Myöhemmin promillelle (tuhannesosalle) luotiin merkki ‰, jossa on kolme pientä nollaa luvun 1000 mukaan.</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Prosentin käsite ja 100-ruudukko",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 2,
       "topic": "Prosenttiosuuden laskeminen",
+      "title": "Prosenttiosuuden laskeminen",
       "content": "KS aihe 2. Prosenttiosuuden laskeminen päässä (1 %, 10 %, 20 %, 25 %, 50 %) ja verrannon avulla.",
+      "summary": "Prosenttiosuuden laskenta päässä perusosuuksien kautta, yhden prosentin sääntö sekä yleispätevä verrantotaulukko.",
+      "theory": "<p>Prosenttiosuus kertoo, kuinka suuri määrä (esim. euroja, oppilaita tai grammoja) tietty prosenttimäärä kokonaisuudesta on.</p><h4>1. Päässälaskettavat perusosuudet</h4><ul><li><strong>$1\\,\\%$</strong> $\\to$ jaetaan $100$:lla (pilkku siirtyy 2 askelta vasemmalle)</li><li><strong>$10\\,\\%$</strong> $\\to$ jaetaan $10$:llä (pilkku siirtyy 1 askel vasemmalle)</li><li><strong>$20\\,\\%$</strong> $\\to$ jaetaan $5$:llä (tai $10\\,\\% \\cdot 2$)</li><li><strong>$25\\,\\%$</strong> $\\to$ jaetaan $4$:llä (neljäsosa)</li><li><strong>$50\\,\\%$</strong> $\\to$ jaetaan $2$:lla (puolet)</li></ul><p><em>Esimerkki: $520\\text{ eurosta}$</em></p><ul><li>$1\\,\\% = 520 : 100 = 5{,}20\\text{ €}$</li><li>$10\\,\\% = 520 : 10 = 52\\text{ €}$</li><li>$25\\,\\% = 520 : 4 = 130\\text{ €}$</li><li>$12\\,\\% = 10\\,\\% + 2 \\cdot 1\\,\\% = 52\\text{ €} + 2 \\cdot 5{,}20\\text{ €} = 62{,}40\\text{ €}$</li></ul><h4>2. Yleispätevä verrantotekniikka</h4><p>Vaikeammissa laskuissa verrantotaulukko toimii aina virheettömästi:</p><table class=\"styled-table\"><thead><tr><th>Prosentti (%)</th><th>Määrä (€)</th></tr></thead><tbody><tr><td>$100$</td><td>$520$</td></tr><tr><td>$12$</td><td>$x$</td></tr></tbody></table><p>Kerrotaan ristiin ja ratkaistaan yhtälö:</p><p>$$100 \\cdot x = 12 \\cdot 520 \\qquad // : 100$$</p><p>$$x = \\frac{12 \\cdot 520}{100} = 62{,}40\\text{ €}$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Alennusmyyntien psykologia: Miksi kaupat käyttävät prosentteja?",
+        "content": "<h4>100 euron sääntö kuluttajakäyttäytymisessä</h4><p>Kuluttajapsykologiassa tunnetaan kuuluisa <strong>'Rule of 100'</strong>:</p><ul><li>Jos tuote maksaa <strong>alle $100\\text{ €}$</strong>, alennus ilmoitetaan prosentteina. Esimerkiksi $20\\text{ €}$ T-paidasta '$25\\,\\%$ alennus' kuulostaa houkuttelevammalta kuin '$5\\text{ €}$ alennus'.</li><li>Jos tuote maksaa <strong>yli $100\\text{ €}$</strong>, alennus ilmoitetaan euroina. Esimerkiksi $2000\\text{ €}$ tietokoneesta '$300\\text{ €}$ alennus' kuulostaa paljon vaikuttavammalta kuin '$15\\,\\%$ alennus'!</li></ul><p>Kauppiaat valitsevat aina sen matemaattisen esitystavan, jonka numero näyttää aivoillemme suuremmalta!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Monet verkkokaupat nostavat tuotteen hintaa 20 % viikkoa ennen Black Fridayta ja antavat sitten siitä '20 % alennuksen'. Tällöin loppuhinta on itse asiassa $1{,}20 \\cdot 0{,}80 = 0{,}96$ eli vain vaivaiset 4 % halvempi kuin alkuperäinen normaali hinta!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Murtolukujen ja prosenttien havainnollistus",
+        "url": "https://phet.colorado.edu/fi/simulations/fraction-matcher"
+      }
     },
     {
       "lesson": 3,
       "topic": "Prosenttiluvun laskeminen",
+      "title": "Prosenttiluvun laskeminen",
       "content": "KS aihe 3. Prosenttiluvun laskeminen osuuden ja kokonaismäärän suhteesta verrantotekniikalla.",
+      "summary": "Kuinka monta prosenttia osuus on kokonaisuudesta, jakolaskumenetelmä ja verrantotekniikan soveltaminen.",
+      "theory": "<p>Usein halutaan tietää, <strong>kuinka monta prosenttia</strong> jokin määrä on toisesta. Esimerkiksi: <em>'Kuinka monta prosenttia $62{,}40\\text{ €}$ on $520\\text{ eurosta}$?'</em> tai <em>'Kuinka monella prosentilla oppilaista on punainen paita, kun ryhmässä on 5 punapaitaista 23 oppilaasta?'</em></p><h4>Tapa 1: Verrantotekniikka</h4><p>Asetetaan kysytty prosenttiluku $x$ vasempaan sarakkeeseen:</p><table class=\"styled-table\"><thead><tr><th>Prosentti (%)</th><th>Oppilasmäärä</th></tr></thead><tbody><tr><td>$100$</td><td>$23$</td></tr><tr><td>$x$</td><td>$5$</td></tr></tbody></table><p>Kerrotaan ristiin:</p><p>$$23 \\cdot x = 100 \\cdot 5 \\qquad // : 23$$</p><p>$$x = \\frac{100 \\cdot 5}{23} \\approx 21{,}7\\,\\% \\approx 22\\,\\%$$</p><h4>Tapa 2: Suora jakolasku (Osa jaettuna kokonaisuudella)</h4><p>$$\\text{Prosenttiluku} = \\frac{\\text{osa}}{\\text{kokonaisuus}} \\cdot 100\\,\\%$$</p><p>$$\\frac{5}{23} \\approx 0{,}2174 \\implies 0{,}2174 \\cdot 100\\,\\% \\approx 22\\,\\%$$</p><p>Molemmat menetelmät johtavat aina täsmälleen samaan lopputulokseen. Valitse se, joka tuntuu sinulle selkeimmältä!</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Bayesin harha: Miksi 99 % tarkka testi voi olla väärässä?",
+        "content": "<h4>Lääketieteellisen testin petollinen prosentti</h4><p>Kuvitellaan harvinainen sairaus, jota esiintyy $1$:llä ihmisellä $1000$:sta ($0{,}1\\,\\%$ väestöstä). Sairaalassa on testi, jonka tarkkuus on peräti $99\\,\\%$ (eli se antaa oikean tuloksen 99 % ajasta).</p><p>Jos menet rutiinitarkastukseen ja testi näyttää <strong>positiivista</strong>, mikä on todennäköisyys sille, että olet todella sairas?</p><h4>Matematiikka paljastaa totuuden</h4><p>Testataan $100\\,000$ satunnaista ihmistä:</p><ul><li>Sairaita on $100$ kpl. Testi löytää heistä oikein $99$ kpl.</li><li>Terveitä on $99\\,900$ kpl. Testi erehtyy $1\\,\\%$ kohdalla eli antaa väärän positiivisen tuloksen peräti $999$ terveelle ihmiselle!</li><li>Positiivisia testituloksia tulee yhteensä $99 + 999 = 1098$ kpl.</li></ul><p>Todennäköisyys olla oikeasti sairas positiivisella testituloksella on vain:</p><p>$$\\frac{99}{1098} \\approx 9\\,\\%!$$</p><p>Vaikka testi oli '99 % tarkka', <strong>yli 90 % positiivisen tuloksen saaneista on täysin terveitä</strong>! Tätä prosenttilaskennan ilmiötä kutsutaan <em>perusjoukkoharhaksi (Base Rate Fallacy)</em>.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tästä syystä lääkärit eivät koskaan tee harvinaisten sairauksien seulontatestejä koko väestölle summittain, vaan vain potilaille, joilla on jo selkeitä oireita!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Prosenttiluvun laskeminen ja havainnollistus",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 4,
       "topic": "Muutosprosentti",
+      "title": "Muutosprosentti: Hinnan alennus ja korotus",
       "content": "KS aihe 4. Hinnan alennus ja korotus, muutosprosentin laskeminen verrannon avulla.",
+      "summary": "Muutosprosentin laskeminen, alkuperäinen hinta perusarvona 100 % sekä alennetun hinnan ja alennuksen määrän erottaminen toisistaan.",
+      "theory": "<p>Kun jonkin asian hinta, asukasluku tai pituus muuttuu, muutoksen suuruus ilmoitetaan <strong>muutosprosenttina</strong>. Tärkein sääntö on:</p><p><em>Alkuperäinen arvo (ennen muutosta) on AINA perusarvo eli $100\\,\\%$!</em></p><h4>Esimerkki 1: Alennettu hinta tunnetaan</h4><p>Takin normaali hinta oli $220\\text{ €}$ ja alennusmyynnissä $150\\text{ €}$. Kuinka monta prosenttia takkia alennettiin?</p><table class=\"styled-table\"><thead><tr><th>Prosentti (%)</th><th>Hinta (€)</th></tr></thead><tbody><tr><td>$100$</td><td>$220$</td></tr><tr><td>$x$</td><td>$150$</td></tr></tbody></table><p>Kerrotaan ristiin:</p><p>$$220x = 100 \\cdot 150 \\implies x = \\frac{15\\,000}{220} \\approx 68{,}2\\,\\%$$</p><p>Uusi hinta on siis $68{,}2\\,\\%$ alkuperäisestä. Alennus on:</p><p>$$\\text{Alennus} = 100\\,\\% - 68{,}2\\,\\% = \\mathbf{31{,}8\\,\\%} \\approx 32\\,\\%$$</p><h4>Esimerkki 2: Alennuksen suuruus tunnetaan</h4><p>Auto maksoi $35\\,000\\text{ €}$ ja kauppias antoi $1700\\text{ €}$ alennuksen. Mikä oli alennusprosentti?</p><table class=\"styled-table\"><thead><tr><th>Prosentti (%)</th><th>Hinta (€)</th></tr></thead><tbody><tr><td>$100$</td><td>$35\\,000$</td></tr><tr><td>$x$</td><td>$1700$</td></tr></tbody></table><p>$$35\\,000x = 100 \\cdot 1700 \\implies x = \\frac{170\\,000}{35\\,000} \\approx \\mathbf{4{,}9\\,\\%}$$</p><p>Koska taulukkoon sijoitettiin suoraan alennuksen suuruus, vastaus saadaan suoraan ilman vähennyslaskua!</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Pörssiromahduksen epäsymmetria: Miksi -50 % vaatii +100 % toipuakseen?",
+        "content": "<h4>Sijoittamisen matemaattinen ansa</h4><p>Kuvitellaan osake, jonka hinta on $100\\text{ €}$. Pörssiromahduksessa osakkeen arvo putoaa $50\\,\\%$. Uusi hinta on $50\\text{ €}$.</p><p>Seuraavana vuonna talous elpyy ja lehdissä ilmoitetaan: 'Osake nousi huimat $50\\,\\%$, olemme palanneet normaaliin!' Onko näin?</p><h4>Lasketaan uusi nousu!</h4><p>Nyt perusarvona onkin romahduksen jälkeinen hinta $50\\text{ €}$:</p><p>$$50\\text{ €} + 50\\,\\% \\cdot 50\\text{ €} = 50\\text{ €} + 25\\text{ €} = \\mathbf{75\\text{ €}!}$$</p><p>Osakkeen arvo on edelleen $25\\text{ €}$ tappiolla! Jotta $50\\text{ euron}$ osake palautuisi entiseen $100\\text{ euron}$ arvoonsa, sen on noustava $50\\text{ euroa}$ eli tasan <strong>$+100\\,\\%$</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos osake putoaa $90\\,\\%$, se tarvitsee peräti $+900\\,\\%$ nousun päästäkseen takaisin alkuperäiseen arvoonsa. Tästä syystä suuret tappiot ovat sijoittajalle tuhoisia!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Muutosprosentti ja hintojen heilahtelu",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 5,
       "topic": "Vertailuprosentti",
+      "title": "Vertailuprosentti ja 'kuin'-säännön voima",
       "content": "KS aihe 5. Arvojen vertailu prosenteissa ja perusarvon (100 %) valinnan merkitys.",
+      "summary": "Kahden arvon vertailu keskenään, miksi vertailutulokset eivät ole symmetrisiä sekä kuin-sanan merkitys 100 % perusarvon valinnassa.",
+      "theory": "<p>Tarkastellaan kahta sisarusta: Jesse on 18-vuotias ja hänen isosiskonsa Henni on 32-vuotias.</p><h4>Kaksi eri kysymystä:</h4><ol><li><em>Kuinka monta prosenttia Jesse on nuorempi <strong>kuin Henni</strong>?</em></li><li><em>Kuinka monta prosenttia Henni on vanhempi <strong>kuin Jesse</strong>?</em></li></ol><p>Moni luulee virheellisesti, että molemmista tulee sama vastaus. Näin ei kuitenkaan ole!</p><h4>Kultainen kuin-sääntö:</h4><p><em>Se luku, johon verrataan (eli sanaa 'kuin' seuraava kohde), valitaan aina perusarvoksi eli $100\\,\\%$ osuudeksi!</em></p><h4>Kohta 1: Nuorempi kuin Henni $\\to$ Henni = $100\\,\\%$</h4><table class=\"styled-table\"><thead><tr><th>Prosentti (%)</th><th>Ikä (v)</th></tr></thead><tbody><tr><td>$100$</td><td>$32$ (Henni)</td></tr><tr><td>$x$</td><td>$18$ (Jesse)</td></tr></tbody></table><p>$$32x = 100 \\cdot 18 \\implies x = \\frac{1800}{32} = 56{,}25\\,\\%$$</p><p>Jesse on $100\\,\\% - 56{,}25\\,\\% = \\mathbf{43{,}75\\,\\%} \\approx 44\\,\\%$ nuorempi kuin Henni.</p><h4>Kohta 2: Vanhempi kuin Jesse $\\to$ Jesse = $100\\,\\%$</h4><table class=\"styled-table\"><thead><tr><th>Prosentti (%)</th><th>Ikä (v)</th></tr></thead><tbody><tr><td>$100$</td><td>$18$ (Jesse)</td></tr><tr><td>$x$</td><td>$32$ (Henni)</td></tr></tbody></table><p>$$18x = 100 \\cdot 32 \\implies x = \\frac{3200}{18} \\approx 177{,}8\\,\\%$$</p><p>Henni on $177{,}8\\,\\% - 100\\,\\% = \\mathbf{77{,}8\\,\\%} \\approx 78\\,\\%$ vanhempi kuin Jesse!</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Miten uutisotsikot harhauttavat vertailuprosenteilla?",
+        "content": "<h4>Kenen näkökulmasta vertaillaan?</h4><p>Poliitikot ja mainostajat käyttävät vertailuprosentin epäsymmetriaa taitavasti hyväkseen:</p><p>Jos sähkön hinta nousee $5\\text{ sentistä}$ $10\\text{ senttiin}$, se on <strong>$100\\,\\%$ hinnannousu</strong> (koska verrataan vanhaan hintaan: $\\frac{5}{5} = 1$). Mutta jos hinta laskee myöhemmin $10\\text{ sentistä}$ takaisin $5\\text{ senttiin}$, kyseessä onkin vain <strong>$50\\,\\%$ alennus</strong> (koska nyt verrataan kalliiseen hintaan: $\\frac{5}{10} = 0{,}5$)!</p><p>Vaikka rahasumma on tasan sama ($5\\text{ snt}$), prosenttiluku vaihtuu täysin riippuen siitä, kumpaan suuntaan vertailu tehdään.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Aina kun luet uutisista vertailuprosentteja, etsi heti lauseesta sana 'kuin'. Se paljastaa heti, kenen tai minkä arvo on asetettu laskutoimituksen nimittäjään!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Vertailuprosentti ja perusarvon valinta",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 6,
       "topic": "Prosenttiyksikkö",
+      "title": "Prosentti vastaan prosenttiyksikkö",
       "content": "KS aihe 6. Prosentti vs. prosenttiyksikkö, kannatuksen ja arvonlisäveron muutokset.",
+      "summary": "Prosentin ja prosenttiyksikön ratkaiseva ero, absoluuttinen muutos vs. suhteellinen muutos vaaleissa, veroissa ja koroissa.",
+      "theory": "<p>Tämä aihe on yksi median ja arkielämän yleisimmistä sekaannuksen lähteistä:</p><h4>Esimerkkitilanne vaalikannatuksesta:</h4><p>Puolueen A kannatus on $15\\,\\%$ ja puolueen B kannatus on $12\\,\\%$. Vaalien alla:</p><ul><li>Puolue A ilmoittaa kannatuksensa <strong>nousseet 10 prosenttia</strong>.</li><li>Puolue B ilmoittaa kannatuksensa <strong>nousseen 5 prosenttiyksikköä</strong>.</li></ul><p>Kummalla puolueella on nyt parempi kannatus?</p><h4>Laskelmat:</h4><ul><li><strong>Puolue A (suhteellinen muutos prosentteina)</strong>:<br>10 prosentin nousu lasketaan vanhasta kannatuksesta: $1{,}10 \\cdot 15\\,\\% = \\mathbf{16{,}5\\,\\%}$.</li><li><strong>Puolue B (absoluuttinen muutos prosenttiyksikköinä)</strong>:<br>5 prosenttiyksikön nousu tarkoittaa suoraa yhteenlaskua vanhaan prosenttilukuun: $12\\,\\% + 5 = \\mathbf{17{,}0\\,\\%}$.</li></ul><p><strong>Puolueella B on siis suurempi kannatus!</strong> Puolueiden kannatusero on $17{,}0\\,\\% - 16{,}5\\,\\% = 0{,}5$ prosenttiyksikköä.</p><h4>Muistisääntö</h4><ul><li><strong>Prosenttiyksikkö</strong>: Kahden prosenttiluvun suora erotus tai yhteenlasku ($24\\,\\% \\to 25{,}5\\,\\%$ on $1{,}5$ prosenttiyksikön nousu).</li><li><strong>Prosentti</strong>: Suhteellinen muutos entiseen ($1{,}5$ prosenttiyksikön nousu $24\\,\\%$ arvonlisäveroon on suhteessa $\\frac{1{,}5}{24} \\approx 6{,}25\\,\\%$ nousu).</li></ul>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Korkojen nousu: Miten 1 prosenttiyksikkö tuplaa asuntolainan kuukausierän?",
+        "content": "<h4>Uutisankkureiden tyypillinen kömmähdys</h4><p>Kun Euroopan keskuspankki EKP nostaa ohjauskorkoa arvosta $1{,}0\\,\\%$ arvoon $2{,}0\\,\\%$, moni ajattelee: 'Mitä väliä, sehän nousi vain yhdellä!'</p><p>Todellisuudessa korko nousi <strong>1 prosenttiyksikön</strong>, mutta prosentteina laskettuna korkotaso <strong>kaksinkertaistui eli nousi $+100\\,\\%$</strong>!</p><h4>Asuntovelallisen arki</h4><p>$200\\,000\\text{ euron}$ asuntolainassa $1\\,\\%$ korko tarkoittaa $2\\,000\\text{ euroa}$ vuodessa. Jos korko nousee $4\\,\\%$ tasolle (nousua 3 prosenttiyksikköä), vuosittaiset korot hyppäävät $8\\,000\\text{ euroon}$ eli <strong>nelinkertaistuvat</strong>! Tämä tarkoittaa perheelle $500\\text{ euron}$ ylimääräistä menoa joka ikinen kuukausi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Suomen arvonlisävero nousi syyskuussa 2024 arvosta $24\\,\\%$ arvoon $25{,}5\\,\\%$. Nousu oli $1{,}5$ prosenttiyksikköä eli suhteellisesti noin $6{,}25\\,\\%$ korotus valtioon kerättävään verokertymään!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Prosentti vs. prosenttiyksikkö visuaalisesti",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 7,
       "topic": "Perusarvon laskeminen",
+      "title": "Perusarvon laskeminen (100 %)",
       "content": "KS aihe 7. Kokonaismäärän (100 %) ratkaiseminen tunnetusta prosenttiosuudesta verrantoyhtälöllä.",
+      "summary": "Koko määrän (100 %) ratkaiseminen osasta ja prosenttiluvusta, verrannon muodostaminen ja jakolaskutapa.",
+      "theory": "<p>Aiemmin opimme vastaamaan kysymykseen: <em>'Paljonko on $12\\,\\%$ $520\\text{ eurosta}$?'</em> ($62{,}40\\text{ €}$).</p><p>Mutta mitä jos kysymys käännetään toisin päin:</p><p><strong>'Mistä euromäärästä $12\\,\\%$ on $62{,}40\\text{ euroa}$?'</strong></p><p>Tällöin etsimme alkuperäistä kokonaissummaa eli <strong>perusarvoa ($100\\,\\%$)</strong>.</p><h4>1. Ratkaisu verrantotaulukolla</h4><p>Asetetaan tuntematon $x$ osuuden kohdalle $100\\,\\%$ riville:</p><table class=\"styled-table\"><thead><tr><th>Prosentti (%)</th><th>Määrä (€)</th></tr></thead><tbody><tr><td>$100$</td><td>$x$</td></tr><tr><td>$12$</td><td>$62{,}40$</td></tr></tbody></table><p>Kerrotaan ristiin ja ratkaistaan yhtälö:</p><p>$$12 \\cdot x = 100 \\cdot 62{,}40 \\qquad // : 12$$</p><p>$$x = \\frac{6240}{12} = \\mathbf{520\\text{ €}}$$</p><h4>2. Ratkaisu yhden prosentin kautta</h4><ol><li>Lasketaan ensin, paljonko on $1\\,\\%$ jakamalla osuus prosenttiluvulla:<br>$$1\\,\\% = \\frac{62{,}40\\text{ €}}{12} = 5{,}20\\text{ €}$$</li><li>Kerrotaan tulos sadalla saadaksemme $100\\,\\%$:<br>$$100\\,\\% = 100 \\cdot 5{,}20\\text{ €} = \\mathbf{520\\text{ €}}$$</li></ol><h4>3. Suora jakolasku desimaaliluvulla</h4><p>$$x = \\frac{62{,}40}{0{,}12} = \\mathbf{520\\text{ €}}$$</p>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Verokiila ja bruttopalkka: Miten nettopalkasta lasketaan bruttopalkka?",
+        "content": "<h4>Mistä summasta vero maksetaan?</h4><p>Kuvitellaan, että saat tilillesi nettopalkkaa $2400\\text{ €}$ kuukaudessa, ja veroprosenttisi on $25\\,\\%$. Mikä oli bruttopalkkasi ennen verotusta?</p><p>Monen ensireaktio on laskea $2400 + 25\\,\\% \\cdot 2400 = 2400 + 600 = 3000\\text{ €}$. Mutta tämä on väärin! Vero ei nimittäin vähenny nettopalkasta, vaan <strong>bruttopalkasta</strong>!</p><h4>Perusarvon ratkaisu paljastaa:</h4><p>Nettopalkka $2400\\text{ €}$ vastaa $100\\,\\% - 25\\,\\% = \\mathbf{75\\,\\%}$ osuutta bruttopalkasta:</p><p>$$\\text{Bruttopalkka} = \\frac{2400\\text{ €}}{0{,}75} = \\mathbf{3200\\text{ €}!}$$</p><p>Veroa maksettiinkin $800\\text{ €}$, ei $600\\text{ €}$! Ilman perusarvon oikeaa hahmottamista laskelma menee satoja euroja pieleen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kaupan kuiteissa veroton hinta (alv 0 %) ratkaistaan täsmälleen samalla perusarvon kaavalla: jakamalla verollinen loppusumma luvulla $1{,}255$!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Perusarvon ratkaiseminen",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 8,
       "topic": "Korkolaskut",
+      "title": "Korko, lainat ja säästöt",
       "content": "KS aihe 8. Koron käsite, lainakorko ja talletuskorko sekä vuosi-, kuukausi- ja päiväkoron laskeminen.",
+      "summary": "Koron käsite rahan hintana, laina- ja talletuskorko, vuosi- ja aikakoron laskeminen kuukausina ja päivinä.",
+      "theory": "<p>Jos lainaat pankista rahaa, joudut maksamaan takaisin enemmän kuin lainasit. Tätä rahan vuokraamisen hintaa kutsutaan <strong>koroksi (interest)</strong>. Vastaavasti kun talletat rahaa pankkitilille, pankki maksaa sinulle <strong>talletuskorkoa</strong>.</p><h4>Vuosikorko (p.a. = per annum)</h4><p>Pankkien ilmoittama korkoprosentti tarkoittaa lähes poikkeuksetta <strong>koko vuoden korkoa</strong>:</p><p>$$\\text{Vuosikorko} = \\frac{\\text{korkoprosentti}}{100} \\cdot \\text{Pääoma}$$</p><h4>Ajan huomioiminen kuukausina ja päivinä</h4><p>Jos laina-aika on vain osa vuodesta, korko jaetaan ajalla:</p><ul><li>Kuukausina ($t$ kk): kerrotaan osuudella $\\frac{t}{12}$</li><li>Päivinä ($t$ pv): kerrotaan osuudella $\\frac{t}{365}$</li></ul><h4>Esimerkki 1: Lainan korko 5 kuukaudelta</h4><p>Pankista otetaan remonttia varten $7000\\text{ euron}$ laina. Korkoprosentti on $3{,}5\\,\\%$. Kuinka paljon korkoa maksetaan 5 kuukaudelta?</p><ol><li>Lasketaan vuosikorko:<br>$$0{,}035 \\cdot 7000\\text{ €} = 245\\text{ €}$$</li><li>Vuodessa on 12 kuukautta, joten 5 kuukauden korko on:<br>$$\\text{Korko} = \\frac{245\\text{ €}}{12} \\cdot 5 \\approx \\mathbf{102{,}08\\text{ €}}$$</li></ol><h4>Esimerkki 2: Säästötilin korko 4 päivältä</h4><p>Säästötilin korko on $1{,}8\\,\\%$ ja tilille talletetaan $2500\\text{ €}$. Paljonko korkoa kertyy 4 päivässä?</p><ol><li>Vuosikorko: $0{,}018 \\cdot 2500\\text{ €} = 45\\text{ €}$</li><li>Päiväkorko (vuodessa 365 päivää):<br>$$\\text{Korko} = \\frac{45\\text{ €}}{365} \\cdot 4 \\approx \\mathbf{0{,}49\\text{ €}}$$</li></ol>",
       "tasks": {
         "warmup": "",
         "blue": "",
         "red": ""
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Korkoa korolle: Albert Einsteinin 'maailman kahdeksas ihme'",
+        "content": "<h4>Mitä tapahtuu, kun korot alkavat kasvaa korkoa?</h4><p>Albert Einsteinin kerrotaan sanoneen: <em>'Korkoa korolle -ilmiö on maailman kahdeksas ihme. Se, joka sen ymmärtää, ansaitsee sillä; se, joka ei, maksaa sitä.'</em></p><h4>Pitkäaikaisen säästämisen taika</h4><p>Jos sijoitat lapsen syntyessä $1000\\text{ €}$ rahastoon, joka tuottaa keskimäärin $7\\,\\%$ vuodessa ilman, että nostat rahoja pois:</p><ul><li>10 vuoden päästä tilillä on $1\\,967\\text{ €}$</li><li>20 vuoden päästä tilillä on $3\\,869\\text{ €}$</li><li>50 vuoden päästä tilillä on jo huimat <strong>$29\\,457\\text{ €}$!</strong></li></ul><p>Alkuperäinen tuhannen euron sijoitus kasvoi lähes 30-kertaiseksi ilman yhdenkään lisäeuron tallettamista, koska joka vuosi korot maksettiin myös aiempien vuosien korkojen päälle!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Luottokorttiveloissa ja pikavipeissä korkoa korolle toimii toiseen suuntaan: jos maksat vain minimilyhennyksen, korkeat korot (jopa 20 %) voivat kasvattaa velkasumman nopeasti hallitsemattomaksi kierteeksi!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Korkoa korolle -ilmiön simulaattori",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
   ]
 }

@@ -5,103 +5,224 @@
     {
       "lesson": 1,
       "topic": "Energiamuodot ja -tuotanto",
+      "title": "Energiamuodot ja energiantuotanto",
       "content": "KS aihe 0 & 1. Kurssin esittely. Energian säilyminen ja muuntuminen, uusiutuvat ja uusiutumattomat energialähteet. Höyryturbiini ja sähköntuotanto.",
+      "summary": "Energian säilymislaki, energiamuotojen muuntuminen toisiinsa, uusiutuvat vs. uusiutumattomat energialähteet ja lämpövoimalaitoksen höyryturbiini.",
+      "theory": "<p>Fysiikan perustavanlaatuisin luonnonlaki on <strong>energian säilymislaki</strong>:</p><ul><li><strong>Energia ei koskaan synny tyhjästä.</strong></li><li><strong>Energia ei koskaan häviä mihinkään.</strong></li><li>Energia voi ainoastaan <strong>muuntua muodosta toiseen</strong> tai siirtyä kappaleelta toiselle!</li></ul><p>Kun auto jarruttaa, sen liike-energia ei häviä, vaan se muuttuu jarrulevyjen ja renkaiden kitkan kautta matala-arvoiseksi lämpöenergiaksi. <em>Energiantuotanto</em> tarkoittaa teknologisia menetelmiä, joilla luonnosta saatava energia muunnetaan yhteiskunnalle käyttökelpoiseen muotoon – pääasiassa <strong>sähköenergiaksi</strong>.</p><h4>Energiamuotojen muuntuminen voimalaitoksissa</h4><ol><li><strong>Polttovoimala (hiili, puu, maakaasu)</strong>: Polttoaineen <em>kemiallinen energia</em> $\\to$ palamislämmöksi $\\to$ höyryn <em>liike-energiaksi</em> turbiiniin $\\to$ generaattorin kautta <em>sähköenergiaksi</em>.</li><li><strong>Ydinvoimala</strong>: Raskaiden uraaniytimien halkeamisen <em>ydinenergia</em> $\\to$ veden kuumennukseksi $\\to$ höyryturbiini $\\to$ sähköenergia.</li><li><strong>Vesivoimala</strong>: Veden patoaltaan <em>potentiaalienergia</em> (asemaenergia) $\\to$ virtaavan veden <em>liike-energiaksi</em> $\\to$ vesiturbiini $\\to$ sähköenergia.</li><li><strong>Tuulivoimala</strong>: Ilmamassojen <em>liike-energia</em> $\\to$ roottorin pyörimisliikkeeksi $\\to$ sähköenergia.</li><li><strong>Aurinkopaneeli (valosähköinen ilmiö)</strong>: Auringon fotonien <em>säteilyenergia</em> suoraan puolijohdekiteessä <em>sähköenergiaksi</em> ilman turbiinia!</li></ol><h4>Uusiutuvat ja uusiutumattomat energialähteet</h4><ul><li><strong>Uusiutuvat</strong>: Aurinko-, tuuli-, vesi-, aalto- ja maalämpöenergia sekä kestävästi kasvatettu bioenergia (luonto uudistaa ne nopeasti).</li><li><strong>Uusiutumattomat</strong>: Fossiiliset polttoaineet (kivihiili, maaöljy, maakaasu) ja uraani (ehtyvät käytettäessä, muodostuminen kestänyt satoja miljoonia vuosia).</li></ul>",
       "tasks": {
         "research": "Energiamuodot-simulaatio (PhET)",
         "theory": "Energiakaavio-tehtävänanto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Termodynamiikan lait: Miksi ikiliikkujan rakentaminen on mahdotonta?",
+        "content": "<h4>Vuosisatainen keksijöiden haave</h4><p>Kautta historian keksijät ovat yrittäneet patentoida <strong>ikiliikkujaa (perpetuum mobile)</strong>: laitetta, joka tuottaisi itsestään enemmän energiaa kuin mitä se kuluttaa käydäkseen ikuisesti.</p><h4>Kaksi murtumatonta fysiikan lakia</h4><p>Fysiikan peruslait sulkevat ikiliikkujan olemassaolon täysin pois:</p><ol><li><strong>1. pääsääntö (energian säilyminen)</strong>: Laite ei voi tuottaa tyhjästä yhtäkään joulea energiaa ($E_{\\text{in}} = E_{\\text{out}}$).</li><li><strong>2. pääsääntö (entropia)</strong>: Jokaisessa energiamuunnoksessa osa energiasta 'hajoaa' vääjäämättä ympäröivän tilan lämmöksi kitkan ja lämpöhäviöiden vuoksi. Hyötysuhde on aina alle $100\\,\\%$!</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Patenttitoimistot ympäri maailmaa hylkäävät nykyään kaikki ikiliikkujahakemukset automaattisesti ilman käsittelyä, ellei hakija pysty esittämään fysiikan lakien vastaista toimivaa prototyyppiä!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Energiamuodot ja energian muutokset",
+        "url": "https://phet.colorado.edu/fi/simulations/energy-forms-and-changes"
+      }
     },
     {
       "lesson": 2,
       "topic": "Geofysiikka",
+      "title": "Geofysiikka ja maapallon rakenne",
       "content": "KS aihe 2. Geofysiikka ja sen osa-alueet: maankuori, ilmakehä, meret ja jäätiköt (aeronomia, glasiologia).",
+      "summary": "Geofysiikan osa-alueet (seismologia, vulkanologia, glasiologia, aeronomia, geomagnetismi) ja maapallon fysikaalinen tutkimus.",
+      "theory": "<p><strong>Geofysiikka</strong> on fysiikan ja nanotieteiden haara, joka soveltaa fysiikan lakeja koko maapallon ja sen lähiavaruuden tutkimiseen – maankuoren syvimmistä kerroksista aina ilmakehän yläosiin saakka.</p><h4>Geofysiikan keskeiset osa-alueet</h4><ul><li><strong>Seismologia</strong>: Maanjäristysten ja maapallon sisässä etenevien seismisten aaltojen tutkimus.</li><li><strong>Geomagnetismi</strong>: Maapallon sulan ulkoytimen synnyttämän magneettikentän ja sen napaisuuskääntymien tutkimus.</li><li><strong>Glasiologia</strong>: Jäätiköiden dynamiikan, mannerjäätiköiden sulamisen ja ikiroudan fysiikka.</li><li><strong>Merifysiikka (oseanografia)</strong>: Merivirtojen, aaltoliikkeen ja merten lämpökapasiteetin tutkimus.</li><li><strong>Aeronomia ja meteorologia</strong>: Yläilmakehän ionisoituneiden kerrosten ja sään fysiikka.</li></ul><h4>Miten maapallon sisälle 'nähdään'?</h4><p>Ihmiskunnan syvin koskaan poraama reikä (Kolan niemimaan syväkairaus) yltää vain hieman yli $12\\text{ kilometrin}$ syvyyteen – mikä on maapallon $6371\\text{ km}$ säteeseen verrattuna kuin ohut naarmu omenan kuoressa! Kaikki tietomme maapallon vaipasta ja ytimestä perustuu geofyysisiin mittauksiin: <strong>maanjäristysten P- ja S-aaltojen heijastumiseen ja taittumiseen maapallon eri kerroksissa</strong>.</p>",
       "tasks": {
         "theory": "Geofysiikka aiheet -oppilastyö"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Inge Lehmann ja maapallon kiinteä ydin: Seismologian suurin oivallus",
+        "content": "<h4>Tanskalainen seismologi ja maanjäristysten varjovyöhyke</h4><p>Vuoteen 1936 saakka geologit uskoivat maapallon ytimen olevan kauttaaltaan sulaa nestemäistä rautaa. Tanskalainen seismologi <strong>Inge Lehmann</strong> alkoi kuitenkin tutkia tarkasti Uudessa-Seelannissa tapahtuneiden järistysten seismisiä mittauksia Euroopan asemilla.</p><h4>Sisäytimen heijastukset</h4><p>Lehmann huomasi seismogrammeissa heikkoja P-aaltoja sellaisilla alueilla, joille aaltojen ei nestemäisen ytimen teorian mukaan pitänyt päästä (niin sanotussa varjovyöhykkeessä). Hän osoitti matemaattisesti, että aallot heijastuivat <strong>maapallon keskellä olevasta kiinteästä sisäytimestä</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maapallon kiinteä sisäydin on noin $1200\\text{ km}$ säteinen kuula puhdasta rautaa ja nikkeliä. Sen lämpötila on yli $5000^\\circ\\text{C}$ (sama kuin Auringon pinnalla), mutta valtava paine (yli 3 miljoonaa ilmakehää) pakottaa raudan pysymään kiinteänä!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Maapallon kerrosrakenne ja maanjäristysaallot",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 3,
       "topic": "Ilmakehän fysiikkaa",
+      "title": "Ilmakehän fysiikka ja otsonikerros",
       "content": "KS aihe 3. Ilmakehän kerrokset (troposfääri, stratosfääri, mesosfääri, termosfääri, eksosfääri), ilmakehän kaasut ja otsonikerros (O3, CFC-yhdisteet). Meteorologia ja sääilmiöt.",
+      "summary": "Ilmakehän kerrosrakenne alhaalta ylös, kaasukoostumus (N2 78 %, O2 21 %, Ar 0,93 %, CO2 0,04 %) ja otsonikerroksen UV-suoja.",
+      "theory": "<p>Maan ilmakehä on ohut kaasuvaippa, joka suojaa planeettaamme avaruuden kylmyydeltä ja haitalliselta säteilyltä. Ilmakehän kokonaismassasta 99 % sijaitsee alle 30 kilometrin korkeudessa.</p><h4>1. Ilmakehän kaasukoostumus kuivassa ilmassa</h4><ul><li><strong>Typpi ($N_2$)</strong>: n. $78{,}08\\,\\%$</li><li><strong>Happi ($O_2$)</strong>: n. $20{,}95\\,\\%$</li><li><strong>Argon ($Ar$)</strong>: n. $0{,}93\\,\\%$</li><li><strong>Hiilidioksidi ($CO_2$)</strong>: n. $0{,}042\\,\\%$ ($420\\text{ ppm}$)</li><li>Vesihöyryä ($H_2O$) vaihtelee $0 - 4\\,\\%$ välillä.</li></ul><h4>2. Ilmakehän kerrokset alhaalta ylöspäin</h4><ol><li><strong>Troposfääri ($0 - 12\\text{ km}$)</strong>: Sisältää 80 % ilmakehän massasta. Kaikki sääilmiöt, pilvet ja matkustajalentokoneet liikkuvat täällä. Lämpötila laskee ylöspäin mentäessä (jopa $-60^\\circ\\text{C}$).</li><li><strong>Stratosfääri ($12 - 50\\text{ km}$)</strong>: Sisältää elintärkeän <strong>otsonikerroksen ($O_3$)</strong>. Otsonimolekyylit absorboivat Auringon vaarallista ultraviolettisäteilyä (UV-B ja UV-C), minkä vuoksi stratosfääri lämpenee ylöspäin mentäessä.</li><li><strong>Mesosfääri ($50 - 85\\text{ km}$)</strong>: Ilmakehän kylmin kerros (jopa $-90^\\circ\\text{C}$). Pienet meteoroidit palavat täällä tähdenlentoina ilmanvastuksen kitkalämmöstä.</li><li><strong>Termosfääri ($85 - 600\\text{ km}$)</strong>: Ilma on äärimmäisen harvaa. Täällä syntyvät revontulet ja kansainvälinen avaruusasema ISS kiertää maapalloa ($400\\text{ km}$). Avaruuden raja, <strong>Kármánin raja ($100\\text{ km}$)</strong>, sijaitsee täällä.</li><li><strong>Eksosfääri ($> 600\\text{ km}$)</strong>: Vaihettuu asteittain planeettainväliseksi tyhjiöksi.</li></ol>",
       "tasks": {
         "research": "Otsoni ja UV-säteily -simulaatio",
         "theory": "FY_92: Ilmakehän fysiikkaa -tehtävä"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Montrealin pöytäkirja 1987: Miten ihmiskunta pelasti otsonikerroksen?",
+        "content": "<h4>CFC-kaasujen näkymätön uhka</h4><p>1970-luvulla aerosolipurkeissa ja jääkaapeissa käytettiin laajasti freoneja eli kloorifluorattuja hiilivetyjä (CFC). Kemistit Mario Molina ja Sherwood Rowland oivalsivat, että vakaat CFC-molekyylit kohoavat stratosfääriin, jossa UV-säteily irrottaa niistä vapaan klooriatomin ($Cl$).</p><h4>Katalyyttinen ketjureaktio</h4><p>Yksi ainoa klooriatomi toimii katalyyttinä, joka tuhoaa jopa <strong>100 000 otsonimolekyyliä</strong> ennen poistumistaan! 1980-luvun alussa Etelämantereen yltä löydettiin hälyttävä 'otsoniaukko'.</p><h4>Koko maailman yhteinen sopimus</h4><p>Vuonna 1987 solmittiin <strong>Montrealin pöytäkirja</strong>, jolla CFC-kaasut kiellettiin maailmanlaajuisesti. Se on historian onnistunein kansainvälinen ympäristösopimus: otsonikerroksen toipuminen on käynnissä ja sen ennustetaan palautuvan 1980-lukua edeltävälle tasolle vuoteen 2060 mennessä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ilman Montrealin sopimusta UV-säteilyn tasot olisivat nousseet maapallolla niin vaarallisiksi, että ulkona oleskelu ilman suojapukua olisi aiheuttanut vakavia ihovaurioita jo viidessä minuutissa!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Molekyylit ja valo (UV-säteily ja otsoni)",
+        "url": "https://phet.colorado.edu/fi/simulations/molecules-and-light"
+      }
     },
     {
       "lesson": 4,
       "topic": "Kasvihuoneilmiö ja ilmastonmuutos",
+      "title": "Kasvihuoneilmiö ja ilmastojärjestelmä",
       "content": "KS aihe 4. Kasvihuoneilmiö, kasvihuonekaasut (vesihöyry, CO2, metaani, typpioksiduuli, otsoni) ja ilmastonmuutoksen laajat vaikutukset.",
+      "summary": "Luonnollinen kasvihuoneilmiö vs. voimistunut kasvihuoneilmiö, tärkeimmät kasvihuonekaasut, säteilytasapaino ja ilmastonmuutoksen fysikaaliset vaikutukset.",
+      "theory": "<p><strong>Kasvihuoneilmiö</strong> on luonnollinen fysikaalinen ilmiö, joka tekee elämän maapallolla mahdolliseksi:</p><h4>1. Miten kasvihuoneilmiö toimii fysiikan näkökulmasta?</h4><ol><li>Auringon lyhytaaltoinen näkyvä valo ja UV-säteily läpäisevät ilmakehän ja lämmittävät Maan pintaa.</li><li>Lämmennyt maanpinta säteilee lämpöä takaisin kohti avaruutta <strong>pitkäaaltoisena infrapunasäteilynä (lämpösäteilynä)</strong>.</li><li>Ilmakehän <strong>kasvihuonekaasut</strong> absorboivat osan tästä infrapunasäteilystä ja säteilevät sitä takaisin maanpintaa kohti.</li></ol><p><em>Ilman luonnollista kasvihuoneilmiötä maapallon keskilämpötila olisi $-18^\\circ\\text{C}$ nykyisen $+15^\\circ\\text{C}$ sijasta – koko planeetta olisi syväjäässä!</em></p><h4>2. Tärkeimmät kasvihuonekaasut</h4><ul><li><strong>Vesihöyry ($H_2O$)</strong>: Luonnollisen kasvihuoneilmiön voimakkain kaasu (vastaa noin 60 % vaikutuksesta).</li><li><strong>Hiilidioksidi ($CO_2$)</strong>: Ihmiskunnan fossiilisten polttoaineiden polton suurin päästö, säilyy ilmakehässä satoja vuosia.</li><li><strong>Metaani ($CH_4$)</strong>: Peräisin maataloudesta, karjataloudesta ja kaatopaikoilta. Sitouttaa lämpöä yli 25 kertaa tehokkaammin kuin $CO_2$.</li><li><strong>Dityppioksidi ($N_2O$, ilokaasu)</strong> ja <strong>otsoni ($O_3$)</strong>.</li></ul><h4>3. Voimistunut kasvihuoneilmiö ja ilmastonmuutos</h4><p>Kun kasvihuonekaasujen pitoisuus ilmakehässä nousee, lämpöenergiaa jää enemmän Maan ilmastojärjestelmään. Seurauksena on merten lämpeneminen, jäätiköiden sulaminen, merenpinnan nousu ja sään ääri-ilmiöiden (myrskyt, kuivuus, rankkasateet) yleistyminen.</p>",
       "tasks": {
         "theory": "Ilmastonmuutos oppilastyön tehtävänanto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Venus vastaan Maa: Karkaava kasvihuoneilmiö naapuriplaneetalla",
+        "content": "<h4>Miksi Venus on kuumempi kuin Aurinkoa lähempänä oleva Merkurius?</h4><p>Venus on lähes samankokoinen kiviplaneetta kuin Maa. Mutta kun maapallolla on leuto $+15^\\circ\\text{C}$, Venuksen pinnalla lämpötila on huimat <strong>$+465^\\circ\\text{C}$</strong> – riittävän kuuma sulattamaan tinaa ja lyijyä!</p><h4>Karkaava kasvihuoneilmiö (Runaway Greenhouse Effect)</h4><p>Venuksen kaasukehä on 96 % puhdasta hiilidioksidia, ja sen ilmakehän paine pinnalla on 92 kertaa suurempi kuin Maassa. Menneisyydessä Venuksella saattoi olla nestemäisiä meriä, mutta Auringon lämmön noustessa vedet höyrystyivät, mikä voimisti kasvihuoneilmiötä entisestään. Kiertokulku karkasi hallitsemattomaan ketjureaktioon, josta syntyi aurinkokunnan kuumin pätsi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Neuvostoliiton Venera-avaruusluotaimet onnistuivat laskeutumaan Venuksen pinnalle 1970- ja 1980-luvuilla, mutta planeetan musertava paine ja äärilämpö tuhosivat luotainten elektroniikan alle kahdessa tunnissa!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Kasvihuoneilmiö ja ilmakehän säteilytasapaino",
+        "url": "https://phet.colorado.edu/fi/simulations/greenhouse-effect"
+      }
     },
     {
       "lesson": 5,
       "topic": "Säteily ja radioaktiivisuus",
+      "title": "Säteilylajit ja radioaktiivinen hajoaminen",
       "content": "KS aihe 5. Säteilylajit: sähkömagneettinen ja hiukkassäteily, ionisoiva säteily. Alfa-, beeta- ja gammasäteily sekä niiden läpäisykyky.",
+      "summary": "Sähkömagneettinen säteily vs. hiukkassäteily, ionisoiva säteily, alfa-, beeta- ja gammasäteilyn ominaisuudet ja läpäisykyky eri väliaineissa.",
+      "theory": "<p>Säteily jaetaan kahteen päätyyppiin: <strong>sähkömagneettiseen aaltoliikkeeseen</strong> (valo, radioaallot, röntgen, gamma) ja <strong>hiukkassäteilyyn</strong> (alfa, beeta, neutronit, aurinkotuuli).</p><h4>Ionisoiva säteily</h4><p>Jos säteilyn energia on riittävän suuri irrottamaan atomeista elektroneja (eli tekemään niistä ioneja), sitä kutsutaan <strong>ionisoivaksi säteilyksi</strong>. Se voi vaurioittaa elävien solujen DNA-molekyylejä.</p><h4>Radioaktiivisen säteilyn kolme lajia:</h4><table class=\"styled-table\"><thead><tr><th>Säteilylaji</th><th>Mitä se on?</th><th>Sähkövaraus</th><th>Läpäisykyky ja suojaus</th></tr></thead><tbody><tr><td><strong>Alfasäteily ($\\alpha$)</strong></td><td>Heliumytimiä ($^4_2\\text{He}$, 2 protonia + 2 neutronia)</td><td>$+2$</td><td>Pysähtyy jo <strong>paperiarkkiin tai ihon kuolleeseen pintakerrokseen</strong>. Vaarallista vain nieltynä tai hengitettynä (radonkaasu)!</td></tr><tr><td><strong>Beetasäteily ($\\beta$)</strong></td><td>Nopeita elektroneja ($\\beta^-$) tai positroneja ($\\beta^+$)</td><td>$-1$ tai $+1$</td><td>Läpäisee paperin, mutta pysähtyy <strong>ohueen alumiinilevyyn</strong> tai puuhun.</td></tr><tr><td><strong>Gammasäteily ($\\gamma$)</strong></td><td>Suurienergistä sähkömagneettista säteilyä ytimestä</td><td>$0$ (varaukseton)</td><td>Erittäin läpitunkevaa! Vaatii suojaksi <strong>paksun lyijykerroksen</strong> tai useita metrejä betonia.</td></tr></tbody></table><h4>Muuta avaruuden hiukkassäteilyä</h4><ul><li><strong>Aurinkotuuli</strong>: Auringosta sinkoutuvaa plasmaa (protoneja ja elektroneja). Maan magneettikenttä ohjaa ne napojen lähelle synnyttäen revontulia.</li><li><strong>Kosminen säteily</strong>: Linnunradan ulkopuolelta ja supernovaräjähdyksistä saapuvia lähes valonnopeudella liikkuvia ytimiä.</li></ul>",
       "tasks": {
         "theory": "Radioaktiivisuuden oppilastyön tehtävänanto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Marie Curie ja radioaktiivisuuden keksintö: Kaksi Nobelia ja loistavat muistikirjat",
+        "content": "<h4>Tieteen suuri edelläkävijä</h4><p>Puolalais-ranskalainen fyysikko ja kemisti <strong>Marie Skłodowska-Curie</strong> (1867–1934) keksi sanan <em>radioaktiivisuus</em> tutkiessaan uraanimalmin mystistä säteilyä miehensä Pierren kanssa. Hän eristi tonnien kokoisista pikivälkimalmimassoista kaksi uutta alkuainetta: <strong>poloniumin</strong> (kotimaansa Puolan mukaan) ja <strong>radiumin</strong>.</p><h4>Ainutlaatuinen saavutus</h4><p>Marie Curie on historian ainoa ihminen, joka on voittanut Nobel-palkinnon <strong>kahdella eri tieteenalalla</strong>: fysiikassa vuonna 1903 ja kemiassa vuonna 1911. Ensimmäisen maailmansodan aikana hän kehitti liikuteltavia röntgenautoja ('Petites Curies') rintamasotilaiden luodinreikien ja murtumien kuvaamiseen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Koska säteilyn vaaroja ei tuolloin vielä tunnettu, Marie Curie kantoi radioaktiivisia koeputkia takintaskussaan. Hänen alkuperäiset muistikirjansa ja laboratoriopäiväkirjansa ovat Pariisin kansalliskirjastossa edelleen niin radioaktiivisia, että tutkijoiden on käytettävä lyijysuojapukuja niitä lukiessaan!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Alfa- ja beetasäteilyn hajoaminen",
+        "url": "https://phet.colorado.edu/fi/simulations/alpha-decay"
+      }
     },
     {
       "lesson": 6,
       "topic": "Luonnon happamoituminen",
+      "title": "Veden kiertokulku ja happosateet",
       "content": "KS aihe 6. Veden kiertokulku, typen ja rikin oksidit (NO2, SO2), happosateet ja luonnon puskurointikyky.",
+      "summary": "Veden hydrologinen kierto olomuodonmuutoksineen, teollisuuden epämetallioksidit, happosateiden synty ja luonnon puskurointikyky.",
+      "theory": "<p>Vesi kiertää maapallolla jatkuvassa hydrologisessa kierrossa kolmessa eri olomuodossa: <strong>kiinteänä (jää, lumi)</strong>, <strong>nesteenä (vesi)</strong> ja <strong>kaasuna (vesihöyry)</strong>.</p><h4>1. Veden kiertokulku</h4><ul><li><strong>Haihtuminen (evaporaatio)</strong>: Auringon lämpöenergia höyrystää vettä meristä ja järvistä.</li><li><strong>Kasvien haihdutus (transpiraatio)</strong>: Kasvit nostavat vettä maaperästä ja haihduttavat sitä lehtien ilmarakojen kautta.</li><li><strong>Tiivistyminen (kondensaatio)</strong>: Vesihöyry kohoaa viileämpään ilmaan ja tiivistyy pisaroiksi muodostaen pilviä.</li><li><strong>Sadanta (presipitaatio)</strong>: Vesi sataa vetenä, räntänä tai lumena takaisin maaperään.</li></ul><h4>2. Miten happosateet syntyvät?</h4><p>Fossiilisten polttoaineiden (erityisesti kivihiilen ja öljyn) poltossa vapautuu ilmaan epämetallioksideja: <strong>rikin oksideja ($SO_2, SO_3$)</strong> ja <strong>typen oksideja ($NO, NO_2$)</strong>. Kun nämä reagoivat ilmakehän vesipisaroiden kanssa, syntyy vahvoja happoja:</p><p>$$2\\text{NO}_2 + \\text{H}_2\\text{O} \\longrightarrow \\text{HNO}_2 + \\text{HNO}_3 \\quad \\text{(typpihappo)}$$</p><p>$$\\text{SO}_3 + \\text{H}_2\\text{O} \\longrightarrow \\text{H}_2\\text{SO}_4 \\quad \\text{(rikkihappo)}$$</p><h4>Happosateiden seuraukset</h4><p>Sadeveden normaali pH on noin $5{,}6$ (luonnollisen hiilidioksidin takia). Happosateissa pH voi laskea arvoon $4$ tai jopa alemmas. Tämä liuottaa maaperästä myrkyllisiä metalleja (kuten alumiinia) vesistöihin, vaurioittaa puiden lehtiä ja neulasia sekä syövyttää kalkkikivisiä rakennuksia ja patsaita.</p>",
       "tasks": {
         "theory": "Luonnon happamoituminen -tutkimustehtävä"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Happosateet 1980-luvulla: Miten savukaasujen pesurit pelastivat metsät?",
+        "content": "<h4>Keski-Euroopan metsäkuolemat (Waldsterben)</h4><p>1980-luvulla sanomalehdet täyttyivät kuvista kuolleista havumetsistä Saksassa, Ruotsissa ja Suomessa. Kivihiilivoimaloiden ja tehtaiden rikkipäästöt levisivät tuulten mukana satojen kilometrien päähän ja happamoittivat tuhansia pohjoisia järviä kalattomiksi.</p><h4>Rikinpoistoteknologia ja autojen katalysaattorit</h4><p>Kriisi ratkaistiin insinööritaidolla ja tiukoilla päästörajoilla: voimalaitoksiin asennettiin <strong>savukaasujen rikinpoistolaitokset</strong>, joissa rikkidioksidi sidotaan kalkkikivellä kipsiksi. Autoihin määrättiin pakollisiksi <strong>katalysaattorit</strong>, jotka pelkistävät typen oksidit vaarattomaksi typpikaasuksi ($N_2$). Päästöt saatiin laskemaan yli 80 prosenttia!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Suomessa monia happamoituneita järviä pelastettiin 1980-luvulla kalkitsemalla niitä helikoptereista kalkkikivijauheella, mikä palautti veden luonnollisen puskurikyvyn ja pelasti kalakannat!</div>"
+      },
+      "simulation": {
+        "title": "PhET: pH-asteikko ja liuosten happamuus",
+        "url": "https://phet.colorado.edu/fi/simulations/ph-scale"
+      }
     },
     {
       "lesson": 7,
       "topic": "Aurinkokunta",
+      "title": "Aurinkokunta, planeetat ja Kuu",
       "content": "KS aihe 7. Aurinkokunnan planeetat (kivi- ja kaasuplaneetat), etäisyydet (AU). Kuu ja sen vaiheet, vuorovesi. Kääpiöplaneetat, asteroidit, komeetat, meteoroidit ja Oortin pilvi.",
+      "summary": "Aurinkokunnan rakenne: 8 planeettaa (kivi- ja jättiläisplaneetat), tähtitieteellinen yksikkö AU, Kuun vaiheet ja vuorovedet sekä pienkappaleet.",
+      "theory": "<p>Oma <strong>Aurinkokuntamme</strong> muodostuu Auringosta, sitä kiertävästä 8 planeetasta, kääpiöplaneetoista, sadoista kuista sekä miljoonista asteroideista ja komeetoista.</p><h4>1. Planeetat Auringosta ulospäin:</h4><ul><li><strong>Sisemmät kiviplaneetat</strong> (metallinen ydin, kivikuori, pieni koko, vähän kuita):<br>1. <strong>Merkurius</strong> (ei ilmakehää, valtavat lämpötilaerot $-200...+400^\\circ\\text{C}$)<br>2. <strong>Venus</strong> (paksu $CO_2$-ilmakehä, $+465^\\circ\\text{C}$)<br>3. <strong>Maa</strong> (vettä, happea, elämää, 1 kuu)<br>4. <strong>Mars</strong> (ohut ilmakehä, rautaoksidin punertava pinta, 2 kuuta)</li><li><strong>Ulommat jättiläisplaneetat</strong> (kaasu- ja jääjättiläiset, suuri koko, rengasjärjestelmät, kymmeniä kuita):<br>5. <strong>Jupiter</strong> (suurin planeetta, vetyä ja heliumia, suuri punainen pilkku, Galilein kuut)<br>6. <strong>Saturnus</strong> (upea rengasjärjestelmä, alhainen tiheys alle veden tiheyden, Titan-kuu)<br>7. <strong>Uranus</strong> (akseli kallellaan kyljellään, metaanin sinertävä väri)<br>8. <strong>Neptunus</strong> (aurinkokunnan nopeimmat myrskytuulet yli $2000\\text{ km/h}$)</li></ul><h4>2. Tähtitieteellinen yksikkö (AU)</h4><p>$$\\mathbf{1\\text{ AU} = 149{,}6 \\cdot 10^6\\text{ km} \\approx 150 \\text{ miljoonaa km}}$$</p><p>Maan keskietäisyys Auringosta toimii Aurinkokunnan mittatikkuna (Jupiter on n. $5{,}2\\text{ AU}$, Neptunus n. $30\\text{ AU}$).</p><h4>3. Kuu, kuun vaiheet ja vuorovesi</h4><p>Kuu kiertää Maan noin 29,5 vuorokaudessa. Kuun vaiheet (uusikuu, nouseva sirppi, puolikuu, täysikuu, vähenevä kuu) johtuvat Auringon valon ja Maan varjon suhteellisista kulmista. Kuun gravitaatio vetää Maan valtameriä puoleensa synnyttäen <strong>vuoroveden (nousuvesi ja laskuvesi)</strong> noin 12 tunnin jaksoissa.</p>",
       "tasks": {
         "theory": "Aurinkokunta tehtävänanto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Pale Blue Dot: Kuva Maasta 6 miljardin kilometrin päästä",
+        "content": "<h4>Tähtitieteilijä Carl Saganin vetoomus</h4><p>Vuonna 1990 NASAn <strong>Voyager 1</strong> -luotain oli saavuttanut aurinkokunnan laidan suoritettuaan Jupiterin ja Saturnuksen tutkimukset. Tähtitieteilijä Carl Sagan pyysi NASAa kääntämään luotaimen kameran vielä kerran ympäri taaksepäin ottamaan kuvan kotoplaneetastaan.</p><h4>Yhden pikselin kokoinen koti</h4><p>Kuvassa maapallo näkyy vain himmeänä, $0{,}12$ pikselin kokoisena sinisenä pisteenä heijastuvassa auringonsäteessä. Sagan kirjoitti tästä kuuluisan pohdinnan:</p><blockquote><em>'Katso tuota pistettä. Se on täällä. Se on koti. Se olemme me. Kaikki joita rakastat, kaikki jotka tunnet, jokainen ihminen joka koskaan eli, eli elämänsä tuolla auringonsäteessä leijuvalla tomupiirtosella.'</em></blockquote><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Voyager 1 kulkee tällä hetkellä tähtienvälisessä avaruudessa yli $61\\,000\\text{ km/h}$ nopeudella ja se on kaukaisin koskaan tehty ihmiskunnan esine yli 24 miljardin kilometrin päässä Maasta!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Painovoima ja Aurinkokunnan kiertoradat",
+        "url": "https://phet.colorado.edu/fi/simulations/gravity-and-orbits"
+      }
     },
     {
       "lesson": 8,
       "topic": "Tähdet ja tähden elinkaari",
+      "title": "Tähdet, fuusio ja tähden elinkaari",
       "content": "KS aihe 8. Tähtien energianlähde (fuusioreaktiot). Auringon rakenne ja auringonpilkut. Tähden elinkaari: pääsarja, punainen jättiläinen, valkoinen kääpiö, supernova, neutronitähti ja musta aukko. Lähitähdet ja tähdistöt.",
+      "summary": "Tähtien fuusioreaktiot (H -> He), Auringon kerrokset ja pilkut, tähden elinkaaren vaiheet massan mukaan sekä neutronitähdet ja mustat aukot.",
+      "theory": "<p>Toisin kuin planeetat, <strong>tähdet tuottavat itse omaa valoa ja energiaa</strong> ytimessään tapahtuvilla ydinreaktioilla.</p><h4>1. Tähtien energianlähde: Ydinfuusio</h4><p>Auringon ytimessä vallitsee $15\\,000\\,000^\\circ\\text{C}$ lämpötila ja valtava paine. Äärimmäisissä oloissa vetyatomien ytimet (protonit) törmäävät ja sulautuvat yhteen muodostaen <strong>heliumytimiä</strong>:</p><p>$$4\\,^1_1\\text{H} \\longrightarrow \\,^4_2\\text{He} + 2\\,\\text{e}^+ + 2\\,\\nu_e + \\text{energiaa}$$</p><p>Reaktiossa pikkuruinen osa massasta muuttuu Einsteinin kuuluisan kaavan $\\mathbf{E = mc^2}$ mukaisesti puhtaaksi säteilyenergiaksi!</p><h4>2. Auringon rakenne</h4><ul><li><strong>Ydin</strong>: Fuusioreaktioiden keskus (n. 1/3 säteestä).</li><li><strong>Säteilyvyöhyke ja konvektiovyöhyke</strong>: Energia siirtyy ulospäin ensin säteilemällä ja sitten kiehuvan plasman virtauksina.</li><li><strong>Fotosfääri</strong>: Auringon näkyvä pintakerros (n. $5500^\\circ\\text{C}$). Pinnalla näkyy viileämpiä <strong>auringonpilkkuja</strong> (voimakkaat magneettikentät).</li><li><strong>Korona</strong>: Miljoonasteinen ulompi kaasukehä, joka puhaltaa avaruuteen <strong>aurinkotuulta</strong>.</li></ul><h4>3. Tähden elinkaari massan mukaan</h4><ul><li><strong>Auringon kokoinen tähti</strong>: Pääsarja ($10\\text{ mrd vuotta}$) $\\to$ Punainen jättiläinen $\\to$ Planetaarinen sumu $\\to$ <strong>Valkoinen kääpiö</strong> $\\to$ Musta kääpiö.</li><li><strong>Massiivinen tähti (> 8 Aurinkoa)</strong>: Pääsarja $\\to$ Punainen superjättiläinen $\\to$ <strong>Supernovaräjähdys</strong> $\\to$ Jäänteenä joko <strong>neutronitähti (pulsari)</strong> tai äärimmäisen massiivisilla <strong>musta aukko</strong>!</li></ul>",
       "tasks": {
         "theory": "Tähdet tehtävänanto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Arthur Eddington ja vuoden 1919 auringonpimennys: Einsteinin voitto",
+        "content": "<h4>Valo taipuu painovoiman vaikutuksesta</h4><p>Vuonna 1915 Albert Einstein esitti yleisen suhteellisuusteoriansa: suuri massa ei vedä esineitä puoleensa näkymättömällä voimalla, vaan <strong>kaareuttaa ympäröivää aika-avaruutta</strong>. Einstein väitti, että jopa kaukaisesta tähdestä tuleva valonsäde taipuu ohittaessaan läheltä massiivisen Auringon!</p><h4>Toukokuun 29. päivä 1919</h4><p>Brittiläinen tähtitieteilijä <strong>Arthur Eddington</strong> matkusti Príncipe-saarelle Afrikan länsirannikolle kuvaamaan täydellistä auringonpimennystä. Kun Kuu peitti Auringon häikäisevän kiekon, Auringon vieressä näkyvien tähtien paikat valokuvattiin.</p><p>Mittaukset vahvistivat Einsteinin ennusteen täsmälleen: tähtien valo oli taittunut Auringon painovoimakentässä! Uutinen teki Einsteinista maailmankuulun tieteen ikonin yhdessä yössä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Supernovaräjähdyksissä syntyvät kaikki rautaa raskaammat maailmankaikkeuden alkuaineet, kuten kulta, platina ja uraani: jokainen kultasormus maapallolla on peräisin muinaisen tähden räjähdyspilvestä!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Ydinfuusio ja tähtien energiantuotanto",
+        "url": "https://phet.colorado.edu/fi/simulations/nuclear-fission"
+      }
     },
     {
       "lesson": 9,
       "topic": "Galaksit ja tähtisumut",
+      "title": "Galaksit, tähtisumut ja Linnunrata",
       "content": "KS aihe 9. Galaksityypit: kierre-, ellipsi- ja kääpiögalaksit. Linnunrata ja paikallinen ryhmä. Aktiiviset galaksit ja kvasaarit. Tähtienvälinen aine ja sumutyypit.",
+      "summary": "Galaksien päätyypit (kierre, ellipsi, epäsäännölliset), kotigalaksimme Linnunrata, tähtienvälinen aine ja tähtisumut sekä supermassiiviset mustat aukot ja kvasaarit.",
+      "theory": "<p>Tähdet eivät leiju avaruudessa yksinään, vaan ne ovat ryhmittyneet satojen miljardien tähtien jättiläismäisiksi gravitaatiokeskittymiksi eli <strong>galakseiksi</strong>.</p><h4>1. Galaksityypit</h4><ul><li><strong>Kierregalaksit (spiraaligalaksit)</strong>: Litteitä pyöriviä kiekkoja, joissa on selkeät kierteishaarat, paljon kaasua ja pölyä sekä runsaasti uusia syntyviä tähtiä (esim. Linnunrata ja Andromeda).</li><li><strong>Ellipsigalaksit</strong>: Pallomaisia tai soikeita vanhojen tähtien keskittymiä, vähän kaasua, ei uusia tähtiä.</li><li><strong>Kääpiögalaksit ja epäsäännölliset galaksit</strong>: Pienempiä satelliittigalakseja (esim. Magellanin pilvet).</li></ul><h4>2. Kotigalaksimme Linnunrata (Milky Way)</h4><ul><li>Läpimitta noin $100\\,000$ valovuotta.</li><li>Sisältää $200 - 400$ miljardia tähteä.</li><li>Aurinkokuntamme sijaitsee Orionin haarassa noin $26\\,000$ valovuoden päässä keskustasta.</li><li>Ytimessä sijaitsee supermassiivinen musta aukko <strong>Sagittarius A*</strong> (massa n. 4 miljoonaa Auringon massaa).</li></ul><h4>3. Tähtienvälinen aine ja sumutyypit</h4><ul><li><strong>Pimeä sumu</strong>: Kylmää pölyä, joka peittää takana olevien tähtien valon (esim. Hevosenpääsumu).</li><li><strong>Heijastussumu</strong>: Pölypilvi heijastaa viereisten tähtien sinertävää valoa (esim. Seulaset / Plejadit).</li><li><strong>Emissiosumu (hehkuva kaasusumu)</strong>: Tähtien UV-valo ionisoi vetykaasun hehkumaan punaisena (esim. Orionin suuri kaasusumu, tähtien synnytyslaitos).</li><li><strong>Planetaarinen sumu</strong>: Kuolevan tähden avaruuteen puhaltamat ulkokerrokset (esim. Lyyran rengassumu).</li></ul>",
       "tasks": {
         "theory": "Galaksit ja tähtisumut tehtävänanto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Vuoden 1920 suuri väittely: Onko Linnunrata koko maailmankaikkeus?",
+        "content": "<h4>Saariuniversumit vastaan yksi Linnunrata</h4><p>Vielä 1920-luvun alussa tähtitieteilijät kiistelivät siitä, olivatko taivaalla kaukoputkilla näkyvät spiraalimaiset 'kierteissumut' vain Linnunradan sisäisiä kaasupilviä vai kokonaisia toisia galakseja ('saariuniversumeja').</p><h4>Edwin Hubble ja Andromedan etäisyys 1923</h4><p>Vuonna 1923 <strong>Edwin Hubble</strong> käytti Kalifornian Mount Wilsonin uutta 2,5-metristä Hooker-teleskooppia ja onnistui erottamaan Andromedan sumusta yksittäisiä kefeidi-muuttujatähtiä. Laskemalla niiden kirkkausvaihtelusta etäisyyden hän osoitti Andromedan sijaitsevan <strong>yli 2 miljoonan valovuoden päässä</strong> – kirkkaasti oman Linnunratamme ulkopuolella!</p><p>Ihmiskunnan käsitys universumin koosta räjähti yhdessä hetkessä miljoonakertaiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Noin 4,5 miljardin vuoden kuluttua oma Linnunratamme ja Andromeda-galaksi törmäävät toisiinsa ja sulautuvat yhteen muodostaen jättimäisen ellipsigalaxin ('Milkomeda')!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Galaksien spiraalikierteet ja gravitaatio",
+        "url": "https://www.geogebra.org/calculator"
+      }
     },
     {
       "lesson": 10,
       "topic": "Maailmankaikkeus",
+      "title": "Alkuräjähdys ja laajeneva avaruus",
       "content": "KS aihe 10. Alkuräjähdys (Big Bang), aineen ja säteilyn kehitys, kosmisen taustasäteilyn synty. Universumin laajeneminen, punasiirtymä ja tulevaisuuden skenaariot.",
+      "summary": "Alkuräjähdysteoria (Big Bang 13,8 mrd v), aineen synty, 380 000 v taustasäteily (CMB), Hubblen laajenemislaki, punasiirtymä ja kosmoksen tulevaisuus.",
+      "theory": "<p>Nykytieteen mukaan koko maailmankaikkeus (aika, avaruus ja kaikki energia) syntyi noin <strong>13,8 miljardia vuotta sitten</strong> tapahtumassa, jota kutsutaan <strong>alkuräjähdykseksi (Big Bang)</strong>.</p><h4>1. Kosminen aikajana</h4><ul><li><strong>Alkuhetki ($t = 0$)</strong>: Äärimmäisen suuri tiheys ja lämpötila, singulariteetti. Ei ainetta, vain puhdasta säteilyä ja vuorovaikutuksia.</li><li><strong>Inflaatio ($10^{-36}\text{ s}$)</strong>: Avaruus laajeni sekunnin murto-osassa käsittämättömällä nopeudella.</li><li><strong>Hiukkasten synty</strong>: Energian tiivistyessä muodostui kvarkkeja, protoneja ja elektroneja. Aine voitti antiaineen (symmetriarikko).</li><li><strong>380 000 vuotta: Kosminen taustasäteily (CMB)</strong>: Lämpötila laski noin $3000\\text{ K}$ tasolle. Elektronit sitoutuivat atomiytimiin $\\implies$ <strong>avaruudesta tuli läpinäkyvä</strong> ja valo pääsi etenemään ensimmäistä kertaa! Tämä säteily näkyy edelleen kaikkialla avaruudessa mikroaaltotaustana.</li><li><strong>Tähdet ja galaksit</strong>: Ensimmäiset tähdet syttyivät noin 400 miljoonaa vuotta alkuräjähdyksen jälkeen.</li></ul><h4>2. Laajeneva avaruus ja punasiirtymä</h4><p>Vuonna 1929 Edwin Hubble havaitsi, että kaukaiset galaksit loittonevat meistä sitä nopeammin, mitä kauempana ne ovat (<strong>Hubblen laki</strong>). Etääntyvän valon aallonpituus venyy pidemmäksi eli punaisemmaksi (<strong>Doppler-punasiirtymä</strong>). Tämä osoittaa, että avaruuskudos itsessään laajenee joka suuntaan!</p><h4>3. Universumin tulevaisuus: Big Freeze</h4><p>Pimeä energia kiihdyttää avaruuden laajenemista. Nykykäsityksen mukaan maailmankaikkeus laajenee ikuisesti: sadan miljardin vuoden kuluttua tähdet sammuvat, mustat aukot haihtuvat hitaasti Hawkingin säteilynä ja kosmokseen jää jäljelle vain lähes absoluuttisessa nollapisteessä harhailevaa säteilyä (lämpökuolema eli <em>Big Freeze</em>).</p>",
       "tasks": {
         "theory": "Maailmankaikkeus tehtävänanto"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Penzias, Wilson ja pulunlanta: Miten alkuräjähdyksen kaiku löydettiin 1964?",
+        "content": "<h4>Mistä ärsyttävä kohina radioteleskoopissa johtui?</h4><p>Vuonna 1964 Bell Labsin tutkijat <strong>Arno Penzias</strong> ja <strong>Robert Wilson</strong> testasivat New Jerseyssä herkkää torviantennia satelliittitiedonsiirtoa varten. Antennista kuului jatkuva tasainen kohina, joka tuli tasaisesti joka puolelta taivasta vuorokaudenajasta riippumatta.</p><h4>Puhdistustöistä Nobel-palkintoon</h4><p>He epäilivät aluksi antennin sisään pesiytyneitä kyyhkysiä ja puhdistivat antennin huolellisesti linnunlannasta, mutta kohina jatkui. Vasta keskusteltuaan Princetonin teoreettisten fyysikoiden kanssa he ymmärsivät tehneensä vuosisadan löydön:</p><p>Kohina oli <strong>alkuräjähdyksen kosminen taustasäteily (CMB)</strong>, joka oli matkannut halki avaruuden 13,8 miljardia vuotta ja jäähtynyt laajenemisen myötä mikroaalloiksi (lämpötila $2{,}73\\text{ Kelvin}$)! He saivat löydöstään Nobelin fysiikanpalkinnon vuonna 1978.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Vanhoissa analogisissa putkitelevisioissa noin 1 % kanavien välissä näkyneestä lumisateesta ja suhinasta johtui suoraan alkuräjähdyksen taustasäteilyn osumisesta tv-antenniin!</div>"
+      },
+      "simulation": {
+        "title": "PhET: Universumin laajeneminen ja punasiirtymä",
+        "url": "https://phet.colorado.edu/fi/simulations/wave-interference"
+      }
     },
     {
       "lesson": 11,
       "topic": "Tähtitaivaan matematiikkaa",
+      "title": "Tähtitieteen mittakaavat ja Keplerin lait",
       "content": "KS aihe 11. Valonnopeus c, valovuosi (vv), astronominen yksikkö (AU) ja parsek (pc). Näennäinen (m) ja absoluuttinen (M) magnitudi sekä etäisyyden laskeminen. Keplerin lait ja planeettojen radat.",
+      "summary": "Tähtitieteen etäisyysyksiköt (c, vv, AU, pc), kirkkausluokat ja etäisyysyhtälö r = 10 · 10^((m-M)/5) sekä Johannes Keplerin kolme liikelakia (T² = a³).",
+      "theory": "<p>Avaruuden tutkimuksessa etäisyydet ja liikeradat vaativat omat matemaattiset työkalunsa:</p><h4>1. Tähtitieteen etäisyysyksiköt</h4><ul><li><strong>Valonnopeus tyhjiössä ($c$)</strong>: $c \\approx 300\\,000\\text{ km/s}$</li><li><strong>Astronominen yksikkö ($1\\text{ AU}$)</strong>: Maan keskietäisyys Auringosta $\\approx 149{,}6 \\cdot 10^6\\text{ km}$. Valolta kestää Auringosta Maahan noin $8\\text{ min } 16\\text{ s}$.</li><li><strong>Valovuosi ($1\\text{ vv}$)</strong>: Matka, jonka valo kulkee yhdessä vuodessa:<br>$$s = c \\cdot t = 300\\,000\\text{ km/s} \\cdot (60 \\cdot 60 \\cdot 24 \\cdot 365\\text{ s}) \\approx \\mathbf{9{,}46 \\cdot 10^{12}\\text{ km}} \\quad \\text{(n. 9,5 biljoonaa km)}$$</li><li><strong>Parsek ($1\\text{ pc}$)</strong>: Etäisyys, josta $1\\text{ AU}$ näkyy yhden kaarisekunnin ($1'' = \\frac{1^\\circ}{3600}$) kulmassa:<br>$$1\\text{ pc} = \\frac{1\\text{ AU}}{\\tan 1''} \\approx 3{,}086 \\cdot 10^{13}\\text{ km} \\approx 206\\,265\\text{ AU} \\approx \\mathbf{3{,}26\\text{ valovuotta}}$$</li></ul><h4>2. Tähtien kirkkaudet ja etäisyysyhtälö</h4><ul><li><strong>Näennäinen magnitudi ($m$)</strong>: Tähden kirkkaus maasta havaittuna (mitä pienempi tai negatiivisempi luku, sitä kirkkaampi: Aurinko $-26{,}7$, Sirius $-1{,}43$).</li><li><strong>Absoluuttinen magnitudi ($M$)</strong>: Tähden todellinen kirkkaus, jos se sijaitsisi $10\\text{ parsekin}$ etäisyydellä (Aurinko $+4{,}8$, Sirius $+1{,}4$).</li><li><strong>Etäisyyden laskukaava parsekeina ($r$)</strong>:<br>$$\\mathbf{r = 10 \\cdot 10^{\\frac{m - M}{5}}}$$</li></ul><p><em>Esimerkki (Sirius):</em> $m = -1{,}43$ ja $M = +1{,}4$ $\\implies r = 10 \\cdot 10^{(-1{,}43 - 1{,}4)/5} = 10 \\cdot 10^{-0{,}566} \\approx 2{,}72\\text{ pc} \\approx 8{,}8\\text{ vv}$.</p><h4>3. Keplerin kolme liikelakia</h4><ol><li><strong>1. laki</strong>: Planeetat kiertävät Aurinkoa <strong>ellipsin muotoisilla radoilla</strong>, ja Aurinko on toisessa ellipsin polttopisteessä.</li><li><strong>2. laki</strong>: Auringosta planeettaan piirretty jana pyyhkii yhtä pitkinä aikoina yhtä suuret pinta-alat (planeetta liikkuu nopeammin ollessaan lähellä Aurinkoa).</li><li><strong>3. laki</strong>: Planeetan kiertoajan ($T$, vuosina) toinen potenssi on yhtä suuri kuin radan isoakselin puolikkaan ($a$, AU:ina) kolmas potenssi:<br>$$\\mathbf{T^2 = a^3}$$</li></ol><p><em>Esimerkki (Jupiter):</em> Kiertoaika on $T = 11{,}9\\text{ vuotta}$. Lasketaan etäisyys Auringosta:<br>$$a^3 = T^2 = 11{,}9^2 \\approx 141{,}61 \\implies a = \\sqrt[3]{141{,}61} \\approx \\mathbf{5{,}2\\text{ AU}}$$</p>",
       "tasks": {
         "theory": "FY_92: Tähtitaivaan matematiikkaa -harjoitustehtävät"
       },
-      "substituteNote": ""
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Johannes Kepler ja Marsin radan mysteeri: 8 kaariminuutin ero",
+        "content": "<h4>Kaksikymmentä vuotta Tycho Brahen mittausdataa</h4><p>Ennen 1600-lukua kaikki tähtitieteilijät Ptolemaioksesta Kopernikukseen uskoivat filosofiseen dogmiin: taivaankappaleiden kiertoratojen täytyi olla 'täydellisiä ympyröitä'. Tanskalainen Tyko Brahe teki vuosikymmeniä ennen kaukoputkea äärimmäisen tarkkoja havaintoja planeetoista.</p><h4>Kahdeksan kaariminuuttia, jotka kaatoivat 2000 vuoden fysiikan</h4><p>Brahen kuoltua hänen oppilaansa <strong>Johannes Kepler</strong> yritti sovittaa Marsin kiertorataa ympyrälle. Hän laski kuukausikaupalla käsin ja sai mallin täsmäämään lähes täydellisesti – lukuun ottamatta <strong>kahdeksan kaariminuutin ($8' = 0{,}13^\\circ$)</strong> pienen pientä poikkeamaa kahdessa havaintopisteessä!</p><p>Moni muu olisi kuitannut tämän mittausvirheenä, mutta Kepler luotti Brahen havaintojen tarkkuuteen. Hän hylkäsi ympyrät ja kokeili <strong>ellipsiä</strong>. Ellipsi selitti Marsin liikkeen täydellisesti ilman minkäänlaista poikkeamaa! Tämä avasi tien Isaac Newtonin gravitaatiolaille.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kepler kirjoitti: 'Jos olisin uskonut voivani jättää huomiotta nuo kahdeksan kaariminuuttia, olisin paikannut hypoteesini. Mutta koska niitä ei voinut ohittaa, nuo kahdeksan minuuttia yksin osoittivat tien koko tähtitieteen uudistamiseen!'</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Keplerin lait ja planeettojen kiertoradat",
+        "url": "https://www.geogebra.org/calculator"
+      }
     }
   ]
 }
