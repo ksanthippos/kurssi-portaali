@@ -104,11 +104,6 @@
         "weekdays": [1, 4],
         "exceptions": [
           {
-            "date": "2026-10-19",
-            "type": "KURSSIN ALOITUS",
-            "description": "Esittelyt, istumajärjestys, kurssin sisältö ja tavoitteet. Yleiset pelisäännöt ja arviointi. Kurssimateriaalin jakaminen."
-          },
-          {
             "date": "2026-12-10",
             "type": "KERTAUS",
             "description": "Kertaustehtävät ilmoitettu Wilmassa. Kirjoita muistiin itsellesi vaikeat asiat jo etukäteen, selvitellään niitä tunnilla."
