@@ -163,11 +163,7 @@
         "endDate": "2026-12-18",
         "weekdays": [1, 3],
         "exceptions": [
-          {
-            "date": "2026-10-19",
-            "type": "KURSSIN ALOITUS",
-            "description": "Esittelyt, istumajärjestys, kurssin sisältö ja tavoitteet. Yleiset pelisäännöt ja arviointi. Kurssimateriaalin jakaminen."
-          },
+        
           {
             "date": "2026-11-09",
             "type": "TET-harjoittelu",
