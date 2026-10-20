@@ -14,10 +14,6 @@
       "deepDive": {
         "title": "René Descartes ja kärpänen katossa: Koordinaatiston ja polynomien liitto 1637",
         "content": "<h4>Sairasvuoteessa katsellen kattoon</h4><p>Ranskalainen filosofi ja matemaatikko <strong>René Descartes</strong> makasi aamulla vuoteessaan ja seurasi katossa ryömivää kärpästä. Hän oivalsi, että kärpäsen tarkan sijainnin pystyi ilmoittamaan kahdella luvulla: sen etäisyydellä huoneen kahdesta seinästä!</p><h4>Analyyttisen geometrian synty</h4><p>Tästä oivalluksesta syntyi tuttu <strong>karteesinen koordinaatisto</strong>. Descartes osoitti, että jokainen algebrallinen polynomi vastaa geometrista käyrää ja jokainen käyrä vastaa yhtälöä. Tämä yhdisti geometrian ja algebran yhdeksi tieteenalaksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Descartesin kuuluisin filosofinen lause oli: <em>'Cogito, ergo sum'</em> ('Ajattelen, siis olen')!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Polynomien visualisointi koordinaatistossa",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -50,10 +46,6 @@
       "deepDive": {
         "title": "Al-Samawal ja polynomien algebra Bagdadissa 1149 jaa.",
         "content": "<h4>19-vuotiaan neron käsikirjoitus</h4><p>Juutalaissyntyinen lääkäri ja matemaatikko <strong>Al-Samawal al-Maghribi</strong> kirjoitti 19-vuotiaana Bagdadissa teoksen <em>al-Bahir fi'l-jabr (Loistava algebrassa)</em>. Hän määritteli ensimmäisenä polynomien jakolaskun ja negatiiviset eksponentit.</p><p>Al-Samawal kirjoitti algebran voimasta: <em>'Käyttämällä algebrallisia operaatioita tuntemattomiin samalla tavalla kuin aritmetiikkaa numeroihin, me teemme näkymättömästä näkyvän ja tuntemattomasta tunnetun.'</em></p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tekijöihin jakoa käytetään nykyään salakirjoituksessa (RSA-salaus): kahden valtavan satalukuisen alkuluvun tulo on helppo laskea, mutta tulon jakaminen takaisin tekijöihinsä kestäisi tietokoneilta miljoonia vuosia!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Polynomien tekijöihin jako",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -86,10 +78,6 @@
       "deepDive": {
         "title": "Tekoäly ja sanallisten tehtävien ymmärtäminen (NLP)",
         "content": "<h4>Miksi sanallinen tehtävä on tietokoneelle vaikea?</h4><p>Tietokone ratkaisee yhtälön $10x + 5(120 - x) = 850$ nanosekunnissa. Mutta tehtävän tekstin (<em>'Koulun esitykseen myytiin...'</em>) kääntäminen kyseiseksi yhtälöksi vaatii luonnollisen kielen ymmärtämistä (Natural Language Processing, NLP).</p><p>Modernit suuret kielimallit (kuten ChatGPT ja Gemini) oppivat tunnistamaan tekstistä asiayhteyksiä, rooleja ja reaalimaailman rajoitteita matematiikan kielelle kääntämiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kun opettelet kääntämään sanallisen tehtävän yhtälöksi, harjoittelet täsmälleen samaa abstraktin mallintamisen taitoa, jota tarvitaan ohjelmistosuunnittelussa ja data-analytiikassa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Sanallisten tehtävien mallintaminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -108,10 +96,6 @@
       "deepDive": {
         "title": "Yhtälöparien universaali voima arjessa ja taloudessa",
         "content": "<h4>Mihin yhtälöpareja tarvitaan?</h4><p>Aina kun kahden toisiinsa vaikuttavan tuntemattoman arvo halutaan selvittää, tarvitaan yhtälöpari:</p><ul><li><strong>Yrityksen nollatulos (Break-even point)</strong>: Tulojen yhtälö ja menojen yhtälö muodostavat yhtälöparin, jonka leikkauspiste kertoo, kuinka monta tuotetta yrityksen on myytävä tehdäkseen voittoa.</li><li><strong>Ravintotiede</strong>: Kaloreiden ja proteiinien saannin optimointi kahdesta eri ruoka-aineesta.</li><li><strong>Navigointi</strong>: Laivan paikan määrittäminen kahden eri majakan suuntimien leikkauksesta.</li></ul><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Aaltosulku $\\{\\}$ yhtälöparin edessä tarkoittaa loogista 'JA'-operaatiota (konjunktiota): molempien yhtälöiden on oltava totta samaan aikaan!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Yhtälöparin ratkaisuparin kokeileminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -130,10 +114,6 @@
       "deepDive": {
         "title": "Muuttujan eliminoinnin idea: Vaikeasta ongelmasta tuttuun",
         "content": "<h4>Ongelman pelkistäminen</h4><p>Koko sijoituskeinon syvin matemaattinen idea on <strong>muuttujan eliminointi</strong>: emme osaa heti ratkaista yhtälöä, jossa on kaksi tuntematonta, mutta osaamme ratkaista yhden muuttujan yhtälön hetkessä!</p><p>Sijoittamalla $y$:n tilalle $x$:stä riippuva lauseke muuttuja $y$ poistuu yhtälöstä kokonaan ja jäljelle jää vain tuttu 7. luokan yhtälö. Tätä tekniikkaa käytetään yliopistotason matematiikassa satojen muuttujien epälineaarisissa järjestelmissä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos sijoituksen jälkeen saat tulokseksi $0 = 0$, yhtälöparilla on ääretön määrä ratkaisuja; jos saat $0 = 7$, yhtälöparilla ei ole ratkaisua!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Sijoituskeinon vaiheittainen ratkaisu",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -152,10 +132,6 @@
       "deepDive": {
         "title": "Carl Friedrich Gauss ja Gaussin eliminointimenetelmä",
         "content": "<h4>Matematiikan ruhtinas (Princeps Mathematicorum)</h4><p>Saksalainen huippumatemaatikko <strong>Carl Friedrich Gauss</strong> (1777–1855) kehitti järjestelmällisen menetelmän kymmenien ja satojen yhtälöiden ratkaisemiseen yhteenlaskukeinon avulla.</p><h4>Kääpiöplaneetta Cereksen löytö 1801</h4><p>Kun tähtitieteilijä Giuseppe Piazzi hukkasi vastalöydetyn kääpiöplaneetta Cereksen Auringon häikäisyyn vain muutaman havaintopisteen jälkeen, 24-vuotias Gauss ratkaisi havaintodatan laajan yhtälöryhmän eliminointimenetelmällään ja ennusti täsmälleen paikan, josta Ceres löytyi kaukoputkella uudelleen!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneiden 3D-grafiikka, fysiikkamoottorit ja tekoälyverkot ratkaisevat nykyään Gaussin eliminointiin perustuvilla matriisialgoritmeilla miljoonia yhtälöitä joka sekunti!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Yhteenlaskukeinon allekkainlasku",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -174,10 +150,6 @@
       "deepDive": {
         "title": "Miksi yhtälöitä voi kertoa ja laskea yhteen puolittain?",
         "content": "<h4>Kahden vaa'an yhdistäminen</h4><p>Ajattele kahta erillistä tasapainossa olevaa vaakaa. Vaa'alla A vasemmassa kupissa on paino $2x + y$ ja oikeassa kupissa $11\\text{ kg}$. Vaa'alla B vasemmassa kupissa on $3x - y$ ja oikeassa kupissa $9\\text{ kg}$.</p><p>Jos kippaat molempien vaakojen vasemmat kupit yhteen isoon kuppiin ja oikeat kupit toiseen isoon kuppiin, uuden vaa'an on pakko olla edelleen täydellisessä tasapainossa! Yhtälöiden yhteenlaskeminen on fysikaalisesti ja loogisesti täysin luonnollista.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Moni opiskelija tekee virheen kertomalla vain yhtälön vasemman puolen mutta unohtaa kertoa oikean puolen luvun – muista kertoa vaa'an molemmat puolet!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Yhtälöparin lavennustyökalu",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -196,10 +168,6 @@
       "deepDive": {
         "title": "Kanojen ja kanien arvoitus: Muinaisen Kiinan 'Yhdeksän lukutaidon kirjaa' (Jiuzhang Suanshu)",
         "content": "<h4>Han-dynastian aikainen pulma 2000 vuoden takaa</h4><p>Muinaisessa kiinalaisessa klassikkoteoksessa <em>Jiuzhang Suanshu</em> esitetään kuuluisa pulma:</p><blockquote><em>'Häkissä on kanoja ja kaneja. Ylhäältä laskettuna päitä on yhteensä 35, ja alhaalta laskettuna jalkoja on yhteensä 94. Kuinka monta kanaa ja kania häkissä on?'</em></blockquote><h4>Yhtälöparin ratkaisu</h4><p>Olkoon kanoja $x$ (2 jalkaa) ja kaneja $y$ (4 jalkaa):</p><p>$$\\begin{cases} x + y = 35 \\\\ 2x + 4y = 94 \\end{cases}$$</p><p>Kerrotaan ylempi yhtälö luvulla $-2$ $\\implies -2x - 2y = -70$. Lasketaan yhteen $\\implies 2y = 24 \\implies \\mathbf{y = 12\\text{ kania}}$. Kanoja on $35 - 12 = \\mathbf{23\\text{ kanaa}}$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kiinalaiset ratkaisivat yhtälöparit jo 200 eaa. bambutikuilla ruudukossa käyttäen menetelmää, joka on täysin identtinen Gaussin eliminointikeinon kanssa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Sanallisten yhtälöparien mallintaminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -218,10 +186,6 @@
       "deepDive": {
         "title": "GPS-satelliittipaikannus ja trilateraatio: Kolmen tuntemattoman yhtälöryhmä",
         "content": "<h4>Miten kännykkä tietää missä olet?</h4><p>Kun avaat karttasovelluksen, puhelimesi vastaanottaa radiosignaaleja vähintään 4 eri GPS-satelliitilta, jotka kiertävät maapalloa $20\\,000\\text{ kilometrin}$ korkeudessa.</p><h4>Aikaero ja etäisyysyhtälöt</h4><p>Signaalin kulkuaika kertoo puhelimen etäisyyden kustakin satelliitista. Jokainen satelliitti muodostaa pallopinnan yhtälön avaruudessa $(x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2 = (c \\cdot \\Delta t_i)^2$. Puhelimen prosessori ratkaisee tämän neljän yhtälön epälineaarisen yhtälöryhmän ja löytää pisteen $(x, y, z)$, jossa pallot leikkaavat – eli tarkan sijaintisi metrin tarkkuudella!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> GPS-satelliittien kellot ottavat huomioon jopa Einsteinin suhteellisuusteorian aiheuttamat aikavääristymät: ilman tätä GPS-sijainti heittäisi yli 10 kilometriä joka ikinen päivä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Liikkeen ja nopeuden yhtälöparit",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -240,10 +204,6 @@
       "deepDive": {
         "title": "Graafinen tarkkuus vs. algebrallinen tarkkuus",
         "content": "<h4>Miksi tarvitsemme algebrallisia ratkaisukeinoja?</h4><p>Graafinen ratkaisu on nopea ja erittäin havainnollinen: näet heti suorien asennon ja summittaisen leikkauspisteen. Mutta mitä jos suorien leikkauspiste onkin $x = \\frac{17}{73} \\approx 0{,}23287...$ ja $y = 4\\frac{12}{19}$?</p><p>Paperille lyijykynällä piirretystä ruudukosta ei pysty millään lukemaan tällaisia murtolukuvastauksia tarkasti! Siksi sijoitus- ja yhteenlaskukeinot ovat välttämättömiä absoluuttisen tarkan vastauksen saamiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneohjelmat (kuten GeoGebra tai Desmos) yhdistävät molemmat: ne laskevat leikkauspisteen taustalla algebrallisesti ja piirtävät sen salamannopeasti graafisesti näytölle!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kahden suoran leikkauspiste ja yhtälöpari",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -262,10 +222,6 @@
       "deepDive": {
         "title": "George Dantzig ja lineaarinen optimointi: Miljoonien epäyhtälöiden ratkaisija",
         "content": "<h4>Nuori matemaatikko saapuu myöhässä luennolle</h4><p>Vuonna 1939 Berkeleyn yliopiston jatko-opiskelija <strong>George Dantzig</strong> saapui myöhässä kuuluisan professorin Jerzy Neymanin luennolle. Taululle oli kirjoitettu kaksi tilastotieteen tehtävää, jotka Dantzig luuli kotitehtäviksi. Hän pahoitteli viivästystä ja palautti ratkaisut muutamaa päivää myöhemmin todeten niiden olleen <em>'hieman tavallista vaikeampia'</em>.</p><h4>Kaksi ratkaisematonta ongelmaa</h4><p>Pian professori ryntäsi innoissaan Dantzigin ovelle: taululla olleet tehtävät eivät olleet kotitehtäviä, vaan kaksi kuuluisaa ratkaisematonta tilastotieteen ongelmaa, joita kukaan maailmassa ei ollut aiemmin kyennyt ratkaisemaan!</p><p>Myöhemmin toisen maailmansodan aikana Dantzig kehitti <strong>Simplex-algoritmin</strong> ja lineaarisen optimoinnin: menetelmän, jolla teollisuus ja lentoyhtiöt ratkaisevat nykyään tuhansien epäyhtälöiden järjestelmiä kuljetusreittien ja polttoaineen optimoimiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Dantzigin tositarina toimi inspiraationa kuuluisan elokuvan <em>Good Will Hunting</em> aloitukselle!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Epäyhtälöiden ratkaisualue koordinaatistossa",
-        "url": "https://www.geogebra.org/calculator"
       }
     }
   ]

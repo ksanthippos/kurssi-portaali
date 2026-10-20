@@ -18,10 +18,6 @@
       "deepDive": {
         "title": "Descartes ja sotilasinsinöörit: Miten kartesianismi syntyi vuoteessa maaten?",
         "content": "<h4>Vuoteessa makaava filosofi</h4><p>1600-luvun alun ranskalainen sotilas, filosofi ja matemaatikko <strong>René Descartes</strong> ei ollut aamuihminen: hänellä oli tapana maata sängyssä puolillepäivin mietiskelemässä. Katossa kävelevän kärpäsen seuraaminen herätti oivalluksen: kärpäsen paikka voitiin ilmaista kahdella etäisyydellä huoneen seinistä.</p><h4>Geometrian ja algebran avioliitto</h4><p>Tästä syntyi <em>kartesinen koordinaatisto</em>, joka yhdisti Eukleideen antiikin geometrian ja Al-Khwarizmin algebran toisiinsa. Yhtäkkiä geometrisia muotoja pystyttiin käsittelemään yhtälöinä ja funktioina!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Descartesin kuuluisa filosofinen lause 'Cogito, ergo sum' (Ajattelen, siis olen) syntyi samassa mietiskelykammiossa kuin matematiikan suorakulmainen koordinaatisto!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Koordinaatisto ja pisteiden piirtäminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -62,10 +58,6 @@
       "deepDive": {
         "title": "GPS-satelliitit ja funktioiden leikkauspisteet avaruudessa",
         "content": "<h4>Miten älypuhelimesi tietää missä seisot?</h4><p>Puhelimesi GPS-vastaanotin vastaanottaa jatkuvasti aikasignaaleja maapalloa kiertäviltä satelliiteilta. Jokainen satelliitti määrittää etäisyyden perusteella pallopinnan muotoisen funktioyhtälön:</p><p>$$(x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2 = (c \\cdot t_i)^2$$</p><p>Kun vastaanotat signaalin <strong>vähintään neljältä eri satelliitilta</strong>, puhelimesi fysiikkaprosessori ratkaisee näiden neljän funktion leikkauspisteen. Tämä leikkauspiste ilmoittaa sijaintisi maapallon pinnalla senttimetrien tarkkuudella!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> GPS-paikannus joutuu ottamaan huomioon myös Albert Einsteinin yleisen suhteellisuusteorian mukaisen ajan hidastumisen, muuten leikkauspiste heittäisi yli 10 kilometriä joka päivä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Funktio koordinaatistossa ja leikkauspisteet",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -84,10 +76,6 @@
       "deepDive": {
         "title": "Virheenkorjauskoodit ja kolmas piste: Informaatioteorian synty",
         "content": "<h4>Miksi tietoliikenne vaatii tarkistuspisteitä?</h4><p>Periaate, jonka mukaan suoralle tarvitaan kolmas piste varmistajaksi, on täsmälleen sama laki, joka suojaa kaikkea internetin tiedonsiirtoa ja WiFi-liikennettä. Claude Shannon loi 1940-luvulla <strong>informaatioteorian</strong>, jossa viesteihin lisätään ylimääräisiä tarkistusbittejä (<em>redundanssia</em>).</p><h4>Pariteetti ja Hamming-koodit</h4><p>Jos vastaanotat kaksi bittiä, et voi tietää onko toinen niistä korruptoitunut matkalla. Mutta jos lähetät kolmannen tarkistusbitin, tietokone pystyy automaattisesti havaitsemaan ja korjaamaan häiriön bittivirrassa ilman, että dataa täytyy lähettää uudestaan!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> QR-koodit käyttävät Reed-Solomon-virheenkorjauskoodia, joka perustuu korkea-asteisten polynomien leikkauspisteisiin: vaikka 30 % QR-koodista olisi lian peitossa tai repeytynyt pois, puhelimesi kamera lukee koodin silti täydellisesti!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Suoran piirtäminen taulukon avulla",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -106,10 +94,6 @@
       "deepDive": {
         "title": "Mitä liikennemerkin 12 % mäki tarkoittaa matematiikassa?",
         "content": "<h4>Vuoristotien varoitusmerkki</h4><p>Kun ajat autolla vuoristossa, tien varressa näkyy varoitusmerkki jyrkästä mäestä: esimerkiksi <strong>12 %</strong>. Mitä tämä prosentti tarkoittaa kulmakertoimena?</p><h4>Kulmakerroin prosentteina</h4><p>Tien kaltevuusprosentti on suoraan suoran kulmakerroin $k$ ilmoitettuna sadasosina:</p><p>$$12\\,\\% = \\frac{12}{100} = 0{,}12$$</p><p>Tämä tarkoittaa, että <em>jokaista 100 metrin vaakasuoraa etenemää kohti tie nousee (tai laskee) pystysuunnassa 12 metriä</em>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maailman jyrkin asuttu katu on Baldwin Street Uudessa-Seelannissa. Sen jyrkimmän kohdan kaltevuus on huikeat $35\\,\\%$, mikä vastaa kulmakerrointa $k = 0{,}35$ ja noin $19^\\circ$ nousukulmaa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Suoran yhtälön liukusäätimet k ja b",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -128,10 +112,6 @@
       "deepDive": {
         "title": "Fysiikan nopeus ja kiihtyvyys: Kulmakerroin luonnonlakina",
         "content": "<h4>Mitä kuvaajan jyrkkyys mittaa luonnontieteissä?</h4><p>Fysiikassa kulmakerroin ei ole pelkkä numero koordinaatistossa, vaan se kuvaa aina <strong>muutosnopeutta</strong>:</p><ul><li><strong>Aika-paikka-kuvaaja $(t, s)$</strong>: Pystyakselilla on matka ja vaaka-akselilla aika. Suoran kulmakerroin on $\\frac{\\Delta s}{\\Delta t} = \\mathbf{v}$ eli <strong>nopeus</strong>! Mitä jyrkempi suora, sitä kovempaa auto ajaa.</li><li><strong>Aika-nopeus-kuvaaja $(t, v)$</strong>: Pystyakselilla nopeus ja vaaka-akselilla aika. Kulmakerroin on $\\frac{\\Delta v}{\\Delta t} = \\mathbf{a}$ eli <strong>kiihtyvyys</strong>!</li></ul><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos auton aika-matka-kuvaaja on vaakasuora ($k = 0$), auto seisoo täysin paikallaan liikennevaloissa: aika kuluu, mutta matka ei etene lainkaan!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kulmakertoimen suorakulmainen kolmio",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -150,10 +130,6 @@
       "deepDive": {
         "title": "Miksi pystysuora suora ei ole funktio? Pystysuoratestin sääntö",
         "content": "<h4>Funktion perusvaatimus</h4><p>Funktion määritelmä sanoo: <em>jokaista syötettä $x$ kohti saa olla olemassa tasan yksi tuloste $y$</em>. Jos syötät juoma-automaattiin yhden euron ja painat nappia, et voi saada samalla hetkellä ulos kymmentä eri tölkkiä eri puolilta konetta.</p><h4>Pystysuoratesti (Vertical Line Test)</h4><p>Pystysuoralla suoralla $x = 3$ yhdellä ainoalla syötteellä $x = 3$ on <strong>äärettömän monta eri $y$:n arvoa</strong>! Tästä syystä pystysuora suora $x = 3$ on kyllä geometrinen suora, mutta se <strong>ei ole funktio</strong>. Kuvaaja esittää funktiota vain, jos mikään pystysuora viiva ei leikkaa sitä useammassa kuin yhdessä pisteessä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ympyrän yhtälö $x^2 + y^2 = r^2$ ei sekään ole funktio, koska pystysuora viiva leikkaa ympyrän kahdessa pisteessä (yläpuoliskossa ja alapuoliskossa)!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Vaaka- ja pystysuorat suorat koordinaatistossa",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -172,10 +148,6 @@
       "deepDive": {
         "title": "Lineaarinen regressio ja koneoppiminen: Miten tekoäly sovittaa suoria?",
         "content": "<h4>Tuhansia pisteitä ilman täydellistä suoraa</h4><p>Tosielämän mittauksissa (esim. asunnon neliömäärä vs. hinta tai opiskelutunnit vs. koearvosana) pisteet eivät koskaan osu täydellisesti yhdelle suoralle, vaan muodostavat hajanaisen pistepilven.</p><h4>Pienimmän neliösumman menetelmä (Linear Regression)</h4><p>Koneoppimisen perusmalli, <em>lineaarinen regressio</em>, etsii sellaisen suoran $y = kx + b$, joka minimoi mittauspisteiden ja suoran välisten pystysuorien etäisyyksien neliösumman. Tämä optimaalinen suora ennustaa tulevia arvoja – ja se ratkaistaan täsmälleen samoilla kulmakertoimen ja vakiotermin yhtälöillä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kaikki modernit tekoäly- ja sääennustemallit aloittavat opetusprosessinsa lineaarisella regressiolla ennen siirtymistä monimutkaisempiin neuroverkkoihin!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Suoran yhtälön algebrallinen ratkaisin",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -194,10 +166,6 @@
       "deepDive": {
         "title": "Satelliittilautaset ja taskulamput: Paraabelin maaginen polttopiste",
         "content": "<h4>Miksi satelliittiantennit ovat paraabeleja?</h4><p>Paraabelilla on ainutlaatuinen optinen ja geometrinen ominaisuus: sillä on piste nimeltä <strong>polttopiste (focus)</strong>.</p><p>Kaikki kaukaa avaruudesta yhdensuuntaisina tulevat radioaallot heijastuvat paraabelin pinnasta <em>täsmälleen samaan pisteeseen – polttopisteeseen</em>! Kun satelliittilautasen vastaanotin asetetaan tähän polttopisteeseen, heikkokin avaruudesta saapuva tv-signaali vahvistuu tuhansinkertaiseksi.</p><h4>Taskulamppu toimii toisin päin</h4><p>Taskulampussa tai auton ajovalossa polttopisteeseen asetettu hehkulamppu heijastaa valon eteenpäin täydellisen yhdensuuntaisena, kauas kantavana valokeilana!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Arkhimedeen kerrotaan puolustaneen kotikaupunkiaan Syrakusaa suuntaamalla vihollisen roomalaisiin laivoihin aurinkoa heijastavia paraabelipeilejä, jotka sytyttivät laivojen purjeet palamaan!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Perusparaabelin tutkiminen ja pisteiden asettaminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -216,10 +184,6 @@
       "deepDive": {
         "title": "Heittoliike ja riippusillat: Miksi painovoima piirtää aina paraabelin?",
         "content": "<h4>Potkaistun jalkapallon lentorata</h4><p>Kun potkaiset jalkapallon ilmaan, miksi sen lentorata on täydellinen alaspäin aukeava paraabeli? Galileo Galilei osoitti, että liike koostuu kahdesta riippumattomasta komponentista:</p><ol><li>Vaakasuora liike tasaisella nopeudella: $x = v_x \\cdot t$.</li><li>Pystysuora liike painovoiman vetämänä kiihtyvänä liikkeenä: $y = v_y \\cdot t - \\frac{1}{2} g t^2$.</li></ol><p>Kun aika $t$ eliminoidaan yhtälöistä, saadaan suoraan toisen asteen funktio: $y = ax^2 + bx$! Jokainen tykinkuula, koripallon heitto ja suihkulähteen vesisuihku piirtää ilmaan täsmällisen paraabelin.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Riippusiltojen (kuten Golden Gate -sillan) pääkannatinkaapelit asettuvat paraabelin muotoon, koska ne kannattelevat tasaista vaakasuoraa ajoradan painoa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Paraabelin parametrien a ja c tutkiminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -238,10 +202,6 @@
       "deepDive": {
         "title": "Nollakohdat taloudessa: Milloin yritys tekee nollatuloksen (Break-Even)?",
         "content": "<h4>Tappiosta voitolliseksi</h4><p>Liiketaloudessa jokainen uusi tuote aloittaa tappiolla, koska tuotekehitys ja tehtaiden pystyttäminen maksavat rahaa. Yrityksen tulosfunktio $T(x)$ kuvaa voittoa valmistettujen kappaleiden $x$ mukaan:</p><p>Piste, jossa $T(x) = 0$, on yrityksen <strong>kriittinen piste (Break-Even Point)</strong>. Se kertoo johtoryhmälle tarkan kappalemäärän, joka tuotetta on myytävä, jotta kaikki kiinteät ja muuttuvat kulut saadaan katettua ja yritys alkaa tuottaa voittoa ($T(x) > 0$)!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Elokuvateollisuudessa nollakohta lasketaan lipputuloista: esimerkiksi 200 miljoonan dollarin Hollywood-hittielokuvan on myytävä lippuja usein noin 400 miljoonalla päästäkseen nollatulokseen teattereiden ottamien osuuksien jälkeen!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Nollakohdat ja funktion etumerkin visualisointi",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -260,10 +220,6 @@
       "deepDive": {
         "title": "Optimointi tekoälyssä: Miten neuroverkot oppivat etsimällä minimiä?",
         "content": "<h4>Tekoälyn virhefunktio</h4><p>Kun tekoälymallia (kuten kielimallia tai kuvantunnistinta) koulutetaan, sille määritellään matemaattinen <em>häviöfunktio (Loss function)</em>. Se kuvaa tekoälyn tekemien virheiden määrää.</p><h4>Gradienttilaskeutuminen (Gradient Descent)</h4><p>Tekoälyn oppiminen on puhtaasti <strong>funktion pienimmän arvon (minimin) etsimistä</strong> satojen miljardien parametrien avaruudessa! Algoritmi ottaa pieniä askeleita alaspäin pitkin virhefunktion käyrää kohti laakson pohjaa – aivan kuten kuula vierii kulhossa kohti sen alinta pistettä. Kun minimi saavutetaan, tekoäly tekee mahdollisimman vähän virheitä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Weierstrassin min-max-lause todistaa, että jokaisella jatkuvalla funktiolla suljetulla välillä on matemaattisesti taatusti olemassa sekä suurin että pienin arvo!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Ääriarvot ja suurin sekä pienin arvo välillä",
-        "url": "https://www.geogebra.org/calculator"
       }
     }
   ]

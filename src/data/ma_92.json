@@ -18,10 +18,6 @@
       "deepDive": {
         "title": "Avaruuslävistäjä ja 3D-Pythagoras: Tulitikkuaskin kulmasta vastakkaiseen kulmaan",
         "content": "<h4>Miten mitataan pisin mahdollinen esine laatikon sisällä?</h4><p>Kuvitellaan laatikko, jonka mitat ovat $a$, $b$ ja korkeus $c$. Kuinka pitkä keppi laatikkoon mahtuu vinottain vastakkaisesta alakulmasta vastakkaiseen yläkulmaan?</p><h4>Kahden askeleen Pythagoras $\\to$ 3D-kaava</h4><ol><li>Lasketaan ensin pohjan lävistäjä $d_1$: $d_1^2 = a^2 + b^2$.</li><li>Muodostetaan pystysuora suorakulmainen kolmio, jonka kateetteina ovat pohjan lävistäjä $d_1$ ja korkeus $c$. Avaruuslävistäjä $D$ on sen hypotenuusa:<br>$$D^2 = d_1^2 + c^2 = (a^2 + b^2) + c^2$$</li></ol><p>Saadaan nerokas <strong>3D-Pythagoraan lause</strong>:</p><p>$$\\mathbf{D = \\sqrt{a^2 + b^2 + c^2}}$$</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lentoyhtiöiden matkalaukkusäännöt sallivat usein vain tietyn maksimipituuden, mutta suksia tai soittimia kuljettavat matkustajat hyödyntävät laukun avaruuslävistäjää saadakseen pitkän esineen mahtumaan kulmasta kulmaan!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: 3D-Pythagoras ja avaruuslävistäjä",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -40,10 +36,6 @@
       "deepDive": {
         "title": "Kuningatar Didon arvoitus ja isoperimetrinen ongelma",
         "content": "<h4>Miten saadaan suurin mahdollinen maa-alue yhdellä härännahalla?</h4><p>Antiikin legendan mukaan foinikialainen prinsessa <strong>Dido</strong> pakeni Afrikan rannikolle ja pyysi paikalliselta kuninkaalta maata vain sen verran, minkä yksi härännahka pystyy rajaamaan. Kuningas suostui huvittuneena pieneen pyyntöön.</p><h4>Ympyrän ylivoimainen geometria</h4><p>Dido leikkasi härännahan mikroskooppisen ohuiksi pitkiksi suikaleiksi ja yhdisti ne yhdeksi valtavaksi köydeksi. Köydellä hän rajasi maahan <strong>puoliympyrän muotoisen alueen</strong> merenrantaa vasten. Ympyrä sulkee sisäänsä suurimman mahdollisen pinta-alan millä tahansa kiinteällä ympärysmitalla! Tälle alueelle syntyi mahtava Karthagon kaupunki.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Saippuakuplat ja vesipisarat ovat aina täydellisen pyöreitä palloja täsmälleen saman isoperimetrisen lain vuoksi: pintajännitys pyrkii minimoimaan pinta-alan annetussa tilavuudessa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Tasokuvioiden pinta-alat",
-        "url": "https://www.geogebra.org/geometry"
       }
     },
     {
@@ -62,10 +54,6 @@
       "deepDive": {
         "title": "Miksi vesikuutio painaa tasan 1000 kg? Metrijärjestelmän nerokas perusta",
         "content": "<h4>Ranskan vallankumouksen harmoninen järjestelmä</h4><p>Ennen 1790-lukua Euroopassa oli käytössä tuhansia sekavia mittayksiköitä: kyynäriä, jalkoja, tynnyreitä ja nauloja. Ranskan vallankumouksen jälkeen tiedemiehet halusivat luoda järjestelmän, jossa <strong>pituus, tilavuus ja massa linkittyvät täydellisesti toisiinsa</strong>:</p><ol><li>Perustaksi otettiin <strong>metri</strong> (yksi kymmenesmiljoonasosa maapallon navan ja päiväntasaajan etäisyydestä).</li><li>Kuutio, jonka sivu on $1\\text{ dm}$ ($10\\text{ cm}$), nimettiin <strong>litraksi</strong> ($1\\text{ dm}^3 = 1\\text{ l}$).</li><li>Yhden litran ($1\\text{ dm}^3$) massaksi puhdasta vettä $+4^\\circ\\text{C}$ lämpötilassa määriteltiin <strong>tasan $1\\text{ kg}$</strong>!</li></ol><h4>Kuutiometri vettä</h4><p>Koska $1\\text{ m}^3 = 1000\\text{ dm}^3 = 1000\\text{ litraa}$, yksi kuutiometri vettä painaa <strong>täsmälleen $1000\\text{ kg} = 1\\text{ tonni}$</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos uima-altaaseen mahtuu $50\\text{ m}^3$ vettä, se tarkoittaa suoraan $50\\,000$ litraa vettä ja huimaa $50$ tonnin vesimassaa altaan pohjarakenteille!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Tilavuusyksiköiden ja litramittojen muunnokset",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -84,10 +72,6 @@
       "deepDive": {
         "title": "Konttialukset ja TEU-standardi: Miten suorakulmainen särmiö muutti maailmantalouden?",
         "content": "<h4>Ennen vuotta 1956 rahti purettiin säkeittäin</h4><p>Ennen 1950-lukua laivojen lastaaminen kesti viikkokausia, kun satamatyöläiset kantoivat käsin erikokoisia tynnyreitä ja laatikoita ruumaan. Yhdysvaltalainen Malcolm McLean keksi vuonna 1956 <strong>standardikontin</strong>: suorakulmaisen terässäiliön, jonka mitat ovat tarkalleen standardoidut.</p><h4>TEU (Twenty-foot Equivalent Unit)</h4><p>Peruskontti on $20\\text{ jalkaa}$ pitkä suorakulmainen särmiö ($6{,}06\\text{ m} \\times 2{,}44\\text{ m} \\times 2{,}59\\text{ m}$), jonka sisätilavuus on noin $33\\text{ m}^3$. Nykypäivän jättiläismäiset konttialukset voivat kuljettaa kerrallaan yli <strong>24 000 konttia</strong> – eli lähes miljoona kuutiometriä tavaraa yhdellä matkalla!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Konttien standardikoko laski merirahdin kustannuksia yli 90 prosenttia ja mahdollisti nykyisen globaalin elektroniikka- ja vaateteollisuuden!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Suorakulmaisen särmiön tilavuus 3D-tilassa",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -106,10 +90,6 @@
       "deepDive": {
         "title": "Kuution 11 tasolevitystä: Miten monella tavalla kuutio aukeaa?",
         "content": "<h4>Geometrian kuuluisa arvoitus</h4><p>Kuutiossa on 6 identtistä neliötahkoa. Jos leikkaat kuution särmiä auki saksilla niin, että kaikki 6 tahkoa pysyvät toisissaan kiinni yhtenäisenä tasona, kuinka monta <em>aidosti erilaista</em> tasolevitystä voit muodostaa?</p><h4>Täsmälleen 11 uniikkia muotoa</h4><p>Vastaus on yllättävä: on olemassa <strong>tarkalleen 11 erilaista tasolevitystä</strong> (peilauksia ja kierroksia ei lasketa erillisiksi). Tunnetuin näistä on perinteinen 'ristin' muotoinen levitys (t-muoto). Salvador Dalí käytti yhtä näistä 11 levityksestä kuuluisassa maalauksessaan <em>Corpus Hypercubus</em> (1954) kuvatessaan neliulotteisen hyperkuution avautumista kolmiulotteiseen avaruuteemme!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Pakkausteollisuudessa pahvilaatikoiden tasolevitykset suunnitellaan tietokoneella siten, että yhdeltä isolta pahviarkilta saadaan leikattua mahdollisimman monta laatikkoa ilman hukkapaloja!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Särmiön ja kuution tasolevitysanimaatio",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -128,10 +108,6 @@
       "deepDive": {
         "title": "Cavalierin periaate: Kolikkopino ei muuta tilavuuttaan nojatessaan!",
         "content": "<h4>Mitä tapahtuu, kun suora lieriö kallistuu vinoksi?</h4><p>Italialainen matemaatikko <strong>Bonaventura Cavalieri</strong> muotoili vuonna 1635 yhden geometrian nerokkaimmista ideoista:</p><p><em>Ota pöydälle 50 kolikon pino. Sen tilavuus on suoran ympyrälieriön tilavuus. Työnnä sormella pinoa siten, että kolikot liukuvat sivuttain ja pino kallistuu vinoon lieriöön. Muuttuiko kolikoiden kokonaistilavuus?</em></p><p>Ei tietenkään! Kolikoiden määrä ja paksuus pysyivät täsmälleen samoina. Tästä syystä <strong>vinon lieriön tilavuus lasketaan täsmälleen samalla kaavalla $V = A_p \\cdot h$</strong> kuin suoran lieriön, kunhan korkeus $h$ mitataan kohtisuoraan pohjatasoja vastaan!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Cavalierin periaate toimi suorana innoituksena Isaac Newtonille ja Gottfried Leibnizille heidän kehittäessään differentiaali- ja integraalilaskentaa 1600-luvun lopulla!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Lieriön tilavuus ja Cavalierin periaate",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -150,10 +126,6 @@
       "deepDive": {
         "title": "Miksi säilyketölkin korkeus on melkein sama kuin halkaisija?",
         "content": "<h4>Peltisäästöt tuottavat miljoonia</h4><p>Miksi ruokakaupan säilykepurkit (kuten tomaattimurska- tai hernekeittotölkit) ovat usein muodoltaan 'tanakoita', eikä niistä tehdä pitkiä kapeita tuubeja?</p><h4>Pinta-alan minimointi tietyllä tilavuudella</h4><p>Laskentatoimessa tölkin tilavuuden halutaan olevan vakio (esim. $400\\text{ ml}$), mutta valmistukseen käytettävän peltimateriaalin pinta-ala halutaan <strong>minimoida mahdollisimman pieneksi</strong> raaka-ainekulujen säästämiseksi.</p><p>Differentiaalilaskennalla voidaan todistaa, että ympyrälieriön pinta-ala on minimissään silloin, kun:</p><p>$$\\mathbf{h = 2r = d}$$</p><p>eli <em>lieriön korkeus on täsmälleen yhtä suuri kuin sen pohjan halkaisija</em>! Lähes kaikki maailman säilyketölkit noudattavat hämmästyttävän tarkasti tätä matemaattista optimaalista suhdetta.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Juomatölkeissä (kuten $0{,}33\\text{ l}$ virvoitusjuomissa) tölkki on hieman korkeampi ja kapeampi puhtaasti ergonomisista syistä: ihmiskäden on mukavampi pitää kiinni kapeammasta tölkistä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Ympyrälieriön vaipan auki rullaus",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -172,10 +144,6 @@
       "deepDive": {
         "title": "Miksi kartio on tasan 1/3 lieriöstä eikä esimerkiksi 1/2?",
         "content": "<h4>Veden kaataminen paljastaa totuuden</h4><p>Jos otat muovisen lieriön ja täsmälleen samanpohjaisen ja samankorkuisen kartion, voit testata asian vedellä: täytä kartio vedellä ja kaada se lieriöön. Lieriö täyttyy tasan yhteen kolmasosaan korkeudestaan! Vasta kolmas kartiollinen täyttää lieriön piripintaan asti.</p><h4>Demokritos ja Eudoksos 400 eaa.</h4><p>Antiikin Kreikassa atomiopin isä <strong>Demokritos</strong> esitti ensimmäisenä hypoteesin kartion kolmasosatilavuudesta. Hän ajatteli kartion koostuvan äärettömän monesta ohuen ohuesta ympyräkiekosta. Matemaattisesti täsmällisen todistuksen esitti myöhemmin <strong>Eudoksos Knidoslainen</strong> käyttämällä ekshauustiomenetelmää (tyhjennysmenetelmää), joka oli nykyisen integraalilaskennan esiaste.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jäätelötuutti on täydellinen suora ympyräkartio: vaikka se näyttää kookkaalta kädessä, sen tilavuus on vain kolmasosa vastaavasta suorasta sylinteristä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kartion tilavuus lieriön kolmasosana",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -194,10 +162,6 @@
       "deepDive": {
         "title": "Pohjois-Amerikan intiaanien tiipii: Aerodynaaminen kartiogeometria",
         "content": "<h4>Biisoninnahkainen teknologian taidonnäyte</h4><p>Pohjois-Amerikan Suurten tasankojen alkuperäiskansojen kehittämä <strong>tiipii (tipi)</strong> oli täydellisesti liikkuvaan elämäntapaan sovitettu asumus. Se oli muodoltaan suora tai hieman kallellaan oleva ympyräkartio.</p><h4>Miksi kartio valittiin asumuksen muodoksi?</h4><ol><li><strong>Tuulenkestävyys</strong>: Kartion kaareva vaippa ohjaa myrskytuulet pehmeästi sivuitse ja ylitse ilman suoria tasaisia seiniä, joihin tuuli voisi tarttua.</li><li><strong>Savunpoisto</strong>: Kartion suippeneva kärki muodostaa luonnollisen savuhormin nuotiolle.</li><li><strong>Kankaan leikkaus</strong>: Tiipiin vaippa ommeltiin puoliympyrän muotoisesta nahkasektorista suoraan kartion vaipan geometristen kaavojen mukaisesti!</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Juhlahatut ja liikennekartiot valmistetaan tehtaissa leikkaamalla muoviarkista täsmälleen $\\pi r s$ -alan mukaisia ympyräsektoreita ja liittämällä suorat reunat yhteen!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Ympyräkartion vaipan avautuminen sektoriksi",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -216,10 +180,6 @@
       "deepDive": {
         "title": "Kheopsin suuri pyramidi: 2,6 miljoonaa kuutiometriä kiveä",
         "content": "<h4>Muinaisen maailman suurin rakennus</h4><p>Gizan suuri pyramidi rakennettiin noin 2560 eaa. Se oli maailman korkein ihmisen rakentama rakennus yli 3800 vuoden ajan (korkeus alun perin $146{,}6\\text{ m}$).</p><h4>Lasketaan pyramidin massa!</h4><p>Pyramidin neliöpohjan sivu on noin $a = 230\\text{ m}$ ja korkeus $h = 146{,}6\\text{ m}$:</p><p>$$V = \\frac{230^2 \\cdot 146{,}6}{3} \\approx \\mathbf{2\\,585\\,000\\text{ m}^3!}$$</p><p>Kalkkikiven tiheys on noin $2300\\text{ kg/m}^3$, jolloin pyramidin kokonaismassa on käsittämättömät <strong>noin 6 miljoonaa tonnia</strong>! Se koostuu noin 2,3 miljoonasta massiivisesta kivilohkareesta, joista jokainen painaa keskimäärin 2,5 tonnia.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Pyramidin sivujen kaltevuuskulma on noin $51{,}8^\\circ$. Jos jaat pyramidin pohjan piirin kahdella sen korkeudella, suhteeksi saadaan $\\frac{4 \\cdot 230}{2 \\cdot 146{,}6} \\approx 3{,}138$, mikä on uskomattoman lähellä lukua $\\pi$!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Neliöpohjainen pyramidi ja tasolevitys",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -238,10 +198,6 @@
       "deepDive": {
         "title": "Arkhimedeen hautakivi ja suhde 2 : 3",
         "content": "<h4>Arkhimedeen elämäntyön suurin huippuhetki</h4><p>Vuonna 212 eaa. kuollut suuri <strong>Arkhimedes</strong> piti elämänsä suurimpana saavutuksena pallon ja sitä ympäröivän lieriön välisten suhteiden todistamista. Hän pyysi kaivertamaan hautakiveensä kuvan pallosta, joka on sovitettu täsmällisesti ympyrälieriön sisään.</p><h4>Täydellinen suhde 2 : 3</h4><p>Kun pallo (säde $r$) asetetaan lieriöön, jonka säde on $r$ ja korkeus $h = 2r$:</p><ul><li>Pallon tilavuus on $V_{\\text{pallo}} = \\frac{4}{3}\\pi r^3$ ja lieriön tilavuus on $V_{\\text{lieriö}} = \\pi r^2 \\cdot 2r = 2\\pi r^3$. Tilavuuksien suhde on täsmälleen: $\\frac{4/3}{2} = \\mathbf{\\frac{2}{3}}$!</li><li>Pallon pinta-ala on $4\\pi r^2$ ja lieriön vaipan ala on $2\\pi r \\cdot 2r = 4\\pi r^2$. Pallon pinta-ala on <strong>täsmälleen sama kuin lieriön vaipan ala</strong>!</li></ul><p>Roomalainen valtiomies Cicero löysi Arkhimedeen unohdetun haudan Syrakusasta yli 130 vuotta myöhemmin nimenomaan tämän hautakiveen hakatun pallo-lieriö-kaiverruksen ansiosta.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> 3Blue1Brownin kuuluisa matematiikkavideo näyttää visuaalisesti, miksi pallon pinta-ala on täsmälleen 4 kertaa sen varjon pinta-ala!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Pallon tilavuus ja pinta-ala suhteessa lieriöön",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -258,10 +214,6 @@
       "deepDive": {
         "title": "M.C. Escher ja mahdottomat kappaleet: Miten 2D huijaa 3D-aivoja?",
         "content": "<h4>Silmän optinen illuusio</h4><p>Hollantilainen taiteilija <strong>M.C. Escher</strong> (1898–1972) hyödynsi projektioiden sääntöjä luodakseen maailmankuuluja 'mahdottomia todellisuuksia', kuten <em>Vesiputous</em> ja <em>Nousevat ja laskevat</em> (Penrosen portaat).</p><h4>Miksi aivot menevät lankaan?</h4><p>Ihmissilmä saa verkkokalvolleen kaksiulotteisen kuvan, josta aivot tulkitsevat kolmiulotteista tilaa kulmien ja varjojen perusteella. Escher käytti isometrisen projektion rinnakkaisuutta: koska syvyys ei pienene etäisyyden mukana, katsoja ei kykene päättelemään, mikä pylväs on edessä ja mikä takana. Tuloksena on vesiputous, joka virtaa loputtomasti ylämäkeen ja pyörittää omaa vesiratastaan!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Peliklassikko <em>Monument Valley</em> perustuu kokonaan Escherin mahdottomiin projektioihin: pelaaja kääntää pelimaailmaa isometrisessä projektiossa yhdistäen polkuja, jotka olisivat 3D-todellisuudessa täysin mahdottomia!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: 3D-geometrian katselu ja projektiot",
-        "url": "https://www.geogebra.org/3d"
       }
     }
   ]

@@ -18,10 +18,6 @@
       "deepDive": {
         "title": "Shakkilauta ja riisinjyvät: Eksponentiaalisen kasvun uskomaton voima",
         "content": "<h4>Muinainen intialainen legenda</h4><p>Legendan mukaan shakkipelin keksinyt viisas brahmiini <strong>Sissa ibn Dahir</strong> esitteli pelin Intian kuninkaalle. Kuningas ihastui peliin niin syvästi, että lupasi keksijälle minkä tahansa palkkion. Sissa pyysi vaatimattoman oloisen palkkion:</p><blockquote><em>'Aseta shakkilaudan ensimmäiselle ruudulle yksi riisinjyvä, toiselle kaksi, kolmannelle neljä, neljännelle kahdeksan, ja tuplaa aina jyvien määrä seuraavalle ruudulle laudan loppuun asti.'</em></blockquote><h4>Potenssien räjähdysmäinen kasvu</h4><p>Kuningas piti pyyntöä naurettavan pienenä, kunnes hovin kirjanpitäjät laskivat summan: 64 ruudulle kertyisi yhteensä:</p><p>$$1 + 2 + 4 + 8 + \\dots + 2^{63} = 2^{64} - 1 = 18\\,446\\,744\\,073\\,709\\,551\\,615 \\text{ jyvää!}$$</p><p>Tämä vastaa yli <strong>18 triljoonaa riisinjyvää</strong> eli noin 460 miljardia tonnia riisiä – yli tuhatkertaisesti koko maapallon vuotuisen riisisadon! Kuningas tajusi, ettei koko valtakunnan varallisuus riittäisi palkkion maksamiseen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos taitat tavallisen A4-paperiarkin kahtia 42 kertaa (jokainen taitos tuplaa paksuuden: $0{,}1\\text{ mm} \\cdot 2^{42}$), syntyvän paperipinon paksuus yltäisi maapallolta kuuhun asti (noin $440\\,000\\text{ km}$)!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Potenssilaskun ja eksponentiaalisen kasvun havainnollistus",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -40,10 +36,6 @@
       "deepDive": {
         "title": "Arkhimedes ja Hiekanlaskija: Miten antiikin nero laski maailmankaikkeuden atomit?",
         "content": "<h4>Riittääkö hiekkarannan jyvät?</h4><p>Noin 250 eaa. kreikkalainen nero <strong>Arkhimedes</strong> kirjoitti teoksen <em>Psammites</em> (Hiekanlaskija). Aikalaiset uskoivat, että maailmankaikkeuden hiekanjyvien määrä on ääretön tai ainakin ihmismielelle mahdoton laskea.</p><h4>Kantaluvun $10^8$ suuruusluokat</h4><p>Arkhimedes kehitti oman potenssijärjestelmänsä kantaluvulle miriaadi ($10\\,000$). Hän osoitti käyttäen potenssien yhteenlaskulakia, että koko silloin tunnettuun maailmankaikkeuteen mahtuisi enintään:</p><p>$$10^{63} \\text{ hiekanjyvää!}$$</p><p>Tämä oli historian ensimmäinen kerta, kun ihminen käytti samankantaisten potenssien tuloa ja eksponenttien yhteenlaskua käsittämättömän suurten lukujen hallitsemiseen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nykytieteen mukaan koko havaittavassa maailmankaikkeudessa on noin $10^{80}$ atomia. Arkhimedeen 2200 vuotta sitten tekemä arvio oli hämmästyttävän lähellä tätä lukua!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Samankantaisten potenssien tulo ja pinta-alat",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -62,10 +54,6 @@
       "deepDive": {
         "title": "Logaritmit ja laskutikut: Miten osamäärästä tuli vähennyslaskua?",
         "content": "<h4>Tähtitieteilijöiden pitkä urakka</h4><p>1500-luvulla tähtitieteilijät kuten Johannes Kepler ja Tyko Brahe joutuivat tekemään kuukausikaupalla käsin jättimäisiä kerto- ja jakolaskuja planeettojen kiertoradoista. Vuonna 1614 skotlantilainen matemaatikko <strong>John Napier</strong> keksi <em>logaritmit</em>, jotka perustuvat suoraan potenssien ominaisuuksiin.</p><h4>Laskutikku – kuuhun lentänyt mekaaninen tietokone</h4><p>Koska samankantaisten potenssien kerto muuttuu yhteenlaskuksi ($m+n$) ja jako vähennyslaskuksi ($m-n$), monimutkaiset kerto- ja jakolaskut voitiin muuttaa helpoiksi yhteen- ja vähennyslaskuiksi! Tämän pohjalta kehitettiin <strong>laskutikku</strong> (slide rule). Apollo 11 -astronautit Neil Armstrong ja Buzz Aldrin käyttivät laskutikkuja laskiessaan kiertoratakorjauksia matkalla kuuhun vuonna 1969!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ranskalainen matemaatikko Pierre-Simon Laplace sanoi: 'Keksimällä logaritmit Napier puolitti tähtitieteilijöiden työn ja siten tuplasi heidän elinikänsä!'</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Samankantaisten potenssien osamäärä ja supistaminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -84,10 +72,6 @@
       "deepDive": {
         "title": "Galilei ja neliö-kuutio-laki: Miksi jättiläisiä ei voi olla olemassa?",
         "content": "<h4>Mitä tapahtuu, kun eläimen koko kaksinkertaistuu?</h4><p>Vuonna 1638 <strong>Galileo Galilei</strong> julkaisi kuuluisan <em>neliö-kuutio-lakinsa</em>, joka perustuu suoraan tulon potensseihin $(2x)^2$ ja $(2x)^3$. Jos skaalaat eläimen kaikki mitat kaksinkertaisiksi ($k = 2$):</p><ul><li>Lihasten ja luiden poikkipinta-ala (voima) kasvaa toiseen potenssiin: $(2a)^2 = 4a^2$ (nelinkertaistuu).</li><li>Eläimen tilavuus ja massa kasvaa kolmanteen potenssiin: $(2a)^3 = 8a^3$ (kahdeksankertaistuu!).</li></ul><h4>King Kong murtuisi oman painonsa alla</h4><p>Koska massa kasvaa kuutiossa ($2^3=8$) mutta luiden kantokyky vain neliössä ($2^2=4$), jättikokoiseksi suurennettu eläin tai ihminen ei pystyisi ottamaan askeltakaan ilman, että sen luut murskaantuisivat oman painon alla. Tästä syystä norsun jalat ovat suhteessa valtavan paksut pilarit verrattuna antiloopin ohuisiin jalkoihin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tulon potenssi selittää myös sen, miksi pienet hyönteiset eivät loukkaannu pudotessaan korkealta: niiden ilmanvastuspinta-ala suhteessa pieneen massaan on valtava!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Tulon ja osamäärän potenssi pinta-alamallina",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -106,10 +90,6 @@
       "deepDive": {
         "title": "Googol ja Googolplex: Luvut, joita edes universumi ei voi kirjoittaa",
         "content": "<h4>Mistä Google sai nimensä?</h4><p>Vuonna 1920 yhdysvaltalainen matemaatikko Edward Kasner pyysi 9-vuotiasta sisarenpoikaansa Milton Sirottaa keksimään nimen luvulle $1$, jota seuraa sata nollaa. Poika keksi sanan <strong>googol</strong> ($10^{100}$). Myöhemmin hakukonejätti Google otti nimensä tästä luvusta (kirjoitusvirheen kautta!).</p><h4>Googolplex ja tornipotenssi</h4><p>Kasner määritteli vieläkin suuremman luvun: <strong>googolplex</strong>, joka on $10^{\\text{googol}} = 10^{10^{100}}$. Tämä luku on niin käsittämättömän valtava, että jos jokainen universumin atomi muutettaisiin mustepisaraksi ja paperiksi, kaikki maailmankaikkeuden atomit eivät riittäisi luvun kaikkien nollien kirjoittamiseen!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietotekniikassa 64-bittinen prosessori voi käsitellä kerrallaan lukuja kokoluokkaan $2^{64} \\approx 1{,}84 \\cdot 10^{19}$. Sitä suuremmat luvut vaativat erityisiä mielivaltaisen tarkkuuden matematiikkakirjastoja!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Potenssin potenssin visualisointi",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -128,10 +108,6 @@
       "deepDive": {
         "title": "Matematiikan suuri arvoitus: Mitä on nolla potenssiin nolla ($0^0$)?",
         "content": "<h4>Kahden säännön yhteentörmäys</h4><p>Mitä tapahtuu, kun lasketaan $0^0$? Tässä kaksi matematiikan perustavanlaatuista sääntöä joutuu tukkanuottasille:</p><ol><li>Sääntö A: <em>Mikä tahansa luku potenssiin nolla on $1$</em> ($x^0 = 1$). Tämän mukaan $0^0 = 1$.</li><li>Sääntö B: <em>Nolla mihin tahansa potenssiin on $0$</em> ($0^x = 0$). Tämän mukaan $0^0 = 0$.</li></ol><h4>Määrittelemätön arvo</h4><p>Matematiikan analyysissä lauseketta $0^0$ pidetään <strong>määrittelemättömänä (epämääräisenä muotona)</strong>, koska siihen voidaan päätyä eri raja-arvoilla tuottaen eri tuloksia. Kuitenkin algebrassa ja ohjelmoinnissa (kuten Pythonissa <code>0**0</code>) tulokseksi on sovittu kätevyyssyistä $1$, jotta polynomikaavat ja binomilause toimivat saumattomasti!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kokeile kirjoittaa puhelimesi laskimeen $0^0$. Osa laskimista antaa vastaukseksi $1$, kun taas toiset ilmoittavat virheestä (Error tai Määrittelemätön)!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Negatiiviset eksponentit ja käänteisluvut",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -172,10 +148,6 @@
       "deepDive": {
         "title": "Hippasos ja $\\sqrt{2}$: Murhattiinko matemaatikko irrationaaliluvun takia?",
         "content": "<h4>Pythagoralaisten pyhä geometria</h4><p>Antiikin Kreikassa noin 500 eaa. <strong>Pythagoras</strong> ja hänen uskonnollisen kaltainen veljeskuntansa uskoivat, että maailmankaikkeuden perimmäinen olemus on kokonaisluvuissa ja niiden suhteissa (murtoluvuissa). Kaikki asiat olivat heille harmoniaa ja murtolukuja.</p><h4>Luku, joka järkytti antiikin maailmaa</h4><p>Veljeskuntaan kuulunut <strong>Hippasos Metapontionlainen</strong> alkoi tutkia neliötä, jonka sivun pituus on $1$. Pythagoraan lauseen mukaan sen lävistäjän pituus on $\\sqrt{1^2 + 1^2} = \\sqrt{2}$. Hippasos todisti matemaattisesti, että $\\sqrt{2}$ ei voida <em>koskaan</em> esittää minkään kahden kokonaisluvun murtolukuna $\\frac{a}{b}$!</p><p>Legenda kertoo, että pythagoralaiset olivat niin järkyttyneitä tämän <strong>irrationaaliluvun</strong> olemassaolosta, että he heittivät Hippasoksen laivasta mereen hukutettavaksi salaisuuden suojelemiseksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Neliöjuuren merkki $\\sqrt{}$ kehitettiin 1500-luvulla latinan kielen sanan <em>radix</em> (juuri) pienestä r-kirjaimesta, jonka yläviiva pidennettiin suojaamaan laskettavaa lukua!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Neliöjuuri ja neliön geometrinen pinta-ala",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -194,10 +166,6 @@
       "deepDive": {
         "title": "Algebran peruslause: Miksi polynomin aste määrää kaiken?",
         "content": "<h4>Montako ratkaisua polynomiyhtälöllä voi olla?</h4><p>Vuonna 1799 matemaatikkojen kuningas <strong>Carl Friedrich Gauss</strong> todisti väitöskirjassaan yhden matematiikan historian upeimmista lauseista: <strong>Algebran peruslauseen</strong>.</p><h4>Asteluku kertoo ratkaisujen määrän</h4><p>Lause sanoo, että jokaisella $n$-asteisella polynomiyhtälöllä on kompleksilukujen joukossa <em>täsmälleen $n$ kappaletta ratkaisuja (juuria)</em>:</p><ul><li>1. asteen yhtälöllä $ax + b = 0$ on aina <strong>1 ratkaisu</strong>.</li><li>2. asteen yhtälöllä $ax^2 + bx + c = 0$ on aina <strong>2 ratkaisua</strong>.</li><li>3. asteen yhtälöllä on aina <strong>3 ratkaisua</strong>.</li></ul><p>Pelkästään katsomalla polynomin korkeinta eksponenttia tiedät välittömästi, kuinka monta nollakohtaa sen kuvaajalla voi enintään olla!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sanan <em>polynomi</em> etuliite <em>poly-</em> tulee kreikan kielen sanasta $\\pi o \\lambda \\acute{\\upsilon}\\varsigma$ (polys), joka tarkoittaa 'monia', ja loppuosa latinan sanasta <em>nomen</em> (nimi tai termi). Polynomi tarkoittaa siis 'monitermistä'!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Polynomien asteluvut ja kuvaajat",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -216,10 +184,6 @@
       "deepDive": {
         "title": "CAS-ohjelmistot: Miten tietokone sieventää tuhansien termien polynomeja?",
         "content": "<h4>Symbolinen laskenta tietokoneessa</h4><p>Tavallinen laskin muuttaa kaiken desimaaliluvuiksi, mutta <strong>CAS-ohjelmistot</strong> (Computer Algebra Systems, kuten GeoGebra CAS, Mathematica ja SymPy) osaavat sieventää kirjaimia ja polynomeja täsmälleen kuten ihminen paperilla.</p><h4>Miten algoritmi tunnistaa samanmuotoisuuden?</h4><p>Tietokoneessa polynomi tallennetaan tietorakenteena, jossa jokaiselle termille tallennetaan sen kerroin ja eksponentti. Algoritmi lajittelee termit eksponenttien mukaan, ryhmittelee samat eksponentit yhteen ja laskee kertoimet yhteen silmänräpäyksessä – oli termejä sitten viisi tai viisikymmentätuhatta!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nykyaikaiset tietokoneanimaatiot (kuten Pixar-elokuvien hahmot) käyttävät <em>Bézier-käyriä</em> ja <em>spline-polynomeja</em> hahmojen sileiden pintojen ja vaatteiden laskostumisen mallintamiseen!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Polynomien sieventäminen ja yhdistäminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -238,10 +202,6 @@
       "deepDive": {
         "title": "Leonhard Euler ja funktionotaation $f(x)$ synty",
         "content": "<h4>Kaikkien aikojen tuotteliain matemaatikko</h4><p>Sveitsiläinen <strong>Leonhard Euler</strong> (1707–1783) julkaisi elämänsä aikana yli 800 tieteellistä tutkimusta. Hän keksi lähes kaikki nykymatematiikan keskeiset merkinnät: $\\pi$, $e$, $i$, $\\Sigma$ (summa) ja erityisesti <strong>funktionotaation $f(x)$ ja $P(x)$</strong> vuonna 1734.</p><h4>Miksi notaatio oli niin nerokas?</h4><p>Ennen Euleria matemaatikot joutuivat kirjoittamaan sanallisesti: 'Tarkastellaan lauseketta $2x^2 - 3x + 5$, johon sijoitetaan luku $3$'. Eulerin ansiosta tämä voitiin tiivistää kahteen merkkiin: <strong>$P(3)$</strong>! Tämä säästi valtavasti tilaa ja teki matematiikasta universaalia kieltä yli maarajojen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Euler jatkoi tutkimustensa tekemistä ja kirjojen sanelemista ulkomuistista vielä tultuaan elämänsä loppupuolella täysin sokeaksi!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Polynomin arvo ja funktion kuvaaja",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -260,10 +220,6 @@
       "deepDive": {
         "title": "Talousmatematiikka: Voitto on tulojen ja menojen erotus",
         "content": "<h4>Yrityksen tuloslaskelma polynomimuodossa</h4><p>Taloustieteessä yrityksen saamat tulot voidaan mallintaa myyntimäärän $x$ funktiona tulopolynomina $T(x)$, ja valmistuskustannukset menopolynomina $M(x)$:</p><ul><li>$T(x) = 50x$ (myyntihinta $50\\text{ €}$ per tuote)</li><li>$M(x) = 2x^2 + 10x + 100$ (kustannukset raaka-aineista, palkoista ja kiinteistä kuluista)</li></ul><p>Yrityksen voitto $V(x)$ saadaan vähentämällä menot tuloista:</p><p>$$V(x) = T(x) - M(x) = 50x - (2x^2 + 10x + 100) = -2x^2 + 40x - 100$$</p><p>Jos sulkujen etumerkin vaihto unohtuu, yritys luulee tekevänsä satojentuhansien voittoa, vaikka onkin todellisuudessa syöksymässä konkurssiin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lukion taloustiedossa ja kauppatieteissä polynomien erotuksista lasketaan optimituotantomääriä derivaatan nollakohtien avulla!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Polynomien summa ja erotus",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -282,10 +238,6 @@
       "deepDive": {
         "title": "FOIL-menetelmä ja geometrinen pinta-ala",
         "content": "<h4>Miten binomien tulo piirretään paperille?</h4><p>Englanninkielisessä maailmassa kahden binomin tulon $(a+b)(c+d)$ muistisääntönä käytetään sanaa <strong>FOIL</strong>: <strong>F</strong>irst (ensimmäiset), <strong>O</strong>uter (ulommaiset), <strong>I</strong>nner (sisäiset), <strong>L</strong>ast (viimeiset).</p><h4>Suorakulmion pinta-alamalli</h4><p>Geometrisesti tulo $(a + b)(c + d)$ on suorakulmion pinta-ala, jonka sivujen pituudet ovat $a + b$ ja $c + d$. Jos jaat tämän suorakulmion neljään pienempään lohkoon, lohkojen pinta-alat ovat $ac$, $ad$, $bc$ ja $bd$! Koko suorakulmion ala on näiden neljän lohkon summa:</p><p>$$(a + b)(c + d) = ac + ad + bc + bd$$</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tätä geometrista suorakulmiomallia käytti jo Eukleides yli 2300 vuotta sitten geometrisessa algebrassan, ennen kuin nykyisiä algebrallisia kirjaimia oli edes keksitty!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Polynomien kertolasku ja pinta-alamalli",
-        "url": "https://www.geogebra.org/calculator"
       }
     }
   ]

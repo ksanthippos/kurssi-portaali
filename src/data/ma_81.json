@@ -36,10 +36,6 @@
       "deepDive": {
         "title": "Al-Khwarizmi ja sanan 'algebra' synty: Al-Jabr ja tasapainotus",
         "content": "<h4>800-luvun Bagdad ja Viisauden talo</h4><p>Noin vuonna 820 persialainen matemaatikko <strong>Muhammad ibn Musa al-Khwarizmi</strong> kirjoitti arabiankielisen kirjan, jota pidetään algebran perusteoksena: <em>Al-Kitab al-mukhtasar fi hisab al-jabr wa-l-muqabala</em>.</p><h4>Mitä 'al-jabr' tarkoittaa?</h4><p>Kirjan nimessä sana <strong>al-jabr</strong> tarkoitti kirjaimellisesti <em>'rikkoutuneen osan palauttamista tai murtuneen luun asettamista'</em>. Matematiikassa al-Khwarizmi käytti sitä tarkoittamaan <strong>negatiivisen termin siirtämistä toiselle puolelle yhtälöä ja sen muuttamista positiiviseksi</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sana <em>algebra</em> tulee suoraan arabian sanasta <em>al-jabr</em>, ja matemaatikon omasta nimestä <em>al-Khwarizmi</em> juontuu koko tietotekniikan perussana <strong>algoritmi</strong>!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Yhtälönratkaisun askel askeleelta -visualisointi",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -58,10 +54,6 @@
       "deepDive": {
         "title": "Distributiivilaki arjessa: Miksi kertoimella kerrotaan jokainen termi?",
         "content": "<h4>Kauppakassivertaus</h4><p>Miksi laskussa $3(2x - 4)$ kakkosen lisäksi myös luku $-4$ kerrotaan kolmella? Ajattele kauppareissua: Ostat kolme samanlaista lahjakassia. Jokaisessa kassissa on 2 limsatölkkiä ($2x$) ja 4 euron alennuskuponki ($-4$ €).</p><p>Kun purat kaikki 3 kassia pöydälle, sinulla on yhteensä $3 \\times 2 = 6$ limsatölkkiä ja $3 \\times (-4) = -12$ euron arvosta alennuskuponkeja! Koko kassin sisältö moninkertaistuu kolminkertaiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sana <em>distributiivinen</em> tulee latinan verbistä <em>distribuere</em>, joka tarkoittaa 'jakamista' tai 'jakelua': kerroin jaellaan tasaisesti kaikille sulkeiden sisällä asuville termeille!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Sulkujen avaaminen ja yhtälönratkaisu",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -80,10 +72,6 @@
       "deepDive": {
         "title": "Murtolukujen poiston periaate: Vaa'an moninkertaistaminen",
         "content": "<h4>Kokonaiset luvut ovat ihmiselle helpompia</h4><p>Ihmisaivot hahmottavat kokonaisia lukuja paljon luontevammin kuin murtolukuja. Kertomalla koko yhtälö nimittäjällä vaa'an molemmat kupit vain suurennetaan kolminkertaisiksi, nelinkertaisiksi tai kymmenkertaisiksi.</p><p>Vaaka pysyy täydellisessä tasapainossa, mutta kaikki murtoluvut katoavat ja jäljelle jää vain helppoja kokonaislukuja!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneiden prosessorit tekevät kokonaislukujen yhteen- ja vähennyslaskuja huomattavasti nopeammin kuin liukulukujen murtolaskuja: monet peliohjelmoijat muuttavat desimaalikoordinaatit kokonaisluvuiksi juuri suorituskyvyn maksimoimiseksi!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Nimittäjien poisto yhtälöistä",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -101,10 +89,6 @@
       "deepDive": {
         "title": "Etumerkkiloukku: Yhtälönratkaisun yleisin kompastuskivi",
         "content": "<h4>Jakoviiva toimii sulkuna</h4><p>Kun laskussa on $-\\frac{x - 2}{2}$, miinusmerkki kuuluu <strong>koko osoittajan lausekkeelle</strong>, ei vain ensimmäiselle termille $x$! Kun nimittäjä 2 supistuu pois luvulla 6 kerrottaessa, osoittajan eteen jää $-3(x - 2)$.</p><p>Sulut avattaessa $-3 \\cdot (-2) = \\mathbf{+6}$! Jos sulkuja ei muista laittaa, vastaus menee aina väärin. Tämä on yläkoulun ja lukion matematiikan yleisin virhekohta kokeissa.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Matematiikan opettajat kutsuvat tätä 'miinusmerkkimiinaksi': turvallisin tapa on kirjoittaa osoittajan ympärille kaarisulut jo ennen yhtälön kertomista!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Murtolukuyhtälöiden ratkaisukone",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -123,10 +107,6 @@
       "deepDive": {
         "title": "Pythagoralaiset ja irrationaaliluvun järkytys: Miten neliöjuuri 2 järkytti maailmaa?",
         "content": "<h4>Kaikki on kokonaislukujen suhdetta?</h4><p>Noin 500 eaa. Pythagoras ja hänen salaseuransa uskoivat uskonnollisesti, että koko maailmankaikkeus ja sen kauneus perustuivat kokonaislukujen ja murtolukujen täydellisiin suhteisiin.</p><h4>Neliön lävistäjä $x^2 = 2$</h4><p>Eräs seuran jäsenistä, <strong>Hippasos Metapontionlainen</strong>, alkoi tutkia neliötä, jonka sivun pituus on $1$. Pythagoraan lauseen mukaan lävistäjälle päti $x^2 = 1^2 + 1^2 = 2 \\implies x = \\sqrt{2}$.</p><p>Hippasos todisti matemaattisesti, että lukua $\\sqrt{2}$ ei voi mitenkään esittää kahden kokonaisluvun murtolukuna (se on päättymätön ja jaksoton irrationaaliluku)! Legendan mukaan löytö oli pythagoralaisille niin suuri filosofinen skandaali, että Hippasos heitettiin laivasta mereen salaisuuden varjelemiseksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Luvun $\\sqrt{2} \\approx 1{,}41421356...$ desimaaleja on nykyään laskettu tietokoneilla yli 100 biljoonaa kappaletta ilman mitään toistuvaa jaksoa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Toisen asteen yhtälö ja neliön pinta-ala",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -167,10 +147,6 @@
       "deepDive": {
         "title": "Tautologia ja kontradiktio: Matemaattisen logiikan perusteet",
         "content": "<h4>Aina totta vai aina valetta?</h4><p>Filosofiassa ja matemaattisessa logiikassa lausetta, joka on rakenteensa puolesta aina tosi riippumatta mistään ulkoisesta asiasta, kutsutaan <strong>tautologiaksi</strong> (esim. <em>'Ulkona joko sataa tai ei sada'</em> tai yhtälö $0 = 0$).</p><p>Vastaavasti lausetta, joka on itsensä kanssa sovittamattomassa ristiriidassa, kutsutaan <strong>kontradiktioksi</strong> (esim. <em>'Tämä ympyrä on neliö'</em> tai yhtälö $0 = 5$).</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneiden hakukoneet ja tekoälyt käyttävät Boolen logiikan tautologioita karsimaan miljardeja verkkosivuja hakutuloksista silmänräpäyksessä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Identtiset yhtälöt suorien leikkauspisteenä",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -189,10 +165,6 @@
       "deepDive": {
         "title": "George Pólya ja 'How to Solve It' 1945: Ongelmanratkaisun käsikirja",
         "content": "<h4>Unkarilainen professori Stanfordin yliopistossa</h4><p>Vuonna 1945 unkarilainen matemaatikko <strong>George Pólya</strong> kirjoitti kirjan <em>How to Solve It</em>, jota on myyty miljoonia kappaleita ympäri maailmaa. Pólya oivalsi, että kaikki hyvät ongelmanratkaisijat noudattavat samoja heuristisia vaiheita:</p><ol><li>Ymmärrä ongelma (mitä kysytään? mitä tietoja on annettu?).</li><li>Laadi suunnitelma (voitko piirtää kuvan? ratkaista helpomman erikoistapauksen?).</li><li>Toteuta suunnitelma (laske huolellisesti).</li><li>Katso taaksepäin (onko vastaus järkevä? voisitko ratkaista pulman toisin?).</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos sanallisessa tehtävässä kysytään ihmisten määrää bussissa ja saat vastaukseksi $x = -2{,}5$, Pólyan neljäs sääntö 'katso taaksepäin' paljastaa heti, että jossain laskuvaiheessa on tapahtunut virhe!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Sanallisten tehtävien visualisointi",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -211,10 +183,6 @@
       "deepDive": {
         "title": "Diofantoksen hautakirjoitus: Antiikin kuuluisin matemaattinen ikäarvoitus",
         "content": "<h4>Aleksandrialaisen algebran isän hauta</h4><p>Antiikin kreikkalaisen matemaatikon <strong>Diofantoksen</strong> (n. 250 jaa.) hautakiveen kaiverrettiin arvoitus, josta kuka tahansa yhtälöitä osaava voi laskea hänen elinikänsä:</p><blockquote><em>'Tämä hauta kätkee Diofantoksen. Jumala soi hänen olla poika kuudenneksen elämästään, ja kahdestoistaosan kuluttua hänen poskensa saivat parran. Seitsemänneksen jälkeen syttyi avioliiton soihtu, ja viiden vuoden kuluttua syntyi poika. Voi kurjaa lasta: saavutettuaan puolet isänsä eliniästä julma kohtalo otti hänet pois. Isä lohdutti suruaan matematiikalla vielä neljä vuotta ennen kuolemaansa.'</em></blockquote><p>Yhtälö: $\\frac{x}{6} + \\frac{x}{12} + \\frac{x}{7} + 5 + \\frac{x}{2} + 4 = x$. Kun tämän ratkaisee, saadaan $\\mathbf{x = 84\\text{ vuotta}}$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Diofantoksen kirjan <em>Arithmetica</em> marginaaliin ranskalainen Pierre de Fermat kirjoitti vuonna 1637 kuuluisan 'Fermat'n suuren lauseen', jota ei saatu ratkaistua ennen vuotta 1995!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Geometriset yhtälömallit",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -233,10 +201,6 @@
       "deepDive": {
         "title": "Pythagoras ja sävelten suhteet: Miten musiikki perustuu murtolukuihin?",
         "content": "<h4>Sepän alasin ja kireät kielet</h4><p>Antiikin Kreikassa Pythagoras kulki sepän pajan ohi ja huomasi, että eripainoiset vasarat tuottivat alasimeen osuessaan harmonisia, toisiinsa sointuvia ääniä. Hän alkoi tutkia värähtelevän kielen pituuksia (monokordi).</p><h4>Musiikilliset intervallit suhteina</h4><p>Pythagoras teki hämmästyttävän havainnon:</p><ul><li>Jos kielen pituus puolitetaan (suhde $1 : 2$), syntyy täydellinen <strong>oktaavi</strong>!</li><li>Jos kielen pituuden suhde on $2 : 3$, syntyy puhdas <strong>kvintti</strong>.</li><li>Jos suhde on $3 : 4$, syntyy <strong>kvartti</strong>.</li></ul><p>Koko länsimainen musiikin sävelasteikko ja harmonia perustuvat suoraan näihin yksinkertaisiin kokonaislukujen suhteisiin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Pythagoras uskoi taivaankappaleiden planeettojen ratojen tuottavan avaruudessa ihmiskorvalle kuulumatonta 'sfäärien harmoniaa' (Musica Universalis) samojen matemaattisten suhteiden mukaan!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Suhteen jakaminen ja sekoitussuhteet",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -299,10 +263,6 @@
       "deepDive": {
         "title": "Thomas Harriot ja vertailumerkkien keksiminen 1631",
         "content": "<h4>Auringonpilkkujen tutkija ja matemaatikko</h4><p>Englantilainen matemaatikko ja tutkimusmatkailija <strong>Thomas Harriot</strong> (1560–1621) oli ensimmäisiä, jotka katselivat kaukoputkella Kuun kraattereita ja Auringon pilkkuja jo ennen Galileita. Hänen kuolemansa jälkeen vuonna 1631 julkaistiin hänen matematiikan käsikirjoituksensa <em>Artis Analyticae Praxis</em>.</p><h4>Krokotiilin kita kohti suurempaa</h4><p>Harriot otti ensimmäisenä käyttöön tutut merkit <strong>$<$ (pienempi kuin)</strong> ja <strong>$>$ (suurempi kuin)</strong> korvaamaan aiemmat kömpelöt sanalliset ilmaisut. Merkin leveämpi avoin pää osoittaa aina suurempaan lukuun ja terävä kärki pienempään!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Harriot matkusti Walter Raleigh'n retkikunnassa Pohjois-Amerikan Virginiaan 1585 ja toimi siirtokunnan kartoittajana oppien paikallisen algonkin-intiaanien kielen!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Epäyhtälön ratkaisujoukko lukusuoralla",
-        "url": "https://www.geogebra.org/calculator"
       }
     }
   ]

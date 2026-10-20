@@ -18,10 +18,6 @@
       "deepDive": {
         "title": "Al-Khwarizmi ja algebran synty: Miksi tuntematon on aina 'x'?",
         "content": "<h4>Mistä sana algebra tulee?</h4><p>Noin vuonna 820 jaa. persialainen matemaatikko <strong>Muhammad ibn Musa al-Khwarizmi</strong> kirjoitti Bagdadissa uraauurtavan teoksen <em>Al-Kitab al-mukhtasar fi hisab al-jabr wa'l-muqabala</em>. Teoksen nimessä esiintyvä sana <strong>al-jabr</strong> tarkoittaa 'palauttamista' tai 'murtuneiden osien yhdistämistä' (alun perin sitä käytettiin myös lääketieteessä luunmurtumien korjaamiseen!). Tästä arabiankielisestä sanasta kehittyi nykyinen matematiikan haara <strong>algebra</strong>. Samalla al-Khwarizmin omasta nimestä syntyi sana <em>algoritmi</em>.</p><h4>Miksi juuri kirjain x?</h4><p>Arabiankielisessä algebrassa tuntematonta kutsuttiin sanalla <em>šay'</em> (شَيْء), joka tarkoittaa 'asiaa' tai 'jokin'. Kun arabialaiset matemaattiset tekstit käännettiin Espanjassa 1100-luvulla latinan kielelle, espanjalaisilla ei ollut kirjainta arabian 'š'-äänteelle. He lainasivat kreikkalaisen kirjaimen $\\chi$ (khi), joka kirjoitettiin myöhemmin latinalaisena kirjaimena <strong>x</strong>.</p><p>Lopullisesti kirjainten $x, y, z$ vakiinnuttamisesta tuntemattomiksi saamme kiittää <strong>René Descartesta</strong> (1637). Tarinan mukaan kirjapainon latojalla oli kirjasinlaatikossaan eniten vapaita x-kirjaimia, koska x oli ranskassa varsin harvinainen kirjain!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Röntgenputken keksinyt Wilhelm Röntgen antoi havaitsemalleen uudelle säteilylle nimen <em>X-säteet</em> (X-rays) nimenomaan algebran matematiikasta lainatulla logiikalla: säteilyn todellinen luonne oli aluksi täysin tuntematon suure 'x'!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Muuttujat ja lukusuora",
-        "url": "https://www.geogebra.org/m/m9kptf6y"
       }
     },
     {
@@ -40,10 +36,6 @@
       "deepDive": {
         "title": "Tietokoneohjelmointi ja muuttujat: Miten koodi sijoittaa arvoja?",
         "content": "<h4>Muuttuja koodarin työkalupakissa</h4><p>Ohjelmoinnissa (Python, JavaScript, C++) muuttuja on kuin nimikoitu laatikko tietokoneen keskusmuistissa. Kun koodissa kirjoitetaan:</p><pre><code>x = 3\ny = 2\ntulos = 5 * x + 4 * y</code></pre><p>Tietokone tekee täsmälleen saman lausekkeen arvon laskemisen kuin matematiikan tunnilla: se hakee muistilokerosta <code>x</code> arvon 3, muistilokerosta <code>y</code> arvon 2, suorittaa kertolaskut $15$ ja $8$, ja tallentaa tuloksen $23$ lokeroon <code>tulos</code>.</p><h4>Pelimoottorit ja 60 kuvaa sekunnissa</h4><p>Videopeleissä fysiikkamoottori laskee pelihahmon sijaintilauseketta $s = v \\cdot t + \\frac{1}{2} a t^2$ peräti 60 tai 120 kertaa sekunnissa jokaiselle pelimaailman esineelle ja hahmolle. Joka kerralla ajan muuttujan $t$ paikalle sijoitetaan kulunut sekunnin murto-osa!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Vuonna 1962 NASAn Mariner 1 -avaruusluotain jouduttiin räjäyttämään vain 293 sekuntia laukaisun jälkeen, koska käsin kirjoitetusta lausekkeesta oli koodiin siirrettäessä jäänyt pois yksi yläviiva (keskiarvoa kuvaava merkki). Tämä yhden merkin virhe maksoi 18,5 miljoonaa dollaria!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Lausekkeen arvon laskenta ja havainnollistus",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -62,10 +54,6 @@
       "deepDive": {
         "title": "Termin etymologia: Roomalainen rajajumala Terminus matematiikassa",
         "content": "<h4>Miksi matematiikan osia kutsutaan termeiksi?</h4><p>Sana <strong>termi</strong> juontaa juurensa latinan sanasta <em>terminus</em>, joka tarkoittaa 'rajaa', 'rajapyykkiä' tai 'päätepistettä'. Muinaisessa Roomassa <strong>Terminus</strong> oli rajojen ja rajapyykkien suojelusjumala. Rajakiviä pidettiin pyhinä, ja kuka tahansa rajakiveä siirtänyt julistettiin kirotuksi!</p><h4>Rajapyykit lausekkeessa</h4><p>Matematiikassa laskumerkit $+$ ja $-$ toimivat täsmälleen kuin rajapyykit lausekkeen maastossa: ne erottavat lausekkeen itsenäiset osat toisistaan. Kukin termi on oma rajattu 'tonttinsa', jolla on oma kerroin ja oma kirjainosa.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lentokenttien ja satamien <em>terminaali</em> sekä tietokoneen <em>pääte (terminal)</em> ovat saaneet nimensä täsmälleen samasta latinan sanasta <em>terminus</em> kuin matematiikan algebrallinen termi!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Algebran peruskäsitteet ja termit",
-        "url": "https://www.geogebra.org/m/e7wcmvsy"
       }
     },
     {
@@ -106,10 +94,6 @@
       "deepDive": {
         "title": "Miinusmerkin kaksoisrooli: Etumerkki vastaan vähennyslasku",
         "content": "<h4>Miksi miinusmerkki aiheuttaa eniten virheitä?</h4><p>Matematiikan oppimisessa suurin yksittäinen sekaannuksen lähde on miinusmerkin kaksoisrooli. Miinusmerkillä on kaksi täysin eri merkitystä:</p><ol><li><strong>Etumerkki (unäärioperaattori)</strong>: Kertoo, onko luku negatiivinen (nollan alapuolella), kuten $-5$.</li><li><strong>Laskutoimitus (binäärioperaattori)</strong>: Kertoo vähennyslaskusta kahden luvun välillä, kuten $8 - 3$.</li></ol><h4>Negatiivisten lukujen vaikea historia</h4><p>Eurooppalaiset matemaatikot kieltäytyivät vuosisatojen ajan hyväksymästä negatiivisia lukuja. Vielä 1500-luvulla saksalainen matemaatikko Michael Stifel kutsui niitä 'absurdeiksi luvuiksi' (<em>numeri absurdi</em>). Intiassa sen sijaan jo 600-luvulla matemaatikko <strong>Brahmagupta</strong> käytti negatiivisia lukuja sujuvasti velkoina ja positiivisia varallisuutena, ja muotoili säännön: 'Kahden velan tulo on varallisuutta' (eli miinus kertaa miinus on plus)!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Alkeislaskimissa on usein kaksi eri miinusnäppäintä: iso miinusnäppäin $-$ vähennyslaskua varten ja erillinen pieni $(-)$ tai $\\pm$ -näppäin negatiivisen luvun syöttämistä varten!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Samanmuotoisten termien sieventäminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -172,10 +156,6 @@
       "deepDive": {
         "title": "Al-Muqabala: Tasapainottamisen ikivanha taide",
         "content": "<h4>Vaaka pysyy aina vaaterissa</h4><p>Al-Khwarizmin teoksessa vuonna 820 toinen kirjan pääsanoista oli <strong>al-muqabala</strong> (المقابلة), joka tarkoittaa vastakkain asettamista tai tasapainottamista. Se tarkoitti juuri sitä, että yhtälön kummaltakin puolelta poistetaan yhtä suuret määrät samaa lajia olevia termejä, jotta vaaka pysyy suorassa.</p><h4>Miksi molemmat puolet on aina muistettava?</h4><p>Ajattele kaksihaaraista vaakaa, jonka kummassakin kupissa on $10\\text{ kg}$ kuorma. Jos nostat toisesta vaakakupista pois $5\\text{ kg}$ punnuksen, vaaka heilahtaa välittömästi alas toiselle puolelle. Tasapaino palautuu vasta, kun nostat tasan samanlaisen $5\\text{ kg}$ painon myös toisesta kupista!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kaksoisviivaa $//$ kutsutaan koulumatematiikassa myös 'komentoviivaksi'. Se kertoo opettajalle ja lukijalle suoraan: 'Tämän operaation aion tehdä nyt yhtälön kummallekin puolelle'. Se tekee laskujen tarkistamisesta ja virheiden löytämisestä vaivatonta!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Yhtälönratkaisun vaakamalli ja vastaluvut",
-        "url": "https://www.geogebra.org/m/e7wcmvsy"
       }
     },
     {
@@ -194,10 +174,6 @@
       "deepDive": {
         "title": "Käänteistoimitukset ja fysiikan kaavojen pyörittäminen",
         "content": "<h4>Miksi käänteistoimitukset hallitsevat koko tiedettä?</h4><p>Käänteistoimituksen periaate on kuin takin vetoketjun sulkeminen ja avaaminen: se toimenpide, joka tehtiin viimeisenä, puretaan ensimmäisenä päinvastaisella liikkeellä. Kaikki fysiikan kaavat pyörivät täsmälleen kerto- ja jakolaskutekniikan varassa:</p><p>Nopeuden kaavasta $v = \\frac{s}{t}$ saadaan matka $s$ kertomalla molemmat puolet ajalla $t$:</p><p>$$v = \\frac{s}{t} \\qquad // \\cdot t \\implies s = v \\cdot t$$</p><h4>Miksi nollalla jakaminen on ankarasti kielletty?</h4><p>Yhtälön kumpaakin puolta voi jakaa millä tahansa luvulla – <em>paitsi nollalla</em>! Jos jakaisimme nollalla, voisimme 'todistaa' mitä tahansa järjetöntä:</p><p>$$0 \\cdot 1 = 0 \\cdot 2$$</p><p>Jos nyt jakaisimme molemmat puolet nollalla ($// : 0$), saisimme tuloksen $1 = 2$! Tästä syystä nollalla jakaminen johtaa matematiikan romahdukseen ja se on määrittelemätön toimitus.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokoneiden prosessorit joutuvat vakavaan virhetilaan (Divide by Zero Exception), jos ohjelmakoodi käskee niitä jakamaan luvun nollalla. Se on aiheuttanut useita kuuluisia ohjelmistojen kaatumisia!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kerto- ja jakolaskutekniikka yhtälöissä",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -216,10 +192,6 @@
       "deepDive": {
         "title": "Rajan ylitys ja etumerkin vaihto: Tullimaksu yhtälössä",
         "content": "<h4>Miksi etumerkki vaihtuu?</h4><p>Moni oppilas miettii: onko termien siirtäminen taikuutta? Miksi ihmeessä merkki vain yhtäkkiä vaihtuu? Ajattele yhtäsuuruusmerkkiä $=$ valtioiden välisenä rajana. Kun termi matkustaa rajan yli toiseen valtioon, se joutuu maksamaan 'tullimaksun'. Tullimaksu on termin etumerkin kääntyminen vastakkaiseksi!</p><p>Todellisuudessa siirtäminen on vain nopeutettu tapa ajatella vastaluvun lisäämistä molemmille puolille: kun lisäät $-4x$ molemmille puolille, oikealta puolelta se häviää ($4x - 4x = 0$) ja vasemmalle puolelle se ilmestyy etumerkillä $-4x$.</p><h4>Mitä kokeessa saa käyttää?</h4><p>Voit aina itse valita, käytätkö vastalukutekniikkaa vai termien siirtämistekniikkaa. Molemmat ovat täysin matemaattisesti päteviä ja johtavat aina samaan oikeaan ratkaisuun!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lukion pitkässä matematiikassa ja yliopistoissa käytetään käytännössä poikkeuksetta termien siirtämistekniikkaa, koska monimutkaisissa differentiaaliyhtälöissä välivaiheita olisi muuten satoja rivejä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Termien siirtäminen ja yhtälönratkaisu",
-        "url": "https://www.geogebra.org/m/e7wcmvsy"
       }
     },
     {
@@ -238,10 +210,6 @@
       "deepDive": {
         "title": "Miten tietokoneet ratkaisevat miljoonia yhtälöitä sekunnissa?",
         "content": "<h4>Carl Friedrich Gauss ja eliminointimenetelmä</h4><p>Kun yhtälöitä on yhden sijasta kymmeniä tai tuhansia (yhtälöryhmät), ihminen väsyy nopeasti. 1800-luvun alun suuri matemaatikko <strong>Carl Friedrich Gauss</strong> kehitti systemaattisen menetelmän, <em>Gaussin eliminaation</em>, jolla yhtälöistä eliminoidaan muuttujia yksi kerrallaan täsmälleen samoilla operaatioilla, joita 7. luokalla opitaan.</p><h4>Tekoäly ja matriisilaskenta</h4><p>Nykypäivän tekoälyt, 3D-grafiikkapeleissä esiintyvä valaistus ja huomisen sääennusteet ratkaisevat supertietokoneilla matriiseja, joissa on miljoonia lineaariyhtälöitä samanaikaisesti. Kaikki nämä valtavat laskelmat perustuvat täsmälleen samoihin algebran perussääntöihin: termien siirtoihin, kertoimilla jakamiseen ja yhteenlaskuihin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tietokonegrafiikassa hahmon jokainen 3D-piste muunnetaan ruudulle kaksiulotteiseksi käyttämällä $4 \\times 4$ -kokoista yhtälömatriisia 60 kertaa sekunnissa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Monivaiheisten yhtälöiden ratkaisija",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {

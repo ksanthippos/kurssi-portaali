@@ -56,10 +56,6 @@
       "deepDive": {
         "title": "Veden kiderakenne: Miksi jää halkaisee vesiputket ja kalliot?",
         "content": "<h4>Vetysidosten kuusikulmainen häkkirakenne</h4><p>Nestemäisessä vedessä vesimolekyylit ($H_2O$) liikkuvat sikin sokin toistensa lomassa tiiviisti pakattuna. Mutta kun vesi jäätyy jääkiteeksi, vesimolekyylien väliset vetysidokset pakottavat molekyylit säännölliseen kuusikulmaiseen rakenteeseen.</p><p>Tämän kiderakenteen sisään jää paljon tyhjää tilaa. Siksi jää vie enemmän tilaa kuin sama määrä nestemäistä vettä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Veden jäätymisen aiheuttama laajenemispaine on valtava – jopa yli $2000\\text{ baria}$! Tämä ilmiö halkaisee talvella suojaamattomat vesiputket ja aiheuttaa luonnossa kallioiden rapautumista (pakkasrapautuminen), kun kallionhalkeamiin päässyt vesi jäätyy ja lohkoo kivipaasia irti.</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Veden tiheys eri lämpötiloissa",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -220,10 +216,6 @@
       "deepDive": {
         "title": "Arkhimedes ja Syrakusan polttopeilit: Tarua vai totta?",
         "content": "<h4>Roomalaiset laivat tulessa</h4><p>Legendan mukaan antiikin suurin keksijä <strong>Arkhimedes</strong> puolusti kotikaupunkiaan Syrakusaa vuonna 214 eaa. roomalaiselta laivastolta asettamalla kaupunginmuurille satoja kiillotettuja pronssikilpiä koveraksi peilipinnaksi. Kilvet heijastivat ja keskittivät Auringon säteet yhteen pisteeseen roomalaisten laivojen puisissa purjeissa sytyttäen ne tuleen!</p><h4>Modernit testit</h4><p>Myytinmurtajat (MythBusters) ja MIT:n opiskelijat ovat toistaneet kokeen: vaikka purjeet saatiin kytemään ja savuamaan oikeissa olosuhteissa, liikkuvan laivan sytyttäminen sodan melskeessä on äärimmäisen vaikeaa. Aurinkoenergialaitoksissa samaa periaatetta käytetään nykyään sähköntuotantoon keskittämällä peileillä valo vesihöyrytorniin!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> James Webb -avaruusteleskoopin (JWST) kultapäällysteinen pääpeili on kovera ja sen halkaisija on $6{,}5\\text{ metriä}$: se kerää avaruuden kaukaisimmista tähdistä saapuvat heikot fotonit tarkasti ilmaisimeen!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Valon heijastuminen ja koveran peilin sädegeometria",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {

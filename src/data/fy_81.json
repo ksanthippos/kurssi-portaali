@@ -37,10 +37,6 @@
       "deepDive": {
         "title": "Auton nopeusmittari ja GPS: Miten nopeus oikeasti mitataan?",
         "content": "<h4>Renkaiden pyörimisnopeus vs. satelliitit</h4><p>Auton mekaaninen nopeusmittari mittaa renkaiden pyörintänopeutta akseleissa olevien magneettiantureiden avulla. Jos autoon vaihdetaan halkaisijaltaan suuremmat renkaat, mittari näyttää todellisuutta hitaampaa nopeutta!</p><p>Puhelimen ja navigaattorin GPS-nopeus puolestaan perustuu satelliittien lähettämien radioaaltojen Doppler-ilmiöön ja paikan muutoksen mittaamiseen sekunnin murto-osissa: se on tasaisessa ajossa mittaria tarkempi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Lain mukaan auton nopeusmittari ei saa koskaan näyttää todellista nopeutta alempaa lukemaa, minkä vuoksi autonvalmistajat kalibroivat mittarit aina näyttämään noin $3-5\\text{ km/h}$ todellista enemmän!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Aika-matka -kuvaajan piirtäminen ja tulkinta",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {

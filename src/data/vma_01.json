@@ -16,10 +16,6 @@
       "deepDive": {
         "title": "Georg Cantor ja äärettömyyden eri koot: Onko olemassa 'suurempaa' ääretöntä?",
         "content": "<h4>Kaikki äärettömät eivät ole yhtä suuria</h4><p>Ennen 1800-luvun loppua matemaatikot ajattelivat äärettömyyden olevan vain yksi ja sama jakamaton käsite. Saksalainen <strong>Georg Cantor</strong> (1845–1918) kuitenkin todisti jotain mullistavaa: <em>on olemassa eri kokoisia äärettömyyksiä!</em></p><h4>Cantorin diagonaalitodistus</h4><p>Luonnolliset luvut $\\mathbb{N}$, kokonaisluvut $\\mathbb{Z}$ ja jopa murtoluvut $\\mathbb{Q}$ ovat 'yhtä suuria' eli <strong>numeroituvasti äärettömiä</strong> (niiden koko on $\\aleph_0$, alef-nolla). Mutta reaalilukuja $\\mathbb{R}$ (kaikki desimaaliluvut lukusuoralla) on niin paljon, ettei niitä voi edes numeroida 1-to-1 jonoon!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Välillä $0$ ja $1$ on enemmän reaalilukuja kuin mitä koko luonnollisten lukujen joukossa on kokonaislukuja yhteensä! Cantorin aikalaiset pitivät tätä aluksi hulluutena, mutta nykyään se on koko modernin matematiikan kiveenhakattu perusta.</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Äärettömyys ja Hilbertin hotellin visualisointi",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -76,10 +72,6 @@
       "deepDive": {
         "title": "Eulerin identiteetti: Matematiikan kaunein yhtälö",
         "content": "<h4>Viisi tärkeintä vakiota yhdessä kaavassa</h4><p>Sveitsiläinen nero <strong>Leonhard Euler</strong> (1707–1783) osoitti, että kun luonnollisen logaritmin kantaluku $e \\approx 2{,}718$, ympyrän suhdeluku $\\pi$, imaginääriyksikkö $i$, luku $1$ ja luku $0$ yhdistetään, syntyy huikea kaava:</p><p>$$\\mathbf{e^{i\\pi} + 1 = 0}$$</p><h4>Mihin kompleksilukuja tarvitaan todellisuudessa?</h4><p>Vaikka sana 'imaginäärinen' tarkoittaa kuvitteellista, kompleksiluvut ovat fysiikan ja tekniikan tehokkaimpia työkaluja:</p><ol><li><strong>Sähkötekniikka</strong>: Vaihtovirtapiirien impedanssit, jännitteet ja vaihesiirrot lasketaan kompleksiluvuilla.</li><li><strong>Kvanttimekaniikka</strong>: Atomin aaltofunktio (Schrödingerin yhtälö) on luonteeltaan kompleksiarvoinen.</li><li><strong>Signaalinkäsittely ja Fourier-muunnos</strong>: Äänen ja kuvien pakkaus (MP3, JPEG, 5G-verkot).</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nobel-fyysikko Richard Feynman kutsui Eulerin identiteettiä 'koko matematiikan hämmästyttävimmäksi ja kauneimmaksi jalokiveksi'!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kompleksiluvut ja kompleksitaso",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -116,10 +108,6 @@
       "deepDive": {
         "title": "John Nash ja vankien dilemma: Miksi itsekkyys johtaa huonoon tulokseen?",
         "content": "<h4>Peliteorian suuri oivallus</h4><p>Vuonna 1950 matemaatikko <strong>John Nash</strong> (josta tehtiin kuuluisa elokuva <em>Kaunis mieli / A Beautiful Mind</em>) esitti teorian ei-kooperatiivisista peleistä ja tasapainotilasta, jota kutsutaan <strong>Nash-tasapainoksi</strong>.</p><h4>Vankien dilemma (Prisoner's Dilemma)</h4><p>Poliisi kuulustelee kahta eristyksissä olevaa epäiltyä rikoksesta:</p><ul><li>Jos molemmat vaikenevat (yhteistyö), molemmat saavat 1 vuoden tuomion.</li><li>Jos molemmat pettävät toisensa, molemmat saavat 5 vuotta vankeutta.</li><li>Jos toinen pettää ja toinen vaikenee, pettäjä pääsee vapaaksi (0 vuotta) ja vaikenija saa 10 vuotta!</li></ul><p>Loogisesti ajatellen molempien kannattaa pettää toisensa riippumatta toisen valinnasta. Niinpä molemmat päätyvät istumaan 5 vuotta – vaikka vaikenemalla molemmat olisivat selvinneet yhdellä vuodella!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> John Nash sai työstään Nobelin taloustieteen palkinnon vuonna 1994. Vankien dilemmaa käytetään nykyään mallintamaan niin ilmastosopimusten vaikeutta, yritysten hintakilpailua kuin eläinten evoluutiotakin!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Peliteoria ja todennäköisyysmallit",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -136,10 +124,6 @@
       "deepDive": {
         "title": "Grigori Perelman ja miljoonasta dollarista kieltäytyminen: Nerous ilman maallista mammonaa",
         "content": "<h4>Poincarén konjektuurin ratkaisu 2002</h4><p>Vuonna 2002 pietarilainen erakkomainen huippumatemaatikko <strong>Grigori Perelman</strong> latasi internetin avoimeen tutkimusarkistoon (arXiv) kolme artikkelia, joissa hän esitti ratkaisun Poincarén satavuotiseen konjektuuriin 3-ulotteisten avaruuksien topologiasta.</p><h4>Kieltäytyminen Fieldsin mitalista ja miljoonasta dollarista</h4><p>Kun maailman parhaat matemaatikot olivat tarkistaneet satoja sivuja pitkän todistuksen ja todenneet sen täydellisen virheettömäksi, Perelmanille myönnettiin matematiikan 'Nobel' eli Fieldsin mitali vuonna 2006 ja Clay-instituutin miljoonan dollarin Millennium-palkinto vuonna 2010.</p><p>Perelman kieltäytyi molemmista! Hän totesi rauhallisesti asuvansa vaatimattomasti äitinsä kanssa Pietarissa eikä tarvitse rahaa: <em>'Jos todistus on oikea, mitään muuta tunnustusta ei tarvita.'</em></p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Perelman totesi toimittajille: 'Tiedän miten hallita maailmankaikkeutta. Kertokaa minulle, miksi minun pitäisi juosta miljoonan dollarin perässä?'</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Riemannin zeeta-funktion kuvaaja ja sarjan osasummat",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -176,10 +160,6 @@
       "deepDive": {
         "title": "Zenonin paradoksit: Voiko Akhilleus koskaan saavuttaa kilpikonnaa?",
         "content": "<h4>Antiikin filosofin mahdoton kilpajuoksu</h4><p>Antiikin kreikkalainen filosofi <strong>Zenon Elealainen</strong> (n. 490–430 eaa.) esitti kuuluisan paradoksin: Tarunhohtoinen nopea juoksija Akhilleus ottaa juoksukilpailun hitaan kilpikonnan kanssa. Kilpikonna saa 100 metrin etumatkan.</p><h4>Äärettömän monen vaiheen pulma</h4><p>Kun Akhilleus juoksee kilpikonnan lähtöpaikkaan (100 m), kilpikonna on ehtinyt liikkua vaikkapa 10 metriä eteenpäin. Kun Akhilleus saavuttaa tuon pisteen, kilpikonna on liikkunut taas 1 metrin. Kun Akhilleus saavuttaa sen, kilpikonna on siirtynyt 10 senttimetriä...</p><p>Zenon väitti, että Akhilleuksen täytyy kulkea äärettömän monen pisteen läpi, joten hän ei voi koskaan saada kilpikonnaa kiinni!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Zenonin paradoksi ratkesi vasta raja-arvon avulla: äärettömän monen luvun summa voi olla täysin äärellinen luku! Esimerkiksi $\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\frac{1}{16} + \\dots = 1$. Aika ei lopu kesken, vaan Akhilleus pyyhältää kilpikonnan ohi juuri oikealla hetkellä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Funktion raja-arvot ja asymptootit",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -216,10 +196,6 @@
       "deepDive": {
         "title": "Alan Turing ja Enigma: Miten koodin murtaminen ratkaisi toisen maailmansodan?",
         "content": "<h4>Saksan sota-ase: Enigma-salauskone</h4><p>Toisessa maailmansodassa natsi-Saksa käytti <strong>Enigma</strong>-nimistä sähkömekaanista salauskonetta, jossa oli useita pyöriviä roottoreita ja kytkentätaulu. Jokaisen näppäinpainalluksen jälkeen roottorit pyörähtivät uuteen asentoon, jolloin sama kirjain koodautui joka kerta eri kirjaimeksi! Mahdollisia asetuksia oli yli <strong>150 triljoonaa</strong>.</p><h4>Bletchley Park ja sähkömekaaninen 'Bombe'</h4><p>Englantilainen matemaatikko <strong>Alan Turing</strong> rakensi Bletchley Parkissa valtavan sähkömekaanisen 'Bombe'-koneen. Se käytti loogisia päättelyketjuja ja karsi mahdottomat roottoriasetukset minuuteissa, jolloin liittoutuneet pystyivät lukemaan Saksan salaisia sukellusveneviestejä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Historioitsijoiden mukaan Turingin ja hänen tiiminsä työ Enigman parissa lyhensi toista maailmansotaa vähintään kahdella vuodella ja pelasti yli 14 miljoonan ihmisen hengen! Turingia pidetään myös modernin tietojenkäsittelytieteen ja tekoälyn isänä.</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra / Web: Caesar-salauksen ja kryptografian simulaatio",
-        "url": "https://www.geogebra.org/calculator"
       }
     }
   ]

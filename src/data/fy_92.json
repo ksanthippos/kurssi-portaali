@@ -37,10 +37,6 @@
       "deepDive": {
         "title": "Inge Lehmann ja maapallon kiinteä ydin: Seismologian suurin oivallus",
         "content": "<h4>Tanskalainen seismologi ja maanjäristysten varjovyöhyke</h4><p>Vuoteen 1936 saakka geologit uskoivat maapallon ytimen olevan kauttaaltaan sulaa nestemäistä rautaa. Tanskalainen seismologi <strong>Inge Lehmann</strong> alkoi kuitenkin tutkia tarkasti Uudessa-Seelannissa tapahtuneiden järistysten seismisiä mittauksia Euroopan asemilla.</p><h4>Sisäytimen heijastukset</h4><p>Lehmann huomasi seismogrammeissa heikkoja P-aaltoja sellaisilla alueilla, joille aaltojen ei nestemäisen ytimen teorian mukaan pitänyt päästä (niin sanotussa varjovyöhykkeessä). Hän osoitti matemaattisesti, että aallot heijastuivat <strong>maapallon keskellä olevasta kiinteästä sisäytimestä</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maapallon kiinteä sisäydin on noin $1200\\text{ km}$ säteinen kuula puhdasta rautaa ja nikkeliä. Sen lämpötila on yli $5000^\\circ\\text{C}$ (sama kuin Auringon pinnalla), mutta valtava paine (yli 3 miljoonaa ilmakehää) pakottaa raudan pysymään kiinteänä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Maapallon kerrosrakenne ja maanjäristysaallot",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -178,10 +174,6 @@
       "deepDive": {
         "title": "Vuoden 1920 suuri väittely: Onko Linnunrata koko maailmankaikkeus?",
         "content": "<h4>Saariuniversumit vastaan yksi Linnunrata</h4><p>Vielä 1920-luvun alussa tähtitieteilijät kiistelivät siitä, olivatko taivaalla kaukoputkilla näkyvät spiraalimaiset 'kierteissumut' vain Linnunradan sisäisiä kaasupilviä vai kokonaisia toisia galakseja ('saariuniversumeja').</p><h4>Edwin Hubble ja Andromedan etäisyys 1923</h4><p>Vuonna 1923 <strong>Edwin Hubble</strong> käytti Kalifornian Mount Wilsonin uutta 2,5-metristä Hooker-teleskooppia ja onnistui erottamaan Andromedan sumusta yksittäisiä kefeidi-muuttujatähtiä. Laskemalla niiden kirkkausvaihtelusta etäisyyden hän osoitti Andromedan sijaitsevan <strong>yli 2 miljoonan valovuoden päässä</strong> – kirkkaasti oman Linnunratamme ulkopuolella!</p><p>Ihmiskunnan käsitys universumin koosta räjähti yhdessä hetkessä miljoonakertaiseksi.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Noin 4,5 miljardin vuoden kuluttua oma Linnunratamme ja Andromeda-galaksi törmäävät toisiinsa ja sulautuvat yhteen muodostaen jättimäisen ellipsigalaxin ('Milkomeda')!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Galaksien spiraalikierteet ja gravitaatio",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -218,10 +210,6 @@
       "deepDive": {
         "title": "Johannes Kepler ja Marsin radan mysteeri: 8 kaariminuutin ero",
         "content": "<h4>Kaksikymmentä vuotta Tycho Brahen mittausdataa</h4><p>Ennen 1600-lukua kaikki tähtitieteilijät Ptolemaioksesta Kopernikukseen uskoivat filosofiseen dogmiin: taivaankappaleiden kiertoratojen täytyi olla 'täydellisiä ympyröitä'. Tanskalainen Tyko Brahe teki vuosikymmeniä ennen kaukoputkea äärimmäisen tarkkoja havaintoja planeetoista.</p><h4>Kahdeksan kaariminuuttia, jotka kaatoivat 2000 vuoden fysiikan</h4><p>Brahen kuoltua hänen oppilaansa <strong>Johannes Kepler</strong> yritti sovittaa Marsin kiertorataa ympyrälle. Hän laski kuukausikaupalla käsin ja sai mallin täsmäämään lähes täydellisesti – lukuun ottamatta <strong>kahdeksan kaariminuutin ($8' = 0{,}13^\\circ$)</strong> pienen pientä poikkeamaa kahdessa havaintopisteessä!</p><p>Moni muu olisi kuitannut tämän mittausvirheenä, mutta Kepler luotti Brahen havaintojen tarkkuuteen. Hän hylkäsi ympyrät ja kokeili <strong>ellipsiä</strong>. Ellipsi selitti Marsin liikkeen täydellisesti ilman minkäänlaista poikkeamaa! Tämä avasi tien Isaac Newtonin gravitaatiolaille.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kepler kirjoitti: 'Jos olisin uskonut voivani jättää huomiotta nuo kahdeksan kaariminuuttia, olisin paikannut hypoteesini. Mutta koska niitä ei voinut ohittaa, nuo kahdeksan minuuttia yksin osoittivat tien koko tähtitieteen uudistamiseen!'</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Keplerin lait ja planeettojen kiertoradat",
-        "url": "https://www.geogebra.org/calculator"
       }
     }
   ]

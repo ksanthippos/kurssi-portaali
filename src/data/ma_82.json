@@ -18,10 +18,6 @@
       "deepDive": {
         "title": "Miksi pinta-alayksiköiden suhdeluku on 100 eikä 10?",
         "content": "<h4>Kahden ulottuvuuden loukku</h4><p>Moni tekee yksikkömuunnoksissa virheen olettaen, että $1\\text{ m}^2$ olisi $10\\text{ dm}^2$, koska pituudessa $1\\text{ m} = 10\\text{ dm}$. Mutta miksi neliömetrissä onkin <strong>satakertainen</strong> määrä neliödesimetrejä?</p><h4>Neliön geometrinen jako</h4><p>Piirrä mielessäsi neliö, jonka sivu on $1\\text{ m} = 10\\text{ dm}$. Jaa kanta kymmeneen $1\\text{ dm}$ palaan ja korkeus kymmeneen $1\\text{ dm}$ palaan. Neliön sisälle muodostuu ruudukko, jossa on $10$ riviä ja $10$ saraketta:</p><p>$$10 \\cdot 10 = 100 \\text{ kpl } 1\\text{ dm}^2 \\text{ ruutuja!}$$</p><p>Koska pinta-ala on kahden pituuden tulo, suhdeluku korottuu aina toiseen potenssiin: $10^2 = 100$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jalkapallokentän pinta-ala on tyypillisesti noin $0{,}7$ hehtaaria ($7\\,000\\text{ m}^2$). Yksi hehtaari ($100\\text{ m} \\times 100\\text{ m} = 10\\,000\\text{ m}^2$) vastaa siis noin puolitoista jalkapallokenttää!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Suorakulmion ja neliön pinta-ala",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -40,10 +36,6 @@
       "deepDive": {
         "title": "Heronin kaava: Miten kolmion ala lasketaan tuntematta korkeutta?",
         "content": "<h4>Maanmittaajien ikiaikainen pulma</h4><p>Aina kolmion korkeutta ei voida mitata helposti maastossa (esim. jyrkän vuorenrinteen tai suon takia). Aleksandrialainen insinööri ja matemaatikko <strong>Heron Aleksandrialainen</strong> esitti noin vuonna 60 jaa. nerokkaan kaavan, jolla kolmion pinta-ala saadaan laskettua <em>pelkkien kolmen sivun pituuksien $a, b, c$ perusteella</em>!</p><h4>Heronin kaava</h4><p>Lasketaan ensin kolmion puolipiiri $s = \\frac{a + b + c}{2}$. Kolmion pinta-ala on tällöin:</p><p>$$A = \\sqrt{s(s - a)(s - b)(s - c)}$$</p><p>Tämä kaava on edelleen yksi maanmittauksen ja GPS-kolmiomittauksen tärkeimmistä perustyökaluista!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Heron oli myös antiikin suuri keksijä: hän loi maailman ensimmäisen höyrykoneen (<em>aeolipile</em>), automaattisen kolikkokäyttöisen pyhän veden annostelijan sekä ensimmäisen ohjelmoitavan robottiteatterin!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Suunnikkaan ja kolmion pinta-alamallit",
-        "url": "https://www.geogebra.org/geometry"
       }
     },
     {
@@ -62,10 +54,6 @@
       "deepDive": {
         "title": "Presidentti Garfieldin todistus ja Pythagoraan kolmikot",
         "content": "<h4>Yli 400 eri tapaa todistaa sama lause</h4><p>Pythagoraan lauseesta tunnetaan enemmän matemaattisia todistuksia kuin mistään muusta lauseesta maailmassa. Yhden tunnetuimmista todistuksista kehitti vuonna 1876 Yhdysvaltain 20. presidentti <strong>James A. Garfield</strong> (tuolloin senaattori). Hän julkaisi todistuksensa <em>New England Journal of Education</em> -lehdessä.</p><h4>Garfieldin puolisuunnikastodistus</h4><p>Garfield asetti kaksi identtistä suorakulmaista kolmiota ($a, b, c$) vierekkäin ja yhdisti huiput muodostaen puolisuunnikkaan. Laskemalla puolisuunnikkaan alan kahdella eri tavalla (yhtenä isona kuviona ja kolmena kolmiona) saadaan suoraan algebrallisesti $a^2 + b^2 = c^2$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Egyptiläiset pyramidien rakentajat käyttivät 12-solmuista narua (sivut 3, 4 ja 5 solmuväliä) asettaakseen täydellisiä $90^\\circ$ suoria kulmia maastoon jo yli 1500 vuotta ennen Pythagoraan syntymää!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Pythagoraan lauseen visuaalinen todistus neliöillä",
-        "url": "https://www.geogebra.org/m/kpxqufeg"
       }
     },
     {
@@ -84,10 +72,6 @@
       "deepDive": {
         "title": "Puolisuunnikassääntö ja integraalilaskenta: Miten käyrien alainen ala mitataan?",
         "content": "<h4>Miten mitataan järven tai siiven pinta-ala?</h4><p>Tosielämässä maastonmuodot, joet, järvet ja lentokoneen siipien poikkileikkaukset eivät ole suorakulmioita tai ympyröitä, vaan niiden reunat ovat mielivaltaisen mutkittelevia käyriä. Miten tällaisen kaarevan muodon pinta-ala saadaan selville?</p><h4>Puolisuunnikasmenetelmä (Trapezoidal Rule)</h4><p>Matematiikassa ja tietokonesimulaatioissa kaareva alue jaetaan kymmeniin tai tuhansiin ohuisiin pystysuoriin kaistaleisiin. Jokainen kaistale approksimoidaan kapeaksi <strong>puolisuunnikkaaksi</strong>. Laskemalla kaikkien puolisuunnikkaiden pinta-alat yhteen saadaan hämmästyttävän tarkka arvio kaarevan kuvion alasta. Tämä on modernin differentiaali- ja integraalilaskennan perusta!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Autojen ajotietokoneet käyttävät puolisuunnikassääntöä laskeessaan kuljettua kokonaismatkaa nopeusanturin mittaamista hetkellisistä nopeuslukemista!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Puolisuunnikkaan pinta-alan muodostus suunnikkaasta",
-        "url": "https://www.geogebra.org/geometry"
       }
     },
     {
@@ -106,10 +90,6 @@
       "deepDive": {
         "title": "Luku pii (π) kautta vuosituhanten: Babylonista biljooniin desimaaleihin",
         "content": "<h4>Antiikin arviot</h4><p>Jo 4000 vuotta sitten muinaiset babylonialaiset tiesivät, että ympyrän kehä on hieman yli kolme kertaa sen halkaisija (he käyttivät lukua $3\\frac{1}{8} = 3{,}125$). Vanhassa testamentissa (1. Kun. 7:23) Salomon temppelin pyöreän vaskialtaan mitoiksi ilmoitetaan halkaisija 10 kyynärää ja ympärysmitta 30 kyynärää (eli $\\pi \\approx 3$).</p><h4>Ludolph van Ceulenin elämäntyö</h4><p>Vuonna 1596 saksalais-hollantilainen matemaatikko <strong>Ludolph van Ceulen</strong> käytti suuren osan elämästään laskeakseen piille 35 desimaalia käyttämällä $2^{62}$-sivuista monikulmiota. Hän oli saavutuksestaan niin ylpeä, että pyysi kaivertamaan nämä 35 desimaalia hautakiveensä!</p><h4>Pii on irrationaalinen ja transkendenttinen</h4><p>Vuonna 1761 Johann Lambert todisti, että $\\pi$ on <strong>irrationaaliluku</strong>: sen desimaaliesitys jatkuu ikuisesti toistumatta koskaan säännöllisesti jaksollisena. Piin desimaaleista löytyy siis periaatteessa jokaisen ihmisen syntymäpäivä, puhelinnumero ja koko maailmankirjallisuus binäärikoodina!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Supertietokoneet ovat laskeneet piille jo yli 100 biljoonaa ($10^{14}$) desimaalia! Kuitenkin NASAn raketti-insinööreille riittää vain 15-16 desimaalia koko aurinkokunnan luotainlentojen äärimmäisen tarkkaan navigointiin.</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Luku pii ja kehän rullaus suoralle",
-        "url": "https://www.geogebra.org/m/e7wcmvsy"
       }
     },
     {
@@ -128,10 +108,6 @@
       "deepDive": {
         "title": "Eratosthenes 240 eaa.: Miten maapallon ympärysmitta mitattiin kaaren avulla?",
         "content": "<h4>Varjot kaivossa ja Aleksandriassa</h4><p>Vuonna 240 eaa. Aleksandrian kirjastonhoitaja <strong>Eratosthenes</strong> tiesi, että kesäpäivänseisauksen keskipäivänä Syenen kaupungissa (nykyinen Assuan) aurinko paistoi suoraan syvän kaivon pohjalle – siellä ei siis ollut varjoa lainkaan. Samaan aikaan $800\\text{ km}$ pohjoisempana Aleksandriassa pystysuora pylväs loi pienen varjon, jonka kulmaksi mitattiin $7{,}2^\\circ$.</p><h4>Ympyrän kaaren mittasuhteet ratkaisivat arvoituksen</h4><p>Eratosthenes oivalsi maapallon olevan pallo, jolloin kaupunkien välinen etäisyys $800\\text{ km}$ oli ympyrän kaari ja kulmaero $7{,}2^\\circ$ oli tätä vastaava keskuskulma maapallon keskipisteestä katsottuna!</p><p>$$\\frac{7{,}2^\\circ}{360^\\circ} = \\frac{1}{50}$$</p><p>Koska kaari oli $\\frac{1}{50}$ maapallon koko kehästä, koko maapallon ympärysmitta oli:</p><p>$$50 \\cdot 800\\text{ km} = 40\\,000\\text{ km}!$$</p><p>Tulos oli hämmästyttävän tarkka: modernin satelliittimittauksen mukaan maapallon ympärysmitta navoilta mitattuna on $40\\,008\\text{ km}$!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Eratosthenes mittasi maapallon koon yli 1700 vuotta ennen Kolumbuksen purjehdusta käyttämällä vain keppiä, auringonvarjoa ja ympyrän kaaren kaavaa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Ympyrän kaaren pituus ja keskuskulma",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -150,10 +126,6 @@
       "deepDive": {
         "title": "Pizzapulma: Kannattaako ostaa yksi iso vai kaksi pientä pizzaa?",
         "content": "<h4>Pizzerian klassinen matemaattinen ansa</h4><p>Pizzeriassa on tarjous: voit valita joko <strong>yhden suuren pizzan</strong> (halkaisija $40\\text{ cm}$) hintaan $16\\text{ €}$ tai <strong>kaksi pientä pizzaa</strong> (halkaisija $28\\text{ cm}$) yhteishintaan $18\\text{ €}$. Kumpi tarjous antaa enemmän syötävää?</p><h4>Lasketaan pinta-alat!</h4><ul><li>Pienen pizzan säde on $14\\text{ cm}$. Kahden pienen pizzan yhteenlaskettu pinta-ala on:<br>$$2 \\cdot A_{\\text{pieni}} = 2 \\cdot \\pi \\cdot 14^2 = 2 \\cdot 196\\pi = 392\\pi \\approx 1231\\text{ cm}^2$$</li><li>Ison pizzan säde on $20\\text{ cm}$. Sen pinta-ala on:<br>$$A_{\\text{iso}} = \\pi \\cdot 20^2 = 400\\pi \\approx 1257\\text{ cm}^2$$</li></ul><p>Yksi iso pizza on pinta-alaltaan <strong>suurempi kuin kaksi pientä yhteensä</strong>, ja se on vielä kaksi euroa halvempi! Koska pinta-ala riippuu säteen neliöstä ($r^2$), halkaisijan maltillinenkin kasvu suurentaa pinta-alaa räjähdysmäisesti.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tämä neliöllinen ilmiö pätee myös puiden runkoihin: yksi $60\\text{ cm}$ paksu puunrunko tuottaa enemmän sahatavaraa kuin neljä $30\\text{ cm}$ paksua puuta!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Ympyrän pinta-alan havainnollistus sektoreilla",
-        "url": "https://www.geogebra.org/m/kpxqufeg"
       }
     },
     {
@@ -172,10 +144,6 @@
       "deepDive": {
         "title": "Ympyrädiagrammit ja sektorit tilastotieteessä: Florence Nightingalen ruusudiagrammi",
         "content": "<h4>Sektorit hengenpelastajina Krimin sodassa</h4><p>Vuonna 1855 Krimin sodan aikana brittiläinen sairaanhoitaja ja tilastotieteilijä <strong>Florence Nightingale</strong> keksi aivan uudenlaisen sektoridiagrammin: <em>ruusudiagrammin (coxcomb)</em>.</p><h4>Diagrammi, joka muutti lääketieteen</h4><p>Hän esitti ympyrän sektoreina sotilaiden kuolinsyyt: siniset sektorit kuvasivat estettävissä olevia tartuntatauteja ja punaiset taisteluvammoja. Sektorit osoittivat kiistattomasti, että huonon hygienian ja puhtaanapidon vuoksi sairaaloissa kuoli kymmenkertainen määrä miehiä taisteluihin verrattuna! Tämän visuaalisen esityksen ansiosta armeijan sairaaloihin säädettiin tiukat puhtausvaatimukset, mikä pelasti miljoonia ihmishenkiä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Florence Nightingale oli ensimmäinen nainen, joka valittiin arvostetun Britannian kuninkaallisen tilastotieteellisen seuran (Royal Statistical Society) jäseneksi vuonna 1858!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Sektorin pinta-ala ja keskuskulma",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -194,10 +162,6 @@
       "deepDive": {
         "title": "Thales ja Kheopsin pyramidi: Miten varjo mittasi maailman ihmeen?",
         "content": "<h4>Miten mitata 146 metriä korkea pyramidi viivottimella?</h4><p>Noin 600 eaa. kreikkalainen filosofi ja matemaatikko <strong>Thales Miletoslainen</strong> matkusti Egyptiin. Egyptin faaraon papit haastoivat Thaleen mittaamaan suuren Kheopsin pyramidin korkeuden, jota kukaan ei ollut kyennyt mittaamaan sen jyrkkien ja vaarallisten seinämien vuoksi.</p><h4>Yhdenmuotoiset varjokolmiot</h4><p>Thales iski oman kävelysauvansa pystyyn hiekkaan pyramidin viereen. Hän odotti päivällä hetkeä, jolloin hänen sauvansa varjon pituus oli täsmälleen yhtä pitkä kuin sauva itse! Hän oivalsi, että auringonsäteiden muodostamat kolmiot olivat yhdenmuotoisia: tällä täsmälleen samalla hetkellä pyramidin heittämän varjon pituus (mitattuna pyramidin keskipisteestä varjon kärkeen) oli <strong>täsmälleen yhtä suuri kuin pyramidin korkeus</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Thaleen varjomenetelmä perustui suorakulmaisten kolmioiden yhdenmuotoisuuteen. Thales osoitti myös, että mittaus toimii minä tahansa vuorokaudenaikana verrannon $\\frac{\\text{pyramidin korkeus}}{\\text{sauvan korkeus}} = \\frac{\\text{pyramidin varjo}}{\\text{sauvan varjo}}$ avulla!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Yhdenmuotoiset kolmiot ja vastinsivut",
-        "url": "https://www.geogebra.org/calculator"
       }
     }
   ]

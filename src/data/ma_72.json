@@ -18,10 +18,6 @@
       "deepDive": {
         "title": "René Descartes ja koordinaatiston vallankumous: Miten geometria ja algebra yhdistyivät?",
         "content": "<h4>Kärpänen katossa synnytti modernin matematiikan</h4><p>1600-luvun ranskalainen filosofi ja matemaatikko <strong>René Descartes</strong> keksi koordinaatiston (jota siksi kutsutaan myös <em>kartesiseksi koordinaatistoksi</em>). Tarinan mukaan Descartes makasi sairaana vuoteessaan ja seurasi katossa kävelevää kärpästä. Hän oivalsi, että kärpäsen tarkan sijainnin huoneen katossa voi millä tahansa hetkellä ilmoittaa vain kahdella luvulla: mittaamalla sen kohtisuoran etäisyyden huoneen kahdesta vierekkäisestä seinästä!</p><h4>Analyyttinen geometria</h4><p>Tämä nerokas oivallus loi pohjan <strong>analyyttiselle geometrialle</strong>. Ennen Descartesta geometria (muodot ja piirtäminen) ja algebra (numerot ja yhtälöt) olivat kaksi täysin erillistä matematiikan haaraa. Koordinaatiston avulla geometrisia muotoja pystyttiin ensimmäistä kertaa kuvaamaan yhtälöillä: suora on $y = kx + b$, ympyrä on $x^2 + y^2 = r^2$, ja fysiikan liikkeet voidaan piirtää kuvaajiksi aika-paikka-koordinaatistoon.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Koordinaatisto jakautuu neljään neljännekseen (I, II, III, IV) vastapäivään kiertäen origon ympäri oikeasta yläkulmasta alkaen. Maapallon GPS-paikannusjärjestelmä käyttää samaa periaetta kaarevalla pallopinnalla: leveyspiirit vastaavat $y$-koordinaatteja ja pituuspiirit $x$-koordinaatteja.</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Koordinaatisto ja pisteiden piirtäminen",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -62,10 +58,6 @@
       "deepDive": {
         "title": "Miksi ympyrässä on 360 astetta eikä esimerkiksi 100 tai 1000?",
         "content": "<h4>Muinaisen Babylonian perintö</h4><p>Miksi ympyrän täysi kierros on juuri $360^\\circ$ eikä vaikkapa tasainen $100^\\circ$? Vastaus juontaa juurensa muinaiseen Mesopotamiaan ja Babyloniaan yli 4000 vuoden taakse. Babylonialaiset käyttivät <strong>60-kantaista lukujärjestelmää</strong> (seksagesimaalijärjestelmä) nykyisen kymmenjärjestelmän sijasta. He huomasivat myös auringon ja tähtien kiertoliikkeestä, että vuodessa on noin 360 päivää.</p><h4>Luvun 360 nerokas jaollisuus</h4><p>Matemaattisesti luvulla 360 on valtava etu, jota mikään kymmenluku ei pysty päihittämään: sillä on peräti <strong>24 eri tekijää</strong>! Luku 360 voidaan jakaa tasan luvuilla:</p><p>$$1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 18, 20, 24, 30, 36, 40, 45, 60, 72, 90, 120, 180, 360$$</p><p>Tämän ansiosta kulmat voidaan helposti jakaa puoliksi ($180^\\circ$), kolmasosiin ($120^\\circ$), neljäsosiin ($90^\\circ$), viidesosiin ($72^\\circ$), kuudesosiin ($60^\\circ$) ja kahdeksasosiin ($45^\\circ$) ilman hankalia desimaaleja!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ranskan vallankumouksen aikana 1790-luvulla yritettiin ottaa käyttöön <em>gradiaani</em> (uusaste), jossa suora kulma oli $100$ gradiaania ja täysi ympyrä $400$ gradiaania. Kansa ja merenkulkijat kuitenkin hylkäsivät sen, ja babylonialainen $360^\\circ$ säilyi voittajana kaikkialla maailmassa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kulmatyypit ja kulman luokittelu",
-        "url": "https://www.geogebra.org/m/e7wcmvsy"
       }
     },
     {
@@ -84,10 +76,6 @@
       "deepDive": {
         "title": "Sekstantit, kompassit ja kulmamittaus avomerellä",
         "content": "<h4>Miten ennen GPS-aikaa tiedettiin missä ollaan?</h4><p>Ennen kuin satelliitit ja GPS-paikantimet keksittiin, merenkulkijat ja tutkimusmatkailijat suunnistivat valtamerillä ainoastaan tähtien ja kulmamittausten avulla. Tärkein laite oli <strong>sekstantti</strong> – optinen peileillä varustettu astelevy, jolla mitattiin kulma auringon tai Pohjantähden ja horisontin välillä.</p><h4>Yhden asteen virhe maksaa 111 kilometriä</h4><p>Maapallon säde on noin $6371\\text{ km}$, joten maapallon kehän pituus on noin $40\\,075\\text{ km}$. Kun tämä jaetaan 360 asteella, saadaan selville, että <strong>yksi ainoa aste vastaa maan pinnalla noin 111 kilometriä</strong> (eli 60 meripeninkulmaa)! Yhden asteen mittausvirhe tarkoitti siis sitä, että laiva oli yli sadan kilometrin päässä aiotusta satamasta ja saattoi haaksirikkoutua koralliriuttoihin.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Armeijan kompassissa ja tykistössä ympyrä ei jakaudu 360 asteeseen, vaan <strong>piiruihin</strong> (Suomessa $6000$ piirua, NATO-maissa $6400$ piirua). Yhden piirun kulma tarkoittaa käytännössä sitä, että kilometrin ($1000\\text{ m}$) päässä oleva kohde siirtyy sivusuunnassa tasan yhden metrin!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Interaktiivinen astelevy ja kulman mittaus",
-        "url": "https://www.geogebra.org/m/kwh4d9y8"
       }
     },
     {
@@ -106,10 +94,6 @@
       "deepDive": {
         "title": "Matemaattinen todistus: Miksi ristikulmat ovat aina yhtä suuret?",
         "content": "<h4>Mistä tiedämme, että ristikulmat ovat AINA yhtä suuret?</h4><p>Matematiikassa ei riitä sanoa, että \"kuvasta katsottuna ne näyttävät samankokoisilta\". Geometriassa asiat <strong>todistetaan aukottomasti</strong>. Voimme todistaa ristikulmalauseen pelkästään vieruskulmien ominaisuuden avulla:</p><ol><li>Olkoot vastakkaiset kulmat $\\alpha$ ja $\\gamma$, ja niiden välinen viereinen kulma $\\beta$.</li><li>Koska $\\alpha$ ja $\\beta$ ovat vieruskulmia, ne muodostavat suoran viivan: $$\\alpha + \\beta = 180^\\circ \\implies \\alpha = 180^\\circ - \\beta$$</li><li>Toisaalta myös $\\gamma$ ja $\\beta$ ovat vieruskulmia: $$\\gamma + \\beta = 180^\\circ \\implies \\gamma = 180^\\circ - \\beta$$</li><li>Koska molemmat kulmat $\\alpha$ ja $\\gamma$ ovat yhtä suuria kuin lauseke $180^\\circ - \\beta$, täytyy olla: $$\\alpha = \\gamma$$</li></ol><p>Todistus on valmis! Tätä merkitään matematiikassa usein kirjaimin <strong>M.O.T.</strong> (<em>mikä oli todistettava</em>, latinaksi <em>Q.E.D.</em> eli <em>quod erat demonstrandum</em>).</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tämän todistuksen esitti Eukleides teoksessaan <em>Alkeet</em> lauseena I.15 jo 2300 vuotta sitten. Se osoittaa matemaattisen päättelyn uskomattoman voiman: lause pätee kaikille suorille koko maailmankaikkeudessa ikuisesti!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Ristikulmat ja vieruskulmat",
-        "url": "https://www.geogebra.org/m/jrvt433w"
       }
     },
     {
@@ -128,10 +112,6 @@
       "deepDive": {
         "title": "Harpin ja viivottimen taika: Miten keskinormaali konstruoidaan ilman mittaamista?",
         "content": "<h4>Klassinen geometrinen konstruktio</h4><p>Geometriassa arvostetuimpia ovat <strong>konstruktiot</strong>, joissa sallitaan ainoastaan kaksi työkalua: harppi ja merkitsemätön viivotin (mittoja ei saa lukea viivottimesta numeerisesti!). Miten janalle $AB$ voidaan piirtää millintarkka keskinormaali ilman mittanauhaa?</p><ol><li>Aseta harpin kärki pisteeseen $A$ ja säädä harpin säteeksi silmämääräisesti hieman yli puolet janan pituudesta.</li><li>Piirrä ympyränkaari janan molemmille puolille.</li><li>Pidä harpin asetus täsmälleen samana, siirrä kärki pisteeseen $B$ ja piirrä kaaret, jotka leikkaavat edelliset kaaret pisteissä $P$ ja $Q$.</li><li>Piirrä viivottimella suora pisteiden $P$ ja $Q$ kautta.</li></ol><p>Tämä suora on todistettavasti täsmälleen $90^\\circ$ kulmassa ja puolittaa janan täydellisesti!</p><div class=\"deep-dive-callout\"><strong>Kolmion ympäri piirretty ympyrä:</strong> Kun piirrät minkä tahansa kolmion kaikille kolmelle sivulle keskinormaalit, ne leikkaavat aina yhdessä ja samassa pisteessä! Tämä leikkauspiste on kolmion ympäri piirretyn ympyrän keskipiste (sillä se on yhtä kaukana kolmion kaikista kolmesta kärjestä).</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Janan keskinormaalin konstruointi",
-        "url": "https://www.geogebra.org/m/fscsqnrg"
       }
     },
     {
@@ -150,10 +130,6 @@
       "deepDive": {
         "title": "Eukleideen 5. aksiooma ja suhteellisuusteorian kaareva avaruus",
         "content": "<h4>Matematiikan historian kuuluisin kiista</h4><p>Yhdensuuntaisuus kytkeytyy yhteen koko tieteen historian kuuluisimmista arvoituksista: Eukleideen viidenteen aksioomaan eli <strong>yhdensuuntaisuusaksioomaan</strong>. Se sanoo yksinkertaisesti, että annetun suoran ulkopuolella olevan pisteen kautta voidaan piirtää tasan yksi kyseisen suoran kanssa yhdensuuntainen suora.</p><p>Yli 2000 vuoden ajan huippumatemaatikot yrittivät todistaa tämän aksiooman muista perusoletuksista, kunnes 1800-luvulla oivallettiin jotain tajunnanräjäyttävää: <em>aksiooma pätee vain litteässä tasossa!</em></p><h4>Mitä jos avaruus on kaareva?</h4><p>Pallon pinnalla ei ole lainkaan yhdensuuntaisia suoria: kaikki maapallon pituuspiirit kulkevat rinnakkain päiväntasaajalla, mutta leikkaavat toisensa pohjois- ja etelänavalla! Tällaista geometriaa kutsutaan <em>epäeuklidiseksi geometriaksi</em>. Albert Einstein oivalsi yleisessä suhteellisuusteoriassaan vuonna 1915, että suuri massa (kuten Aurinko ja tähdet) todella kaareuttaa ympäröivää avaruutta, jolloin valonsäteetkin kulkevat kaarevia reittejä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Puusepän suorakulma ja vatupassi perustuvat suorien yhdensuuntaisuuteen ja samankohtaisiin kulmiin. Jos kaksi lattialautaa tai seinäpalkkia tekee saman kulman poikittaispalkin kanssa, ne ovat taatusti yhdensuuntaiset eivätkä koskaan kohtaa.</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Samankohtaiset kulmat ja yhdensuuntaisuus",
-        "url": "https://www.geogebra.org/m/v7n9y34p"
       }
     },
     {
@@ -172,10 +148,6 @@
       "deepDive": {
         "title": "Pii (π) ja ympyrän neliöimisen mahdottomuus",
         "content": "<h4>Universaali luonnonvakio</h4><p>Olipa kyseessä kolikon reuna, polkupyörän rengas tai Saturnuksen rengasjärjestelmä, minkä tahansa ympyrän kehän pituuden $p$ ja halkaisijan $d$ suhde on aina täsmälleen sama luku: kreikkalainen kirjain <strong>pii</strong> ($\\pi$):</p><p>$$\\pi = \\frac{p}{d} \\approx 3{,}1415926535...$$</p><p>Luku $\\pi$ on <em>irrationaaliluku</em> ja <em>transkendenttinen luku</em>. Sen desimaaliesitys jatkuu äärettömiin ilman säännöllistä toistumista, eikä sitä voida esittää minkään kahden kokonaisluvun murtolukuna. Nykyään tietokoneilla piin desimaaleja on laskettu yli 100 biljoonaa kappaletta!</p><h4>Ympyrän neliöiminen</h4><p>Antiikin kreikkalaisten suuri haaste oli <em>\"ympyrän neliöiminen\"</em>: pystytäänkö pelkästään harppia ja viivotinta käyttäen piirtämään neliö, jonka pinta-ala on täsmälleen sama kuin annetun ympyrän? Vasta vuonna 1882 saksalainen Ferdinand von Lindemann todisti, että tämä tehtävä on <strong>matemaattisesti täysin mahdoton</strong>! Sanonta \"yrittää neliöidä ympyrää\" tarkoittaakin mahdottoman yrittämistä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ympyrä sulkee sisäänsä suurimman mahdollisen pinta-alan suhteessa kehän pituuteen. Siksi saippuakuplat ovat pyöreitä (pienin pintajännityksen energia) ja vesiputket pyöreitä (suurin virtaus pienimmällä materiaalilla).</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Ympyrän käsitteet ja sektorit",
-        "url": "https://www.geogebra.org/m/pqvf6pze"
       }
     },
     {
@@ -194,10 +166,6 @@
       "deepDive": {
         "title": "Thales Miletoslainen ja historian ensimmäinen matemaattinen todistus",
         "content": "<h4>Tieteen historian syntyhetki</h4><p>Kreikkalaista <strong>Thales Miletoslaista</strong> (n. 624–546 eaa.) pidetään länsimaisen filosofian ja luonnontieteen isänä. Hän oli tiettävästi ensimmäinen ihminen historiassa, joka hylkäsi uskomukset ja myytit, ja vaati, että luonnonilmiöille ja geometrisille totuuksille täytyy antaa <strong>looginen matemaattinen todistus</strong>.</p><p>Kun Thales todisti lauseensa (puoliympyrän kehäkulma on aina suora kulma), hänen kerrotaan olleen niin onnellinen, että hän uhrasi jumalille juhlan kunniaksi kokonaisen härän!</p><h4>Miten löydät minkä tahansa pyöreän esineen keskipisteen?</h4><p>Thaleen lauseella on loistava käytännön sovellus. Jos sinulla on pyöreä levy tai pöytä, jonka keskipistettä et tiedä:</p><ol><li>Aseta suorakulmainen viivotin tai A4-paperin kulma ($90^\\circ$) ympyrän reunalle siten, että kulman kärki koskettaa kehää.</li><li>Merkitse pisteet, joissa paperin sivut leikkaavat kehän, ja vedä niiden välille viiva: Thaleen lauseen mukaan tämä jana on ympyrän halkaisija!</li><li>Toista sama toisessa kohdassa kehää. Kahden halkaisijan leikkauspiste on millintarkasti ympyrän keskipiste!</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kaikki samaa kaarta vastaavat kehäkulmat ovat täsmälleen yhtä suuria, sijaitsipa niiden kärkipiste missä tahansa kohtaa ympyrän kehää!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kehäkulmalause ja Thaleen lause",
-        "url": "https://www.geogebra.org/m/mqm4zcm8"
       }
     },
     {
@@ -216,10 +184,6 @@
       "deepDive": {
         "title": "Paperin repiminen ja suorien yhdensuuntaisuus: Kolmion kulmasumman todistus",
         "content": "<h4>Helppo kotikoe: kokeile itse!</h4><p>Voit helposti havainnollistaa kolmion kulmien summan itse kotona: Leikkaa paperista saksilla minkä tahansa muotoinen kolmio. Revi sen kolme kulmaa irti ja aseta kärkipisteet vierekkäin pöydälle kyljet vastakkain. Huomaat hämmästykseksesi, että kulmat muodostavat aina täydellisen suoran viivan eli $180^\\circ$ oikokulman!</p><h4>Miten kulmasumma todistetaan matemaattisesti?</h4><p>Matemaattinen todistus perustuu aiemmin oppimaamme suorien yhdensuuntaisuuteen:</p><ol><li>Piirretään kolmion huipun $C$ kautta pohjasivun $AB$ kanssa yhdensuuntainen suora.</li><li>Yhdensuuntaisuuden nojalla huipun ympärille syntyvät vaihtoehtoiset kulmat ovat täsmälleen samankokoisia kuin kolmion pohjakulmat $\\alpha$ ja $\\beta$.</li><li>Koska nämä kolme kulmaa muodostavat suoralle viivalle oikokulman, niiden summan täytyy olla $\\alpha + \\beta + \\gamma = 180^\\circ$!</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Pallopinnalla kolmion kulmien summa on aina <strong>yli $180^\\circ$</strong>! Jos piirrät maapallolle kolmion pohjoisnavalta päiväntasaajalle nollameridiaania pitkin, sitten päiväntasaajaa pitkin 90 astetta itään ja takaisin pohjoisnavalle, kolmiossa on kolme $90^\\circ$ suoraa kulmaa ja kulmien summa on peräti $270^\\circ$!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kolmion kulmien summa",
-        "url": "https://www.geogebra.org/m/kfg6x4q5"
       }
     },
     {
@@ -238,10 +202,6 @@
       "deepDive": {
         "title": "Kolmioepäyhtälö ja miksi kolmio on maailman vakain rakenne",
         "content": "<h4>Voiko mistä tahansa luvuista rakentaa kolmion?</h4><p>Jos sinulla on kolme tikkua, joiden pituudet ovat $2\\text{ cm}$, $3\\text{ cm}$ ja $10\\text{ cm}$, voitko koota niistä kolmion? Et voi! Kaksi lyhyempää tikkua ($2 + 3 = 5\\text{ cm}$) eivät ylety toisiinsa kymmensenttisen tikun päistä. Tätä kutsutaan <strong>kolmioepäyhtälöksi</strong>: minkä tahansa kahden sivun summan on aina oltava suurempi kuin kolmannen sivun pituus ($a + b > c$).</p><h4>Miksi sillat ja nosturit rakennetaan kolmioista?</h4><p>Nelikulmio vääntyy helposti sivusuunnassa linttaan suunnikkaaksi, vaikka sen sivujen pituudet pysyisivät täsmälleen samoina (sen kulmat voivat muuttua vapaasti). Kolmio sen sijaan on <strong>jäykkä ja muotonsa säilyttävä</strong>: sen kulmia on mahdotonta muuttaa muuttamatta sen sivujen pituuksia!</p><p>Siksi nosturit, rautatiesillat, kattotuolit ja Eiffel-torni rakennetaan aina kolmioiden muodostamista ristikkorakenteista.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Tasakylkisessä kolmiossa huipusta piirretty korkeusjana toimii samalla kannan keskinormaalina ja huippukulman puolittajana. Se jakaa tasakylkisen kolmion kahdeksi toistensa peilikuvaksi ja suorakulmaiseksi kolmioksi!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kolmioiden luokittelu ja tasakylkinen kolmio",
-        "url": "https://www.geogebra.org/m/e3qkvbvf"
       }
     },
     {
@@ -260,10 +220,6 @@
       "deepDive": {
         "title": "Teollinen vallankumous, standardointi ja yhtenevyys arjessa",
         "content": "<h4>Miksi yhtenevyys muutti maailman?</h4><p>Yhtenevyys saattaa kuulostaa puhtaasti geometriselta teorialta, mutta se on itse asiassa modernin teollisen yhteiskunnan tärkein kivijalka: <strong>standardointi ja vaihto-osat</strong>. Ennen 1800-lukua aseet, vankkurit, kellot ja työkalut tehtiin käsityönä yksitellen. Jos kärryn pyörä rikkoutui, uusi piti veistää mittatilaustyönä puusepällä, koska mikään osa ei ollut samanlainen kuin toinen.</p><p>Teollinen vallankumous alkoi toden teolla vasta, kun keksittiin koneet, jotka pystyivät valmistamaan tuhansia täsmälleen <em>yhteneviä</em> pultteja, muttereita ja rattaita. Nyt mikä tahansa mutteri sopii mihin tahansa pulttiin kaikkialla maailmassa!</p><div class=\"deep-dive-callout\"><strong>Yhtenevyys vs. yhdenmuotoisuus:</strong> Älä sekoita yhtenevyyttä ja yhdenmuotoisuutta! Yhtenevät kuviot ovat kuin identtiset kaksoset (sama koko ja sama muoto). Yhdenmuotoiset kuviot ovat saman muotoisia, mutta toinen on skaalattu suuremmaksi tai pienemmäksi (kuten kartta ja todellinen maasto tai valokuva ja juliste).</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Kolmioiden yhtenevyyslauseet",
-        "url": "https://www.geogebra.org/m/r75wffh5"
       }
     },
     {
@@ -282,10 +238,6 @@
       "deepDive": {
         "title": "Kiraalisuus ja peilisymmetria luonnossa ja kemiassa",
         "content": "<h4>Oikea ja vasen käsi: miksi peilikuvaa ei voi kääntää alkuperäiseksi?</h4><p>Katso käsiäsi: vasen ja oikea kätesi ovat toistensa peilikuvia. Jos asetat ne päällekkäin siten, että molemmat kämmenet osoittavat pöytään, peukalot osoittavat eri suuntiin! Tätä ilmiötä kutsutaan tieteessä <strong>kiraalisuudeksi</strong> (kreikan sanasta <em>kheir</em>, käsi).</p><h4>Peilikuvamolekyylit lääketieteessä</h4><p>Kemiassa monet molekyylit esiintyvät oikea- ja vasenkätisinä peilikuvina (enantiomeereina). Vaikka niissä on tismalleen samat atomit, ihmiskeho tunnistaa ne täysin eri tavalla: esimerkiksi limoneenin toinen peilikuvamuoto tuoksuu sitruunalta ja toinen appelsiinilta! Lääketieteessä toinen peilikuvamuoto voi parantaa sairauden, kun taas toinen voi olla tehoton tai myrkyllinen.</p><div class=\"deep-dive-callout\"><strong>Koordinaattikikka:</strong> Kun piste $(x, y)$ peilataan $y$-akselin suhteen, vain $x$-koordinaatin etumerkki vaihtuu: $(3, 5) \\to (-3, 5)$. Kun peilataan $x$-akselin suhteen, vain $y$-koordinaatin etumerkki vaihtuu: $(3, 5) \\to (3, -5)$!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Peilaus suoran suhteen ja symmetria-akselit",
-        "url": "https://www.geogebra.org/m/j5n7wzrq"
       }
     },
     {
@@ -304,10 +256,6 @@
       "deepDive": {
         "title": "M. C. Escher, tapettiryhmät ja pelikorttien nerokas symmetria",
         "content": "<h4>Pelikortit: aina oikein päin kädessäsi</h4><p>Oletko koskaan huomannut tavallista pelikorttipakkaa sekoittaessasi kuvakorttien (kuningas, kuningatar, jätkä) nerokasta rakennetta? Ne on piirretty <strong>pistesymmetrisiksi</strong>: kortin keskipiste toimii peilauspisteenä. Tämän ansiosta kortti näyttää kädessäsi aina tismalleen samalta riippumatta siitä, kummin päin nostat sen pöydältä!</p><h4>M. C. Escherin ihmeelliset symmetriat</h4><p>Hollantilainen graafikko <strong>M. C. Escher</strong> teki maailmankuuluja taideteoksia, joissa toisiinsa kietoutuvat liskot, linnut ja kalat peittävät koko tason ilman pienintäkään rakoa (tessellaatio). Escher hyödynsi näissä pisteen suhteen tapahtuvia kiertoja ja symmetrioita.</p><p>Matemaatikot ovat osoittaneet, että kaksiulotteisessa tasossa on olemassa täsmälleen <strong>17 erilaista symmetriaryhmää</strong> (nk. tapettiryhmää). Jokainen säännöllinen tapetti-, laatta- tai kangaskuviointi maapallolla kuuluu johonkin näistä 17 geometrisesta ryhmästä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Pistesymmetrisiä kuvioita ovat esimerkiksi ympyrä, suunnikas, neliö ja kirjain S sekä numero 8. Kun käännät ne ylösalaisin ($180^\\circ$), ne näyttävät täysin samalta!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Peilaus pisteen suhteen ja 180° kierto",
-        "url": "https://www.geogebra.org/m/z6r2y5ev"
       }
     }
   ]

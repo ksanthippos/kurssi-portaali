@@ -18,10 +18,6 @@
       "deepDive": {
         "title": "Miksi laskujärjestys on olemassa? Al-Khwarizmi ja algoritmit",
         "content": "<h4>Universaali kieli ilman tulkinnanvaraisuutta</h4><p>Jos matematiikalla ei olisi tiukkoja laskujärjestyssääntöjä, insinöörit ja arkkitehdit saisivat samoilla piirustuksilla täysin erilaisia lujuuslaskelmia ja sillat romahtaisivat!</p><p>Säännöt kehittyivät vuosisatojen kuluessa. Persialainen 800-luvun oppinut <strong>Al-Khwarizmi</strong> loi ensimmäiset järjestelmälliset säännöt algebralliselle laskennalle (joista syntyi sana <em>algoritmi</em>). Tietokoneet ja ohjelmointikielet noudattavat täsmälleen tätä samaa laskujärjestystä joka sekunti.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Englanninkielisessä maailmassa laskujärjestys muistetaan usein muistisäännöstä <strong>PEMDAS</strong> (Parentheses, Exponents, Multiplication, Division, Addition, Subtraction) tai lauseesta <em>'Please Excuse My Dear Aunt Sally'</em>!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Laskujärjestys ja lukusuora",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -40,10 +36,6 @@
       "deepDive": {
         "title": "François Viète ja algebrallisten symbolien vallankumous 1591",
         "content": "<h4>Matematiikka ilman symboleja oli sanallista proosaa</h4><p>Vielä 1500-luvulla laskutoimituksille ei ollut käytössä sulkeita, plus- tai miinusmerkkejä! Matemaatikot joutuivat kirjoittamaan laskut auki kokonaisilla lauseilla, kuten: <em>'Otetaan viidestä kahden erotuksen tulo kymmenellä...'</em></p><h4>Kirjainsymbolit käyttöön</h4><p>Ranskalainen matemaatikko ja kuningas Henrik IV:n koodinmurtaja <strong>François Viète</strong> otti ensimmäisenä käyttöön järjestelmälliset kirjaimet tuntemattomille ja sulkumerkit ryhmittelyyn vuonna 1591. Tämä symbolinen algebra avasi tien nykyaikaiselle tieteelle ja insinööritaidoille!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Hakasulut $[\\,]$ keksi englantilainen matemaatikko John Wallis vuonna 1657 helpottamaan monimutkaisten geometristen kaavojen luettavuutta!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Aritmetiikan laskulaituri",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -106,10 +98,6 @@
       "deepDive": {
         "title": "Eukleideen algoritmi: Miten antiikin kreikkalaiset löysivät pienimmän yhteisen nimittäjän?",
         "content": "<h4>Geometrian isä Aleksandriassa 300 eaa.</h4><p>Kreikkalainen matemaatikko <strong>Eukleides</strong> kuvasi teoksessaan <em>Alkeet (Stoikheia)</em> nerokkaan tavan löytää kahden luvun suurin yhteinen tekijä (syt) vähentämällä pienempää lukua suuremmasta toistuvasti.</p><h4>Algoritmin periaate</h4><p>Kun halutaan laventaa luvut $\\frac{1}{48}$ ja $\\frac{1}{36}$ samannimisiksi, Eukleideen menetelmä paljastaa sekunneissa, että molemmat ovat jaollisia luvulla 12. Tämä algoritmi on edelleen yksi tietotekniikan ja tietokoneiden perusalgoritmeista!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Eukleideen <em>Alkeet</em> on Raamatun jälkeen ihmiskunnan historian eniten painettu, käännetty ja tutkittu kirja: sitä käytettiin matematiikan pääoppikirjana yli 2000 vuotta yhtäjaksoisesti!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Murtolukujen yhteenlasku visuaalisesti",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -149,10 +137,6 @@
       "deepDive": {
         "title": "Mitä murtoluvulla kertominen oikeastaan tarkoittaa?",
         "content": "<h4>Kokonaisluku suurentaa, murtoluku pienentää</h4><p>Alakoulussa opitaan, että 'kertolasku suurentaa aina lukua' ($3 \\times 4 = 12$). Mutta kun kerrotaan aidolla murtoluvulla (arvo alle 1), tulos <strong>pienenee</strong>!</p><h4>'Osa osasta'</h4><p>Lasku $\\frac{1}{2} \\cdot \\frac{3}{4}$ tarkoittaa suomeksi: <em>'Kuinka paljon on puolet kolmesta neljäsosasta?'</em> Jos leikkaat suklaalevystä $\\frac{3}{4}$ ja syöt siitä puolet, olet syönyt $\\frac{3}{8}$ koko levystä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kertolaskun sana <em>'kertoa'</em> tulee suomen kielessä vanhasta sanasta <em>kerta</em> (toistaa monta kertaa), mutta murtoluvuilla kertominen vastaa geometrisesti suorakulmion pinta-alan laskemista sivujen pituuksien tulona!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Murtolukujen tulo pinta-alamallina",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -171,10 +155,6 @@
       "deepDive": {
         "title": "Miksi nollalla jakaminen on ankarasti kiellettyä matematiikassa?",
         "content": "<h4>Mitä jakolasku tarkoittaa?</h4><p>Jakolasku on kertolaskun käänteistoimitus: $6 : 2 = 3$, koska $3 \\cdot 2 = 6$. Kysytään siis: <em>'Millä luvulla jakaja pitää kertoa, jotta saadaan jaettava?'</em></p><h4>Mitä tapahtuisi, jos jaettaisiin nollalla?</h4><p>Tarkastellaan laskua $5 : 0 = x$. Silloin pitäisi päteä $x \\cdot 0 = 5$. Mutta mikä tahansa luku kerrottuna nollalla on aina $0$, eikä koskaan $5$! Yhtälöllä ei ole mitään ratkaisua.</p><p>Entä $0 : 0 = x$? Silloin $x \\cdot 0 = 0$. Tämä puolestaan pätee <em>kaikilla mahdollisilla luvuilla</em> ($x$ voisi olla $1, 7$ tai miljoona)! Tulos on täysin määräämätön.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Vuonna 1997 Yhdysvaltain laivaston ohjusristeilijä USS Yorktown pysähtyi keskelle valtamerta lähes kolmeksi tunniksi, kun tietokonejärjestelmän ohjelmakoodissa tapahtui nollalla jakaminen ja koko laivan ohjausjärjestelmä kaatui!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Murtolukujen jakolasku havainnollisesti",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -193,10 +173,6 @@
       "deepDive": {
         "title": "Simon Stevin ja 'De Thiende' 1585: Miten desimaalipilkku mullisti laskennan?",
         "content": "<h4>Flaamilainen sotilasinsinööri ja kymmenesosat</h4><p>Ennen 1500-luvun loppua kaikki mittaukset ja rahasummat laskettiin vaikeilla murtoluvuilla. Flaamilainen matemaatikko <strong>Simon Stevin</strong> julkaisi vuonna 1585 pienen vihkosen nimeltä <em>De Thiende (Kymmenesosat)</em>.</p><h4>Pilkun voittokulku</h4><p>Stevin osoitti, että kun otetaan käyttöön desimaalierotin, kaikki murtolukulaskut voidaan laskea täsmälleen samalla tavalla kuin tavalliset kokonaislukujen yhteen-, vähennys- ja kertolaskut! Skotlantilainen John Napier otti pian käyttöön tutun desimaalipilkun ja -pisteen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Suomessa ja useimmissa Euroopan maissa desimaalierottimena käytetään pilkkua ($3{,}14$), kun taas englanninkielisessä maailmassa ja ohjelmoinnissa käytetään aina pistettä ($3.14$)!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Desimaaliluvut lukusuoralla ja paikka-arvot",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -237,10 +213,6 @@
       "deepDive": {
         "title": "Manhattan-metriikka: Miten itseisarvo mittaa taksimatkoja New Yorkissa?",
         "content": "<h4>Taksikuski ruutukaavassa</h4><p>Tavallisessa geometriassa kahden pisteen välinen etäisyys mitataan linnuntietä Pythagoraan lauseella. Mutta New Yorkin Manhattanilla kadut muodostavat suorakulmaisen ruudukon, jossa talojen läpi ei voi lentää suoraan!</p><h4>Itseisarvojen summa etäisyytenä</h4><p>Pisteestä $(x_1, y_1)$ pisteeseen $(x_2, y_2)$ ajava taksi joutuu liikkumaan vain vaaka- ja pystysuoria katuja pitkin. Todellinen ajomatka on itseisarvojen summa:</p><p>$$d = |x_1 - x_2| + |y_1 - y_2|$$</p><p>Tätä kutsutaan matematiikassa ja tekoälyssä <strong>Manhattan-etäisyydeksi</strong> tai taksimetriikaksi!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Itseisarvomerkinnän $|x|$ otti käyttöön saksalainen matemaatikko Karl Weierstrass vuonna 1841 analyysin perusteissa!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Itseisarvo etäisyytenä lukusuoralla",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -281,10 +253,6 @@
       "deepDive": {
         "title": "'Viholliseni vihollinen on ystäväni': Kertolaskun logiikka",
         "content": "<h4>Looginen päättelyketju</h4><p>Miksi kahden negatiivisen luvun tulo on positiivinen? Tarkastellaan lauseketta:</p><p>$$(-1) \\cdot (3 - 3) = (-1) \\cdot 0 = 0$$</p><p>Avataan sulkeet kertomalla termit erikseen:</p><p>$$(-1) \\cdot 3 + (-1) \\cdot (-3) = 0$$</p><p>$$-3 + (-1) \\cdot (-3) = 0$$</p><p>Jotta summaksi tulisi tasan nolla, termin $(-1) \\cdot (-3)$ on pakko olla $+3$! Matematiikan looginen eheys vaatii, että negatiivinen kertaa negatiivinen on aina positiivinen.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Elokuvissa ja videonauhoituksissa periaate näkyy ajassa: jos auto peruuttaa (negatiivinen nopeus) ja katsot videota takaperin kelattuna (negatiivinen aika), ruudulla auto näyttää kulkevan eteenpäin: $(-v) \\cdot (-t) = +s$!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Negatiivisten lukujen tulo ja koordinaatisto",
-        "url": "https://www.geogebra.org/calculator"
       }
     },
     {
@@ -303,10 +271,6 @@
       "deepDive": {
         "title": "Ariane 5 -avaruusraketin tuhoutuminen 1996: Kallein laskuvirhe historiassa",
         "content": "<h4>37 sekuntia laukaisusta</h4><p>Kesäkuun 4. päivänä 1996 Euroopan avaruusjärjestö ESA laukaisi Ranskan Guayanasta uuden uutukaisen <strong>Ariane 5</strong> -raketin, jonka kyydissä oli neljä kallista tieteellistä satelliittia. Vain 37 sekuntia laukaisun jälkeen raketti kääntyi äkillisesti kyljelleen ja räjähti tulipalloksi!</p><h4>Tietokoneen muunnosvirhe</h4><p>Onnettomuustutkinnassa selvisi, että syynä oli pieni ohjelmointivirhe: tietokone yritti muuntaa 64-bittistä liukulukua (desimaalilukua) 16-bittiseksi kokonaisluvuksi. Luku oli liian suuri mahtumaan muuttujaan (ylivuoto, overflow), jolloin tietokone antoi virheilmoituksen, raketin peräsimet kääntyivät ääriasentoon ja raketti tuhoutui ilmanpaineen voimasta!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ariane 5:n räjähdys maksoi yli <strong>370 miljoonaa dollaria</strong> ja sitä pidetään historian kalleimpana yksittäisenä koodaus- ja lukumuunnosvirheenä!</div>"
-      },
-      "simulation": {
-        "title": "GeoGebra: Jakolaskun ja murtolukujen kertaus",
-        "url": "https://www.geogebra.org/calculator"
       }
     }
   ]
