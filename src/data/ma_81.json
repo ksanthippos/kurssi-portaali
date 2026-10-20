@@ -5,12 +5,12 @@
     {
       "lesson": 1,
       "topic": "Aihe 1 / kirjan kpl 1. Yhtälöiden kertaus, osa 1",
-      "title": "Yhtälönratkaisun perusteet ja vaakamalli",
-      "content": "Kerrataan yhtälöiden ratkaisemisen periaatteet kurssilta MA_73. Termien siirtämistekniikka ja yhtälön jakaminen puolittain samalla luvulla",
-      "summary": "Yhtälön käsite kahden lausekkeen yhtäsuuruutena, vaakamalli, termien siirtäminen etumerkin vaihdolla ja yhtälön jakaminen muuttujan kertoimella.",
-      "theory": "<p><strong>Yhtälö</strong> on matemaattinen väite siitä, että kaksi lauseketta ovat yhtä suuria:</p><p>$$\\mathbf{2x + 5 = 17}$$</p><h4>1. Yhtälön vaakamalli</h4><p>Yhtälöä voi ajatella tasapainossa olevana perinteisenä <strong>kaksikuppisena vaakana</strong>. Yhtäsuuruusmerkki ($=$) on vaa'an tasapainopiste:</p><ul><li>Mitä tahansa teet yhtälön toiselle puolelle, <strong>se on tehtävä tismalleen samanlaisena myös toiselle puolelle</strong>, jotta vaaka pysyy tasapainossa!</li><li>Voit lisätä tai vähentää saman luvun molemmilta puolilta.</li><li>Voit kertoa tai jakaa molemmat puolet samalla nollasta poikkeavalla luvulla.</li></ul><h4>2. Termien siirtäminen ('etumerkki vaihtuu')</h4><p>Kun termi siirretään yhtäsuuruusmerkin toiselle puolelle, sen <strong>etumerkki vaihtuu vastakkaiseksi</strong>:</p><p>$$2x + 5 = 17 \\quad \\implies \\quad 2x = 17 - 5 \\quad \\implies \\quad 2x = 12$$</p><h4>3. Jakaminen muuttujan kertoimella</h4><p>Lopuksi yhtälö jaetaan puolittain muuttujan $x$ edessä olevalla kertoimella:</p><p>$$2x = 12 \\quad \\Vert : 2 \\quad \\implies \\quad \\mathbf{x = 6}$$</p><p><em>Tarkistus sijoittamalla:</em> $2 \\cdot 6 + 5 = 12 + 5 = 17$. Yhtälö pätee!</p>",
+      "title": "Yhtälön perusidea ja ratkaiseminen kokeilemalla",
+      "content": "Kerrataan yhtälön käsite kurssilta MA_73. Yhtälön vaakamalli, vasen ja oikea puoli sekä ratkaisun päättelemineen ja etsiminen kokeilemalla.",
+      "summary": "Yhtälö kahden lausekkeen yhtäsuuruutena, tasapainovaakamalli, vasen puoli (vp) ja oikea puoli (op), ratkaisun tutkiminen sijoittamalla sekä ratkaisun päättelemineen ja arvaaminen.",
+      "theory": "<p><strong>Yhtälö</strong> on kahden matemaattisen lausekkeen välinen yhtäsuuruusväite, jossa esiintyy vähintään yksi tuntematon muuttuja (kuten $x$):</p><p>$$\\mathbf{2x + 5 = 17}$$</p><h4>1. Yhtälön vaakamalli ja tasapaino</h4><p>Yhtälöä voi havainnollistaa <strong>kaksikuppisella tasapainovaa'alla</strong>:</p><ul><li>Yhtäsuuruusmerkki ($=$) on vaa'an tasapainopiste (tukipiste).</li><li>Yhtäsuuruusmerkin vasemmalla puolella oleva lauseke on <strong>vasen puoli (vp)</strong> ja oikealla puolella oleva on <strong>oikea puoli (op)</strong>.</li><li>Yhtälö on tosi vain silloin, kun vaaka on täydellisessä tasapainossa eli <strong>vasemman puolen arvo on täsmälleen yhtä suuri kuin oikean puolen arvo</strong> ($\\text{vp} = \\text{op}$).</li></ul><h4>2. Onko annettu luku yhtälön ratkaisu?</h4><p>Yhtälön <strong>ratkaisu</strong> on sellainen luku, joka tekee yhtälöstä toden. Ratkaisu voidaan aina varmistaa <em>sijoittamalla</em> annettu luku muuttujan paikalle ja laskemalla kumpikin puoli erikseen:</p><p><em>Esimerkki:</em> Onko $x = 4$ yhtälön $3x - 2 = 10$ ratkaisu?</p><ul><li>Lasketaan vasen puoli: $\\text{vp} = 3 \\cdot 4 - 2 = 12 - 2 = 10$</li><li>Oikea puoli: $\\text{op} = 10$</li><li>Koska $\\text{vp} = \\text{op}$, luku $\\mathbf{x = 4}$ <strong>on yhtälön ratkaisu</strong>!</li></ul><p><em>Esimerkki:</em> Onko $x = 5$ saman yhtälön ratkaisu?</p><ul><li>$\\text{vp} = 3 \\cdot 5 - 2 = 15 - 2 = 13$, mutta $\\text{op} = 10$.</li><li>Koska $\\text{vp} \\neq \\text{op}$, luku $x = 5$ <strong>ei ole yhtälön ratkaisu</strong>.</li></ul><h4>3. Ratkaisun päättelemineen ja kokeileminen</h4><p>Yksinkertaiset yhtälöt ratkeavat nopeasti päättelemällä ja kokeilemalla:</p><ul><li>$x + 6 = 15 \\implies$ 'Minkä luvun lisäät kuutoseen saadaksesi 15?' $\\implies \\mathbf{x = 9}$</li><li>$20 - x = 13 \\implies$ 'Minkä luvun vähennät luvusta 20 saadaksesi 13?' $\\implies \\mathbf{x = 7}$</li><li>$4x = 28 \\implies$ 'Mikä luku pitää kertoa neljällä, jotta saadaan 28?' $\\implies \\mathbf{x = 7}$</li><li>$\\dfrac{x}{2} = 8 \\implies$ 'Minkä luvun puolikas on 8?' $\\implies \\mathbf{x = 16}$</li></ul>",
       "tasks": {
-        "blue": "s. 9: T5, 7 ja yhtälöiden kertausmoniste"
+        "theory": "Kertausmoniste (MA_73 yhtälöt): Osat 1 ja 2"
       },
       "substituteNote": "",
       "deepDive": {
@@ -24,11 +24,31 @@
     },
     {
       "lesson": 2,
-      "topic": "Aihe 2 / kirjan kpl 2. Yhtälöiden kertaus, osa 2",
-      "title": "Sulkujen poisto ja monimutkaisemmat yhtälöt",
-      "content": "Sulkujen avaaminen ja hiukan monimutkaisempien yhtälöiden ratkaiseminen.",
-      "summary": "Sulkeiden avaaminen kertomalla kertoimella, samanmuotoisten termien yhdistäminen kummallakin puolella ja monivaiheisen yhtälön ratkaisupolku.",
-      "theory": "<p>Kun yhtälössä esiintyy sulkulausekkeita ja muuttujia molemmilla puolilla, noudatetaan selkeää marssijärjestystä:</p><h4>Yhtälönratkaisun vaiheet:</h4><ol><li><strong>Poista sulkeet</strong> kertomalla sulkeiden edessä olevalla kertoimella jokainen sulkeiden sisällä oleva termi. Muista etumerkit!</li><li><strong>Yhdistä samanmuotoiset termit</strong> erikseen vasemmalla ja oikealla puolella.</li><li><strong>Siirrä kaikki muuttujatermit ($x$) toiselle puolelle</strong> (useimmiten vasemmalle) ja <strong>kaikki vakiotermit (luvut) toiselle puolelle</strong>.</li><li><strong>Jaa yhtälö puolittain</strong> muuttujan kertoimella.</li></ol><h4>Laskuesimerkki:</h4><p>Ratkaise yhtälö $3(2x - 4) = 2x + 8$:</p><ol><li>Avataan sulkeet: $6x - 12 = 2x + 8$</li><li>Siirretään termit: $6x - 2x = 8 + 12$</li><li>Yhdistetään: $4x = 20$</li><li>Jaetaan luvulla 4: $\\mathbf{x = 5}$</li></ol><p><em>Tarkistus:</em> Vasen puoli $3(2 \\cdot 5 - 4) = 3(10 - 4) = 3 \\cdot 6 = 18$. Oikea puoli $2 \\cdot 5 + 8 = 10 + 8 = 18$. Oikein!</p>",
+      "topic": "Aihe 1 / kirjan kpl 1. Yhtälöiden kertaus, osa 2",
+      "title": "Yhtälön ratkaiseminen vastaluku- ja siirtämistekniikoilla",
+      "content": "Kerrataan yhtälöiden ratkaiseminen vastaluvun lisäämisellä ja termien siirtämistekniikalla. Yhteen- ja vähennyslaskuyhtälöt sekä negatiiviset luvut.",
+      "summary": "Vastaluvun lisääminen yhtälön molemmille puolille, termin siirto yhtäsuuruusmerkin toiselle puolelle ('etumerkki vaihtuu vastakkaiseksi') sekä yhteen- ja vähennyslaskuyhtälöt.",
+      "theory": "<p>Kun yhtälöt muuttuvat monimutkaisemmiksi, pelkkä arvaaminen ei enää riitä. Tarvitsemme järjestelmällisen menetelmän tuntemattoman $x$ saamiseksi yksin toiselle puolelle yhtälöä.</p><h4>1. Tasapainovaaka ja vastaluvun lisääminen</h4><p>Jos vaa'an vasemmalla lautasella on laatikko $x$ ja 5 kilon paino ($x + 5$) ja oikealla lautasella 12 kiloa, tasapaino säilyy, kun <strong>molemmilta puolilta poistetaan sama 5 kilon paino</strong>:</p><p>$$x + 5 = 12 \\quad \\Vert - 5$$</p><p>$$x + 5 - 5 = 12 - 5 \\quad \\implies \\quad \\mathbf{x = 7}$$</p><p>Matemaattisesti tämä tarkoittaa <strong>vastaluvun lisäämistä</strong> yhtälön molemmille puolille, jolloin luku kumoutuu nollaksi ($+5 - 5 = 0$).</p><h4>2. Siirtosääntö: 'Etumerkki vaihtuu toiselle puolelle siirrettäessä'</h4><p>Käytännössä vastaluvun lisääminen voidaan tehdä nopeasti siirtämällä termi yhtäsuuruusmerkin yli:</p><blockquote><strong>Kun termi siirretään yhtäsuuruusmerkin toiselle puolelle, sen etumerkki vaihtuu vastakkaiseksi!</strong> ($+$ muuttuu $-$ ja päinvastoin).</blockquote><ul><li><strong>Yhteenlaskuyhtälö:</strong><br>$$x + 8 = 20 \\quad \\implies \\quad x = 20 - 8 \\quad \\implies \\quad \\mathbf{x = 12}$$</li><li><strong>Vähennyslaskuyhtälö:</strong><br>$$x - 7 = 15 \\quad \\implies \\quad x = 15 + 7 \\quad \\implies \\quad \\mathbf{x = 22}$$</li><li><strong>Tuntematon oikealla puolella:</strong><br>$$25 = x + 9 \\quad \\implies \\quad 25 - 9 = x \\quad \\implies \\quad \\mathbf{x = 16}$$</li></ul><h4>3. Negatiiviset luvut yhtälöissä</h4><p>Siirtosääntö toimii täysin samalla tavalla myös negatiivisilla luvuilla:</p><ul><li>$x + 10 = -4 \\quad \\implies \\quad x = -4 - 10 = \\mathbf{-14}$</li><li>$x - 6 = -9 \\quad \\implies \\quad x = -9 + 6 = \\mathbf{-3}$</li><li>$-8 + x = 5 \\quad \\implies \\quad x = 5 + 8 = \\mathbf{13}$</li></ul>",
+      "tasks": {
+        "blue": "s. 9: T5, 7 ja yhtälöiden kertausmoniste (osa 3)"
+      },
+      "substituteNote": "",
+      "deepDive": {
+        "title": "Al-Khwarizmi ja sanan 'algebra' synty: Al-Jabr ja tasapainotus",
+        "content": "<h4>800-luvun Bagdad ja Viisauden talo</h4><p>Noin vuonna 820 persialainen matemaatikko <strong>Muhammad ibn Musa al-Khwarizmi</strong> kirjoitti arabiankielisen kirjan, jota pidetään algebran perusteoksena: <em>Al-Kitab al-mukhtasar fi hisab al-jabr wa-l-muqabala</em>.</p><h4>Mitä 'al-jabr' tarkoittaa?</h4><p>Kirjan nimessä sana <strong>al-jabr</strong> tarkoitti kirjaimellisesti <em>'rikkoutuneen osan palauttamista tai murtuneen luun asettamista'</em>. Matematiikassa al-Khwarizmi käytti sitä tarkoittamaan <strong>negatiivisen termin siirtämistä toiselle puolelle yhtälöä ja sen muuttamista positiiviseksi</strong>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Sana <em>algebra</em> tulee suoraan arabian sanasta <em>al-jabr</em>, ja matemaatikon omasta nimestä <em>al-Khwarizmi</em> juontuu koko tietotekniikan perussana <strong>algoritmi</strong>!</div>"
+      },
+      "simulation": {
+        "title": "GeoGebra: Yhtälönratkaisun askel askeleelta -visualisointi",
+        "url": "https://www.geogebra.org/calculator"
+      }
+    },
+    {
+      "lesson": 3,
+      "topic": "Aihe 2 / kirjan kpl 2. Yhtälöiden kertaus, osa 3",
+      "title": "Yhtälön ratkaiseminen jako- ja kertolaskulla sekä monivaiheiset yhtälöt",
+      "content": "Yhtälön jakaminen muuttujan kertoimella, kertominen jakajalla, kaksivaiheiset yhtälöt, muuttuja molemmilla puolilla sekä sulkujen avaaminen.",
+      "summary": "Yhtälön jakaminen puolittain kertoimella, kaksivaiheiset yhtälöt (siirto ensin, jako lopuksi), muuttuja molemmilla puolilla ja sulkeiden poistaminen kertoimella kertomalla.",
+      "theory": "<p>Kun yhtälössä on kertoimia, jakolaskuja tai muuttujia kummallakin puolella, noudatetaan selkeää marssijärjestystä.</p><h4>1. Kerto- ja jakolaskuyhtälöt</h4><ul><li><strong>Kertolaskuyhtälö jaetaan kertoimella:</strong><br>$$3x = 21 \\quad \\Vert : 3 \\quad \\implies \\quad \\mathbf{x = 7}$$<br>$$-4x = 28 \\quad \\Vert : (-4) \\quad \\implies \\quad \\mathbf{x = -7}$$</li><li><strong>Jakolaskuyhtälö kerrotaan jakajalla:</strong><br>$$\\frac{x}{3} = 5 \\quad \\Vert \\cdot 3 \\quad \\implies \\quad \\mathbf{x = 15}$$</li></ul><h4>2. Kaksivaiheiset yhtälöt (siirto ensin, jako lopuksi)</h4><p>Yhtälössä $2x + 7 = 19$ on kaksi toimenpidettä. <strong>Vakiotermi siirretään aina ensin</strong>, ja vasta sen jälkeen yhtälö jaetaan kertoimella:</p><ol><li>Siirretään vakiotermi: $2x = 19 - 7 \\implies 2x = 12$</li><li>Jaetaan muuttujan kertoimella: $2x = 12 \\quad \\Vert : 2 \\implies \\mathbf{x = 6}$</li></ol><h4>3. Tuntematon yhtälön molemmilla puolilla</h4><p>Jos muuttujaa $x$ on molemmilla puolilla, siirretään <strong>kaikki muuttujatermit toiselle puolelle</strong> (yleensä vasemmalle) ja <strong>kaikki luvut toiselle puolelle</strong>:</p><p>$$5x - 3 = 2x + 9$$</p><ul><li>Siirretään termit: $5x - 2x = 9 + 3$</li><li>Yhdistetään samanmuotoiset: $3x = 12$</li><li>Jaetaan kertoimella: $x = 12 : 3 \\implies \\mathbf{x = 4}$</li></ul><h4>4. Sulkujen poistaminen</h4><p>Jos yhtälössä on sulut, ne avataan kertomalla sulkeiden jokainen termi edessä olevalla luvulla:</p><p>$$3(2x - 4) = 2x + 8 \\implies 6x - 12 = 2x + 8 \\implies 4x = 20 \\implies \\mathbf{x = 5}$$</p>",
       "tasks": {
         "warmup": "s. 11: T1 - 3",
         "blue": "s. 11: T4 - 7, s. 180: T8",
@@ -45,7 +65,7 @@
       }
     },
     {
-      "lesson": 3,
+      "lesson": 4,
       "topic": "Aihe 3 / kirjan kpl 3. Nimittäjien poistaminen, osa 1",
       "title": "Nimittäjien poistaminen murtolukuyhtälöistä",
       "content": "Nimittäjien poistamisen perusperiaatteet.",
@@ -67,7 +87,7 @@
       }
     },
     {
-      "lesson": 4,
+      "lesson": 5,
       "topic": "Aihe 3 / kirjan kpl 3. Nimittäjien poistaminen, osa 2",
       "title": "Useamman nimittäjän poistaminen ja yhteinen nimittäjä",
       "content": "Nimittäjien poistamisen jatko ja monimutkaisempien esimerkkien ratkaiseminen.",
@@ -88,7 +108,7 @@
       }
     },
     {
-      "lesson": 5,
+      "lesson": 6,
       "topic": "Aihe 4 / kirjan kpl 6. Toisen asteen yhtälöt, osa 1",
       "title": "Vaillinainen toisen asteen yhtälö ja neliöjuuri",
       "content": "Toisen asteen yhtälöiden ratkaisemisen perusperiaatteet. Neliöjuuren kertaus, plus-miinus-merkintä.",
@@ -110,7 +130,7 @@
       }
     },
     {
-      "lesson": 6,
+      "lesson": 7,
       "topic": "Aihe 4 / kirjan kpl 6. Toisen asteen yhtälöt, osa 2",
       "title": "Toisen asteen yhtälön ratkaisujen lukumäärä ja ratkeamattomat yhtälöt",
       "content": "Toisen asteen yhtälöiden haasteet, kuten pidemmät yhtälöt ja ratkaisemattomat yhtälöt.",
@@ -132,7 +152,7 @@
       }
     },
     {
-      "lesson": 7,
+      "lesson": 8,
       "topic": "Aihe 5 / kirjan kpl 5. Identtiset yhtälöt",
       "title": "Identtisesti tosi ja epätosi yhtälö",
       "content": "Identtisten yhtälöiden tunnistaminen ja ratkaiseminen. Identtisesti tosi ja epätosi yhtälö.",
@@ -154,7 +174,7 @@
       }
     },
     {
-      "lesson": 8,
+      "lesson": 9,
       "topic": "Aihe 6 / kirjan kpl 10. Ongelmanratkaisu yhtälöillä, osa 1",
       "title": "Sanallisten tehtävien ratkaisu yhtälöillä",
       "content": "Sanallisten tehtävien ratkaisua yhtälöillä, perustapauksia.",
@@ -176,7 +196,7 @@
       }
     },
     {
-      "lesson": 9,
+      "lesson": 10,
       "topic": "Aihe 7 / kirjan kpl 10. Ongelmanratkaisu yhtälöillä, osa 2",
       "title": "Geometriset ja taloudelliset yhtälösovellukset",
       "content": "Sanallisten tehtävien ratkaisua yhtälöillä, haastavampia tapauksia.",
@@ -198,7 +218,7 @@
       }
     },
     {
-      "lesson": 10,
+      "lesson": 11,
       "topic": "Aihe 8 / kirjan kpl 12. Suhde ja verranto, osa 1",
       "title": "Suhteen käsite ja jakaminen suhteessa",
       "content": "Suhteen käsitteen ymmärtäminen ja sen soveltaminen erilaisissa tehtävissä.",
@@ -220,7 +240,7 @@
       }
     },
     {
-      "lesson": 11,
+      "lesson": 12,
       "topic": "Aihe 8 / kirjan kpl 13. Suhde ja verranto, osa 2",
       "title": "Verranto ja ristiinkertolasku",
       "content": "Verrannon käsite, yhtälön ratkaiseminen ristiinkertolaskulla.",
@@ -242,7 +262,7 @@
       }
     },
     {
-      "lesson": 12,
+      "lesson": 13,
       "topic": "Aihe 9 / kirjan kpl 14. Suoraan ja kääntäen verrannollisuus",
       "title": "Suoraan ja kääntäen verrannollisuus",
       "content": "Suoraan ja kääntäen verrannollisuuden käsitteet sekä taulukkona että kuvaajana, verrantoyhtälön hyödyntäminen ongelmanratkaisussa.",
@@ -264,7 +284,7 @@
       }
     },
     {
-      "lesson": 13,
+      "lesson": 14,
       "topic": "Aihe 10 / kirjan kpl 11. Epäyhtälöt",
       "title": "Epäyhtälön ratkaiseminen ja merkin kääntösääntö",
       "content": "Epäyhtälön käsite, esittäminen lukusuoralla ja huomiot ratkaisutekniikassa (suunnan kääntö).",
