@@ -9,7 +9,7 @@
         "exceptions": [
           {
             "date": "2026-10-23",
-            "type": "Kirjamessut",
+            "type": "KIRJAMESSUT",
             "description": "Ilmoittaudu opettajalle (RAUH) Messukeskuksen aulassa klo 12.30."
           },
           {
@@ -46,12 +46,12 @@
           },
           {
             "date": "2026-11-09",
-            "type": "TET-harjoittelu",
+            "type": "TET-HARJOITTELU",
             "description": "9. luokkien TET-viikko. Ei oppituntia."
           },
           {
             "date": "2026-11-11",
-            "type": "TET-harjoittelu",
+            "type": "TET-HARJOITTELU",
             "description": "9. luokkien TET-viikko. Ei oppituntia."
           },
           {
@@ -129,7 +129,7 @@
 
           {
             "date": "2026-10-23",
-            "type": "Kirjamessut",
+            "type": "KIRJAMESSUT",
             "description": "Ruokailu klo 10, lähtö Messukeskukseen luokasta klo 10.30. Ennen lähtöä ilmoittaudu opettajalle (RAUH) Messukeskuksen aulassa klo 12.15."
           },
           {
@@ -162,12 +162,12 @@
         
           {
             "date": "2026-11-09",
-            "type": "TET-harjoittelu",
+            "type": "TET-HARJOITTELU",
             "description": "9. luokkien TET-viikko. Ei oppituntia."
           },
           {
             "date": "2026-11-11",
-            "type": "TET-harjoittelu",
+            "type": "TET-HARJOITTELU",
             "description": "9. luokkien TET-viikko. Ei oppituntia."
           },
           {
@@ -192,6 +192,21 @@
         "endDate": "2026-12-18",
         "weekdays": [2, 4],
         "exceptions": [
+          {
+            "date":"2026-10-20",
+            "type": "KURSSIN ALOITUS",
+            "description": "Esittelyt, kurssin sisältö, yleiset pelisäännöt ja arviointi. Ensimmäinen tehtävä Möbiuksen nauhan rakentaminen ja topologian perusajatuksia."
+          },
+                    {
+            "date": "2026-11-09",
+            "type": "TET-HARJOITTELU",
+            "description": "9. luokkien TET-viikko. 8. luokkalaisilla normaalit oppitunnit."
+          },
+          {
+            "date": "2026-11-11",
+            "type": "TET-HARJOITTELU",
+            "description": "9. luokkien TET-viikko. 8. luokkalaisilla normaalit oppitunnit."
+          }
         ]
       }
     }
