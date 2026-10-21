@@ -35,7 +35,7 @@
       },
       "simulation": {
         "title": "PhET: Digitaalinen aalto ja näytteenotto",
-        "url": "https://phet.colorado.edu/fi/simulations/wave-interference"
+        "url": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_all.html?locale=fi"
       }
     },
     {
@@ -55,7 +55,7 @@
       },
       "simulation": {
         "title": "PhET: Todennäköisyys ja Plinko-lauta (Galtonin lauta)",
-        "url": "https://phet.colorado.edu/fi/simulations/plinko-probability"
+        "url": "https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_all.html?locale=fi"
       }
     },
     {
@@ -91,7 +91,7 @@
       },
       "simulation": {
         "title": "PhET: Vektorien yhteenlasku ja komponentit",
-        "url": "https://phet.colorado.edu/fi/simulations/vector-addition"
+        "url": "https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_all.html?locale=fi"
       }
     },
     {
@@ -179,7 +179,7 @@
       },
       "simulation": {
         "title": "PhET: Toisen asteen kuvaaja ja nollakohdat",
-        "url": "https://phet.colorado.edu/fi/simulations/graphing-quadratics"
+        "url": "https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_all.html?locale=fi"
       }
     },
     {

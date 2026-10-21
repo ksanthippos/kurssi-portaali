@@ -19,7 +19,7 @@
       },
       "simulation": {
         "title": "PhET: Luonnon mittakaavat ja mittaaminen",
-        "url": "https://phet.colorado.edu/fi/simulations/states-of-matter"
+        "url": "https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html?locale=fi"
       }
     },
     {
@@ -39,7 +39,7 @@
       },
       "simulation": {
         "title": "PhET: Lämpötila ja aineen lämpöliike",
-        "url": "https://phet.colorado.edu/fi/simulations/states-of-matter-basics"
+        "url": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_all.html?locale=fi"
       }
     },
     {
@@ -75,7 +75,7 @@
       },
       "simulation": {
         "title": "PhET: Kaasujen ominaisuudet ja lämpötila",
-        "url": "https://phet.colorado.edu/fi/simulations/gas-properties"
+        "url": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_all.html?locale=fi"
       }
     },
     {
@@ -95,7 +95,7 @@
       },
       "simulation": {
         "title": "PhET: Energiamuodot ja energian muutokset",
-        "url": "https://phet.colorado.edu/fi/simulations/energy-forms-and-changes"
+        "url": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_all.html?locale=fi"
       }
     },
     {
@@ -116,7 +116,7 @@
       },
       "simulation": {
         "title": "PhET: Aineen olomuotojen faasidiagrammi",
-        "url": "https://phet.colorado.edu/fi/simulations/states-of-matter"
+        "url": "https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html?locale=fi"
       }
     },
     {
@@ -136,7 +136,7 @@
       },
       "simulation": {
         "title": "PhET: Lämmön johtuminen ja lämpöeristeet",
-        "url": "https://phet.colorado.edu/fi/simulations/energy-forms-and-changes"
+        "url": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_all.html?locale=fi"
       }
     },
     {
@@ -156,7 +156,7 @@
       },
       "simulation": {
         "title": "PhET: Heilurilaboratorio",
-        "url": "https://phet.colorado.edu/fi/simulations/pendulum-lab"
+        "url": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_all.html?locale=fi"
       }
     },
     {
@@ -177,7 +177,7 @@
       },
       "simulation": {
         "title": "PhET: Aalto narussa (Wave on a String)",
-        "url": "https://phet.colorado.edu/fi/simulations/wave-on-a-string"
+        "url": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_all.html?locale=fi"
       }
     },
     {
@@ -198,7 +198,7 @@
       },
       "simulation": {
         "title": "PhET: Ääniaallot ja äänen taajuus",
-        "url": "https://phet.colorado.edu/fi/simulations/sound-waves"
+        "url": "https://phet.colorado.edu/sims/html/sound-waves/latest/sound-waves_all.html?locale=fi"
       }
     },
     {
@@ -236,7 +236,7 @@
       },
       "simulation": {
         "title": "PhET: Valon taittuminen (Bending Light)",
-        "url": "https://phet.colorado.edu/fi/simulations/bending-light"
+        "url": "https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_all.html?locale=fi"
       }
     },
     {
@@ -257,7 +257,7 @@
       },
       "simulation": {
         "title": "PhET: Geometrinen optiikka ja linssit",
-        "url": "https://phet.colorado.edu/fi/simulations/geometric-optics"
+        "url": "https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_all.html?locale=fi"
       }
     }
   ]

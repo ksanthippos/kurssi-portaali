@@ -19,7 +19,7 @@
       },
       "simulation": {
         "title": "PhET: Yhtälönratkaisun vaakamalli (Equality Explorer)",
-        "url": "https://phet.colorado.edu/fi/simulations/equality-explorer"
+        "url": "https://phet.colorado.edu/sims/html/equality-explorer/latest/equality-explorer_all.html?locale=fi"
       }
     },
     {
@@ -128,7 +128,7 @@
       },
       "simulation": {
         "title": "PhET: Toisen asteen kuvaaja ja nollakohtien lukumäärä",
-        "url": "https://phet.colorado.edu/fi/simulations/graphing-quadratics"
+        "url": "https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_all.html?locale=fi"
       }
     },
     {
@@ -222,7 +222,7 @@
       },
       "simulation": {
         "title": "PhET: Verranto ja mittakaava",
-        "url": "https://phet.colorado.edu/fi/simulations/proportion-playground"
+        "url": "https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground_all.html?locale=fi"
       }
     },
     {
@@ -244,7 +244,7 @@
       },
       "simulation": {
         "title": "PhET: Suoraan ja kääntäen verrannollisuus kuvaajina",
-        "url": "https://phet.colorado.edu/fi/simulations/graphing-lines"
+        "url": "https://phet.colorado.edu/sims/html/graphing-lines/latest/graphing-lines_all.html?locale=fi"
       }
     },
     {

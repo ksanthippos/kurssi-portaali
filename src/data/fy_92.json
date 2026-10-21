@@ -20,7 +20,7 @@
       },
       "simulation": {
         "title": "PhET: Energiamuodot ja energian muutokset",
-        "url": "https://phet.colorado.edu/fi/simulations/energy-forms-and-changes"
+        "url": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_all.html?locale=fi"
       }
     },
     {
@@ -57,7 +57,7 @@
       },
       "simulation": {
         "title": "PhET: Molekyylit ja valo (UV-säteily ja otsoni)",
-        "url": "https://phet.colorado.edu/fi/simulations/molecules-and-light"
+        "url": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light_all.html?locale=fi"
       }
     },
     {
@@ -77,7 +77,7 @@
       },
       "simulation": {
         "title": "PhET: Kasvihuoneilmiö ja ilmakehän säteilytasapaino",
-        "url": "https://phet.colorado.edu/fi/simulations/greenhouse-effect"
+        "url": "https://phet.colorado.edu/sims/html/greenhouse-effect/latest/greenhouse-effect_all.html?locale=fi"
       }
     },
     {
@@ -97,7 +97,7 @@
       },
       "simulation": {
         "title": "PhET: Alfa- ja beetasäteilyn hajoaminen",
-        "url": "https://phet.colorado.edu/fi/simulations/alpha-decay"
+        "url": "https://phet.colorado.edu/sims/html/alpha-decay/latest/alpha-decay_all.html?locale=fi"
       }
     },
     {
@@ -117,7 +117,7 @@
       },
       "simulation": {
         "title": "PhET: pH-asteikko ja liuosten happamuus",
-        "url": "https://phet.colorado.edu/fi/simulations/ph-scale"
+        "url": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale_all.html?locale=fi"
       }
     },
     {
@@ -137,7 +137,7 @@
       },
       "simulation": {
         "title": "PhET: Painovoima ja Aurinkokunnan kiertoradat",
-        "url": "https://phet.colorado.edu/fi/simulations/gravity-and-orbits"
+        "url": "https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits_all.html?locale=fi"
       }
     },
     {
@@ -157,7 +157,7 @@
       },
       "simulation": {
         "title": "PhET: Ydinfuusio ja tähtien energiantuotanto",
-        "url": "https://phet.colorado.edu/fi/simulations/nuclear-fission"
+        "url": "https://phet.colorado.edu/sims/cheerpj/nuclear-physics/latest/nuclear-physics.html?simulation=nuclear-fission"
       }
     },
     {
@@ -193,7 +193,7 @@
       },
       "simulation": {
         "title": "PhET: Universumin laajeneminen ja punasiirtymä",
-        "url": "https://phet.colorado.edu/fi/simulations/wave-interference"
+        "url": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_all.html?locale=fi"
       }
     },
     {

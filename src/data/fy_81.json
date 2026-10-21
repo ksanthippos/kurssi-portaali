@@ -20,7 +20,7 @@
       },
       "simulation": {
         "title": "PhET: Tasainen liike ja nopeus",
-        "url": "https://phet.colorado.edu/fi/simulations/forces-and-motion-basics"
+        "url": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_all.html?locale=fi"
       }
     },
     {
@@ -57,7 +57,7 @@
       },
       "simulation": {
         "title": "PhET: Kiihtyvyys ja voimat",
-        "url": "https://phet.colorado.edu/fi/simulations/forces-and-motion-basics"
+        "url": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_all.html?locale=fi"
       }
     },
     {
@@ -78,7 +78,7 @@
       },
       "simulation": {
         "title": "PhET: Voimat ja liike (Newtonin lait)",
-        "url": "https://phet.colorado.edu/fi/simulations/forces-and-motion-basics"
+        "url": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_all.html?locale=fi"
       }
     },
     {
@@ -98,7 +98,7 @@
       },
       "simulation": {
         "title": "PhET: Painovoima ja kiertoradat",
-        "url": "https://phet.colorado.edu/fi/simulations/gravity-and-orbits"
+        "url": "https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits_all.html?locale=fi"
       }
     },
     {
@@ -119,7 +119,7 @@
       },
       "simulation": {
         "title": "PhET: Tiheys ja Arkhimedeen noste",
-        "url": "https://phet.colorado.edu/fi/simulations/density"
+        "url": "https://phet.colorado.edu/sims/html/density/latest/density_all.html?locale=fi"
       }
     },
     {
@@ -140,7 +140,7 @@
       },
       "simulation": {
         "title": "PhET: Nesteiden ja ilmanpaineen simulaatio",
-        "url": "https://phet.colorado.edu/fi/simulations/under-pressure"
+        "url": "https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_all.html?locale=fi"
       }
     },
     {
@@ -161,7 +161,7 @@
       },
       "simulation": {
         "title": "PhET: Energian säilyminen ja skeittipuisto",
-        "url": "https://phet.colorado.edu/fi/simulations/energy-skate-park"
+        "url": "https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_all.html?locale=fi"
       }
     },
     {
@@ -182,7 +182,7 @@
       },
       "simulation": {
         "title": "PhET: Mekaaninen työ ja kitka",
-        "url": "https://phet.colorado.edu/fi/simulations/forces-and-motion-basics"
+        "url": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_all.html?locale=fi"
       }
     },
     {
@@ -203,7 +203,7 @@
       },
       "simulation": {
         "title": "PhET: Vipu ja tasapaino",
-        "url": "https://phet.colorado.edu/fi/simulations/balancing-act"
+        "url": "https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_all.html?locale=fi"
       }
     },
     {
@@ -224,7 +224,7 @@
       },
       "simulation": {
         "title": "PhET: Energiamuodot ja teho",
-        "url": "https://phet.colorado.edu/fi/simulations/energy-forms-and-changes"
+        "url": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_all.html?locale=fi"
       }
     }
   ]
