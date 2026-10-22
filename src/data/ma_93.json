@@ -18,7 +18,8 @@
       "deepDive": {
         "title": "Descartes ja sotilasinsinöörit: Miten kartesianismi syntyi vuoteessa maaten?",
         "content": "<h4>Vuoteessa makaava filosofi</h4><p>1600-luvun alun ranskalainen sotilas, filosofi ja matemaatikko <strong>René Descartes</strong> ei ollut aamuihminen: hänellä oli tapana maata sängyssä puolillepäivin mietiskelemässä. Katossa kävelevän kärpäsen seuraaminen herätti oivalluksen: kärpäsen paikka voitiin ilmaista kahdella etäisyydellä huoneen seinistä.</p><h4>Geometrian ja algebran avioliitto</h4><p>Tästä syntyi <em>kartesinen koordinaatisto</em>, joka yhdisti Eukleideen antiikin geometrian ja Al-Khwarizmin algebran toisiinsa. Yhtäkkiä geometrisia muotoja pystyttiin käsittelemään yhtälöinä ja funktioina!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Descartesin kuuluisa filosofinen lause 'Cogito, ergo sum' (Ajattelen, siis olen) syntyi samassa mietiskelykammiossa kuin matematiikan suorakulmainen koordinaatisto!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Koordinaatiston kertaus</h3>\n  <p>Funktioiden tutkiminen perustuu kaksiulotteiseen <strong>suorakulmaiseen koordinaatistoon</strong> (karteesinen koordinaatisto):</p>\n  <ul class=\"theory-list\">\n    <li><strong>Vaaka-akseli ($x$-akseli eli abskissa):</strong> Arvot kasvavat oikealle.</li>\n    <li><strong>Pystyakseli ($y$-akseli eli ordinaatta):</strong> Arvot kasvavat ylöspäin.</li>\n    <li><strong>Origo $(0, 0)$:</strong> Akselien leikkauspiste.</li>\n    <li><strong>Pisteen koordinaatit $(x, y)$:</strong> Ensimmäinen luku kertoo sijainnin vaaka-akselilla ja toinen pystyakselilla.</li>\n  </ul>\n</div>"
     },
     {
       "lesson": 2,
@@ -40,7 +41,8 @@
       "simulation": {
         "title": "PhET: Funktion kone ja syöte-tuloste-taulukko",
         "url": "https://phet.colorado.edu/sims/html/function-builder/latest/function-builder_all.html?locale=fi"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Mitä funktio tarkoittaa?</h3>\n  <p>Englannin kielessä sana <em>function</em> voi tarkoittaa tilanteesta riippuen tehtävää, roolia tai toimintoa. Matematiikassa <strong>funktio</strong> on sääntö tai \"kone\", joka liittää jokaiseen syötteeseen (muuttujan $x$ arvoon) tarkalleen yhden tulosteen (funktion arvon $y$).</p>\n  <div class=\"theory-box tip\">\n    <h4>Funktiomerkintä:</h4>\n    <p class=\"math-callout\">$$f(x) = y$$</p>\n    <p>Luetaan: <em>\"äf kohdassa äx\"</em>. Esimerkiksi jos funktion sääntö on $f(x) = 2x + 1$:</p>\n    <ul>\n      <li>Kun syöte on $x = 3$, tuloste on $f(3) = 2 \\cdot 3 + 1 = 7$.</li>\n      <li>Kun syöte on $x = -2$, tuloste on $f(-2) = 2 \\cdot (-2) + 1 = -3$.</li>\n    </ul>\n  </div>\n</div>"
     },
     {
       "lesson": 3,
@@ -58,7 +60,8 @@
       "deepDive": {
         "title": "GPS-satelliitit ja funktioiden leikkauspisteet avaruudessa",
         "content": "<h4>Miten älypuhelimesi tietää missä seisot?</h4><p>Puhelimesi GPS-vastaanotin vastaanottaa jatkuvasti aikasignaaleja maapalloa kiertäviltä satelliiteilta. Jokainen satelliitti määrittää etäisyyden perusteella pallopinnan muotoisen funktioyhtälön:</p><p>$$(x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2 = (c \\cdot t_i)^2$$</p><p>Kun vastaanotat signaalin <strong>vähintään neljältä eri satelliitilta</strong>, puhelimesi fysiikkaprosessori ratkaisee näiden neljän funktion leikkauspisteen. Tämä leikkauspiste ilmoittaa sijaintisi maapallon pinnalla senttimetrien tarkkuudella!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> GPS-paikannus joutuu ottamaan huomioon myös Albert Einsteinin yleisen suhteellisuusteorian mukaisen ajan hidastumisen, muuten leikkauspiste heittäisi yli 10 kilometriä joka päivä!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Funktio koordinaatistossa</h3>\n  <p>Kun funktion syötteet $x$ asetetaan vaaka-akselille ja saadut tulosteet $y = f(x)$ pystyakselille, jokainen syöte-tuloste -pari muodostaa pisteen $(x, f(x))$. Näiden pisteiden muodostamaa viivaa kutsutaan <strong>funktion kuvaajaksi</strong>.</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p5_1_e51ac62a.png\" alt=\"Funktioiden f ja g kuvaajat koordinaatistossa\" loading=\"lazy\">\n    <figcaption>Funktioiden f(x) = x + 3 ja g(x) kuvaajat koordinaatistossa: suora esittää funktion säännön visuaalisessa muodossa.</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 4,
@@ -76,7 +79,8 @@
       "deepDive": {
         "title": "Virheenkorjauskoodit ja kolmas piste: Informaatioteorian synty",
         "content": "<h4>Miksi tietoliikenne vaatii tarkistuspisteitä?</h4><p>Periaate, jonka mukaan suoralle tarvitaan kolmas piste varmistajaksi, on täsmälleen sama laki, joka suojaa kaikkea internetin tiedonsiirtoa ja WiFi-liikennettä. Claude Shannon loi 1940-luvulla <strong>informaatioteorian</strong>, jossa viesteihin lisätään ylimääräisiä tarkistusbittejä (<em>redundanssia</em>).</p><h4>Pariteetti ja Hamming-koodit</h4><p>Jos vastaanotat kaksi bittiä, et voi tietää onko toinen niistä korruptoitunut matkalla. Mutta jos lähetät kolmannen tarkistusbitin, tietokone pystyy automaattisesti havaitsemaan ja korjaamaan häiriön bittivirrassa ilman, että dataa täytyy lähettää uudestaan!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> QR-koodit käyttävät Reed-Solomon-virheenkorjauskoodia, joka perustuu korkea-asteisten polynomien leikkauspisteisiin: vaikka 30 % QR-koodista olisi lian peitossa tai repeytynyt pois, puhelimesi kamera lukee koodin silti täydellisesti!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Kuvaajan piirtäminen pistetaulukon avulla</h3>\n  <p>Ensimmäisen asteen eli <strong>lineaarisen funktion</strong> kuvaaja on aina suora. Suoran piirtämiseen riittää periaatteessa kaksi pistettä, mutta varmistukseksi kannattaa aina laskea vähintään kolme pistettä arvo- eli pistetaulukon avulla:</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p8_1_77ade270.png\" alt=\"Arvotaulukko ja suoran piirtäminen\" loading=\"lazy\">\n    <figcaption>Lasketaan syötteille x = -1, 0, 1, 2 funktion arvot, merkitään pisteet koordinaatistoon ja piirretään niiden kautta suora viivaimella.</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 5,
@@ -94,7 +98,8 @@
       "deepDive": {
         "title": "Mitä liikennemerkin 12 % mäki tarkoittaa matematiikassa?",
         "content": "<h4>Vuoristotien varoitusmerkki</h4><p>Kun ajat autolla vuoristossa, tien varressa näkyy varoitusmerkki jyrkästä mäestä: esimerkiksi <strong>12 %</strong>. Mitä tämä prosentti tarkoittaa kulmakertoimena?</p><h4>Kulmakerroin prosentteina</h4><p>Tien kaltevuusprosentti on suoraan suoran kulmakerroin $k$ ilmoitettuna sadasosina:</p><p>$$12\\,\\% = \\frac{12}{100} = 0{,}12$$</p><p>Tämä tarkoittaa, että <em>jokaista 100 metrin vaakasuoraa etenemää kohti tie nousee (tai laskee) pystysuunnassa 12 metriä</em>!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Maailman jyrkin asuttu katu on Baldwin Street Uudessa-Seelannissa. Sen jyrkimmän kohdan kaltevuus on huikeat $35\\,\\%$, mikä vastaa kulmakerrointa $k = 0{,}35$ ja noin $19^\\circ$ nousukulmaa!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Suoran yhtälön rakenne</h3>\n  <p>Jokainen suora (pystysuoria lukuun ottamatta) voidaan esittää muodossa:</p>\n  <div class=\"theory-box tip\">\n    <h4>Suoran yhtälön ratkaistu muoto:</h4>\n    <p class=\"math-callout\">$$y = kx + b$$</p>\n    <ul class=\"theory-list\">\n      <li><strong>k = kulmakerroin (slope):</strong> Kertoo suoran jyrkkyyden ja suunnan.\n        <ul>\n          <li>Jos $k > 0$, suora on <em>nouseva</em> (vasemmalta oikealle).</li>\n          <li>Jos $k < 0$, suora on <em>laskeva</em>.</li>\n          <li>Jos $k = 0$, suora on <em>vaakasuora</em>.</li>\n        </ul>\n      </li>\n      <li><strong>b = vakiotermi ($y$-leikkauspiste):</strong> Kertoo kohdan, jossa suora leikkaa pystysuoran $y$-akselin pisteessä $(0, b)$.</li>\n    </ul>\n  </div>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p11_1_d39cbdeb.png\" alt=\"Kulmakerroin ja vakiotermi\" loading=\"lazy\">\n    <figcaption>Suoran yhtälön kaksi avaintekijää: kulmakerroin k määrittää suunnan ja vakiotermi b määrittää pystysijainnin.</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 6,
@@ -112,7 +117,8 @@
       "deepDive": {
         "title": "Fysiikan nopeus ja kiihtyvyys: Kulmakerroin luonnonlakina",
         "content": "<h4>Mitä kuvaajan jyrkkyys mittaa luonnontieteissä?</h4><p>Fysiikassa kulmakerroin ei ole pelkkä numero koordinaatistossa, vaan se kuvaa aina <strong>muutosnopeutta</strong>:</p><ul><li><strong>Aika-paikka-kuvaaja $(t, s)$</strong>: Pystyakselilla on matka ja vaaka-akselilla aika. Suoran kulmakerroin on $\\frac{\\Delta s}{\\Delta t} = \\mathbf{v}$ eli <strong>nopeus</strong>! Mitä jyrkempi suora, sitä kovempaa auto ajaa.</li><li><strong>Aika-nopeus-kuvaaja $(t, v)$</strong>: Pystyakselilla nopeus ja vaaka-akselilla aika. Kulmakerroin on $\\frac{\\Delta v}{\\Delta t} = \\mathbf{a}$ eli <strong>kiihtyvyys</strong>!</li></ul><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Jos auton aika-matka-kuvaaja on vaakasuora ($k = 0$), auto seisoo täysin paikallaan liikennevaloissa: aika kuluu, mutta matka ei etene lainkaan!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Miten yhtälö luetaan kuvaajasta?</h3>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p13_1_3b058f1c.png\" alt=\"Kolmen suoran kuvaajat\" loading=\"lazy\">\n    <figcaption>Kolmen lineaarisen funktion kuvaajat: erisuuruiset kulmakertoimet ja vakiotermit.</figcaption>\n  </figure>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p15_1_f466de77.png\" alt=\"Nousevan suoran kulmakerroinkolmio\" loading=\"lazy\">\n    <figcaption>Kulmakertoimen kolmiomenetelmä: siirrytään pisteestä 1 askel oikealle (+1) ja katsotaan kuinka monta askelta suora nousee tai laskee (Δy / Δx).</figcaption>\n  </figure>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p17_1_694211e6.png\" alt=\"Laskeva suora ja negatiivinen kulmakerroin\" loading=\"lazy\">\n    <figcaption>Laskeva suora: kun siirrytään 1 askel oikealle, suora menee alaspäin, joten kulmakerroin k on negatiivinen.</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 7,
@@ -130,7 +136,8 @@
       "deepDive": {
         "title": "Miksi pystysuora suora ei ole funktio? Pystysuoratestin sääntö",
         "content": "<h4>Funktion perusvaatimus</h4><p>Funktion määritelmä sanoo: <em>jokaista syötettä $x$ kohti saa olla olemassa tasan yksi tuloste $y$</em>. Jos syötät juoma-automaattiin yhden euron ja painat nappia, et voi saada samalla hetkellä ulos kymmentä eri tölkkiä eri puolilta konetta.</p><h4>Pystysuoratesti (Vertical Line Test)</h4><p>Pystysuoralla suoralla $x = 3$ yhdellä ainoalla syötteellä $x = 3$ on <strong>äärettömän monta eri $y$:n arvoa</strong>! Tästä syystä pystysuora suora $x = 3$ on kyllä geometrinen suora, mutta se <strong>ei ole funktio</strong>. Kuvaaja esittää funktiota vain, jos mikään pystysuora viiva ei leikkaa sitä useammassa kuin yhdessä pisteessä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Ympyrän yhtälö $x^2 + y^2 = r^2$ ei sekään ole funktio, koska pystysuora viiva leikkaa ympyrän kahdessa pisteessä (yläpuoliskossa ja alapuoliskossa)!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Erikoistapaukset: Vaaka- ja pystysuorat</h3>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p18_1_cd25fe1c.png\" alt=\"Vaaka- ja pystysuorat suorat\" loading=\"lazy\">\n    <figcaption>Vaakasuorat suorat (y = c) ja pystysuorat suorat (x = c).</figcaption>\n  </figure>\n  <ul class=\"theory-list\">\n    <li><strong>Vaakasuora suora:</strong> Kulmakerroin on $k = 0$, joten yhtälö on muotoa:\n      $$y = b$$\n      Esimerkiksi $y = 3$ tarkoittaa suoraa, jonka kaikissa pisteissä $y$-koordinaatti on aina 3.</li>\n    <li><strong>Pystysuora suora:</strong> Ei ole funktion kuvaaja (yhdellä $x$-arvolla on äärettömästi $y$-arvoja). Kulmakerroin ei ole määritelty. Yhtälö on muotoa:\n      $$x = a$$\n      Esimerkiksi $x = -2$ tarkoittaa pystysuoraa linjaa, joka kulkee kohdassa $x = -2$.</li>\n  </ul>\n</div>"
     },
     {
       "lesson": 8,
@@ -148,7 +155,8 @@
       "deepDive": {
         "title": "Lineaarinen regressio ja koneoppiminen: Miten tekoäly sovittaa suoria?",
         "content": "<h4>Tuhansia pisteitä ilman täydellistä suoraa</h4><p>Tosielämän mittauksissa (esim. asunnon neliömäärä vs. hinta tai opiskelutunnit vs. koearvosana) pisteet eivät koskaan osu täydellisesti yhdelle suoralle, vaan muodostavat hajanaisen pistepilven.</p><h4>Pienimmän neliösumman menetelmä (Linear Regression)</h4><p>Koneoppimisen perusmalli, <em>lineaarinen regressio</em>, etsii sellaisen suoran $y = kx + b$, joka minimoi mittauspisteiden ja suoran välisten pystysuorien etäisyyksien neliösumman. Tämä optimaalinen suora ennustaa tulevia arvoja – ja se ratkaistaan täsmälleen samoilla kulmakertoimen ja vakiotermin yhtälöillä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Kaikki modernit tekoäly- ja sääennustemallit aloittavat opetusprosessinsa lineaarisella regressiolla ennen siirtymistä monimutkaisempiin neuroverkkoihin!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Suoran yhtälö kahden pisteen avulla</h3>\n  <p>Kun tunnetaan kaksi suoran pistettä $(x_1, y_1)$ ja $(x_2, y_2)$, kulmakerroin $k$ lasketaan $y$- ja $x$-koordinaattien muutosten suhteena:</p>\n  <div class=\"theory-box tip\">\n    <h4>Kulmakertoimen laskukaava:</h4>\n    <p class=\"math-callout\">$$k = \\frac{\\Delta y}{\\Delta x} = \\frac{y_2 - y_1}{x_2 - x_1}$$</p>\n    <p><strong>Esimerkki:</strong> Suora kulkee pisteiden $(1, 3)$ ja $(3, 7)$ kautta:</p>\n    <p>$$k = \\frac{7 - 3}{3 - 1} = \\frac{4}{2} = 2$$</p>\n    <p>Sijoitetaan saatu $k = 2$ ja piste $(1, 3)$ suoran perusyhtälöön $y = kx + b$:</p>\n    <p>$$3 = 2 \\cdot 1 + b \\implies 3 = 2 + b \\implies b = 1$$</p>\n    <p>Suoran yhtälö on siis $y = 2x + 1$.</p>\n  </div>\n</div>"
     },
     {
       "lesson": 9,
@@ -166,7 +174,8 @@
       "deepDive": {
         "title": "Satelliittilautaset ja taskulamput: Paraabelin maaginen polttopiste",
         "content": "<h4>Miksi satelliittiantennit ovat paraabeleja?</h4><p>Paraabelilla on ainutlaatuinen optinen ja geometrinen ominaisuus: sillä on piste nimeltä <strong>polttopiste (focus)</strong>.</p><p>Kaikki kaukaa avaruudesta yhdensuuntaisina tulevat radioaallot heijastuvat paraabelin pinnasta <em>täsmälleen samaan pisteeseen – polttopisteeseen</em>! Kun satelliittilautasen vastaanotin asetetaan tähän polttopisteeseen, heikkokin avaruudesta saapuva tv-signaali vahvistuu tuhansinkertaiseksi.</p><h4>Taskulamppu toimii toisin päin</h4><p>Taskulampussa tai auton ajovalossa polttopisteeseen asetettu hehkulamppu heijastaa valon eteenpäin täydellisen yhdensuuntaisena, kauas kantavana valokeilana!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Arkhimedeen kerrotaan puolustaneen kotikaupunkiaan Syrakusaa suuntaamalla vihollisen roomalaisiin laivoihin aurinkoa heijastavia paraabelipeilejä, jotka sytyttivät laivojen purjeet palamaan!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Perusparaabeli $y = x^2$</h3>\n  <p>Kun muuttuja $x$ korotetaan toiseen potenssiin, funktion kuvaaja ei ole enää suora, vaan kaareva <strong>paraabeli</strong>.</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p22_1_0db23d1a.png\" alt=\"Perusparaabeli y = x²\" loading=\"lazy\">\n    <figcaption>Perusparaabeli y = x²: symmetrinen käyrä, jonka huippu on origossa (0, 0) ja joka aukeaa ylöspäin.</figcaption>\n  </figure>\n  <p>Huomaa, että negatiivisen luvun neliö on aina positiivinen: $(-3)^2 = 9$ ja $3^2 = 9$. Siksi paraabeli on symmetrinen $y$-akselin suhteen!</p>\n</div>"
     },
     {
       "lesson": 10,
@@ -184,7 +193,8 @@
       "deepDive": {
         "title": "Heittoliike ja riippusillat: Miksi painovoima piirtää aina paraabelin?",
         "content": "<h4>Potkaistun jalkapallon lentorata</h4><p>Kun potkaiset jalkapallon ilmaan, miksi sen lentorata on täydellinen alaspäin aukeava paraabeli? Galileo Galilei osoitti, että liike koostuu kahdesta riippumattomasta komponentista:</p><ol><li>Vaakasuora liike tasaisella nopeudella: $x = v_x \\cdot t$.</li><li>Pystysuora liike painovoiman vetämänä kiihtyvänä liikkeenä: $y = v_y \\cdot t - \\frac{1}{2} g t^2$.</li></ol><p>Kun aika $t$ eliminoidaan yhtälöistä, saadaan suoraan toisen asteen funktio: $y = ax^2 + bx$! Jokainen tykinkuula, koripallon heitto ja suihkulähteen vesisuihku piirtää ilmaan täsmällisen paraabelin.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Riippusiltojen (kuten Golden Gate -sillan) pääkannatinkaapelit asettuvat paraabelin muotoon, koska ne kannattelevat tasaista vaakasuoraa ajoradan painoa!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Paraabelin muoto ja aukeamissuunta</h3>\n  <p>Toisen asteen funktion yhtälössä $f(x) = ax^2 + bx + c$ kertoimet vaikuttavat käyrään seuraavasti:</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p24_1_d8a22cba.png\" alt=\"Alaspäin aukeava paraabeli\" loading=\"lazy\">\n    <figcaption>Yhtälö f(x) = -x² + 3: koska toisen asteen kertoimena on miinusmerkki (a < 0), paraabeli aukeaa alaspäin.</figcaption>\n  </figure>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p25_1_40e2c23c.png\" alt=\"Kapea paraabeli\" loading=\"lazy\">\n    <figcaption>Yhtälö f(x) = 2x² - 2: kerroin a = 2 tekee paraabelista kapeamman ja jyrkemmän.</figcaption>\n  </figure>\n  <ul class=\"theory-list\">\n    <li><strong>a > 0:</strong> Paraabeli aukeaa <em>ylöspäin</em> (kuin hymyilevä suu). Huipussa on minimi.</li>\n    <li><strong>a < 0:</strong> Paraabeli aukeaa <em>alaspäin</em> (kuin surullinen suu). Huipussa on maksimi.</li>\n    <li><strong>Vakiotermi c:</strong> Siirtää paraabelia pystysuunnassa (huippu leikkaa $y$-akselin kohdassa $y = c$).</li>\n  </ul>\n</div>"
     },
     {
       "lesson": 11,
@@ -202,7 +212,8 @@
       "deepDive": {
         "title": "Nollakohdat taloudessa: Milloin yritys tekee nollatuloksen (Break-Even)?",
         "content": "<h4>Tappiosta voitolliseksi</h4><p>Liiketaloudessa jokainen uusi tuote aloittaa tappiolla, koska tuotekehitys ja tehtaiden pystyttäminen maksavat rahaa. Yrityksen tulosfunktio $T(x)$ kuvaa voittoa valmistettujen kappaleiden $x$ mukaan:</p><p>Piste, jossa $T(x) = 0$, on yrityksen <strong>kriittinen piste (Break-Even Point)</strong>. Se kertoo johtoryhmälle tarkan kappalemäärän, joka tuotetta on myytävä, jotta kaikki kiinteät ja muuttuvat kulut saadaan katettua ja yritys alkaa tuottaa voittoa ($T(x) > 0$)!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Elokuvateollisuudessa nollakohta lasketaan lipputuloista: esimerkiksi 200 miljoonan dollarin Hollywood-hittielokuvan on myytävä lippuja usein noin 400 miljoonalla päästäkseen nollatulokseen teattereiden ottamien osuuksien jälkeen!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Funktion nollakohta</h3>\n  <p>Funktion <strong>nollakohta</strong> on se muuttujan $x$ arvo, jolla funktion arvo on nolla ($f(x) = 0$). Graafisesti nollakohdat ovat ne pisteet, joissa kuvaaja <strong>leikkaa tai sivuaa $x$-akselia</strong>.</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p28_1_aeaf62db.png\" alt=\"Funktion nollakohdat\" loading=\"lazy\">\n    <figcaption>Funktion nollakohdassa kuvaaja leikkaa x-akselin (f(x) = 0). Nollakohta jakaa funktion positiivisiin ja negatiivisiin arvoalueisiin.</figcaption>\n  </figure>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p30_1_95f559e9.png\" alt=\"Paraabelin f(x) = x² - 4 nollakohdat\" loading=\"lazy\">\n    <figcaption>Paraabelilla f(x) = x² - 4 on kaksi nollakohtaa: x = -2 ja x = 2. Välin (-2, 2) ulkopuolella funktio on positiivinen ja välillä negatiivinen.</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 12,
@@ -220,7 +231,8 @@
       "deepDive": {
         "title": "Optimointi tekoälyssä: Miten neuroverkot oppivat etsimällä minimiä?",
         "content": "<h4>Tekoälyn virhefunktio</h4><p>Kun tekoälymallia (kuten kielimallia tai kuvantunnistinta) koulutetaan, sille määritellään matemaattinen <em>häviöfunktio (Loss function)</em>. Se kuvaa tekoälyn tekemien virheiden määrää.</p><h4>Gradienttilaskeutuminen (Gradient Descent)</h4><p>Tekoälyn oppiminen on puhtaasti <strong>funktion pienimmän arvon (minimin) etsimistä</strong> satojen miljardien parametrien avaruudessa! Algoritmi ottaa pieniä askeleita alaspäin pitkin virhefunktion käyrää kohti laakson pohjaa – aivan kuten kuula vierii kulhossa kohti sen alinta pistettä. Kun minimi saavutetaan, tekoäly tekee mahdollisimman vähän virheitä!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Weierstrassin min-max-lause todistaa, että jokaisella jatkuvalla funktiolla suljetulla välillä on matemaattisesti taatusti olemassa sekä suurin että pienin arvo!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Suurin ja pienin arvo</h3>\n  <p>Kun funktion tarkastelu rajataan tietylle suljetulle välille $[a, b]$, funktiolla on aina <strong>suurin arvo</strong> ja <strong>pienin arvo</strong>.</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/ma_93/p32_1_8941b30b.png\" alt=\"Funktion ääriarvot\" loading=\"lazy\">\n    <figcaption>Funktion suurin ja pienin arvo löytyvät joko tarkasteluvälin päätepisteistä tai käyrän huipusta (ääriarvopisteestä).</figcaption>\n  </figure>\n  <p>Suurin tai pienin arvo ilmoitetaan aina <strong>$y$-arvona</strong> (funktion arvona), ja kohta, jossa se saavutetaan, on vastaava <strong>$x$-arvo</strong>.</p>\n</div>"
     }
   ]
 }

@@ -16,7 +16,8 @@
       "deepDive": {
         "title": "Georg Cantor ja äärettömyyden eri koot: Onko olemassa 'suurempaa' ääretöntä?",
         "content": "<h4>Kaikki äärettömät eivät ole yhtä suuria</h4><p>Ennen 1800-luvun loppua matemaatikot ajattelivat äärettömyyden olevan vain yksi ja sama jakamaton käsite. Saksalainen <strong>Georg Cantor</strong> (1845–1918) kuitenkin todisti jotain mullistavaa: <em>on olemassa eri kokoisia äärettömyyksiä!</em></p><h4>Cantorin diagonaalitodistus</h4><p>Luonnolliset luvut $\\mathbb{N}$, kokonaisluvut $\\mathbb{Z}$ ja jopa murtoluvut $\\mathbb{Q}$ ovat 'yhtä suuria' eli <strong>numeroituvasti äärettömiä</strong> (niiden koko on $\\aleph_0$, alef-nolla). Mutta reaalilukuja $\\mathbb{R}$ (kaikki desimaaliluvut lukusuoralla) on niin paljon, ettei niitä voi edes numeroida 1-to-1 jonoon!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Välillä $0$ ja $1$ on enemmän reaalilukuja kuin mitä koko luonnollisten lukujen joukossa on kokonaislukuja yhteensä! Cantorin aikalaiset pitivät tätä aluksi hulluutena, mutta nykyään se on koko modernin matematiikan kiveenhakattu perusta.</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Äärettömyys ja erilaiset lukujoukot</h3>\n  <p>Tervetuloa matematiikan valinnaiskurssille! Aloitamme kiehtovasta aiheesta: <strong>äärettömyydestä ja lukujoukoista</strong>. Matematiikassa luvut jaotellaan sisäkkäisiin perusjoukkoihin:</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p4_2_dde258d3.png\" alt=\"Lukujoukot N, Z, Q ja R\" loading=\"lazy\">\n    <figcaption>Lukujoukot: Luonnolliset luvut ℕ ⊂ Kokonaisluvut ℤ ⊂ Rationaaliluvut ℚ ⊂ Reaaliluvut ℝ.</figcaption>\n  </figure>\n  <ul class=\"theory-list\">\n    <li><strong>Luonnolliset luvut ($\\mathbb{N}$):</strong> $0, 1, 2, 3, \\dots$</li>\n    <li><strong>Kokonaisluvut ($\\mathbb{Z}$):</strong> $\\dots, -2, -1, 0, 1, 2, \\dots$</li>\n    <li><strong>Rationaaliluvut ($\\mathbb{Q}$):</strong> Kaikki murtoluvut $\\frac{a}{b}$ ($a, b \\in \\mathbb{Z}, b \\neq 0$).</li>\n    <li><strong>Reaaliluvut ($\\mathbb{R}$):</strong> Kaikki lukusuoran pisteet mukaan lukien irrationaaliluvut ($\\pi, \\sqrt{2}$).</li>\n  </ul>\n  <p>David Hilbertin kuuluisa ajatuskoe <em>\"Hilbertin hotellista\"</em> osoittaa äärettömyyden kummallisuuden: vaikka äärettömän monen huoneen hotelli olisi täynnä, siihen mahtuu aina uusi vieras siirtämällä jokainen huoneen $n$ asukas huoneeseen $n + 1$!</p>\n</div>"
     },
     {
       "lesson": 2,
@@ -36,7 +37,8 @@
       "simulation": {
         "title": "PhET: Digitaalinen aalto ja näytteenotto",
         "url": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_all.html?locale=fi"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Binääriluvuista bitteihin</h3>\n  <p>Normaalisti käytämme 10-kantaista kymmenjärjestelmää. Tietokoneet ja digitaaliset laitteet puolestaan perustuvat <strong>2-kantaiseen binäärijärjestelmään</strong>, jossa ainoat mahdolliset numerot ovat <strong>0</strong> (virta pois) ja <strong>1</strong> (virta päällä).</p>\n  <div class=\"theory-box tip\">\n    <h4>Binääriluvun purkaminen kymmenjärjestelmäksi:</h4>\n    <p>Binääriluvussa jokainen numero edustaa kahden potenssia ($2^0=1, 2^1=2, 2^2=4, 2^3=8, 2^4=16, \\dots$):</p>\n    <p class=\"math-callout\">$$1011_2 = 1 \\cdot 2^3 + 0 \\cdot 2^2 + 1 \\cdot 2^1 + 1 \\cdot 2^0 = 8 + 0 + 2 + 1 = 11_{10}$$</p>\n  </div>\n</div>\n\n<div class=\"theory-section\">\n  <h3>Kuvat ja ääni bittimuodossa</h3>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p7_1_7394bed7.jpg\" alt=\"Pikselit ja bittikarttakuva\" loading=\"lazy\">\n    <figcaption>Kuvat muodostuvat pikseleistä: mustavalkokuvassa 0 tarkoittaa mustaa ja 1 valkoista.</figcaption>\n  </figure>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p9_1_bb047030.jpg\" alt=\"Äänen digitalisointi ja näytteenotto\" loading=\"lazy\">\n    <figcaption>Jatkuva analoginen ääniaalto muunnetaan digitaaliseksi mittaamalla sen jännite kymmeniä tuhansia kertoja sekunnissa (näytteenottotaajuus, esim. CD-äänessä 44 100 Hz 16-bittisenä).</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 3,
@@ -56,7 +58,8 @@
       "simulation": {
         "title": "PhET: Todennäköisyys ja Plinko-lauta (Galtonin lauta)",
         "url": "https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_all.html?locale=fi"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Klassinen todennäköisyys ja korttipelit</h3>\n  <p>Klassinen todennäköisyys määritellään suotuisien alkeistapausten suhteena kaikkien mahdollisten alkeistapausten määrään:</p>\n  <p class=\"math-callout\">$$P(A) = \\frac{\\text{suotuisat alkeistapaukset}}{\\text{kaikki alkeistapaukset}}$$</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p16_1_9ac14664.png\" alt=\"Pokerikäsien todennäköisyydet\" loading=\"lazy\">\n    <figcaption>Texas Hold'emissa menestys perustuu todennäköisyyksien ja odotusarvojen (pot odds) nopeaan arviointiin: kuinka todennäköisesti seuraava kortti parantaa kättä voittavaksi.</figcaption>\n  </figure>\n  <p><strong>Komplementtisääntö:</strong> Tapahtuman $A$ vastatapahtuma $\\bar{A}$ on usein helpompi laskea: $P(A) = 1 - P(\\bar{A})$. Esimerkiksi todennäköisyys saada ainakin yksi kuutonen kolmella nopanheitolla on $1 - \\left(\\frac{5}{6}\\right)^3$.</p>\n</div>"
     },
     {
       "lesson": 4,
@@ -72,7 +75,8 @@
       "deepDive": {
         "title": "Eulerin identiteetti: Matematiikan kaunein yhtälö",
         "content": "<h4>Viisi tärkeintä vakiota yhdessä kaavassa</h4><p>Sveitsiläinen nero <strong>Leonhard Euler</strong> (1707–1783) osoitti, että kun luonnollisen logaritmin kantaluku $e \\approx 2{,}718$, ympyrän suhdeluku $\\pi$, imaginääriyksikkö $i$, luku $1$ ja luku $0$ yhdistetään, syntyy huikea kaava:</p><p>$$\\mathbf{e^{i\\pi} + 1 = 0}$$</p><h4>Mihin kompleksilukuja tarvitaan todellisuudessa?</h4><p>Vaikka sana 'imaginäärinen' tarkoittaa kuvitteellista, kompleksiluvut ovat fysiikan ja tekniikan tehokkaimpia työkaluja:</p><ol><li><strong>Sähkötekniikka</strong>: Vaihtovirtapiirien impedanssit, jännitteet ja vaihesiirrot lasketaan kompleksiluvuilla.</li><li><strong>Kvanttimekaniikka</strong>: Atomin aaltofunktio (Schrödingerin yhtälö) on luonteeltaan kompleksiarvoinen.</li><li><strong>Signaalinkäsittely ja Fourier-muunnos</strong>: Äänen ja kuvien pakkaus (MP3, JPEG, 5G-verkot).</li></ol><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Nobel-fyysikko Richard Feynman kutsui Eulerin identiteettiä 'koko matematiikan hämmästyttävimmäksi ja kauneimmaksi jalokiveksi'!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Mitä ovat kompleksiluvut?</h3>\n  <p>Tavallisilla reaaliluvuilla negatiivisen luvun neliöjuuri ei ole määritelty, koska minkään luvun neliö ei ole negatiivinen. Tätä varten matematiikassa määritellään <strong>imaginääriyksikkö $i$</strong>:</p>\n  <div class=\"theory-box tip\">\n    <h4>Imaginääriyksikön määritelmä:</h4>\n    <p class=\"math-callout\">$$i^2 = -1 \\quad \\iff \\quad i = \\sqrt{-1}$$</p>\n  </div>\n  <p>Yleinen <strong>kompleksiluku</strong> $z$ koostuu reaaliosasta $a$ ja imaginaariosasta $b$:</p>\n  <p class=\"math-callout\">$$z = a + bi \\quad (a, b \\in \\mathbb{R})$$</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p18_1_1d960e72.png\" alt=\"Kompleksitaso Re ja Im\" loading=\"lazy\">\n    <figcaption>Kompleksitaso (Gaussin taso): vaaka-akselilla on reaaliosa Re ja pystyakselilla imaginaariosa Im.</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 5,
@@ -92,7 +96,8 @@
       "simulation": {
         "title": "PhET: Vektorien yhteenlasku ja komponentit",
         "url": "https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_all.html?locale=fi"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Vektorit koordinaatistossa</h3>\n  <p>Skalaarisuureella (kuten massalla tai lämpötilalla) on vain suuruus. <strong>Vektorilla</strong> on sekä <em>suuruus että suunta</em>. Fysiikassa ja peliohjelmoinnissa voimat, nopeudet ja siirtymät kuvataan aina vektoreina.</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p22_3_5f4a28ad.png\" alt=\"Vektorit u ja v\" loading=\"lazy\">\n    <figcaption>Vektorit u ja v (x, y) -koordinaatistossa.</figcaption>\n  </figure>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p24_1_1bde0056.png\" alt=\"Summavektori u + v\" loading=\"lazy\">\n    <figcaption>Summavektori u + v saadaan asettamalla vektorit peräkkäin (kärkimenetelmä).</figcaption>\n  </figure>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p26_2_67f6f6c7.png\" alt=\"Vektorin pituus Pythagoraalla\" loading=\"lazy\">\n    <figcaption>Vektorin s = (x, y) pituus saadaan suoraan Pythagoraan lauseella: |s| = √(x² + y²).</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 6,
@@ -108,7 +113,8 @@
       "deepDive": {
         "title": "John Nash ja vankien dilemma: Miksi itsekkyys johtaa huonoon tulokseen?",
         "content": "<h4>Peliteorian suuri oivallus</h4><p>Vuonna 1950 matemaatikko <strong>John Nash</strong> (josta tehtiin kuuluisa elokuva <em>Kaunis mieli / A Beautiful Mind</em>) esitti teorian ei-kooperatiivisista peleistä ja tasapainotilasta, jota kutsutaan <strong>Nash-tasapainoksi</strong>.</p><h4>Vankien dilemma (Prisoner's Dilemma)</h4><p>Poliisi kuulustelee kahta eristyksissä olevaa epäiltyä rikoksesta:</p><ul><li>Jos molemmat vaikenevat (yhteistyö), molemmat saavat 1 vuoden tuomion.</li><li>Jos molemmat pettävät toisensa, molemmat saavat 5 vuotta vankeutta.</li><li>Jos toinen pettää ja toinen vaikenee, pettäjä pääsee vapaaksi (0 vuotta) ja vaikenija saa 10 vuotta!</li></ul><p>Loogisesti ajatellen molempien kannattaa pettää toisensa riippumatta toisen valinnasta. Niinpä molemmat päätyvät istumaan 5 vuotta – vaikka vaikenemalla molemmat olisivat selvinneet yhdellä vuodella!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> John Nash sai työstään Nobelin taloustieteen palkinnon vuonna 1994. Vankien dilemmaa käytetään nykyään mallintamaan niin ilmastosopimusten vaikeutta, yritysten hintakilpailua kuin eläinten evoluutiotakin!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Matematiikka pelisuunnittelussa</h3>\n  <p>Olipa kyseessä pöytäroolipeli, korttipeli tai digitaalinen strategiapeli, pelien tasapaino nojaa syvällisesti matematiikkaan:</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p27_2_e796bf56.png\" alt=\"Pelisuunnittelu ja mekaniikat\" loading=\"lazy\">\n    <figcaption>Pelisuunnittelun peruskomponentit: säännöt, todennäköisyydet, resurssienhallinta ja satunnaisuus.</figcaption>\n  </figure>\n  <ul class=\"theory-list\">\n    <li><strong>Odotusarvo ($E$):</strong> Kertoo, mikä on pelitapahtuman pitkän aikavälin keskiarvoinen tulos panokseen nähden.</li>\n    <li><strong>Varianssi ja riski:</strong> Kertoo, kuinka paljon tulokset heilahtelevat keskiarvon ympärillä.</li>\n  </ul>\n</div>"
     },
     {
       "lesson": 7,
@@ -124,7 +130,8 @@
       "deepDive": {
         "title": "Grigori Perelman ja miljoonasta dollarista kieltäytyminen: Nerous ilman maallista mammonaa",
         "content": "<h4>Poincarén konjektuurin ratkaisu 2002</h4><p>Vuonna 2002 pietarilainen erakkomainen huippumatemaatikko <strong>Grigori Perelman</strong> latasi internetin avoimeen tutkimusarkistoon (arXiv) kolme artikkelia, joissa hän esitti ratkaisun Poincarén satavuotiseen konjektuuriin 3-ulotteisten avaruuksien topologiasta.</p><h4>Kieltäytyminen Fieldsin mitalista ja miljoonasta dollarista</h4><p>Kun maailman parhaat matemaatikot olivat tarkistaneet satoja sivuja pitkän todistuksen ja todenneet sen täydellisen virheettömäksi, Perelmanille myönnettiin matematiikan 'Nobel' eli Fieldsin mitali vuonna 2006 ja Clay-instituutin miljoonan dollarin Millennium-palkinto vuonna 2010.</p><p>Perelman kieltäytyi molemmista! Hän totesi rauhallisesti asuvansa vaatimattomasti äitinsä kanssa Pietarissa eikä tarvitse rahaa: <em>'Jos todistus on oikea, mitään muuta tunnustusta ei tarvita.'</em></p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Perelman totesi toimittajille: 'Tiedän miten hallita maailmankaikkeutta. Kertokaa minulle, miksi minun pitäisi juosta miljoonan dollarin perässä?'</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Miljoonan dollarin matemaattiset arvoitukset</h3>\n  <p>Vuonna 2000 Clay-instituutti nimesi seitsemän matematiikan keskeisintä ratkaisematonta ongelmaa ja lupasi jokaisen ratkaisusta miljoonan dollarin palkinnon:</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p29_1_40f17938.png\" alt=\"Riemannin zeeta-funktio\" loading=\"lazy\">\n    <figcaption>Riemannin hypoteesi ja zeeta-funktion nollakohdat kompleksitasolla. Kaikkien ei-triviaalisten nollakohtien reaaliosan uskota olevan tasan 1/2.</figcaption>\n  </figure>\n  <p>Kuuluisin näistä on <strong>Riemannin hypoteesi</strong>, joka kytkeytyy alkulukujen jakautumiseen. Muita tunnettuja ongelmia ovat mm. <em>P vs NP</em> (laskennan vaativuus) ja <em>Navier-Stokes</em> -yhtälöt (virtausmekaniikka).</p>\n</div>"
     },
     {
       "lesson": 8,
@@ -144,7 +151,8 @@
       "simulation": {
         "title": "W3Schools: Online Python Editor & Try-it",
         "url": "https://www.w3schools.com/python/"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Ohjelmointi matemaattisena työkaluna</h3>\n  <p>Ohjelmointi on algoritmien toteuttamista täsmällisellä konekielellä. Nykypäivänä <strong>Python</strong> on maailman suosituin kieli matematiikassa, tieteellisessä laskennassa ja tekoälyssä.</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p32_1_a5f47793.png\" alt=\"Ohjelmointi ja algoritmit\" loading=\"lazy\">\n    <figcaption>Ohjelmoinnin perusrakenteet: muuttujat, ehtolauseet (if-else), silmukat (for, while) ja funktiot.</figcaption>\n  </figure>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p34_1_341beff8.png\" alt=\"Python ja Java koodivertailu\" loading=\"lazy\">\n    <figcaption>Pythonin syntaksi on huomattavan selkeää ja luettavaa verrattuna moniin muihin kieliin.</figcaption>\n  </figure>\n</div>"
     },
     {
       "lesson": 9,
@@ -160,7 +168,8 @@
       "deepDive": {
         "title": "Zenonin paradoksit: Voiko Akhilleus koskaan saavuttaa kilpikonnaa?",
         "content": "<h4>Antiikin filosofin mahdoton kilpajuoksu</h4><p>Antiikin kreikkalainen filosofi <strong>Zenon Elealainen</strong> (n. 490–430 eaa.) esitti kuuluisan paradoksin: Tarunhohtoinen nopea juoksija Akhilleus ottaa juoksukilpailun hitaan kilpikonnan kanssa. Kilpikonna saa 100 metrin etumatkan.</p><h4>Äärettömän monen vaiheen pulma</h4><p>Kun Akhilleus juoksee kilpikonnan lähtöpaikkaan (100 m), kilpikonna on ehtinyt liikkua vaikkapa 10 metriä eteenpäin. Kun Akhilleus saavuttaa tuon pisteen, kilpikonna on liikkunut taas 1 metrin. Kun Akhilleus saavuttaa sen, kilpikonna on siirtynyt 10 senttimetriä...</p><p>Zenon väitti, että Akhilleuksen täytyy kulkea äärettömän monen pisteen läpi, joten hän ei voi koskaan saada kilpikonnaa kiinni!</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Zenonin paradoksi ratkesi vasta raja-arvon avulla: äärettömän monen luvun summa voi olla täysin äärellinen luku! Esimerkiksi $\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\frac{1}{16} + \\dots = 1$. Aika ei lopu kesken, vaan Akhilleus pyyhältää kilpikonnan ohi juuri oikealla hetkellä!</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Mitä tapahtuu äärettömyydessä?</h3>\n  <p>Differentiaali- ja integraalilaskennan (lukion analyysin) peruskivi on <strong>raja-arvo (limes, $\\lim$)</strong>. Se tutkii, mitä arvoa funktio lähestyy, kun muuttuja $x$ kasvaa rajatta kohti äärettömyyttä ($\\infty$):</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p36_1_0269c5c0.png\" alt=\"Funktion f(x) = 1/x + 3 kuvaaja\" loading=\"lazy\">\n    <figcaption>Funktio f(x) = 1/x + 3: kun x kasvaa kohti äärettömyyttä, 1/x lähestyy nollaa ja funktion arvo lähestyy lukua 3 (asymptootti).</figcaption>\n  </figure>\n  <div class=\"theory-box tip\">\n    <h4>Raja-arvomerkintä:</h4>\n    <p class=\"math-callout\">$$\\lim_{x \\to \\infty} \\left(\\frac{1}{x} + 3\\right) = 0 + 3 = 3$$</p>\n  </div>\n</div>"
     },
     {
       "lesson": 10,
@@ -180,7 +189,8 @@
       "simulation": {
         "title": "PhET: Toisen asteen kuvaaja ja nollakohdat",
         "url": "https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_all.html?locale=fi"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Toisen asteen yhtälön ratkaisukaava</h3>\n  <p>Yleinen toisen asteen yhtälö $ax^2 + bx + c = 0$ ($a \\neq 0$) ratkaistaan kuuluisalla ratkaisukaavalla:</p>\n  <div class=\"theory-box tip\">\n    <h4>Ratkaisukaava:</h4>\n    <p class=\"math-callout\">$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$</p>\n  </div>\n  <p>Neliöjuuren alla olevaa lauseketta $D = b^2 - 4ac$ kutsutaan <strong>diskriminantiksi</strong>:</p>\n  <ul class=\"theory-list\">\n    <li>Jos $D > 0$, yhtälöllä on <strong>kaksi</strong> eri reaalijuurta.</li>\n    <li>Jos $D = 0$, yhtälöllä on <strong>yksi</strong> reaalijuuri (kaksoisjuuri).</li>\n    <li>Jos $D < 0$, yhtälöllä <strong>ei ole reaalijuuria</strong>, mutta sillä on kaksi <em>kompleksijuurta</em>!</li>\n  </ul>\n</div>"
     },
     {
       "lesson": 11,
@@ -196,7 +206,8 @@
       "deepDive": {
         "title": "Alan Turing ja Enigma: Miten koodin murtaminen ratkaisi toisen maailmansodan?",
         "content": "<h4>Saksan sota-ase: Enigma-salauskone</h4><p>Toisessa maailmansodassa natsi-Saksa käytti <strong>Enigma</strong>-nimistä sähkömekaanista salauskonetta, jossa oli useita pyöriviä roottoreita ja kytkentätaulu. Jokaisen näppäinpainalluksen jälkeen roottorit pyörähtivät uuteen asentoon, jolloin sama kirjain koodautui joka kerta eri kirjaimeksi! Mahdollisia asetuksia oli yli <strong>150 triljoonaa</strong>.</p><h4>Bletchley Park ja sähkömekaaninen 'Bombe'</h4><p>Englantilainen matemaatikko <strong>Alan Turing</strong> rakensi Bletchley Parkissa valtavan sähkömekaanisen 'Bombe'-koneen. Se käytti loogisia päättelyketjuja ja karsi mahdottomat roottoriasetukset minuuteissa, jolloin liittoutuneet pystyivät lukemaan Saksan salaisia sukellusveneviestejä.</p><div class=\"deep-dive-callout\"><strong>Tiesitkö?</strong> Historioitsijoiden mukaan Turingin ja hänen tiiminsä työ Enigman parissa lyhensi toista maailmansotaa vähintään kahdella vuodella ja pelasti yli 14 miljoonan ihmisen hengen! Turingia pidetään myös modernin tietojenkäsittelytieteen ja tekoälyn isänä.</div>"
-      }
+      },
+      "extendedTheory": "<div class=\"theory-section\">\n  <h3>Kryptografia: Salakirjoituksesta internetin suojaukseen</h3>\n  <p>Salausmenetelmillä (kryptografialla) on vuosituhantinen historia antiikin Rooman sotilassalauksista nykyaikaiseen verkkopankkisuojaukseen:</p>\n  <figure class=\"lesson-figure\">\n    <img src=\"src/assets/images/courses/vma_01/p41_1_bc5fa410.png\" alt=\"Salausmenetelmät ja kryptografia\" loading=\"lazy\">\n    <figcaption>Caesar-salauksesta julkisen avaimen RSA-salaukseen.</figcaption>\n  </figure>\n  <ul class=\"theory-list\">\n    <li><strong>Symmetrinen salaus:</strong> Sekä viestin lähettäjä että vastaanottaja käyttävät samaa salausavainta (kuten Caesar-siirto tai AES). Haasteena on avaimen turvallinen siirto osapuolten välillä.</li>\n    <li><strong>Asymmetrinen salaus (julkisen avaimen salaus, RSA):</strong> Käyttäjällä on kaksi avainta: julkinen avain (jolla kuka tahansa voi salata viestin) ja salainen yksityinen avain (jolla vain vastaanottaja voi purkaa sen). Menetelmä perustuu valtavan suurten alkulukujen tulojen tekijöihinjaon laskennalliseen vaikeuteen!</li>\n  </ul>\n</div>"
     }
   ]
 }
