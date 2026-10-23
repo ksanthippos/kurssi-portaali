@@ -5,3 +5,4 @@ SCRIPT="$(git rev-parse --show-toplevel)/sync_courses.sh"
 if [ -f "$SCRIPT" ]; then
   bash "$SCRIPT" --from-portaali
 fi
+
