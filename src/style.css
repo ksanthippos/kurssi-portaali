@@ -1000,6 +1000,11 @@ a:hover {
   text-align: center;
 }
 
+.footer-version {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.88;
+}
+
 /* -----------------------------
    Sivun alkuun -painike
 ----------------------------- */

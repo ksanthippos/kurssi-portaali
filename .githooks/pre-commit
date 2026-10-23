@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Automaattinen versionumeron päivitys ennen committia
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+SCRIPT="$REPO_DIR/scripts/update_version.py"
+
+if [ -f "$SCRIPT" ]; then
+  python3 "$SCRIPT"
+  git -C "$REPO_DIR" add "$REPO_DIR/src/version.js" "$REPO_DIR/src/data/version.json" 2>/dev/null || true
+fi
