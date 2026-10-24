@@ -149,10 +149,13 @@ async function selectGroup(course, groupCode) {
   }
 }
 
-function renderTaskGroups(tasks) {
-  if (!tasks || typeof tasks !== "object") {
-    return "";
-  }
+function renderTaskGroups(tasks, taskSheets) {
+  const hasTasks = tasks && typeof tasks === "object";
+  const normalizedSheets = Array.isArray(taskSheets)
+    ? taskSheets
+    : taskSheets
+    ? [taskSheets]
+    : [];
 
   const taskDefinitions = [
     {
@@ -182,24 +185,44 @@ function renderTaskGroups(tasks) {
     }
   ];
 
-  const rows = taskDefinitions
-    .filter(
-      (task) =>
-        tasks[task.key] !== undefined &&
-        tasks[task.key] !== null &&
-        tasks[task.key] !== ""
-    )
-    .map(
-      (task) => `
-        <div class="task-row ${task.className}">
-          <strong>${task.label}</strong>
-          <span>${escapeHtml(tasks[task.key])}</span>
-        </div>
-      `
-    )
-    .join("");
+  let rows = "";
+  if (hasTasks) {
+    rows = taskDefinitions
+      .filter(
+        (task) =>
+          tasks[task.key] !== undefined &&
+          tasks[task.key] !== null &&
+          tasks[task.key] !== ""
+      )
+      .map(
+        (task) => `
+          <div class="task-row ${task.className}">
+            <strong>${task.label}</strong>
+            <span>${escapeHtml(tasks[task.key])}</span>
+          </div>
+        `
+      )
+      .join("");
+  }
 
-  if (!rows) {
+  let sheetRows = "";
+  if (normalizedSheets.length > 0) {
+    sheetRows = normalizedSheets
+      .map(
+        (sheet) => `
+          <div class="task-row task-sheet-row">
+            <strong style="background-color: var(--color-primary, #2563eb);">${escapeHtml(sheet.badge || "Tehtävät")}</strong>
+            <span style="display:flex; justify-content:space-between; align-items:center; width:100%; gap:8px;">
+              <span>${escapeHtml(sheet.title)}</span>
+              <a href="${escapeHtml(sheet.pdf)}" target="_blank" rel="noopener noreferrer" style="font-weight:600; text-decoration:underline; font-size:0.85rem; white-space:nowrap;">Avaa PDF 📄</a>
+            </span>
+          </div>
+        `
+      )
+      .join("");
+  }
+
+  if (!rows && !sheetRows) {
     return "";
   }
 
@@ -208,6 +231,7 @@ function renderTaskGroups(tasks) {
       <h4>Tehtävät</h4>
       <div class="task-groups">
         ${rows}
+        ${sheetRows}
       </div>
     </div>
   `;
@@ -297,7 +321,7 @@ function renderLessons() {
             ${lesson.content || ""}
           </div>
 
-          ${renderTaskGroups(lesson.tasks)}
+          ${renderTaskGroups(lesson.tasks, lesson.taskSheets)}
 
           ${
             lesson.substituteNote
@@ -847,6 +871,11 @@ function buildSubstituteInstructions(events, start, end) {
             if (taskLines.length) {
               lines.push(`    Tehtävät: ${taskLines.join(" | ")}`);
             }
+          }
+
+          if (Array.isArray(event.lesson.taskSheets) && event.lesson.taskSheets.length) {
+            const sheetTitles = event.lesson.taskSheets.map((s) => s.title).join(", ");
+            lines.push(`    Tehtävämoniste (PDF): ${sheetTitles}`);
           }
 
           if (event.lesson.substituteNote) {

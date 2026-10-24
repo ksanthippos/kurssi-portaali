@@ -20,7 +20,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Hilbertin hotelli ja äärettömyys",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Äärettömyyden käsitteet, Hilbertin hotellin pulmavedot, lukujoukot ja Cantorin diagonaaliargumentti.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_01_hilbertin_hotelli.pdf"
         }
@@ -47,7 +47,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Binäärijärjestelmä ja digitaalinen data",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Binäärimuunnokset molempiin suuntiin, ASCII-koodaus, bittikarttakuvan piirtäminen ja tiedostokoon laskeminen.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_02_binaariluvut_ja_data.pdf"
         }
@@ -74,7 +74,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Todennäköisyys ja Texas Hold'em -pokeri",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Klassinen todennäköisyys, noppakombinaatiot, riippumattomat tapahtumat ja Texas Hold'em -pokerikäsien todennäköisyydet ja outit.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_03_todennakoisyys_ja_pokeri.pdf"
         }
@@ -98,7 +98,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Kompleksiluvut ja kompleksitaso",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Potenssit i^n, kompleksilukujen yhteen-, vähennys- ja kertolasku sekä pisteiden piirtäminen kompleksitasoon.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_04_kompleksiluvut.pdf"
         }
@@ -125,7 +125,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Vektorilaskennan perusteet",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Vektorien summa ja erotus graafisesti ja algebrallisesti, komponenttimuoto sekä pituuden laskenta Pythagoraan lauseella.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_05_vektorilaskenta.pdf"
         }
@@ -149,7 +149,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Oman pelin suunnittelu",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Pelin konseptointi, ydinsilmukka, noppa- ja korttimekaniikkojen todennäköisyydet, säännöt ja pelitestausdokumentti.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_06_oman_pelin_suunnittelu.pdf"
         }
@@ -173,7 +173,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Millennium-ongelmat ja Riemannin zeeta-funktio",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "7 Millennium-haastetta, Königsbergin siltaongelma, Riemannin zeeta-funktion arvojen laskenta ja suppenemistarkastelu.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_07_millennium_ongelmat.pdf"
         }
@@ -200,13 +200,13 @@
       "taskSheets": [
         {
           "title": "VMA_01: Python-ohjelmointi – Osa 1: Perusteet ja laskuri (90 min)",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Tulostus, muuttujat, matemaattiset operaatiot, käyttäjän syöte ja interaktiivisen laskurin koodaaminen.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_08_python_osa1_perusteet.pdf"
         },
         {
           "title": "VMA_01: Python-ohjelmointi – Osa 2: Algoritmit ja pelit (90 min)",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Ehtolauseet (if-elif-else), silmukat (for, while), satunnaisluvut (random) ja luvunarvauspelin ohjelmointi.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_08_python_osa2_algoritmit.pdf"
         }
@@ -230,7 +230,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Funktion raja-arvo äärettömyydessä",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Yhteisen tekijän ottaminen, lausekkeen sieventäminen, supistaminen ja raja-arvon laskeminen lim-merkinnällä.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_09_raja_arvot.pdf"
         }
@@ -257,7 +257,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Toisen asteen yhtälön ratkaisukaava",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Kertoimien tunnistaminen, diskriminantin D määrittäminen ja 15 toisen asteen yhtälön ratkaiseminen ratkaisukaavalla.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_10_toisen_asteen_yhtalo.pdf"
         }
@@ -281,7 +281,7 @@
       "taskSheets": [
         {
           "title": "VMA_01: Kryptografia ja Caesar-salaus",
-          "badge": "Tuntitehtävä",
+          "badge": "Tehtävät",
           "description": "Salakirjoituksen purkaminen ja salaaminen Caesarin kiekolla, frekvenssianalyysi ja salasanojen yhdistelmämatematiikka.",
           "pdf": "tuntitehtavat/VMA_01/VMA_01_tuntitehtava_11_kryptografia.pdf"
         }
