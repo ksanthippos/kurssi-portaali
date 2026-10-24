@@ -1,2 +1,2 @@
 // Automaattisesti päivittyvä versiotieto
-window.APP_VERSION = "0.20";
+window.APP_VERSION = "0.21";
